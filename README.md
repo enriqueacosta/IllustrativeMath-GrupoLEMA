@@ -6,7 +6,7 @@ Prototipo del material de [Matemáticas Ilustrativas](https://curriculum.illustr
 
 Debe tener [Pretext](https://pretextbook.org) instalado. Desde la terminal, en la carpeta que contiene el archivo `project.ptx`, ejecutar los siguientes comandos:
 
-## Versiones del estudiante
+### Versiones del estudiante
 
 Todos los archivos que se generan se guardan en la carpeta `output/`.
 
@@ -33,6 +33,8 @@ Para generar el código latex que produce el pdf:
 pretext build print-latex-est
 ```
 
+### Versiones del profesor
+Cambiar `-est` por `-prof` en todos los comandos.
 
 
 ## Licencia
