@@ -36,6 +36,8 @@ pretext build print-latex-est
 ### Versiones del profesor
 Cambiar `-est` por `-prof` en todos los comandos.
 
+Ambas versiones (estudiante y profesor) se generan a partir de los mismos archivos fuente. Los elementos que contienen `component="profesor"` solo son visibles en la versión del profesor.
+
 
 ## Licencia
 Mientras se descifran los detalles de copyright y licencias, este material se publica bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY NC 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
