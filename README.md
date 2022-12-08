@@ -40,7 +40,7 @@ Ambas versiones (estudiante y profesor) se generan a partir de los mismos archiv
 
 
 ## Licencia
-Mientras se descifran los detalles de copyright y licencias, este material es ©Enrique Acosta (enriqueacosta.github.io) y se publica bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY NC 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
+Mientras se descifran los detalles de copyright y licencias, este material es ©Enrique Acosta ([enriqueacosta.github.io] y se publica bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY NC 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
 
 Ver una copia de la licencia en [creativecommons.org](https://creativecommons.org/licenses/by-nc/4.0/"/).
 
