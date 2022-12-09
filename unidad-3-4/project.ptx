@@ -18,7 +18,10 @@
       <source>source/main.ptx</source>
       <publication>publication/publication-prof.ptx</publication>
       <output-dir>output/web-prof</output-dir>
-      <stringparam key="commentary" value="yes"/>
+      <!-- <stringparam key="commentary" value="yes"/> -->
+      <!-- EAJ: custom-styles.css está en el folder [assets] -->
+      <!-- Ahí se quita la numeración de los remarks -->
+      <stringparam key="html.css.extra" value="external/custom-styles.css"/>
     </target>
     <target name="print-est" pdf-method="pdflatex">
       <format>pdf</format>
