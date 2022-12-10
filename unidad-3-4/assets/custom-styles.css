@@ -20,12 +20,6 @@ article[id*='remark'] .heading::after, .remark-like .heading::after {
 }
 
 
-/*Para cambiar la fuente*/
-p {
-  /*font-family: Arial, Helvetica, sans-serif;*/
-}
-
-
 /* para quitar a remark-like usar*/
 /*.remark-like .codenumber{
   display:none !important;
@@ -34,6 +28,29 @@ p {
 /*article[id*='remark'] .period, .remark-like .period {
   display:none !important;
 }*/
+
+
+/*Para cambiar la fuente*/
+p {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+
+/* Para mover el main content*/
+/* (tratar que quede centrado cuando no hay menú) */
+div [id='content'] {
+  /*left: 5cm !important;*/
+  /*margin-left: 5cm !important;*/
+  /*padding-left: 5cm !important;*/
+}
+/* Este no sirvió*/
+/*div .pretext-content {
+  left: 5cm !important;
+  margin-left: 5cm !important;
+  padding-left: 5cm !important;
+}*/
+
+
 
 
 

@@ -40,7 +40,9 @@
     <!-- For use with a book organized by parts -->
     <!-- <divisions part-structure="decorative" chapter-start="1" level="3"/> -->
     
-    <!-- EAJ - esto quita toda la numeración -->
+    <!-- EAJ - esto quita toda la numeración, pero no logra quitar    -->
+    <!-- los números como [Activity 3], [Remark 10]                   -->
+    <!-- La numeracíon de [remark] se quita en assets/custom-styles.css-->
     <divisions level="0"/>
      
     <!-- The next elements say how the levels deep to break up the    -->
@@ -50,6 +52,7 @@
     <projects level="0"/>
     <equations level="0"/>
     <footnotes level="0"/>
+
   </numbering>
 
     <!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
