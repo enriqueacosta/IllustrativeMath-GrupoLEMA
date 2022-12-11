@@ -32,105 +32,113 @@
       <title>Sección A - ¿Qué es la división?</title>
       <objectives>
         <ul>
-          <li><p>Representar y solucionar problemas del tipo “¿Cuántos grupos” y “¿Cuántos en cada grupo?”</p></li>
+          <li><p>Representar y solucionar problemas del tipo “¿Cuántos grupos?” y “¿Cuántos en cada grupo?”</p></li>
         </ul>
       </objectives>  
 
       <introduction>
-        
-      <remark component="profesor">
-        <p>
-          Lo nuevo en esta sección es que lo estudiantes ...
-          <ul>
-            <li>van a conocer la división, el término <term>divisor</term> y el símbolo <m>\div</m>.</li>
-            <li>van a ver que un mismo diagrama de grupos iguales o una misma expresión <m>a\div b</m> puede representar dos situaciones muy distintas (ver la figura).</li>
-          </ul>
-        </p>
-<!--         <p>
-          En esta sección los estudiantes van a conocer el significado de la división como separar en grupos iguales. Ellos van a interpretan descripciones, diagramas y expresiones que representan situaciones de división de los dos tipos: "¿Cuántos grupos?" y "¿Cuántos hay en cada grupo?".
-        </p> -->
-        <p>
-          En unidades anteriores los estudiantes han estado trabajando en la multiplicación como el número total dado un número de grupos iguales y en número en cada grupo. Han adquirido práctica en asociar situaciones de grupos iguales con expresiones de multiplicación <m>a\times b</m> y diagramas de grupos iguales. Todo esto será importante en esta sección.
-        </p>
-        
-        <figure>
-          <caption>La figura resume cómo distintos tipos de problemas pueden corresponder con la misma expresión de división y el mismo diagrama. En <m>6\div 3</m> el 3 puede ser el número de grupos, y el número de elementos en cada grupo. Los estudiantes van a trabajar con todas estas representaciones y correspondencias en esta sección.</caption>
-          <image xml:id="tipos-problemas-division" width="100%">
-              <description>Mismas expresiones o dibujos, distintos tipos de problemas.</description>
-              <latex-image>
-                \begin{tikzpicture}
+        <remark component="profesor">
+          <p>
+            Lo nuevo en esta sección es que lo estudiantes ...
+            <ul>
+              <li>van a conocer la división, el término <term>divisor</term> y el símbolo <m>\div</m>.</li>
+              <li>van a ver que un mismo diagrama de grupos iguales o una misma expresión <m>a\div b</m> puede representar dos situaciones muy distintas (ver la figura).</li>
+            </ul>
+          </p>
+  <!--         <p>
+            En esta sección los estudiantes van a conocer el significado de la división como separar en grupos iguales. Ellos van a interpretan descripciones, diagramas y expresiones que representan situaciones de división de los dos tipos: "¿Cuántos grupos?" y "¿Cuántos hay en cada grupo?".
+          </p> -->
+          <p>
+            En unidades anteriores los estudiantes han estado trabajando en la multiplicación como el número total dado un número de grupos iguales y en número en cada grupo. Han adquirido práctica en asociar situaciones de grupos iguales con expresiones de multiplicación <m>a\times b</m> y diagramas de grupos iguales. Todo esto será importante en esta sección.
+          </p>
+          
+          <figure>
+            <caption>La figura resume cómo distintos tipos de problemas pueden corresponder con la misma expresión de división y el mismo diagrama. En <m>6\div 3</m> el 3 puede ser el número de grupos, y el número de elementos en cada grupo. Los estudiantes van a trabajar con todas estas representaciones y correspondencias en esta sección.</caption>
+            <image xml:id="tipos-problemas-division" width="100%">
+                <description>Mismas expresiones o dibujos, distintos tipos de problemas.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \usetikzlibrary{shapes,arrows,calc,fit,backgrounds,shapes.multipart}
 
-                \def\probSepHor{0.5}
-                \def\probSepVer{0.5}
+                  \def\probSepHor{0.5}
+                  \def\probSepVer{0.5}
 
-                % Problem boxes
-                \tikzstyle{problemType}=[draw, fill=black!10, text width=4cm, minimum height=2cm, align=center];
-                \node[problemType, anchor=south east] (probAboveLeft) at (-\probSepHor/2,\probSepVer/2) 
-                    {Han usa 6 bloques para hacer 2 torres iguales.\\ ¿Cuántos bloques hay en cada torre?
-                    % Han uses 6 blocks to make 2 equal stacks. \\How many blocks are in each stack?
-                    };
-                \node[problemType, anchor=south west] (probAboveRight) at (\probSepHor/2,\probSepVer/2) 
-                    {Kiran usa 6 bloques para armar torres. Cada torre tiene 2 bloques. \\¿Cuántas torres hay?
-                    % Kiran uses 6 blocks to make stacks. Each stack has 2 blocks. \\How many stacks are there?
-                    };
-                \node[problemType, anchor=north east] (probBelowLeft) at (-\probSepHor/2,-\probSepVer/2) 
-                    {Jada usa 6 bloques para construir torres de 3 bloques cada una. \\¿Cuántas torres hay?
-                    % Jada uses 6 blocks to build stacks with 3 blocks each. \\How many stacks are there?
-                    };
-                \node[problemType, anchor=north west] (probBelowRight) at (\probSepHor/2,-\probSepVer/2) 
-                    { May usa 6 bloques para hacer 3 torres iguales\\¿Cuántos bloques hay en cada torre?
-                    % May uses 6 blocks to make 3 equal stacks. \\How many blocks are in each stack?
-                    };
+                  % Problem boxes
+                  \tikzstyle{problemType}=[
+                      rectangle split, 
+                      rectangle split parts=2, 
+                      rectangle split part fill={cyan!30, none}, 
+                      draw, 
+                      text width=4.5cm, 
+                      minimum height=2.5cm, 
+                      align=center
+                  ];
+                  \node[problemType, anchor=south east] (probAboveLeft) at (-\probSepHor/2,\probSepVer/2) 
+                      {{\bf ¿Cuántos en cada grupo?}\nodepart{two}Han usa 6 bloques para hacer 2 torres iguales. ¿Cuántos bloques hay en cada torre?
+                      % Han uses 6 blocks to make 2 equal stacks. \\How many blocks are in each stack?
+                      };
+                  \node[problemType, anchor=south west] (probAboveRight) at (\probSepHor/2,\probSepVer/2) 
+                      {{\bf ¿Cuántos grupos?}\nodepart{two}Kiran usa 6 bloques para armar torres. Cada torre tiene 2 bloques. ¿Cuántas torres hay?
+                      % Kiran uses 6 blocks to make stacks. Each stack has 2 blocks. \\How many stacks are there?
+                      };
+                  \node[problemType, anchor=north east] (probBelowLeft) at (-\probSepHor/2,-\probSepVer/2) 
+                      {{\bf ¿Cuántos grupos?}\nodepart{two}Jada usa 6 bloques para construir torres de 3 bloques cada una. ¿Cuántas torres hay?
+                      % Jada uses 6 blocks to build stacks with 3 blocks each. \\How many stacks are there?
+                      };
+                  \node[problemType, anchor=north west] (probBelowRight) at (\probSepHor/2,-\probSepVer/2) 
+                      {{\bf ¿Cuántos en cada grupo?}\nodepart{two}May usa 6 bloques para hacer 3 torres iguales¿Cuántos bloques hay en cada torre?
+                      % May uses 6 blocks to make 3 equal stacks. \\How many blocks are in each stack?
+                      };
 
-                % Division expressions
-                \node[outer sep=10pt] (expresionTop) at (0,3.5) {$6\div2$};
-                \node[outer sep=10pt] (expresionBottom) at (0,-3.5) {$6\div3$};
+                  % Division expressions
+                  \node[outer sep=10pt] (expresionTop) at (0,3.5) {$6\div2$};
+                  \node[outer sep=10pt] (expresionBottom) at (0,-3.5) {$6\div3$};
 
-                % Diagrams of equal-sized groups
-                \tikzstyle{diagramBlock}=[fill=orange!70, line width=1pt];
-                \node[anchor=east, minimum width=2cm] (diagramLeft) at (-5,0) {
-                    \begin{tikzpicture}[scale=0.5]
-                        \draw[diagramBlock] (0,0) rectangle (1,1);
-                        \draw[diagramBlock] (0,1) rectangle (1,2);
-                        \draw[diagramBlock] (0,2) rectangle (1,3);
+                  % Diagrams of equal-sized groups
+                  \tikzstyle{diagramBlock}=[fill=orange!70, line width=1pt];
+                  \node[anchor=east, minimum width=2.5cm] (diagramLeft) at (-5,0) {
+                      \begin{tikzpicture}[scale=0.5]
+                          \draw[diagramBlock] (0,0) rectangle (1,1);
+                          \draw[diagramBlock] (0,1) rectangle (1,2);
+                          \draw[diagramBlock] (0,2) rectangle (1,3);
 
-                        \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
-                        \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
-                        \draw[diagramBlock] (1.5,2) rectangle (2.5,3);
-                    \end{tikzpicture}
-                };
+                          \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
+                          \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
+                          \draw[diagramBlock] (1.5,2) rectangle (2.5,3);
+                      \end{tikzpicture}
+                  };
 
-                \node[anchor=west, minimum width=2cm] (diagramRight) at (5,0) {
-                    \begin{tikzpicture}[scale=0.5]
-                        \draw[diagramBlock] (0,0) rectangle (1,1);
-                        \draw[diagramBlock] (0,1) rectangle (1,2);
+                  \node[anchor=west, minimum width=2.5cm] (diagramRight) at (5,0) {
+                      \begin{tikzpicture}[scale=0.5]
+                          \draw[diagramBlock] (0,0) rectangle (1,1);
+                          \draw[diagramBlock] (0,1) rectangle (1,2);
 
-                        \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
-                        \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
+                          \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
+                          \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
 
-                        \draw[diagramBlock] (3,0) rectangle (4,1);
-                        \draw[diagramBlock] (3,1) rectangle (4,2);
+                          \draw[diagramBlock] (3,0) rectangle (4,1);
+                          \draw[diagramBlock] (3,1) rectangle (4,2);
 
-                    \end{tikzpicture}
-                };
+                      \end{tikzpicture}
+                  };
 
-                % Arrows
-                \tikzstyle{myarrowstyle}=[->, >=stealth, line width=1pt];
-                \draw[myarrowstyle] (probAboveLeft) |- (expresionTop);
-                \draw[myarrowstyle] (probAboveRight) |- (expresionTop);
-                \draw[myarrowstyle] (probBelowLeft) |- (expresionBottom);
-                \draw[myarrowstyle] (probBelowRight) |- (expresionBottom);
+                  % Arrows
+                  \tikzstyle{myarrowstyle}=[->, >=stealth, line width=1pt];
+                  \draw[myarrowstyle] (probAboveLeft) |- (expresionTop);
+                  \draw[myarrowstyle] (probAboveRight) |- (expresionTop);
+                  \draw[myarrowstyle] (probBelowLeft) |- (expresionBottom);
+                  \draw[myarrowstyle] (probBelowRight) |- (expresionBottom);
 
-                \draw[myarrowstyle] (probAboveLeft) -| (diagramLeft);
-                \draw[myarrowstyle] (probAboveRight) -| (diagramRight);
-                \draw[myarrowstyle] (probBelowLeft) -| (diagramLeft);
-                \draw[myarrowstyle] (probBelowRight) -| (diagramRight);
+                  \draw[myarrowstyle] (probAboveLeft) -| (diagramLeft);
+                  \draw[myarrowstyle] (probAboveRight) -| (diagramRight);
+                  \draw[myarrowstyle] (probBelowLeft) -| (diagramLeft);
+                  \draw[myarrowstyle] (probBelowRight) -| (diagramRight);
 
-                \end{tikzpicture}
-              </latex-image>
-          </image>
-        </figure>
-      </remark>
+                  \end{tikzpicture}
+                </latex-image>
+            </image>
+          </figure>
+        </remark>
       </introduction>
 
       <!-- The first chapter will be bare bones to illustrate the    -->
