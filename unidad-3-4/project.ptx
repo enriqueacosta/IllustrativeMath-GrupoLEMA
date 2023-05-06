@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     This file provides the overall configuration for your PreTeXt
-    project. To edit the content of your document, open `source/main.ptx`
+    project. To edit the content of your document, open `source/grado3-unidad4.ptx`
     (default location).
 -->
 <project>
@@ -9,13 +9,13 @@
     <!-- To build this target, run `pretext build web-est` -->
     <target name="web-est">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-est.ptx</publication>
       <output-dir>output/web-est</output-dir>
     </target>
     <target name="web-prof">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-prof.ptx</publication>
       <output-dir>output/web-prof</output-dir>
       <!-- <stringparam key="commentary" value="yes"/> -->
@@ -25,31 +25,31 @@
     </target>
     <target name="print-est" pdf-method="pdflatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-est.ptx</publication>
       <output-dir>output/print-est</output-dir>
     </target>
     <target name="print-prof" pdf-method="pdflatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-prof.ptx</publication>
       <output-dir>output/print-prof</output-dir>
     </target>
     <target name="print-latex-est">
       <format>latex</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-est.ptx</publication>
       <output-dir>output/print-latex-est</output-dir>
     </target>
     <target name="print-latex-prof">
       <format>latex</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication-prof.ptx</publication>
       <output-dir>output/print-latex-prof</output-dir>
     </target>
     <target name="subset">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/grado3-unidad4.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/subset</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>
