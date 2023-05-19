@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template book provided -->
+<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<!-- EAJ - delete temporary files at -->
+<!-- /private/var/folders/l5/jl9h62ss3152r13gsj8_210h0000gn/T -->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./meta_docinfo.ptx" />
+
+  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your book         -->
+  <book xml:id="gradoWW-unidadXX">
+    <!-- The book needs a title and can have a subtitle  -->
+    <title>Matemáticas Ilustrativas </title>
+    <subtitle>Grado WW - Unidad XX</subtitle>
+
+    <!-- Now we include files containing each main devision.       -->
+
+    <!-- First a frontmatter for prefaces and such. Maybe comment  -->
+    <!-- out for now and write this when the book is more complete -->
+    <xi:include href="./meta_frontmatter.ptx" />
+
+    <!-- <part> -->
+      <!-- <title>Secciones</title> -->
+    <chapter xml:id="gradoWW-unidadXX-seccionA">
+      <title>Sección A - [@@@@@@@@@]  </title>
+      <objectives>
+        <ul>
+          <li><p>[@@@@@@@@@]</p></li>
+        </ul>
+      </objectives>  
+
+      <introduction>
+        <remark component="profesor">
+          <p>
+            Lo nuevo en esta sección es que lo estudiantes ...
+          </p>
+          <p> [@@@@@@@@@] </p>
+        </remark>
+      </introduction>
+
+      <xi:include href="./gradoWW-unidadXX-seccionYY-leccion1.ptx"/>
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionA-ProblemasPractica.ptx"/> -->
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionA-resumen.ptx"/> -->
+    </chapter>
+
+    <chapter xml:id="gradoWW-unidadXX-seccionB">
+      <title>Sección B - [@@@@@@@@@] </title>
+      <objectives>
+        <ul>
+          <li><p>FALTA</p></li>
+        </ul>
+      </objectives>  
+
+      <introduction>
+        <remark component="profesor">
+          <p>
+            Lo nuevo en esta sección es que lo estudiantes ...
+          </p>
+          <p> [@@@@@@@@@] </p>
+        </remark>
+      </introduction>
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionB-leccion6.ptx"/> -->
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionB-ProblemasPractica.ptx"/> -->
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionB-resumen.ptx"/> -->
+    </chapter>
+
+    <chapter xml:id="gradoWW-unidadXX-seccionC">
+      <title>Sección C - [@@@@@@@@@] </title>
+      <objectives>
+        <ul>
+          <li><p>[@@@@@@@@@] </p></li>
+        </ul>
+      </objectives>  
+
+      <introduction>
+        <remark component="profesor">
+          <p>
+            Lo nuevo en esta sección es que lo estudiantes ...
+          </p>
+          <p> [@@@@@@@@@] </p>
+        </remark>
+      </introduction> 
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionC-leccion6.ptx"/> -->
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionC-ProblemasPractica.ptx"/> -->
+      <!-- <xi:include href="./gradoWW-unidadXX-seccionC-resumen.ptx"/> -->
+    </chapter>
+
+
+    <chapter>
+      <title>Glosario</title>
+      <xi:include href="./gradoWW-unidadXX-Glosario.ptx"/>
+    </chapter>
+
+    <!-- Finaly we place the backmatter in its own file and inlcude-->
+    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
+    
+    <!-- </part> -->
+  </book>
+</pretext>
