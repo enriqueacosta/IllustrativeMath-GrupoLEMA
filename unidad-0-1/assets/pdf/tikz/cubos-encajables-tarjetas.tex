@@ -1,0 +1,268 @@
+\documentclass[border=5pt, tikz]{standalone}
+\begin{document}
+
+\definecolor{Green}{RGB}{67,176,42}
+
+\def\unitLength{1in}
+\tikzset{ every path/.append style={ line width=0.7pt
+                             , rounded corners=0.1mm
+                             }
+        , x=\unitLength
+        , y=\unitLength
+        }
+
+\newcommand{\connectingCube}[2]{
+% \connectingCube[optional side length]{bottom left pt}{color}
+  \def\diagAngle{35}    %angle of the side the points into the page
+  \def\diagScale{0.4}   %scale of the side the points into the page
+  \def\diagDentScale{1} %scale of the side the points into dent
+  \begin{scope}[shift={#1}, x=\unitLength,y=\unitLength,z=(\diagAngle:{\diagScale*\unitLength})]
+    % Draw outer cube
+    \draw[fill=#2!50!white] 
+         (0,0,0) rectangle (1,1,0);
+    \draw[fill=#2!50!white] 
+         (1,0,0) -- ++(0,0,1) -- ++(0,1,0) -- ++(0,0,-1) -- cycle;
+    \draw[fill=#2!50!white] 
+         (0,1,0) -- ++(0,0,1) -- ++(1,0,0) -- ++(0,0,-1) -- cycle;
+    % Draw front dent
+    \begin{scope}[shift={(1/3,1/3,0)}, scale=1/3]
+      \draw[fill=#2] (0,0,0) rectangle (1,1,0);
+      \draw (0,0,0) -- ++(0,0,\diagDentScale) -- ({\diagDentScale*\diagScale*cos(\diagAngle)},1,0);
+      \draw (0,0,0)  ++(0,0,\diagDentScale) -- (1,{\diagDentScale*\diagScale*sin(\diagAngle)},0);
+    \end{scope}
+    % Draw right dent
+    \begin{scope}[shift={(1,1/3,1/3)}, scale=1/3]
+      \draw[fill=#2] (0,0,0) -- ++(0,0,1) -- ++(0,1,0) -- ++(0,0,-1) -- cycle;
+      \draw (0,0,1) -- ++({-\diagScale*cos(\diagAngle)},0,0);
+    \end{scope}
+    % Draw top dent
+    \begin{scope}[shift={(1/3,1,1/3)}, scale=1/3]
+      \draw[fill=#2] (0,0,0)  -- ++(1,0,0) -- ++(0,0,1) -- ++(-1,0,0) -- cycle;
+      \draw (0,0,1) -- ++(0,{-\diagScale*sin(\diagAngle)},0);
+    \end{scope}    
+  \end{scope}
+}
+
+% Page size
+\def\pageWidth{11}
+\def\pageHeight{8.5}
+\def\pageMarg{0.3}
+
+% Command to add page and copyright
+\def\preparePage{
+  % Page and dashed lines for the cards
+  \path (0,0) rectangle (\pageWidth,\pageHeight);
+  \node[left] at (\pageWidth,\pageMarg/2) {©2023 Grupo LEMA 
+   (www.grupolema.org). Licencia de uso CC-BY 4.0. 
+    Adaptado IM K–5 Math v.I, ©2021 Illustrative Mathematics® 
+    distribuido con una licencia CC BY 4.0};
+}
+
+% Command to add four cards and define the (centerCard#) coords for their centers
+\def\addFourCards{
+  \draw[dashed] (\pageMarg,\pageMarg) rectangle (\pageWidth-\pageMarg,\pageHeight-\pageMarg);
+  \draw[dashed] (\pageWidth/2,\pageMarg) -- (\pageWidth/2,\pageHeight-\pageMarg);
+  \draw[dashed] (\pageMarg,\pageHeight/2) -- (\pageWidth-\pageMarg,\pageHeight/2);
+
+  
+  \coordinate (centerCard1) at (0.5*\pageMarg+0.25*\pageWidth,-0.5*\pageMarg+0.75*\pageHeight);
+  \coordinate (centerCard2) at (0.5*\pageMarg+0.75*\pageWidth,-0.5*\pageMarg+0.75*\pageHeight);
+  \coordinate (centerCard3) at (0.5*\pageMarg+0.25*\pageWidth,0.5*\pageMarg+0.25*\pageHeight);
+  \coordinate (centerCard4) at (0.5*\pageMarg+0.75*\pageWidth,0.5*\pageMarg+0.25*\pageHeight);
+}
+
+% Size of cubes for all cards
+\def\cubeSide{1.1cm}
+
+% PAGE 1
+\begin{tikzpicture}
+\preparePage
+\addFourCards
+
+\node at (centerCard1) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+      \connectingCube{(0,0)}{Green}
+      \connectingCube{(0,1)}{Green}
+      \connectingCube{(0,2)}{Green}
+      \connectingCube{(0,3)}{cyan}
+      \connectingCube{(1,3)}{cyan}
+      \connectingCube{(2,3)}{cyan}
+      \connectingCube{(2,4)}{red}
+      \connectingCube{(2,5)}{red}
+      \connectingCube{(2,6)}{red}
+  \end{tikzpicture}
+};
+
+\node at (centerCard2) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+      \connectingCube{(0,0)}{yellow}
+      \connectingCube{(0,1)}{yellow}
+      \connectingCube{(0,2)}{yellow}
+      \connectingCube{(0,3)}{yellow}
+      \connectingCube{(0,4)}{yellow}
+      \connectingCube{(-2,5)}{yellow}
+      \connectingCube{(-1,5)}{yellow}
+      \connectingCube{(0,5)}{yellow}
+      \connectingCube{(1,5)}{yellow}
+      \connectingCube{(2,5)}{yellow}
+  \end{tikzpicture}
+};
+
+\node at (centerCard3) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(0,0)}{red}
+      \connectingCube{(0,1)}{red}
+      \connectingCube{(0,2)}{red}
+      \connectingCube{(0,3)}{red}
+      \connectingCube{(0,4)}{red}
+      \connectingCube{(1,0)}{red}
+      \connectingCube{(2,0)}{red}
+      \connectingCube{(3,0)}{red}
+      \connectingCube{(4,0)}{red}
+  \end{tikzpicture}
+};
+
+\node at (centerCard4) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+      \connectingCube{(0,0)}{cyan}
+      \connectingCube{(0,1)}{cyan}
+      \connectingCube{(0,2)}{cyan}
+      \connectingCube{(0,3)}{cyan}
+      \connectingCube{(1,0)}{cyan}
+      \connectingCube{(2,0)}{cyan}
+      \connectingCube{(3,0)}{cyan}
+      \connectingCube{(4,0)}{cyan}
+      \connectingCube{(4,1)}{cyan}
+      \connectingCube{(4,2)}{cyan}
+      \connectingCube{(4,3)}{cyan}
+  \end{tikzpicture}
+};
+
+\end{tikzpicture}
+
+
+% PAGE 2
+\begin{tikzpicture}
+\preparePage
+\addFourCards
+
+\node at (centerCard1) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(0,0)}{Green}
+    \connectingCube{(0,1)}{Green}
+    \connectingCube{(0,2)}{Green}
+    \connectingCube{(0,3)}{Green}
+    \connectingCube{(0,4)}{Green}
+    \connectingCube{(1,2)}{red}
+    \connectingCube{(2,2)}{red}
+    \connectingCube{(3,0)}{Green}
+    \connectingCube{(3,1)}{Green}
+    \connectingCube{(3,2)}{Green}
+    \connectingCube{(3,3)}{Green}
+    \connectingCube{(3,4)}{Green}
+  \end{tikzpicture}
+};
+
+\node at (centerCard2) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(0,0)}{cyan}
+    \connectingCube{(1,0)}{cyan}
+    \connectingCube{(2,0)}{cyan}
+    \connectingCube{(3,0)}{cyan}
+    \connectingCube{(4,0)}{cyan}
+    \connectingCube{(0,1)}{yellow}
+    \connectingCube{(2,1)}{yellow}
+    \connectingCube{(2,2)}{yellow}
+    \connectingCube{(4,1)}{yellow}
+    \connectingCube{(4,2)}{yellow}
+    \connectingCube{(4,3)}{yellow}
+  \end{tikzpicture}
+};
+
+\node at (centerCard3) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(0,0)}{Green}
+    \connectingCube{(0,1)}{Green}
+    \connectingCube{(0,2)}{Green}
+    \connectingCube{(0,3)}{Green}
+    \connectingCube{(0,4)}{Green}
+    \connectingCube{(1,0)}{red}
+    \connectingCube{(2,0)}{red}
+    \connectingCube{(3,0)}{red}
+    \connectingCube{(4,0)}{red}
+    \connectingCube{(1,2)}{red}
+    \connectingCube{(2,2)}{red}
+    \connectingCube{(3,2)}{red}
+    \connectingCube{(4,2)}{red}
+    \connectingCube{(1,4)}{red}
+    \connectingCube{(2,4)}{red}
+    \connectingCube{(3,4)}{red}
+    \connectingCube{(4,4)}{red}
+  \end{tikzpicture}
+};
+
+\node at (centerCard4) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+     \connectingCube{(0,0)}{cyan}
+     \connectingCube{(1,0)}{cyan}
+     \connectingCube{(2,0)}{cyan}
+     \connectingCube{(3,0)}{cyan}
+     \connectingCube{(4,0)}{cyan}
+     \connectingCube{(2,1)}{red}
+     \connectingCube{(2,2)}{red}
+     \connectingCube{(2,3)}{red}
+     \connectingCube{(2,4)}{red}
+     \connectingCube{(2,5)}{red}
+     \connectingCube{(0,6)}{Green}
+     \connectingCube{(1,6)}{Green}
+     \connectingCube{(2,6)}{Green}
+     \connectingCube{(3,6)}{Green}
+     \connectingCube{(4,6)}{Green}
+  \end{tikzpicture}
+};
+
+\end{tikzpicture}
+
+% PAGE 3
+\begin{tikzpicture}
+\preparePage
+\addFourCards
+
+\node at (centerCard1) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(0,0)}{red}
+    \connectingCube{(1,0)}{red}
+    \connectingCube{(2,0)}{red}
+    \connectingCube{(3,0)}{red}
+    \connectingCube{(4,0)}{red}
+    \connectingCube{(0,1)}{Green}
+    \connectingCube{(0,2)}{Green}
+    \connectingCube{(0,3)}{Green}
+    \connectingCube{(0,4)}{Green}
+    \connectingCube{(2,1)}{yellow}
+    \connectingCube{(2,2)}{yellow}
+    \connectingCube{(2,3)}{yellow}
+    \connectingCube{(4,1)}{cyan}
+    \connectingCube{(4,2)}{cyan}
+  \end{tikzpicture}
+};
+
+\node at (centerCard2) {
+  \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
+    \connectingCube{(-1,0)}{cyan}
+    \connectingCube{(-1,2)}{Green}
+    \connectingCube{(-1,4)}{red}
+    \connectingCube{(0,0)}{yellow}
+    \connectingCube{(0,1)}{yellow}
+    \connectingCube{(0,2)}{yellow}
+    \connectingCube{(0,3)}{yellow}
+    \connectingCube{(0,4)}{yellow}
+    \connectingCube{(0,5)}{yellow}
+    \connectingCube{(1,1)}{red}
+    \connectingCube{(1,3)}{cyan}
+    \connectingCube{(1,5)}{Green}
+  \end{tikzpicture}
+};
+
+\end{tikzpicture}
+\end{document}
