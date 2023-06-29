@@ -10,13 +10,13 @@
     <target name="web-est">
       <format>html</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-est.ptx</publication>
+      <publication>../meta/publication/publication-est.ptx</publication>
       <output-dir>output/web-est</output-dir>
     </target>
     <target name="web-prof">
       <format>html</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-prof.ptx</publication>
+      <publication>../meta/publication/publication-prof.ptx</publication>
       <output-dir>output/web-prof</output-dir>
       <!-- <stringparam key="commentary" value="yes"/> -->
       <!-- EAJ: custom-styles.css está en el folder [assets] -->
@@ -26,31 +26,31 @@
     <target name="print-est" pdf-method="pdflatex">
       <format>pdf</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-est.ptx</publication>
+      <publication>../meta/publication/publication-est.ptx</publication>
       <output-dir>output/print-est</output-dir>
     </target>
     <target name="print-prof" pdf-method="pdflatex">
       <format>pdf</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-prof.ptx</publication>
+      <publication>../meta/publication/publication-prof.ptx</publication>
       <output-dir>output/print-prof</output-dir>
     </target>
     <target name="print-latex-est">
       <format>latex</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-est.ptx</publication>
+      <publication>../meta/publication/publication-est.ptx</publication>
       <output-dir>output/print-latex-est</output-dir>
     </target>
     <target name="print-latex-prof">
       <format>latex</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication-prof.ptx</publication>
+      <publication>../meta/publication/publication-prof.ptx</publication>
       <output-dir>output/print-latex-prof</output-dir>
     </target>
     <target name="subset">
       <format>html</format>
       <source>source/grado3-unidad4.ptx</source>
-      <publication>publication/publication.ptx</publication>
+      <publication>../meta/publication/publication.ptx</publication>
       <output-dir>output/subset</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>
       <!-- edit this to change the section/chapter/etc. to include in your subset build -->
