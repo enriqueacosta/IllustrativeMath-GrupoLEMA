@@ -12,11 +12,11 @@
         }
 
 \newcommand{\connectingCube}[2]{
-% \connectingCube[optional side length]{bottom left pt}{color}
-  \def\diagAngle{35}    %angle of the side the points into the page
-  \def\diagScale{0.4}   %scale of the side the points into the page
-  \def\diagDentScale{1} %scale of the side the points into dent
-  \begin{scope}[shift={#1}, x=\unitLength,y=\unitLength,z=(\diagAngle:{\diagScale*\unitLength})]
+% \connectingCube{bottom left pt}{color}
+  \def\diagAngle{35}     %angle of the side the points into the page
+  \def\diagScale{0.4}    %scale of the side the points into the page
+  \def\diagDentScale{1}  %scale of the side the points into dent
+  \begin{scope}[shift={#1},x=\unitLength,y=\unitLength,z=(\diagAngle:{\diagScale*\unitLength})]
     % Draw outer cube
     \draw[fill=#2!50!white] 
          (0,0,0) rectangle (1,1,0);
@@ -43,6 +43,26 @@
   \end{scope}
 }
 
+\newcommand{\connectingTrainHor}[3]{
+%\connectingTrainHor{(coord of bottom left cube)}{number of cubes}{color}
+  \begin{scope}[shift={#1}]
+    \pgfmathsetmacro{\last}{#2-1}
+    \foreach \x in {0,1,...,\last}{
+      \connectingCube{(\x,0)}{#3}
+    }
+  \end{scope}
+}
+
+\newcommand{\connectingTrainVer}[3]{
+%\connectingTrainHor{(coord of bottom left cube)}{number of cubes}{color}
+  \begin{scope}[shift={#1}]
+    \pgfmathsetmacro{\last}{#2-1}
+    \foreach \y in {0,1,...,\last}{
+      \connectingCube{(0,\y)}{#3}
+    }
+  \end{scope}
+}
+
 % Page size
 \def\pageWidth{11}
 \def\pageHeight{8.5}
@@ -63,12 +83,11 @@
   \draw[dashed] (\pageMarg,\pageMarg) rectangle (\pageWidth-\pageMarg,\pageHeight-\pageMarg);
   \draw[dashed] (\pageWidth/2,\pageMarg) -- (\pageWidth/2,\pageHeight-\pageMarg);
   \draw[dashed] (\pageMarg,\pageHeight/2) -- (\pageWidth-\pageMarg,\pageHeight/2);
-
   
   \coordinate (centerCard1) at (0.5*\pageMarg+0.25*\pageWidth,-0.5*\pageMarg+0.75*\pageHeight);
-  \coordinate (centerCard2) at (0.5*\pageMarg+0.75*\pageWidth,-0.5*\pageMarg+0.75*\pageHeight);
+  \coordinate (centerCard2) at (-0.5*\pageMarg+0.75*\pageWidth,-0.5*\pageMarg+0.75*\pageHeight);
   \coordinate (centerCard3) at (0.5*\pageMarg+0.25*\pageWidth,0.5*\pageMarg+0.25*\pageHeight);
-  \coordinate (centerCard4) at (0.5*\pageMarg+0.75*\pageWidth,0.5*\pageMarg+0.25*\pageHeight);
+  \coordinate (centerCard4) at (-0.5*\pageMarg+0.75*\pageWidth,0.5*\pageMarg+0.25*\pageHeight);
 }
 
 % Size of cubes for all cards
@@ -81,60 +100,35 @@
 
 \node at (centerCard1) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-      \connectingCube{(0,0)}{Green}
-      \connectingCube{(0,1)}{Green}
-      \connectingCube{(0,2)}{Green}
-      \connectingCube{(0,3)}{cyan}
-      \connectingCube{(1,3)}{cyan}
-      \connectingCube{(2,3)}{cyan}
-      \connectingCube{(2,4)}{red}
-      \connectingCube{(2,5)}{red}
-      \connectingCube{(2,6)}{red}
+    % cube (1,1) is bottom left one
+    \connectingTrainVer{(1,1)}{3}{Green}
+    \connectingTrainHor{(1,4)}{3}{cyan}
+    \connectingTrainVer{(3,5)}{3}{red}
   \end{tikzpicture}
 };
 
 \node at (centerCard2) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-      \connectingCube{(0,0)}{yellow}
-      \connectingCube{(0,1)}{yellow}
-      \connectingCube{(0,2)}{yellow}
-      \connectingCube{(0,3)}{yellow}
-      \connectingCube{(0,4)}{yellow}
-      \connectingCube{(-2,5)}{yellow}
-      \connectingCube{(-1,5)}{yellow}
-      \connectingCube{(0,5)}{yellow}
-      \connectingCube{(1,5)}{yellow}
-      \connectingCube{(2,5)}{yellow}
+    % cube (1,1) is bottom one
+    \connectingTrainVer{(1,1)}{6}{yellow!70!red}
+    \connectingTrainHor{(-1,6)}{5}{yellow!70!red}
   \end{tikzpicture}
 };
 
 \node at (centerCard3) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(0,0)}{red}
-      \connectingCube{(0,1)}{red}
-      \connectingCube{(0,2)}{red}
-      \connectingCube{(0,3)}{red}
-      \connectingCube{(0,4)}{red}
-      \connectingCube{(1,0)}{red}
-      \connectingCube{(2,0)}{red}
-      \connectingCube{(3,0)}{red}
-      \connectingCube{(4,0)}{red}
+    % cube (1,1) is bottom left one
+    \connectingTrainHor{(1,1)}{5}{red}
+    \connectingTrainVer{(1,2)}{4}{red}
   \end{tikzpicture}
 };
 
 \node at (centerCard4) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-      \connectingCube{(0,0)}{cyan}
-      \connectingCube{(0,1)}{cyan}
-      \connectingCube{(0,2)}{cyan}
-      \connectingCube{(0,3)}{cyan}
-      \connectingCube{(1,0)}{cyan}
-      \connectingCube{(2,0)}{cyan}
-      \connectingCube{(3,0)}{cyan}
-      \connectingCube{(4,0)}{cyan}
-      \connectingCube{(4,1)}{cyan}
-      \connectingCube{(4,2)}{cyan}
-      \connectingCube{(4,3)}{cyan}
+    % cube (1,1) is bottom left one
+    \connectingTrainHor{(1,1)}{5}{cyan}
+    \connectingTrainVer{(1,2)}{3}{cyan}
+    \connectingTrainVer{(5,2)}{3}{cyan}
   \end{tikzpicture}
 };
 
@@ -148,76 +142,39 @@
 
 \node at (centerCard1) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(0,0)}{Green}
-    \connectingCube{(0,1)}{Green}
-    \connectingCube{(0,2)}{Green}
-    \connectingCube{(0,3)}{Green}
-    \connectingCube{(0,4)}{Green}
-    \connectingCube{(1,2)}{red}
-    \connectingCube{(2,2)}{red}
-    \connectingCube{(3,0)}{Green}
-    \connectingCube{(3,1)}{Green}
-    \connectingCube{(3,2)}{Green}
-    \connectingCube{(3,3)}{Green}
-    \connectingCube{(3,4)}{Green}
+    % cube (1,1) is bottom left one
+    \connectingTrainVer{(1,1)}{5}{Green}
+    \connectingTrainHor{(2,3)}{2}{red}
+    \connectingTrainVer{(4,1)}{5}{Green}
   \end{tikzpicture}
 };
 
 \node at (centerCard2) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(0,0)}{cyan}
-    \connectingCube{(1,0)}{cyan}
-    \connectingCube{(2,0)}{cyan}
-    \connectingCube{(3,0)}{cyan}
-    \connectingCube{(4,0)}{cyan}
-    \connectingCube{(0,1)}{yellow}
-    \connectingCube{(2,1)}{yellow}
-    \connectingCube{(2,2)}{yellow}
-    \connectingCube{(4,1)}{yellow}
-    \connectingCube{(4,2)}{yellow}
-    \connectingCube{(4,3)}{yellow}
+    % cube (1,1) is bottom left one
+    \connectingTrainHor{(1,1)}{5}{cyan}
+    \connectingCube{(1,2)}{yellow!70!red}
+    \connectingTrainVer{(3,2)}{2}{yellow!70!red}
+    \connectingTrainVer{(5,2)}{3}{yellow!70!red}
   \end{tikzpicture}
 };
 
 \node at (centerCard3) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(0,0)}{Green}
-    \connectingCube{(0,1)}{Green}
-    \connectingCube{(0,2)}{Green}
-    \connectingCube{(0,3)}{Green}
-    \connectingCube{(0,4)}{Green}
-    \connectingCube{(1,0)}{red}
-    \connectingCube{(2,0)}{red}
-    \connectingCube{(3,0)}{red}
-    \connectingCube{(4,0)}{red}
-    \connectingCube{(1,2)}{red}
-    \connectingCube{(2,2)}{red}
-    \connectingCube{(3,2)}{red}
-    \connectingCube{(4,2)}{red}
-    \connectingCube{(1,4)}{red}
-    \connectingCube{(2,4)}{red}
-    \connectingCube{(3,4)}{red}
-    \connectingCube{(4,4)}{red}
+    % cube (1,1) is bottom left one
+    \connectingTrainVer{(1,1)}{5}{Green}
+    \connectingTrainHor{(2,1)}{4}{red}
+    \connectingTrainHor{(2,3)}{4}{red}
+    \connectingTrainHor{(2,5)}{4}{red}
   \end{tikzpicture}
 };
 
 \node at (centerCard4) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-     \connectingCube{(0,0)}{cyan}
-     \connectingCube{(1,0)}{cyan}
-     \connectingCube{(2,0)}{cyan}
-     \connectingCube{(3,0)}{cyan}
-     \connectingCube{(4,0)}{cyan}
-     \connectingCube{(2,1)}{red}
-     \connectingCube{(2,2)}{red}
-     \connectingCube{(2,3)}{red}
-     \connectingCube{(2,4)}{red}
-     \connectingCube{(2,5)}{red}
-     \connectingCube{(0,6)}{Green}
-     \connectingCube{(1,6)}{Green}
-     \connectingCube{(2,6)}{Green}
-     \connectingCube{(3,6)}{Green}
-     \connectingCube{(4,6)}{Green}
+    % cube (1,1) is bottom left one
+    \connectingTrainHor{(1,1)}{5}{cyan}
+    \connectingTrainVer{(3,2)}{5}{red}
+    \connectingTrainHor{(1,7)}{5}{Green}
   \end{tikzpicture}
 };
 
@@ -230,37 +187,24 @@
 
 \node at (centerCard1) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(0,0)}{red}
-    \connectingCube{(1,0)}{red}
-    \connectingCube{(2,0)}{red}
-    \connectingCube{(3,0)}{red}
-    \connectingCube{(4,0)}{red}
-    \connectingCube{(0,1)}{Green}
-    \connectingCube{(0,2)}{Green}
-    \connectingCube{(0,3)}{Green}
-    \connectingCube{(0,4)}{Green}
-    \connectingCube{(2,1)}{yellow}
-    \connectingCube{(2,2)}{yellow}
-    \connectingCube{(2,3)}{yellow}
-    \connectingCube{(4,1)}{cyan}
-    \connectingCube{(4,2)}{cyan}
+    % cube (1,1) is bottom left one
+    \connectingTrainHor{(1,1)}{5}{red}
+    \connectingTrainVer{(1,2)}{4}{Green}
+    \connectingTrainVer{(3,2)}{3}{yellow!70!red}
+    \connectingTrainVer{(5,2)}{2}{cyan}
   \end{tikzpicture}
 };
 
 \node at (centerCard2) {
   \begin{tikzpicture}[scale={\cubeSide/\unitLength}]
-    \connectingCube{(-1,0)}{cyan}
-    \connectingCube{(-1,2)}{Green}
-    \connectingCube{(-1,4)}{red}
-    \connectingCube{(0,0)}{yellow}
-    \connectingCube{(0,1)}{yellow}
-    \connectingCube{(0,2)}{yellow}
-    \connectingCube{(0,3)}{yellow}
-    \connectingCube{(0,4)}{yellow}
-    \connectingCube{(0,5)}{yellow}
-    \connectingCube{(1,1)}{red}
-    \connectingCube{(1,3)}{cyan}
-    \connectingCube{(1,5)}{Green}
+    % cube (1,1) is bottom left one
+    \connectingCube{(1,1)}{cyan}
+    \connectingCube{(1,3)}{Green}
+    \connectingCube{(1,5)}{red}
+    \connectingTrainVer{(2,1)}{6}{yellow!70!red}
+    \connectingCube{(3,2)}{red}
+    \connectingCube{(3,4)}{cyan}
+    \connectingCube{(3,6)}{Green}
   \end{tikzpicture}
 };
 

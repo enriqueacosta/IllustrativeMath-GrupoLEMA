@@ -11,7 +11,7 @@
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="./meta_docinfo.ptx" />
+  <xi:include href="../../meta/meta_docinfo.ptx" />
 
   <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
@@ -32,16 +32,36 @@
       <title>Sección A - Exploremos nuestras herramientas </title>
       <objectives>
         <ul>
-          <li><p> [@@@@@@@@@] </p></li>
+          <li>Conocer y usar herramientas matemáticas.</li>
+          <li>Compartir ideas matemáticas con un compañero.</li>
         </ul>
       </objectives>  
 
       <introduction>
         <remark component="profesor">
+          
           <p>
-            Lo nuevo en esta sección es que lo estudiantes ...
+            En esta sección, los estudiantes interactúan con herramientas matemáticas que usarán durante todo el grado y exploran su propósito.
           </p>
-          <p> [@@@@@@@@@] </p>
+          <p>
+            Igualmente, los estudiantes construyen una comprensión compartida de lo que significa hacer matemáticas y ser parte de una comunidad matemática en la que se valora la contribución de todos. Colaboran para crear normas y comparten ideas. Las ideas de lo que significa hacer matemáticas y las normas para la comunidad matemática que están formando van quedando plazmadas en el póster de "Comunidad matemática".
+          </p>
+          <p> Se sugiere evaluar formativamente los conceptos y habilidades de conteo de los estudiantes.
+          </p>
+          <sidebyside widths="20% 20% 20% 20%" margins="auto" valign="top">
+            <image source="tikz-file-128850" width="50%">
+              <description></description>
+            </image>
+            <image source="tikz-file-147344" width="50%">
+              <description></description>
+            </image>
+            <image source="K.1.A Beta Student Workbook.Geoblocks.png" width="50%">
+              <description></description>
+            </image>
+            <image source="K.1.A Beta Student Workbook.RedYellowChips_withShadow.png" width="50%">
+              <description></description>
+            </image>
+          </sidebyside>
         </remark>
       </introduction>
 
@@ -51,7 +71,7 @@
       <xi:include href="./grado0-unidad1-seccionA-leccion4.ptx"/>
       <xi:include href="./grado0-unidad1-seccionA-leccion5.ptx"/>
       <!-- <xi:include href="./grado0-unidad1-seccionA-ProblemasPractica.ptx"/> -->
-      <!-- <xi:include href="./grado0-unidad1-seccionA-resumen.ptx"/> -->
+      <xi:include href="./grado0-unidad1-seccionA-resumen.ptx"/>
     </chapter>
 
     <chapter xml:id="grado0-unidad1-seccionB">
