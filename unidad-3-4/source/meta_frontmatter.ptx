@@ -4,14 +4,9 @@
 <!-- works.                                                        -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_frontmatter">
-  <titlepage>
-    <author>
-      <personname>Adaptación del Grupo LEMA (<url href="https://www.grupolema.org"/>)</personname>
-      <department><url href="https://www.grupolema.org"/></department>
-      <!-- <institution>My school</institution> -->
-    </author>
-    <date><today/></date>
-  </titlepage>
+  
+  <!-- contenido de <titlepage> que es igual para todas las unidades-->
+  <xi:include href="../../meta/meta_titlepage.ptx" />
 
   <preface>
     <title>Presentación de la unidad</title>
