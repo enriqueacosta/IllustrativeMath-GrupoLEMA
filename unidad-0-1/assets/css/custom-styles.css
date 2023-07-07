@@ -51,8 +51,10 @@ div [id='content'] {
 }*/
 
 
-
-
+/* EAJ - fondo de assemblage-like */
+article[id*='assemblage'] {
+  background-color: #e9eff5 !important;
+}
 
 /**************************************
   EAJ - sigue el [custom-styles.css] de Oscar Levin en el que 
@@ -183,15 +185,15 @@ div [id='content'] {
   border-bottom: none !important;
 } */
 
-article.theorem-like {
+/*article.theorem-like {*/
     /* border-left: solid 1pt #d1d1d1 !important; */
     /* border-right: solid 1pt #d1d1d1 !important; */
     /* background-color: #f0f0f0; */
-}
+/*}*/
 
-article.theorem-like:after {
+/*article.theorem-like:after {*/
   /* border-bottom: none !important; */
-}
+/*}*/
 
 /*style toc */
 /*#toc ul li a, #toc ul li a:link, #toc ul li a:visited {
