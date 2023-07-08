@@ -6,92 +6,137 @@
 <!-- those files to see more pretext features                    -->
 
 <!-- EAJ - delete temporary files at -->
-<!-- /private/var/folders/l5/jl9h62ss3152r13gsj8_210h0000gn/T -->
+<!-- /private/var/folders/b3/dcqdqcz54f9b9pqrbwv35_gh0000gn/T/ -->
 
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="./meta_docinfo.ptx" />
+  <xi:include href="../../meta/meta_docinfo.ptx" />
 
   <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
-  <book xml:id="gradoWW-unidadXX">
+  <book xml:id="gradoVV-unidadXX">
     <!-- The book needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado VV - Unidad XX</subtitle>
 
-    <!-- Now we include files containing each main devision.       -->
+    <!-- Now we include files containing each main division.       -->
 
-    <!-- First a frontmatter for prefaces and such. Maybe comment  -->
-    <!-- out for now and write this when the book is more complete -->
-    <xi:include href="./meta_frontmatter.ptx" />
+    <frontmatter>
 
-    <!-- <part> -->
-      <!-- <title>Secciones</title> -->
-    <chapter xml:id="gradoVV-unidadXX-seccionA">
-      <title>Sección A - [@@@@@@@@@]  </title>
-      <objectives>
-        <ul>
-          <li><p>[@@@@@@@@@]</p></li>
-        </ul>
-      </objectives>  
+      <!-- contenido de <titlepage> que es igual para todas las unidades-->
+      <xi:include href="../../meta/meta_titlepage.ptx" />
 
-      <introduction>
+      <!-- You can have more than one preface. -->
+      <preface>
+        <title>Presentación de la unidad</title>
+        <p>
+          Secciones:
+          <ul>
+            <li>Sección A: [@@@@@@@@@] </li>
+            <li>Sección B: [@@@@@@@@@] </li>
+            <li>Sección C: [@@@@@@@@@] </li>
+          </ul>
+        </p>
         <remark component="profesor">
           <p>
-            Lo nuevo en esta sección es que lo estudiantes ...
+            En esta unidad los estudiantes aprenden [@@@@@@@@@]
           </p>
-          <p> [@@@@@@@@@] </p>
         </remark>
-      </introduction>
+      </preface>
+      <!-- You can have more than one preface. -->
 
-      <xi:include href="./gradoVV-unidadXX-seccionYY-leccion1.ptx"/>
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../../meta/meta_colophon.ptx" />
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../../meta/meta_source.ptx" />
+
+      <!-- <dedication> -->
+      <!-- </dedication> -->
+
+      <!-- <acknowledgement> -->
+       <!--  <p>
+          I would like to thank...
+        </p> -->
+      <!-- </acknowledgement> -->    
+    </frontmatter>
+
+    <!-- <part> -->
+
+    <chapter xml:id="gradoVV-unidadXX-seccionA">
+      <title>Sección A - [@@@@@@@@@@@@@@@@@] </title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gradoVV-unidadXX-seccionA.ptx" />
+      
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gradoVV-unidadXX-seccionA-leccion1.ptx"/>
+      <xi:include href="./gradoVV-unidadXX-seccionA-leccion2.ptx"/>
+      <xi:include href="./gradoVV-unidadXX-seccionA-leccion3.ptx"/>
+      <xi:include href="./gradoVV-unidadXX-seccionA-leccion4.ptx"/>
+      <xi:include href="./gradoVV-unidadXX-seccionA-leccion5.ptx"/>
+
+      <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionA-ProblemasPractica.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-resumen.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
+      <xi:include href="./gradoVV-unidadXX-seccionA-resumen.ptx"/>
     </chapter>
 
     <chapter xml:id="gradoVV-unidadXX-seccionB">
-      <title>Sección B - [@@@@@@@@@] </title>
-      <objectives>
-        <ul>
-          <li><p>FALTA</p></li>
-        </ul>
-      </objectives>  
+      <title>Sección B - [@@@@@@@@@@@@@@@@@]</title>
 
-      <introduction>
-        <remark component="profesor">
-          <p>
-            Lo nuevo en esta sección es que lo estudiantes ...
-          </p>
-          <p> [@@@@@@@@@] </p>
-        </remark>
-      </introduction>
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gradoVV-unidadXX-seccionB.ptx" />
+            
+      <!-- Lecciones de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion6.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion7.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion8.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion9.ptx"/> -->
+
+      <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionB-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionB-resumen.ptx"/> -->
     </chapter>
 
     <chapter xml:id="gradoVV-unidadXX-seccionC">
-      <title>Sección C - [@@@@@@@@@] </title>
-      <objectives>
-        <ul>
-          <li><p>[@@@@@@@@@] </p></li>
-        </ul>
-      </objectives>  
+      <title>Sección C - [@@@@@@@@@@@@@@@@@]</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gradoVV-unidadXX-seccionC.ptx" />
+            
+      <!-- Lecciones de la sección -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-leccion10.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-leccion11.ptx"/> -->
 
-      <introduction>
-        <remark component="profesor">
-          <p>
-            Lo nuevo en esta sección es que lo estudiantes ...
-          </p>
-          <p> [@@@@@@@@@] </p>
-        </remark>
-      </introduction> 
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-leccion6.ptx"/> -->
+      <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionC-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionC-resumen.ptx"/> -->
     </chapter>
 
+
+    <chapter xml:id="gradoVV-unidadXX-seccionD">
+      <title>Sección D - [@@@@@@@@@@@@@@@@@]</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gradoVV-unidadXX-seccionD.ptx" />
+            
+      <!-- Lecciones de la sección -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-leccion10.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-leccion11.ptx"/> -->
+
+      <!-- Problemas de práctica de la sección -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-resumen.ptx"/> -->
+    </chapter>
 
     <chapter>
       <title>Glosario</title>

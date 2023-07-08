@@ -20,200 +20,160 @@
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado 3 - Unidad 4</subtitle>
 
-    <!-- Now we include files containing each main devision.       -->
+    <!-- <xi:include href="./meta_frontmatter.ptx" /> -->
+    <frontmatter>
+      
+      <!-- contenido de <titlepage> que es igual para todas las unidades-->
+      <xi:include href="../../meta/meta_titlepage.ptx" />
 
-    <!-- First a frontmatter for prefaces and such. Maybe comment  -->
-    <!-- out for now and write this when the book is more complete -->
-    <xi:include href="./meta_frontmatter.ptx" />
-
-    <!-- <part> -->
-      <!-- <title>Secciones</title> -->
-    <chapter xml:id="grado3-unidad4-seccionA">
-      <title>Sección A - ¿Qué es la división?</title>
-      <objectives>
-        <ul>
-          <li><p>Representar y solucionar problemas del tipo “¿Cuántos grupos?” y “¿Cuántos en cada grupo?”</p></li>
-        </ul>
-      </objectives>  
-
-      <introduction>
+      <preface>
+        <title>Presentación de la unidad</title>
+        <p>
+          Secciones:
+          <ul>
+            <li>Sección A: ¿Qué es la división?</li>
+            <li>Sección B: Relacionemos la multiplicación y la división</li>
+            <li>Sección C: Multipliquemos números más grandes</li>
+            <li>Sección D: Dividamos números más grandes</li>
+          </ul>
+        </p>
         <remark component="profesor">
           <p>
-            Lo nuevo en esta sección es que lo estudiantes ...
-            <ul>
-              <li>van a conocer la división, el término <term>divisor</term> y el símbolo <m>\div</m>.</li>
-              <li>van a ver que un mismo diagrama de grupos iguales o una misma expresión <m>a\div b</m> puede representar dos situaciones muy distintas (ver la figura).</li>
-            </ul>
+            En esta unidad los estudiantes aprenden sobre el concepto de división en términos de grupos iguales y su relación con la multiplicación.
           </p>
-  <!--         <p>
-            En esta sección los estudiantes van a conocer el significado de la división como separar en grupos iguales. Ellos van a interpretan descripciones, diagramas y expresiones que representan situaciones de división de los dos tipos: "¿Cuántos grupos?" y "¿Cuántos hay en cada grupo?".
-          </p> -->
           <p>
-            En unidades anteriores los estudiantes han estado trabajando en la multiplicación como el número total dado un número de grupos iguales y en número en cada grupo. Han adquirido práctica en asociar situaciones de grupos iguales con expresiones de multiplicación <m>a\times b</m> y diagramas de grupos iguales. Todo esto será importante en esta sección.
+            Por ejemplo, <m>30\div 5</m> puede representar 30 objetos en 5 grupos iguales, o 30 objetos en grupos de 5 objetos cada uno.
           </p>
-          
-          <figure>
-            <caption>La figura resume cómo distintos tipos de problemas pueden corresponder a la misma expresión de división y al mismo diagrama. En <m>6\div 3</m> el 3 puede ser el número de grupos, y el número de elementos en cada grupo. Los estudiantes van a trabajar con todas estas representaciones y correspondencias en esta sección.</caption>
-            <!-- <image xml:id="tipos-problemas-division" width="100%"> -->
-            <image source="tikz-source/tikz-file-3-4-A-BlockDiagram" xml:id="tipos-problemas-division" width="100%">
-              <description>
-                Mismas expresiones o dibujos, distintos tipos de problemas.
-              </description>
-              <!-- <latex-image>
-                \begin{tikzpicture}[font=\sffamily]
-                \usetikzlibrary{shapes,arrows,calc,fit,backgrounds,shapes.multipart}
+          <sbsgroup widths="45% 45%">
+            <sidebyside>
+              <p>5 grupos</p>
+              <p>Grupos de 5</p>
+            </sidebyside>
+            <sidebyside>
+              <image source="svg-source/tikz-file-147473">
+                <description></description>
+              </image>
+              <image source="svg-source/tikz-file-147472">
+                <description></description>
+              </image>
+            </sidebyside>
+          </sbsgroup>
 
-                \def\probSepHor{0.5}
-                \def\probSepVer{1}
-
-                % Problem boxes
-                \tikzstyle{problemType}=[
-                    rectangle split, 
-                    rectangle split parts=2, 
-                    rectangle split part fill={cyan!30, none}, 
-                    draw, 
-                    text width=4.5cm, 
-                    minimum height=2.5cm, 
-                    align=center
-                ];
-                \node[problemType, anchor=south east] (probAboveLeft) at (-\probSepHor/2,\probSepVer/2) 
-                    {{\bfseries ¿Cuántos en cada grupo?}\nodepart{two}Han usa 6 bloques para hacer 2 torres iguales. ¿Cuántos bloques hay en cada torre?
-                    % Han uses 6 blocks to make 2 equal stacks. \\How many blocks are in each stack?
-                    };
-                \node[problemType, anchor=south west] (probAboveRight) at (\probSepHor/2,\probSepVer/2) 
-                    {{\bfseries ¿Cuántos grupos?}\nodepart{two}Kiran usa 6 bloques para armar torres. Cada torre tiene 2 bloques. ¿Cuántas torres hay?
-                    % Kiran uses 6 blocks to make stacks. Each stack has 2 blocks. \\How many stacks are there?
-                    };
-                \node[problemType, anchor=north east] (probBelowLeft) at (-\probSepHor/2,-\probSepVer/2) 
-                    {{\bfseries ¿Cuántos grupos?}\nodepart{two}Jada usa 6 bloques para construir torres de 3 bloques cada una. ¿Cuántas torres hay?
-                    % Jada uses 6 blocks to build stacks with 3 blocks each. \\How many stacks are there?
-                    };
-                \node[problemType, anchor=north west] (probBelowRight) at (\probSepHor/2,-\probSepVer/2) 
-                    {{\bfseries ¿Cuántos en cada grupo?}\nodepart{two}May usa 6 bloques para hacer 3 torres iguales. ¿Cuántos bloques hay en cada torre?
-                    % May uses 6 blocks to make 3 equal stacks. \\How many blocks are in each stack?
-                    };
-
-                % Division expressions
-                \node[outer sep=10pt] (expresionTop) at (0,3.5) {$6\div2$};
-                \node[outer sep=10pt] (expresionBottom) at (0,-3.5) {$6\div3$};
-
-                % Diagrams of equal-sized groups
-                \tikzstyle{diagramBlock}=[fill=orange!70, line width=1pt];
-                \node[anchor=east, minimum width=2.5cm] (diagramLeft) at (-5,0) {
-                    \begin{tikzpicture}[scale=0.5]
-                        \draw[diagramBlock] (0,0) rectangle (1,1);
-                        \draw[diagramBlock] (0,1) rectangle (1,2);
-                        \draw[diagramBlock] (0,2) rectangle (1,3);
-
-                        \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
-                        \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
-                        \draw[diagramBlock] (1.5,2) rectangle (2.5,3);
-                    \end{tikzpicture}
-                };
-
-                \node[anchor=west, minimum width=2.5cm] (diagramRight) at (5,0) {
-                    \begin{tikzpicture}[scale=0.5]
-                        \draw[diagramBlock] (0,0) rectangle (1,1);
-                        \draw[diagramBlock] (0,1) rectangle (1,2);
-
-                        \draw[diagramBlock] (1.5,0) rectangle (2.5,1);
-                        \draw[diagramBlock] (1.5,1) rectangle (2.5,2);
-
-                        \draw[diagramBlock] (3,0) rectangle (4,1);
-                        \draw[diagramBlock] (3,1) rectangle (4,2);
-                    \end{tikzpicture}
-                };
-
-                % Arrows
-                \tikzstyle{myarrowstyle}=[->, >=stealth, line width=1pt];
-                \draw[myarrowstyle] (probAboveLeft) |- (expresionTop);
-                \draw[myarrowstyle] (probAboveRight) |- (expresionTop);
-                \draw[myarrowstyle] (probBelowLeft) |- (expresionBottom);
-                \draw[myarrowstyle] (probBelowRight) |- (expresionBottom);
-
-                \draw[myarrowstyle] (probAboveLeft) -| (diagramLeft);
-                \draw[myarrowstyle] (probAboveRight) -| (diagramRight);
-                \draw[myarrowstyle] (probBelowLeft) -| (diagramLeft);
-                \draw[myarrowstyle] (probBelowRight) -| (diagramRight);
-
-                \end{tikzpicture}
-              </latex-image> -->
+          <p>
+            Los estudiantes usan la relación entre multiplicación y división para afianzar su conocimiento de hechos de multiplicación y división de un solo dígito. Continúan razonando sobre productos de dos números en términos del área de rectángulos cuyas longitudes de lado representan los factores, descomponiendo longitudes de lado y aplicando propiedades de operaciones en el proceso.
+          </p>
+          <p>
+            <image source="svg-source/tikz-file-170303" width="30%">
+              <description></description>
             </image>
-          </figure>
+          </p>
+          <p>
+            Hacia el final de la unidad, los estudiantes resuelven problemas de dos pasos que involucran las cuatro operaciones. En algunas situaciones, trabajan con expresiones que usan paréntesis para indicar qué operación se completa primero. Por ejemplo: <m>276 + (45 \div 5) = {?}</m>.
+          </p>
         </remark>
-      </introduction>
+      </preface>
 
-      <!-- The first chapter will be bare bones to illustrate the    -->
-      <!-- possible structure of the book.  Once you know what the   -->
-      <!-- title of the chapter is, rename the file something based  -->
-      <!-- on the title (ch-shorttitle.ptx) both here and on disk    -->
-      <!-- <xi:include href="./ch_first.ptx" /> -->
+
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../../meta/meta_colophon.ptx" />
+
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../../meta/meta_source.ptx" />
+
+
+      <!-- <dedication> -->
+      <!-- </dedication> -->
+
+      <!-- <acknowledgement> -->
+      <!-- </acknowledgement> -->
+    </frontmatter>
+
+    <!-- <part> -->
+
+
+    <chapter xml:id="grado3-unidad4-seccionA">
+      <title>Sección A - ¿Qué es la división?</title>
+
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./grado3-unidad4-seccionA.ptx" />
+
+      <!-- Lecciones de la sección -->
       <xi:include href="./grado3-unidad4-seccionA-leccion1.ptx"/>
       <xi:include href="./grado3-unidad4-seccionA-leccion2.ptx"/>
       <xi:include href="./grado3-unidad4-seccionA-leccion3.ptx"/>
       <xi:include href="./grado3-unidad4-seccionA-leccion4.ptx"/>
       <xi:include href="./grado3-unidad4-seccionA-leccion5.ptx"/>
+
+      <!-- Problemas de práctica -->
       <xi:include href="./grado3-unidad4-seccionA-ProblemasPractica.ptx"/>
+
+      <!-- Resumen de la sección -->
       <xi:include href="./grado3-unidad4-seccionA-resumen.ptx"/>
     </chapter>
-    <!-- Of course you will want to add more chapters as you proceed-->
 
     <chapter xml:id="grado3-unidad4-seccionB">
       <title>BORRADOR: Sección B - Relacionemos la multiplicación y la división</title>
-      <objectives>
-        <ul>
-          <li><p>Entender la división como un problema de factor desconocido.</p></li>
-          <li><p>Usar las propiedades de las operaciones para desarrollar fluidez con hechos de multiplicación de un dígito y sus hechos de división asociados.</p></li>
-        </ul>
-      </objectives> 
-      <!-- This chapter contains a wide variety of elements to  -->
-      <!-- illustrate what pretext can do, plus links to more help.  -->
-      <!-- We recommend keeping this handy, and commenting it out    -->
-      <!-- when you show off your own work.                          -->
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./grado3-unidad4-seccionB.ptx" />
+
+      <!-- Lecciones de la sección -->
       <xi:include href="./grado3-unidad4-seccionB-leccion6.ptx"/>
       <xi:include href="./grado3-unidad4-seccionB-leccion7.ptx"/>
       <xi:include href="./grado3-unidad4-seccionB-leccion8.ptx"/>
       <xi:include href="./grado3-unidad4-seccionB-leccion9.ptx"/>
       <xi:include href="./grado3-unidad4-seccionB-leccion10.ptx"/>
       <xi:include href="./grado3-unidad4-seccionB-leccion11.ptx"/>
+    
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./grado3-unidad4-seccionB-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./grado3-unidad4-seccionB-resumen.ptx"/> -->
     </chapter>
 
     <chapter xml:id="grado3-unidad4-seccionC">
       <title>BORRADOR: Sección C - Multipliquemos números más grandes</title>
-      <objectives>
-        <ul>
-          <li><p>Usar las propiedades de las operaciones y el valor posicional para desarrollar estrategias para multiplicar con números hasta 100 y multiplicar números de un dígito por un múltiplo de 10.</p></li>
-        </ul>
-      </objectives> 
-      <!-- This chapter contains a wide variety of elements to  -->
-      <!-- illustrate what pretext can do, plus links to more help.  -->
-      <!-- We recommend keeping this handy, and commenting it out    -->
-      <!-- when you show off your own work.                          -->
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./grado3-unidad4-seccionC.ptx" />
+
+      <!-- Lecciones de la sección -->
       <xi:include href="./grado3-unidad4-seccionC-leccion12.ptx"/>
       <xi:include href="./grado3-unidad4-seccionC-leccion13.ptx"/>
       <xi:include href="./grado3-unidad4-seccionC-leccion14.ptx"/>
       <xi:include href="./grado3-unidad4-seccionC-leccion15.ptx"/>
       <xi:include href="./grado3-unidad4-seccionC-leccion16.ptx"/>
       <xi:include href="./grado3-unidad4-seccionC-leccion17.ptx"/>
+
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./grado3-unidad4-seccionC-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./grado3-unidad4-seccionC-resumen.ptx"/> -->
     </chapter>
 
 
     <chapter xml:id="grado3-unidad4-seccionD">
       <title>BORRADOR: Sección D - Dividamos números más grandes</title>
-      <objectives>
-        <ul>
-          <li><p>Usar las propiedades de las operaciones, las comprensiones del sistema de valor posicional y la relación entre la multiplicación y la división para dividir con números hasta 100.</p></li>
-        </ul>
-      </objectives> 
-      <!-- This chapter contains a wide variety of elements to  -->
-      <!-- illustrate what pretext can do, plus links to more help.  -->
-      <!-- We recommend keeping this handy, and commenting it out    -->
-      <!-- when you show off your own work.                          -->
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./grado3-unidad4-seccionD.ptx" />
+
+      <!-- Lecciones de la sección -->
       <xi:include href="./grado3-unidad4-seccionD-leccion18.ptx"/>
       <xi:include href="./grado3-unidad4-seccionD-leccion19.ptx"/>
       <xi:include href="./grado3-unidad4-seccionD-leccion20.ptx"/>
       <xi:include href="./grado3-unidad4-seccionD-leccion21.ptx"/>
       <xi:include href="./grado3-unidad4-seccionD-leccion22.ptx"/>
+
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./grado3-unidad4-seccionD-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./grado3-unidad4-seccionD-resumen.ptx"/> -->
     </chapter>
     <!-- This chapter includes several features that require pregeneration   -->
     <!-- of assets with `pretext generate` or similar. Some features require -->
