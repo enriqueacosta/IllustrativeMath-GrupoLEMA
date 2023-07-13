@@ -4,58 +4,84 @@
 <shorttitle>Lección ZZ</shorttitle>
 
 <introduction>
+  <!-- Objetivos para los estudiantes -->
   <objectives component="estudiante">
     <ul>
       <li>OBJETIVO 1</li>
     </ul>
   </objectives>
 
+  <!-- Objetivos que ve el profesor -->
   <objectives component="profesor">
     <ul>
       <li>[@@@@@@@@@]</li>
     </ul>
   </objectives>
 
-  <p component="profesor">Estándares CCSS asociados: [@@@@@@@@]</p>
+  <paragraphs component="profesor">
+        <title>Estándares CCSS asociados</title> 
+        <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- índice de la lección -->
+  <paragraphs component="profesor">
+  <title>Momentos de la lección</title>
+     <list-of elements="subsection" scope="section"/>
+  </paragraphs>
 
   <remark component="profesor">
-    <!-- <title>Nota para el profesor</title> -->
-    <p> 
-      La idea en esta lección es que [@@@@@@@@@]
-    </p>
+    <paragraphs>
+        <title>Propósito de la lección</title>
+        <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+        <title>Narrativa de la lección</title>
+        <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Preguntas de reflexión</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </introduction>
 
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-0">
   <shorttitle>Calentamiento</shorttitle>
   <title>Calentamiento</title>
-  <assemblage components="estudiante profesor">
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <exploration> <!-- El calentamiento es un exploration (distinto a las otras actividades) -->
     <title>[@@@@@@@@@]</title>
-    <p>
-      [@@@@@@@@@]
-    </p>
-    
-  </assemblage>
+    <statement>
+      <p>[@@@@@@@@@]</p>
+    </statement>
+    <solution>
+      <p>[@@@@@@@@@]</p>
+    </solution>
+  </exploration>
   
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - [@@@@@@@@@] ([@@@@@@@@@] segundos)</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-        <p>
-          [@@@@@@@@@]
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se espera de esta actividad</title>
-        <p> [@@@@@@@@@]</p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Para los estudiantes con dificultades</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </subsection>
 
@@ -64,32 +90,40 @@
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
-  <assemblage>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
     <title>[@@@@@@@@@]</title>
-    <p>
-       [@@@@@@@@@]
-    </p>
-  </assemblage>
+    <statement>
+      <p>[@@@@@@@@@]</p>
+    </statement>
+    <solution>
+      <p>[@@@@@@@@@]</p>
+    </solution>
+  </activity>
   
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - [@@@@@@@@@] ([@@@@@@@@@] mins)</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se espera de esta actividad</title>
-        <p>
-          [@@@@@@@@@]
-        </p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Para los estudiantes con dificultades</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </subsection>
 
@@ -97,107 +131,112 @@
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
-  <assemblage>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
     <title>[@@@@@@@@@]</title>
-    <p>
-       [@@@@@@@@@]
-    </p>
-  </assemblage>
+    <statement>
+      <p>[@@@@@@@@@]</p>
+    </statement>
+    <solution>
+      <p>[@@@@@@@@@]</p>
+    </solution>
+  </activity>
   
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - [@@@@@@@@@] ([@@@@@@@@@] mins)</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se espera de esta actividad</title>
-        <p>
-          [@@@@@@@@@]
-        </p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Para los estudiantes con dificultades</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </subsection>
 
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-3">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
-  <assemblage>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
     <title>[@@@@@@@@@]</title>
-    <p>
-       [@@@@@@@@@]
-    </p>
-  </assemblage>
+    <statement>
+      <p>[@@@@@@@@@]</p>
+    </statement>
+    <solution>
+      <p>[@@@@@@@@@]</p>
+    </solution>
+  </activity>
   
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - [@@@@@@@@@] ([@@@@@@@@@] mins)</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se espera de esta actividad</title>
-        <p>
-          [@@@@@@@@@]
-        </p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Para los estudiantes con dificultades</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </subsection>
 
-
-<subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-S">
-  <title>Resumen</title>
-  <p>[@@@@@@@@@] - ESTUDIANTE</p>
-</subsection>
-
-<subsection xml:id="gradoVV-unidadXX-seccionYY-leccionXX-Syn" component="profesor">
-  <title>Discusión de cierre</title>
-    <remark>
-      <!-- <title>Creación de poster de "Comunidad matemática"</title> -->
-        <p>Tiempo recomendado: [@@@@@@@] mins.</p>
-        <p> 
-          [@@@@@@@@]
-        </p>
+<subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-Syn" component="profesor">
+  <title>Síntesis de la lección</title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+    <remark component="profesor">
+      <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
+      <p>[@@@@@@@@@]</p>
     </remark>
 </subsection>
-
 
 
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-cool">
   <shorttitle>Actividad de cierre</shorttitle>
   <title>Actividad de cierre</title>
-  <assemblage>
-    <title>[@@@@@@@@@]</title>
-    <p>[@@@@@@@@@]</p>
-  </assemblage>
-  <remark component="profesor">
-    <p>
-      <paragraphs>
-        <title>Solución</title>
-        <p>
-          [@@@@@@@@@]
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Si los estudiantes responden incorrectamente</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
   
-    </p>
+  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
+    <title>[@@@@@@@@@]</title>
+    <statement>
+      <p>[@@@@@@@@@]</p>
+    </statement>
+    <solution>
+      <p>[@@@@@@@@@]</p>
+    </solution>
+  </problem>
+  
+  <remark component="profesor">
+    <paragraphs>
+      <title>Si los estudiantes responden incorrectamente</title>
+      <p>[@@@@@@@@@]</p>
+    </paragraphs>
   </remark>
 </subsection>
 </section>

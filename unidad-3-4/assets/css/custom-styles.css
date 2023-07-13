@@ -1,23 +1,117 @@
+/* EAJ - arreglar spacing de paragraphs*/
+.ptx-content .paragraphs + .paragraphs {
+    margin-top: 2em;
+}
+
 /* EAJ - quitar los números a remark-like */
 article[id*='remark'] .codenumber {
   display:none !important;
 }
 
-/* EAJ -  quitar el punto en el título:*/
+/* EAJ -  quitar el punto en el título de remark:*/
 article[id*='remark'] .period {
   display:none !important;
 }
 
 /* EAJ - agregar salto de línea después del título de remark*/
 .pretext-content section article.remark-like > .heading + p {
-  display: block;
-  padding-top: 0.3em;
+  /*display: block;
+  padding-top: 0.3em;*/
 }
-
-
 article[id*='remark'] .heading::after, .remark-like .heading::after {
   display:none !important;
 }
+
+/* EAJ - quitar los números a activity */
+article[id*='activity'] .heading .codenumber {
+  display:none !important;
+}
+
+/* EAJ -  quitar el punto de activity:*/
+article[id*='activity'] .heading .period {
+  display:none !important;
+}
+
+/* EAJ -  quitar el tipo de activity:*/
+article[id*='activity'] .heading .type {
+  display:none !important;
+}
+
+/* EAJ - quitar los espacios a activity */
+article[id*='activity'] .heading  .space {
+  display:none !important;
+}
+
+/* EAJ - agregar salto de línea después del título de activity*/
+.pretext-content section article.project-like > .heading + p {
+  /*display: block;
+  padding-top: 0.3em;*/
+}
+article[id*='activity'] .heading::after, .project-like .heading::after {
+  display:none !important;
+}
+
+/* EAJ - quitar los números a exploration */
+article[id*='exploration'] .heading  .codenumber {
+  display:none !important;
+}
+
+/* EAJ - quitar los puntos a exploration */
+article[id*='exploration'] .heading  .period {
+  display:none !important;
+}
+
+/* EAJ - quitar los espacios a exploration */
+article[id*='exploration'] .heading .space {
+  display:none !important;
+}
+
+/* EAJ -  quitar el tipo de exploration:*/
+article[id*='exploration'] .heading .type {
+  display:none !important;
+}
+
+
+/* EAJ - agregar salto de línea después del título de exploration*/
+.pretext-content section article.project-like > .heading + p {
+  /*display: block;
+  padding-top: 0.3em;*/
+}
+article[id*='exploration'] .heading::after, .project-like .heading::after {
+  display:none !important;
+}
+
+
+/* EAJ - quitar los números a problem */
+article[id*='problem'] .heading  .codenumber {
+  display:none !important;
+}
+
+/* EAJ - quitar los puntos a problem */
+article[id*='problem'] .heading  .period {
+  display:none !important;
+}
+
+/* EAJ - quitar los espacios a problem */
+article[id*='problem'] .heading .space {
+  display:none !important;
+}
+
+/* EAJ -  quitar el tipo de problem:*/
+article[id*='problem'] .heading .type {
+  display:none !important;
+}
+
+
+/* EAJ - agregar salto de línea después del título de problem*/
+/*.pretext-content section article.project-like > .heading + p {
+  display: block;
+  padding-top: 0.3em;
+}
+article[id*='problem'] .heading::after, .project-like .heading::after {
+  display:none !important;
+}*/
+
 
 
 /* para quitar a remark-like usar*/
