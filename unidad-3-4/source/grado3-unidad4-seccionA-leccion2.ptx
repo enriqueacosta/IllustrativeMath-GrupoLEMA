@@ -1,93 +1,113 @@
 <?xml version='1.0' encoding='utf-8'?>
 <section xml:id="grado3-unidad4-seccionA-leccion2" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Lección 2 - ¿Cuántos hay en cada grupo? </title>
+<title>Lección 2 - ¿Cuántos hay en cada grupo?</title>
 <shorttitle>Lección 2</shorttitle>
 
 <introduction>
+  <!-- Objetivos para los estudiantes -->
   <objectives component="estudiante">
     <ul>
       <li>Representemos y resolvamos más problemas.</li>
     </ul>
   </objectives>
 
+  <!-- Objetivos que ve el profesor -->
   <objectives component="profesor">
     <ul>
       <li>Solucionar problemas de “¿cuántos hay en cada grupo?” usando alguna estrategia que tenga sentido para ellos.</li>
     </ul>
   </objectives>
 
+  <paragraphs component="profesor">
+        <title>Estándares CCSS asociados</title> 
+        <p> 3.OA.A.2, 3.OA.A.3, 3.OA.A.3</p>
+  </paragraphs>
+
+  <!-- índice de la lección -->
+  <paragraphs component="profesor">
+  <title>Momentos de la lección</title>
+     <list-of elements="subsection" scope="section"/>
+  </paragraphs>
+
   <remark component="profesor">
-    <!-- <title>Nota para el profesor</title> -->
-    <p> 
-      En esta lección los estudiantes solucionan problemas de división de “¿cuántos hay en cada grupo?” usando alguna estrategia que tenga sentido para ellos. 
-    </p>
-    <p>
-      En la <xref ref="grado3-unidad4-seccionA-leccion2-3">última actividad en esta lección</xref> conectan sus ideas con lo que hicieron en la lección anterior. Es decir, reflexionan sobre las similitudes y diferencias entre los problemas de “¿cuántos hay en cada grupo?” con los problemas de “¿cuántos grupos?”.
-    </p>
+    <paragraphs>
+        <title>Propósito de la lección</title>
+        <p>El propósito de esta lección es que los estudiantes resuelvan problemas de "¿cuántos en cada grupo?" de una manera que tenga sentido para ellos.</p>
+    </paragraphs>
+    <paragraphs>
+        <title>Narrativa de la lección</title>
+        <p>Previamente, los estudiantes resolvieron problemas de "¿cuántos grupos?" de una manera que tenía sentido para ellos. En esta lección, los estudiantes amplían los problemas que involucran repartir en grupos de igual tamaño para incluir problemas de "¿cuántos en cada grupo?". Los estudiantes nuevamente tienen la flexibilidad de representar y resolver problemas utilizando cualquier estrategia que tenga sentido para ellos en esta lección. Si los estudiantes usan cubos encajables, motívelos a dibujar una imagen que coincida con su trabajo. Al final de esta lección, la división se define como encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos en grupos de igual tamaño.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Preguntas de reflexión</title>
+      <p>¿Qué dije, hice o pregunté durante la síntesis de la lección que ayudó a los estudiantes a tener claridad sobre el aprendizaje del día? ¿Cómo me ayudó entender la actividad de cierre de la lección antes de comenzar a enseñar hoy a sintetizar ese aprendizaje?</p>
+    </paragraphs>
   </remark>
 </introduction>
 
 <subsection xml:id="grado3-unidad4-seccionA-leccion2-0">
   <shorttitle>Calentamiento</shorttitle>
-  <title>Calentamiento </title>
-  <assemblage>
+  <title>Calentamiento</title>
+  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <exploration> <!-- El calentamiento es un exploration (distinto a las otras actividades) -->
     <title>Observa y pregúntate: Más manzanas</title>
-    <p>¿Qué observas? ¿Qué te preguntas?</p>
-    <image source="jpg-source/3.4.A2 Warrm-up.jpg">
-      <description>An apple orchard.</description>
-    </image>
-  </assemblage>
-
-
-  <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
-    <p>Tiempo recomendado: 10 mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - Reflexión individual (1 min)</title>
-        <p>Muestre a los estudiantes la imagen y pida que piensen individualmente en las preguntas.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 2 - Discusión en parejas (1 mins)</title>
-        <p>Pida que compartan lo que pensaron con su compañero, y vaya recolectando las respuestas.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 3 - Socialización con toda la clase (8 mins)</title>
-        <p>Insista si los estudiantes no postulan preguntas matemáticas: "¿Qué preguntas matemáticas podemos hacer sobre esta imagen?"</p>
-        <p>La idea es que se aproximen a preguntas del estilo de:
+    <statement>
+      <p>¿Qué observas? ¿Qué te preguntas?</p>
+      <image source="jpg-source/3.4.A2 Warrm-up.jpg">
+        <description>An apple orchard.</description>
+      </image>
+    </statement>
+    <solution>
+      <p>Los estudiantes pueden observar:
           <ul>
-            <li>¿Cuántas manzanas hay en cada caja?</li>
-            <li>¿Hay más manzanas en las cajas que en los árboles?</li>
-            <li>¿Cuántas manzanas hay en total en las cajas?</li>
+            <li>Algunas manzanas están en cajas.</li>
+            <li>Algunas manzanas todavía están en el árbol.</li>
+            <li>Hay 9 cajas de manzanas.</li>
           </ul>
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Posibles Respuestas</title>
-        <p>Ante la pregunta del enunciado, los estudiantes pueden observar:
-            <ul>
-              <li>Algunas manzanas están en cajas.</li>
-              <li>Algunas manzanas todavía están en el árbol.</li>
-              <li>Hay 9 cajas de manzanas.</li>
-            </ul>
-        </p>
-        <p>Los estudiantes pueden preguntarse:
-        <ul>
-          <li>¿Cómo se metieron las manzanas en las cajas?</li>
-          <li>¿Cuántas manzanas hay en las cajas?</li>
-          <li>¿Cada caja tiene el mismo número de manzanas?</li>
-        </ul>
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title></title>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se busca con esta actividad</title>
-        <p>
-          Mostrar a los estudiantes que hay muchas preguntas matemáticas que se puede hacer a partir de una situación. </p>
-      </paragraphs>
-    </p>
+      </p>
+      <p>Los estudiantes pueden preguntarse:
+      <ul>
+        <li>¿Cómo se metieron las manzanas en las cajas?</li>
+        <li>¿Cuántas manzanas hay en las cajas?</li>
+        <li>¿Cada caja tiene el mismo número de manzanas?</li>
+      </ul>
+      </p>
+    </solution>
+  </exploration>
+  
+  <remark component="profesor">
+    <p>Tiempo recomendado: 10 mins.</p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>El propósito de esta actividad de calentamiento es generar la idea de que se pueden hacer muchas preguntas diferentes sobre una situación, lo cual será útil cuando los estudiantes resuelvan problemas en una actividad posterior.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <ul>
+      <li>Grupos de 2</li>
+      <li>Muestre la imagen.</li>
+      <li>
+      “¿Qué observan? ¿Qué se preguntan?”</li>
+      <li>1 minuto: tiempo de reflexión en silencio</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <ul>
+      <li>"Discutan con su compañero lo que pensaron"</li>
+      <li>1 minuto: discusión con el compañero</li>
+      <li>Compartan y registren las respuestas.</li>
+      </ul>
+    </paragraphs>
+    <!-- <paragraphs> -->
+      <!-- <title>Para los estudiantes con dificultades</title> -->
+      <!-- <p>[@@@@@@@@@]</p> -->
+    <!-- </paragraphs> -->
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>Si no se menciona en las respuestas de los estudiantes, pregunte: "¿Qué preguntas matemáticas podemos hacer sobre esta imagen?" (¿Cuántas manzanas hay en cada caja? ¿Hay más manzanas en las cajas que en los árboles? ¿Cuántas manzanas hay en total en las cajas?)</p>
+    </paragraphs>
   </remark>
 </subsection>
 
@@ -96,214 +116,266 @@
 <subsection xml:id="grado3-unidad4-seccionA-leccion2-1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
-
-  <assemblage>
+  <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
     <title>¿Cuántas manzanas?</title>
-    <p>Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.</p>
-    <p>
+    <statement>
+      <p>Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.</p>
+      <p>
+        <ol>
+          <li>Si 20 manzanas se empacan en 4 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+          </li>
+          <li>Si 36 manzanas se empacan en 6 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+          </li>
+          <li>Si 45 manzanas se empacan en 9 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
       <ol>
-        <li>Si 20 manzanas se empacan en 4 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+        <li>
+          <p>5 manzanas. Ejemplo de razonamiento: Los estudiantes dibujan las manzanas una por una en 4 filas y descubren que al final hay 5 manzanas en cada fila.</p>
         </li>
-        <li>Si 36 manzanas se empacan en 6 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+        <li>
+          <p>6 manzanas. Ejemplo de razonamiento: Los estudiantes dibujan 36 manzanas y piensan en cómo separarlas en 6 grupos del mismo tamaño. Luego, marcan 6 grupos de 6.</p>
         </li>
-        <li>Si 45 manzanas se empacan en 9 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?
+        <li>
+          <p>5 manzanas. Ejemplo de razonamiento: Los estudiantes toma 45 cubos y los ponen 1 por 1 en 9 grupos para representar cada caja.</p>
         </li>
       </ol>
-    </p>
-  </assemblage>
-
+    </solution>
+  </activity>
+  
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: 15 mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - Trabajo individual (6-8 mins)</title>
-        <p>Reparta cubos y fichas de contar a cada estudiante. Invite a que discutan con un compañero cómo solucionarían cada problema (1 min). Después, invite a los estudiantes a solucionar <em>individualmente</em> cada problema (5-7 minutos). Mientras que lo solucionan, considere preguntarles:</p>
-        <ul>
-          <li>¿Cómo pueden representar lo que están pensando?</li>
-          <li>¿En qué parte de su trabajo pueden ver las cajas?</li>
-          <li>¿En qué parte de su trabajo pueden ver cuántas manzanas hay en cada caja?</li>
-        </ul>
-        <p>A medida que los estudiantes trabajan, identifique estudiantes que solucionaron el primer problema de la misma manera y póngalos en parejas para la fase 2.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 2 - Creación de pósteres en parejas para el primer problema (5-6 mins)</title>
-        <p>Invite a los estudiantes a hacer un póster para mostrar cómo pensaron en el primer problema. Aclare que van a estar trabajando con un compañero que solucionó el primer problema de la misma manera.</p>
-        <p> A medida que los estudiantes trabajan, identifique grupos que hayan representado la situación con:
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>El propósito de esta actividad es que los estudiantes representen y resuelvan problemas de "¿cuántos en cada grupo?" utilizando la estrategia y representación visual que les parezca más lógica. Los estudiantes crean un póster de su solución al primer problema con un compañero. En la siguiente actividad, participan en un recorrido por el salón de los pósters.</p>
+
+      <p>Identifique a los estudiantes que representen la situación con:</p>
+
+      <ul>
+        <li>Objetos concretos: colocando 20 cubos en 4 grupos uno por uno.</li>
+        <li>Dibujos de objetos: dibujando 20 manzanas y luego dividiéndolas en 4 grupos.</li>
+        <li>Arreglos: dibujando 4 filas con una manzana en cada fila para llegar a 20.</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Materiales</title>
+      <ul>
+        <li>cubos encajables y fichas</li>
+        <li>materiales para hacer una presentación visual</li>
+      </ul>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <ul>
+      <li>Grupos de 2</li>
+      <li>Proporcione a los estudiantes acceso a cubos encajables y fichas.</li>
+      <li> “Hablen con su compañero sobre cómo podrían resolver estos problemas”</li>
+      <li>1-2 minutos: discusión en parejas</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <ul>
+        <li>"Resuelvan estos problemas. Usen objetos, un dibujo o un diagrama para mostrar cómo pensaron"</li>
+        <li>5-7 minutos: tiempo de trabajo independiente</li>
+        <li>Mientras los estudiantes trabajan, considere preguntar:
           <ul>
-            <li>objetos concretos: agrupar 20 cubos en 4 grupos.</li>
-            <li>dibujos: dibujar 20 manzanas y después separarlas o encerrarlas en 4 grupos.</li>
-            <li>arreglos: dibujar 4 filas con 5 manzanas cada una.</li>
+            <li>"¿Cómo pueden representar lo que están pensando?"</li>
+            <li>"¿En qué parte de su trabajo pueden ver las cajas?"</li>
+            <li>"¿En qué parte de su trabajo pueden ver cuántas manzanas hay en cada caja?"</li>
           </ul>
-        </p> 
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 3 - Organización de los pósteres (1 min)</title>
-        <p>Organice los pósteres alrededor del salón. Los discutirán en la siguiente actividad.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-          <ol>
-            <li>
-              <p>5 manzanas. Ejemplo de razonamiento: Los estudiantes dibujan las manzanas una por una en 4 filas y descubren que al final hay 5 manzanas en cada fila.</p>
-            </li>
-            <li>
-              <p>6 manzanas. Ejemplo de razonamiento: Los estudiantes dibujan 36 manzanas y piensan en cómo separarlas en 6 grupos del mismo tamaño. Luego, marcan 6 grupos de 6.</p>
-            </li>
-            <li>
-              <p>5 manzanas. Ejemplo de razonamiento: Los estudiantes toma 45 cubos y los ponen 1 por 1 en 9 grupos para representar cada caja.</p>
-            </li>
-          </ol>
-      </paragraphs>
-      <paragraphs>
-        <title>Qué se busca con esta actividad</title>
-        <p>
-          La idea es que los estudiantes usen lo que saben para representar y solucionar problemas de "¿Cuántos en cada grupo?" de una forma que tenga sentido para ellos. 
-        </p>
-      </paragraphs>
-    </p>
+        </li>
+        <li>Identifique a los estudiantes que resuelven el primer problema de la misma manera. Organícelos en grupos de 2 para crear un póster juntos.</li>
+        <li>"Ahora van a hacer un póster para mostrar cómo pensaron en el primer problema"</li>
+        <li>"Van a trabajar con un compañero que haya resuelto el problema de la misma forma que ustedes"</li>
+        <li>Proporcione a cada grupo herramientas para crear una presentación visual.</li>
+        <li>5-7 minutos: tiempo de trabajo en pareja</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Para los estudiantes con dificultades</title>
+      <p>Si los estudiantes no encuentran una solución a los problemas, considere preguntar: "¿De qué se trata este problema?" y "¿Cómo podrías representar el problema?"</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>Organice los pósters alrededor del salón.</p>
+    </paragraphs>
   </remark>
 </subsection>
-
 
 
 <subsection xml:id="grado3-unidad4-seccionA-leccion2-2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
-
-  <assemblage>
-    <title>Recorrido por el salón</title>
-    <p>Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.</p>
-  </assemblage>
-
+  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
+    <title>Recorrido por el salón </title>
+    <statement>
+      <p>Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.</p>
+    </statement>
+    <solution>
+        <p>Ejemplos de respuestas:</p>
+        <ul>
+        <li><p>En cada póster, la idea es poner 20 manzanas en 4 grupos.</p></li>
+        <li><p>En todos los casos, hay 5 manzanas en cada caja.</p></li>
+        <li><p>En algunos pósteres, podemos ver cómo se ponen las manzanas en cada grupo. En otros pósteres, solo podemos ver el resultado final.</p></li>
+      </ul>
+    </solution>
+  </activity>
+  
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: 10 mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - Recorrido por el salón (5-7 mins)</title>
-        <p> Asegúrese que los estudiantes lean el enunciado de la actividad antes de empezar. Deben tener claro qué es lo que deben discutir mientras recorren el salón.</p>
-        <p>
-            A medida que los estudiantes hacen el recorrido, identifique 2-3 parejas que hicieron pósteres particularmente claros, en los que se entienda que el problema es sobre encontrar ¿Cuántos hay en cada grupo?".
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 2 - Discusión con toda la clase (3-5 mins)</title>
-        <p>Pregunte a los estudiantes si tienen preguntas sobre los pósteres que vieron. Después, pregunte lo que identificaron de parecido o diferente en los pósteres.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-          <ul>
-          <li><p>En cada póster, la idea es poner 20 manzanas en 4 grupos.</p></li>
-          <li><p>En todos los casos, hay 5 manzanas en cada caja.</p></li>
-          <li><p>En algunos pósteres, podemos ver cómo se ponen las manzanas en cada grupo. En otros pósteres, solo podemos ver el resultado final.</p></li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo qué se busca con esta actividad</title>
-        <p>
-          La idea es que a partir de ver el trabajo de sus compañeros, los estudiantes identifiquen en qué se parecen y se diferencian distintas estrategias de resolver un problema de "¿Cuántos hay en cada grupo?".
-        </p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>El propósito de esta actividad es que los estudiantes consideren en qué se parecen y en qué son diferentes las formas en que resolvieron un problema de "¿cuántos en cada grupo?" en la actividad anterior. A medida que los estudiantes visiten los pósters, identifique de 2 a 3 estudiantes que demuestren de manera especialmente clara que este problema se trata de encontrar cuántos hay en cada grupo. Selecciónelos para que compartan su trabajo en la próxima actividad.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <p>Grupos de 2</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <ul>
+      <li>"Cuando estén viendo los pósteres con su compañero, discutan en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres"</li>
+      <li>5-7 minutos: Recorrido por el salón</li>
+      </ul>
+    </paragraphs>
+    <!-- <paragraphs> -->
+      <!-- <title>Para los estudiantes con dificultades</title> -->
+      <!-- <p>[@@@@@@@@@]</p> -->
+    <!-- </paragraphs> -->
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <ul>
+      <li>Brinde a los estudiantes la oportunidad de hacer preguntas sobre cualquier póster.</li>
+      <li>"¿En qué se parecen las ideas que se muestran en los pósteres?"</li>
+      <li>"¿En qué se diferencian las ideas que se muestran en los pósteres?"</li>
+      </ul>
+    </paragraphs>
   </remark>
 </subsection>
-
-
 
 <subsection xml:id="grado3-unidad4-seccionA-leccion2-3">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
-
-  <assemblage>
+  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
+  
+  <activity>
     <title>Todas las manzanas</title>
-    <sidebyside widths="40% 40%">
-      <p>Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?</p>
-      <p>Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja? </p>
-    </sidebyside>
-    <p>Discute con tu compañero:</p>
-    <p>
+    <statement>
+      <sidebyside widths="40% 40%">
+        <p>Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?</p>
+        <p>Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja? </p>
+      </sidebyside>
+      <p>Discute con tu compañero:</p>
+      <p>
+        <ul>
+          <li>¿En qué se parecen estos problemas?</li>
+          <li>¿En qué se diferencian?</li>
+          <li>¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?</li>
+        </ul>
+      </p>
+    </statement>
+    <solution>
+      <p>Ejemplos de respuestas:</p>
       <ul>
-        <li>¿En qué se parecen estos problemas?</li>
-        <li>¿En qué se diferencian?</li>
-        <li>¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?</li>
+        <li><p>Ambos problemas eran sobre manzanas.</p></li>
+        <li><p>En ambos problemas había el mismo número de manzanas en cada caja.</p></li>
+        <li><p>En ambos problemas sabíamos el número total de manzanas.</p></li>
+        <li><p>En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, pero sabíamos cuántas manzanas había en cada caja.</p></li>
+        <li><p>En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.</p></li>
       </ul>
-    </p>
-  </assemblage>
-
+    </solution>
+  </activity>
+  
   <remark component="profesor">
-    <!-- <title>Notas para el profesor</title> -->
     <p>Tiempo recomendado: 10 mins.</p>
-    <p>
-      <paragraphs>
-        <title>Fase 1 - Trabajo en parejas (3-5 mins)</title>
-        <p>
-          Junto con el enunciado, muestre a los estudiantes dos o tres pósteres para cada problema (uno es de la clase pasada y otro es de la actividad anterior). Pida a los estudiantes que discutan las preguntas en el enunciado teniendo en cuenta también los pósteres.
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Fase 2 - Socialización (5 mins)</title>
-        <p>
-          Cuando los estudiantes estén compartiendo lo que pensaron, invítelos a usar los pósteres para explicar sus ideas.
-        </p>
-        <p>
-          Asegúrese que salga a la luz que en un problema de "¿Cuántos grupos?" se sabe cuántos hay en cada grupo y en un problema de "¿Cuántos hay en cada grupo?" se sabe cuántos grupos hay.
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Ejemplos de respuestas</title>
-        <p>
-          <ul>
-            <li> <p>Ambos problemas eran sobre manzanas.</p></li>
-            <li><p>En ambos problemas había el mismo número de manzanas en cada caja.</p></li>
-            <li><p>En ambos problemas sabíamos el número total de manzanas.</p></li>
-            <li><p>En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, pero sabíamos cuántas manzanas había en cada caja.</p></li>
-            <li><p>En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.</p></li>
-          </ul>
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lo que se espera de esta actividad</title>
-        <p>
-          La idea es que los estudiantes comiencen a pensar en qué se parecen y en qué se diferencian los problemas de "¿Cuántos grupos?" y los problemas de "¿Cuántos hay en cada grupo?".
-        </p>
-      </paragraphs>
-    </p>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>El propósito de esta actividad es que los estudiantes consideren en qué se parecen y en qué son diferentes los problemas de "¿cuántos grupos?" y "¿cuántos en cada grupo?" que resolvieron en una lección anterior y en esta lección. La discusión debe resaltar que en los problemas de "¿cuántos grupos?" conocemos el tamaño de cada grupo y en los problemas de "¿cuántos en cada grupo?" sabemos cuántos grupos hay. Para describir cómo son iguales y cómo son diferentes los problemas, los estudiantes prestan atención a la estructura de los problemas, es decir, lo que se da en cada situación y lo que es desconocido (MP7).</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Preparación previa</title>
+      <p>Reúna los 2-3 pósters de la lección anterior y de esta lección que resalten el conteo de los grupos en un problema de "¿cuántos grupos?" y encontrar cuántos hay en cada grupo en un problema de "¿cuántos en cada grupo?".</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <ul>
+      <li>Grupos de 2</li>
+      <li>Muestre los problemas.</li>
+      <li>Muestre los 2-3 pósters previamente seleccionados para cada problema.</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de la actividad</title>
+      <ul>
+      <li>"Estos son dos problemas en los que trabajamos. Ayer hicimos pósteres para el primero y hoy hicimos pósteres para el segundo."</li>
+      <li>"Estos son algunos pósteres para cada problema."</li>
+      <li>"Discutan con su compañero en qué se parecen estos problemas y en qué se diferencian. También hablen sobre en qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas."</li>
+      <li>3-5 minutos: discusión en pareja</li>
+      </ul>
+    </paragraphs>
+    <!-- <paragraphs> -->
+      <!-- <title>Para los estudiantes con dificultades</title> -->
+      <!-- <p>[@@@@@@@@@]</p> -->
+    <!-- </paragraphs> -->
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <ul>
+      <li>"¿Qué observaron ustedes y su compañero que era parecido?"</li>
+      <li>"¿Qué observaron ustedes y su compañero que era diferente?"</li>
+      <li>Compartan y registren las respuestas.</li>
+      <li>A medida que los estudiantes comparten, motívelos a usar los pósters para mostrar ejemplos de lo que observan.</li>
+      </ul>
+    </paragraphs>
   </remark>
 </subsection>
 
+<subsection xml:id="grado3-unidad4-seccionA-leccion2-Syn" component="profesor">
+  <title>Síntesis de la lección</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
+    <remark component="profesor">
+      <p>Tiempo recomendado: 10 mins.</p>
+      <p>"Ayer, resolvimos problemas en los que preguntaban cuántos grupos podíamos hacer. Hoy resolvimos problemas en los que preguntaban cuántas cosas hay en cada grupo. Ambas ideas se conocen con el nombre de división."</p>
 
-
-<subsection xml:id="grado3-unidad4-seccionA-leccion2-s">
-  <title>Resumen</title>
-  <p>Ayer, resolvimos problemas en los que preguntaban cuántos grupos podíamos hacer. Hoy resolvimos problemas en los que preguntaban cuántas cosas hay en cada grupo. Ambas ideas se conocen con el nombre de división.</p>
-  <p>La <alert>división</alert> es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos algo en grupos de igual tamaño.</p>
+      <p>"La división es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos algo en grupos de igual tamaño."</p>
+    </remark>
 </subsection>
-
-
 
 
 <subsection xml:id="grado3-unidad4-seccionA-leccion2-cool">
   <shorttitle>Actividad de cierre</shorttitle>
   <title>Actividad de cierre</title>
-  <assemblage>
+  
+  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
     <title>Bolsas de manzanas</title>
-    <p>Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en cada bolsa para dárselas a sus amigos. ¿Cuántas manzanas hay en cada bolsa? Explica o muestra tu razonamiento.</p>
-  </assemblage>
-
+    <statement>
+      <p>Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en cada bolsa para dárselas a sus amigos. ¿Cuántas manzanas hay en cada bolsa? Explica o muestra tu razonamiento.</p>
+    </statement>
+    <solution>
+      <p> Cada bolsa tiene 5 manzanas. Si pongo 30 manzanas, una por una, en 6 grupos, habrá 5 manzanas en cada grupo. </p>
+      <image source="svg-source/tikz-file-147472">
+        <description>equal sized groups. 30 objects in groups of 5</description>
+      </image>
+    </solution>
+  </problem>
+  
   <remark component="profesor">
-      <!-- <title>Notas para el profesor</title> -->
-      <p>
-        <paragraphs>
-          <title>Solución</title>
-          <p> Cada bolsa tiene 5 manzanas. Si pongo 30 manzanas, una por una, en 6 grupos, habrá 5 manzanas en cada grupo. </p>
-          <p>
-            <image source="svg-source/tikz-file-147472">
-              <description>equal sized groups. 30 objects in groups of 5</description>
-            </image>
-          </p>
-        </paragraphs>
-      </p>
+    <paragraphs>
+      <title>Posibles errores</title>
+      <p>Los estudiantes representan 6 manzanas en cada bolsa en lugar de 6 bolsas con el mismo número de manzanas en cada una.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Acciones para apoyar el aprendizaje</title>
+      <p>Durante el lanzamiento de la actividad del día siguiente, reparta la actividad de cierre y haga que los estudiantes trabajen en parejas para representar el problema con fichas y discutir la solución al problema.</p>
+    </paragraphs>
   </remark>
 </subsection>
 </section>

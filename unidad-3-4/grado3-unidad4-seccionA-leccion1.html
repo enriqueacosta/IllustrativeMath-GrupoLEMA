@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="es-ES">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lección 1 - ¿Cuántos grupos?</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Matemáticas Ilustrativas">
+<meta property="book:author" content="Adaptación del Grupo LEMA ()">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/css/custom-styles.css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="grado3-unidad4.html"><span class="title">Matemáticas Ilustrativas:</span> <span class="subtitle">Grado 3 - Unidad 4</span></a></h1>
+<p class="byline">Adaptación del Grupo LEMA (<a class="external" href="https://www.grupolema.org" target="_blank"><code class="code-inline tex2jax_ignore">https://www.grupolema.org</code></a>)</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Resultados de búsqueda: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No se encontraron resultados.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Índice</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="grado3-unidad4-seccionA.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="up-button button" href="grado3-unidad4-seccionA.html" title="Arriba"><span class="icon">^</span><span class="name">Arriba</span></a><a class="next-button button" href="grado3-unidad4-seccionA-leccion2.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Introducción a la unidad</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Presentación de la unidad</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Licencia de uso</span></a></div></li>
+<li><div class="toc-item"><a href="preface-2.html" class="internal"><span class="title">Código fuente</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA.html" class="internal"><span class="title">Sección A - ¿Qué es la división?</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html" class="internal"><span class="title">Lección 1</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-Syn" class="internal"><span class="title">Síntesis de la lección (10 mins)</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html" class="internal"><span class="title">Lección 2</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-Syn" class="internal"><span class="title">Síntesis de la lección (10 mins)</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion2.html#grado3-unidad4-seccionA-leccion2-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html" class="internal"><span class="title">Lección 3</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion3.html#grado3-unidad4-seccionA-leccion3-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html" class="internal"><span class="title">Lección 4</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion4.html#grado3-unidad4-seccionA-leccion4-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html" class="internal"><span class="title">Lección 5</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html#grado3-unidad4-seccionA-leccion5-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html#grado3-unidad4-seccionA-leccion5-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html#grado3-unidad4-seccionA-leccion5-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html#grado3-unidad4-seccionA-leccion5-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-leccion5.html#grado3-unidad4-seccionA-leccion5-cool" class="internal"><span class="title">Actividad de Cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionA-ProblemasPractica.html" class="internal"><span class="title">Problemas de práctica</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="grado3-unidad4-seccionA-ProblemasPractica.html#exercises-1" class="internal"><span class="title">Ejercicios</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionA-resumen.html" class="internal"><span class="title">Resumen de la Sección</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB.html" class="internal"><span class="title">BORRADOR: Sección B - Relacionemos la multiplicación y la división</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html" class="internal"><span class="title">BORRADOR: Lección 6 - La división como un factor desconocido</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html#grado3-unidad4-seccionB-leccion6-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html#grado3-unidad4-seccionB-leccion6-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html#grado3-unidad4-seccionB-leccion6-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html#grado3-unidad4-seccionB-leccion6-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion6.html#grado3-unidad4-seccionB-leccion6-cool" class="internal"><span class="title">Actividad de Cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html" class="internal"><span class="title">BORRADOR: Lección 7 - Relacionemos multiplicación y división</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html#grado3-unidad4-seccionB-leccion7-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html#grado3-unidad4-seccionB-leccion7-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html#grado3-unidad4-seccionB-leccion7-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html#grado3-unidad4-seccionB-leccion7-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion7.html#grado3-unidad4-seccionB-leccion7-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html" class="internal"><span class="title">BORRADOR: Lección 8</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion8.html#grado3-unidad4-seccionB-leccion8-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html" class="internal"><span class="title">BORRADOR: Lección 9</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion9.html#grado3-unidad4-seccionB-leccion9-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html" class="internal"><span class="title">BORRADOR: Lección 10</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion10.html#grado3-unidad4-seccionB-leccion10-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html" class="internal"><span class="title">BORRADOR: Lección 11</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionB-leccion11.html#grado3-unidad4-seccionB-leccion11-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC.html" class="internal"><span class="title">BORRADOR: Sección C - Multipliquemos números más grandes</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html" class="internal"><span class="title">BORRADOR: Lección 12</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion12.html#grado3-unidad4-seccionC-leccion12-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html" class="internal"><span class="title">BORRADOR: Lección 13</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion13.html#grado3-unidad4-seccionC-leccion13-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html" class="internal"><span class="title">BORRADOR: Lección 14</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion14.html#grado3-unidad4-seccionC-leccion14-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html" class="internal"><span class="title">BORRADOR: Lección 15</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion15.html#grado3-unidad4-seccionC-leccion15-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html" class="internal"><span class="title">BORRADOR: Lección 16</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion16.html#grado3-unidad4-seccionC-leccion16-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html" class="internal"><span class="title">BORRADOR: Lección 17</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionC-leccion17.html#grado3-unidad4-seccionC-leccion17-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD.html" class="internal"><span class="title">BORRADOR: Sección D - Dividamos números más grandes</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html" class="internal"><span class="title">BORRADOR: Lección 18</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion18.html#grado3-unidad4-seccionD-leccion18-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html" class="internal"><span class="title">BORRADOR: Lección 19</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion19.html#grado3-unidad4-seccionD-leccion19-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html" class="internal"><span class="title">BORRADOR: Lección 20</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion20.html#grado3-unidad4-seccionD-leccion20-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html" class="internal"><span class="title">BORRADOR: Lección 21</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion21.html#grado3-unidad4-seccionD-leccion21-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html" class="internal"><span class="title">BORRADOR: Lección 22</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-0" class="internal"><span class="title">Calentamiento</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-1" class="internal"><span class="title">Actividad 1</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-2" class="internal"><span class="title">Actividad 2</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-3" class="internal"><span class="title">Actividad 3</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-s" class="internal"><span class="title">Resumen</span></a></div></li>
+<li><div class="toc-item"><a href="grado3-unidad4-seccionD-leccion22.html#grado3-unidad4-seccionD-leccion22-cool" class="internal"><span class="title">Actividad de cierre</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-5.html" class="internal"><span class="title">Glosario</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="grado3-unidad4-Glosario.html" class="internal"><span class="title">Glosario unidad 3-4</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="grado3-unidad4-seccionA-leccion1"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber"></span> <span class="title">Lección 1 - ¿Cuántos grupos?</span>
+</h2>
+<section class="introduction" id="introduction-2"><article class="objectives goal-like" id="objectives-2"><h3 class="heading"><span class="type">Objetivos de aprendizaje</span></h3>
+<ul class="disc"><li id="li-11"><div class="para" id="p-derived-li-11">Resolver problemas de "¿Cuántos grupos?" de una manera que tenga sentido para ellos.</div></li></ul></article> <section class="paragraphs" id="paragraphs-1"><h3 class="heading"><span class="title">Estándares CCSS asociados.</span></h3> <div class="para" id="p-20">3.OA.A.2, 3.OA.A.3, 3.OA.A.3</div></section>  <section class="paragraphs" id="paragraphs-2"><h3 class="heading"><span class="title">Momentos de la lección.</span></h3> <div>
+<a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-0" class="internal" title="Subsección: Calentamiento (10 mins)">Subsección </a> Calentamiento (10 mins)</div>
+<div>
+<a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-1" class="internal" title="Subsección: Actividad 1 (20 mins)">Subsección </a> Actividad 1 (20 mins)</div>
+<div>
+<a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-2" class="internal" title="Subsección: Actividad 2 (15 mins)">Subsección </a> Actividad 2 (15 mins)</div>
+<div>
+<a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-Syn" class="internal" title="Subsección: Síntesis de la lección (10 mins)">Subsección </a> Síntesis de la lección (10 mins)</div>
+<div>
+<a href="grado3-unidad4-seccionA-leccion1.html#grado3-unidad4-seccionA-leccion1-cool" class="internal" title="Subsección: Actividad de cierre (5 mins)">Subsección </a> Actividad de cierre (5 mins)</div></section> <article class="remark remark-like" id="remark-3"><h3 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
+</h3>
+<section class="paragraphs" id="paragraphs-3"><h4 class="heading"><span class="title">Propósito de la lección.</span></h4> <div class="para" id="p-21">El propósito de esta lección es que los estudiantes resuelvan problemas de "¿Cuántos grupos?" de una manera que tenga sentido para ellos.</div></section> <section class="paragraphs" id="paragraphs-4"><h4 class="heading"><span class="title">Narrativa de la lección.</span></h4> <div class="para" id="p-22">En una unidad anterior, se les presentó a los estudiantes la multiplicación. Interpretaron los productos como el número total de objetos en un número dado de grupos de igual tamaño. Los estudiantes representaron grupos de igual tamaño usando dibujos, diagramas de cinta y arreglos.</div> <div class="para" id="p-23">El propósito de esta lección es introducir problemas que involucren poner objetos en grupos de igual tamaño, comenzando con problemas de "¿cuántos grupos?". Aunque la estructura de los problemas sugiere división, los estudiantes pueden usar su comprensión de la multiplicación o cualquier estrategia que tenga sentido para ellos para resolver los problemas. Si los estudiantes usan cubos encajables, motívelos a dibujar una imagen que coincida con su trabajo. En la síntesis de la lección, los estudiantes tienen la oportunidad de pensar en cómo definirían la división. La definición y el símbolo de la división se presentarán en lecciones posteriores.</div></section> <section class="paragraphs" id="paragraphs-5"><h4 class="heading"><span class="title">Preguntas de reflexión.</span></h4> <div class="para" id="p-24">En esta lección, se le presenta a los estudiantes la división por primera vez. ¿Cómo está influyendo y apoyando su comprensión de la multiplicación en la forma en que resuelven problemas de división?</div></section></article></section><section class="subsection" id="grado3-unidad4-seccionA-leccion1-0"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber"></span> <span class="title">Calentamiento (10 mins)</span>
+</h3>
+<article class="exploration project-like" id="exploration-1"><h4 class="heading">
+<span class="type">Calentamiento</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">Cuántos ves: Manzanas.</span>
+</h4>
+<div class="para" id="p-25">¿Cuántas ves? ¿Cómo lo sabes?, ¿qué ves?</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/jpg-source/apples-1642732_1920.jpg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solución</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like">
+<div class="para" id="p-26">Ejemplos de respuestas:</div> <ul class="disc">
+<li id="li-12"><div class="para" id="p-27">16 porque veo 4 filas (o columnas) de 4.</div></li>
+<li id="li-13"><div class="para" id="p-28">16 porque veo multipliqué <span class="process-math">\(8\times 2\)</span>
+</div></li>
+<li id="li-14"><div class="para" id="p-29">23 porque veo 4 grupos de 4 en una caja y 7 manzanas más en la otra caja, lo que da 23.</div></li>
+</ul>
+</div></div>
+</div></article><article class="remark remark-like" id="remark-4"><h4 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-30">Tiempo recomendado: 10 mins.</div> <div class="para" id="p-31">
+<section class="paragraphs" id="paragraphs-6"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="p-32">El propósito de este "¿Cuántos ves?" es que los estudiantes subitizen o utilicen estrategias de agrupamiento para describir las imágenes que ven.</div></section> <section class="paragraphs" id="paragraphs-7"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<li id="li-15"><div class="para" id="p-derived-li-15">Grupos de 2</div></li>
+<li id="li-16"><div class="para" id="p-derived-li-16">“¿Cuántas ven? ¿Cómo lo saben?, ¿qué ven?”</div></li>
+<li id="li-17"><div class="para" id="p-derived-li-17">Muestre rápidamente la imagen.</div></li>
+<li id="li-18"><div class="para" id="p-derived-li-18">30 segundos: tiempo de reflexión en silencio</div></li>
+</ul></section> <section class="paragraphs" id="paragraphs-8"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+<li id="li-19"><div class="para" id="p-derived-li-19">Muestre la imagen.</div></li>
+<li id="li-20"><div class="para" id="p-derived-li-20">“Discutan con su compañero cómo pensaron”</div></li>
+<li id="li-21"><div class="para" id="p-derived-li-21">1 minuto: discusión con el compañero</div></li>
+<li id="li-22"><div class="para" id="p-derived-li-22">Registre las respuestas.</div></li>
+</ul></section> <section class="paragraphs" id="paragraphs-9"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+<li id="li-23"><div class="para" id="p-derived-li-23">“¿Cómo los ayudó la forma en la que estaban organizadas las manzanas a ver cuántas había?” (Vi 2 filas de 4, lo cual sabía que eran 8, luego dupliqué eso para encontrar cuántas manzanas había en la caja. Vi grupos de 4, así que multipliqué <span class="process-math">\(4\times 4\)</span> y luego sumé las otras manzanas.)</div></li>
+<li id="li-24"><div class="para" id="p-derived-li-24"><ul class="circle">
+<li id="li-25"><div class="para" id="p-derived-li-25">“¿Alguien puede expresar con otras palabras la forma en la que <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> vio las manzanas?”</div></li>
+<li id="li-26"><div class="para" id="p-derived-li-26">“¿Alguien vio las manzanas de la misma forma, pero lo explicaría de otra manera?”</div></li>
+<li id="li-27"><div class="para" id="p-derived-li-27">“¿Alguien quiere compartir otra observación sobre la forma en la que <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> vio las manzanas?”</div></li>
+</ul></div></li>
+</ul></section>
+</div></article></section><section class="subsection" id="grado3-unidad4-seccionA-leccion1-1"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber"></span> <span class="title">Actividad 1 (20 mins)</span>
+</h3>
+<article class="activity project-like" id="activity-1"><h4 class="heading">
+<span class="type">ActividadActividad</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">¿Cuántas manzanas?</span>
+</h4>
+<div class="para" id="p-33">Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.</div> <div class="para logical" id="p-34"><ol class="decimal">
+<li id="li-28"><div class="para" id="p-derived-li-28">Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?</div></li>
+<li id="li-29"><div class="para" id="p-derived-li-29">Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?</div></li>
+<li id="li-30"><div class="para" id="p-derived-li-30">Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solución</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<div class="para" id="p-35">Ejemplos de respuestas:</div> <ol class="decimal">
+<li id="li-31"><div class="para" id="p-36">3 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 8 manzanas en cada fila y observan que hay 3 filas.</div></li>
+<li id="li-32"><div class="para" id="p-37">7 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 42 manzanas y marcan grupos de 6 hasta que no quedan manzanas.</div></li>
+<li id="li-33"><div class="para" id="p-38">8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y los ponen en grupos de 4 para representar cada caja.</div></li>
+</ol>
+</div></div>
+</div></article><article class="remark remark-like" id="remark-5"><h4 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-39">Tiempo recomendado: 20 mins.</div> <div class="para" id="p-40">
+<section class="paragraphs" id="paragraphs-10"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="p-41">El propósito de esta actividad es que los estudiantes representen y resuelvan problemas de "¿cuántos grupos?". Motívelos a utilizar cualquier estrategia y representación visual que les parezca lógica.</div> <div class="para" id="p-42">Los estudiantes crean un póster de su solución al primer problema con un compañero. En la siguiente actividad, los estudiantes participan en un recorrido por el salón de los pósters.</div> <div class="para" id="p-43">Identifique a los estudiantes que representen la situación con:</div> <ul class="disc">
+<li id="li-34"><div class="para" id="p-derived-li-34">objetos concretos: colocando 24 cubos en grupos de 8</div></li>
+<li id="li-35"><div class="para" id="p-derived-li-35">dibujos de objetos: dibujando 24 manzanas y luego dividiéndolas en grupos de 8 o rodeando grupos de 8</div></li>
+<li id="li-36"><div class="para" id="p-derived-li-36">arreglos: dibujando 3 filas de 8 manzanas cada una para llegar a 24</div></li>
+</ul> <div class="para" id="p-44">Cuando los estudiantes representan la situación con objetos, dibujos concretos o dibujos abstractos, están razonando de manera abstracta y cuantitativa (MP2).</div></section> <section class="paragraphs" id="paragraphs-11"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<li id="li-37"><div class="para" id="p-derived-li-37">Grupos de 2</div></li>
+<li id="li-38"><div class="para" id="p-derived-li-38">Dele a los estudiantes acceso a cubos encajables o contadores.</div></li>
+</ul></section> <section class="paragraphs" id="paragraphs-12"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+<li id="li-39"><div class="para" id="p-derived-li-39">"Resuelvan estos problemas. Usen objetos, un dibujo o un diagrama para mostrar cómo pensaron"</div></li>
+<li id="li-40"><div class="para" id="p-derived-li-40">6-8 minutos: tiempo de trabajo independiente</div></li>
+<li id="li-41"><div class="para" id="p-derived-li-41"><ul class="circle">
+<li id="li-42"><div class="para" id="p-derived-li-42">"¿Cómo pueden representar lo que están pensando?"</div></li>
+<li id="li-43"><div class="para" id="p-derived-li-43">"¿En qué parte de su trabajo podemos ver las manzanas?"</div></li>
+<li id="li-44"><div class="para" id="p-derived-li-44">"¿En qué parte de su trabajo podemos ver cuántas cajas hay?"</div></li>
+</ul></div></li>
+<li id="li-45"><div class="para" id="p-derived-li-45">Identifique a los estudiantes que resuelvan el primer problema de la misma manera. Organícelos en grupos de 2 para crear un póster juntos.</div></li>
+<li id="li-46"><div class="para" id="p-derived-li-46">"Ahora van a hacer un póster para mostrar cómo pensaron en el primer problema"</div></li>
+<li id="li-47"><div class="para" id="p-derived-li-47">"Van a trabajar con un compañero que haya resuelto el problema de la misma forma que ustedes"</div></li>
+<li id="li-48"><div class="para" id="p-derived-li-48">Proporcione a cada grupo herramientas para hacer una exhibición visual.</div></li>
+<li id="li-49"><div class="para" id="p-derived-li-49">6-8 minutos: tiempo de trabajo en pareja</div></li>
+</ul></section> <section class="paragraphs" id="paragraphs-13"><h5 class="heading"><span class="title">Para los estudiantes con dificultades.</span></h5> <div class="para" id="p-45">Si los estudiantes no encuentran una solución a los problemas, considere preguntar: "¿De qué se trata este problema?" y "¿Cómo podrías representar el problema?"</div></section> <section class="paragraphs" id="paragraphs-14"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <div class="para" id="p-46">Organice los pósters alrededor del salón.</div></section>
+</div></article></section><section class="subsection" id="grado3-unidad4-seccionA-leccion1-2"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber"></span> <span class="title">Actividad 2 (15 mins)</span>
+</h3>
+<article class="activity project-like" id="activity-2"><h4 class="heading">
+<span class="type">ActividadActividad</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">Recorrido por el salón: Manzanas en cajas.</span>
+</h4>
+<div class="para logical" id="p-47"><ol class="decimal">
+<li id="li-50"><div class="para" id="p-derived-li-50">Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.</div></li>
+<li id="li-51"><div class="para" id="p-derived-li-51">Reflexiona sobre lo que viste. Escribe una cosa en la que se parecen y una cosa en la que se diferencian las ideas que se muestran en los pósteres.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solución</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><ol class="decimal">
+<li id="li-52"><div class="para" id="p-48">(sin respuestas)</div></li>
+<li id="li-53"><div class="para logical" id="p-49">
+<div class="para">Ejemplos de respuestas:</div>
+<ul class="disc">
+<li id="li-54"><div class="para" id="p-derived-li-54">En cada póster, la idea es poner 24 manzanas en cajas que tengan 8 manzanas.</div></li>
+<li id="li-55"><div class="para" id="p-derived-li-55">Al final, siempre hay 3 cajas.</div></li>
+<li id="li-56"><div class="para" id="p-derived-li-56">En algunos pósteres, podemos ver cómo se ponen las manzanas en cada grupo. En otros pósteres, solo podemos ver el resultado final.</div></li>
+</ul>
+</div></li>
+</ol></div></div>
+</div></article><article class="remark remark-like" id="remark-6"><h4 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-50">Tiempo recomendado: 15 mins.</div> <div class="para" id="p-51">
+<section class="paragraphs" id="paragraphs-15"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="p-52">El propósito de esta actividad es que los estudiantes consideren qué es lo mismo y qué es diferente acerca de las formas en que resolvieron un problema de "¿cuántos grupos?" en la actividad anterior.</div> <div class="para" id="p-53">A medida que los estudiantes visiten los pósters, identifique de 2 a 3 estudiantes que demuestren especialmente bien que este problema se trata de encontrar cuántos grupos se forman. Selecciónelos para compartir sus explicaciones en la próxima lección.</div></section> <section class="paragraphs" id="paragraphs-16"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc"><li id="li-57"><div class="para" id="p-derived-li-57">Estudiantes en parejas</div></li></ul></section> <section class="paragraphs" id="paragraphs-17"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+<li id="li-58"><div class="para" id="p-derived-li-58">“Cuando vayan a ver los pósteres con su compañero, discutan en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres”</div></li>
+<li id="li-59"><div class="para" id="p-derived-li-59">8–10 minutos: Recorrido por el salón</div></li>
+</ul></section> <section class="paragraphs" id="paragraphs-18"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+<li id="li-60"><div class="para" id="p-derived-li-60">Brinde a los estudiantes la oportunidad de hacer preguntas sobre cualquier póster.</div></li>
+<li id="li-61"><div class="para" id="p-derived-li-61">“¿En qué se parecen las ideas que se muestran en los pósteres?”</div></li>
+<li id="li-62"><div class="para" id="p-derived-li-62">“¿En qué se diferencian las ideas que se muestran en los pósteres?”</div></li>
+</ul></section>
+</div></article></section><section class="subsection" id="grado3-unidad4-seccionA-leccion1-Syn"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber"></span> <span class="title">Síntesis de la lección (10 mins)</span>
+</h3>
+<article class="remark remark-like" id="remark-7"><h4 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-54">Tiempo recomendado: 10 mins.</div> <div class="para" id="p-55">"Hoy resolvimos problemas acerca de poner manzanas en cajas. ¿En qué se parecían estos problemas a la multiplicación? ¿En qué eran diferentes?" (Estos problemas tenían grupos de igual tamaño. En la multiplicación contamos cuántas cosas había en total. En estos problemas ya lo sabíamos. Estábamos tratando de encontrar cuántos grupos podíamos hacer).</div> <div class="para" id="p-56">"Los problemas que resolvimos hoy son problemas de división. ¿Cómo definirían la división basándose en los problemas que vimos hoy?" (La división se trata de poner en grupos de igual tamaño. Yo diría que se trata de encontrar cuántos grupos puedes hacer).</div>"</article></section><section class="subsection" id="grado3-unidad4-seccionA-leccion1-cool"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber"></span> <span class="title">Actividad de cierre (5 mins)</span>
+</h3>
+<article class="problem example-like" id="problem-1"><h4 class="heading">
+<span class="type">Actividad de cierre</span><span class="space"> </span><span class="codenumber">9</span><span class="period">.</span><span class="space"> </span><span class="title">¿Cuántas bolsas?</span>
+</h4>
+<div class="para" id="p-57">Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-4" id="solution-4"><span class="type">Solución</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
+<div class="para" id="p-58">Necesitará 5 bolsas. Si pongo las 30 manzanas en grupos de 6, habrá 5 grupos.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/svg-source/tikz-file-147473.svg" role="img" class="contained"></div>
+</div></div>
+</div></article><article class="remark remark-like" id="remark-8"><h4 class="heading">
+<span class="type">Notas para el profesor.</span><span class="space"> </span><span class="codenumber">10</span><span class="period">.</span>
+</h4> <div class="para" id="p-59"><section class="paragraphs" id="paragraphs-19"><h5 class="heading"><span class="title">Si los estudiantes responden incorrectamente.</span></h5> <div class="para" id="p-60">Reparta al inicio de la siguiente lección las respuestas de los estudiantes, y pida que trabajen en parejas en este problema.</div></section></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="grado3-unidad4-seccionA.html" title="Anterior"><span class="icon">&lt;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="grado3-unidad4-seccionA-leccion2.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
