@@ -25,7 +25,7 @@ pretext view web-est
 Para ver una versión local de la página que se actualiza automáticamente con cambios:
 
 ```bash
-pretext build -w web-est
+pretext view -w web-est
 ```
 
 Para generar el pdf:
