@@ -17,29 +17,32 @@
     </ul>
   </objectives>
 
-  <p component="profesor">Estándares CCSS asociados: K.CC.B, K.MD.B.3</p>
+  <paragraphs component="profesor">
+    <title>Estándares CCSS asociados</title> 
+    <p>K.CC.B, K.MD.B.3</p>
+  </paragraphs>
+
+  <!-- índice de la lección -->
+  <paragraphs component="profesor">
+    <title>Momentos de la lección</title>
+       <list-of elements="subsection" scope="section"/>
+  </paragraphs>
 
 
-  <remark component="profesor">
-    <!-- <title>Nota para el profesor</title> -->
-    <p> 
-      La idea en esta lección es que los estudiantes conozcan las fichas de dos colores y los tableros de cinco y empiecen a pensar cómo los pueden usar. 
-    </p>
-    <p>
-      <alert>Materiales:</alert> En lo posible, asegurese de tener un tablero de 5 cada estudiante. Puede usar <url href="external/blm/pdf-source/tableros-de-5.pdf">este pdf tableros de 5</url> para imprimir y sacar copias. Si no puede sacar copias pero sus estudiantes tienen libros impresos, puede pedir a los estudiantes que usen el tablero impreso en la <xref ref="grado0-unidad1-seccionA-leccion3-1">Actividad 1</xref>. 
-    </p>
-    <p>
-      Recuerde que estas primeras clases también son una buena oportunidad para ver los conocimientos y habilidades previas de los estudiantes. Esté atento de los siguientes comportamientos:
-      <ul>
-        <li>Contar hasta 10.</li>
-        <li>Decir un número por cada objeto.</li>
-        <li>Decir quántos hay sin volver a contar de nuevo.</li>
-        <li>Reconocer y nombrar grupos de 1, 2 y 3 objetos o imagenes sin contar.</li>
-        <li>Reconocer y nombrar grupos de 4 objetos o imagenes sin contar.</li>
-        <li>Mostrar cantidades con los dedos.</li>
-        <li>Identifical grupos con el mismo número de objetos (hasta 4 objetos).</li>
-      </ul>
-    </p>
+<remark component="profesor">
+  <paragraphs>
+    <title>Propósito de la lección</title>
+    <p>El propósito de esta lección es que los estudiantes exploren fichas de dos colores y tableros de 5. Los profesores también tienen la oportunidad de recopilar datos de evaluación formativa sobre los conceptos y habilidades de conteo de los estudiantes.</p>    </paragraphs>
+    <paragraphs>
+      <title>Narrativa de la lección</title>
+      <p>A medida que los estudiantes exploran las fichas de dos colores y los tableros de 5, es probable que creen diseños. A medida que los identifique a los estudiantes, considere hacer preguntas como <q>¿Cuántas fichas de dos colores hay en el tablero de 5? ¿Cuántas fichas rojas tienes? ¿Tienes suficientes fichas para completar el tablero de 5?</q> Estas preguntas ayudan a los profesores a conocer más sobre cada estudiante. El tablero de 5 es una herramienta útil para que los estudiantes desarrollen una visualización del número 5. Diferentes disposiciones de fichas en el tablero generan diferentes visualizaciones de números y estrategias para manipular estos números en relación con el cinco. Los estudiantes utilizarán el tablero de 5, y más adelante el tablero de 10, a lo largo del año. En la actividad de cierre de la lección, los estudiantes piensan en qué herramientas matemáticas elegirían para ciertas tareas (MP5).</p>
+      <p>Las primeras lecciones de esta sección son intencionalmente más cortas para permitir que los estudiantes aprendan la estructura y las rutinas de las lecciones de matemáticas y para que los profesores tengan la oportunidad de aprender lo que los estudiantes saben sobre conceptos de número. Si hay tiempo extra, los estudiantes pueden pasar más tiempo explorando las fichas de dos colores en la primera actividad.</p>
+      <p>En la actividad de cierre de la lección, los estudiantes practican decir la secuencia verbal de conteo hasta 10 en preparación para contar objetos en una sección próxima. Agregue variedad al conteo agregando movimiento. Por ejemplo, los estudiantes pueden contar mientras aplauden, pisan fuerte o saltan.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Preguntas de reflexión</title>
+      <p>A diferencia de hablar, escuchar es algo difícil de observar. ¿En qué momentos de la lección observaste a los estudiantes escuchándose mutuamente hoy en clase? ¿Qué indicadores tienes de que estaban escuchando y comprendiendo lo que se estaba diciendo?</p>
+    </paragraphs>
   </remark>
 </introduction>
 
@@ -47,129 +50,178 @@
 <subsection xml:id="grado0-unidad1-seccionA-leccion3-0">
   <shorttitle>Calentamiento</shorttitle>
   <title>Calentamiento</title>
-  <assemblage components="estudiante profesor">
+  <title component="profesor"><nbsp/>(15 mins)</title>
+  <exploration components="estudiante profesor">
     <title>Observa y pregúntate: fichas y tableros de 5</title>
-    <p>
-      ¿Qué observas?
-      ¿Qué te preguntas?
-    </p>
-    <sbsgroup widths="40% 40%">
-      <sidebyside>
-        <image source="svg-source/tikz-file-147345">
-          <description></description>
-        </image>
-        <image source="png-source/K.1.A Beta Student Workbook.RedYellowChips_withShadow.png">
-          <description></description>
-        </image>
-      </sidebyside>
-      <sidebyside>
-        <image source="svg-source/tikz-file-128850">
-          <description></description>
-        </image>
-        <image source="svg-source/tikz-file-147344">
-          <description></description>
-        </image>
-      </sidebyside>
-    </sbsgroup>
-  </assemblage>
-  
-  <remark component="profesor">
-      <!-- <title>Notas para el profesor</title> -->
-      <p>Tiempo recomendado: 10 mins.</p>
-
-      <p>Nota: A diferencia de lecciones pasadas, no comparta materiales en físico para esta actividad. Todo el trabajo se hace con las imágenes.</p>
-      
+    <statement>
       <p>
-        <paragraphs>
-          <title>Fase 1 - Trabajo en parejas (4 min.)</title>
-          <p>Pida a los estudiantes que piensen en silencio durante 1 minuto sobre las preguntas y después que brevemente compartan con su compañero lo que pensaron (2 min). </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Fase 2 - Socializacion (6 min.)</title>
-          <p>Pida a los estudiantes que compartan con la clase lo que hablaron con su compañero sobre las herramientas y anote sus respuestas. Asegúrese que los estudiantes aprendan los nombres "fichas de dos colores" y "tableros de 5". Como preparación a una nueva rutina, considere pregiuntarles: ¿En qué se parecen estas herramientas? ¿En qué son diferentes? </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Ejemplos de respuestas</title>
-          <p>
-            Pueden observar:
-            <ul>
-              <li>Que los círculos son nuevos</li>
-              <li>Que los círculos tienen un color distinto a cada lado.</li>
-              <li>Que la primera imagen no tiene colores.</li>
-            </ul>
-          </p>
-          <p>
-            Se pueden preguntar:
-            <ul>
-              <li>¿Para qué sirve la primera herramienta?</li>
-              <li>¿Se pueden usar juntas las herramientas?</li>
-            </ul>
-          </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Lo que se espera de esta actividad</title>
-          <p> Que los estudiantes conozcan las fichas de dos colores y los tableros de 5. Igualmente la idea es que practiquen por tercera vez la rutina "Observa y pregúntate".</p>
-        </paragraphs>
+        <line>¿Qué observas?</line>
+        <line>¿Qué te preguntas?</line>
       </p>
-    </remark>
+      <sbsgroup widths="40% 40%">
+        <sidebyside>
+          <image source="svg-source/tikz-file-147345">
+            <description></description>
+          </image>
+          <image source="png-source/K.1.A Beta Student Workbook.RedYellowChips_withShadow.png">
+            <description></description>
+          </image>
+        </sidebyside>
+        <sidebyside>
+          <image source="svg-source/tikz-file-128850">
+            <description></description>
+          </image>
+          <image source="svg-source/tikz-file-147344">
+            <description></description>
+          </image>
+        </sidebyside>
+      </sbsgroup>
+    </statement>
+    <solution>
+      <p>Ejemplos de respuestas</p>
+      <p>
+        Pueden observar:
+        <ul>
+          <li>Que los círculos son nuevos</li>
+          <li>Que los círculos tienen un color distinto a cada lado.</li>
+          <li>Que la primera imagen no tiene colores.</li>
+        </ul>
+      </p>
+      <p>
+        Se pueden preguntar:
+        <ul>
+          <li>¿Para qué sirve la primera herramienta?</li>
+          <li>¿Se pueden usar juntas las herramientas?</li>
+        </ul>
+      </p>
+    </solution>
+  </exploration>
+  <remark component="profesor">
+    <paragraphs>
+      <title>Tiempo recomendado</title>
+      <p>15 minutos.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>Este calentamiento invita a los estudiantes a observar y preguntarse sobre cuatro herramientas matemáticas diferentes, dos herramientas con las que han trabajado anteriormente y dos nuevas herramientas que explorarán en esta lección. La estructura de la imagen es la misma que los estudiantes verán en la rutina "¿Cuál es diferente?" a la que se les presentará en una unidad futura. Para prepararse para eso, la síntesis se centra en comparar las diferentes herramientas. Escuche el lenguaje que los estudiantes usan para describir y explicar a otros cómo ven las diferentes herramientas matemáticas (MP3, MP6).</p>
+    </paragraphs>
+    <!-- <paragraphs>
+      <title>Desarrollo de lenguaje matemático</title>
+    </paragraphs> -->
+    <!-- <paragraphs>
+      <title>Materiales</title>
+    </paragraphs> -->
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <ul>
+        <li>Grupos de 2</li>
+        <li>Muestre la imagen.</li>
+        <li><q>¿Qué observan?</q></li>
+        <li>30 segundos: tiempo de reflexión en silencio</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Actividad</title>
+      <ul>
+        <li><q>Cuéntenle a su compañero qué observaron</q></li>
+        <li>1 minuto: discusión en parejas</li>
+        <li><q>Compartan algo que su compañero haya observado</q></li>
+        <li>Compartan y registren las respuestas</li>
+        <li><q>¿Qué se preguntan?</q></li>
+        <li>30 segundos: tiempo de reflexión en silencio</li>
+        <li>1 minuto: discusión en parejas</li>
+        <li><q>Compartan algo que su compañero se haya preguntado</q></li>
+        <li>Compartan y registren las respuestas</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <ul>
+        <li><q>Estas herramientas se llaman fichas de dos colores.</q></li>
+        <li>Si es necesario, pregunte <q>¿En qué se parecen estas herramientas? ¿En qué son diferentes?</q></li>
+      </ul>
+    </paragraphs>
+  </remark>
 </subsection>
-
-
 
 <subsection xml:id="grado0-unidad1-seccionA-leccion3-1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
-  <assemblage>
+  <title component="profesor"><nbsp/>(15 mins)</title>
+  <activity>
     <title>Exploremos fichas y tableros de 5</title>
-    <image source="svg-source/tikz-file-148144">
-      <description></description>
-    </image>
-  </assemblage>
-  
-  <remark component="profesor">
-      <!-- <title>Notas para el profesor</title> -->
-      <p>Tiempo recomendado: 15 mins.</p>
-      
-      <p>Nota: Esta es la misma actividad de exploración de la lección pasada, pero ahora con fichas geométricas. </p>
-
-      <p>
-        <paragraphs>
-          <title>Fase 1 - Trabajo individual en parejas (10 min.)</title>
-          <p>Reparta fichas de dos colores y tableros de 5 a las parejas (un tablero para cada estudiante) e invite a los estudiantes a que individualmente hagan o construyan cosas con estas herramientas.</p>
-          <p>A medida que los estudiates trabajan, considere hacer preguntas como:
-              <ul>
-                <li>¿Cuántas fichas de dos colores hay en el tablero de 5? </li>
-                <li>¿Cuántas fichas rojas tienen? </li> 
-                <li>¿Tienen suficientes fichas para completar el tablero de 5?</li>
-              </ul>
-          </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Fase 2 - Socializacion en las parejas (2 min.)</title>
-          <p>Pida a los estudiantes compartan con su compañero una de las cosas que hicieron o construyeron con las fichas de dos colores y los tableros de 5. </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Fase 3 - Socializacion con toda la clase (5 min.)</title>
-          <p>Pida a los estudiantes que compartan con la clase lo que hablaron con su compañero sobre las herramientas y anote sus respuestas. Asegúrese que los estudiantes aprendan los nombres "fichas de dos colores" y "tableros de 5". Como preparación a una nueva rutina, considere pregiuntarles: ¿En qué se parecen estas herramientas? ¿En qué son diferentes? </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Ejemplos de respuestas</title>
-          <p>Los estudiantes:
-             <ul>
-                <li>organizan las fichas de dos colores por color.</li>
-                <li>hacen patrónes con las fichas de dos colores.</li>
-                <li>usan tableros de 5 para organizar fichas.</li>
-             </ul>  
-          </p>
-        </paragraphs>
-        <paragraphs>
-          <title>Lo que se espera de esta actividad</title>
-          <p>
-            Es un acercamiento inicial a las fichas de dos colores y los tableros antes de usarlas como herramientas para representar situaciones matemáticas y resolver problemas.
-          </p>
-        </paragraphs>
+    <statement>
+      <image source="svg-source/tikz-file-148144">
+        <description></description>
+      </image>
+    </statement>
+    <solution>
+      <p>Ejemplos de respuestas</p>
+      <p>Los estudiantes:
+         <ul>
+            <li>organizan las fichas de dos colores por color.</li>
+            <li>hacen patrónes con las fichas de dos colores.</li>
+            <li>usan tableros de 5 para organizar fichas.</li>
+         </ul>  
       </p>
-    </remark>
+    </solution>
+  </activity>
+  <remark component="profesor">
+    <paragraphs>
+      <title>Tiempo recomendado</title>
+      <p>15 minutos.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Narrativa</title>
+      <p>El propósito de esta actividad es que los estudiantes exploren y utilicen fichas de dos colores y tableros de 5. Los estudiantes tienen la oportunidad de explorar las herramientas antes de que se les pida que las utilicen para representar situaciones matemáticas en lecciones posteriores. Mientras los estudiantes trabajan, observe si cuentan las fichas de dos colores o utilizan los tableros de 5 para organizar las fichas.</p>
+
+      <p>Los tableros de 5 se proporcionan como una hoja reproducible. Los estudiantes seguirán utilizando estos a lo largo del año. Considere hacer copias en cartulina o laminarlos y mantenerlos organizados para utilizarlos repetidamente.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Desarrollo de lenguaje matemático</title>
+      <p>MLR8 Apoyos para la discusión. Después de que los estudiantes compartan sus respuestas, use ejemplos multimodales para mostrar el significado de 5 en el tablero de 5. Señale cada cuadro y cuente hasta 5. Invite a los estudiantes a leer en coro los números del 1 al 5 en voz alta.</p>
+      <p>Avances: Escuchar, Representar, Hablar.</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Acceso a estudiantes con discapacidades</title>
+      <p>Participación: Desarrollar Esfuerzo y Persistencia.</p> 
+      <p>Algunos estudiantes pueden beneficiarse de comentarios que enfaticen el esfuerzo y el tiempo dedicado a la tarea. Por ejemplo, mover fichas en los cuadros del tablero de 5 o llenar el tablero de 5 con una ficha en cada cuadro.</p>
+      <p>Apoya la accesibilidad para: Atención, Funcionamiento Socioemocional</p>
+    </paragraphs>
+    <paragraphs>
+      <title>Materiales</title>
+      <ul>
+        <li>fichas de dos colores</li>
+        <li>tableros de 5</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Lanzamiento</title>
+      <ul>
+        <li>Grupos de 2</li>
+        <li>Entregue a cada estudiante un tablero de 5.</li>
+        <li><q>Mientras exploran las fichas de dos colores, también van a explorar una herramienta nueva que se llama tablero de 5.</q></li>
+        <li>Muestre el tablero de 5.</li>
+        <li><q>¿Por qué creen que se llama tablero de 5?</q> (Porque tiene cinco espacios o cuadrados en él.)</li>
+        <li>30 segundos: tiempo de reflexión en silencio</li>
+        <li>Compartan sus respuestas.</li>
+        <li>Entregue a cada grupo de estudiantes un contenedor de fichas de dos colores.</li>
+        <li><q>Exploremos las fichas de dos colores y los tableros de 5.</q></li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Actividad</title>
+      <ul>
+        <li>10 minutos: tiempo de trabajo independiente</li>
+        <li><q>Compartan con su compañero una de las cosas que hicieron o construyeron con las fichas de dos colores y los tableros de 5.</q></li>
+        <li>2 minutos: discusión en pareja</li>
+      </ul>
+    </paragraphs>
+    <paragraphs>
+      <title>Síntesis de la actividad</title>
+      <p>Pida a 3-4 grupos de estudiantes que compartan lo que hicieron o crearon con fichas de dos colores y tableros de 5.</p>
+    </paragraphs>
+  </remark>
 </subsection>
 
 
@@ -184,29 +236,19 @@
  -->
 
 <subsection xml:id="grado0-unidad1-seccionA-leccion3-Syn" component="profesor">
-  <title>Discusión de cierre</title>
-    <remark>
-      <!-- <title>Creación de poster de "Comunidad matemática"</title> -->
-        <p>Tiempo recomendado: 10 mins.</p>
-        <p> 
-          Muestre la imagen de la actividad de calentamiento. Retome las herramientas que ha presentado a los estudiantes las últimas clases (cubos encajables, fichas geométricas, fichas de dos colores y tableros de 5). 
-        </p>
-        <p>
-          Haga una rutina (5 mins.) en la que los estudiantes (1) discuten sus ideas la siguiente pregunta con un compañero y (2) en socialización con toda la clase, algunos estudinates comparten lo que dijo su compañero (parafrasean sus ideas).
-          <ul>
-            <li>¿Qué herramientas pueden usar para contar? </li>
-          </ul>
-        </p>
-        <p>
-          Repita la rutina (otros 5 mins) con esta pregunta:
-          <ul>
-            <li>¿Qué herramientas pueden usar para hacer figuras?</li>
-          </ul>
-        </p>
-        <p>
-          Cierre la clase contando en voz alta hasta 10 con los estudiantes.
-        </p>
-    </remark>
+  <title>Síntesis de la lección</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
+  <remark>
+    <p>Tiempo recomendado: 10 mins.</p>
+    <p>Muestre la imagen de la actividad de calentamiento.</p>
+    <p><q>Hemos aprendido sobre herramientas que nos pueden ayudar a hacer matemáticas—cubos encajables, fichas geométricas, fichas de dos colores y tableros de 5.</q></p>
+    <p><q>¿Qué herramientas pueden usar para contar? Compartan con su compañero.</q></p>
+    <p>Invite a los estudiantes a compartir una idea que su compañero compartió.</p>
+    <p><q>¿Qué herramientas pueden usar para hacer figuras? Compartan sus ideas con su compañero.</q></p>
+    <p>Invite a los estudiantes a compartir una idea que su compañero compartió.</p>
+    <p><q>Practiquemos contar hasta 10</q></p>
+    <p>Demuestre cómo contar hasta 10. Cuenten juntos 1-2 veces hasta 10.</p>
+  </remark>
 </subsection>
 
 </section>
