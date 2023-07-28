@@ -1,21 +1,21 @@
 /* EAJ - quitar los números a remark-like */
-article[id*='remark'] .codenumber {
+/* article[id*='remark'] .codenumber {
   display:none !important;
-}
+} */
 
 /* EAJ -  quitar el punto en el título de remark:*/
-article[id*='remark'] .period {
+/* article[id*='remark'] .period {
   display:none !important;
-}
+} */
 
 /* EAJ - agregar salto de línea después del título de remark*/
-.pretext-content section article.remark-like > .heading + p {
+/* .pretext-content section article.remark-like > .heading + p {
   display: block;
   padding-top: 0.3em;
 }
 article[id*='remark'] .heading::after, .remark-like .heading::after {
   display:none !important;
-}
+} */
 
 /* EAJ - quitar los números a activity */
 article[id*='activity'] .heading .codenumber {
