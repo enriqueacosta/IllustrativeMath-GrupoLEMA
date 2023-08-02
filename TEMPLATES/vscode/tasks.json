@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pretext web prof",
+            "type": "shell",
+            "command": "pretext",
+            "args": [
+                "build",
+                "web-prof"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "pretext web est",
+            "type": "shell",
+            "command": "pretext",
+            "args": [
+                "build",
+                "web-est"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
