@@ -8,7 +8,7 @@ Debe tener [Pretext](https://pretextbook.org) instalado. Desde la terminal, en u
 
 Todos los archivos que se generan se guardan en la carpeta `output/`.
 
-### Versiones del estudiante
+### generar versiones del estudiante
 
 Para generar la página web:
 
@@ -20,12 +20,6 @@ Para ver localmente la página web:
 
 ```bash
 pretext view web-est
-```
-
-Para ver una versión local de la página que se actualiza automáticamente con cambios:
-
-```bash
-pretext view -w web-est
 ```
 
 Para generar el pdf:
@@ -40,11 +34,39 @@ Para generar el código latex que produce el pdf:
 pretext build print-latex-est
 ```
 
-### Versiones del profesor
+### generar versiones del profesor
 
 Cambiar `-est` por `-prof` en todos los comandos.
 
 Ambas versiones (estudiante y profesor) se generan a partir de los mismos archivos fuente. Los elementos que contienen `component="profesor"` solo son visibles en la versión del profesor.
+
+
+## Componentes en el código fuente
+El en source, para crear un elemento que solo 
+*  ve el profesor, poner `component="profesor"`
+*  ve el estudiante, poner `component="estudiante"
+*  se ve en la versión web, poner `component="web"`
+
+Por ejemplo:
+```xml
+<objectives component="estudiante">
+  <ul>
+    <li>Exploremos las fichas de dos colores y los tableros de 5.</li>
+  </ul>
+</objectives>
+
+<objectives component="profesor">
+  <ul>
+    <li>Usar fichas de dos colores y los tableros de 5.</li>
+    <li>Parafrasear ideas matemáticas de un compañero.</li>
+  </ul>
+</objectives>
+
+<ul>
+  <li>fichas de dos colores</li>
+  <li>tableros de 5 <url component="web" href="external/blm/pdf-source/tableros-de-5.pdf">(ver pdf)</url></li>
+</ul>
+```
 
 ## Licencia
 
