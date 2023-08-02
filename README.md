@@ -8,7 +8,7 @@ Debe tener [Pretext](https://pretextbook.org) instalado. Desde la terminal, en u
 
 Todos los archivos que se generan se guardan en la carpeta `output/`.
 
-### Versiones del estudiante
+### generar versiones del estudiante
 
 Para generar la página web:
 
@@ -34,14 +34,14 @@ Para generar el código latex que produce el pdf:
 pretext build print-latex-est
 ```
 
-### Versiones del profesor
+### generar versiones del profesor
 
 Cambiar `-est` por `-prof` en todos los comandos.
 
 Ambas versiones (estudiante y profesor) se generan a partir de los mismos archivos fuente. Los elementos que contienen `component="profesor"` solo son visibles en la versión del profesor.
 
 
-### Componentes
+## Componentes en el código fuente
 El en source, para crear un elemento que solo 
 *  ve el profesor, poner `component="profesor"`
 *  ve el estudiante, poner `component="estudiante"
