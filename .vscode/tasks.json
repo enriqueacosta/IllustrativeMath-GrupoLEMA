@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pretext web prof",
+            "label": "pretext build web prof",
             "type": "shell",
             "command": "pretext",
             "args": [
@@ -18,7 +18,7 @@
             "group": "build"
         },
         {
-            "label": "pretext web est",
+            "label": "pretext build web est",
             "type": "shell",
             "command": "pretext",
             "args": [
@@ -33,6 +33,32 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "pretext view web est",
+            "type": "shell",
+            "command": "pretext",
+            "args": [
+                "view",
+                "web-est"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "pretext view web prof",
+            "type": "shell",
+            "command": "pretext",
+            "args": [
+                "view",
+                "web-prof"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": []
         }
     ]
 }
