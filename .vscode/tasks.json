@@ -15,7 +15,10 @@
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "pretext build web est",
@@ -29,10 +32,7 @@
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "pretext view web est",
