@@ -70,9 +70,9 @@ Por ejemplo:
 
 ## Licencia
 
-Mientras se descifran los detalles de copyright y licencias, este material es ©Enrique Acosta ([enriqueacosta.github.io](https://enriqueacosta.github.io)) y se publica bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International (CC BY NC 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
+Mientras se descifran los detalles de copyright y licencias, este material es ©Enrique Acosta ([enriqueacosta.github.io](https://enriqueacosta.github.io)) y se publica bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY NC SA 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
 
-Ver una copia de la licencia en [creativecommons.org](https://creativecommons.org/licenses/by-nc/4.0/"/).
+Ver una copia de la licencia en [creativecommons.org](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics® [illustrativemathematics.org](https://curriculum.illustrativemathematics.org) en su versión en español en [im.kendallhunt.com](https://im.kendallhunt.com/K5_ES/curriculum.html), distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en https://creativecommons.org/licenses/by/4.0/.
 
