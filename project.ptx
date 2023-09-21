@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file provides the overall configuration for your PreTeXt
+    project. To edit the content of your document, open `source/grado3-unidad4.ptx`
+    (default location).
+-->
+<project ptx-version="2">
+  <targets>
+    <!-- To build this target, run `pretext grado3-unidad4-web-est` -->
+    
+    <!-- grado0-unidad1 -->
+    <target name="grado0-unidad1-web-est" 
+            format="html" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-est-web.ptx"
+            output-dir="output/web-est/grado0-unidad1">
+      <stringparams name="html.css.extra" value="meta/css/custom-styles.css"/>
+    </target>
+    <target name="grado0-unidad1-print-est" 
+            latex-engine="pdflatex" 
+            format="pdf" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-est-print.ptx"
+            output-dir="output/print-est/grado0-unidad1">
+    </target>
+    <target name="grado0-unidad1-print-latex-est" 
+            format="latex" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-est-print.ptx"
+            output-dir="output/print-latex-est/grado0-unidad1">
+    </target>
+    <target name="grado0-unidad1-web-prof" 
+            format="html" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-prof-web.ptx"
+            output-dir="output/web-prof/grado0-unidad1">
+      <stringparams name="html.css.extra" value="meta/css/custom-styles.css"/>
+    </target>
+    <target name="grado0-unidad1-print-prof" 
+            latex-engine="pdflatex" 
+            format="pdf" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-prof-print.ptx"
+            output-dir="output/print-prof/grado0-unidad1">
+    </target>
+    <target name="grado0-unidad1-print-latex-prof" 
+            format="latex" 
+            source="grado0-unidad1/grado0-unidad1.ptx"
+            publication="publication-prof-print.ptx"
+            output-dir="output/print-latex-prof/grado0-unidad1">
+    </target>
+
+    <!-- grado3-unidad4 -->
+    <target name="grado3-unidad4-web-est" 
+            format="html" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-est-web.ptx"
+            output-dir="output/web-est/grado3-unidad4">
+      <stringparams name="html.css.extra" value="meta/css/custom-styles.css"/>
+    </target>
+    <target name="grado3-unidad4-print-est" 
+            latex-engine="pdflatex" 
+            format="pdf" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-est-print.ptx"
+            output-dir="output/print-est/grado3-unidad4">
+    </target>
+    <target name="grado3-unidad4-print-latex-est" 
+            format="latex" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-est-print.ptx"
+            output-dir="output/print-latex-est/grado3-unidad4">
+    </target>
+    <target name="grado3-unidad4-web-prof" 
+            format="html" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-prof-web.ptx"
+            output-dir="output/web-prof/grado3-unidad4">
+      <stringparams name="html.css.extra" value="meta/css/custom-styles.css"/>
+    </target>
+    <target name="grado3-unidad4-print-prof" 
+            latex-engine="pdflatex" 
+            format="pdf" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-prof-print.ptx"
+            output-dir="output/print-prof/grado3-unidad4">
+    </target>
+    <target name="grado3-unidad4-print-latex-prof" 
+            format="latex" 
+            source="grado3-unidad4/grado3-unidad4.ptx"
+            publication="publication-prof-print.ptx"
+            output-dir="output/print-latex-prof/grado3-unidad4">
+    </target>
+  </targets>
+</project>
