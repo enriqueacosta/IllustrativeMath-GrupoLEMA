@@ -1,1 +1,0 @@
-publication files are in meta/publication
