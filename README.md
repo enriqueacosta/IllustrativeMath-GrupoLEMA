@@ -44,7 +44,7 @@ Ambas versiones (estudiante y profesor) se generan a partir de los mismos archiv
 ## Componentes en el código fuente
 El en source, para crear un elemento que solo 
 *  ve el profesor, poner `component="profesor"`
-*  ve el estudiante, poner `component="estudiante"
+*  ve el estudiante, poner `component="estudiante"`
 *  se ve en la versión web, poner `component="web"`
 
 Por ejemplo:
