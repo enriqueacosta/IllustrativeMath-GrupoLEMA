@@ -12,7 +12,7 @@
   <!-- Set where external assets and generated assets will be   -->
   <!-- stored or created.  Directories are relative to the main -->
   <!-- source PreTeXt file                                      -->
-  <source customizations="../meta/customizations/constantes-v1.ptx">
+  <source customizations="../meta/customizations/textos-constantes-v1.ptx">
     <directories external="../assets" generated="../generated-assets"/>
     
     <!-- EAJ - para generar la versión del profesor poner: -->
@@ -40,7 +40,7 @@
     
     <!-- EAJ - esto quita toda la numeración, pero no logra quitar    -->
     <!-- los números como [Activity 3], [Remark 10]                   -->
-    <!-- La numeracíon de [remark] se quita en assets/custom-styles.css-->
+    <!-- La numeracíon de [remark] se quita en assets/css/custom-styles.css-->
     <divisions level="0"/>
      
     <!-- The next elements say how the levels deep to break up the    -->
