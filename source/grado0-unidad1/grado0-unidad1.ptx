@@ -11,7 +11,7 @@
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="../../meta/meta_docinfo.ptx" />
+  <xi:include href="../meta/meta_docinfo.ptx" />
 
   <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
@@ -25,7 +25,7 @@
     <frontmatter>
 
       <!-- contenido de <titlepage> que es igual para todas las unidades-->
-      <xi:include href="../../meta/meta_titlepage.ptx" />
+      <xi:include href="../meta/meta_titlepage.ptx" />
 
       <!-- You can have more than one preface. -->
       <preface>
@@ -70,10 +70,10 @@
       <!-- You can have more than one preface. -->
 
       <!-- Acá va todo lo de copyright -->
-      <xi:include href="../../meta/meta_colophon.ptx" />
+      <xi:include href="../meta/meta_colophon.ptx" />
 
       <!-- Acá va todo lo de el código fuente -->
-      <xi:include href="../../meta/meta_source.ptx" />
+      <xi:include href="../meta/meta_source.ptx" />
 
       <!-- <dedication> -->
       <!-- </dedication> -->
