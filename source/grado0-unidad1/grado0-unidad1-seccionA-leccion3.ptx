@@ -19,20 +19,20 @@
 <introduction component="profesor">
   <!-- índice de la lección -->
   <paragraphs>
-    <title>Momentos de la lección</title>
+    <title><custom ref="timeline-leccion-titulo"/></title>
        <list-of elements="subsection" scope="section"/>
   </paragraphs>
 
   <paragraphs>
-    <title>Estándares CCSS asociados</title> 
+    <title><custom ref="csss-leccion-titulo"/></title>
     <p>K.CC.B, K.MD.B.3</p>
   </paragraphs>
   
   <paragraphs>
-    <title>Propósito de la lección</title>
+    <title><custom ref="purpose-leccion-titulo"/></title>
     <p>El propósito de esta lección es que los estudiantes exploren fichas de dos colores y tableros de 5. Los profesores también tienen la oportunidad de recopilar datos de evaluación formativa sobre los conceptos y habilidades de conteo de los estudiantes.</p>    </paragraphs>
     <paragraphs>
-      <title>Narrativa de la lección</title>
+      <title><custom ref="narrative-leccion-titulo"/></title>
       <p>A medida que los estudiantes exploran las fichas de dos colores y los tableros de 5, es probable que creen diseños. A medida que los monitorea, considere hacer preguntas como <q>¿Cuántas fichas de dos colores hay en el tablero de 5? ¿Cuántas fichas rojas tienes? ¿Tienes suficientes fichas para completar el tablero de 5?</q> Estas preguntas ayudan a los profesores a conocer más sobre cada estudiante. El tablero de 5 es una herramienta útil para que los estudiantes desarrollen una visualización del número 5. Diferentes disposiciones de fichas en el tablero generan diferentes visualizaciones de números y estrategias para manipular estos números en relación con el cinco. Los estudiantes utilizarán el tablero de 5, y más adelante el tablero de 10, a lo largo del año. En la actividad de cierre de la lección, los estudiantes piensan en qué herramientas matemáticas elegirían para ciertas tareas (MP5).</p>
       <p>Las primeras lecciones de esta sección son intencionalmente más cortas para permitir que los estudiantes aprendan la estructura y las rutinas de las lecciones de matemáticas y para que los profesores tengan la oportunidad de aprender lo que los estudiantes saben sobre conceptos de número. Si hay tiempo extra, los estudiantes pueden pasar más tiempo explorando las fichas de dos colores en la primera actividad.</p>
       <p>En la actividad de cierre de la lección, los estudiantes practican decir la secuencia verbal de conteo hasta 10 en preparación para contar objetos en una sección próxima. Agregue variedad al conteo agregando movimiento. Por ejemplo, los estudiantes pueden contar mientras aplauden, pisan fuerte o saltan.</p>
@@ -41,8 +41,8 @@
 
 
 <subsection xml:id="grado0-unidad1-seccionA-leccion3-0">
-  <shorttitle>Calentamiento</shorttitle>
-  <title>Calentamiento</title>
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(15 mins)</title>
   <exploration>
     <title>Observa y pregúntate: fichas y tableros de 5</title>
@@ -90,11 +90,11 @@
     </solution>
     <postlude component="profesor">
       <paragraphs>
-        <title>Tiempo recomendado</title>
+        <title><custom ref="recommended-time-titulo"/></title>
         <p>15 minutos.</p>
       </paragraphs>
       <paragraphs>
-        <title>Narrativa</title>
+        <title><custom ref="narrative-actividad-titulo"/></title>
         <p>Este calentamiento invita a los estudiantes a observar y preguntarse sobre cuatro herramientas matemáticas diferentes, dos herramientas con las que han trabajado anteriormente y dos nuevas herramientas que explorarán en esta lección. La estructura de la imagen es la misma que los estudiantes verán en la rutina "¿Cuál es diferente?" a la que se les presentará en una unidad futura. Para prepararse para eso, la síntesis se centra en comparar las diferentes herramientas. Escuche el lenguaje que los estudiantes usan para describir y explicar a otros cómo ven las diferentes herramientas matemáticas (MP3, MP6).</p>
       </paragraphs>
       <!-- <paragraphs>
@@ -104,7 +104,7 @@
         <title>Materiales</title>
       </paragraphs> -->
       <paragraphs>
-        <title>Lanzamiento</title>
+        <title><custom ref="launch-titulo"/></title>
         <ul>
           <li>Grupos de 2</li>
           <li>Muestre la imagen.</li>
@@ -113,7 +113,7 @@
         </ul>
       </paragraphs>
       <paragraphs>
-        <title>Desarrollo de la actividad</title>
+        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
         <ul>
           <li><q>Cuéntenle a su compañero qué observaron</q></li>
           <li>1 minuto: discusión en parejas</li>
@@ -127,7 +127,7 @@
         </ul>
       </paragraphs>
       <paragraphs>
-        <title>Síntesis de la actividad</title>
+        <title><custom ref="synthesis-actividad-titulo"/></title>
         <ul>
           <li><q>Estas herramientas se llaman fichas de dos colores.</q></li>
           <li>Si es necesario, pregunte <q>¿En qué se parecen estas herramientas? ¿En qué son diferentes?</q></li>
@@ -159,7 +159,7 @@
     </solution>
     <postlude component="profesor">
       <paragraphs>
-        <title>Tiempo recomendado</title>
+        <title><custom ref="recommended-time-titulo"/></title>
         <p>15 minutos.</p>
       </paragraphs>
       <paragraphs>
@@ -176,7 +176,7 @@
         </ul>
       </paragraphs>
       <paragraphs>
-        <title>Lanzamiento</title>
+        <title><custom ref="launch-titulo"/></title>
         <ul>
           <li>Grupos de 2</li>
           <li>Entregue a cada estudiante un tablero de 5.</li>
@@ -190,7 +190,7 @@
         </ul>
       </paragraphs>
       <paragraphs>
-        <title>Desarrollo de la actividad</title>
+        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
         <ul>
           <li>10 minutos: tiempo de trabajo independiente</li>
           <li><q>Compartan con su compañero una de las cosas que hicieron o construyeron con las fichas de dos colores y los tableros de 5.</q></li>
@@ -198,7 +198,7 @@
         </ul>
       </paragraphs>
       <paragraphs>
-        <title>Síntesis de la actividad</title>
+        <title><custom ref="synthesis-actividad-titulo"/></title>
         <p>Pida a 3-4 grupos de estudiantes que compartan lo que hicieron o crearon con fichas de dos colores y tableros de 5.</p>
       </paragraphs> 
       <paragraphs>
@@ -217,7 +217,7 @@
 </subsection>
 
 <subsection xml:id="grado0-unidad1-seccionA-leccion3-Syn" component="profesor">
-  <title>Síntesis de la lección</title>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title>
     <p>Tiempo recomendado: 10 mins.</p>
     <p>Muestre la imagen de la actividad de calentamiento.</p>
