@@ -3,14 +3,16 @@
 <title>Lección 3 - Dibujos de situaciones de división</title>
 <shorttitle>Lección 3</shorttitle>
 
-<!-- Objetivos para los estudiantes -->
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
 <objectives component="estudiante">
   <ul>
     <li>Representemos situaciones de división con dibujos.</li>
   </ul>
 </objectives>
 
-<!-- Objetivos que ve el profesor -->
 <objectives component="profesor">
   <ul>
     <li>Interpretar y relacionar dibujos y descripciones de situaciones de división.</li>
@@ -18,436 +20,102 @@
   </ul>
 </objectives>
 
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
 <introduction component="profesor">
-  <paragraphs><title><custom ref="csss-leccion-titulo"/></title>
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title>
     <p>3.NBT.A.2, 3.OA.A.2</p>
   </paragraphs>
 
   <!-- índice de la lección -->
-  <paragraphs><title><custom ref="timeline-leccion-titulo"/></title>
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
      <list-of elements="subsection" scope="section"/>
   </paragraphs>
 
+  <!-- Propósito de la lección -->
   <paragraphs>
       <title><custom ref="purpose-leccion-titulo"/></title>
       <p>El propósito de esta lección es que los estudiantes interpreten descripciones o dibujos de situaciones de división y reconozcan si implican encontrar un número desconocido de grupos o encontrar un número desconocido de objetos en cada grupo.</p>
   </paragraphs>
 
-  <!-- <paragraphs><title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+ <!--  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <ul>
+      <li>Cubos encajables o fichas de dos colores</li>
+      <li>Herramientas para crear una presentación visual</li>
+    </ul>
   </paragraphs> -->
 
   <paragraphs>
-    <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>Los estudiantes ven los dos tipos de situaciones de división lado a lado en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <m>\div</m>, se introduce en la síntesis de la lección.</p>
+      <title><custom ref="narrative-leccion-titulo"/></title>
+      <p>Los estudiantes ven los dos tipos de situaciones de división lado a lado en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <m>\div</m>, se introduce en la síntesis de la lección.</p>
   </paragraphs>
-  <paragraphs><title><custom ref="reflection-quest-titulo"/></title>
-    <p>¿Cómo están aprovechando los estudiantes los dibujos que utilizaron al multiplicar para resolver problemas de división?</p>
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>¿Cómo están aprovechando los estudiantes los dibujos que utilizaron al multiplicar para resolver problemas de división?</p>  
   </paragraphs>
 </introduction>
 
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion3-warm">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  <exploration> <!-- El calentamiento es un exploration (distinto a las otras actividades) -->
-    <title>Conversación numérica: Cuanto más cambien las cosas...</title>
-    <statement>
-        <p>Encuentra mentalmente el valor de cada expresión.</p>
-        <p>
-        <ul> <li> <m>120 + 120</m> </li>
-           <li> <m>121 + 119</m> </li>
-           <li> <m>125 + 115</m> </li>
-           <li> <m>129 + 111</m> </li>
-        </ul>
-        </p>
-    </statement>
-    <solution>
-        <p>Ejemplos de respuestas</p>
-        <p>
-            <ul>
-            <li>240. Simplemente dupliqué 120.</li>
-            <li>240. Me di cuenta de que 121 es 1 más que 120 y 119 es 1 menos que 120, así que el valor es el mismo que el de <m>120+120</m>.</li>
-            <li>240. Le quité 5 a 125 y se lo sumé a 115. Así otra vez tenía <m>120+120</m>.</li>
-            <li>240. Le quité 9 a 129 y se lo sumé a 111. Así otra vez tenía <m>120+120</m>.</li>
-            </ul>
-        </p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta conversación numérica es generar estrategias y comprensiones que los estudiantes tienen para hacer sumas hasta de 1,000, especialmente al ajustar los números en una suma para que sea más fácil sumarlos. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para hacer sumas hasta de 1,000.</p>
-
-        <p>Los estudiantes buscan y utilizan la estructura (MP7) cuando se dan cuenta que el valor de la suma no cambia cuando se quita el mismo valor de un sumando y se agrega al otro.</p>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-          <ul>
-            <li>Muestre una expresión.</li>
-            <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.</q></li>
-            <li>1 minuto: tiempo de reflexión en silencio</li>
-          </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-          <ul>
-            <li>Registre respuestas y estrategias.</li>
-            <li>Mantenga las expresiones y el trabajo visible.</li>
-            <li>Repita con cada expresión.</li>
-          </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li>
-            <p>
-              <q>¿Por qué creen que todas estas expresiones tienen el mismo valor?</q> (Aunque cada número está cambiando, se está agregando la misma cantidad a un número y se está restando del otro número, por lo que el total es el mismo.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Considere preguntar:
-              <ul>
-                <li>
-                  <q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q>
-                </li>
-                <li>
-                  <q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q>
-                </li>
-                <li>
-                  <q>¿Alguien pensó en el problema de otra forma?</q>
-                </li>
-                <li>
-                  <q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q>
-                </li>
-              </ul>
-            </p>
-          </li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <!-- <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </exploration>
+  <xi:include href="./grado3-unidad4-seccionA-leccion3-warm.ptx"/>
 </subsection>
 
 
-
+<!-- ============================================ 
+  Actividad 1                        
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion3-actividad1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Grupos de estudiantes</title>
-    <statement>
-        <p>
-            <ol>
-              <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en grupos de 2? </li>
-              <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en 2 grupos? </li>
-            </ol>
-        </p>      
-    </statement>
-    <solution>
-        <ol>
-            <li>
-              <p>Ejemplos de respuestas:</p>
-              <ul>
-                <li><p>Simplemente formaron parejas.</p> </li>
-                <li><p>No necesitaban saber cuántos grupos tenían que formar, solo tenían que asegurarse de que hubiera 2 estudiantes en cada grupo.</p> </li>
-                <li><p>Al final, quedaron 5 grupos de 2 estudiantes.</p> </li>
-              </ul>
-            </li>
-            <li>
-              <p>Ejemplos de respuestas:</p>
-              <ul>
-                <li><p>Tenían que averiguar cuántos estudiantes había en cada grupo.</p> </li>
-                <li><p>Pusieron a las personas una por una en los grupos.</p> </li>
-                <li><p>Al final, quedaron 2 grupos de 5 estudiantes.</p> </li>
-              </ul>
-          </li>
-        </ol>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs><title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs><title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes representen físicamente la diferencia entre hacer 2 grupos y hacer grupos de 2. Diez estudiantes se dividirán en 2 grupos y luego en grupos de 2. El resto de los estudiantes observarán cómo se formaron los grupos para resaltar la diferencia entre los problemas de "¿cuántos grupos?" y los problemas de "¿cuántos en cada grupo?".</p>
-      </paragraphs>
-      <!-- <paragraphs><title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs><title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li>Invite a 10 estudiantes a venir al frente de la clase.</li>
-          <li><q>Estos estudiantes se van a organizar en grupos y lo harán de diferentes maneras. Si están observando, anoten sus observaciones acerca de cómo forman los grupos.</q></li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li>Pida a los 10 estudiantes que se pongan en grupos de 2.</li>
-          <li>Dé a los observadores la oportunidad de tomar notas.</li>
-          <li>Pida a los 10 estudiantes que se pongan en 2 grupos.</li>
-          <li>Dé a los observadores la oportunidad de tomar notas.</li>
-          <li>Pida a los estudiantes que regresen a sus asientos.</li>
-          <li><q>Hablen con un compañero sobre lo que notaron acerca de cómo los estudiantes se organizan en grupos de 2 y en 2 grupos.</q></li>
-          <li>2-3 minutos: discusión en parejas</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs><title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs><title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li>Pida a los estudiantes que observaron que compartan lo que notaron.</li>
-          <li>Destaque las ideas que ayuden a aclarar las diferencias entre "¿cuántos grupos?" y "¿cuántos en cada grupo?"</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs><title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <!-- <paragraphs><title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </activity>
+  <xi:include href="./grado3-unidad4-seccionA-leccion3-act1.ptx"/>
 </subsection>
 
 
-<subsection xml:id="grado3-unidad4-seccionA-leccion3-2">
+
+<!-- ============================================ 
+  Actividad 2                        
+=================================================  -->
+<subsection xml:id="grado3-unidad4-seccionA-leccion3-actividad2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
-  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Los lápices de colores de Elena</title>
-    <statement>
-        <p>Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices irán en cada caja?</p>
-        <p>¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.</p>
-        <sidebyside widths="2% 45% 2% 45%">
-          <p>A</p>
-          <image source="svg-source/tikz-file-149310">
-            <description>2 groups of 6 dots.</description>
-          </image>
-          <p>B</p>
-          <image source="svg-source/tikz-file-149311">
-            <description>6 groups of 2 dots.</description>
-          </image>
-        </sidebyside>
-    </statement>
-    <solution>
-        <p>A.</p>
-        <p>El dibujo B no es correcto pues muestra 6 grupos de 2 lápices de colores. Eso sería como si ella tuviera 6 cajas, en vez de 2 cajas.</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs><title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs><title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes relacionen una situación de división con un diagrama de grupos iguales. Los estudiantes deben ser capaces de explicar por qué la situación corresponde al diagrama A, que muestra 2 grupos de 6, y por qué no corresponde al diagrama B, que muestra 6 grupos de 2.</p>
-
-        <p>Esta actividad utiliza MLR1: Más fuerte y cada vez más claro.</p>
-
-        <p>Avances: lectura, escritura</p>
-      </paragraphs>
-      <!-- <paragraphs><title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs><title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li><q>Hoy vamos a examinar dibujos que representan situaciones de división. Tómense un minuto para leer esta situación.</q></li>
-          <li>1 minuto: tiempo de trabajo individual</li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li><q>Individualmente, decidan cuál dibujo corresponde a esta situación y luego expliquen su razonamiento.</q></li>
-          <li>2-3 minutos: tiempo de trabajo individual</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs><title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs><title><custom ref="synthesis-actividad-titulo"/></title>
-        <p>MLR1 Más fuerte y cada vez más claro</p>
-        <ul>
-          <li>
-            <q>Compartan su respuesta con su compañero. Por turnos, uno habla y el otro escucha. Si es su turno de hablar, compartan sus ideas y lo que han escrito hasta el momento. Si es su turno de escuchar, hagan preguntas y comentarios que ayuden a su compañero a mejorar su trabajo.</q>
-          </li>
-          <li>2-3 minutos: discusión estructurada en pareja</li>
-          <li>Repetir con 2 compañeros diferentes.</li>
-          <li>
-            <q>¿Cuál dibujo decidieron que corresponde? ¿Cómo lo saben?</q>
-          </li>
-          <li>
-            <q>¿Cómo saben que el otro dibujo no corresponde a esta situación?</q> (El dibujo B son 6 grupos de 2 lápices de colores. Eso sería como si tuviera 6 cajas, no 2 cajas.)
-          </li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs><title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <!-- <paragraphs><title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </activity>
+  <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
+  <xi:include href="./grado3-unidad4-seccionA-leccion3-act2.ptx"/>
 </subsection>
 
+
+
+<!-- ============================================ 
+  Actividad 3                        
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion3-actividad3">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  <activity>
-    <title>¿Cuál dibujo corresponde?</title>
-    <statement>
-        <p>Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.</p>
-        <sidebyside widths="60% 30%">
-        <p>  
-          <ol>
-            <li>Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?
-            </li>
-            <li>Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?
-            </li>
-            <li>Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?
-            </li>
-            <li>Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?
-            </li>
-            <li>Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?
-            </li>
-            <li>Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?
-            </li>
-          </ol>
-        </p>
-        <p>
-          <p>
-            A.
-            <image source="svg-source/tikz-file-149313">
-              <description>2 groups of 4 dots.</description>
-              <caption>A</caption>
-            </image>
-          </p> 
-          <p>
-            B.
-            <image source="svg-source/tikz-file-149314">
-              <description>10 groups of 2 dots.</description>
-            </image>
-          </p>
-          <p>
-            C.
-            <image source="svg-source/tikz-file-149315">
-              <description>3 groups of 5 dots.</description>
-            </image>
-          </p>
-        </p>
-        </sidebyside>
-    </statement>
-    <solution>
-        <p>Respuesta del enunciado</p>
-        <ol>
-          <li>A</li>
-          <li>B</li>
-          <li>A</li>
-          <li>C</li>
-          <li>B</li>
-          <li>C</li>
-        </ol>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs><title><custom ref="recommended-time-titulo"/></title>
-        <p>15 minutos.</p>
-      </paragraphs>
-      <paragraphs><title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes relacionen situaciones de división y diagramas de grupos iguales (MP2). Cada diagrama dado corresponde a dos situaciones diferentes. Los estudiantes aprenden que el mismo diagrama puede representar tanto un problema de "¿cuántos grupos?" como un problema de "¿cuántos en cada grupo?" porque el diagrama muestra el resultado final, no cómo se hicieron los grupos. Cuando los estudiantes interpretan un diagrama como que representa dos tipos de historias diferentes, indican claramente cómo cada parte del diagrama corresponde a la historia, incluyendo lo que corresponde a lo desconocido en la historia (MP6).</p>
-      </paragraphs>
-      <!-- <paragraphs><title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs><title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li>
-            <q>Vamos a examinar algunas situaciones que incluyen herramientas para escribir o dibujar. ¿Qué cosas usamos para escribir o dibujar?</q>
-          </li>
-          <li>30 segundos: tiempo de reflexión en silencio</li>
-          <li>Compartir y registrar las respuestas.</li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li><q>Van a asociar seis situaciones con dibujos que podrían representarlas. Tómense unos minutos para decidir cuál dibujo corresponde a cada situación.</q></li>
-          <li>3-5 minutos: tiempo de trabajo independiente</li>
-          <li><q>Compartan sus ideas con su compañero.</q></li>
-          <li>2-3 minutos: discusión en pareja</li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title>Para los estudiantes con dificultades</title>
-        <p>Si los estudiantes dicen que el dibujo no puede representar ambas situaciones, considere preguntar:
-        </p>
-        <ul>
-          <li><q>¿Cómo podríamos hacer un dibujo para cada situación?</q></li>
-          <li><q>¿Qué podríamos dibujar primero para representar la primera situación en la que hay 8 objetos? ¿Y para la segunda situación en la que hay 8 objetos?</q></li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li>Invite a los estudiantes a compartir qué dibujo corresponde a cada situación.</li>
-          <li>
-            <p>Enfóquese en un dibujo y las dos situaciones que puede representar, como:</p>
-            <image source="svg-source/tikz-file-149312" width="50%">
-              <description>2 groups of 4 dots.</description>
-            </image>
-            <ul>
-              <li>
-                <p>Mai tiene 8 marcadores. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas de marcadores hay?</p>
-              </li>
-              <li>
-                <p>Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. Cada bolsa tiene la misma cantidad de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</p>
-              </li>
-            </ul>
-          </li>
-          <li><q>¿Cómo puede el mismo dibujo representar ambas situaciones?</q> (No vimos cómo se hicieron los grupos, pero al final se hicieron la misma cantidad y tamaño de grupos en ambas situaciones. El dibujo puede representar poner 8 marcadores en cajas con 4 marcadores en cada caja y encontrar que caben en 2 cajas. También puede representar poner 8 lápices en 2 bolsas con la misma cantidad de lápices en cada bolsa y encontrar que se pueden poner 4 lápices en cada bolsa.)</li>
-        </ul>
-      </paragraphs>
-      <paragraphs><title>Desarrollo de lenguaje matemático</title>
-        <p>Apoyos para la discusión (MLR8). Los estudiantes deben turnarse para encontrar una correspondencia y explicar su razonamiento a su compañero.</p>
-        <p>Muestre el siguiente esquema de oración para que todos lo vean: "Observé ___, entonces asocié . . ." </p>
-        <p>Motívelos a desafiarse mutuamente cuando no estén de acuerdo.</p>
-      </paragraphs>
-      <paragraphs><title>Acceso a estudiantes con discapacidades</title>
-        <p>Proporcione acceso al generar interés. Aproveche la elección en torno al desafío percibido. Invite a los estudiantes a seleccionar al menos 3 de los 6 problemas para completar.</p>
-        <p>Apoya la accesibilidad para: Organización, Atención, Habilidades socioemocionales.</p>
-      </paragraphs>
-    </postlude>
-  </activity>
+  <xi:include href="./grado3-unidad4-seccionA-leccion3-act3.ptx"/>
 </subsection>
 
+<!-- ============================================ 
+  Síntesis                       
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion3-sintesis" component="profesor">
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>(10 mins)</title>
-    <p>Tiempo recomendado: 10 mins.</p>
-    <p><q>Hoy asociamos dibujos con situaciones de división. Hay dos tipos de situaciones de división y hoy vimos que el mismo dibujo puede representar ambos tipos de situaciones. </q ></p>
+  <title component="profesor"><nbsp/>(5 mins)</title>
+  <p>Tiempo recomendado: 10 mins.</p>
+  <p><q>Hoy asociamos dibujos con situaciones de división. Hay dos tipos de situaciones de división y hoy vimos que el mismo dibujo puede representar ambos tipos de situaciones. </q ></p>
   <p>Considera este grupo:</p>
   <sidebyside widths="25% 35% 35%">
     <image source="svg-source/tikz-file-149313">
@@ -475,37 +143,13 @@
   </p>
 </subsection>
 
+
+<!-- ============================================
+  Cool-down
+================================================= -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion3-cool">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
-  <title component="profesor"><nbsp/>(5 mins)</title>
-  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
-    <title>Regalitos para invitados</title>
-    <statement>
-        <p>Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?</p>
-        <p>¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.</p>
-        <sidebyside widths="2% 45% 2% 45%">
-          <p>A.</p>
-          <image source="svg-source/tikz-file-149314">
-            <description>10 groups of 2 dots.</description>
-          </image>
-          <p>B.</p>
-          <image source="svg-source/tikz-file-149314">
-            <description>10 groups of 2 dots.</description>
-          </image>
-        </sidebyside>
-    </statement>
-    <solution>
-      <p>Respuesta de ejemplo: El dibujo B corresponde a la situación porque muestra 8 marcadores en cada bolsa. Después de que los 48 marcadores se dividan en grupos de 8, habrá 6 bolsas.</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs><title>Posibles errores</title>
-        <p>Los estudiantes eligen el dibujo A, que muestra 8 bolsas en lugar de 8 marcadores en cada bolsa.</p>
-      </paragraphs>
-      <paragraphs><title>Acciones para apoyar el aprendizaje</title>
-        <p>Durante el lanzamiento de la actividad del día siguiente, haga que los estudiantes discutan por qué el dibujo B corresponde a la situación.</p>
-      </paragraphs>
-    </postlude>
-  </problem>
+  <xi:include href="./grado3-unidad4-seccionA-leccion3-cool.ptx"/>
 </subsection>
 </section>
