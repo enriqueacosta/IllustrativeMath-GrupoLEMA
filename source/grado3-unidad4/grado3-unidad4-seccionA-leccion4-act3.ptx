@@ -1,51 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
 <activity>
-  <title>Pilas de bloques</title>
-  <statement>
-    <p>Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.</p>
-    <p>
-      <ol>
-        <li>Kiran usa 6 bloques para hacer pilas. Cada pila tiene 2 bloques. ¿Cuántas pilas hay?
-        </li>
-        <li>Han usa 6 bloques para hacer dos pilas iguales. ¿Cuántos bloques hay en cada pila?
-        </li>
-        <li>Jada usa 6 bloques para construir pilas que tienen 3 bloques cada una. ¿Cuántas pilas hay?
-        </li>
-        <li>Mai usa 6 bloques para hacer 3 pilas iguales. ¿Cuántos bloques hay en cada pila?
-        </li>
-      </ol>      
-    </p>
-    <p>Dibujos</p>
-    <sbsgroup widths="2% 45% 2% 45%">
+
+<title>Pilas de bloques</title>
+<statement>
+  <p>Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.</p>
+  <p>
+    <ol>
+      <li>Kiran usa 6 bloques para hacer pilas. Cada pila tiene 2 bloques. ¿Cuántas pilas hay?
+      </li>
+      <li>Han usa 6 bloques para hacer dos pilas iguales. ¿Cuántos bloques hay en cada pila?
+      </li>
+      <li>Jada usa 6 bloques para construir pilas que tienen 3 bloques cada una. ¿Cuántas pilas hay?
+      </li>
+      <li>Mai usa 6 bloques para hacer 3 pilas iguales. ¿Cuántos bloques hay en cada pila?
+      </li>
+    </ol>      
+  </p>
+  <p>Dibujos</p>
+  <sbsgroup widths="2% 45% 2% 45%">
+  <sidebyside>
+    <p>A</p>
+    <image source="svg-source/tikz-file-149316">
+    <description>Drawing. 2 stacks of 3 blocks.</description>
+    </image>
+    <p>B</p>
+    <image source="svg-source/tikz-file-149317">
+    <description>Drawing. 3 stacks of 2 blocks.</description>
+    </image>
+  </sidebyside>
+  <p>Expresiones</p>
     <sidebyside>
-      <p>A</p>
-      <image source="svg-source/tikz-file-149316">
-      <description>Drawing. 2 stacks of 3 blocks.</description>
-      </image>
-      <p>B</p>
-      <image source="svg-source/tikz-file-149317">
-      <description>Drawing. 3 stacks of 2 blocks.</description>
-      </image>
+    <p>C</p>
+    <p><me>6\div 2</me></p>
+    <p>D</p>
+    <p><me>6\div 3</me></p>
     </sidebyside>
-    <p>Expresiones</p>
-      <sidebyside>
-      <p>C</p>
-      <p><me>6\div 2</me></p>
-      <p>D</p>
-      <p><me>6\div 3</me></p>
-      </sidebyside>
-    </sbsgroup>      
-  </statement>
-  <solution>
-    <p>
-      <ol>
-        <li>B y C</li>
-        <li>A y C</li>
-        <li>A y D</li>
-        <li>B y D</li>
-      </ol>
-    </p>
-  </solution>
+  </sbsgroup>      
+</statement>
+
+<solution>
+  <p>
+    <ol>
+      <li>B y C</li>
+      <li>A y C</li>
+      <li>A y D</li>
+      <li>B y D</li>
+    </ol>
+  </p>
+</solution>
+
 <postlude component="profesor"> <!-- Notas para el profesor -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
