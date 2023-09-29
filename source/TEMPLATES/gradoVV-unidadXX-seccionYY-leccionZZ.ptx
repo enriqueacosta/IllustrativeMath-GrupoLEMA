@@ -56,7 +56,7 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>
   
-  <!-- Preguntas de reflexión teacher -->
+  <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
     <p>[@@@@@@@@@]</p>
@@ -96,6 +96,7 @@
   <xi:include href="./grado3-unidad4-seccionA-leccion5-act2.ptx"/> 
 </subsection>
 
+
 <!-- ============================================ 
   Actividad 3
 =================================================  -->
@@ -115,32 +116,17 @@
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
   <p>[@@@@@@@@@]</p>
+
 </subsection>
+
+
 
 <!-- ============================================
   Cool-down
 ================================================= -->
 <subsection xml:id="gradoVV-unidadXX-seccionYY-leccionZZ-cool">
-  <shorttitle>Actividad de cierre</shorttitle>
-  <title>Actividad de cierre</title>
-  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
-    <title>[@@@@@@@@@]</title>
-    <statement>
-      <p>[@@@@@@@@@]</p>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title>Posibles errores</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acciones para apoyar el aprendizaje</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </problem>
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <xi:include href="./gradoVV-unidadXX-seccionYY-leccionZZ-cool.ptx"/>
 </subsection>
 </section>
