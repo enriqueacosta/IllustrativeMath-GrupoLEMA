@@ -3,7 +3,7 @@
     El cool-down es un problem (distinto a las otras actividades y a los Practice
     Problems) 
 -->
-<problem>
+<problem xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Patas de hormigas</title>
 <statement>
   <p>Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.</p>
@@ -27,12 +27,16 @@
   </p>
 </solution>
 <postlude component="profesor"> <!-- Notas para el profesor -->
+
+  <!-- Posibles errores -->
   <paragraphs>
-    <title>Posibles errores</title>
+    <title><custom ref="errores-cool-titulo"/></title>
     <p>Los estudiantes escriben una expresión distinta a <q>24 \div 4</q> para que se ajuste a la situación o no encuentran una solución al problema.</p>
   </paragraphs>
+
+  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title>Acciones para apoyar el aprendizaje</title>
+    <title><custom ref="apoyo-cool-titulo"/></title>
     <p>Pida a los estudiantes al inicio de la siguiente lección que trabajen en parejas en este problema.</p>
   </paragraphs>
 </postlude>

@@ -2,8 +2,10 @@
 <!-- 
   El calentamiento es un exploration (distinto a las otras actividades) 
 -->
-<exploration>
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude">
+
   <title>Conversación numérica: ¿En qué se parecen?</title>
+
   <statement>
     <p>Encuentra mentalmente el valor de cada expresión.</p>
     <p>
@@ -15,6 +17,7 @@
       </ol>          
     </p>
   </statement>
+
   <solution>
     <p>Ejemplos de respuestas</p>
     <p>
@@ -26,6 +29,7 @@
       </ol>
     </p>
   </solution>
+
   <postlude component="profesor"> <!-- Notas para el profesor -->
     <paragraphs>
       <title><custom ref="recommended-time-titulo"/></title>
