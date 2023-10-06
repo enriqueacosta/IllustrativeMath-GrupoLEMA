@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- 
+  El calentamiento es un exploration (distinto a las otras actividades) 
+-->
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Conversación numérica: ¿Más o menos?</title>
+
+<statement>
+  <p>Encuentra mentalmente el valor de cada expresión.</p>
+  <p>
+    <ol>
+        <li> <m>500 - 475</m> </li>
+        <li> <m>504 - 475</m> </li>
+        <li> <m>512 - 475</m> </li>
+        <li> <m>512 - 449</m> </li>
+    </ol>
+  </p>
+</statement>
+
+<solution>
+  <p>Ejemplos de respuestas</p>
+  <p>
+      <ol>
+      <li>25. Le sumé 25 a 475 para llegar a 500.</li>
+      <li>29. Pensé en el primer problema y le sumé 4 a 25 para llegar a 504.</li>
+      <li>37. Comencé en 475 y le sumé 25 para llegar a 500. Luego, le sumé 10 para llegar a 510 y le sumé 2 más para llegar a 512. <m>25 + 10 + 2 = 37</m>.</li>
+      <li>63. Sé que a 449 le faltan 51 para llegar a 500 y después le sumé 12 más a 51.</li>
+      </ol>
+  </p>
+</solution>
+
+<postlude component="profesor"> <!-- Notas para el profesor -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>El propósito de esta conversación numérica es generar un espacio para ver las estrategias y comprensiones que los estudiantes tienen para restar dentro de 1,000, especialmente al sumar para encontrar diferencias. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para restar dentro de 1,000.</p>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <ul>
+    <li>Muestre una expresión.</li>
+    <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.</q></li>
+    <li>1 minuto: tiempo de reflexión en silencio</li>
+    </ul>
+  </paragraphs>
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <ul>
+      <li>Registre las respuestas y las estrategias.</li>
+      <li>Mantenga las expresiones y el trabajo visible.</li>
+      <li>Repita con cada expresión.</li>
+    </ul>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title>Para los estudiantes con dificultades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <ul>
+      <li><q>¿Por qué el valor de <m>512 - 475</m> es mayor que el valor de <m>504 - 475</m>?</q> (Dado que el 475 no cambia, pero 512 es mayor que 504, la diferencia entre los números es mayor.)</li>
+      <li>
+          <p>Considere preguntar:
+              <ul>
+                <li><q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q> (¿Quién puede reformular el razonamiento de <fillin/> de una manera diferente?)</li>
+                <li><q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q> (¿Alguien utilizó la misma estrategia pero la explicaría de manera diferente?)</li>
+                <li><q>¿Alguien pensó en el problema de otra forma?</q> (¿Alguien abordó el problema de manera diferente?)</li>
+                <li><q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q> (¿Alguien quiere agregar algo a la estrategia de <fillin/>?)</li>
+              </ul>
+          </p>
+      </li>
+    </ul>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title>Desarrollo de lenguaje matemático</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+ <!--  <paragraphs>
+    <title>Acceso a estudiantes con discapacidades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+</postlude>
+
+</exploration>

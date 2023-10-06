@@ -3,14 +3,16 @@
 <title>Lección 4 - Interpretemos expresiones de división</title>
 <shorttitle>Lección 4</shorttitle>
 
-<!-- Objetivos para los estudiantes -->
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
 <objectives component="estudiante">
   <ul>
     <li><p>Démosle sentido a expresiones de división.</p></li>
   </ul>
 </objectives>
 
-<!-- Objetivos que ve el profesor -->
 <objectives component="profesor">
   <ul>
     <li><p>Interpretar expresiones de división.</p></li>
@@ -18,7 +20,13 @@
   </ul>
 </objectives>
 
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
 <introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title>
     <p> 3.NBT.A.2, 3.OA.A.2 </p>
@@ -27,18 +35,19 @@
   <!-- índice de la lección -->
   <paragraphs>
     <title><custom ref="timeline-leccion-titulo"/></title>
-      <list-of elements="subsection" scope="section"/>
+     <list-of elements="subsection" scope="section"/>
   </paragraphs>
 
+  <!-- Propósito de la lección -->
   <paragraphs>
       <title><custom ref="purpose-leccion-titulo"/></title>
       <p>El propósito de esta lección es que los estudiantes interpreten expresiones de división y comprendan que la misma expresión de división se puede utilizar para representar ambos tipos de situaciones de división.</p>
   </paragraphs>
 
-  <!-- <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs> -->
+ <!-- <paragraphs>
+   <title><custom ref="materials-actividad-titulo"/></title>
+   <p>[@@@@@@@@@]</p>
+ </paragraphs> -->
 
   <paragraphs>
       <title><custom ref="narrative-leccion-titulo"/></title>
@@ -46,396 +55,59 @@
   </paragraphs>
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>¿Qué aspectos de la lección de hoy permitieron a cada uno de sus estudiantes verse a sí mismos como pensadores matemáticos productivos?</p>
+    <p>¿Qué aspectos de la lección de hoy permitieron a cada uno de sus estudiantes verse a sí mismos como pensadores matemáticos productivos?</p> 
   </paragraphs>
 </introduction>
 
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion4-warm">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <exploration> <!-- El calentamiento es un exploration (distinto a las otras actividades) -->
-    <title>Conversación numérica: ¿Más o menos?</title>
-    <statement>
-        <p>Encuentra mentalmente el valor de cada expresión.</p>
-        <p>
-          <ol>
-              <li> <m>500 - 475</m> </li>
-              <li> <m>504 - 475</m> </li>
-              <li> <m>512 - 475</m> </li>
-              <li> <m>512 - 449</m> </li>
-          </ol>
-        </p>
-    </statement>
-    <solution>
-        <p>Ejemplos de respuestas</p>
-        <p>
-            <ol>
-            <li>25. Le sumé 25 a 475 para llegar a 500.</li>
-            <li>29. Pensé en el primer problema y le sumé 4 a 25 para llegar a 504.</li>
-            <li>37. Comencé en 475 y le sumé 25 para llegar a 500. Luego, le sumé 10 para llegar a 510 y le sumé 2 más para llegar a 512. <m>25 + 10 + 2 = 37</m>.</li>
-            <li>63. Sé que a 449 le faltan 51 para llegar a 500 y después le sumé 12 más a 51.</li>
-            </ol>
-        </p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta conversación numérica es generar un espacio para ver las estrategias y comprensiones que los estudiantes tienen para restar dentro de 1,000, especialmente al sumar para encontrar diferencias. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para restar dentro de 1,000.</p>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-        <li>Muestre una expresión.</li>
-        <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.</q></li>
-        <li>1 minuto: tiempo de reflexión en silencio</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li>Registre las respuestas y las estrategias.</li>
-          <li>Mantenga las expresiones y el trabajo visible.</li>
-          <li>Repita con cada expresión.</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li><q>¿Por qué el valor de <m>512 - 475</m> es mayor que el valor de <m>504 - 475</m>?</q> (Dado que el 475 no cambia, pero 512 es mayor que 504, la diferencia entre los números es mayor.)</li>
-          <li>
-              <p>Considere preguntar:
-                  <ul>
-                    <li><q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q> (¿Quién puede reformular el razonamiento de <fillin/> de una manera diferente?)</li>
-                    <li><q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q> (¿Alguien utilizó la misma estrategia pero la explicaría de manera diferente?)</li>
-                    <li><q>¿Alguien pensó en el problema de otra forma?</q> (¿Alguien abordó el problema de manera diferente?)</li>
-                    <li><q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q> (¿Alguien quiere agregar algo a la estrategia de <fillin/>?)</li>
-                  </ul>
-              </p>
-          </li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-     <!--  <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </exploration>
+  <xi:include href="./grado3-unidad4-seccionA-leccion4-warm.ptx"/>
 </subsection>
 
 
-
+<!-- ============================================ 
+  Actividad 1                        
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion4-actividad1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Trompos</title>
-    <statement>
-      <p>Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.</p>
-    <sidebyside>
-      <image source="jpg-source/V1 3.4.A.4 Mexican Trompo.jpg">
-        <description>Mexican trompo (spinning top)</description>
-      </image>
-      <image source="jpg-source/V1 3.4.A.4 Dreidels.jpg">
-        <description>Dreidels</description>
-      </image>
-      <image source="jpg-source/V1 3.4.A.4 Indonesian Gasing.jpg">
-        <description>Indonesian gasing (spinning tops)</description>
-      </image>
-      <image source="png-source/V1 3.4.A.4 German Kreisel Copy.png">
-        <description>German kreisel (spinning top)</description>
-      </image>
-      <image source="jpg-source/V1 3.4.A.4 Colorful Top.jpg">
-        <description>Spinning top toy</description>
-      </image>
-    </sidebyside>
-    <p>Empareja cada situación sobre trompos con una expresión que pueda representarla.</p>
-      <sbsgroup widths="50% 30%">
-      <sidebyside>
-        <p>1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?</p>
-        <p>A. <m>24 \div 2</m></p>
-      </sidebyside>
-      <sidebyside>
-        <p>2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada persona pinta el mismo número de trompos, ¿cuántos trompos pinta cada persona?</p>
-        <p>B. <m>12 \div 2</m></p>
-      </sidebyside>
-      <sidebyside>
-        <p>3. En una tienda tienen 24 trompos de todo el mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?</p>
-        <p>C. <m>24 \div 4</m></p>
-      </sidebyside>
-      <sidebyside>
-        <p>4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?</p>
-        <p>D. <m>12 \div 6</m></p>
-      </sidebyside>
-      <sidebyside>
-        <p>5. Seis amigos están jugando con 12 <em>dreidels</em>. Si cada uno juega con el mismo número de <em>dreidels</em> que los demás, ¿cuántos <em>dreidels</em> tiene cada persona?</p>
-        <p>E. <m>24 \div 6</m></p>
-      </sidebyside>
-      </sbsgroup>
-    </statement>
-    <solution>
-      <p>1:C, 2:A, 3:E, 4:B, 5:D</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes emparejen expresiones de división con situaciones de división. Los estudiantes deben justificar sus emparejamientos articulando cómo los números en la expresión se conectan con lo que está sucediendo en la situación (MP2).</p>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li>Muestre la imagen.</li>
-          <li><q>Estos juguetes se llaman trompos. En muchas culturas se juega con ellos. ¿Qué otros juguetes conocen?</q></li>
-          <li>30 segundos: tiempo para pensar en silencio</li>
-          <li>Compartan las respuestas.</li>
-          <li><q>Ahora vamos a trabajar con algunas situaciones que incluyen trompos. Vamos a ver situaciones sobre otros juguetes en próximas actividades.</q></li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li><q>Con su compañero, emparejen cada situación con una expresión de división.</q></li>
-          <li>3-5 minutos: tiempo de trabajo en parejas</li>
-          <li>Identifique a los estudiantes que puedan justificar sus emparejamientos explicando cómo los números en la expresión representan la situación.</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-          <ul>
-            <li>Seleccione a los estudiantes identificados para compartir.</li>
-            <li>Considere preguntar: <q>¿Cómo representan los números de la expresión lo que hay en la situación?</q></li>
-          </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <!-- <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </activity>
+  <xi:include href="./grado3-unidad4-seccionA-leccion4-act1.ptx"/>
 </subsection>
 
 
-<subsection xml:id="grado3-unidad4-seccionA-leccion4-2">
+
+<!-- ============================================ 
+  Actividad 2                        
+=================================================  -->
+<subsection xml:id="grado3-unidad4-seccionA-leccion4-actividad2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Autos en cajas</title>
-    <statement>
-      <p>Considera estas dos situaciones.</p>
-      <sidebyside widths="40% 40%">
-        <p>A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?</p>
-        <p>B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?</p>
-      </sidebyside>
-      <p>¿Cuál situación está representada por la expresión <m>21\div 3</m>? Explica tu razonamiento.
-    </p>
-    </statement>
-    <solution>
-      <p>Ejemplos de respuestas</p>
-      <p>
-        Ambas situaciones están representadas por la expresión <m>21\div 3</m>. El 3 en la situación A es en número de cajas y el 3 en la situación B es el número de autos que va en cada caja.
-      </p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>10 minutos</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes comprendan que la misma expresión de división se puede utilizar para representar ambos tipos de situaciones de división. A los estudiantes se les dan dos situaciones y se les pide que emparejen una expresión de división con una de las situaciones, pero la expresión coincide con ambas situaciones dadas. Está bien si los estudiantes no reconocen que la expresión coincide con ambas situaciones en la actividad, porque se discutirá en la síntesis de la actividad. Los estudiantes aprenden que el número por el cual estamos dividiendo se llama divisor y comprenden que el divisor puede representar el tamaño de los grupos o el número de grupos. Cuando los estudiantes explican que un divisor se puede interpretar de manera diferente según la situación que representa, razonan abstracta y cuantitativamente (MP2).</p>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li>
-            <q>Examinemos un poco más de cerca las expresiones de división. Tómense un minuto para leer estas dos situaciones.</q>
-          </li>
-          <li>1 minuto: tiempo para pensar en silencio</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li><q>Con su compañero, decidan cuál situación es representada por la expresión.</q></li>
-          <li><q>Trabajen con su compañero para decidir qué situación representa la expresión.</q></li>
-          <li>2-3 minutos: tiempo de trabajo en pareja</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li>Invite a los estudiantes a compartir sus respuestas y razonamientos.</li>
-          <li><q>¿Cómo puede la misma expresión representar dos situaciones diferentes?</q> (Ambas situaciones involucran los mismos números, 21 y 3. Ambas situaciones involucran poner 21 objetos en grupos iguales. En un caso, el 3 es el número de objetos en el grupo, pero en el otro, es el número de grupos. Ambas situaciones hablan de 21 dividido por 3, solo de diferentes maneras.)</li>
-          <li><q>Observamos que el número entre el que estamos dividiendo, 3, puede tener dos significados diferentes. Puede significar 3 grupos o 3 objetos en cada grupo.</q></li>
-          <li><q>Cuando dividimos, el número entre el que dividimos se llama el <term>divisor</term>. En la expresión <m>27\div 3</m>, el divisor es 3.</q></li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>MLR2 Recopilar y Mostrar. Circule y recopile el lenguaje que los estudiantes usan mientras consideran las dos situaciones. Escuche y aclare cualquier pregunta sobre el contexto. En una presentación visible, registre palabras y frases como: poner en grupos, dividir, número de grupos, etc. Durante la síntesis, agregue "divisor" a la presentación y resalte las conexiones con cualquier lenguaje relacionado.</p>
-        <p>Avances: Conversación, Lectura</p>
-      </paragraphs>
-     <!--  <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </activity>
+  <xi:include href="./grado3-unidad4-seccionA-leccion4-act2.ptx"/>
 </subsection>
 
+
+
+<!-- ============================================ 
+  Actividad 3                        
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion4-actividad3">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  <activity>
-    <title>Pilas de bloques</title>
-    <statement>
-      <p>Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.</p>
-      <p>
-        <ol>
-          <li>Kiran usa 6 bloques para hacer pilas. Cada pila tiene 2 bloques. ¿Cuántas pilas hay?
-          </li>
-          <li>Han usa 6 bloques para hacer dos pilas iguales. ¿Cuántos bloques hay en cada pila?
-          </li>
-          <li>Jada usa 6 bloques para construir pilas que tienen 3 bloques cada una. ¿Cuántas pilas hay?
-          </li>
-          <li>Mai usa 6 bloques para hacer 3 pilas iguales. ¿Cuántos bloques hay en cada pila?
-          </li>
-        </ol>      
-      </p>
-      <p>Dibujos</p>
-      <sbsgroup widths="2% 45% 2% 45%">
-      <sidebyside>
-        <p>A</p>
-        <image source="svg-source/tikz-file-149316">
-        <description>Drawing. 2 stacks of 3 blocks.</description>
-        </image>
-        <p>B</p>
-        <image source="svg-source/tikz-file-149317">
-        <description>Drawing. 3 stacks of 2 blocks.</description>
-        </image>
-      </sidebyside>
-      <p>Expresiones</p>
-        <sidebyside>
-        <p>C</p>
-        <p><me>6\div 2</me></p>
-        <p>D</p>
-        <p><me>6\div 3</me></p>
-        </sidebyside>
-      </sbsgroup>      
-    </statement>
-    <solution>
-      <p>
-        <ol>
-          <li>B y C</li>
-          <li>A y C</li>
-          <li>A y D</li>
-          <li>B y D</li>
-        </ol>
-      </p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>15 minutos.</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes apliquen lo que han aprendido sobre las representaciones de la división para relacionar dibujos y expresiones con situaciones de división (MP2). Al hacerlo, solidifican su comprensión de que la misma expresión de división puede representar ambos tipos de situaciones de división. Los dibujos dados permiten a los estudiantes ver la cantidad de grupos y cuántos objetos hay en cada grupo. El trabajo aquí ayuda a los estudiantes a hacer conexiones entre las tres representaciones antes de que escriban sus propias expresiones de división y resuelvan problemas de división en una lección posterior. Cuando los estudiantes describen cómo una ecuación puede representar diferentes historias, prestan atención a la precisión en el lenguaje que utilizan y a la correspondencia que establecen entre la ecuación y las historias (MP6).</p>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title><custom ref="materials-actividad-titulo"/></title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li><q>Ahora que hemos representado situaciones de división con dibujos y con expresiones, vamos a asociar algunas situaciones con ambas representaciones.</q></li>
-          <li><q>Lean estas situaciones.</q></li>
-          <li>1-2 minutos: tiempo de reflexión en silencio</li>
-          <li><q>Discutan con su compañero en qué se parecen y en qué se diferencian estas situaciones.</q></li>
-          <li>2-3 minutos: discusión en pareja</li>
-          <li>Compartan las respuestas.</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li><q>Ahora, con su compañero, asocien cada situación con un dibujo y con una expresión que representan la situación</q></li>
-          <li>3-5 minutos: tiempo de trabajo en pareja</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-          <li><q>Consideremos las primeras dos situaciones sobre Kiran y Han. ¿Por qué podemos usar la misma expresión para representar estas situaciones, pero tenemos que usar dibujos diferentes?</q> (Ambas situaciones se representan con 6 dividido entre 2, pero en la primera situación el 2, o el divisor, es la cantidad de bloques en cada pila. En la segunda situación, el 2 es el número de pilas.)</li>
-          <li><q>Ahora examinemos las situaciones de Han y Jada. ¿Por qué podemos usar el mismo dibujo para representar estas situaciones, pero no la misma expresión?</q> (Ambas situaciones describen 2 grupos de 3, por lo que coinciden con el mismo dibujo. La primera situación es de 6 bloques divididos entre 2 pilas y la segunda situación es de 6 bloques divididos en grupos de 3.)</li>
-        </ul>
-      </paragraphs>
-      <!-- <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-      <!-- <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs> -->
-    </postlude>
-  </activity>
+  <xi:include href="./grado3-unidad4-seccionA-leccion4-act3.ptx"/>
 </subsection>
 
+<!-- ============================================ 
+  Síntesis                       
+=================================================  -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion4-sintesis" component="profesor">
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title>
@@ -458,47 +130,12 @@
 </subsection>
 
 
+<!-- ============================================
+  Cool-down
+================================================= -->
 <subsection xml:id="grado3-unidad4-seccionA-leccion4-cool">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
-  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
-    <title>Los trompos de Han</title>
-    <statement>
-      <p>Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?</p>
-      <p>Selecciona <alert>todas</alert> las formas en las que podemos representar la situación.</p>
-      <sbsgroup widths="2% 45% 2% 45%">
-      <sidebyside>
-        <p>A</p>
-        <image source="svg-source/tikz-file-151100">
-        <description>2 groups of 7 dots.</description>
-        </image>
-        <p>B</p>
-        <image source="svg-source/tikz-file-151101">
-        <description>Groups of dots.</description>
-        </image>
-      </sidebyside>
-        <p>expresiones</p>
-        <sidebyside>
-        <p>C</p>
-        <p><me>14\div 2</me></p>
-        <p>D</p>
-        <p><me>14\div 7</me></p>
-      </sidebyside>
-      </sbsgroup>
-    </statement>
-    <solution>
-      <p>A y C</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title>Posibles errores</title>
-        <p>Los estudiantes seleccionan respuestas que corresponden a 7 grupos de 2 en lugar de 2 grupos de 7.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acciones para apoyar el aprendizaje</title>
-        <p>Pida a los estudiantes al inicio de la siguiente lección que trabajen en parejas en este problema.</p>
-      </paragraphs>
-    </postlude>
-  </problem>
+  <xi:include href="./grado3-unidad4-seccionA-leccion4-cool.ptx"/>
 </subsection>
 </section>
