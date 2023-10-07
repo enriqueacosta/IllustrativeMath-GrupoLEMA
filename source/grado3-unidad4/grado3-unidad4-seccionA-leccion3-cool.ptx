@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- 
+    El cool-down es un problem (distinto a las otras actividades y a los Practice
+    Problems) 
+-->
+<problem xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<title>Regalitos para invitados</title>
+
+<statement>
+    <p>Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?</p>
+    <p>¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.</p>
+    <sidebyside widths="2% 45% 2% 45%">
+      <p>A.</p>
+      <image source="svg-source/tikz-file-149314">
+        <description>10 groups of 2 dots.</description>
+      </image>
+      <p>B.</p>
+      <image source="svg-source/tikz-file-149314">
+        <description>10 groups of 2 dots.</description>
+      </image>
+    </sidebyside>
+</statement>
+
+<solution>
+  <p>Respuesta de ejemplo: El dibujo B corresponde a la situación porque muestra 8 marcadores en cada bolsa. Después de que los 48 marcadores se dividan en grupos de 8, habrá 6 bolsas.</p>
+</solution>
+
+<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+  <!-- Posibles errores -->
+  <paragraphs>
+    <title><custom ref="errores-cool-titulo"/></title>
+    <p>Los estudiantes eligen el dibujo A, que muestra 8 bolsas en lugar de 8 marcadores en cada bolsa.</p>
+  </paragraphs>
+
+
+  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
+  <paragraphs>
+    <title><custom ref="apoyo-cool-titulo"/></title>
+    <p>Durante el lanzamiento de la actividad del día siguiente, haga que los estudiantes discutan por qué el dibujo B corresponde a la situación.</p>
+  </paragraphs>
+</postlude>
+</problem>

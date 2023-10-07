@@ -5,13 +5,10 @@
 <!-- just imports other .ptx files which contain content. Open   -->
 <!-- those files to see more pretext features                    -->
 
-<!-- EAJ - delete temporary files at -->
-<!-- /private/var/folders/b3/dcqdqcz54f9b9pqrbwv35_gh0000gn/T/ -->
-
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="../../meta/meta_docinfo.ptx" />
+  <xi:include href="../meta/meta_docinfo.ptx" />
 
   <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
@@ -20,12 +17,10 @@
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado VV - Unidad XX</subtitle>
 
-    <!-- Now we include files containing each main division.       -->
-
     <frontmatter>
 
       <!-- contenido de <titlepage> que es igual para todas las unidades-->
-      <xi:include href="../../meta/meta_titlepage.ptx" />
+      <xi:include href="../meta/meta_titlepage.ptx" />
 
       <!-- You can have more than one preface. -->
       <preface>
@@ -39,28 +34,35 @@
             <li><xref ref="gradoVV-unidadXX-seccionD" text="title"></xref></li>
           </ul>
         </p>
+        <!-- 
+        <p>
+          <list-of elements="chapter"/>
+          <list-of elements="theorem lemma" divisions="chapter" empty="yes"/>
+        </p> 
+        -->  
         <remark component="profesor">
           <p>
             En esta unidad los estudiantes aprenden [@@@@@@@@@]
           </p>
         </remark>
       </preface>
+
+
       <!-- You can have more than one preface. -->
 
+
       <!-- Acá va todo lo de copyright -->
-      <xi:include href="../../meta/meta_colophon.ptx" />
+      <xi:include href="../meta/meta_colophon.ptx" />
 
       <!-- Acá va todo lo de el código fuente -->
-      <xi:include href="../../meta/meta_source.ptx" />
+      <xi:include href="../meta/meta_source.ptx" />
 
       <!-- <dedication> -->
       <!-- </dedication> -->
 
       <!-- <acknowledgement> -->
-       <!--  <p>
-          I would like to thank...
-        </p> -->
-      <!-- </acknowledgement> -->    
+      <!-- </acknowledgement> --> 
+
     </frontmatter>
 
     <!-- <part> -->
@@ -73,10 +75,10 @@
       
       <!-- Lecciones de la sección -->
       <xi:include href="./gradoVV-unidadXX-seccionA-leccion1.ptx"/>
-      <xi:include href="./gradoVV-unidadXX-seccionA-leccion2.ptx"/>
-      <xi:include href="./gradoVV-unidadXX-seccionA-leccion3.ptx"/>
-      <xi:include href="./gradoVV-unidadXX-seccionA-leccion4.ptx"/>
-      <xi:include href="./gradoVV-unidadXX-seccionA-leccion5.ptx"/>
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion2.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion3.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion4.ptx"/> -->
+      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion5.ptx"/> -->
 
       <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gradoVV-unidadXX-seccionA-ProblemasPractica.ptx"/> -->
@@ -85,59 +87,12 @@
       <xi:include href="./gradoVV-unidadXX-seccionA-resumen.ptx"/>
     </chapter>
 
-    <chapter xml:id="gradoVV-unidadXX-seccionB">
-      <title>Sección B - [@@@@@@@@@@@@@@@@@]</title>
+    
 
-      <!-- Intro y objetivos de la sección-->
-      <xi:include href="./gradoVV-unidadXX-seccionB.ptx" />
-            
-      <!-- Lecciones de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion6.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion7.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion8.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-leccion9.ptx"/> -->
-
-      <!-- Problemas de práctica de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-ProblemasPractica.ptx"/> -->
-      
-      <!-- Resumen de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionB-resumen.ptx"/> -->
-    </chapter>
-
-    <chapter xml:id="gradoVV-unidadXX-seccionC">
-      <title>Sección C - [@@@@@@@@@@@@@@@@@]</title>
-      
-      <!-- Intro y objetivos de la sección-->
-      <xi:include href="./gradoVV-unidadXX-seccionC.ptx" />
-            
-      <!-- Lecciones de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-leccion10.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-leccion11.ptx"/> -->
-
-      <!-- Problemas de práctica de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-ProblemasPractica.ptx"/> -->
-      
-      <!-- Resumen de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionC-resumen.ptx"/> -->
-    </chapter>
+    <!-- Más secciones -->
 
 
-    <chapter xml:id="gradoVV-unidadXX-seccionD">
-      <title>Sección D - [@@@@@@@@@@@@@@@@@]</title>
-      
-      <!-- Intro y objetivos de la sección-->
-      <xi:include href="./gradoVV-unidadXX-seccionD.ptx" />
-            
-      <!-- Lecciones de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-leccion10.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-leccion11.ptx"/> -->
 
-      <!-- Problemas de práctica de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-ProblemasPractica.ptx"/> -->
-      
-      <!-- Resumen de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionD-resumen.ptx"/> -->
-    </chapter>
 
     <chapter>
       <title>Glosario</title>
