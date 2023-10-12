@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <section xml:id="grado0-unidad1-seccionA-leccion1" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Lección 1 - Exploremos los cubos encajables </title>
+
+
+<title>Lección 1 -<nbsp/></title>
+<title>Exploremos los cubos encajables</title>
 <shorttitle>Lección 1</shorttitle>
 
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
 <objectives component="estudiante">
   <ul>
     <li>Exploremos los cubos encajables.</li>
@@ -16,225 +23,145 @@
   </ul>
 </objectives>
 
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
 <introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
   <paragraphs>
-    <title><custom ref="csss-leccion-titulo"/></title>
+    <title><custom ref="csss-leccion-titulo"/></title> 
     <p>K.CC.B, K.G.B, K.MD, K.MD.B.3</p>
   </paragraphs>
-  
-  <!-- índice de la lección -->
-  <paragraphs component="profesor">
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
     <title><custom ref="timeline-leccion-titulo"/></title>
     <list-of elements="subsection" scope="section"/>
   </paragraphs>
-  
+
+  <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
     <p>El propósito de esta lección es que los estudiantes exploren los cubos encajables. Los profesores también tienen la oportunidad de recopilar datos de evaluación formativa sobre los conceptos y habilidades de conteo de los estudiantes. </p>
   </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>Cubos encajables</p>
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>Los estudiantes utilizan los cubos encajables en actividades de matemáticas durante todo el año. Comparten sus pensamientos e ideas sobre los cubos encajables durante la rutina "Observa y pregúntate", y luego prueban sus ideas durante la exploración libre. Los estudiantes tienen la oportunidad de explorar los cubos encajables antes de que se les pida que los utilicen para representar situaciones matemáticas en lecciones posteriores. A medida que los estudiantes exploran los cubos encajables, es probable que construyan objetos. Mientras los supervisa, considere hacer preguntas como "¿Cuántos cubos encajables rojos tienes en tu objeto? ¿Cómo podrías averiguarlo? ¿De qué color son esos cubos encajables? ¿Cómo decidiste qué color usar? ¿Cuántos cubos encajables hay en la parte inferior de tu objeto?" Estas preguntas ayudan a conocer más sobre cada estudiante.</p>
-    <p>Las primeras lecciones de esta sección son intencionalmente más cortas para permitir que los estudiantes aprendan la estructura y rutinas de las lecciones de matemáticas, y para que los profesores tengan la oportunidad de aprender lo que los estudiantes saben sobre conceptos numéricos. Si hay tiempo extra, los estudiantes pueden pasar más tiempo explorando los cubos encajables en la primera actividad.
+    <p>
+      Los estudiantes utilizan los cubos encajables en actividades de matemáticas durante todo el año. Comparten sus pensamientos e ideas sobre los cubos encajables durante la rutina "Observa y pregúntate", y luego prueban sus ideas durante la exploración libre. Los estudiantes tienen la oportunidad de explorar los cubos encajables antes de que se les pida que los utilicen para representar situaciones matemáticas en lecciones posteriores. A medida que los estudiantes exploran los cubos encajables, es probable que construyan objetos. Mientras los supervisa, considere hacer preguntas como "¿Cuántos cubos encajables rojos tienes en tu objeto? ¿Cómo podrías averiguarlo? ¿De qué color son esos cubos encajables? ¿Cómo decidiste qué color usar? ¿Cuántos cubos encajables hay en la parte inferior de tu objeto?" Estas preguntas ayudan a conocer más sobre cada estudiante.
     </p>
-    <p>A lo largo de la sección, observa a los estudiantes en busca de los aspectos a tener en cuenta en el punto de control de la Unidad 1, Secciones A-D. Considere pedir a algunos estudiantes que cuenten uno a uno en cada lección a lo largo de la sección.</p>
+    <p>
+      Las primeras lecciones de esta sección son intencionalmente más cortas para permitir que los estudiantes aprendan la estructura y rutinas de las lecciones de matemáticas, y para que los profesores tengan la oportunidad de aprender lo que los estudiantes saben sobre conceptos numéricos. Si hay tiempo extra, los estudiantes pueden pasar más tiempo explorando los cubos encajables en la primera actividad.
+    </p>
+    <p>
+      A lo largo de la sección, observa a los estudiantes en busca de los aspectos a tener en cuenta en el punto de control de la Unidad 1, Secciones A-D. Considere pedir a algunos estudiantes que cuenten uno a uno en cada lección a lo largo de la sección.
+    </p>
   </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
     <p>¿Qué parte de la lección fue realmente buena hoy en términos de aprendizaje de los estudiantes? ¿Qué hice para que esa parte saliera bien?</p>
   </paragraphs>
 </introduction>
 
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
 <subsection xml:id="grado0-unidad1-seccionA-leccion1-warm">
-<shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
-<title><custom ref="warm-up-leccion-titulo"/></title>
-<title component="profesor"><nbsp/>(15 mins)</title>
-  <exploration components="estudiante profesor">
-    <title>Observa y pregúntate: Cubos encajables</title>
-    <statement>
-      <line>¿Qué observas?</line>
-      <line>¿Qué te preguntas?</line>
-      <image source="svg-source/tikz-file-147993">
-        <description></description>
-      </image>
-    </statement>
-    <solution>
-      <p>
-        Pueden observar:
-        <ul>
-          <li>Que se ven como cajas</li>
-          <li>Que tienen muchos colores</li>
-          <li>Que los pueden compartir con su compañeros.</li>
-        </ul>
-      </p>
-      <p>
-        Se pueden preguntar:
-        <ul>
-          <li>¿Cuántos cubos tenemos?</li>
-          <li>¿De cuántos colores hay?</li>
-          <li>¿De qué color hay más?</li>
-          <li>¿Puedo conectar muchos para hacer una torre más alta que yo?</li>
-        </ul>
-      </p>
-    </solution>
-    <postlude component="profesor">
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>15 mins.</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es obtener ideas que los estudiantes tienen sobre los cubos encajables. Los estudiantes aprenden la rutina de Observa y Pregúntate que se utilizará durante todo el año. Esta rutina brinda la oportunidad para que todos los estudiantes contribuyan a la conversación y para que el maestro escuche el conocimiento que los estudiantes ya tienen.</p>
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
-        <p>Para todas las rutinas, considere establecer una señal manual pequeña y discreta que los estudiantes puedan mostrar para indicar que tienen una respuesta que pueden respaldar con razonamiento. Esta señal podría ser un pulgar arriba, un cierto número de dedos que indique el número de respuestas que tienen, u otra señal sutil. Esta es una forma rápida de ver si los estudiantes han tenido suficiente tiempo para pensar en el problema. También evita que los estudiantes se distraigan o se apresuren levantando las manos en toda la clase.</p>
-
-        <p>Se proporciona una imagen de cubos encajables. Sin embargo, es preferible mostrar una colección de cubos encajables reales. Los estudiantes también tienen al menos un cubo encajable para examinar de cerca.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>Cubos encajables</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-        <li>Grupos de 2</li>
-        <li>Entregue al menos un cubo de conexión a cada estudiante y muestre una colección de cubos de conexión o la imagen en el libro del estudiante.</li>
-        <li><q>¿Qué observan? Piensen en silencio, después lo compartirán con un compañero</q></li>
-        <li>30 segundos: tiempo de reflexión en silencio</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-            <li><q>Cuéntenle a su compañero lo que observaron</q></li>
-            <li>1 minuto: discusión en pareja</li>
-            <li>Compartir y registrar respuestas.</li>
-            <li><q>¿Qué se preguntan?</q></li>
-            <li>30 segundos: tiempo de reflexión en silencio</li>
-            <li><q>Cuéntenle a su compañero lo que se preguntaron</q></li>
-            <li>1 minuto: discusión en pareja</li>
-        <li>Compartir y registrar respuestas.</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <p><q>Estos se llaman cubos encajables. ¿Qué creen que podrían hacer o construir con los cubos encajables?</q></p>
-      </paragraphs>
-    </postlude>
-  </exploration>
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionA-leccion1-warm.ptx"/> 
 </subsection>
 
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
 <subsection xml:id="grado0-unidad1-seccionA-leccion1-actividad1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(15 mins)</title>
-  <activity>
-    <title>Conozcamos “Cubos encajables: Explora”</title>
-    <statement>
-        <p>
-           ¡A explorar!
-        </p>
-    </statement>
-    <solution>
-      <p>
-        <p>Ejemplos de respuestas:</p>
-        <ul>
-        <li>Los estudiantes crean edificios u otras estructuras con cubos encajables.</li>
-        <li>Los estudiantes cuentan cubos encajables.</li>
-        <li>Los estudiantes clasifican cubos encajables por color.</li>
-        <li>Los estudiantes crean patrones.</li>
-        <li>Los estudiantes usan el lenguaje de comparación de más, más grande o más pequeño al discutir sus creaciones.</li>
-        </ul>
-      </p>
-    </solution>
-    <postlude>
-      <paragraphs>
-        <title><custom ref="recommended-time-titulo"/></title>
-        <p>15 mins.</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="narrative-actividad-titulo"/></title>
-        <p>El propósito de esta actividad es que los estudiantes exploren y utilicen cubos encajables. Los estudiantes tienen la oportunidad de explorar los cubos encajables antes de que se les pida que los utilicen para representar situaciones matemáticas en lecciones posteriores. Mientras los estudiantes trabajan, identifique si los estudiantes clasifican, cuentan o utilizan lenguaje de comparación mientras trabajan con los cubos encajables. Los estudiantes tendrán oportunidades de seguir explorando los cubos encajables en los centros en futuras lecciones. Esta es la etapa 1 del centro de Cubos Encajables.
-        </p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>Cubos encajables</p>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Grupos de 2</li>
-          <li><q>Una herramienta es una cosa que usamos para ayudarnos a hacer algo. Un crayón es una herramienta. Yo uso crayones para poner diferentes colores en los dibujos que pinto. ¿Cuáles son algunas herramientas que ustedes y sus familias usan en sus casas?</q></li>
-          <li>30 segundos: tiempo de reflexión en silencio</li>
-          <li>1 minuto: discusión en pareja</li>
-          <li>Compartir y registrar respuestas.</li>
-          <li><q>Vamos a usar muchas herramientas en matemáticas este año. Los cubos encajables son una de esas herramientas</q></li>
-          <li>Entregar un contenedor de cubos encajables a cada grupo.</li>
-          <li><q>Exploremos los cubos encajables. ¿Han usado cubos encajables o alguna herramienta como esta antes? ¿Qué quieren hacer o construir con los cubos encajables?</q></li>
-          <li>30 segundos: tiempo de reflexión en silencio</li>
-          <li>Compartir respuestas.</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-        <li>10 minutos: tiempo de trabajo en pareja</li>
-        <li><q>Compartan con su compañero una de las cosas que hicieron o construyeron con los cubos encajables</q></li>
-        <li>2 minutos: discusión en pareja</li>
-        </ul>
-      </paragraphs>
-      <paragraphs>
-        <title><custom ref="synthesis-actividad-titulo"/></title>
-        <ul>
-        <li>Invite 3-4 estudiantes a compartir lo que hicieron o crearon con los cubos encajables.</li>
-        <li>
-          <q>¿Quién escuchó algo que quisiera ensayar la próxima vez con los cubos encajables?</q>
-        </li>
-        </ul>
-      </paragraphs>
-    </postlude>
-  </activity>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionA-leccion1-act1.ptx"/> 
 </subsection>
 
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
 <subsection xml:id="grado0-unidad1-seccionA-leccion1-sintesis" component="profesor">
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title>
-    <p>Tiempo recomendado: 10 mins.</p>
 
-    <p><q>Hoy exploramos los cubos encajables y les contamos a nuestros compañeros lo que hicimos. Hagamos una tabla sobre lo que ustedes hicieron y lo que yo hice en la clase de matemáticas de hoy</q> 
-    </p>
-    <p><alert>Comunidad Matemática</alert></p>
-    <p>Prepare un espacio, como un trozo de papel de cartel, titulado "Comunidad matemática" y un gráfico con el encabezado "Hacer matemáticas". Divida la columna en dos secciones: estudiantes y profesores. Las dos secciones animan a los estudiantes y al profesor a ser conscientes de que ambas partes son responsables de la forma en que se realiza la matemática en el aula.</p>
-    <tabular top="minor" left="minor">
-      <col right="minor" left="minor" ></col> <!-- column 1 attributes -->
-      <col right="minor"></col>               <!-- column 2 attributes -->
-      
-      <!-- row 0 -->
-      <row header="yes" bottom="major">
-        <cell colspan="2">Comunidad matemática</cell>
-      </row>
+  <p>Tiempo recomendado: 10 mins.</p>
 
-      <!-- row 1 -->
-      <row header="yes" bottom="major">
-        <cell>Hacer Matemáticas</cell>
-        <cell>Normas</cell>
-      </row>
-      
-      <!-- row 2 -->
-      <row  bottom="minor">
-        <cell>Estudiantes: (lista)</cell>
-        <cell>Estudiantes: (lista)</cell>
-      </row>
+  <p><q>Hoy exploramos los cubos encajables y les contamos a nuestros compañeros lo que hicimos. Hagamos una tabla sobre lo que ustedes hicieron y lo que yo hice en la clase de matemáticas de hoy</q> 
+  </p>
+  <p><alert>Comunidad Matemática</alert></p>
+  <p>Prepare un espacio, como un trozo de papel de cartel, titulado "Comunidad matemática" y un gráfico con el encabezado "Hacer matemáticas". Divida la columna en dos secciones: estudiantes y profesores. Las dos secciones animan a los estudiantes y al profesor a ser conscientes de que ambas partes son responsables de la forma en que se realiza la matemática en el aula.</p>
+  <tabular top="minor" left="minor">
+    <col right="minor" left="minor" ></col> <!-- column 1 attributes -->
+    <col right="minor"></col>               <!-- column 2 attributes -->
     
-      <!-- row 3 -->
-      <row bottom="minor">
-        <cell>Profesor: (lista)</cell>
-        <cell>Profesor: (lista)</cell>
-      </row>
-    </tabular>
+    <!-- row 0 -->
+    <row header="yes" bottom="major">
+      <cell colspan="2">Comunidad matemática</cell>
+    </row>
 
-    <p><q>¿Qué ven y qué escuchan cuando hacemos matemáticas juntos? ¿Qué estaba haciendo yo? ¿Qué estaban haciendo ustedes?</q></p>
-    <p><q>¿Cómo se ve y se escucha hacer matemáticas juntos? ¿Qué estaba haciendo yo? ¿Qué estaban haciendo ustedes?</q></p>
+    <!-- row 1 -->
+    <row header="yes" bottom="major">
+      <cell>Hacer Matemáticas</cell>
+      <cell>Normas</cell>
+    </row>
+    
+    <!-- row 2 -->
+    <row  bottom="minor">
+      <cell>Estudiantes: (lista)</cell>
+      <cell>Estudiantes: (lista)</cell>
+    </row>
+  
+    <!-- row 3 -->
+    <row bottom="minor">
+      <cell>Profesor: (lista)</cell>
+      <cell>Profesor: (lista)</cell>
+    </row>
+  </tabular>
+
+  <p><q>¿Qué ven y qué escuchan cuando hacemos matemáticas juntos? ¿Qué estaba haciendo yo? ¿Qué estaban haciendo ustedes?</q></p>
+  <p><q>¿Cómo se ve y se escucha hacer matemáticas juntos? ¿Qué estaba haciendo yo? ¿Qué estaban haciendo ustedes?</q></p>
+
 </subsection>
+
+
+
+<!-- ============================================
+  Cool-down (problema de cierre / de salida)
+================================================= -->
+<!-- 
+<subsection xml:id="grado0-unidad1-seccionA-leccion1-cool">
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <xi:include href="./grado0-unidad1-seccionA-leccion1-cool.ptx"/>
+</subsection>
+-->
+
+
 </section>
