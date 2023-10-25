@@ -1,352 +1,149 @@
 <?xml version='1.0' encoding='utf-8'?>
 <section xml:id="grado0-unidad1-seccionB-leccion6" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Lección 6 - Busquemos grupos pequeños</title>
-<shorttitle>Lección 6</shorttitle>
 
-<!-- Objetivos para los estudiantes -->
+<shorttitle>Lección 6</shorttitle>
+<title>Lección 6 -<nbsp/></title>
+<title>Busquemos grupos pequeños</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
 <objectives component="estudiante">
   <ul>
     <li>Busquemos grupos pequeños de objetos.</li>
   </ul>
 </objectives>
 
-<!-- Objetivos que ve el profesor -->
 <objectives component="profesor">
   <ul>
     <li>[@@@@@@@@@]</li>
   </ul>
 </objectives>
 
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
 <introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
   <paragraphs>
-    <title>Estándares CCSS asociados</title> 
+    <title><custom ref="csss-leccion-titulo"/></title> 
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
-  <!-- índice de la lección -->
+  <!-- índice de la lección (automático) -->
   <paragraphs>
-    <title>Momentos de la lección</title>
-     <list-of elements="subsection" scope="section"/>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsection" scope="section"/>
   </paragraphs>
 
+  <!-- Propósito de la lección -->
   <paragraphs>
-      <title>Propósito de la lección</title>
-      <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <paragraphs>
-    <title>Materiales</title>
+    <title><custom ref="purpose-leccion-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-</paragraphs>
-
-  <paragraphs>
-      <title>Narrativa de la lección</title>
-      <p>[@@@@@@@@@]</p>
   </paragraphs>
+
+  <!-- Materiales requeridos -->
   <paragraphs>
-    <title>Preguntas de reflexión</title>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 </introduction>
 
-<subsection xml:id="grado0-unidad1-seccionB-leccion6-0">
-  <shorttitle>Calentamiento</shorttitle>
-  <title>Calentamiento</title>
-  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <exploration> <!-- El calentamiento es un exploration (distinto a las otras actividades) -->
-    <title>Actuémoslo: Introducción</title>
-    <statement>
-      <p>
-          <image source="png-source/3 ducks.png" width="60%">
-            <description>numero dos</description>
-         </image>
-      </p>
-      <p>
-        <line>3 patitos muy lejos de aquí</line> 
-        <line>a la colina salieron a pasear.</line>
-        <line>Mamá pata dijo: “Cuac, cuac, cuac”.</line>
-        <line>Después 3 patitos vio regresar.</line>
-      </p>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-      <paragraphs>
-        <title>Narrativa</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lanzamiento</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Síntesis de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </exploration>
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsection xml:id="grado0-unidad1-seccionB-leccion6-warm">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionB-leccion6-warm.ptx"/> 
 </subsection>
 
 
-
-<subsection xml:id="grado0-unidad1-seccionB-leccion6-1">
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsection xml:id="grado0-unidad1-seccionB-leccion6-actividad1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
-  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Cuántos ves: Introducción</title>
-    <statement>
-      <p>
-        <line>¿Cuántos ves?</line>
-        <line>¿Cómo lo sabes?, ¿qué ves?</line>
-      </p>
-      <image source="svg-source/tikz-file-148150" width="25%">
-        <description>tres puntos</description>
-      </image>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-      <paragraphs>
-        <title>Narrativa</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lanzamiento</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Síntesis de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </activity>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionB-leccion6-act1.ptx"/> 
 </subsection>
 
 
-<subsection xml:id="grado0-unidad1-seccionB-leccion6-2">
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsection xml:id="grado0-unidad1-seccionB-leccion6-actividad2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
-  <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Conozcamos “Libros de imágenes: Explora</title>
-    <statement>
-      <p></p>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-      <paragraphs>
-        <title>Narrativa</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lanzamiento</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Síntesis de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </activity>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionB-leccion6-act2.ptx"/> 
 </subsection>
 
-<subsection xml:id="grado0-unidad1-seccionB-leccion6-3">
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+<subsection xml:id="grado0-unidad1-seccionB-leccion6-actividad3">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
- <title component="profesor"><nbsp/>(25 mins)</title> <!-- Tiempo que solo ve el profesor -->
-  
-  <activity>
-    <title>Centros: Momento de escoger</title>
-    <statement>
-      <sbsgroup widths="45% 45%" margins="auto" valign="top">
-        <sidebyside>
-          <p>Cubos Encajables</p>
-          <p>Fichas Geométricas</p>
-        </sidebyside>
-        <sidebyside >
-          <image source="svg-source/tikz-file-128850">
-            <description></description>
-          </image>
-          <image source="svg-source/tikz-file-147344">
-            <description></description>
-          </image>
-        </sidebyside>
-        <sidebyside>
-          <p></p>
-          <p></p>
-        </sidebyside>
-        <sidebyside>
-          <p></p>
-          <p></p>
-        </sidebyside>
-        <sidebyside>
-          <p>Bloques sólidos geométricos</p>
-          <p>Libros de imágenes</p>
-        </sidebyside>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(25 mins)</title>
 
-        <sidebyside>
-          <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png">
-            <description></description>
-          </image>
-          <image source="png-source/K.1.D Beta Student Workbooks.Books.png">
-            <description></description>
-          </image>
-        </sidebyside>
-        <sidebyside>
-          <p></p>
-          <p></p>
-        </sidebyside>
-        <sidebyside>
-          <p></p>
-          <p></p>
-        </sidebyside>
-      </sbsgroup>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title>Tiempo recomendado</title>
-        <p>[@@@@@@@@] minutos.</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Narrativa</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Materiales</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Lanzamiento</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Para los estudiantes con dificultades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Síntesis de la actividad</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Desarrollo de lenguaje matemático</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acceso a estudiantes con discapacidades</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </activity>
+  <!-- Archivo con el contenido -->
+  <xi:include href="./grado0-unidad1-seccionB-leccion6-act3.ptx"/> 
 </subsection>
 
-<subsection xml:id="grado0-unidad1-seccionB-leccion6-Syn" component="profesor">
-  <title>Síntesis de la lección</title>
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsection xml:id="grado0-unidad1-seccionB-leccion6-sintesis" component="profesor">
+  <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
-    <p>Tiempo recomendado: [@@@@@@@@@] mins.</p>
-    <p>[@@@@@@@@@]</p>
+
+  <p>[@@@@@@@@@]</p>
+
 </subsection>
 
 
+
+<!-- ============================================
+  Cool-down (problema de cierre / de salida)
+================================================= -->
+<!--
 <subsection xml:id="grado0-unidad1-seccionB-leccion6-cool">
-  <shorttitle>Actividad de cierre</shorttitle>
-  <title>Actividad de cierre</title>
-  
-  <problem> <!-- El cool-down es un problem (distinto a las otras actividades y a los Practice Problems) -->
-    <title>[@@@@@@@@@]</title>
-    <statement>
-      <p>[@@@@@@@@@]</p>
-    </statement>
-    <solution>
-      <p>[@@@@@@@@@]</p>
-    </solution>
-    <postlude component="profesor"> <!-- Notas para el profesor -->
-      <paragraphs>
-        <title>Posibles errores</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-      <paragraphs>
-        <title>Acciones para apoyar el aprendizaje</title>
-        <p>[@@@@@@@@@]</p>
-      </paragraphs>
-    </postlude>
-  </problem>
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <xi:include href="./grado0-unidad1-seccionB-leccion6-cool.ptx"/>
 </subsection>
+-->
+
+
 </section>
