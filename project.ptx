@@ -7,88 +7,88 @@
 <project ptx-version="2" source="source" publication="publication" output-dir="output">
     <targets>
         <!-- grado0-unidad1 -->
-        <!-- To build this target, run `pretext grado0-unidad1-web-est` -->
-        <target name="grado0-unidad1-web-est" 
+        <!-- To build this target, run `pretext gra0-uni1-web-est` -->
+        <target name="gra0-uni1-web-est" 
                 format="html" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-est-web.ptx"
-                output-dir="web-est/grado0-unidad1">
+                output-dir="web-est/gra0-uni1">
             <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
         </target>
-        <target name="grado0-unidad1-print-est" 
+        <target name="gra0-uni1-print-est" 
                 format="pdf" 
                 latex-engine="pdflatex" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-est-print.ptx"
-                output-dir="print-est/grado0-unidad1">
+                output-dir="print-est/gra0-uni1">
         </target>
-        <target name="grado0-unidad1-print-latex-est" 
+        <target name="gra0-uni1-print-latex-est" 
                 format="latex" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-est-print.ptx"
-                output-dir="print-latex-est/grado0-unidad1">
+                output-dir="print-latex-est/gra0-uni1">
         </target>
-        <target name="grado0-unidad1-web-prof" 
+        <target name="gra0-uni1-web-prof" 
                 format="html" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-prof-web.ptx"
-                output-dir="web-prof/grado0-unidad1">
+                output-dir="web-prof/gra0-uni1">
             <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
         </target>
-        <target name="grado0-unidad1-print-prof" 
+        <target name="gra0-uni1-print-prof" 
                 format="pdf" 
                 latex-engine="pdflatex" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-prof-print.ptx"
-                output-dir="print-prof/grado0-unidad1">
+                output-dir="print-prof/gra0-uni1">
         </target>
-        <target name="grado0-unidad1-print-latex-prof" 
+        <target name="gra0-uni1-print-latex-prof" 
                 format="latex" 
-                source="grado0-unidad1/grado0-unidad1.ptx"
+                source="gra0-uni1/gra0-uni1.ptx"
                 publication="publication-prof-print.ptx"
-                output-dir="print-latex-prof/grado0-unidad1">
+                output-dir="print-latex-prof/gra0-uni1">
         </target>
 
         <!-- grado3-unidad4 -->
-        <target name="grado3-unidad4-web-est" 
+        <target name="gra3-uni4-web-est" 
                 format="html" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-est-web.ptx"
-                output-dir="web-est/grado3-unidad4">
+                output-dir="web-est/gra3-uni4">
             <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
         </target>
-        <target name="grado3-unidad4-print-est" 
+        <target name="gra3-uni4-print-est" 
                 latex-engine="pdflatex" 
                 format="pdf" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-est-print.ptx"
-                output-dir="print-est/grado3-unidad4">
+                output-dir="print-est/gra3-uni4">
         </target>
-        <target name="grado3-unidad4-print-latex-est" 
+        <target name="gra3-uni4-print-latex-est" 
                 format="latex" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-est-print.ptx"
-                output-dir="print-latex-est/grado3-unidad4">
+                output-dir="print-latex-est/gra3-uni4">
         </target>
-        <target name="grado3-unidad4-web-prof" 
+        <target name="gra3-uni4-web-prof" 
                 format="html" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-prof-web.ptx"
-                output-dir="web-prof/grado3-unidad4">
+                output-dir="web-prof/gra3-uni4">
             <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
         </target>
-        <target name="grado3-unidad4-print-prof" 
+        <target name="gra3-uni4-print-prof" 
                 latex-engine="pdflatex" 
                 format="pdf" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-prof-print.ptx"
-                output-dir="print-prof/grado3-unidad4">
+                output-dir="print-prof/gra3-uni4">
         </target>
-        <target name="grado3-unidad4-print-latex-prof" 
+        <target name="gra3-uni4-print-latex-prof" 
                 format="latex" 
-                source="grado3-unidad4/grado3-unidad4.ptx"
+                source="gra3-uni4/gra3-uni4.ptx"
                 publication="publication-prof-print.ptx"
-                output-dir="print-latex-prof/grado3-unidad4">
+                output-dir="print-latex-prof/gra3-uni4">
         </target>
     </targets>
 </project>

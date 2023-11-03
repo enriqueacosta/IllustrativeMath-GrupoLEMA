@@ -10,28 +10,28 @@ Todos los archivos que se generan se guardan en la carpeta `output/`.
 
 ### generar versiones del estudiante
 
-Para generar la página web:
+Para generar la página web (`gra3-uni4` significa `grado3-unidad4`):
 
 ```bash
-pretext build grado3-unidad4-web-est
+pretext build gra3-uni4-web-est
 ```
 
 Para ver localmente la página web:
 
 ```bash
-pretext view grado3-unidad4-web-est
+pretext view gra3-uni4-web-est
 ```
 
 Para generar el pdf:
 
 ```bash
-pretext build grado3-unidad4-print-est
+pretext build gra3-uni4-print-est
 ```
 
 Para generar el código latex que produce el pdf:
 
 ```bash
-pretext build grado3-unidad4-print-latex-est
+pretext build gra3-uni4-print-latex-est
 ```
 
 ### generar versiones del profesor

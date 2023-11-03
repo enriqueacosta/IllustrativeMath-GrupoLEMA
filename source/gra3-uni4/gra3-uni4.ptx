@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template book provided -->
+<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your book         -->
+  <book xml:id="grado3-unidad4">
+    <!-- The book needs a title and can have a subtitle  -->
+    <title>Matemáticas Ilustrativas</title>
+    <subtitle>Grado 3 - Unidad 4</subtitle>
+
+    <!-- <xi:include href="./meta_frontmatter.ptx" /> -->
+    <frontmatter>
+      
+      <!-- contenido de <titlepage> que es igual para todas las unidades-->
+      <xi:include href="../meta/meta_titlepage.ptx" />
+
+      <preface>
+        <title>Presentación de la unidad</title>
+        <p>
+          Secciones:
+          <ul>
+            <li><xref ref="gra3-uni4-secA" text="title"></xref></li>
+            <li><xref ref="gra3-uni4-secB" text="title"></xref></li>
+            <li><xref ref="gra3-uni4-secC" text="title"></xref></li>
+          </ul>
+        </p>
+        <!-- <p> -->
+          <!-- <list-of elements="chapter"/> -->
+          <!-- <list-of elements="theorem lemma" divisions="chapter" empty="yes"/> -->
+        <!-- </p>   -->
+        <remark component="profesor">
+          <p>
+            En esta unidad los estudiantes aprenden sobre el concepto de división en términos de grupos iguales y su relación con la multiplicación.
+          </p>
+          <p>
+            Por ejemplo, <m>30\div 5</m> puede representar 30 objetos en 5 grupos iguales, o 30 objetos en grupos de 5 objetos cada uno.
+          </p>
+          <sbsgroup widths="45% 45%">
+            <sidebyside>
+              <p>5 grupos</p>
+              <p>Grupos de 5</p>
+            </sidebyside>
+            <sidebyside>
+              <image source="svg-source/tikz-file-147473">
+                <description></description>
+              </image>
+              <image source="svg-source/tikz-file-147472">
+                <description></description>
+              </image>
+            </sidebyside>
+          </sbsgroup>
+
+          <p>
+            Los estudiantes usan la relación entre multiplicación y división para afianzar su conocimiento de hechos de multiplicación y división de un solo dígito. Continúan razonando sobre productos de dos números en términos del área de rectángulos cuyas longitudes de lado representan los factores, descomponiendo longitudes de lado y aplicando propiedades de operaciones en el proceso.
+          </p>
+          <p>
+            <image source="svg-source/tikz-file-170303" width="30%">
+              <description></description>
+            </image>
+          </p>
+          <p>
+            Hacia el final de la unidad, los estudiantes resuelven problemas de dos pasos que involucran las cuatro operaciones. En algunas situaciones, trabajan con expresiones que usan paréntesis para indicar qué operación se completa primero. Por ejemplo: <m>276 + (45 \div 5) = {?}</m>.
+          </p>
+        </remark>
+      </preface>
+
+
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
+
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../meta/meta_source.ptx" />
+
+
+      <!-- <dedication> -->
+      <!-- </dedication> -->
+
+      <!-- <acknowledgement> -->
+      <!-- </acknowledgement> -->
+    </frontmatter>
+
+    <!-- <part> -->
+
+
+    <chapter xml:id="gra3-uni4-secA">
+      <title>Sección A - ¿Qué es la división?</title>
+
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra3-uni4-secA.ptx" />
+
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gra3-uni4-secA-lec1.ptx"/>
+      <xi:include href="./gra3-uni4-secA-lec2.ptx"/>
+      <xi:include href="./gra3-uni4-secA-lec3.ptx"/>
+      <xi:include href="./gra3-uni4-secA-lec4.ptx"/>
+      <xi:include href="./gra3-uni4-secA-lec5.ptx"/>
+
+      <!-- Problemas de práctica -->
+      <xi:include href="./gra3-uni4-secA-ProblemasPractica.ptx"/>
+
+      <!-- Resumen de la sección -->
+      <xi:include href="./gra3-uni4-secA-resumen.ptx"/>
+    </chapter>
+
+    <chapter xml:id="gra3-uni4-secB">
+      <title>BORRADOR: Sección B - Relacionemos la multiplicación y la división</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra3-uni4-secB.ptx" />
+
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gra3-uni4-secB-lec6.ptx"/>
+      <xi:include href="./gra3-uni4-secB-lec7.ptx"/>
+      <xi:include href="./gra3-uni4-secB-lec8.ptx"/>
+      <xi:include href="./gra3-uni4-secB-lec9.ptx"/>
+      <xi:include href="./gra3-uni4-secB-lec10.ptx"/>
+      <xi:include href="./gra3-uni4-secB-lec11.ptx"/>
+    
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./gra3-uni4-secB-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./gra3-uni4-secB-resumen.ptx"/> -->
+    </chapter>
+
+    <chapter xml:id="gra3-uni4-secC">
+      <title>BORRADOR: Sección C - Multipliquemos números más grandes</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra3-uni4-secC.ptx" />
+
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gra3-uni4-secC-lec12.ptx"/>
+      <xi:include href="./gra3-uni4-secC-lec13.ptx"/>
+      <xi:include href="./gra3-uni4-secC-lec14.ptx"/>
+      <xi:include href="./gra3-uni4-secC-lec15.ptx"/>
+      <xi:include href="./gra3-uni4-secC-lec16.ptx"/>
+      <xi:include href="./gra3-uni4-secC-lec17.ptx"/>
+
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./gra3-uni4-secC-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./gra3-uni4-secC-resumen.ptx"/> -->
+    </chapter>
+
+
+    <chapter xml:id="gra3-uni4-secD">
+      <title>BORRADOR: Sección D - Dividamos números más grandes</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra3-uni4-secD.ptx" />
+
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gra3-uni4-secD-lec18.ptx"/>
+      <xi:include href="./gra3-uni4-secD-lec19.ptx"/>
+      <xi:include href="./gra3-uni4-secD-lec20.ptx"/>
+      <xi:include href="./gra3-uni4-secD-lec21.ptx"/>
+      <xi:include href="./gra3-uni4-secD-lec22.ptx"/>
+
+      <!-- Problemas de práctica -->
+      <!-- <xi:include href="./gra3-uni4-secD-ProblemasPractica.ptx"/> -->
+
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./gra3-uni4-secD-resumen.ptx"/> -->
+    </chapter>
+    <!-- This chapter includes several features that require pregeneration   -->
+    <!-- of assets with `pretext generate` or similar. Some features require -->
+    <!-- internet access; others require local installs not automatically    -->
+    <!-- provided by the CLI. Uncomment to view this chapter, and comment    -->
+    <!-- features you don't wish to generate.                                -->
+    <!-- <xi:include href="./ch_generate.ptx" /> -->
+
+    <chapter>
+      <title>Glosario</title>
+      <xi:include href="./gra3-uni4-glosario.ptx"/>
+    </chapter>
+
+    <!-- Finaly we place the backmatter in its own file and inlcude-->
+    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
+    
+    <!-- </part> -->
+  </book>
+</pretext>
