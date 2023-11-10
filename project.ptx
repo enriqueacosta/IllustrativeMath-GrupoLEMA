@@ -90,5 +90,48 @@
                 publication="publication-prof-print.ptx"
                 output-dir="print-latex-prof/gra3-uni4">
         </target>
+
+
+        <!-- CENTROS -->
+        <target name="centros-web-est" 
+                format="html" 
+                source="centros/centros.ptx"
+                publication="publication-est-web.ptx"
+                output-dir="web-est/centros">
+            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+        </target>
+        <target name="centros-print-est" 
+                latex-engine="pdflatex" 
+                format="pdf" 
+                source="centros/centros.ptx"
+                publication="publication-est-print.ptx"
+                output-dir="print-est/centros">
+        </target>
+        <target name="centros-print-latex-est" 
+                format="latex" 
+                source="centros/centros.ptx"
+                publication="publication-est-print.ptx"
+                output-dir="print-latex-est/centros">
+        </target>
+        <target name="centros-web-prof" 
+                format="html" 
+                source="centros/centros.ptx"
+                publication="publication-prof-web.ptx"
+                output-dir="web-prof/centros">
+            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+        </target>
+        <target name="centros-print-prof" 
+                latex-engine="pdflatex" 
+                format="pdf" 
+                source="centros/centros.ptx"
+                publication="publication-prof-print.ptx"
+                output-dir="print-prof/centros">
+        </target>
+        <target name="centros-print-latex-prof" 
+                format="latex" 
+                source="centros/centros.ptx"
+                publication="publication-prof-print.ptx"
+                output-dir="print-latex-prof/centros">
+        </target>
     </targets>
 </project>
