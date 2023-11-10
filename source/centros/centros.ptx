@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template book provided -->
+<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your book         -->
+  <book xml:id="centros">
+    <!-- The book needs a title and can have a subtitle  -->
+    <title>Matemáticas Ilustrativas </title>
+    <subtitle>Centros</subtitle>
+
+    <frontmatter>
+
+      <!-- contenido de <titlepage> que es igual para todas las unidades-->
+      <xi:include href="../meta/meta_titlepage.ptx" />
+
+      <!-- You can have more than one preface. -->
+      <preface>
+        <title>Leer esto primero</title>
+        <p>
+          Centros:
+          <!-- <ul> -->
+            <!-- <li><xref ref="centros-seccionA" text="title"></xref></li> -->
+            <!-- <li><xref ref="centros-seccionB" text="title"></xref></li> -->
+            <!-- <li><xref ref="centros-seccionC" text="title"></xref></li> -->
+            <!-- <li><xref ref="centros-seccionD" text="title"></xref></li> -->
+          <!-- </ul> -->
+        </p>
+        <!-- 
+        <p>
+          <list-of elements="chapter"/>
+          <list-of elements="theorem lemma" divisions="chapter" empty="yes"/>
+        </p> 
+        -->  
+      </preface>
+
+
+      <!-- You can have more than one preface. -->
+
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../meta/meta_source.ptx" />
+
+      <!-- <dedication> -->
+      <!-- </dedication> -->
+
+      <!-- <acknowledgement> -->
+      <!-- </acknowledgement> --> 
+
+    </frontmatter>
+
+    
+    
+
+    <chapter xml:id="centros-lista">
+      <title>Centros</title>
+      
+      <!-- Centros - un archivo cada uno -->
+      <xi:include href="./centro-tableroDe5.ptx" />
+      <!-- <xi:include href="./centros-seccionA-leccion1.ptx"/> -->
+      <!-- <xi:include href="./centros-seccionA-leccion2.ptx"/> -->
+      <!-- <xi:include href="./centros-seccionA-leccion3.ptx"/> -->
+      <!-- <xi:include href="./centros-seccionA-leccion4.ptx"/> -->
+      <!-- <xi:include href="./centros-seccionA-leccion5.ptx"/> -->
+
+      <!-- Problemas de práctica de la sección -->
+      <!-- <xi:include href="./centros-seccionA-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./centros-seccionA-resumen.ptx"/> -->
+    </chapter>
+
+
+    <!-- Finaly we place the backmatter in its own file and inlcude-->
+    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
+    
+    <!-- </part> -->
+  </book>
+</pretext>
