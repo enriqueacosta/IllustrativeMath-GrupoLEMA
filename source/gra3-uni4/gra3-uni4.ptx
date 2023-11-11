@@ -10,10 +10,10 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="../meta/meta_docinfo.ptx" />
 
-  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
-  <book xml:id="grado3-unidad4">
-    <!-- The book needs a title and can have a subtitle  -->
+  <article xml:id="grado3-unidad4">
+    <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas</title>
     <subtitle>Grado 3 - Unidad 4</subtitle>
 
@@ -93,7 +93,7 @@
     <!-- <part> -->
 
 
-    <chapter xml:id="gra3-uni4-secA">
+    <section xml:id="gra3-uni4-secA">
       <title>Sección A - ¿Qué es la división?</title>
 
       <!-- Intro y objetivos de la sección-->
@@ -111,9 +111,9 @@
 
       <!-- Resumen de la sección -->
       <xi:include href="./gra3-uni4-secA-resumen.ptx"/>
-    </chapter>
+    </section>
 
-    <chapter xml:id="gra3-uni4-secB">
+    <section xml:id="gra3-uni4-secB">
       <title>BORRADOR: Sección B - Relacionemos la multiplicación y la división</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -132,9 +132,9 @@
 
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra3-uni4-secB-resumen.ptx"/> -->
-    </chapter>
+    </section>
 
-    <chapter xml:id="gra3-uni4-secC">
+    <section xml:id="gra3-uni4-secC">
       <title>BORRADOR: Sección C - Multipliquemos números más grandes</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -153,10 +153,10 @@
 
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra3-uni4-secC-resumen.ptx"/> -->
-    </chapter>
+    </section>
 
 
-    <chapter xml:id="gra3-uni4-secD">
+    <section xml:id="gra3-uni4-secD">
       <title>BORRADOR: Sección D - Dividamos números más grandes</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -174,22 +174,22 @@
 
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra3-uni4-secD-resumen.ptx"/> -->
-    </chapter>
-    <!-- This chapter includes several features that require pregeneration   -->
+    </section>
+    <!-- This section includes several features that require pregeneration   -->
     <!-- of assets with `pretext generate` or similar. Some features require -->
     <!-- internet access; others require local installs not automatically    -->
-    <!-- provided by the CLI. Uncomment to view this chapter, and comment    -->
+    <!-- provided by the CLI. Uncomment to view this section, and comment    -->
     <!-- features you don't wish to generate.                                -->
     <!-- <xi:include href="./ch_generate.ptx" /> -->
 
-    <chapter>
+    <section>
       <title>Glosario</title>
       <xi:include href="./gra3-uni4-glosario.ptx"/>
-    </chapter>
+    </section>
 
     <!-- Finaly we place the backmatter in its own file and inlcude-->
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
     
     <!-- </part> -->
-  </book>
+  </article>
 </pretext>

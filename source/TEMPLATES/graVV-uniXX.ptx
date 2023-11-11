@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- This is the main file of the pretext template book provided -->
-<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- This is the main file of the pretext template article provided -->
+<!-- by the `pretext new article` command.  The main.ptx here always-->
 <!-- starts with <pretext> tags.  In this example, the main file -->
 <!-- just imports other .ptx files which contain content. Open   -->
 <!-- those files to see more pretext features                    -->
@@ -10,10 +10,10 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="../meta/meta_docinfo.ptx" />
 
-  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
-  <!-- to some short (non-spaced) description of your book         -->
-  <book xml:id="gradoVV-unidadXX">
-    <!-- The book needs a title and can have a subtitle  -->
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your article         -->
+  <article xml:id="gradoVV-unidadXX">
+    <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado VV - Unidad XX</subtitle>
 
@@ -103,5 +103,5 @@
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
     
     <!-- </part> -->
-  </book>
+  </article>
 </pretext>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- This is the main file of the pretext template book provided -->
-<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- This is the main file of the pretext template article provided -->
+<!-- by the `pretext new article` command.  The main.ptx here always-->
 <!-- starts with <pretext> tags.  In this example, the main file -->
 <!-- just imports other .ptx files which contain content. Open   -->
 <!-- those files to see more pretext features                    -->
@@ -13,10 +13,10 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="../meta/meta_docinfo.ptx" />
 
-  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
-  <!-- to some short (non-spaced) description of your book         -->
-  <book xml:id="grado0-unidad1">
-    <!-- The book needs a title and can have a subtitle  -->
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your article         -->
+  <article xml:id="grado0-unidad1">
+    <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado 0 - Unidad 1</subtitle>
 
@@ -87,7 +87,7 @@
 
     <!-- <part> -->
 
-    <chapter xml:id="gra0-uni1-secA">
+    <section xml:id="gra0-uni1-secA">
       <title>Sección A - Exploremos nuestras herramientas </title>
       
       <!-- Intro y objetivos de la sección-->
@@ -106,9 +106,9 @@
       
       <!-- Resumen de la sección -->
       <xi:include href="./gra0-uni1-secA-resumen.ptx"/>
-    </chapter>
+    </section>
 
-    <chapter xml:id="gra0-uni1-secB">
+    <section xml:id="gra0-uni1-secB">
       <title>Sección B - Reconozcamos cantidades</title>
 
       <!-- Intro y objetivos de la sección-->
@@ -125,9 +125,9 @@
       
       <!-- Resumen de la sección -->
       <xi:include href="./gra0-uni1-secB-resumen.ptx"/>
-    </chapter>
+    </section>
 
-    <chapter xml:id="gra0-uni1-secC">
+    <section xml:id="gra0-uni1-secC">
       <title>Sección C - ¿Hay suficientes?</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -142,10 +142,10 @@
       
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra0-uni1-secC-resumen.ptx"/> -->
-    </chapter>
+    </section>
 
 
-    <chapter xml:id="gra0-uni1-secD">
+    <section xml:id="gra0-uni1-secD">
       <title>Sección D - Contemos colecciones </title>
       
       <!-- Intro y objetivos de la sección-->
@@ -160,16 +160,16 @@
       
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra0-uni1-secD-resumen.ptx"/> -->
-    </chapter>
+    </section>
 
-    <chapter>
+    <section>
       <title>Glosario</title>
       <xi:include href="./gra0-uni1-glosario.ptx"/>
-    </chapter>
+    </section>
 
     <!-- Finaly we place the backmatter in its own file and inlcude-->
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
     
     <!-- </part> -->
-  </book>
+  </article>
 </pretext>
