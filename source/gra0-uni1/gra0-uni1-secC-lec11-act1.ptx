@@ -1,23 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<!-- ============================================ 
-   El calentamiento es un <exploration> (distinto a las otras actividades)                      
-=================================================  -->
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>Cuántos ves: En un instante </title>
+<title>Actuémoslo: Cuatro ranitas manchadas (parte 2)</title>
 
 <statement>
-  <p>
-    <line>¿Cuántos ves?</line>
-    <line>¿Cómo lo sabes?, ¿qué ves?</line>
-  </p>
-  <image source="svg-source/tikz-file-148153.svg" width="30%">
-    <description>cuatro puntos</description>
-  </image>
-  <image source="svg-source/tikz-file-136326.svg" width="30%">
-    <description>tres puntos</description>
-  </image>
+    <p>
+        <image source="png-source/RANA VERDE.png" width="45%">
+          <description>rana</description>
+        </image>
+      </p>
+      <p>
+        <line> 4 ranitas manchadas se sentaron en un tronco manchado </line>
+        <line> a comer los más deliciosos bichos. ¡Yum! ¡Yum! </line>
+        <line> 1 saltó al lago, que estaba agradable y fresco. </line>
+        <line> Ahora hay 3 ranitas verdes manchadas. ¡Glub! ¡Glub! </line>
+      </p>
 </statement>
 
 <solution>
@@ -27,54 +25,61 @@
 
 <postlude component="profesor"> <!-- Notas para el profesor -->
 
+  <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>[@@@@@@@@@] minutos</p>
   </paragraphs>
 
-  
+  <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
-
+  <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
@@ -82,4 +87,4 @@
 
 </postlude>
 
-</exploration>
+</activity>
