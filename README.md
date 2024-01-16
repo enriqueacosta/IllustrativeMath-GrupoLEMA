@@ -70,7 +70,7 @@ Por ejemplo:
 
 
 ## Preludios y postludios a las actividades en las guías del docente
-Los comentarios para los profesores en las guías del docente para cada actividad se encuentran dentro de las tags `<prelude>` y `<postlude>`. Por defecto, todo lo que está en `<prelude>` aparece antes del enunciaco, y todo lo que está en `<postlude>` aparece después del enunciado, pero esto se puede ajustar. Si se quiere que ambas aparezcan después del enunciado de la actividad, se debe cambiar el archivo `pretext-html.xsl` de PreTexT que determina como se produce la página web. Busque las líneas que incluyen el `<prelude>`
+Los comentarios para los profesores en las guías del docente para cada actividad se encuentran dentro de las tags `<prelude>` y `<postlude>`. Por defecto, todo lo que está en `<prelude>` aparece antes del enunciado, y todo lo que está en `<postlude>` aparece después del enunciado, pero esto se puede ajustar. Si se quiere que ambas aparezcan después del enunciado de la actividad, se debe cambiar el archivo `pretext-html.xsl` de PreTexT que determina como se produce la página web. Busque las líneas que incluyen el `<prelude>`
 ```xml
 <!-- prelude beforehand, when original -->
 <xsl:if test="$b-original">
