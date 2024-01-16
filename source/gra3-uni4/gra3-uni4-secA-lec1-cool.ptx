@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- 
-    El cool-down es un problem (distinto a las otras actividades y a los Practice
-    Problems) 
--->
+
+<!-- ============================================ 
+  El cool-down es un <problem> 
+  (distinto a las otras actividades y a los Practice Problems)
+=================================================  -->
 <problem xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
 <title>¿Cuántas bolsas?</title>
 
 <statement>
@@ -19,7 +21,12 @@
   </image>
 </solution>
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
   
   <!-- Posibles errores -->
   <paragraphs>
@@ -33,4 +40,6 @@
     <p>Reparta al inicio de la siguiente lección las respuestas de los estudiantes, y pida que trabajen en parejas en este problema.</p>
   </paragraphs>
 </postlude>
+
+
 </problem>

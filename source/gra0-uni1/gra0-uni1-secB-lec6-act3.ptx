@@ -47,7 +47,10 @@
 
 
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
 
   <!-- Tiempo recomendado -->
   <paragraphs>
@@ -81,6 +84,13 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>

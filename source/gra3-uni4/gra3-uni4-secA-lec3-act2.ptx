@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Los lápices de colores de Elena</title>
+
 <statement>
     <p>Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices irán en cada caja?</p>
     <p>¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.</p>
@@ -15,11 +18,19 @@
       </image>
     </sidebyside>
 </statement>
+
 <solution>
     <p>A.</p>
     <p>El dibujo B no es correcto pues muestra 6 grupos de 2 lápices de colores. Eso sería como si ella tuviera 6 cajas, en vez de 2 cajas.</p>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs><title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>
   </paragraphs>
@@ -46,6 +57,16 @@
       <li>2-3 minutos: tiempo de trabajo individual</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs><title>Para los estudiantes con dificultades</title>
     <p>[@@@@@@@@@]</p>
   </paragraphs> -->

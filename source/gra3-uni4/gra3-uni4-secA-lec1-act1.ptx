@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>¿Cuántas manzanas?</title>
+
 <statement>
   <p>
     Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.
@@ -13,6 +16,7 @@
     </ol>
   </p>
 </statement>
+
 <solution>
   <p>Ejemplos de respuestas:</p>
   <ol>
@@ -21,7 +25,13 @@
     <li><p>8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y los ponen en grupos de 4 para representar cada caja.</p></li>
   </ol>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>20 minutos.</p>
@@ -73,6 +83,16 @@
       <li>6-8 minutos: tiempo de trabajo en pareja</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <paragraphs>
     <title>Para los estudiantes con dificultades</title>
     <p>Si los estudiantes no encuentran una solución a los problemas, considere preguntar: "¿De qué se trata este problema?" y "¿Cómo podrías representar el problema?"</p>

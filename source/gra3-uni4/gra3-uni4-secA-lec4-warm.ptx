@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- 
-  El calentamiento es un exploration (distinto a las otras actividades) 
--->
+
+<!-- ============================================ 
+   El calentamiento es un <exploration> (distinto a las otras actividades)                      
+=================================================  -->
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Conversación numérica: ¿Más o menos?</title>
@@ -30,7 +31,13 @@
   </p>
 </solution>
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>
@@ -59,6 +66,18 @@
       <li>Repita con cada expresión.</li>
     </ul>
   </paragraphs>
+
+
+</prelude>
+
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs>
     <title>Para los estudiantes con dificultades</title>
     <p>[@@@@@@@@@]</p>

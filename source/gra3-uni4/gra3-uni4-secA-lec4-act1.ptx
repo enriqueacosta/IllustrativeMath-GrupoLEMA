@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Trompos</title>
+
 <statement>
   <p>Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.</p>
   <sidebyside>
@@ -44,59 +47,77 @@
     </sidebyside>
   </sbsgroup>
 </statement>
+
 <solution>
   <p>1:C, 2:A, 3:E, 4:B, 5:D</p>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
-<paragraphs>
-  <title><custom ref="recommended-time-titulo"/></title>
-  <p>10 minutos</p>
-</paragraphs>
-<paragraphs>
-  <title><custom ref="narrative-actividad-titulo"/></title>
-  <p>El propósito de esta actividad es que los estudiantes emparejen expresiones de división con situaciones de división. Los estudiantes deben justificar sus emparejamientos articulando cómo los números en la expresión se conectan con lo que está sucediendo en la situación (MP2).</p>
-</paragraphs>
-<!-- <paragraphs>
-  <title><custom ref="materials-actividad-titulo"/></title>
-  <p>[@@@@@@@@@]</p>
-</paragraphs> -->
-<paragraphs>
-  <title><custom ref="launch-titulo"/></title>
-  <ul>
-    <li>Grupos de 2</li>
-    <li>Muestre la imagen.</li>
-    <li><q>Estos juguetes se llaman trompos. En muchas culturas se juega con ellos. ¿Qué otros juguetes conocen?</q></li>
-    <li>30 segundos: tiempo para pensar en silencio</li>
-    <li>Compartan las respuestas.</li>
-    <li><q>Ahora vamos a trabajar con algunas situaciones que incluyen trompos. Vamos a ver situaciones sobre otros juguetes en próximas actividades.</q></li>
-  </ul>
-</paragraphs>
-<paragraphs>
-  <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-  <ul>
-    <li><q>Con su compañero, emparejen cada situación con una expresión de división.</q></li>
-    <li>3-5 minutos: tiempo de trabajo en parejas</li>
-    <li>Identifique a los estudiantes que puedan justificar sus emparejamientos explicando cómo los números en la expresión representan la situación.</li>
-  </ul>
-</paragraphs>
-<!-- <paragraphs>
-  <title>Para los estudiantes con dificultades</title>
-  <p>[@@@@@@@@@]</p>
-</paragraphs> -->
-<paragraphs>
-  <title><custom ref="synthesis-actividad-titulo"/></title>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>El propósito de esta actividad es que los estudiantes emparejen expresiones de división con situaciones de división. Los estudiantes deben justificar sus emparejamientos articulando cómo los números en la expresión se conectan con lo que está sucediendo en la situación (MP2).</p>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
     <ul>
-      <li>Seleccione a los estudiantes identificados para compartir.</li>
-      <li>Considere preguntar: <q>¿Cómo representan los números de la expresión lo que hay en la situación?</q></li>
+      <li>Grupos de 2</li>
+      <li>Muestre la imagen.</li>
+      <li><q>Estos juguetes se llaman trompos. En muchas culturas se juega con ellos. ¿Qué otros juguetes conocen?</q></li>
+      <li>30 segundos: tiempo para pensar en silencio</li>
+      <li>Compartan las respuestas.</li>
+      <li><q>Ahora vamos a trabajar con algunas situaciones que incluyen trompos. Vamos a ver situaciones sobre otros juguetes en próximas actividades.</q></li>
     </ul>
-</paragraphs>
-<!-- <paragraphs>
-  <title>Desarrollo de lenguaje matemático</title>
-  <p>[@@@@@@@@@]</p>
-</paragraphs> -->
-<!-- <paragraphs>
-  <title>Acceso a estudiantes con discapacidades</title>
-  <p>[@@@@@@@@@]</p>
-</paragraphs> -->
-</postlude>
+  </paragraphs>
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <ul>
+      <li><q>Con su compañero, emparejen cada situación con una expresión de división.</q></li>
+      <li>3-5 minutos: tiempo de trabajo en parejas</li>
+      <li>Identifique a los estudiantes que puedan justificar sus emparejamientos explicando cómo los números en la expresión representan la situación.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- <paragraphs>
+    <title>Para los estudiantes con dificultades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+      <ul>
+        <li>Seleccione a los estudiantes identificados para compartir.</li>
+        <li>Considere preguntar: <q>¿Cómo representan los números de la expresión lo que hay en la situación?</q></li>
+      </ul>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title>Desarrollo de lenguaje matemático</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <!-- <paragraphs>
+    <title>Acceso a estudiantes con discapacidades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  </postlude>
 </activity>

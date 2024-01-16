@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Todas las manzanas</title>
+
 <statement>
   <sidebyside widths="40% 40%">
     <p>Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?</p>
@@ -15,6 +18,7 @@
     </ul>
   </p>
 </statement>
+
 <solution>
   <p>Ejemplos de respuestas:</p>
   <ul>
@@ -25,7 +29,14 @@
     <li><p>En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.</p></li>
   </ul>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos.</p>
@@ -59,6 +70,16 @@
       <li>3-5 minutos: discusión en pareja</li>
       </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs> -->
     <!-- <title>Para los estudiantes con dificultades</title> -->
     <!-- <p>[@@@@@@@@@]</p> -->

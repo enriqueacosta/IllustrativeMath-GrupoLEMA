@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- 
-    El cool-down es un problem (distinto a las otras actividades y a los Practice
-    Problems) 
--->
+<!-- ============================================ 
+  El cool-down es un <problem> 
+  (distinto a las otras actividades y a los Practice Problems)
+=================================================  -->
 <problem xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
 <title>Regalitos para invitados</title>
 
 <statement>
@@ -25,8 +26,12 @@
   <p>Respuesta de ejemplo: El dibujo B corresponde a la situación porque muestra 8 marcadores en cada bolsa. Después de que los 48 marcadores se dividan en grupos de 8, habrá 6 bolsas.</p>
 </solution>
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
 
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
 
   <!-- Posibles errores -->
   <paragraphs>

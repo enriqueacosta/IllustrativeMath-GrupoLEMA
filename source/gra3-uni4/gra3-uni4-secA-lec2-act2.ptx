@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Recorrido por el salón</title>
+
 <statement>
   <p>Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.</p>
 </statement>
+
 <solution>
     <p>Ejemplos de respuestas:</p>
     <ul>
@@ -12,7 +16,14 @@
     <li><p>En algunos pósteres, podemos ver cómo se ponen las manzanas en cada grupo. En otros pósteres, solo podemos ver el resultado final.</p></li>
   </ul>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>
@@ -36,6 +47,15 @@
       <li>5-7 minutos: Recorrido por el salón</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs> -->
     <!-- <title>Para los estudiantes con dificultades</title> -->
     <!-- <p>[@@@@@@@@@]</p> -->

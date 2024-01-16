@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- 
-    El cool-down es un problem (distinto a las otras actividades y a los Practice
-    Problems) 
--->
+<!-- ============================================ 
+  El cool-down es un <problem> 
+  (distinto a las otras actividades y a los Practice Problems)
+=================================================  -->
 <problem xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Patas de hormigas</title>
+
 <statement>
   <p>Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.</p>
   <p>
@@ -18,6 +20,7 @@
     </ol>      
   </p>  
 </statement>
+
 <solution>
   <p>
     <ol>
@@ -26,7 +29,13 @@
     </ol>
   </p>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
 
   <!-- Posibles errores -->
   <paragraphs>
@@ -40,4 +49,6 @@
     <p>Pida a los estudiantes al inicio de la siguiente lección que trabajen en parejas en este problema.</p>
   </paragraphs>
 </postlude>
+
+
 </problem>

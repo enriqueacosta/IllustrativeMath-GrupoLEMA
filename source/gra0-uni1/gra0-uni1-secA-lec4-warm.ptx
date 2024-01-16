@@ -38,8 +38,11 @@
 </solution>
 
 
-<!-- Notas para el profesor -->
-<postlude component="profesor"> 
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
 
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
@@ -70,6 +73,13 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>

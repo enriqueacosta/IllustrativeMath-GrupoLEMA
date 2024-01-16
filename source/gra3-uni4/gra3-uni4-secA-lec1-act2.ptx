@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Recorrido por el salón: Manzanas en cajas</title>
+
 <statement>
   <p>
       <ol>
@@ -9,6 +12,7 @@
       </ol>
   </p>
 </statement>
+
 <solution>
   <ol>
     <li><p>(sin respuestas)</p></li>
@@ -23,7 +27,13 @@
     </li>
   </ol>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>15 minutos.</p>
@@ -48,6 +58,15 @@
       <li>8–10 minutos: Recorrido por el salón.</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs> -->
     <!-- <title>Para los estudiantes con dificultades</title> -->
     <!-- <p>[@@@@@@@@@]</p> -->

@@ -1,101 +1,124 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- 
-  El calentamiento es un exploration (distinto a las otras actividades) 
--->
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Conversación numérica: Cuanto más cambien las cosas...</title>
-  <statement>
-      <p>Encuentra mentalmente el valor de cada expresión.</p>
-      <p>
-      <ul> <li> <m>120 + 120</m> </li>
-         <li> <m>121 + 119</m> </li>
-         <li> <m>125 + 115</m> </li>
-         <li> <m>129 + 111</m> </li>
-      </ul>
-      </p>
-  </statement>
-  <solution>
-      <p>Ejemplos de respuestas</p>
-      <p>
-          <ul>
-          <li>240. Simplemente dupliqué 120.</li>
-          <li>240. Me di cuenta de que 121 es 1 más que 120 y 119 es 1 menos que 120, así que el valor es el mismo que el de <m>120+120</m>.</li>
-          <li>240. Le quité 5 a 125 y se lo sumé a 115. Así otra vez tenía <m>120+120</m>.</li>
-          <li>240. Le quité 9 a 129 y se lo sumé a 111. Así otra vez tenía <m>120+120</m>.</li>
-          </ul>
-      </p>
-  </solution>
-  <postlude component="profesor"> <!-- Notas para el profesor -->
-    <paragraphs>
-      <title><custom ref="recommended-time-titulo"/></title>
-      <p>10 minutos</p>
-    </paragraphs>
-    <paragraphs>
-      <title><custom ref="narrative-actividad-titulo"/></title>
-      <p>El propósito de esta conversación numérica es generar estrategias y comprensiones que los estudiantes tienen para hacer sumas hasta de 1,000, especialmente al ajustar los números en una suma para que sea más fácil sumarlos. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para hacer sumas hasta de 1,000.</p>
 
-      <p>Los estudiantes buscan y utilizan la estructura (MP7) cuando se dan cuenta que el valor de la suma no cambia cuando se quita el mismo valor de un sumando y se agrega al otro.</p>
-    </paragraphs>
-    <!-- <paragraphs>
-      <title><custom ref="materials-actividad-titulo"/></title>
-      <p>[@@@@@@@@@]</p>
-    </paragraphs> -->
-    <paragraphs>
-      <title><custom ref="launch-titulo"/></title>
-        <ul>
-          <li>Muestre una expresión.</li>
-          <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.</q></li>
-          <li>1 minuto: tiempo de reflexión en silencio</li>
-        </ul>
-    </paragraphs>
-    <paragraphs>
-      <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-        <ul>
-          <li>Registre respuestas y estrategias.</li>
-          <li>Mantenga las expresiones y el trabajo visible.</li>
-          <li>Repita con cada expresión.</li>
-        </ul>
-    </paragraphs>
-    <!-- <paragraphs>
-      <title>Para los estudiantes con dificultades</title>
-      <p>[@@@@@@@@@]</p>
-    </paragraphs> -->
-    <paragraphs>
-      <title><custom ref="synthesis-actividad-titulo"/></title>
+<!-- ============================================ 
+   El calentamiento es un <exploration> (distinto a las otras actividades)                      
+=================================================  -->
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<title>Conversación numérica: Cuanto más cambien las cosas...</title>
+
+<statement>
+  <p>Encuentra mentalmente el valor de cada expresión.</p>
+  <p>
+    <ul> <li> <m>120 + 120</m> </li>
+       <li> <m>121 + 119</m> </li>
+       <li> <m>125 + 115</m> </li>
+       <li> <m>129 + 111</m> </li>
+    </ul>
+  </p>
+</statement>
+
+<solution>
+  <p>Ejemplos de respuestas</p>
+  <p>
+    <ul>
+      <li>240. Simplemente dupliqué 120.</li>
+      <li>240. Me di cuenta de que 121 es 1 más que 120 y 119 es 1 menos que 120, así que el valor es el mismo que el de <m>120+120</m>.</li>
+      <li>240. Le quité 5 a 125 y se lo sumé a 115. Así otra vez tenía <m>120+120</m>.</li>
+      <li>240. Le quité 9 a 129 y se lo sumé a 111. Así otra vez tenía <m>120+120</m>.</li>
+    </ul>
+  </p>
+</solution>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>El propósito de esta conversación numérica es generar estrategias y comprensiones que los estudiantes tienen para hacer sumas hasta de 1,000, especialmente al ajustar los números en una suma para que sea más fácil sumarlos. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para hacer sumas hasta de 1,000.</p>
+
+    <p>Los estudiantes buscan y utilizan la estructura (MP7) cuando se dan cuenta que el valor de la suma no cambia cuando se quita el mismo valor de un sumando y se agrega al otro.</p>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
       <ul>
-        <li>
-          <p>
-            <q>¿Por qué creen que todas estas expresiones tienen el mismo valor?</q> (Aunque cada número está cambiando, se está agregando la misma cantidad a un número y se está restando del otro número, por lo que el total es el mismo.)
-          </p>
-        </li>
-        <li>
-          <p>
-            Considere preguntar:
-            <ul>
-              <li>
-                <q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q>
-              </li>
-              <li>
-                <q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q>
-              </li>
-              <li>
-                <q>¿Alguien pensó en el problema de otra forma?</q>
-              </li>
-              <li>
-                <q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q>
-              </li>
-            </ul>
-          </p>
-        </li>
+        <li>Muestre una expresión.</li>
+        <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.</q></li>
+        <li>1 minuto: tiempo de reflexión en silencio</li>
       </ul>
-    </paragraphs>
-    <!-- <paragraphs>
-      <title>Desarrollo de lenguaje matemático</title>
-      <p>[@@@@@@@@@]</p>
-    </paragraphs> -->
-    <!-- <paragraphs>
-      <title>Acceso a estudiantes con discapacidades</title>
-      <p>[@@@@@@@@@]</p>
-    </paragraphs> -->
-  </postlude>
+  </paragraphs>
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+      <ul>
+        <li>Registre respuestas y estrategias.</li>
+        <li>Mantenga las expresiones y el trabajo visible.</li>
+        <li>Repita con cada expresión.</li>
+      </ul>
+  </paragraphs>
+
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- <paragraphs>
+    <title>Para los estudiantes con dificultades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <ul>
+      <li>
+        <p>
+          <q>¿Por qué creen que todas estas expresiones tienen el mismo valor?</q> (Aunque cada número está cambiando, se está agregando la misma cantidad a un número y se está restando del otro número, por lo que el total es el mismo.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Considere preguntar:
+          <ul>
+            <li>
+              <q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q>
+            </li>
+            <li>
+              <q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q>
+            </li>
+            <li>
+              <q>¿Alguien pensó en el problema de otra forma?</q>
+            </li>
+            <li>
+              <q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q>
+            </li>
+          </ul>
+        </p>
+      </li>
+    </ul>
+  </paragraphs>
+  <!-- <paragraphs>
+    <title>Desarrollo de lenguaje matemático</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+  <!-- <paragraphs>
+    <title>Acceso a estudiantes con discapacidades</title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+</postlude>
 </exploration>

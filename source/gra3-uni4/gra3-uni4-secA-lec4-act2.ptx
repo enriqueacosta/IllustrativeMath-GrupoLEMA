@@ -20,11 +20,18 @@
   </p>
 </solution>
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+  
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>
   </paragraphs>
+  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>El propósito de esta actividad es que los estudiantes comprendan que la misma expresión de división se puede utilizar para representar ambos tipos de situaciones de división. A los estudiantes se les dan dos situaciones y se les pide que emparejen una expresión de división con una de las situaciones, pero la expresión coincide con ambas situaciones dadas. Está bien si los estudiantes no reconocen que la expresión coincide con ambas situaciones en la actividad, porque se discutirá en la síntesis de la actividad. Los estudiantes aprenden que el número por el cual estamos dividiendo se llama divisor y comprenden que el divisor puede representar el tamaño de los grupos o el número de grupos. Cuando los estudiantes explican que un divisor se puede interpretar de manera diferente según la situación que representa, razonan abstracta y cuantitativamente (MP2).</p>
@@ -33,6 +40,7 @@
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs> -->
+  
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
     <ul>
@@ -43,6 +51,7 @@
       <li>1 minuto: tiempo para pensar en silencio</li>
     </ul>
   </paragraphs>
+  
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <ul>
@@ -51,10 +60,21 @@
       <li>2-3 minutos: tiempo de trabajo en pareja</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs>
     <title>Para los estudiantes con dificultades</title>
     <p>[@@@@@@@@@]</p>
   </paragraphs> -->
+  
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <ul>
@@ -64,6 +84,7 @@
       <li><q>Cuando dividimos, el número entre el que dividimos se llama el <term>divisor</term>. En la expresión <m>27\div 3</m>, el divisor es 3.</q></li>
     </ul>
   </paragraphs>
+  
   <paragraphs>
     <title>Desarrollo de lenguaje matemático</title>
     <p>MLR2 Recopilar y Mostrar. Circule y recopile el lenguaje que los estudiantes usan mientras consideran las dos situaciones. Escuche y aclare cualquier pregunta sobre el contexto. En una presentación visible, registre palabras y frases como: poner en grupos, dividir, número de grupos, etc. Durante la síntesis, agregue "divisor" a la presentación y resalte las conexiones con cualquier lenguaje relacionado.</p>

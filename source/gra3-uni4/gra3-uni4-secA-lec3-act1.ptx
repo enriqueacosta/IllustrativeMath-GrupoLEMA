@@ -1,35 +1,46 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
+
 <title>Grupos de estudiantes</title>
+
 <statement>
-    <p>
-        <ol>
-          <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en grupos de 2? </li>
-          <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en 2 grupos? </li>
-        </ol>
-    </p>      
-</statement>
-<solution>
+  <p>
     <ol>
-        <li>
-          <p>Ejemplos de respuestas:</p>
-          <ul>
-            <li><p>Simplemente formaron parejas.</p> </li>
-            <li><p>No necesitaban saber cuántos grupos tenían que formar, solo tenían que asegurarse de que hubiera 2 estudiantes en cada grupo.</p> </li>
-            <li><p>Al final, quedaron 5 grupos de 2 estudiantes.</p> </li>
-          </ul>
-        </li>
-        <li>
-          <p>Ejemplos de respuestas:</p>
-          <ul>
-            <li><p>Tenían que averiguar cuántos estudiantes había en cada grupo.</p> </li>
-            <li><p>Pusieron a las personas una por una en los grupos.</p> </li>
-            <li><p>Al final, quedaron 2 grupos de 5 estudiantes.</p> </li>
-          </ul>
-      </li>
+      <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en grupos de 2? </li>
+      <li>¿Qué observaste acerca de cómo los estudiantes se organizaron en 2 grupos? </li>
     </ol>
+  </p>      
+</statement>
+
+<solution>
+  <ol>
+    <li>
+      <p>Ejemplos de respuestas:</p>
+      <ul>
+        <li><p>Simplemente formaron parejas.</p> </li>
+        <li><p>No necesitaban saber cuántos grupos tenían que formar, solo tenían que asegurarse de que hubiera 2 estudiantes en cada grupo.</p> </li>
+        <li><p>Al final, quedaron 5 grupos de 2 estudiantes.</p> </li>
+      </ul>
+    </li>
+    <li>
+      <p>Ejemplos de respuestas:</p>
+      <ul>
+        <li><p>Tenían que averiguar cuántos estudiantes había en cada grupo.</p> </li>
+        <li><p>Pusieron a las personas una por una en los grupos.</p> </li>
+        <li><p>Al final, quedaron 2 grupos de 5 estudiantes.</p> </li>
+      </ul>
+  </li>
+  </ol>
 </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs><title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>
   </paragraphs>
@@ -57,6 +68,16 @@
       <li>2-3 minutos: discusión en parejas</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <!-- <paragraphs><title>Para los estudiantes con dificultades</title>
     <p>[@@@@@@@@@]</p>
   </paragraphs> -->

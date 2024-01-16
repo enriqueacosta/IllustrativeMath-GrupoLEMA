@@ -1,60 +1,71 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>¿Cuál dibujo corresponde?</title>
-  <statement>
-      <p>Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.</p>
-      <sidebyside widths="60% 30%">
-      <p>  
-        <ol>
-          <li>Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?
-          </li>
-          <li>Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?
-          </li>
-          <li>Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?
-          </li>
-          <li>Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?
-          </li>
-          <li>Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?
-          </li>
-          <li>Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?
-          </li>
-        </ol>
-      </p>
-      <p>
-        <p>
-          A.
-          <image source="svg-source/tikz-file-149313">
-            <description>2 groups of 4 dots.</description>
-            <caption>A</caption>
-          </image>
-        </p> 
-        <p>
-          B.
-          <image source="svg-source/tikz-file-149314">
-            <description>10 groups of 2 dots.</description>
-          </image>
-        </p>
-        <p>
-          C.
-          <image source="svg-source/tikz-file-149315">
-            <description>3 groups of 5 dots.</description>
-          </image>
-        </p>
-      </p>
-      </sidebyside>
-  </statement>
-  <solution>
-      <p>Respuesta del enunciado</p>
-      <ol>
-        <li>A</li>
-        <li>B</li>
-        <li>A</li>
-        <li>C</li>
-        <li>B</li>
-        <li>C</li>
-      </ol>
-  </solution>
-<postlude component="profesor"> <!-- Notas para el profesor -->
+
+<title>¿Cuál dibujo corresponde?</title>
+
+<statement>
+  <p>Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.</p>
+  <sidebyside widths="60% 30%">
+  <p>  
+    <ol>
+      <li>Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?
+      </li>
+      <li>Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?
+      </li>
+      <li>Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?
+      </li>
+      <li>Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?
+      </li>
+      <li>Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?
+      </li>
+      <li>Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?
+      </li>
+    </ol>
+  </p>
+  <p>
+    <p>
+      A.
+      <image source="svg-source/tikz-file-149313">
+        <description>2 groups of 4 dots.</description>
+        <caption>A</caption>
+      </image>
+    </p> 
+    <p>
+      B.
+      <image source="svg-source/tikz-file-149314">
+        <description>10 groups of 2 dots.</description>
+      </image>
+    </p>
+    <p>
+      C.
+      <image source="svg-source/tikz-file-149315">
+        <description>3 groups of 5 dots.</description>
+      </image>
+    </p>
+  </p>
+  </sidebyside>
+</statement>
+
+<solution>
+    <p>Respuesta del enunciado</p>
+    <ol>
+      <li>A</li>
+      <li>B</li>
+      <li>A</li>
+      <li>C</li>
+      <li>B</li>
+      <li>C</li>
+    </ol>
+</solution>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
   <paragraphs><title><custom ref="recommended-time-titulo"/></title>
     <p>15 minutos.</p>
   </paragraphs>
@@ -82,6 +93,16 @@
       <li>2-3 minutos: discusión en pareja</li>
     </ul>
   </paragraphs>
+
+</prelude>
+
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
   <paragraphs><title>Para los estudiantes con dificultades</title>
     <p>Si los estudiantes dicen que el dibujo no puede representar ambas situaciones, considere preguntar:
     </p>

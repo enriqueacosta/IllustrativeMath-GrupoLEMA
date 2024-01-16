@@ -68,6 +68,18 @@ Por ejemplo:
 </ul>
 ```
 
+
+### Preludios y postludios a las actividades en las guías del docente
+Los comentarios para los profesores en las guías del docente para cada actividad se encuentran dentro de las `<prelude>` y `<postlude>`. Si se quiere que ambas aparezcan después del enunciado de la actividad, se debe cambiar el archivo `pretext-html.xsl` de PreTexT que determina como se produce la página web. Buscar las líneas que encluyen el `<prelude>` y moverlas a justo antes del `<postlude>`
+```xml
+<!-- prelude beforehand, when original -->
+<xsl:if test="$b-original">
+    <xsl:apply-templates select="prelude">
+        <xsl:with-param name="b-original" select="$b-original" />
+    </xsl:apply-templates>
+</xsl:if>
+```
+
 ## Licencia
 
 Mientras se descifran los detalles de copyright y licencias, este material es ©Enrique Acosta ([enriqueacosta.github.io](https://enriqueacosta.github.io)) y se publica bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY NC SA 4.0). En breve e incompleto (los detalles están en las licencias), **tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando no lo use para fines comerciales y le mantenga la misma licencia y dé la atribución correspondiente (mencione al Grupo LEMA(www.grupolema.org) y a Illustrative Mathematics)** . 
