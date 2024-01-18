@@ -13,7 +13,7 @@ jobs:
       - name: Install ImageMagick
         run: sudo apt-get install imagemagick
       - name: Convert SVG to PNG
-        run: convert -density 300 ${{ github.event.head_commit.message }}.svg ${{ github.event.head_commit.message }}.png
+        run: convert -density 300 ${{ github.event.commits[0].added[0] }}.svg ${{ github.event.commits[0].added[0] }}.png
       - name: Upload PNG as artifact
         uses: actions/upload-artifact@v2
         with:
