@@ -1,0 +1,21 @@
+name: SVG to png Workflow
+
+on:
+  push:
+    paths:
+      - 'source/assets/svg-source/*.svg'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install ImageMagick
+        run: sudo apt-get install imagemagick
+      - name: Convert SVG to PDF
+        run: convert -density 300 ${{ github.event.head_commit.message }}.svg ${{ github.event.head_commit.message }}.png
+      - name: Upload PNG as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: png-file
+          path: ${{ github.event.head_commit.message }}.png
