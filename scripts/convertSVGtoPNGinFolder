@@ -1,0 +1,18 @@
+#!/bin/bash
+# This script loops over all the svg files in a folder
+# and executes a command for the ones that don't have a corresponding png version
+
+# Loop over all the svg files in the folder
+for f in *.svg
+do
+  # Remove the .svg extension from the file name
+  base=${f%.svg}
+
+  # Check if there is a png file with the same name
+  if [ ! -f $base.png ]
+  then
+    # Execute the command for the svg file
+    convert -density 300 $f $base.png
+    echo "Created $base.png"
+  fi
+done
