@@ -4,7 +4,7 @@ Prototipo del material de [Matemáticas Ilustrativas](https://curriculum.illustr
 
 ## Para generar versiones web(html), pdf, latex
 
-Debe tener [Pretext](https://pretextbook.org) instalado. Desde la terminal, en una carpeta de unidad (que contenga un archivo `project.ptx`), ejecutar los siguientes comandos.
+Debe tener [Pretext](https://pretextbook.org) instalado. Desde la terminal en la carpeta principal (la que contiene este archivo y el archivo `project.ptx`), ejecutar los siguientes comandos.
 
 Todos los archivos que se generan se guardan en la carpeta `output/`.
 
