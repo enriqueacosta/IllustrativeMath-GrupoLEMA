@@ -92,9 +92,9 @@ Las imagenes por lo general es mejor insertarlas sin extensión. Así;
 ```
 Cuando no se incluye la extensión, Pretext se encarga automáticamente de agregar la extensión `.svg` para las imagenes en la página web y la extensión `.pdf` para las imágenes para generar el pdf para impresión con LaTeX (en este caso, la página web buscaría la imagen `tikz-file-147472.svg` y latex buscaría la imagen `tikz-file-147472.pdf`. En particular, se deben tener todos los formatos necesarios para una misma imagen.
 
-En el caso de las imagenes que son originalmente `svg`, la conversión a `pdf` produce archivos muy grandes, por lo que es mejor usar conversión a `png`, pero se debe entonces configurar PreText para que que el código latex que genera use imagenes en png y no en pdf. 
+En el caso de las imágenes que son originalmente `svg`, la conversión a `pdf` produce archivos muy grandes, por lo que es mejor usar conversión a `png`, pero se debe entonces configurar PreText para que que el código latex que genera use imagenes en png y no en pdf. 
 
-Para lograr esto, se debe editar el archivo `pretext-latex.xsl` de la instalación de Pretext. Busque `.pdf` para encontrar las líneas que determinan la extensión que se le agrega a las imagenes:
+Para lograr esto, se debe editar el archivo `pretext-latex.xsl` de la instalación de Pretext. Busque `.pdf` para encontrar las líneas que determinan la extensión que se le agrega a las imágenes:
  ```xml
 <xsl:if test="$extension = ''">
     <xsl:text>.pdf</xsl:text>
