@@ -83,23 +83,32 @@ Los comentarios para los profesores en las guías del docente para cada activida
 ```
  y muévalas justo antes del `<postlude>`. Se debe hacer lo mismo con el archivo `pretext-latex.xsl` para ajustar el orden en el que aparecen en el código latex que produce Pretext.
 
-### Para hacer que la extensión por defecto para imagenes en latex sea png y no pdf
-Las imagenes por lo general es mejor insertarlas sin extensión. Así;
+## Generar archivos de imágenes
+Las imágenes por lo general es mejor insertarlas sin extensión. Así;
 ```xml
-<image source="svg-source/tikz-file-147472" width="50%">
+<image source="svg-source/tikz-file-147472">
    <description>30 objetos en grupos de 5</description>
 </image>
 ```
-Cuando no se incluye la extensión, Pretext se encarga automáticamente de agregar la extensión `.svg` para las imagenes en la página web y la extensión `.pdf` para las imágenes para generar el pdf para impresión con LaTeX (en este caso, la página web buscaría la imagen `tikz-file-147472.svg` y latex buscaría la imagen `tikz-file-147472.pdf`. En particular, se deben tener todos los formatos necesarios para una misma imagen.
+Cuando no se incluye la extensión, Pretext se encarga automáticamente de agregar la extensión `.svg` para las imágenes en la página web y la extensión `.pdf` para las imágenes para generar el pdf para impresión con LaTeX (en este caso, la página web buscaría la imagen `tikz-file-147472.svg` y latex buscaría la imagen `tikz-file-147472.pdf`). En particular, se deben tener todos los formatos necesarios para una misma imagen.
 
-En el caso de las imágenes que son originalmente `svg`, la conversión a `pdf` produce archivos muy grandes, por lo que es mejor usar conversión a `png`, pero se debe entonces configurar PreText para que que el código latex que genera use imagenes en png y no en pdf. 
+En el caso de las imágenes que son originalmente `svg`, la conversión a `pdf` es mejor hacerla con `rsvg-convert` usando el comando
+```bash
+rsvg-convert --format=pdf --zoom=1.333333 tikz-file-147472.svg > tikz-file-147472.pdf
+```
+Para instalar `rsvg-convert` en MacOS usar `brew install librsvg` con `homebrew.
 
-Para lograr esto, se debe editar el archivo `pretext-latex.xsl` de la instalación de Pretext. Busque `.pdf` para encontrar las líneas que determinan la extensión que se le agrega a las imágenes:
+En la carpeta de `scripts` hay varios scripts para automatizar estas conversiones.
+
+También se podría usar ImageMagick, pero la conversión de svg a pdf produce archivos muy grandes.
+
+Si no se quiere usar como formato por defecto `pdf` para las imágenes en latex, se debe editar el archivo `pretext-latex.xsl` de la instalación de Pretext. Busque `.pdf` para encontrar las líneas que determinan la extensión que se le agrega a las imágenes:
  ```xml
 <xsl:if test="$extension = ''">
     <xsl:text>.pdf</xsl:text>
 </xsl:if>
-y cambie el `.pdf` a `.png`.
+```
+Por ejemplo, si prefiere usar imágenes en png, cambie el `.pdf` a `.png`.
 
 ## Licencia
 
