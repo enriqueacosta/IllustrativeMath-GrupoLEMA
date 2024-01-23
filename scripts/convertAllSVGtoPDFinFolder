@@ -22,6 +22,6 @@ do
     # rsvg-convert --format=pdf --width=${width} --keep-aspect-ratio $f > $base.pdf
     
     # message
-    echo "Created $base.pdf using the command "    
+    echo "Created $base.pdf using [svg-convert]"    
   fi
 done
