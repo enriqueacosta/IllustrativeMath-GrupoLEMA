@@ -2,7 +2,13 @@
 
 for x in $@
 do
-   convert -density 300 $x.svg $x.pdf
+   # Uses rsvg. To install use [brew install librsvg]
+    rsvg-convert --format=pdf --zoom=1.333333 $x.svg > $base.pdf
+   
+   # using Imagemagick (produces very large filesizes)
+   # convert -density 300 $x.svg $x.pdf
+   
+   # message
    echo Created file $x.pdf
 done
 

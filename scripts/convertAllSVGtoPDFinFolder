@@ -1,0 +1,27 @@
+#!/bin/bash
+# This script loops over all the svg files in a folder
+# and executes a command for the ones that don't have a corresponding pdf version
+
+# Loop over all the svg files in the folder
+for f in *.svg
+do
+  # Remove the .svg extension from the file name
+  base=${f%.svg}
+
+  # Check if there is a pdf file with the same name
+  if [ ! -f $base.pdf ]
+  then
+    # Execute the command for the svg file
+    
+    # Uses rsvg. To install use [brew install librsvg]
+    rsvg-convert --format=pdf --zoom=1.333333 $f > $base.pdf
+    
+    # read width height <<<$(identify -format "%w %h" $f)
+    # echo "$width"
+    # echo "$height"
+    # rsvg-convert --format=pdf --width=${width} --keep-aspect-ratio $f > $base.pdf
+    
+    # message
+    echo "Created $base.pdf using the command "    
+  fi
+done
