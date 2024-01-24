@@ -87,7 +87,7 @@ Los comentarios para los profesores en las guías del docente para cada activida
 Las imágenes por lo general es mejor insertarlas sin extensión. Así;
 ```xml
 <image source="svg-source/tikz-file-147472">
-   <description>30 objetos en grupos de 5</description>
+   <shortdescription>30 objetos en grupos de 5</shortdescription>
 </image>
 ```
 Cuando no se incluye la extensión, Pretext se encarga automáticamente de agregar la extensión `.svg` para las imágenes en la página web y la extensión `.pdf` para las imágenes para generar el pdf para impresión con LaTeX (en este caso, la página web buscaría la imagen `tikz-file-147472.svg` y latex buscaría la imagen `tikz-file-147472.pdf`). En particular, se deben tener todos los formatos necesarios para una misma imagen.
