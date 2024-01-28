@@ -1,137 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  This file provides the overall configuration for your PreTeXt
-  project. To edit the content of your document, open `source/grado3-unidad4/grado3-unidad4.ptx`
-  (default location).
+  This file provides the overall configuration for the PreTeXt project. 
+  To build a target, run `pretext name`. Example: `pretext gra0-uni1-web-est`. 
+  Source files are in the /source folder.
 -->
+
 <project ptx-version="2" source="source" publication="publication" output-dir="output">
-    <targets>
-        <!-- grado0-unidad1 -->
-        <!-- To build this target, run `pretext gra0-uni1-web-est` -->
-        <target name="gra0-uni1-web-est" 
-                format="html" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-est-web.ptx"
-                output-dir="web-est/gra0-uni1">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="gra0-uni1-print-est" 
-                format="pdf" 
-                latex-engine="pdflatex" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-est/gra0-uni1">
-        </target>
-        <target name="gra0-uni1-print-latex-est" 
-                format="latex" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-latex-est/gra0-uni1">
-        </target>
-        <target name="gra0-uni1-web-prof" 
-                format="html" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-prof-web.ptx"
-                output-dir="web-prof/gra0-uni1">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="gra0-uni1-print-prof" 
-                format="pdf" 
-                latex-engine="pdflatex" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-prof/gra0-uni1">
-        </target>
-        <target name="gra0-uni1-print-latex-prof" 
-                format="latex" 
-                source="gra0-uni1/gra0-uni1.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-latex-prof/gra0-uni1">
-        </target>
+  <targets>
+    
+    <!-- ============================================ 
+      grado0-unidad1
+    =================================================  -->
+    <target name="gra0-uni1-web-est" 
+      format="html" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/gra0-uni1">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra0-uni1-print-est" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/gra0-uni1">
+    </target>
+    <target name="gra0-uni1-print-latex-est" 
+      format="latex" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/gra0-uni1">
+    </target>
+    <target name="gra0-uni1-web-prof" 
+      format="html" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/gra0-uni1">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra0-uni1-print-prof" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/gra0-uni1">
+    </target>
+    <target name="gra0-uni1-print-latex-prof" 
+      format="latex" 
+      source="gra0-uni1/gra0-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/gra0-uni1">
+    </target>
 
-        <!-- grado3-unidad4 -->
-        <target name="gra3-uni4-web-est" 
-                format="html" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-est-web.ptx"
-                output-dir="web-est/gra3-uni4">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="gra3-uni4-print-est" 
-                latex-engine="pdflatex" 
-                format="pdf" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-est/gra3-uni4">
-        </target>
-        <target name="gra3-uni4-print-latex-est" 
-                format="latex" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-latex-est/gra3-uni4">
-        </target>
-        <target name="gra3-uni4-web-prof" 
-                format="html" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-prof-web.ptx"
-                output-dir="web-prof/gra3-uni4">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="gra3-uni4-print-prof" 
-                latex-engine="pdflatex" 
-                format="pdf" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-prof/gra3-uni4">
-        </target>
-        <target name="gra3-uni4-print-latex-prof" 
-                format="latex" 
-                source="gra3-uni4/gra3-uni4.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-latex-prof/gra3-uni4">
-        </target>
+    <!-- ============================================ 
+      grado3-unidad4
+    =================================================  -->
+    <target name="gra3-uni4-web-est" 
+      format="html" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/gra3-uni4">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra3-uni4-print-est" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/gra3-uni4">
+    </target>
+    <target name="gra3-uni4-print-latex-est" 
+      format="latex" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/gra3-uni4">
+    </target>
+    <target name="gra3-uni4-web-prof" 
+      format="html" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/gra3-uni4">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra3-uni4-print-prof" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/gra3-uni4">
+    </target>
+    <target name="gra3-uni4-print-latex-prof" 
+      format="latex" 
+      source="gra3-uni4/gra3-uni4.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/gra3-uni4">
+    </target>
 
 
-        <!-- CENTROS -->
-        <target name="centros-web-est" 
-                format="html" 
-                source="centros/centros.ptx"
-                publication="publication-est-web.ptx"
-                output-dir="web-est/centros">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="centros-print-est" 
-                latex-engine="pdflatex" 
-                format="pdf" 
-                source="centros/centros.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-est/centros">
-        </target>
-        <target name="centros-print-latex-est" 
-                format="latex" 
-                source="centros/centros.ptx"
-                publication="publication-est-print.ptx"
-                output-dir="print-latex-est/centros">
-        </target>
-        <target name="centros-web-prof" 
-                format="html" 
-                source="centros/centros.ptx"
-                publication="publication-prof-web.ptx"
-                output-dir="web-prof/centros">
-            <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
-        </target>
-        <target name="centros-print-prof" 
-                latex-engine="pdflatex" 
-                format="pdf" 
-                source="centros/centros.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-prof/centros">
-        </target>
-        <target name="centros-print-latex-prof" 
-                format="latex" 
-                source="centros/centros.ptx"
-                publication="publication-prof-print.ptx"
-                output-dir="print-latex-prof/centros">
-        </target>
-    </targets>
+
+    <!-- ============================================ 
+      CENTROS
+    =================================================  -->
+    <target name="centros-web-est" 
+      format="html" 
+      source="centros/centros.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/centros">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="centros-print-est" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="centros/centros.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/centros">
+    </target>
+    <target name="centros-print-latex-est" 
+      format="latex" 
+      source="centros/centros.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/centros">
+    </target>
+    <target name="centros-web-prof" 
+      format="html" 
+      source="centros/centros.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/centros">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="centros-print-prof" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="centros/centros.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/centros">
+    </target>
+    <target name="centros-print-latex-prof" 
+      format="latex" 
+      source="centros/centros.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/centros">
+    </target>
+
+
+  </targets>
 </project>
