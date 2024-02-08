@@ -67,6 +67,8 @@
   </latex>
   
   <html>
+    <!-- Enabling a focused TOC makes the TOC expandable/collapsible and initialliy hides TOC items not on the path to the active webpage. -->
+    <tableofcontents focused="yes" preexpanded-levels="2"/>
     <!-- @xml:id of a page to be target of index.html redirect -->
     <!-- This is the @xml:id of the "frontmatter", so this is  -->
     <!-- default behavior.                                     -->
