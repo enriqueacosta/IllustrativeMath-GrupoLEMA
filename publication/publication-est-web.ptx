@@ -73,6 +73,8 @@
   </latex>
   
   <html>
+    <!-- An entry for the logic of these buttons can be set to the values of linear (the default) or tree. The former causes the Previous and Next buttons to behave as if the divisions are arranged as in a printed book, i.e. linearly. The latter option means that when a reader comes to the last subdivision of a division, the Next button will be not be active, and they will need to return (up the hierarchy/tree) to the division and move to the next division -->
+    <!-- <navigation logic="tree"/> -->
     <!-- Enabling a focused TOC makes the TOC expandable/collapsible and initialliy hides TOC items not on the path to the active webpage. -->
     <!-- <tableofcontents focused="yes" preexpanded-levels="2"/> -->
     <!-- @xml:id of a page to be target of index.html redirect -->
