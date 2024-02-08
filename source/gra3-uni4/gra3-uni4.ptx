@@ -17,14 +17,14 @@
     <title>Matemáticas Ilustrativas</title>
     <subtitle>Grado 3 - Unidad 4</subtitle>
 
-    <!-- <xi:include href="./meta_frontmatter.ptx" /> -->
-    <frontmatter>
+    <frontmatter xml:id="gra3-uni4-prefacio">
       
       <!-- contenido de <titlepage> que es igual para todas las unidades-->
       <xi:include href="../meta/meta_titlepage.ptx" />
 
-      <preface>
+      <abstract xml:id="gra3-uni4-intro">
         <title>Presentación de la unidad</title>
+        <!--
         <p>
           Secciones:
           <ul>
@@ -33,6 +33,7 @@
             <li><xref ref="gra3-uni4-secC" text="title"></xref></li>
           </ul>
         </p>
+        -->
         <!-- <p> -->
           <!-- <list-of elements="chapter"/> -->
           <!-- <list-of elements="theorem lemma" divisions="chapter" empty="yes"/> -->
@@ -71,23 +72,17 @@
             Hacia el final de la unidad, los estudiantes resuelven problemas de dos pasos que involucran las cuatro operaciones. En algunas situaciones, trabajan con expresiones que usan paréntesis para indicar qué operación se completa primero. Por ejemplo: <m>276 + (45 \div 5) = {?}</m>.
           </p>
         </remark>
-      </preface>
+      </abstract>
 
+      
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../meta/meta_source.ptx" />
 
 
       <!-- Acá va todo lo de copyright -->
       <xi:include href="../meta/meta_colophon.ptx" />
 
 
-      <!-- Acá va todo lo de el código fuente -->
-      <xi:include href="../meta/meta_source.ptx" />
-
-
-      <!-- <dedication> -->
-      <!-- </dedication> -->
-
-      <!-- <acknowledgement> -->
-      <!-- </acknowledgement> -->
     </frontmatter>
 
     <!-- <part> -->

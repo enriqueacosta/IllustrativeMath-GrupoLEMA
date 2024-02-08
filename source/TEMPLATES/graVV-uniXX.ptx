@@ -22,9 +22,10 @@
       <!-- contenido de <titlepage> que es igual para todas las unidades-->
       <xi:include href="../meta/meta_titlepage.ptx" />
 
-      <!-- You can have more than one preface. -->
-      <preface>
+      <abstract xml:id="graVV-uniXX-intro">
         <title>Presentación de la unidad</title>
+        
+        <!--
         <p>
           Secciones:
           <ul>
@@ -34,6 +35,8 @@
             <li><xref ref="graVV-uniXX-secD" text="title"></xref></li>
           </ul>
         </p>
+        -->
+
         <!-- 
         <p>
           <list-of elements="chapter"/>
@@ -45,27 +48,17 @@
             En esta unidad los estudiantes aprenden [@@@@@@@@@]
           </p>
         </remark>
-      </preface>
+      </abstract>
 
-
-      <!-- You can have more than one preface. -->
-
-
-      <!-- Acá va todo lo de copyright -->
-      <xi:include href="../meta/meta_colophon.ptx" />
 
       <!-- Acá va todo lo de el código fuente -->
       <xi:include href="../meta/meta_source.ptx" />
 
-      <!-- <dedication> -->
-      <!-- </dedication> -->
-
-      <!-- <acknowledgement> -->
-      <!-- </acknowledgement> --> 
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
 
     </frontmatter>
 
-    <!-- <part> -->
 
     <section xml:id="graVV-uniXX-secA">
       <title>Sección A - [@@@@@@@@@@@@@@@@@] </title>
@@ -102,6 +95,5 @@
     <!-- Finaly we place the backmatter in its own file and inlcude-->
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
     
-    <!-- </part> -->
   </article>
 </pretext>

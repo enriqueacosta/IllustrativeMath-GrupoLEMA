@@ -20,16 +20,15 @@
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado 0 - Unidad 1</subtitle>
 
-    <!-- Now we include files containing each main division.       -->
-
-    <frontmatter>
+    <frontmatter xml:id="gra0-uni1-prefacio">
 
       <!-- contenido de <titlepage> que es igual para todas las unidades-->
       <xi:include href="../meta/meta_titlepage.ptx" />
 
-      <!-- You can have more than one preface. -->
-      <preface>
+      <abstract xml:id="gra0-uni1-intro">
         <title>Presentación de la unidad</title>
+       
+        <!-- 
         <p>
           Secciones:
           <ul>
@@ -39,6 +38,7 @@
             <li><xref ref="gra0-uni1-secD" text="title"></xref></li>
           </ul>
         </p>
+        -->
 
         <remark component="profesor">
           <p>
@@ -50,7 +50,7 @@
           <dl>
             <li>
                <title>Sección A</title>
-                <p>exploran y usan las herramientas matemáticas que van a usar durante el grado y comienzan a aprender a comunicar ideas matemáticas.</p>
+               <p>exploran y usan las herramientas matemáticas que van a usar durante el grado y comienzan a aprender a comunicar ideas matemáticas.</p>
             </li>
             <li>
               <title>Sección B</title>
@@ -66,29 +66,24 @@
             </li>
           </dl>
         </remark>
-      </preface>
+      </abstract>
       <!-- You can have more than one preface. -->
 
-      <!-- Acá va todo lo de copyright -->
-      <xi:include href="../meta/meta_colophon.ptx" />
 
       <!-- Acá va todo lo de el código fuente -->
       <xi:include href="../meta/meta_source.ptx" />
 
-      <!-- <dedication> -->
-      <!-- </dedication> -->
 
-      <!-- <acknowledgement> -->
-       <!--  <p>
-          I would like to thank...
-        </p> -->
-      <!-- </acknowledgement> -->    
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
+
+ 
     </frontmatter>
 
-    <!-- <part> -->
 
     <section xml:id="gra0-uni1-secA">
-      <title>Sección A - Exploremos nuestras herramientas </title>
+      <title>Sección A - Exploremos nuestras herramientas</title>
       
       <!-- Intro y objetivos de la sección-->
       <xi:include href="./gra0-uni1-secA.ptx" />
