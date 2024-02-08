@@ -12,7 +12,7 @@
 
   <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
-  <article xml:id="grado3-unidad4">
+  <article xml:id="gra3-uni4">
     <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas</title>
     <subtitle>Grado 3 - Unidad 4</subtitle>
@@ -182,8 +182,13 @@
     <!-- features you don't wish to generate.                                -->
     <!-- <xi:include href="./ch_generate.ptx" /> -->
 
-    <section>
+
+    <!-- GLOSARIO -->
+    <section xml:id="gra3-uni4-glo-acum">
       <title>Glosario</title>
+      <!-- <xi:include href="../gra3-uni2/gra1-uni1-glosario.ptx"/> -->
+      <!-- <xi:include href="../gra3-uni2/gra3-uni2-glosario.ptx"/> -->
+      <!-- <xi:include href="../gra3-uni3/gra3-uni3-glosario.ptx"/> -->
       <xi:include href="./gra3-uni4-glosario.ptx"/>
     </section>
 

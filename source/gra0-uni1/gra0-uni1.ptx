@@ -15,7 +15,7 @@
 
   <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your article         -->
-  <article xml:id="grado0-unidad1">
+  <article xml:id="gra0-uni1">
     <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado 0 - Unidad 1</subtitle>
@@ -161,8 +161,10 @@
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra0-uni1-secD-resumen.ptx"/> -->
     </section>
+    
 
-    <section>
+    <!-- GLOSARIO -->
+    <section xml:id="gra0-uni1-glo-acum">
       <title>Glosario</title>
       <xi:include href="./gra0-uni1-glosario.ptx"/>
     </section>
