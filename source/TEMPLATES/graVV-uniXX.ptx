@@ -12,7 +12,7 @@
 
   <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your article         -->
-  <article xml:id="gradoVV-unidadXX">
+  <article xml:id="graVV-uniXX">
     <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado VV - Unidad XX</subtitle>
@@ -28,10 +28,10 @@
         <p>
           Secciones:
           <ul>
-            <li><xref ref="gradoVV-unidadXX-seccionA" text="title"></xref></li>
-            <li><xref ref="gradoVV-unidadXX-seccionB" text="title"></xref></li>
-            <li><xref ref="gradoVV-unidadXX-seccionC" text="title"></xref></li>
-            <li><xref ref="gradoVV-unidadXX-seccionD" text="title"></xref></li>
+            <li><xref ref="graVV-uniXX-secA" text="title"></xref></li>
+            <li><xref ref="graVV-uniXX-secB" text="title"></xref></li>
+            <li><xref ref="graVV-uniXX-secC" text="title"></xref></li>
+            <li><xref ref="graVV-uniXX-secD" text="title"></xref></li>
           </ul>
         </p>
         <!-- 
@@ -67,25 +67,25 @@
 
     <!-- <part> -->
 
-    <chapter xml:id="gradoVV-unidadXX-seccionA">
+    <section xml:id="graVV-uniXX-secA">
       <title>Sección A - [@@@@@@@@@@@@@@@@@] </title>
       
       <!-- Intro y objetivos de la sección-->
-      <xi:include href="./gradoVV-unidadXX-seccionA.ptx" />
+      <xi:include href="./graVV-uniXX-secA.ptx" />
       
       <!-- Lecciones de la sección -->
-      <xi:include href="./gradoVV-unidadXX-seccionA-leccion1.ptx"/>
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion2.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion3.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion4.ptx"/> -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-leccion5.ptx"/> -->
+      <xi:include href="./graVV-uniXX-secA-lec1.ptx"/>
+      <!-- <xi:include href="./graVV-uniXX-secA-lec2.ptx"/> -->
+      <!-- <xi:include href="./graVV-uniXX-secA-lec3.ptx"/> -->
+      <!-- <xi:include href="./graVV-uniXX-secA-lec4.ptx"/> -->
+      <!-- <xi:include href="./graVV-uniXX-secA-lec5.ptx"/> -->
 
       <!-- Problemas de práctica de la sección -->
-      <!-- <xi:include href="./gradoVV-unidadXX-seccionA-ProblemasPractica.ptx"/> -->
+      <!-- <xi:include href="./graVV-uniXX-secA-ProblemasPractica.ptx"/> -->
       
       <!-- Resumen de la sección -->
-      <xi:include href="./gradoVV-unidadXX-seccionA-resumen.ptx"/>
-    </chapter>
+      <xi:include href="./graVV-uniXX-secA-resumen.ptx"/>
+    </section>
 
     
 
@@ -94,10 +94,10 @@
 
 
 
-    <chapter>
+    <section>
       <title>Glosario</title>
-      <xi:include href="./gradoVV-unidadXX-Glosario.ptx"/>
-    </chapter>
+      <xi:include href="./graVV-uniXX-Glosario.ptx"/>
+    </section>
 
     <!-- Finaly we place the backmatter in its own file and inlcude-->
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
