@@ -17,7 +17,9 @@
     
     <!-- EAJ - para generar la versión del profesor poner: -->
     <!-- <version include="profesor"/> -->
+        
     <version include="estudiante digital"/>
+
   </source>
 
   <common>
@@ -27,9 +29,12 @@
     <exercise-inline solution="no"/>
     <exercise-divisional solution="no"/>
     <exercise-project solution="no"/>
-    
+
     <!-- Nivel en el que se crea una nueva página en HTML -->
-    <chunking level="2"/>
+    <chunking level="3"/>
+
+    <!-- TOC Table of contents level -->
+    <tableofcontents level="2"/>
   </common>
 
 
