@@ -96,7 +96,9 @@ En el caso de las imágenes que son originalmente `svg`, la conversión a `pdf` 
 ```bash
 rsvg-convert --format=pdf --zoom=1.333333 tikz-file-147472.svg > tikz-file-147472.pdf
 ```
-Para instalar `rsvg-convert` en MacOS usar `brew install librsvg` con `homebrew.
+(el `--zoom=1.333333` es por un asunto de conversión entre pt (puntos) y px (pixeles) para preservar el mismo tamaño del archivo `svg`)
+
+Para instalar `rsvg-convert` en MacOS usar `brew install librsvg` con `homebrew`.
 
 En la carpeta de `scripts` hay varios scripts para automatizar estas conversiones.
 
