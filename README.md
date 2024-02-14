@@ -121,4 +121,3 @@ Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics® [illustrativem
 Soluciones en español adaptadas de Open Up Resources © 2022, [openupresources.org](https://access.openupresources.org/curricula/our-k5-math). Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license.
 
 **Nota:** Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en: [illustrativemathematics.org](https://curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html).
-
