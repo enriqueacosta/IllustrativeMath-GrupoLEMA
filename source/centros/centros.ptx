@@ -12,7 +12,7 @@
 
   <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
-  <book xml:id="centros">
+  <article xml:id="centros">
     <!-- The book needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Centros</subtitle>
@@ -23,7 +23,7 @@
       <xi:include href="../meta/meta_titlepage.ptx" />
 
       <!-- You can have more than one preface. -->
-      <preface>
+      <abstract>
         <title>Leer esto primero</title>
         <p>
           Centros:
@@ -40,10 +40,7 @@
           <list-of elements="theorem lemma" divisions="chapter" empty="yes"/>
         </p> 
         -->  
-      </preface>
-
-
-      <!-- You can have more than one preface. -->
+      </abstract>
 
 
       <!-- Acá va todo lo de copyright -->
@@ -60,32 +57,25 @@
 
     </frontmatter>
 
+
+    <section>
+    <title>Centros</title>
+    <!-- Centros - un archivo cada uno -->
+    <xi:include href="./centro-tableroDe5.ptx" />
+    <xi:include href="./centro-bloquesSolidosGeometricos.ptx" />
+    <xi:include href="./centro-LibrosDeImagenes.ptx" />
+    <!-- <xi:include href="./centros-seccionA-leccion1.ptx"/> -->
+    <!-- <xi:include href="./centros-seccionA-leccion2.ptx"/> -->
+    <!-- <xi:include href="./centros-seccionA-leccion3.ptx"/> -->
+    <!-- <xi:include href="./centros-seccionA-leccion4.ptx"/> -->
+    <!-- <xi:include href="./centros-seccionA-leccion5.ptx"/> -->
+    </section>
+
+    <!-- Problemas de práctica de la sección -->
+    <!-- <xi:include href="./centros-seccionA-ProblemasPractica.ptx"/> -->
     
-    
+    <!-- Resumen de la sección -->
+    <!-- <xi:include href="./centros-seccionA-resumen.ptx"/> -->
 
-    <part xml:id="centros-lista">
-      <title>Centros</title>
-      
-      <!-- Centros - un archivo cada uno -->
-      <xi:include href="./centro-tableroDe5.ptx" />
-      <xi:include href="./centro-bloquesSolidosGeometricos.ptx" />
-      <!-- <xi:include href="./centros-seccionA-leccion1.ptx"/> -->
-      <!-- <xi:include href="./centros-seccionA-leccion2.ptx"/> -->
-      <!-- <xi:include href="./centros-seccionA-leccion3.ptx"/> -->
-      <!-- <xi:include href="./centros-seccionA-leccion4.ptx"/> -->
-      <!-- <xi:include href="./centros-seccionA-leccion5.ptx"/> -->
-
-      <!-- Problemas de práctica de la sección -->
-      <!-- <xi:include href="./centros-seccionA-ProblemasPractica.ptx"/> -->
-      
-      <!-- Resumen de la sección -->
-      <!-- <xi:include href="./centros-seccionA-resumen.ptx"/> -->
-    </part>
-
-
-    <!-- Finaly we place the backmatter in its own file and inlcude-->
-    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
-    
-    <!-- </part> -->
-  </book>
+  </article>
 </pretext>
