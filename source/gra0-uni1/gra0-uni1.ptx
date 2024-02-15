@@ -15,8 +15,8 @@
 
   <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your article         -->
-  <article xml:id="gra0-uni1">
-    <!-- The article needs a title and can have a subtitle  -->
+  <book xml:id="gra0-uni1">
+    <!-- The book needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas </title>
     <subtitle>Grado 0 - Unidad 1</subtitle>
 
@@ -86,8 +86,8 @@
     </frontmatter>
 
 
-    <section xml:id="gra0-uni1-secA">
-      <title>Sección A -<nbsp/></title> 
+    <part xml:id="gra0-uni1-secA">
+      <!-- <title>Sección A -<nbsp/></title>  -->
       <title>Exploremos nuestras herramientas</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -106,10 +106,10 @@
       
       <!-- Resumen de la sección -->
       <xi:include href="./gra0-uni1-secA-resumen.ptx"/>
-    </section>
+    </part>
 
-    <section xml:id="gra0-uni1-secB">
-      <title>Sección B -<nbsp/></title> 
+    <part xml:id="gra0-uni1-secB">
+      <!-- <title>Sección B -<nbsp/></title>  -->
       <title>Reconozcamos cantidades</title>
 
       <!-- Intro y objetivos de la sección-->
@@ -118,37 +118,37 @@
       <!-- Lecciones de la sección -->
       <xi:include href="./gra0-uni1-secB-lec6.ptx"/>
       <xi:include href="./gra0-uni1-secB-lec7.ptx"/>
-      <xi:include href="./gra0-uni1-secB-lec8.ptx"/>
-      <xi:include href="./gra0-uni1-secB-lec9.ptx"/>
+      <!-- <xi:include href="./gra0-uni1-secB-lec8.ptx"/> -->
+      <!-- <xi:include href="./gra0-uni1-secB-lec9.ptx"/> -->
 
       <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gra0-uni1-secB-ProblemasPractica.ptx"/> -->
       
       <!-- Resumen de la sección -->
       <xi:include href="./gra0-uni1-secB-resumen.ptx"/>
-    </section>
+    </part>
 
-    <section xml:id="gra0-uni1-secC">
-      <title>Sección C -<nbsp/></title> 
+    <part xml:id="gra0-uni1-secC">
+      <!-- <title>Sección C -<nbsp/></title>  -->
       <title>¿Hay suficientes?</title>
       
       <!-- Intro y objetivos de la sección-->
       <xi:include href="./gra0-uni1-secC.ptx" />
             
       <!-- Lecciones de la sección -->
-      <xi:include href="./gra0-uni1-secC-lec10.ptx"/>
-      <xi:include href="./gra0-uni1-secC-lec11.ptx"/> 
+      <!-- <xi:include href="./gra0-uni1-secC-lec10.ptx"/> -->
+      <!-- <xi:include href="./gra0-uni1-secC-lec11.ptx"/>  -->
 
       <!-- Problemas de práctica de la sección -->
       <!-- <xi:include href="./gra0-uni1-secC-ProblemasPractica.ptx"/> -->
       
       <!-- Resumen de la sección -->
       <xi:include href="./gra0-uni1-secC-resumen.ptx"/> 
-    </section>
+    </part>
 
 
-    <section xml:id="gra0-uni1-secD">
-      <title>Sección D -<nbsp/></title> 
+    <part xml:id="gra0-uni1-secD">
+      <!-- <title>Sección D -<nbsp/></title>  -->
       <title>Contemos colecciones</title>
       
       <!-- Intro y objetivos de la sección-->
@@ -163,25 +163,25 @@
       
       <!-- Resumen de la sección -->
       <!-- <xi:include href="./gra0-uni1-secD-resumen.ptx"/> -->
-    </section>
+    </part>
     
 
     <!-- GLOSARIO -->
-    <section xml:id="gra0-uni1-glo-acum">
+    <part xml:id="gra0-uni1-glo-acum">
       <title>Glosario</title>
       <xi:include href="./gra0-uni1-glosario.ptx"/>
-    </section>
+    </part>
 
     <!-- Centros -->
-    <section xml:id="centros-gra0-uni1" component="profesor">
+    <part xml:id="centros">
       <title>Centros</title>
       <xi:include href="../centros/centro-bloquesSolidosGeometricos.ptx"/>
       <xi:include href="../centros/centro-librosDeImagenes.ptx"/>
       <xi:include href="../centros/centro-tablerosDe5.ptx"/>
-    </section>
+    </part>
 
     <!-- Hojas Reproducibles (BLM) -->
-    <section xml:id="BLM-gra0-uni1" component="profesor">
+    <part xml:id="BLM-gra0-uni1" component="profesor">
       <title>Hojas reproducibles</title>
       <xi:include href="../blm/blm-centro-bloquesSolidosGeometricos-tarjetasBloques.ptx"/>
       <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/>
@@ -189,7 +189,7 @@
       <xi:include href="../blm/blm-centro-tablerosDe5-tableroDeNumeros.ptx"/>
       <xi:include href="../blm/blm-centro-tablerosDe5-hojaRegistro.ptx"/>
       <xi:include href="../blm/blm-centro-librosDeImagenes-paginasBlancoLibroImagenes.ptx"/>
-    </section>
+    </part>
 
 
     <!-- atribuciones de imágenes -->
@@ -202,14 +202,14 @@
       <title>Actividades de cierre</title>
     </solutions>
 
-    <section>        
+    <part>        
       <title>Actividades de cierre</title>
       <list-of elements="project" divisions="section" empty="yes" solution="no"/>
-    </section>
+    </part>
 
     <!-- Finaly we place the backmatter in its own file and inlcude-->
     <!-- <xi:include href="./meta_backmatter.ptx" /> -->
     
     <!-- </part> -->
-  </article>
+  </book>
 </pretext>
