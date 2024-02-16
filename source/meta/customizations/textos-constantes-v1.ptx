@@ -1,9 +1,10 @@
 <!-- EAJ - 24 Sep 2023
   Textos constantes v1
-  Ejemplo: para poner el texto constante que corresponde a "purpose-leccion-titulo", se pone el código 
+  Ejemplo: para poner el texto constante que corresponde a "purpose-leccion-titulo", se usa 
     <custom ref="purpose-leccion-titulo"/> 
-  en el lugar correspondiente (ojo con el / al final del comando).
-  Note que las definiciones usan name="..." y los llamados usan ref="..."
+  Ojo con:
+  *  el / al final del comando de referencia
+  *  las definiciones usan name="..." y los llamados de referencia usan ref="..."
 -->
 
 
@@ -33,5 +34,6 @@
   <custom name="apoyo-cool-titulo">Acciones para apoyar el aprendizaje</custom>
   <custom name="resumen-leccion-titulo">Resumen de la sección</custom>
   <custom name="resumen-leccion-titulo-extraProfe"><nbsp/>(para los estudiantes)</custom>
+  <custom name="centros-ubicacion-act-intro-titlulo">Ubicación de actividad de introducción</custom>
 
 </pi:customizations>
