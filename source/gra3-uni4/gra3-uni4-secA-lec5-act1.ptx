@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude">
+<activity xml:id="clasificacionDeTarjetas-todoSobreBichos" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <title>Clasificación de tarjetas: Todo sobre bichos</title>
 
@@ -75,9 +75,11 @@
   
   <paragraphs> <!-- materiales -->
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>
-      Un conjunto de tarjetas precortadas a cada grupo de 2 estudiantes <url component="web" href="external/blm/pdf-source/Grado3.4.A5.1-clasificacion-de-tarjetas-todo-sobre-bichos.pdf">(ver pdf)</url>.
-    </p>
+    <ul>
+      <li>
+        <xref ref="blm-clasificacionDeTarjetas-todoSobreBichos" text="title"/>.  Un conjunto de tarjetas precortadas por cada grupo de 2 estudiantes.
+      </li>
+    </ul>
   </paragraphs>
   
   <paragraphs> <!-- lanzamiento -->
