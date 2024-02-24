@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{LEMA-IM}
 
+% Opciones dependiendo del grado (por ejemplo, tamaño de la fuente)
+% Ejemplo: \documentclass[grado3]{LEMA-IM}
 \newcommand{\gradeFontSize}{\large}
 \DeclareOption{grado0}{\renewcommand{\gradeFontSize}{\huge}}
 \DeclareOption{grado1}{\renewcommand{\gradeFontSize}{\LARGE}}
