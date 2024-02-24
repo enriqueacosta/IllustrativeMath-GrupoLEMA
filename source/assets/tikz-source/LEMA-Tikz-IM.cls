@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{LEMA-IM}
+\ProvidesClass{LEMA-Tikz-IM}
 
 % Opciones dependiendo del grado (por ejemplo, tamaño de la fuente)
 % Ejemplo: \documentclass[grado3]{LEMA-IM}
@@ -12,4 +12,4 @@
 \ProcessOptions\relax
 
 \LoadClass[border=5pt, 12pt, tikz, convert={pdf2svg,outfile=\jobname.svg}]{standalone}
-\RequirePackage{LEMA-IM}
+\RequirePackage{LEMA-Tikz-IM}
