@@ -1,19 +1,15 @@
 % EAJ - svg generation needs to be run with -shell-escape:
 % pdflatex -shell-escape filename.tex
-\documentclass[border=5pt,tikz, convert={pdf2svg,outfile=\jobname.svg}]{standalone}
+\documentclass[grado3]{LEMA-IM}
 \begin{document}
-\begin{tikzpicture}[x=1in,y=1in]
-\foreach \shift in {(-1.1,0),(0,0),(1.1,0),(-1.1,-1.1),(0,-1.1),(1.1,-1.1)}{
-\begin{scope}[shift={\shift}]
-\foreach \x/\y in {
-.3/.3,
-0/0,
--.3/-.3
-}{
-\draw[fill=cyan!70] (\x,\y) circle (.125);
-}
-\draw[rounded corners=12pt] (-.5,-.5)rectangle(.5,.5);
-\end{scope}
-}
+\begin{tikzpicture}
+
+\diceThree
+\diceThree[shift={(5*\diceDotSize,0)}]
+\diceThree[shift={(10*\diceDotSize,0)}]
+\diceThree[shift={(0,5*\diceDotSize)}]
+\diceThree[shift={(5*\diceDotSize,5*\diceDotSize)}]
+\diceThree[shift={(10*\diceDotSize,5*\diceDotSize)}]
+
 \end{tikzpicture}
 \end{document}

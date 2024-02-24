@@ -1,12 +1,12 @@
 % EAJ - svg generation needs to be run with -shell-escape:
 % pdflatex -shell-escape filename.tex
-\documentclass[border=5pt,tikz, convert={pdf2svg,outfile=\jobname.svg}]{standalone}
+\documentclass{LEMA-IM}
 \begin{document}
-\begin{tikzpicture}[font=\sffamily]
+\begin{tikzpicture}
 \usetikzlibrary{shapes,arrows,calc,fit,backgrounds,shapes.multipart}
 
-\def\probSepHor{0.5}
-\def\probSepVer{1}
+\def\probSepHor{1.5}
+\def\probSepVer{2}
 
 % Problem boxes
 \tikzstyle{problemType}=[
@@ -14,7 +14,7 @@
     rectangle split parts=2, 
     rectangle split part fill={cyan!30, none}, 
     draw, 
-    text width=4.1cm, 
+    text width=5.5cm, 
     % minimum height=6cm,
     align=flush center
 ];
@@ -36,12 +36,12 @@
     };
 
 % Division expressions
-\node[outer sep=10pt] (expresionTop) at (0,3.5) {$6\div2$};
-\node[outer sep=10pt] (expresionBottom) at (0,-3.5) {$6\div3$};
+\node[outer sep=10pt] (expresionTop) at (0,6.0) {$6\div2$};
+\node[outer sep=10pt] (expresionBottom) at (0,-6.0) {$6\div3$};
 
 % Diagrams of equal-sized groups
 \tikzstyle{diagramBlock}=[fill=orange!70, line width=1pt];
-\node[anchor=east] (diagramLeft) at (-4.8,0) {
+\node[anchor=east] (diagramLeft) at (-7.0,0) {
     \begin{tikzpicture}[scale=0.5]
         \draw[diagramBlock] (0,0) rectangle (1,1);
         \draw[diagramBlock] (0,1) rectangle (1,2);
@@ -53,7 +53,7 @@
     \end{tikzpicture}
 };
 
-\node[anchor=west, minimum width=2cm] (diagramRight) at (4.8,0) {
+\node[anchor=west, minimum width=2cm] (diagramRight) at (7.0,0) {
     \begin{tikzpicture}[scale=0.5]
         \draw[diagramBlock] (0,0) rectangle (1,1);
         \draw[diagramBlock] (0,1) rectangle (1,2);
