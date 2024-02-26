@@ -1,6 +1,6 @@
-Esta carpeta contiene las imágenes que se crearon en Tikz (LaTeX). El código fuente de cada imagen está en los archivos `.tex`. Ejemplo: `tikz-file-149311.tex`
+Esta carpeta contiene las imágenes que se crearon en Tikz (LaTeX). El código fuente de cada imagen está en los archivos `.tex`. 
 
-El contenido de `tikz-file-149311.tex` es por ejemplo
+Por ejemplo, el contenido de `tikz-file-149311.tex` es:
 ```Tex
 \documentclass[grado3]{LEMA-Tikz-IM}
 \begin{document}
@@ -20,7 +20,9 @@ El contenido de `tikz-file-149311.tex` es por ejemplo
 \end{document}
 ```
 Esté código produce la imagen:
-[]!(tikz-file-149311.svg)
+
+
+![](tikz-file-149311.svg)
 
 
 Se creó un estilo propio de Tikz para este proyecto. Está compuesto por los archivos
@@ -31,7 +33,7 @@ Se creó un estilo propio de Tikz para este proyecto. Está compuesto por los ar
 Estos dos archivos contienen las definiciones del documentclass `LEMA-Tikz-IM` y todos los comandos especiales. Por ejemplo tienen la definición del comando `\midDotGroup{#}{#}` que hace un grupo de puntos con un rectángulo alrededor de ellos.
 
 
-Con el código `tex`, al correr `pdflatex` se produce el archivo pdf de la imagen que se va a usar en el pdf. Así:
+Con el código `.tex`, al correr `pdflatex` se produce el archivo pdf de la imagen que se va a usar en el pdf. Así:
 ```bash
 pdflatex tikz-file-149311.tex
 ```
