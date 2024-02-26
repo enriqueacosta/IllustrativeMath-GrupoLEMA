@@ -40,26 +40,27 @@ pdflatex tikz-file-149311.tex
 Este comando produce el archivo
 *  tikz-file-149311.pdf
 
-Para producir el archivo svg para la web, se puede usar pdf2svg:
+
+## Generar los archivos svg para la web
+Para las páginas web de los libros se necesitan conversiones de estos archivos a formato `svg`. Se creó un script para automatizar esta conversión. Ver el script [convertAllPDFtoSVGinFolder](https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA/blob/main/scripts/convertAllPDFtoSVGinFolder)
+
+Este script usa `pdf2svg` para hacer la conversión de todos los archivos `pdf` que no tienen correspondiente `svg` en la carpeta. Para esto, ejecuta comandos de la forma:
 ```bash
-pdf2svg tikz-file-149311.pdf
+pdf2svg tikz-file-147472.pdf
 ```
-
-Alternativamente, se pueden crear los archivos pdf y svg al tiempo usando la opción de `--shell-escape` de LaTeX:
-```bash
-pdflatex -shell-escape tikz-file-149311.tex
-```
-Produce los archivos `tikz-file-149311.pdf` y `tikz-file-149311.svg`.
-
-Esto funciona así porque el `documentclass{LEMA-Tikz-IM}` está definido en `LEMA-Tikz-IM.cls` así:
-```TeX
-\LoadClass[border=5pt, 12pt, tikz, convert={pdf2svg,outfile=\jobname.svg}]{standalone}
-```
-
-## Agrandar los svg
 Los svg que produce pdf2svg se ven muy chiquitos en la web cuando se ponen en su tamaño natural (al cambiar `width : 100%` a `max-width : 100%` en el CSS. 
 
-Para agrandarlos se puede usar un comando como:
+Para agrandarlos el script usa comandos del estilo:
 ```bash
 rsvg-convert --zoom 1.25 --format svg --output tikz-file-149311.svg tikz-file-149311.svg
 ```
+
+Para instalar `pdf2svg` en MacOS usar `brew install pdf2svg` con `homebrew`.
+
+Para instalar `rsvg-convert` en MacOS usar `brew install librsvg` con `homebrew`.
+
+Para correr el script hay que ejecutarlo en la forma 
+```bash
+./convertAllPDFtoSVGinFolder
+```
+Es posible que toque hacer una copia del script en la carpeta `assets/tikz-source` para poder ejecutarlo.
