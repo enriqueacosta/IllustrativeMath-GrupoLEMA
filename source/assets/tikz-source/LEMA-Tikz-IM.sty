@@ -38,7 +38,7 @@
 %%%%%%%%%%%%%%%%%%%
 % Dice and dot groups
 %%%%%%%%%%%%%%%%%%%
-\def\midDotSize{0.5cm}
+\def\midDotSize{0.6cm}
 \tikzstyle{midDot}=[circle, draw, fill=cyan!60, minimum size = \midDotSize]
 \tikzstyle{midDotRoundedRect}=[draw, rectangle, rounded corners=0.5*\midDotSize, inner sep=3*\midDotSize/10]
 
@@ -54,14 +54,14 @@
         }
       }
       % Rounded box around all the dots
-      \node[midDotRoundedRect, fit=(dot-1-1) (dot-#2-#3)] (roundedRect) {};
+      \node[midDotRoundedRect=0.6*\midDotSize, fit=(dot-1-1) (dot-#2-#3)] (roundedRect) {};
   \end{scope}
 }
 
 % DICE
-\def\diceDotSize{0.5cm}
+\def\diceDotSize{\midDotSize}
 \tikzstyle{diceDot}=[circle, draw, fill=cyan!60, minimum size = \diceDotSize]
-\tikzstyle{diceDotRoundedRect}=[draw, rectangle, rounded corners=0.5*\diceDotSize, inner sep=3*\diceDotSize/10]
+\tikzstyle{diceEdge}=[draw, rectangle, rounded corners=0.5*\diceDotSize, inner sep=3*\diceDotSize/10]
 % ------------------------------------------
 % Usage: \diceThree[rotate=30, shift={(1,3)}]
 % Creates named coordinates (dot-2-3) 
@@ -76,7 +76,7 @@
              (dot-\x-\y) at (0,0) {};
       }
     % Rounded box around all the dots
-    \node[diceDotRoundedRect, fit=(dot-1-1) (dot-3-3)] (diceEdge) {};
+    \node[diceEdge, fit=(dot-1-1) (dot-3-3)] (diceEdge) {};
   \end{scope}
 }
 
@@ -87,7 +87,7 @@
              (dot-\x-\y) at (0,0) {};
       }
     % Rounded box around all the dots
-    \node[diceDotRoundedRect, fit=(dot-1-1) (dot-3-3)] (diceEdge) {};
+    \node[diceEdge, fit=(dot-1-1) (dot-3-3)] (diceEdge) {};
   \end{scope}
 }
 
