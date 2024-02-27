@@ -1,109 +1,146 @@
 <?xml version='1.0' encoding='utf-8'?>
 <subsection xml:id="gra3-uni4-secB-lec7" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>BORRADOR: Lección 7 - Relacionemos multiplicación y división</title>
-<introduction>
-<p>Objetivo: Hagamos más conexiones entre la multiplicación y la división.</p>
+
+<shorttitle>Lección 7</shorttitle>
+<title>Lección 7 -<nbsp/></title>
+<title>Relacionemos multiplicación y división</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+<objectives component="estudiante">
+  <ul>
+    <li>Hagamos más conexiones entre la multiplicación y la división.</li>
+  </ul>
+</objectives>
+
+<objectives component="profesor">
+  <ul>
+    <li>Representar situaciones que involucran grupos iguales usando ecuaciones de multiplicación y división con un símbolo para la cantidad desconocida.</li>
+    <li>Usar la multiplicación y la división con números menores que 100 para resolver problemas que involucren grupos iguales.</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title> 
+    <p>3.NBT.A.3, 3.OA.A.2, 3.OA.A.3, 3.OA.B.6</p>
+  </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>El propósito de esta lección es que los estudiantes utilicen la relación entre la multiplicación y la división para escribir ecuaciones y resolver problemas.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>En lecciones anteriores, los estudiantes aprendieron sobre la división y cómo se relaciona con la multiplicación. En esta lección, usan diferentes formas de representación para mostrar esta relación y escriben ecuaciones para situaciones de división.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>¿Qué pregunta hizo hoy que mejor apoyó la comprensión de los estudiantes sobre cómo están relacionadas las ecuaciones de multiplicación y división? ¿Qué dijeron o hicieron los estudiantes que mostró que la pregunta fue efectiva?</p>
+  </paragraphs>
 </introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
 <subsubsection xml:id="gra3-uni4-secB-lec7-warm">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
-  <p>¿Cuántos ves? ¿Cómo lo sabes?, ¿qué ves?</p>
-  <image source="svg-source/tikz-file-147480" width="60%">
-  <shortdescription>Base ten diagram. 6 tens"></shortdescription>
-  </image>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra3-uni4-secB-lec7-warm.ptx"/> 
 </subsubsection>
-<subsubsection xml:id="gra3-uni4-secB-lec7-actividad1">
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="gra3-uni4-secB-lec7-act1">
+  <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
-  <p>Mesa redonda de división</p>
-  <p>Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.</p>
-  <p>Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.</p>
-  <ol>
-    <li>
-      Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.
-    </li>
-    <li>
-      En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.
-    </li>
-    <li>
-      En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.
-    </li>
-    <li>
-      En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.
-    </li>
-  </ol>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra3-uni4-secB-lec7-act1.ptx"/> 
 </subsubsection>
-<subsubsection xml:id="gra3-uni4-secB-lec7-actividad2">
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="gra3-uni4-secB-lec7-act2">
+  <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
-  <p>Grupos de útiles escolares</p>
-  <p>En cada situación:</p>
-  <p>a. Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.</p>
-  <p>b. Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.</p>
-  <ol>
-    <li>
-      <p>Kiran tenía32 clips. Le dio 4 clips a cada estudiante. ¿Cuántos estudiantes recibieron clips?</p>
-      <ol>
-        <li>
-          <p>Ecuación:_______________________</p>
-        </li>
-        <li>
-          <p></p>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <p>Hay 28 libros en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?</p>
-      <ol>
-        <li>
-          <p>Ecuación:_______________________</p>
-        </li>
-        <li>
-          <p></p>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <p>Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay?</p>
-      <ol>
-        <li>
-          <p>Ecuación:_______________________</p>
-        </li>
-        <li>
-          <p></p>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <p>Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?</p>
-      <ol>
-        <li>
-          <p>Ecuación:_______________________</p>
-        </li>
-        <li>
-          <p></p>
-        </li>
-      </ol>
-    </li>
-  </ol>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra3-uni4-secB-lec7-act2.ptx"/> 
 </subsubsection>
-<subsubsection xml:id="gra3-uni4-secB-lec7-s">
-  <title>Resumen</title>
-  <p>
-    Considera <me>24 \div 4 = {?}</me>
-  </p>
-  <ol>
-    <li>¿Cuál sería la ecuación de multiplicación relacionada?</li>
-    <li>¿Cómo se relacionan?</li>
-  </ol>
-  <p>
-    Considera <me>4 \times {?} = 28</me>
-  </p>
-  <ol>
-    <li>¿Cuál sería la ecuación de división relacionada?</li>
-    <li>¿Cómo se relacionan?</li>
-  </ol>
+
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="gra3-uni4-secB-lec7-sintesis" component="profesor">
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <p>Muestre: <m>24 \div 4 = {?}</m></p>
+
+  <p><q>¿Cuál sería la ecuación de multiplicación relacionada?</q> (<m>4 \times {?} = 24</m> o <m>{?} \times 4 = 24</m>)</p>
+
+  <p><q>¿Cómo se relacionan?</q> (El número desconocido en la ecuación de división es el número de grupos o el número en cada grupo y eso es lo que representa el número desconocido en la ecuación de multiplicación.)</p>
+
+  <p>Muestre: <m>4 \times {?} = 24</m> o <m>{?} \times 4 = 24</m></p>
+
+  <p><q>¿Cuál sería la ecuación de división relacionada?</q></p>
+
+  <p><q>¿Cómo se relacionan?</q> (En la ecuación de multiplicación se desconoce el número en cada grupo y eso es lo que representa el cociente en la ecuación de división.)</p>
+
 </subsubsection>
+
+
+
+<!-- ============================================
+  Cool-down (problema de cierre / de salida)
+================================================= -->
 <subsubsection xml:id="gra3-uni4-secB-lec7-cool">
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
-  <p>Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?</p>
-  <p>Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.</p>
+  <xi:include href="./gra3-uni4-secB-lec7-cool.ptx"/>
 </subsubsection>
+
+
+
 </subsection>
