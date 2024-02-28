@@ -1,32 +1,45 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!-- ********************************************** -->
+<!--            Encabezado (no editar)              -->
+<!-- ********************************************** -->
 <!-- El resumen es un <references> que queda al mismo nivel que las lecciones -->
-<references xml:id="gra3-uni4-secB-resumen" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>BORRADOR: Resumen de la Sección</title>
-    <p>En esta sección, aprendimos que la división es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división.</p>
-    <ul>
-      <li>“¿Cuántos grupos?”</li>
-      <li>“¿Cuántos hay en cada grupo?”</li>
-    </ul>
-    <sidebyside widths="50% 50%" margins="auto" valign="top">
-      <p>Han tiene 12 lápices de colores. Él quiere ponerlos en cajas. Quiere poner 2 lápices en cada caja hasta que se le acaben los lápices. ¿Cuántas cajas necesita Han?</p>
-      <p>Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?</p>
-    </sidebyside>
-    <sidebyside widths="50% 50%" margins="auto" valign="top">
-      <!-- <figure xml:id="modal-target-TikzFile-177070"> -->
-        <!-- <caption></caption> -->
-        <image source="tikz-source/tikz-file-147695.svg" width="50%">
-          <shortdescription>6 grupos de dos puntos</shortdescription>
-        </image>
-      <!-- </figure> -->
-      <!-- <figure xml:id="modal-target-TikzFile-177071"> -->
-        <!-- <caption></caption> -->
-        <image source="tikz-source/tikz-file-147696.svg" width="50%">
-          <shortdescription>2 grupos de 6 puntos</shortdescription>
-        </image>
-      <!-- </figure> -->
-    </sidebyside>
-    <sidebyside widths="50% 50%" margins="auto" valign="top">
-      <p><me>12 \div 2</me></p>
-      <p><me>12 \div 2</me></p>
-    </sidebyside>
+<references xml:id="gradoVV-unidadXX-seccionYY-resumen" xmlns:xi="http://www.w3.org/2001/XInclude">
+<shorttitle><custom ref="resumen-leccion-titulo-corto"/></shorttitle>
+<shorttitle component="profesor"><custom ref="resumen-leccion-titulo-extraProfe-corto"/></shorttitle>
+<title><custom ref="resumen-leccion-titulo"/></title>
+<title component="profesor"><custom ref="resumen-leccion-titulo-extraProfe"/></title>
+<!-- ********************************************** -->
+
+
+<p>
+  En esta sección, aprendimos cómo se relacionan la multiplicación y la división.
+</p>
+
+<image source="svg-source/tikz-file-176322">
+  <shortdescription>6 dados con 5 puntos cada uno</shortdescription>
+</image>
+
+<sidebyside>
+  <p><me>6\times 5={?}</me></p>
+  <p><me>30\div 5={?}</me></p>
+  <p><me>30\div 6={?}</me></p>
+</sidebyside>
+
+<p>
+  Usamos estrategias para multiplicar y dividir, y trabajamos para multiplicar y dividir con fluidez hasta 100. 
+</p>
+
+<sidebyside valign="middle">
+  
+  <image source="svg-source/tikz-file-141807">
+    <shortdescription>Diagrama. Rectángulo dividido en 2 partes. Una parte dividida en 3 filas de 5 cuadrados del mismo tamaño, la otra dividida en 3 filas de 2 cuadrados del mismo tamaño.</shortdescription>
+  </image>
+
+  <p>
+    <line><m>7\times 3</m></line>
+    <line><m>(5\times3)+(2\times3)</m></line>
+  </p>
+
+</sidebyside>
+
 </references>
