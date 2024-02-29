@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="mesaRedondaDeDivision" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Mesa redonda de división</title>
 
@@ -39,33 +39,60 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      El propósito de esta actividad es que los estudiantes consoliden lo que han aprendido sobre la relación entre la multiplicación y la división. Los estudiantes comienzan creando un dibujo de grupos iguales. Luego reciben un dibujo creado por otro estudiante en su grupo y escriben una situación de división que le corresponda. Luego pasan su hoja a otro estudiante y reciben otra hoja y utilizan el dibujo de grupos iguales y la situación para escribir una ecuación de multiplicación. En la última ronda de esta estructura de “carrusel”, los estudiantes escriben una ecuación de división para que corresponda con las otras representaciones.
+    </p>
+    <p>  
+      Cuando los estudiantes relacionan dibujos, situaciones y ecuaciones, razonan de manera abstracta y cuantitativa (MP2). Al mirar el trabajo de los demás, los estudiantes pueden agregar observaciones a las representaciones y pueden defender diferentes puntos de vista. Los estudiantes pueden criticar el trabajo de otros y construir argumentos razonables (MP3).
+    </p>
+    <p>  
+      Los estudiantes trabajan en la misma casilla en un organizador gráfico que los otros estudiantes de su grupo, por lo que si tienen dificultades, anímelos a hablar con su grupo. Recuérdeles a los estudiantes que lo que están creando debe coincidir con lo que ya se ha completado.
+    </p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><xref ref="blm-mesaRedondaDeDivision" text="title"/>. Una hoja de registro para cada estudiante.</li>
+    </ul>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 4</li>
+      <li>Entregue a cada estudiante una hoja de registro.</li>
+      <li>
+        <q>En el primer recuadro de su hoja, hagan un dibujo que muestre grupos iguales de objetos. Otros estudiantes de su grupo van a usar este dibujo para completar los otros recuadros</q>
+      </li>
+      <li>3 minutos: tiempo de trabajo independiente</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><q>Pásenle su hoja al compañero que está a su derecha. En el recuadro 2, escriban una descripción de una situación de división que corresponda al dibujo que les acabaron de pasar</q>.</li>
+      <li>3 minutes: tiempo de trabajo independiente</li>
+      <li><q>Pasen su hoja a la derecha. En el recuadro 3, escriban una ecuación de multiplicación que corresponda al dibujo y a la situación de división que acabaron de recibir. Usen un símbolo para representar la cantidad desconocida</q>.</li>
+      <li>2 minutes: tiempo de trabajo independiente</li>
+      <li><q>Pasen su hoja a la derecha. En el recuadro 4, escriban una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación que acabaron de recibir. Usen un símbolo para representar la cantidad desconocida</q></li>
+      <li>2 minutes: tiempo de trabajo independiente</li>
+      <li><q>Pasen su hoja una vez más. Deberían tener su dibujo original de vuelta</q></li>
+      <li><q>Hablen con su grupo sobre cuál recuadro les pareció más difícil de completar. Compartan ideas acerca de qué fue lo que más les ayudó durante esta actividad</q></li>
+      <li>5 minutes: discusión en grupos pequeños</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -77,30 +104,43 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>¿Qué estrategias compartieron en su grupo?</q> (Cuando no estaba seguro de cómo escribir una situación, volví a mirar el dibujo e intenté imaginar algo que pudiera estar dividiendo que se pareciera al dibujo. Cuando estaba escribiendo una ecuación, me ayudó a imaginar que la situación estaba ocurriendo.)
+      </li>
+      <li>
+        <q>Al examinar su hoja, ¿qué conexiones observan entre la multiplicación y la división?</q> (Puedo usar tanto la multiplicación como la división para representar el mismo dibujo o situación. En todas las ecuaciones de multiplicación hay un factor desconocido, pero en las ecuaciones de división todas lo que es desconocido es el cociente.)
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Participación: Desarrollar el esfuerzo y la persistencia. De a cada grupo retroalimentación que fomente la colaboración y la creación de comunidad. Por ejemplo, apoye a los estudiantes para que participen, pasando la hoja a la derecha y escribiendo el símbolo.</p>
+
+    <p>Apoya la accesibilidad para: Funcionamiento social-emocional, Lenguaje</p>
   </paragraphs>
 
 </postlude>
