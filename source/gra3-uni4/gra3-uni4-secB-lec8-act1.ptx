@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="clasificacionDeTarjetas-multiplicacion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Clasificación de tarjetas: Multiplicación</title>
 
@@ -22,7 +22,7 @@
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <p>Las respuestas pueden variar.</p>
 </solution>
 
 
@@ -34,33 +34,72 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta actividad, los estudiantes revisan en parejas su progreso en multiplicar con números hasta 100 de forma fluida. Clasifican los productos en los que conocen de inmediato, los que pueden encontrar rápidamente y los que aún no conocen. Se discute en el lanzamiento de la actividad lo qué significa conocer un hecho rápidamente y los estudiantes eligen cinco productos para practicar y mejorar su competencia. Las tarjetas se usarán en la siguiente actividad.
+  </p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <xref ref="blm-clasificacionDeTarjetas-multiplicacion-tarjetas" text="title"/>. Un grupo de tarjetas para cada pareja.
+      </li>
+      <li>
+        <xref ref="blm-clasificacionDeTarjetas-multiplicacion-hojaDeRegistro" text="title"/>. Una hoja para cada pareja.
+      </li>
+    </ul>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li><q>Hoy vamos a retomar los hechos de multiplicación para ver cuántos se han aprendido hasta ahora. Pero recuerden que tienen el resto del año para aprendérselos</q></li>
+      <li><q>Todos sabemos lo que significa saberse un producto de inmediato, ¿pero qué significa encontrar un producto rápidamente?</q> (Podemos resolverlo en un par de segundos con una estrategia. Podemos resolverlo en menos de 5 segundos.)</li>
+      <li>Discutir con toda la clase y llegar a un acuerdo sobre lo que significa encontrar un producto rápidamente.</li>
+      <li>
+        <p>Considere preguntar:</p>
+        <ul>
+          <li><q>¿Alguien quiere agregar algo a lo que <fillin/> dice que significa encontrar un producto rápidamente?</q></li>
+          <li><q>¿Alguien tiene otras ideas acerca de lo que significa encontrar un producto rápidamente?</q></li>
+          <li><q>A partir de esta discusión, ¿alguien quiere reconsiderar sus ideas acerca de lo que significa encontrar un producto rápidamente?</q></li>
+        </ul>
+      </li>
+      <li>De a cada grupo un set de tarjetas precortadas y una tabla de clasificación.
+    </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Tómense un momento para hacerse preguntas mutuamente sobre hechos de multiplicación. Mientras le hacen preguntas a su compañero, usen la tabla para clasificar las expresiones en tres grupos que muestren si su compañero se lo sabe de inmediato, si lo puede encontrar rápidamente o si todavía no se lo sabe</q>
+      </li>
+      <li>7–10 minutos: tiempo de trabajo en pareja</li>
+      <li>
+        <q>Escojan 5 hechos de multiplicación que todavía no se sepan y escriban las expresiones. Estos son los productos que van a practicar</q>
+      </li>
+      <li>1 minuto: tiempo de trabajo independiente</li>
+      <li>
+        <q>Ahora, compartan con su compañero los productos que quieren practicar. Pídanle que les ayude a pensar en algunas estrategias que pueden usar para encontrar los productos rápidamente</q>
+      </li>
+      <li>
+        <q>Una vez que tengan algunas estrategias, tómense un momento para practicar los productos que escogieron</q>
+      </li>
+      <li>5–7 minutos: tiempo de trabajo en pareja</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -74,28 +113,46 @@
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Si los estudiantes aún no tienen una estrategia para uno de los hechos que han elegido practicar, considere preguntar:</p>
+    <ul>
+      <li><q>¿Qué has intentado hasta el momento para encontrar este producto?</q></li>
+      <li><q>¿Podrías hablar con otro grupo para ver si te pueden sugerir una estrategia para encontrar este producto?</q></li>
+    </ul>
   </paragraphs>
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>¿Qué estrategias les sirvieron para encontrar los productos que todavía no se sabían?</q>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      MLR8 Apoyos para la discusión. Síntesis: Muestre un esquema de oración para apoyar la discusión en clase: <q>La próxima vez que multiplique <fillin/> y <fillin/>, voy a <ellipsis/></q>
+    </p>
+    <p>
+      Avances: Escuchar, Hablar
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      Representación: Internalizar Comprensión. Para apoyar la memoria de trabajo, proporcione a los estudiantes notas adhesivas o mini pizarras blancas.
+    </p>
+    <p>
+      Apoya la accesibilidad para: Memoria, Organización
+    </p>
   </paragraphs>
 
 </postlude>
