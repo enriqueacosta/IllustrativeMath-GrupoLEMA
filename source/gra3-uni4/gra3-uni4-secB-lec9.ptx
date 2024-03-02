@@ -47,11 +47,13 @@
   </paragraphs>
 
   <!-- Materiales requeridos -->
+  <!-- 
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
-  
+  -->
+
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
@@ -73,7 +75,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec9-warm.ptx"/> 
@@ -87,7 +89,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec9-act1.ptx"/> 
@@ -101,7 +103,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec9-act2.ptx"/> 
@@ -114,10 +116,14 @@
 <subsubsection xml:id="gra3-uni4-secB-lec9-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
-
+  <p>
+      <q>Hoy usamos productos que nos sabíamos para encontrar productos que no nos sabíamos</q>
+  </p>
+  <p>
+    <q>¿Qué patrones les parecieron útiles?</q> (Podemos escribir los factores en cualquier orden, el resultado sigue siendo el mismo. Por ejemplo <m>3 \times 6</m> tiene el mismo valor que <m>6 \times 3</m>. Si sabemos que <m>3 \times 5</m> es 15 y 6 es <m>2 \times 3</m>, entonces <m>6 \times 5</m> es el doble de <m>3 \times 5</m> o <m>2 \times (3 \times 5)</m>, o dos veces 15, que es 30. Podemos encontrar el valor de <m>8 \times 2</m> pensando en 8 como <m>3 + 5</m> y luego encontrando <m>3 \times 2</m> y <m>5 \times 2</m>. Cuando 2, 4, 6, 8 y 10 es uno de los factores, el producto es par. Cuando 5 es un factor, el producto alterna entre 5 y 10. Cuando 10 es un factor, el producto termina en 0.)</p>
+  <p>Registre los patrones que los estudiantes mencionaron.</p>
 </subsubsection>
 
 

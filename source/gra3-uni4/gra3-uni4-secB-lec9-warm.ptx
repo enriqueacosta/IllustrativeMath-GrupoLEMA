@@ -35,31 +35,47 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>10 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad es generar la idea de que el producto de dos factores en la tabla de multiplicar se encuentra donde se cruzan la fila y la columna de cada factor. Aunque los estudiantes pueden observar y preguntarse muchas cosas sobre estos productos, se debe enfatizar los patrones en la tabla de multiplicar y cómo está estructurada.</p>
   </paragraphs>
 
   <!-- Materiales requeridos de la actividad -->
+  <!-- 
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
+
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li>Mostrar la imagen.</li>
+      <li>
+        <q>¿Qué observan? ¿Qué se preguntan?</q>
+      </li>
+      <li>1 minuto: tiempo para pensar en silencio</li>
+    </ul>
   </paragraphs>
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Discutan con su compañero lo que pensaron</q>
+      </li>
+      <li>1 minuto: discusión en pareja</li>
+      <li>Compartan y registren las respuestas.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -71,29 +87,44 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
+
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Si los estudiantes no lo mencionan, explique: <q>En una tabla de multiplicar se usan filas y columnas para mostrar productos de dos números. Los números que están en la columna de más a la izquierda y en la fila de más arriba son los factores</q></li>
+      <li><q>Cada número de la tabla (de la parte que no está sombreada) es el resultado de multiplicar los dos factores que están en la misma fila y columna que ese número</q>
+      </li>
+      <li><q>¿Qué patrones ven en la tabla de multiplicar y por qué funcionan?</q> (Al movernos hacia la derecha en la fila de los 3 o hacia abajo en la columna de los 3, los productos aumentan en 3, porque estamos sumando grupos de 3. El número 15 aparece en dos lugares porque podemos encontrar <m>3 \times 5</m> o <m>5 \times 3</m> para obtener 15. Vemos el 12 en dos lugares en la tabla porque podemos obtener 12 contando de 3 en 3 como 3, 6, 9, 12 o contando de 4 en 4 como 4, 8, 12.)</li>
+      <li><q>Encuentren todas las posiciones en las que aparece 20. ¿Cuáles parejas de factores al ser multiplicadas dan 20?</q> (4 y 5)</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
+
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
+
 
 </postlude>
 
