@@ -49,7 +49,10 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><xref ref="blm-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos-tarjetas" text="title"/> . Un grupo de tarjetas para cada grupo de estudiantes.</li>
+      <li>Papel cuadriculado</li>
+    </ul>
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -73,7 +76,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec11-warm.ptx"/> 
@@ -87,7 +90,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec11-act1.ptx"/> 
@@ -101,7 +104,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./gra3-uni4-secB-lec11-act2.ptx"/> 
@@ -114,9 +117,18 @@
 <subsubsection xml:id="gra3-uni4-secB-lec11-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>
+    <q>Hoy asociamos expresiones que podían representar el área del mismo rectángulo. Pensemos en lo que nos muestran acerca de la multiplicación algunas de las expresiones que asociamos</q>
+  </p>
+  <p>
+    <q>¿Qué expresiones nos muestran que podemos descomponer uno de los factores y después multiplicarlos por separado?</q> (E y K, C y L, B e I)
+  </p>
+  <p>Muestre las expresiones en las tarjetas F y G.</p>
+  <p>
+    <q>¿Qué nos muestran estas expresiones acerca de la multiplicación?</q> (Cuando hay más de 2 factores, podemos decidir qué dos factores multiplicar primero sin cambiar el resultado).
+  </p>
 
 </subsubsection>
 

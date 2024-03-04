@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="clasificacionDeTarjetas-expresionesMultiplicacionRectangulos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo</title>
 
@@ -14,7 +14,14 @@
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <p>Ejemplos de respuestas:</p>
+  <ul>
+    <li>A, C y L (28 unidades cuadradas, 7 unidades por 4 unidades)</li>
+    <li>B e I (42 unidades cuadradas, 6 unidades por 7 unidades)</li>
+    <li>D, F y G (24 unidades cuadradas, 8 unidades por 3 unidades)</li>
+    <li>E y K (48 unidades cuadradas, 6 unidades por 8 unidades)</li>
+    <li>J y H (36 unidades cuadradas, 9 unidades por 4 unidades)</li>
+  </ul>
 </solution>
 
 
@@ -26,33 +33,44 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta actividad de clasificación, los estudiantes identifican expresiones que podrían representar el área del mismo rectángulo y explican su razonamiento. Para hacerlo, aplican su comprensión de las propiedades de la multiplicación y dibujan rectángulos según sea necesario mientras interpretan partes de las expresiones. Algunos estudiantes pueden clasificar las expresiones basándose únicamente en el valor de las expresiones. Anímelos a explicar o mostrar cómo saben, por ejemplo, que <m>8 \times 6</m> y <m>3 \times 6 + 5 \times 6</m> pueden representar el área del mismo rectángulo (MP2, MP7). Algunas de las expresiones de esta actividad se utilizan en la síntesis para resaltar las propiedades conmutativas, distributivas y asociativas de la multiplicación.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><xref ref="blm-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos-tarjetas" text="title"/> . Un grupo de tarjetas para cada grupo de estudiantes.</li>
+      <li>Papel cuadriculado</li>
+    </ul>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2 o 4</li>
+      <li>Entregue a cada grupo un grupo de tarjetas precortadas.</li>
+      <li>Tenga disponible papel cuadriculado.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><q>Este grupo de tarjetas incluye expresiones que representan áreas de rectángulos. Agrupen las expresiones que representan el área del mismo rectángulo</q></li>
+      <li><q>Con su compañero, expliquen sus decisiones de clasificación. Si les ayuda, pueden dibujar rectángulos</q></li>
+      <li>8 minutos: tiempo de trabajo en pareja</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -64,30 +82,69 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+        <li>
+          <p>Invite a los estudiantes a compartir su clasificación, sus dibujos (si los hay) y su explicaciones sobre cómo saben que esas expresiones corresponden.</p>
+        </li>
+        <li>
+          <p>Registre cada grupo de expresiones. Discuta las conexiones entre las expresiones, ilustrándolas en un dibujo de un rectángulo. Por ejemplo, para: <m>8 \times 3</m>, <m>(4 \times 3) \times 2</m>, <m>4 \times (2 \times 3)</m></p>
+
+          <p>haga preguntas como:</p>
+
+          <ul>
+              <li><q>¿En qué parte de <m>4 \times (2 \times 3)</m> vemos el 8?</q></li>
+              <li><q>¿Cuál es el área de este rectángulo? ¿Cuáles podrían ser las longitudes de sus lados?</q></li>
+              <li>
+                <p>(Dibuje y etiquete un rectángulo.)</p>
+                <image source="svg-source/tikz-file-158677">
+                    <shortdescription>Diagrama de área</shortdescription>
+                </image>
+              </li>
+              <li>
+                <p><q>¿Dónde vemos <m>(4 \times 3) \times 2</m> en el rectángulo?</q></p>
+                <image source="svg-source/tikz-file-158676">
+                    <shortdescription>Diagrama de área</shortdescription>
+                </image>
+              </li>
+              <li>
+                <p><q>¿Dónde vemos <m>4 \times (2 \times 3)</m> en el rectángulo?</q></p>
+                <image source="svg-source/tikz-file-158675">
+                    <shortdescription>Diagrama de área</shortdescription>
+                </image>
+              </li>
+          </ul>
+        </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[@@@@@@@@@@@@@@]</p>
   </paragraphs>
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      Participación: Desarrollar Esfuerzo y Persistencia. Divida esta tarea en partes manejables. Dé a los estudiantes un subconjunto de las tarjetas para comenzar y presente las tarjetas restantes una vez que los estudiantes hayan completado su primer conjunto de emparejamientos.
+    </p>
+    <p>Apoya la accesibilidad para: Atención, Enfoque</p>
   </paragraphs>
 
 </postlude>
