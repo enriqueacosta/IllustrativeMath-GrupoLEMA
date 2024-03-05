@@ -14,7 +14,7 @@ do
     # Execute the command for the svg file
     
     # Uses rsvg. To install use [brew install librsvg]
-    rsvg-convert --format=pdf --zoom=1 $f > $base.pdf
+    rsvg-convert --format=pdf --zoom=0.75 $f > $base.pdf
     
     # read width height <<<$(identify -format "%w %h" $f)
     # echo "$width"
