@@ -4,7 +4,14 @@ Para quitar los errores de \begin{spanish}
 
 Para poder las imagenes con ancho=max width 
 ===========================================
-Por defecto, las imagenes están con []
+Por defecto, las imagenes están con \includegraphics[width=\linewidth]
+que las hace agrandarse (mal).
+
+Este código arregla esto:
+```
+\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics
+```
+seguido de cambiar todos los `[width=\linewidth]` a `[max width=\linewidth]`.
 
 
 Formato dos columnas
