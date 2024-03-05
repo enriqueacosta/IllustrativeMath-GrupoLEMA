@@ -1,3 +1,12 @@
+Para quitar los errores de \begin{spanish}
+==========================================
+\newenvironment{spanish}{\relax}{\relax}
+
+Para poder las imagenes con ancho=max width 
+===========================================
+Por defecto, las imagenes están con []
+
+
 Formato dos columnas
 ====================
 \documentclass[twocolumn]{book}
