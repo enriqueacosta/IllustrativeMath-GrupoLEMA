@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ============================================ 
+  El cool-down es un <problem> 
+  (distinto a las otras actividades y a los Practice Problems)
+=================================================  -->
+<problem xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>¿Cuál es el valor?</title>
+
+<statement>
+  <p>Encuentra el valor de <m>6\times 40</m>. Explica o muestra tu razonamiento.</p>
+</statement>
+
+<solution>
+  <p>240. Ejemplo de respuesta: Descompongo 40 en <m>4 \times 10</m>, luego multiplico <m>6 \times 4</m> para obtener 24. Veinticuatro decenas es 240.</p>
+</solution>
+
+
+<postlude component="profesor"> <!-- Notas para el profesor -->
+
+  <!-- Posibles errores -->
+  <paragraphs>
+    <title><custom ref="errores-cool-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
+  <paragraphs>
+    <title><custom ref="apoyo-cool-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</problem>
