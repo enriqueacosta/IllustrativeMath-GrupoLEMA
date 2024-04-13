@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="dosEstrategias" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Dos estrategias</title>
 
@@ -68,33 +68,54 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      En esta actividad, los estudiantes usan bloques de base diez para multiplicar un número entero por un múltiplo de 10. Analizarán dos estrategias, una basada en el valor posicional y otra que utiliza la propiedad asociativa. Por ejemplo, pensarán en <m>8 \times 30</m> como <m>8 \times 3 \times 10</m> o <m>24 \times 10</m>.
+    </p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Bloques en base 10.</li>
+      <li><xref ref="blm-papelCuadriculadoCentimetro" text="title"/></li>
+    </ul>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li><q>Durante un momento, examinen las estrategias de Jada y de Kiran para multiplicar <m>8 \times 30</m></q></li>
+      <li>30 segundos: tiempo para pensar en silencio</li>
+      <li><q>Hablen con su compañero sobre cómo podemos ver las estrategias de Jada y de Kiran en el diagrama</q></li>
+      <li>2 a 3 minutos: discusión en pareja</li>
+      <li>Compartan las respuestas.</li>
+      <li>De acceso a los estudiantes a papel cuadriculado y bloques de base diez.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><q>Trabajen en el primer problema con su compañero</q></li>
+      <li>2-3 minutos: discusión en pareja</li>
+      <li>Invite a los estudiantes a compartir cómo son similares y en qué se diferencian las estrategias.</li>
+      <li>¿Cómo pudo Kiran convertir <m>8 \times 30</m> en <m>24 \times 10</m>?</li>
+      <li>Ahora encuentren el valor de los demás productos con su compañero.</li>
+      <li>5-7 minutos: tiempo de trabajo en pareja</li>
+      <li>Identifique a los estudiantes que usan la propiedad asociativa como estrategia para resaltar su trabajo durante la síntesis.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -105,32 +126,50 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->  
+  <!-- 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <p>Seleccione de 2 a 3 estudiantes que hayan utilizado una estrategia basada en la propiedad asociativa (por ejemplo, pensando en <m>7 \times 40</m> como 28 decenas) para compartir sus respuestas.</p>
+      </li>
+      <li>
+        <p>Considere preguntar:</p>
+        <ul>
+          <li><q>¿En qué parte del trabajo de <fillin/> vemos la expresión original?</q></li>
+          <li><q>¿Cómo cambió <fillin/> la expresión original para que fuera más fácil encontrar el total?</q></li>
+          <li><q>¿Cómo funciona la estrategia para multiplicar que usó <fillin/>?</q></li>
+        </ul>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!--
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
+  -->
 
 </postlude>
 
