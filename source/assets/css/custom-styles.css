@@ -92,33 +92,33 @@ article[class*='exploration'] .heading::after, .project-like .heading::after {
 }
 
 
-/* EAJ - quitar los números a problem */
-article[class*='problem'] .heading  .codenumber {
+/* EAJ - quitar los números a project */
+article[class*='project'] .heading  .codenumber {
   display:none !important;
 }
 
-/* EAJ - quitar los puntos a problem */
-article[class*='problem'] .heading  .period {
+/* EAJ - quitar los puntos a project */
+article[class*='project'] .heading  .period {
   display:none !important;
 }
 
-/* EAJ - quitar los espacios a problem */
-article[class*='problem'] .heading .space {
+/* EAJ - quitar los espacios a project */
+article[class*='project'] .heading .space {
   display:none !important;
 }
 
-/* EAJ -  quitar el tipo de problem:*/
-article[class*='problem'] .heading .type {
+/* EAJ -  quitar el tipo de project:*/
+article[class*='project'] .heading .type {
   display:none !important;
 }
 
 
-/* EAJ - agregar salto de línea después del título de problem*/
+/* EAJ - agregar salto de línea después del título de project*/
 /*.pretext-content section article.project-like > .heading + p {
   display: block;
   padding-top: 0.3em;
 }
-article[id*='problem'] .heading::after, .project-like .heading::after {
+article[id*='project'] .heading::after, .project-like .heading::after {
   display:none !important;
 }*/
 
