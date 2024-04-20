@@ -32,10 +32,13 @@
 ===================================================================  -->
 <prelude component="profesor"> 
 
+   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>20 minutos.</p>
   </paragraphs>
+
+  <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>El propósito de esta actividad es que los estudiantes representen y resuelvan problemas de "¿cuántos grupos?". Motívelos a utilizar cualquier estrategia y representación visual que les parezca lógica.</p>
@@ -48,13 +51,14 @@
   </ul>
   <p>Cuando los estudiantes representan la situación con objetos, dibujos concretos o dibujos abstractos, están razonando de manera abstracta y cuantitativa (MP2).</p>
   </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <ul>
-      <li>Cubos encajables o fichas de dos colores</li>
-      <li>Herramientas para crear una presentación visual</li>
-    </ul>
+    <xi:include href="./gra3-uni4-secA-lec1-act1-mat.ptx"/>
   </paragraphs>
+
+  <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
     <ul>
@@ -62,6 +66,8 @@
       <li>Dele a los estudiantes acceso a cubos encajables o contadores.</li>
     </ul>
   </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <ul>
@@ -93,18 +99,25 @@
 ===================================================================  -->
 <postlude component="profesor">
 
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>Si los estudiantes no encuentran una solución a los problemas, considere preguntar: "¿De qué se trata este problema?" y "¿Cómo podrías representar el problema?"</p>
   </paragraphs>
+
+  <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>Organice los pósters alrededor del salón.</p>
   </paragraphs>
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
   <!-- <paragraphs> -->
     <!-- <title><custom ref="language-actividad-titulo"/></title> -->
     <!-- <p>[@@@@@@@@@]</p> -->
   <!-- </paragraphs> -->
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>Representación: Acceso para la percepción.</p>
