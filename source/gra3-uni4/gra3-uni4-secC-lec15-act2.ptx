@@ -21,34 +21,53 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>15 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta actividad, los estudiantes ven cómo otros resolvieron un problema con un factor del 11 al 19. Dejan notas adhesivas explicando si la respuesta tiene sentido o no. En la síntesis se resaltan ejemplos de cómo usaron diagramas de área para representar el problema.</p>
+    <!-- <p>El propósito de esta actividad es que los estudiantes vean cómo otros estudiantes resolvieron uno de los problemas que involucra un factor de un número del 11 al 19. Mientras los estudiantes observan el trabajo de los demás, dejarán notas adhesivas describiendo por qué creen que la respuesta tiene sentido o no (MP3). La síntesis se centrará específicamente en ejemplos de cómo los estudiantes utilizaron el diagrama de área para representar el problema.</p> -->
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secC-lec15-act2-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li><q>Antes de que empiecen el recorrido por el salón, ¿qué representaciones esperan ver cuando observen el trabajo de los demás estudiantes?</q></li>
+      <li><q>Antes de que empiecen el recorrido por el salón, ¿qué representaciones esperan ver cuando observen el trabajo de los demás estudiantes?</q></li>
+      <li>Comparta las respuestas.</li>
+      <li>Entregue notas adhesivas a los estudiantes.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Mientras visitan los pósteres con su compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres. Además, dejen una nota adhesiva en la que describan por qué creen que la solución tiene o no tiene sentido</q>
+      </li>
+      <li>8–10 minutos: Recorrido por el salón</li>
+      <li>
+        <p>Identifique a los estudiantes que utilizan diagramas de área de diferentes maneras para que compartan su trabajo en la síntesis. Específicamente:</p>
+        <ul>
+          <li>un diagrama de área completamente cuadriculado sin etiquetas y sin descomponer</li>
+          <li>un diagrama de área cuadriculado que también se descompuso en partes o en el que se marcaron los lados o en partes del rectángulo</li>
+          <li>un rectángulo partido en dos áreas sin cuadrícula, pero marcado con longitudes de los lados o con el área de las partes del rectángulo</li>
+        </ul>
+      </li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -60,31 +79,50 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!--   
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Seleccione de 2 a 3 pósters que usen un diagrama para representar el problema. Socialicelos en el orden que se menciono anteriormente.</li>
+      <li>
+        <p>Para cada póster, pregunte:</p>
+        <ul>
+          <li><q>¿Cómo se ven los factores en el diagrama?</q></li>
+          <li><q>¿Cómo se ve el producto en el diagrama?</q></li>
+          <li><q>¿Cómo podríamos representar esta estrategia con expresiones?</q></li>
+        </ul>
+      </li>
+      <li>Si los estudiantes no usan un diagrama sin cuadrícula, muestre uno que represente los problemas y haga las mismas preguntas.</li>
+    </ul>
+    <image source="svg-source/tikz-file-141828">
+      <shortdescription>Diagrama de área.</shortdescription>
+    </image>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Apoyos para la discusión de MLR8. Síntesis: A medida que los estudiantes comparten sus observaciones sobre los pósters seleccionados, haga anotaciones en el póster para ilustrar conexiones. Por ejemplo, marque factores y el producto y escriba <term>factores</term> y <term>producto</term> respectivamente.</p>
+    <p>Avances: Escuchar, Representar</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!--   
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 </postlude>
 
