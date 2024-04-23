@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-problemsMultiplicativosFiesta" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title> Problemas sobre una fiesta</title>
 
@@ -57,34 +57,50 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta actividad, los estudiantes resuelven problemas verbales de dos pasos usando las cuatro operaciones. Se les invitará a resolver el problema o escribir la ecuación primero, según su preferencia. Motive a los estudiantes a usar paréntesis si es necesario que aclaren el orden de las operaciones en sus ecuaciones.</p>
+    <!-- <p>El propósito de esta actividad es que los estudiantes resuelvan problemas verbales de dos pasos usando las cuatro operaciones. Se debe motivar a los estudiantes a resolver el problema primero o escribir la ecuación primero, dependiendo de su preferencia. Anime a los estudiantes a usar paréntesis si es necesario mostrar qué se está haciendo primero en sus ecuaciones.</p> -->
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secC-lec17-act2-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li>De acceso a papel cuadriculado y bloques de base diez.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Resuelvan estos problemas individualmente. En cada caso, escriban una ecuación que represente la situación. Usen una letra para representar la cantidad desconocida. Pueden escoger si primero resuelven el problema o si primero escriben la ecuación</q>
+      </li>
+      <li>
+        5–7 minutos: tiempo de trabajo independiente
+      </li>
+      <li>
+        <q>Compartan sus soluciones y sus ecuaciones con su compañero. También, díganle a su compañero si creen que sus soluciones y sus ecuaciones tienen sentido o por qué no lo tienen</q>
+      </li>
+      <li>
+        5–7 minutos: discusión en pareja
+      </li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -98,28 +114,52 @@
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      Si los estudiantes no escriben una sola ecuación para representar ambos pasos del problema, considere preguntar:
+    </p>
+    <ul>
+      <li>
+        <q>¿Qué ecuaciones escribiste para cada parte del problema?</q>
+      </li>
+      <li>
+        <q>¿Cómo podrías combinar tus ecuaciones para escribir una ecuación que represente el problema?</q>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        Para cada problema, invite a un estudiante a que comparta su ecuación y discuta cómo representa el problema.
+      </li>
+      <li>
+        <p>Considere preguntar:</p>
+        <ul>
+          <li><q>¿En qué parte de la ecuación vemos <fillin/> del problema?</q></li>
+          <li><q>¿Qué información de la situación necesitamos para escribir y resolver nuestra ecuación?</q></li>
+          <li><q>¿Cómo se usan los paréntesis en la ecuación?</q></li>
+        </ul>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>MLR5 Preguntas de Co-Creación. Mantenga los libros o dispositivos cerrados. Muestre solo el enunciado del problema, sin revelar la pregunta. Dé a los estudiantes 2-3 minutos para escribir una lista de preguntas matemáticas que podrían hacerse sobre esta situación, antes de comparar sus preguntas con un compañero. Invite a cada grupo a contribuir con una pregunta escrita a una presentación de toda la clase. Pida a la clase que hagan comparaciones entre las preguntas compartidas y las suyas propias. Revele las preguntas previstas para esta tarea e invite a hacer conexiones adicionales.</p>
+    <p>Avances: Lectura, Escritura</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Participación: Desarrollar esfuerzo y eersistencia. Algunos estudiantes pueden beneficiarse de retroalimentación que enfatice el esfuerzo y el tiempo dedicado a la tarea. Por ejemplo, revise y dé retroalimentación después de cada problema de planificación de fiestas.</p>
+    <p>Apoya la accesibilidad para: Atención</p>
   </paragraphs>
 
 </postlude>

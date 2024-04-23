@@ -35,32 +35,40 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>10 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividas de verdadero o falso es hacer visible estrategias y comprensiones que los estudiantes tengan para multiplicar números enteros de un solo dígito por múltiplos de 10. El razonamiento que los estudiantes hacen aquí ayuda a profundizar su comprensión de la propiedad asociativa al descomponer múltiplos de diez para facilitar la multiplicación.</p>
   </paragraphs>
 
   <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
+  <!-- <paragraphs> -->
+    <!-- <title><custom ref="materials-actividad-titulo"/></title> -->
     <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
-  </paragraphs>
+  <!-- </paragraphs> -->
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Muestre una afirmación.</li>
+      <li>
+        <q>Hagan una señal cuando sepan si la afirmación es verdadera o no, y puedan explicar cómo lo saben</q>
+      </li>
+      <li>1 minuto: tiempo para pensar en silencio</li>
+    </ul>
   </paragraphs>
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Comparta y registre respuestas y estrategias.</li>
+      <li>Repita con cada afirmación.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -72,29 +80,53 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!--   
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>¿Cómo pueden justificar su respuesta sin encontrar el valor de ambos lados?</q>
+      </li>
+      <li>
+        <p>Considere preguntar:</p>
+        <ul>
+          <li>
+            <q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q>
+          </li>
+          <li>
+            <q>¿Alguien quiere agregar algo al razonamiento de <fillin/>?</q>
+          </li>
+          <li>
+            <q>¿Podemos hacer alguna generalización basándonos en las afirmaciones?</q>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!--   
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 </postlude>
 
