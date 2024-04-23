@@ -43,32 +43,39 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>10 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta conversación numérica se anima a los estudiantes a pensar en la multiplicación de números de un solo dígito y múltiplos de 10, y a usar el valor posicional para resolver problemas mentalmente. Las estrategias generadas aquí serán útiles más adelante en la lección cuando los estudiantes multipliquen números mayores que 20.</p>
   </paragraphs>
 
   <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
+  <!-- <paragraphs> -->
+    <!-- <title><custom ref="materials-actividad-titulo"/></title> -->
     <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
-  </paragraphs>
+  <!-- </paragraphs> -->
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Mostrar una expresión.</li>
+      <li><q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron</q></li>
+      <li>1 minuto: tiempo para pensar en silencio</li>
+    </ul>
   </paragraphs>
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Registre las respuestas y estrategias.</li>
+      <li>Mantenga las expresiones y el trabajo visible.</li>
+      <li>Repita con cada expresión.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -80,29 +87,40 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!--   
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>¿Cómo les ayudaron los tres primeros problemas a resolver el último problema?</q>
+        (Dado que sabía que <m>3 \times 20</m> era 60, simplemente agregué <m>3 \times 5</m> a eso al sumar 15. Descompuse <m>3 \times 25</m> en <m>3 \times 10</m>, <m>3 \times 10</m>, y <m>3 \times 5</m> para facilitar la multiplicación. Dado que 25 es la mitad de 50, tomé la mitad de <m>3 \times 50</m> para encontrar <m>3 \times 25</m>, y la mitad de 150 es 75.)
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!--   
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 </postlude>
 

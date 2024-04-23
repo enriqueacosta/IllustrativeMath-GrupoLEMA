@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-prodsUnDigitoPorMayorA20" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Unos productos bonitos</title>
 
@@ -70,34 +70,45 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>15 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad es que los estudiantes continúen multiplicando números enteros de un solo dígito con números mayores que 20. El problema inicial anima a los estudiantes a aplicar el razonamiento de valor posicional (descomponiendo números de dos dígitos en decenas y unidades) y las propiedades de las operaciones para razonar numéricamente sobre los productos. Sin embargo, como uno de los factores es pequeño, los estudiantes pueden usar la suma repetida (como <m>43 + 43</m>) para encontrar productos posteriores. En la síntesis, enfatice estrategias basadas en el valor posicional, conectando las expresiones numéricas con diagramas según sea necesario.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secC-lec16-act2-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li><q>Miren cómo Mai empezó a multiplicar <m>2 \times 37</m>. Después, hablen con su compañero sobre por qué creen que Mai decidió empezar a multiplicar de esta forma</q></li>
+      <li>1 minuto: discusión en pareja</li>
+      <li>Compartir respuestas.</li>
+      <li>Proporcionar a los estudiantes papel cuadriculado y bloques de base diez.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Trabajen individualmente durante unos minutos. Después, compartan sus respuestas con su compañero</q>
+      </li>
+      <li>5 minutos: tiempo de trabajo individual</li>
+      <li>5 minutos: tiempo de trabajo en pareja</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -111,29 +122,45 @@
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Si un estudiante dice que no sabe cómo empezar el problema, considere preguntar:</p>
+    <ul>
+      <li>
+        <q>¿Qué harías si los factores fueran 3 y 10? ¿Qué hay de 3 y 20?</q>
+      </li>
+      <li>
+        <q>¿Cómo podrías usar bloques en base diez o diagramas para ayudarte a encontrar estos productos?</q>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Invite de 1 a 2 estudiantes a que compartan sus respuestas y su razonamiento. Registre su trabajo para que sea visible para todos.</li>
+      <li>Discuta las respuestas que resalten el uso del valor posicional y las propiedades de las operaciones. <m>4 \times 22</m>, por ejemplo, se puede encontrar usando la propiedad asociativa (<m>2 \times (2 \times 22)</m>) o la propiedad distributiva (<m>4 \times 20 + 4 \times 2</m>).</li>
+      <li>Considere usar diagramas o bloques de base diez para reforzar el significado de las expresiones según sea necesario.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!--   
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 </postlude>
 

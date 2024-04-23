@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-juegoCerca100Multiplicacion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Juguemos “Cerca de 100, multiplicación” (opcional)</title>
 
@@ -33,34 +33,48 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>10 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En esta actividad, los estudiantes jugarán un juego para practicar multiplicar con números del 11 al 19 o mayores de 20. Deben usar factores de un solo dígito para crear una expresión de multiplicación que se acerque lo más posible a 100. Hay dos partidas: una con números del 11 al 19 y otra con números mayores de 20.</p>
+    <!-- <p>El propósito de esta actividad es que los estudiantes jueguen un juego en el que puedan aplicar las estrategias que han aprendido para multiplicar con números del 11 al 19 o números mayores de 20. Los estudiantes usan factores de un solo dígito para crear una expresión de multiplicación que tenga un valor lo más cercano posible a 100. El primer juego involucra números del 11 al 19 y el segundo juego involucra números mayores de 20.</p> -->
+      
+    <p>Esta actividad es opcional porque proporciona práctica adicional para multiplicar con factores que son números del 11 al 19 o factores mayores de 20. Dependiendo del tiempo disponible, los estudiantes pueden jugar 1 o 2 rondas.</p>
+      
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secC-lec16-act3-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li>Distribuya un juego de tarjetas precortadas a cada grupo de estudiantes.</li>
+      <li><q>Vamos a jugar un juego llamado <term>Cerca de 100</term>. Leamos las instrucciones y juguemos 1 ronda juntos</q></li>
+      <li>Juegue una ronda contra la clase, mostrando los números de las tarjetas y pensando en voz alta.</li>
+    </ul>  
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Ahora van a jugar una partida de 'Cerca de 100' con su compañero. La partida tendrá 5 rondas</q>
+      </li>
+      <li>5-7 minutos: tiempo de juego en parejas</li>
+      <li>Si queda tiempo, haga que los estudiantes jueguen la segunda partida de Cerca de 100. Informe a los estudiantes que los números son diferentes en la segunda partida.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -72,30 +86,39 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!--   
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>¿Qué estrategias les ayudaron cuando jugaron ‘Cerca de 100’?</q>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Participación: Desarrollar esfuerzo y persistencia. Verifique y proporcione a cada grupo retroalimentación que fomente la colaboración y la comunidad.</p>
+    <p>Apoya la accesibilidad para: Funcionamiento social-emocional</p>
   </paragraphs>
 
 </postlude>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-representar4por23" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title><m>4\times 23</m>, representado</title>
 
@@ -73,9 +73,9 @@
 
 <solution>
   <ol>
-    <li>Ejemplo de respuesta:
+    <li>
+      <p>Ejemplo de respuesta:</p>
       <ol>
-
         <li>
           Los bloques de Clare muestran 4 grupos de 2 decenas y 3 unidades. El diagrama de Andre muestra una cuadrícula o un arreglo con 4 filas de 23 cuadrados.
         </li>
@@ -87,7 +87,8 @@
         </li>
       </ol>
     </li>
-    <li>Ejemplo de respuesta:
+    <li>
+      <p>Ejemplo de respuesta:</p>
       <ol>
         <li>
           Los números del lado largo del rectángulo siempre suman 23. El lado más corto siempre mide 4.
@@ -120,34 +121,66 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>15 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Los estudiantes multiplican 4 por 23 utilizando lo que saben de la multiplicación de un número por un número de 11 al 19. Utilizan la propiedad distributiva y el valor posicional para encontrar el producto, descubriendo que descomponer los factores en decenas y unidades facilita la multiplicación. También refuerzan sus conocimientos sobre las conexiones entre diagramas de área y expresiones de multiplicación.</p>
+    <!-- <p>Anteriormente, los estudiantes multiplicaron dos factores donde uno era un número entero y el otro un número del 11 al 19. El propósito de esta actividad es que los estudiantes comprendan la multiplicación de un número de un solo dígito y un número de dos dígitos mayor que 20. Los estudiantes analizan representaciones utilizadas para encontrar <m>4 \times 23</m> y articulan razones para usar estrategias basadas en la propiedad distributiva y el valor posicional para encontrar productos (MP7). En el camino, ven que descomponer los factores de dos dígitos en decenas y unidades es particularmente útil para la multiplicación. También refuerzan lo que saben sobre las conexiones entre diagramas de área y expresiones de multiplicación.</p> -->
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secC-lec16-act1-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li>
+        <q>Tómense un minuto para entender las formas como Clare y Andre representaron <m>4 \times 23</m></q>
+      </li>
+      <li>1 minuto: tiempo para pensar en silencio</li>
+      <li>De a los estudiantes acceso a papel cuadriculado y bloques de base diez.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Ahora, con su compañero, completen los dos primeros problemas sobre <m>4 \times 23</m></q>
+      </li>
+      <li>
+        8–10 minutos: tiempo de trabajo en pareja
+      </li>
+      <li>
+        <q>Identifique los diagramas que los estudiantes eligen en el problema de Diego y sus explicaciones.</q>
+      </li>
+      <li>
+        <q>Haga una pausa para una discusión. Invite a los estudiantes a compartir sus respuestas.</q>
+      </li>
+      <li>
+        Si los estudiantes no lo mencionan, aclare que todos los diagramas pueden ser utilizados para multiplicar 4 y 23, pero no todos son igual de útiles.
+      </li>
+      <li>
+        Seleccione a un estudiante para explicar por qué el diagrama D podría ser más útil que los otros diagramas.
+      </li>
+      <li>
+        <q>Ahora completen el último problema individualmente</q>
+      </li>
+      <li>
+        2–3 minutos: tiempo de trabajo individual
+      </li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -159,30 +192,43 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!--   
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Si los estudiantes eligen un diagrama en el segundo problema que no les ayuda a encontrar el producto de <m>4\times23</m>, considere preguntar:</p>
+    
+    <ul>
+      <li>
+        <q>Dime cómo escogiste cuál diagrama usar para encontrar el valor de <m>4\times23</m>.</q>
+      </li>
+      <li>
+        <q>¿Hay algún otro diagrama que haga más fácil encontrar el valor de <m>4\times23</m>? ¿De qué manera lo hace más fácil?</q>
+      </li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!--   
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> 
+  -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>MLR8 Soportes para la Discusión. Antes del trabajo en parejas, recuerde a los estudiantes usar palabras como descomponer, decenas y unidades.</p>
   </paragraphs>
 
 </postlude>
