@@ -3,8 +3,8 @@
 
 \definecolor{Green}{RGB}{67,176,42}
 
-\def\unitLength{1in}
-\tikzset{ every path/.append style={ line width=0.7pt
+\def\unitLength{0.75in}
+\tikzset{ every picture/.style={ line width=0.7pt
                              , rounded corners=0.1mm
                              }
         , x=\unitLength
@@ -64,16 +64,16 @@
 }
 
 % Page size
-\def\pageWidth{11}
-\def\pageHeight{8.5}
-\def\pageMarg{0.3}
+\def\pageWidth{11in}
+\def\pageHeight{8.5in}
+\def\pageMarg{0.5in}
 
 % Command to add page and copyright
 \def\preparePage{
   % Page and dashed lines for the cards
-  \path (0,0) rectangle (\pageWidth,\pageHeight);
-  \node[left] at (\pageWidth,\pageMarg/2) {©2023 Grupo LEMA 
-   (www.grupolema.org). Licencia de uso CC-BY 4.0. 
+  \clip (0,0) rectangle (\pageWidth,\pageHeight);
+  \node[left=\pageMarg/2, align=right] at (\pageWidth,\pageMarg/3) {©2023 Grupo LEMA 
+   (www.grupolema.org). Licencia de uso CC-BY 4.0\\ 
     Adaptado IM K–5 Math v.I, ©2021 Illustrative Mathematics® 
     distribuido con una licencia CC BY 4.0};
 }
