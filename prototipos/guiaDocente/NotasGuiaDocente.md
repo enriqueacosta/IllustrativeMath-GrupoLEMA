@@ -21,6 +21,34 @@ Formato dos columnas
 \usepackage[landscape,hmargin=1cm, vmargin=1in]{geometry}
 
 
+Arreglo longtable
+==================
+Es posible que toque redefinir longtable para twocolumn. Así:
+
+```tex
+\makeatletter
+\let\oldlt\longtable
+\let\endoldlt\endlongtable
+\def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
+\def\longtable@i[#1]{\begin{figure}[t]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldlt[#1]
+}
+\def\longtable@ii{\begin{figure}[t]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldlt
+}
+\def\endlongtable{\endoldlt
+\end{minipage}
+\twocolumn
+\end{figure}}
+\makeatother
+```
+cortesía de: https://tex.stackexchange.com/questions/161431/how-to-solve-longtable-is-not-in-1-column-mode-error
+
+
 Formato de notas para el docente
 ================================
 \tcbset{ remarkstyle/.style={blockspacingstyle, breakable, parbox=false, after title={}, boxrule=0mm, leftrule=5pt, bottomrule=2pt, bottomrule at break=0pt, boxsep=0mm, arc=0mm, outer arc=0mm, toptitle=2mm, bottomtitle=1mm, colback=orange!20, colframe=orange!80,} }

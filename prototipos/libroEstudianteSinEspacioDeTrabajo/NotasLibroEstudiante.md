@@ -15,7 +15,14 @@ O, para 2-up:
 
 Arreglos de imagenes
 ====================
-Las imagenes están parareciendo muy grades (100% ancho de página). Hay que encontrarlas y cambiarles el ancho.
+Por defecto, las imagenes están con \includegraphics[width=\linewidth]
+que las hace agrandarse (mal).
+
+Este código arregla esto:
+```
+\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics
+```
+seguido de cambiar todos los `[width=\linewidth]` a `[max width=\linewidth]`.
 
 
 Para kinder con fuente más grande
