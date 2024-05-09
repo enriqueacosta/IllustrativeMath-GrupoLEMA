@@ -410,7 +410,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 
 % Márgenes
 \usepackage{geometry}
-\geometry{verbose,top=3.5cm,bottom=5cm,lmargin=3.5cm,rmargin=3.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
+\geometry{verbose,top=3.5cm,bottom=5cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
 
 
 % Headings y footers
@@ -440,12 +440,19 @@ Soluciones en español adaptadas de Open Up Resources © 2022, openupresources.o
 % \subsectionfont{\color{astral}}
 % \sectionfont{\color{astral}}
 
+
+
 %% Title page information for article
 \title{Matemáticas Ilustrativas\\
 {\large Grado 3 - Unidad 4}\\[1.2ex]
 Actividad de cierre\\
 Lección 10}
 \date{}
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[none]{hyphenat} %para que no parta palabras
+
 \begin{document}
 %% bottom alignment is explicit, since it normally depends on oneside, twoside
 \raggedbottom
