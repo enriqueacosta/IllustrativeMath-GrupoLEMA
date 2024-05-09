@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- 
+  Para generar el archivo tex poner este archivo en donde el path al -cool.ptx tenga sentido
+  y correr
+  xsltproc \-\-xinclude <path to>/pretext-latex.xsl <path to>/gra3-uni4-secB-lec10-cool-standalone.ptx > gra3-uni4-secB-lec10-cool-standalone.tex
+-->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your book         -->
+  <article xml:id="gra3-uni4-secB-lec10-cool">
+    <!-- The article needs a title and can have a subtitle  -->
+    <title>Matemáticas Ilustrativas</title>
+    <subtitle>Grado 3 - Unidad 4</subtitle>
+      
+    <xi:include href="../gra3-uni4/gra3-uni4-secB-lec10-cool.ptx"/>
+
+  </article>
+</pretext>
