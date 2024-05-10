@@ -1,6 +1,6 @@
 %********************************************%
 %*       Generated from PreTeXt source      *%
-%*       on 2024-05-08T21:01:34-05:00       *%
+%*       on 2024-05-10T09:54:03-05:00       *%
 %*   A recent stable commit (2022-07-01):   *%
 %* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
 %*                                          *%
@@ -216,6 +216,18 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \newcommand{\authorsptx}{\relax}%
 \newcommand{\epigraphptx}{\relax}%
 %% Create environments for possible occurences of each division
+%% Environment for a PTX "section" at the level of a LaTeX "section"
+\NewDocumentEnvironment{sectionptx}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\section[{#4}]{#2}%
+\label{#7}%
+}{}%
 %%
 %% Styles for six traditional LaTeX divisions
 \titleformat{\part}[display]
@@ -323,7 +335,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% The latex default is 3.  If a larger number is present here, then
 %% removing this command may make some cross-references ambiguous
 %% The precursor variable $numbering-maxlevel is checked for consistency in the common XSL file
-\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{3}
 %%
 %% AMS "proof" environment is no longer used, but we leave previously
 %% implemented \qedhere in place, should the LaTeX be recycled
@@ -332,12 +344,12 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% A faux tcolorbox whose only purpose is to provide common numbering
 %% facilities for most blocks (possibly not projects, 2D displays)
 %% Controlled by  numbering.theorems.level  processing parameter
-\newtcolorbox[auto counter]{block}{}
+\newtcolorbox[auto counter, number within=section]{block}{}
 %%
 %% This document is set to number PROJECT-LIKE on a separate numbering scheme
 %% So, a faux tcolorbox whose only purpose is to provide this numbering
 %% Controlled by  numbering.projects.level  processing parameter
-\newtcolorbox[auto counter]{project-distinct}{}
+\newtcolorbox[auto counter, number within=section]{project-distinct}{}
 %% A faux tcolorbox whose only purpose is to provide common numbering
 %% facilities for 2D displays which are subnumbered as part of a "sidebyside"
 \makeatletter
@@ -412,7 +424,14 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \hypertarget{gra3-uni4-secB-lec10-cool}{}
 \maketitle
 \thispagestyle{empty}
-\begin{project}{Actividad de cierre}{Marca o colorea partes para encontrar el área.}{gra3-uni4-secB-lec10-cool-3}%
+%
+%
+\typeout{************************************************}
+\typeout{Sección 1 Actividad de cierre - Lección 10}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Sección}{Actividad de cierre - Lección 10}{}{Actividad de cierre - Lección 10}{}{}{gra3-uni4-secB-lec10-cool-3}
+\begin{project}{Actividad de cierre}{Marca o colorea partes para encontrar el área.}{gra3-uni4-secB-lec10-cool-3-2}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
 El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
@@ -427,7 +446,7 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 \end{sbspanel}%
 \end{sidebyside}%
 \par\smallskip%
-\noindent\textbf{\blocktitlefont Solución}.\hypertarget{gra3-uni4-secB-lec10-cool-3-3}{}\quad{}%
+\noindent\textbf{\blocktitlefont Solución}.\hypertarget{gra3-uni4-secB-lec10-cool-3-2-3}{}\quad{}%
 \begin{enumerate}
 \item{}\begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
 \begin{sbspanel}{0.2}%
@@ -445,10 +464,11 @@ Ejemplos de respuestas:%
 \end{enumerate}
 \end{project}%
 \par
-\begin{paragraphs}{[MISSING CUSTOM CONTENT HERE].}{gra3-uni4-secB-lec10-cool-3-4-1}%
+\begin{paragraphs}{[MISSING CUSTOM CONTENT HERE].}{gra3-uni4-secB-lec10-cool-3-2-4-1}%
 Los estudiantes encuentran el número total de cuadrados en los rectángulos, pero no marcan ni sombrean el rectángulo para representar una de las expresiones dadas.%
 \end{paragraphs}%
-\begin{paragraphs}{[MISSING CUSTOM CONTENT HERE].}{gra3-uni4-secB-lec10-cool-3-4-2}%
+\begin{paragraphs}{[MISSING CUSTOM CONTENT HERE].}{gra3-uni4-secB-lec10-cool-3-2-4-2}%
 Antes de la actividad de calentamiento, reparta esta actividad de cierre y pida a los estudiantes que discutan cómo podrían representar cada una de las expresiones dadas marcando o sombreando partes del área rectangular.%
 \end{paragraphs}%
+\end{sectionptx}
 \end{document}

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ============================================ 
+  El cool-down es un <project> 
+  (distinto a las otras actividades y a los Practice Problems)
+=================================================  -->
+<project xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Marca o colorea partes para encontrar el área </title>
+
+<statement>
+  <sidebyside widths="60% 40%" valign="top">
+    <stack>      
+      <p>El área de este rectángulo se puede encontrar hallando <m>6 \times 7</m>.</p>
+      <ol>
+        <li>Marca o colorea el rectángulo para mostrar que podemos escribir <m>2 \times (3 \times 7)</m> o <m>(6 \times 5) + (6 \times 2)</m> para encontrar su área.</li>
+        <li>¿Cuál es el valor de <m>6 \times 7</m>? Explica o muestra tu razonamiento.</li>
+      </ol>
+    </stack>
+    <image source="svg-source/tikz-file-153042">
+      <shortdescription>Diagrama. Rectángulo dividido en 6 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 6.</shortdescription>
+    </image>
+  </sidebyside>
+</statement>
+
+<solution>
+  <ol>
+    <li>
+      <sidebyside widths="20% 35% 35%">
+        <p>Ejemplos de respuestas:</p>
+        <image source="svg-source/tikz-file-153041">
+            <shortdescription>Diagrama sombreado.</shortdescription>
+        </image>
+        <image source="svg-source/tikz-file-176321">
+            <shortdescription>Diagrama sombreado.</shortdescription>
+        </image>
+      </sidebyside>
+    </li>
+    <li>
+      42. Sé que <m>6 \times 5</m> es 30 y <m>6 \times 2</m> es 12, y <m>30 + 12 = 42</m>.
+    </li>
+  </ol>
+</solution>
+
+
+<postlude component="profesor"> <!-- Notas para el profesor -->
+
+  <!-- Posibles errores -->
+  <paragraphs>
+    <title><custom ref="errores-cool-titulo"/></title>
+    <p>Los estudiantes encuentran el número total de cuadrados en los rectángulos, pero no marcan ni sombrean el rectángulo para representar una de las expresiones dadas.</p>
+  </paragraphs>
+
+
+  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
+  <paragraphs>
+    <title><custom ref="apoyo-cool-titulo"/></title>
+    <p>Antes de la actividad de calentamiento, reparta esta actividad de cierre y pida a los estudiantes que discutan cómo podrían representar cada una de las expresiones dadas marcando o sombreando partes del área rectangular.</p>
+  </paragraphs>
+
+</postlude>
+
+</project>

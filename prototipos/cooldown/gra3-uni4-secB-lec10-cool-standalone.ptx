@@ -9,7 +9,8 @@
 <pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="../meta/meta_docinfo.ptx" />
+  <!-- <xi:include href="../meta/meta_docinfo.ptx" /> -->
+  <xi:include href="./meta_docinfo.ptx" />
 
   <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
   <!-- to some short (non-spaced) description of your book         -->
@@ -17,8 +18,14 @@
     <!-- The article needs a title and can have a subtitle  -->
     <title>Matemáticas Ilustrativas</title>
     <subtitle>Grado 3 - Unidad 4</subtitle>
+    
+    <section>
+      <title>Actividad de cierre - Lección 10</title>
       
-    <xi:include href="../gra3-uni4/gra3-uni4-secB-lec10-cool.ptx"/>
+      <!-- El archivo con el cool-down (copia en esta carpeta de prototipo) -->
+      <!-- <xi:include href="./gra3-uni4/gra3-uni4-secB-lec10-cool.ptx"/> -->
+      <xi:include href="./gra3-uni4-secB-lec10-cool.ptx"/>
 
+    </section>
   </article>
 </pretext>
