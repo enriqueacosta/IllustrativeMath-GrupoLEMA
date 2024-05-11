@@ -1,0 +1,21 @@
+#!/bin/bash
+# This script loops over all the -cool.ptx files in a folder
+# and creates the pdfs in the output folder
+
+# Need to create this folder
+outFolder=../../output/cools
+
+# Loop over all the -cool.ptx files in the folder
+for f in *-cool.ptx
+do
+  # Remove the .ptx extension from the file name
+  base=${f%.ptx}
+
+  # message
+  echo "found $base.ptx"
+
+  # generate the text file
+  # pretext-latex-cool.xsl needs to be placed in the pretext xsl folder 
+  # (because it depends on the other pretext sxl files)
+  xsltproc ~/.ptx/xsl/pretext-latex-cool.xsl $base.ptx > $outFolder/$base.tex
+done
