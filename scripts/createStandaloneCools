@@ -14,8 +14,8 @@ do
   # message
   echo "found $base.ptx"
 
-  # generate the text file
-  # pretext-latex-cool.xsl needs to be placed in the pretext xsl folder 
-  # (because it depends on the other pretext sxl files)
-  xsltproc ~/.ptx/xsl/pretext-latex-cool.xsl $base.ptx > $outFolder/$base.tex
+  # generate the .tex file for the -cool.ptx file
+  # custom xsl file custom-xsl/pretext-latex-cool.xsl needs to be placed in 
+  # the pretext xsl folder (it depends on the other pretext xsl files)
+  xsltproc ~/.ptx/xsl/pretext-latex-cool.xsl $base.ptx > $outFolder/$base-standalone.tex
 done
