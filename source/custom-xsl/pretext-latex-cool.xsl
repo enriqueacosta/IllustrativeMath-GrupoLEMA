@@ -66,7 +66,7 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\begin{document}&#xa;</xsl:text>
 
     <!-- alternate loading of <title> element -->
-    <xsl:text>\section{</xsl:text>
+    <xsl:text>\section*{</xsl:text>
         <xsl:value-of select="title"/>
     <xsl:text>}&#xa;</xsl:text>
 
@@ -96,6 +96,8 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\usepackage{amsmath}&#xa;</xsl:text>
     <xsl:text>\usepackage{amscd}&#xa;</xsl:text>
     <xsl:text>\usepackage{amssymb}&#xa;</xsl:text>
+    <xsl:text>\tcbset{ imagestyle/.style={bwminimalstyle} }&#xa;</xsl:text>
+    <xsl:text>\NewTColorBox{tcbimage}{mmm}{imagestyle,left skip=#1\linewidth,width=#2\linewidth}&#xa;</xsl:text>
     <xsl:text>\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}}&#xa;</xsl:text>
     <xsl:text>\usepackage{multicol}&#xa;</xsl:text>
     <xsl:text>\usepackage{enumitem}&#xa;</xsl:text>
@@ -116,6 +118,7 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
         <xsl:text>    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth]}&#xa;</xsl:text>
         <xsl:text>  {\end{tcbraster}}&#xa;</xsl:text>
     <xsl:text>\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}&#xa;</xsl:text>
+    <xsl:text>\newcommand{\alert}[1]{\textbf{\textit{#1}}}&#xa;</xsl:text>
     <xsl:text>\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics&#xa;</xsl:text>
 </xsl:template>
 
