@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Directory containing .tex files
+DIRECTORY=~/Documents/IllustrativeMath-GrupoLEMA/output/cools
+ASSETSDIRECTORY=~/Documents/IllustrativeMath-GrupoLEMA/source/assets
+
+# Search for 'includegraphics' in .tex files and extract the file path
+find $DIRECTORY -name "*.tex" -exec grep -H "includegraphics\[" {} \; | sed -n -e 's/.*\\includegraphics.*{\(.*\)}.*/\1/p' | \
+xargs -I {} cp "$ASSETSDIRECTORY/{}" "$DIRECTORY/{}"
+
+
+#!/bin/bash
+# This script loops over all the -cool.ptx files in a folder
+# and creates the pdfs in the output folder
+
+# # Need to create this folder
+# outFolder=../../output/cools
+
+# # Loop over all the -cool.ptx files in the folder
+# for f in *-cool.ptx
+# do
+#   # Remove the .ptx extension from the file name
+#   base=${f%.ptx}
+
+#   # message
+#   echo "found $base.ptx"
+
+#   # generate the .tex file for the -cool.ptx file
+#   # custom xsl file custom-xsl/pretext-latex-cool.xsl needs to be placed in 
+#   # the pretext xsl folder (it depends on the other pretext xsl files)
+#   xsltproc ~/.ptx/xsl/pretext-latex-cool.xsl $base.ptx > $outFolder/$base-standalone.tex
+# done
