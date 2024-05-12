@@ -5,16 +5,16 @@
 #  *  compiles the files into pdf using pdflatex
 
 
-# folders
-outFolder=../../output/cools
+# folders (relative to folder of a unit)
+outFolder=../assets/cools-pdf
 ASSETSDIRECTORY=../../source/assets
 
 # create the necessary output folders
-mkdir $outFolder
-mkdir $outFolder/jpg-source
-mkdir $outFolder/png-source
-mkdir $outFolder/svg-source
-mkdir $outFolder/tikz-source
+# mkdir $outFolder
+# mkdir $outFolder/jpg-source
+# mkdir $outFolder/png-source
+# mkdir $outFolder/svg-source
+# mkdir $outFolder/tikz-source
 
 # Loop over all the -cool.ptx files in the folder
 for f in *-cool.ptx
@@ -29,16 +29,20 @@ do
   # custom xsl file custom-xsl/pretext-latex-cool.xsl needs to be placed in 
   # the pretext xsl folder (it depends on the other pretext xsl files)
   xsltproc ~/.ptx/xsl/pretext-latex-cool.xsl $base.ptx > $outFolder/$base-standalone.tex
+  # run pdflatex on the file and place in the outfolder
+  # two passes due to the fancy image header
+  pdflatex -output-directory="$outFolder" $outFolder/$base-standalone.tex
+  pdflatex -output-directory="$outFolder" $outFolder/$base-standalone.tex
 done
 
 # Search for 'includegraphics' in .tex files, 
 # extract the file path, and 
 # move the images from the assets folder to the output folder
-find $outFolder -name "*.tex" -exec grep -H "includegraphics\[" {} \; | sed -n -e 's/.*\\includegraphics.*{\(.*\)}.*/\1/p' | \
-xargs -I {} cp "$ASSETSDIRECTORY/{}" "$outFolder/{}"
+# find $outFolder -name "*.tex" -exec grep -H "includegraphics\[" {} \; | sed -n -e 's/.*\\includegraphics.*{\(.*\)}.*/\1/p' | \
+# xargs -I {} cp "$ASSETSDIRECTORY/{}" "$outFolder/{}"
 
 
 # Build the tex files at the outFolder
-for texfile in "$outFolder"/*.tex; do
-  pdflatex -output-directory="$outFolder" "$texfile"
-done
+# for texfile in "$outFolder"/*.tex; do
+  # pdflatex -output-directory="$outFolder" "$texfile"
+# done

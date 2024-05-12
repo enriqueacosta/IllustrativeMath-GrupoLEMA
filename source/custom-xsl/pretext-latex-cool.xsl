@@ -87,7 +87,7 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\newtcolorbox[auto counter]{project-distinct}{}&#xa;</xsl:text>
     <xsl:text>\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,&#xa;</xsl:text>
     <xsl:text>colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }&#xa;</xsl:text>
-    <xsl:text>\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }&#xa;</xsl:text>
+    <xsl:text>\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper}, coltitle=black }&#xa;</xsl:text>
     <xsl:text>\tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }&#xa;</xsl:text>
     <xsl:text>\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }&#xa;</xsl:text>
     <xsl:text>\tcbuselibrary{xparse}&#xa;</xsl:text>
@@ -120,6 +120,77 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}&#xa;</xsl:text>
     <xsl:text>\newcommand{\alert}[1]{\textbf{\textit{#1}}}&#xa;</xsl:text>
     <xsl:text>\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics&#xa;</xsl:text>
+    <xsl:text>%% Indentación párrafos &#xa;</xsl:text>
+    <xsl:text>\setlength{\parskip}{\smallskipamount}&#xa;</xsl:text>
+    <xsl:text>\setlength{\parindent}{0pt}&#xa;</xsl:text>
+    <xsl:text>%% Márgenes &#xa;</xsl:text>
+    <xsl:text>\usepackage{geometry}&#xa;</xsl:text>
+    <xsl:text>\geometry{verbose,top=2.5cm,bottom=3cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}&#xa;</xsl:text>
+    <xsl:text>%% Headings y footers&#xa;</xsl:text>
+    <xsl:text>\usepackage{fancyhdr}&#xa;</xsl:text>
+    <xsl:text>\pagestyle{fancy}&#xa;</xsl:text>
+    <xsl:text>\fancyfoot[C]{} %Remove default Latex numbering&#xa;</xsl:text>
+    <xsl:text>\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{../assets/png-source/barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header&#xa;</xsl:text>
+    <xsl:text>\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}&#xa;</xsl:text>
+    <xsl:text>\fancyhead[R]{}&#xa;</xsl:text>
+    <xsl:text>\fancyfoot[R]{}&#xa;</xsl:text>
+    <xsl:text>\fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)&#xa;</xsl:text>
+    <xsl:text>\renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer&#xa;</xsl:text>
+    <xsl:text>\renewcommand{\headrulewidth}{0pt}  % Quitar linea del header&#xa;</xsl:text>
+    <xsl:text>%% Colores y estilo de los headings&#xa;</xsl:text>
+    <xsl:text>\usepackage{graphicx}&#xa;</xsl:text>
+    <xsl:text>\usepackage{xcolor}&#xa;</xsl:text>
+    <xsl:text>\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}&#xa;</xsl:text>
+    <xsl:text>%% Fuente sans-serif&#xa;</xsl:text>
+    <xsl:text>\renewcommand{\familydefault}{\sfdefault}&#xa;</xsl:text>
+    <xsl:text>%% quitar hyphenation&#xa;</xsl:text>
+    <xsl:text>\usepackage[none]{hyphenat}&#xa;</xsl:text>
+</xsl:template>
+
+
+<!-- override image generation -->
+<!-- REMOVE once using a custom pretext-latex.xsl (which will implement the same thing) -->
+<!-- adds options [max width=\linewidth, center] to \includegraphics to display images at default size if possible -->
+<xsl:template match="image[@source|@pi:generated]" mode="image-inclusion">
+    <xsl:variable name="extension">
+        <xsl:call-template name="file-extension">
+            <xsl:with-param name="filename">
+                <xsl:choose>
+                    <xsl:when test="@pi:generated">
+                        <xsl:value-of select="@pi:generated" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="@source" />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:with-param>
+        </xsl:call-template>
+    </xsl:variable>
+    <xsl:text>\includegraphics[max width=\linewidth</xsl:text>
+    <xsl:text>,center</xsl:text>
+    <xsl:if test="@rotate">
+      <xsl:text>,angle=</xsl:text>
+      <xsl:value-of select="@rotate"/>
+      <xsl:text>,origin=c</xsl:text>
+    </xsl:if>
+    <xsl:text>]{</xsl:text>
+    <xsl:choose>
+        <xsl:when test="@pi:generated">
+            <xsl:text>../</xsl:text>
+            <xsl:value-of select="$generated-directory"/>
+            <xsl:value-of select="@pi:generated"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <!-- empty when not using managed directories -->
+            <xsl:text>../</xsl:text>
+            <xsl:value-of select="$external-directory"/>
+            <xsl:value-of select="@source"/>
+        </xsl:otherwise>
+    </xsl:choose>
+    <xsl:if test="$extension = ''">
+        <xsl:text>.pdf</xsl:text>
+    </xsl:if>
+    <xsl:text>}&#xa;</xsl:text>
 </xsl:template>
 
 </xsl:stylesheet>

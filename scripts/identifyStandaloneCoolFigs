@@ -5,9 +5,7 @@ DIRECTORY=~/Documents/IllustrativeMath-GrupoLEMA/output/cools
 ASSETSDIRECTORY=~/Documents/IllustrativeMath-GrupoLEMA/source/assets
 
 # Search for 'includegraphics' in .tex files and extract the file path
-find $DIRECTORY -name "*.tex" -exec grep -H "includegraphics\[" {} \; | sed -n -e 's/.*\\includegraphics.*{\(.*\)}.*/\1/p' | \
-xargs -I {} cp "$ASSETSDIRECTORY/{}" "$DIRECTORY/{}"
-
+find $DIRECTORY -name "*.tex" -exec grep -H "includegraphics\[" {} \; | sed -n -e 's/.*\\includegraphics.*{\(.*\)}.*/\1/p'
 
 #!/bin/bash
 # This script loops over all the -cool.ptx files in a folder
