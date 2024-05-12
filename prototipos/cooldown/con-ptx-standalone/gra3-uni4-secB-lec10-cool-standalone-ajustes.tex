@@ -45,7 +45,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Space afterwards will be controlled by environment,
 %% independent of constructions of the tcb title
 %% Places \blocktitlefont onto many block titles
-\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper, coltitle=Blue} }
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper, coltitle=Teal} }
 %% Spacing prior to each exercise, anywhere
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 %% Spacing prior to each block
@@ -410,7 +410,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 
 % Márgenes
 \usepackage{geometry}
-\geometry{verbose,top=3.5cm,bottom=5cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
+\geometry{verbose,top=0.5cm,bottom=3cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
 
 
 % Headings y footers
@@ -418,14 +418,14 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \pagestyle{fancy}
 
 \fancyfoot[C]{} %Remove default Latex numbering
-\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-3.1cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{GrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
-\fancyfoot[L]{{\small Copyright Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.\\
-{ \scriptsize Detalles de licencia en https://creativecommons.org/licenses/by/4.0/deed.es\\
-Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en https://creativecommons.org/licenses/by/4.0/.
-Soluciones en español adaptadas de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license.}
-}}
+\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{GrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
+\fancyfoot[L]{%
+{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\
+{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}
+}
 \fancyhead[R]{}
-\fancyfoot[R]{\thepage}
+% \fancyfoot[R]{\thepage}
+\fancyfoot[R]{}
 
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 
