@@ -44,15 +44,16 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \setlength{\parindent}{0pt}
 %% Márgenes 
 \usepackage{geometry}
-\geometry{verbose,top=2.5cm,bottom=3cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
+\geometry{verbose,top=2.5cm,bottom=1.7cm,lmargin=3.5cm,rmargin=3.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}
 %% Headings y footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyfoot[C]{} %Remove default Latex numbering
-\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{../assets/png-source/barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
-\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
+\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
+\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
 \fancyhead[R]{}
 \fancyfoot[R]{}
+\fancyfootoffset{2cm}
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 \renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
 \renewcommand{\headrulewidth}{0pt}  % Quitar linea del header

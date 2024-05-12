@@ -125,15 +125,16 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\setlength{\parindent}{0pt}&#xa;</xsl:text>
     <xsl:text>%% Márgenes &#xa;</xsl:text>
     <xsl:text>\usepackage{geometry}&#xa;</xsl:text>
-    <xsl:text>\geometry{verbose,top=2.5cm,bottom=3cm,lmargin=2.5cm,rmargin=2.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}&#xa;</xsl:text>
+    <xsl:text>\geometry{verbose,top=2.5cm,bottom=1.7cm,lmargin=3.5cm,rmargin=3.5cm,headheight=3cm,headsep=0.3cm,footskip=0cm}&#xa;</xsl:text>
     <xsl:text>%% Headings y footers&#xa;</xsl:text>
     <xsl:text>\usepackage{fancyhdr}&#xa;</xsl:text>
     <xsl:text>\pagestyle{fancy}&#xa;</xsl:text>
     <xsl:text>\fancyfoot[C]{} %Remove default Latex numbering&#xa;</xsl:text>
-    <xsl:text>\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{../assets/png-source/barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header&#xa;</xsl:text>
-    <xsl:text>\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}&#xa;</xsl:text>
+    <xsl:text>\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header&#xa;</xsl:text>
+    <xsl:text>\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}&#xa;</xsl:text>
     <xsl:text>\fancyhead[R]{}&#xa;</xsl:text>
     <xsl:text>\fancyfoot[R]{}&#xa;</xsl:text>
+    <xsl:text>\fancyfootoffset{2cm}&#xa;</xsl:text>
     <xsl:text>\fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)&#xa;</xsl:text>
     <xsl:text>\renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer&#xa;</xsl:text>
     <xsl:text>\renewcommand{\headrulewidth}{0pt}  % Quitar linea del header&#xa;</xsl:text>
