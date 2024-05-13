@@ -1,3 +1,5 @@
+%% This file was created automatically using pretext-latex-cool.xsl and xsltproc
+%% Usage: xsltproc [path to pretext-latex-cool.xsl] [path to -cool.ptx file] > output.tex
 \documentclass[,]{article}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
@@ -50,7 +52,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \pagestyle{fancy}
 \fancyfoot[C]{} %Remove default Latex numbering
 \fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
-\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org. Publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
+\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
 \fancyhead[R]{}
 \fancyfoot[R]{}
 \fancyfootoffset{2cm}
@@ -65,10 +67,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\familydefault}{\sfdefault}
 %% quitar hyphenation
 \usepackage[none]{hyphenat}
-% Formato do título
-\usepackage{titlesec}
-\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
-
 %% Title page information for article
 \title{Multiplica y explica.}
 \date{}
