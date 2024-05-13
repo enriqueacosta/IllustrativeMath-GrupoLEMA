@@ -5,7 +5,8 @@ Copyright 2024 Enrique Acosta
 
 xsl stylesheet to process cool-down activities into standalone text files
 
-*  Assumes cool-down is in a separate .ptx file only containing a <project> 
+*  Assumes cool-down is in a separate .ptx file only and that the cool-down is a <project> tag
+*  Assumes the .tex output is in the assets/cools-pdf folder, so that the relative path to the image files is ../svg-source, ../png-source, ../tikz-source, ../jpg-source
 *  Uses pretext-latex.xsl to process the statement into latex
 *  latex-preamble-cool is built out of what pretext-latex produces, but tries 
    to be minimal. Simplification is possible (as long as the <statement> latex 
@@ -51,6 +52,8 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
 <xsl:template match="project">
     
     <!-- document class and options -->
+    <xsl:text>%% This file was created automatically using pretext-latex-cool.xsl and xsltproc&#xa;</xsl:text>
+    <xsl:text>%% Usage: xsltproc [path to pretext-latex-cool.xsl] [path to -cool.ptx file] > output.tex&#xa;</xsl:text>
     <xsl:text>\documentclass[</xsl:text>
     <!-- <xsl:call-template name="sidedness"/> -->
     <xsl:text>,</xsl:text>
@@ -149,9 +152,9 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
 </xsl:template>
 
 
-<!-- override image generation -->
-<!-- REMOVE once using a custom pretext-latex.xsl (which will implement the same thing) -->
-<!-- adds options [max width=\linewidth, center] to \includegraphics to display images at default size if possible -->
+<!-- override image inclusion code -->
+<!-- override1: adds options [max width=\linewidth, center] to \includegraphics to display images at default size if possible -->
+<!-- override2: adds [../] to the beginning of all the image paths. See assumptions at the beginning of this file -->
 <xsl:template match="image[@source|@pi:generated]" mode="image-inclusion">
     <xsl:variable name="extension">
         <xsl:call-template name="file-extension">
