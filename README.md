@@ -94,7 +94,7 @@ Cuando no se incluye la extensión, Pretext se encarga automáticamente de agreg
 
 En el caso de las imágenes que son originalmente `svg`, la conversión a `pdf` es mejor hacerla con `rsvg-convert` usando el comando
 ```bash
-rsvg-convert --format=pdf --zoom=1tikz-file-147472.svg > tikz-file-147472.pdf
+rsvg-convert --format=pdf --zoom=1 tikz-file-147472.svg > tikz-file-147472.pdf
 ```
 (el `--zoom=1` es para tener la opción de cambiar el tamaño, pero normalmente debe ser 1)
 
