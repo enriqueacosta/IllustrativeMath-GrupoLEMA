@@ -30,9 +30,9 @@
   </sidebyside>
 </statement>
 
-<solution>
+<!-- <solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution> -->
 
 
 <!-- ============================================================== 
@@ -43,7 +43,7 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
@@ -59,22 +59,41 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec19-act1-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2</li>
+      <li>Entrega a cada grupo bloques en base diez.</li>
+      <li><q>Usen bloques en base diez para representar <m>39 \div 3</m>.</q></li>
+      <li>1–2 minutos: tiempo de trabajo independiente</li>
+      <li>
+        <p>Seleccione a un estudiante que dividió los bloques en 3 grupos de 13 para compartir su representación final, por ejemplo:</p>
+        <image source="svg-source/tikz-file-149340">
+          <shortdescription>Bloques en 3 grupos de 13</shortdescription>
+        </image>
+      </li>
+      <li><q>¿Por qué hay 3 grupos?</q></li>
+      <li><q>¿Cómo se pudieron haber dividido los bloques para que terminaran de esta forma?</q> (Las decenas se colocaron en 3 grupos y luego las unidades se colocaron una por una en 3 grupos hasta que no quedó ninguna.)</li>
+      <li>Destaque que los bloques podrían haber sido divididos por las decenas y luego por las unidades.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li><q>Trabajen con su compañero en el primer problema</q></li>
+      <li>5 minutos: tiempo de trabajo en pareja</li>
+      <li>Haga una pausa para tener una discusión.</li>
+      <li><q>¿En qué fue diferente usar los bloques para encontrar <m>45 \div 3</m> a usarlos para encontrar <m>55 \div 5</m>?</q> (Para <m>45 \div 3</m>, fue necesario descomponer 1 decena para terminar de colocar 45 en 3 grupos iguales. Eso no fue necesario para <m>55 \div 5</m> porque ya había la cantidad correcta de decenas y unidades para hacer los 5 grupos.)</li>
+      <li><q>Ahora, individualmente, encuentren el valor de los cocientes del segundo problema.</q></li>
+      <li>6–8 minutos: tiempo de trabajo independiente</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -86,16 +105,20 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Invite a los estudiantes a compartir sus respuestas y razonamientos para el último conjunto de cocientes.</li>
+      <li>Pregunte a los estudiantes que utilizaron bloques de base diez o dibujaron diagramas: <q>¿Fue necesario descomponer alguna decena en unidades para dividir?</q> (No fue necesario para <m>63 \div 3</m> porque ya había la cantidad correcta de decenas y unidades para colocar en 3 grupos. No fue necesario para <m>100 \div 5</m> porque comencé con 10 decenas y ya había la cantidad correcta de decenas para colocar en 5 grupos.)</li>
+      <li><q>¿Por qué fue necesario o útil descomponer las decenas de 84?</q> (Después de colocar 7 decenas en 7 grupos, todavía queda 1 decena y 4 unidades. La 1 decena no se pudo dividir en 7 grupos.)</li>
+    </ul>
   </paragraphs>
 
 

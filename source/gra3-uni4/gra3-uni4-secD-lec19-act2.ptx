@@ -2,15 +2,40 @@
 
 <activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Diferentes formas de mostrar la división</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Jada y Han usaron bloques en base diez para representar <m>60 \div 5</m>.</p>
+  <p>Este es el trabajo de Jada:</p>
+  <image source="svg-source/tikz-file-152963">
+    <shortdescription>Trabajo de Jada</shortdescription>
+  </image>
+  <p>Este es el trabajo de Han:</p>
+  <image source="svg-source/tikz-file-152964">
+    <shortdescription>Trabajo de Han</shortdescription>
+  </image>
+  <ol>
+    <li>
+      <p>Dale sentido al trabajo de Jada y de Han.</p>
+      <ol>
+        <li>¿Cómo se diferencia lo que hicieron?</li>
+        <li>¿En qué parte del trabajo de cada uno vemos el valor de <m>60 \div 5</m>?</li>
+      </ol>
+    </li>
+    <li>
+      <p>¿Cómo usarías bloques en base diez para poder representar estas expresiones y encontrar su valor? Prepárate para explicar tu razonamiento.</p>
+      <ol>
+        <li><m>64 \div 4:</m> ¿Harías 4 grupos o grupos de 4?</li>
+        <li><m>72 \div 6:</m> ¿Harías 6 grupos o grupos de 6?</li>
+        <li><m>75 \div 15:</m> ¿Harías 15 grupos o grupos de 15?</li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
-<solution>
+<!-- <solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution> -->
 
 
 <!-- ============================================================== 
@@ -21,35 +46,49 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>15 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad es mostrar que los dos significados de la división siguen aplicándose al dividir números más grandes y que, en algunos casos, una interpretación puede ser más útil que la otra.</p>
+
+    <p>Los estudiantes primero analizan dos formas de usar bloques en base diez para representar <m>60 \div 5</m> y ven que el divisor, 5, puede interpretarse como el número de grupos o el tamaño de un grupo. Luego consideran cómo podrían interpretar y representar el divisor en otros cocientes. El razonamiento aquí prepara a los estudiantes para razonar de manera más estratégica a medida que dividen números más grandes.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec19-act2-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2-4.</li>
+      <li>Entrega bloques en base diez a cada grupo.</li>
+      <li>Pide a los estudiantes que mantengan sus materiales cerrados.</li>
+      <li><q>Usen bloques en base diez para encontrar el valor de <m>60 \div 5</m></q></li>
+      <li>1-2 minutos: tiempo de trabajo independiente.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Ahora observen el trabajo de Jada y de Han en la actividad. <q>¿Quién de ellos representó la división de la misma forma en que ustedes lo hicieron?</q></li>
+      <li>Con su compañero, denle sentido al trabajo de Jada y de Han, y completen el primer problema.</li>
+      <li>Pausa para una breve discusión.</li>
+      <li><q>¿En qué son diferentes las representaciones de Jada y de Han? ¿Cómo interpretó cada uno <m>60 \div 5</m>?</q> (Jada vio el 5 como el número de grupos. Han vio el 5 como el número en cada grupo.)</li>
+      <li>Haga una encuesta en la clase sobre cómo interpretaron <m>60 \div 5</m> cuando lo representaron durante la introducción.</li>
+      <li>Ahora trabajen individualmente en el segundo grupo de problemas.</li>
+      <li>5 minutos: tiempo de trabajo independiente.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -61,31 +100,34 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Invite a los estudiantes a compartir sus respuestas y razonamientos para el último conjunto de problemas.</li>
+      <li><q>¿Cómo decidieron si el divisor, o sea el número entre el cual estamos dividiendo, es el número de grupos o la cantidad en cada grupo?</q> (Depende del número. En los dos primeros problemas, el divisor era 4 y 6, por lo que era más fácil pensar en 4 grupos y 6 grupos. En el último problema, el divisor era 15. Era más fácil pensar en cuántos grupos de 15 hay en 75 que en hacer 15 grupos de 75.)</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 </postlude>
 
