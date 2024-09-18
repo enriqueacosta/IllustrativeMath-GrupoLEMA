@@ -3,6 +3,9 @@
 #  *  creates the tex files in the specified output folder $outFolder using the custom pretext-latex-cool.xsl
 #  *  copies all the images that are used in the .tex files so that they compile
 #  *  compiles the files into pdf using pdflatex
+# The file source/custom-xslpretext-latex-cool.xsl defines the LaTeX preamble used to generate the pdfs.
+# For this script to work, the file source/custom-xslpretext-latex-cool.xsl needs to be placed in 
+# the Pretext installation (on MacOS, this is ~/.ptx/xsl )
 
 
 # folders (relative to folder of a unit)
@@ -34,6 +37,10 @@ do
   pdflatex -output-directory="$outFolder" $outFolder/$base-standalone.tex
   pdflatex -output-directory="$outFolder" $outFolder/$base-standalone.tex
 done
+
+# Remove temp latex files
+rm $outFolder/*.aux
+rm $outFolder/*.log
 
 # Search for 'includegraphics' in .tex files, 
 # extract the file path, and 
