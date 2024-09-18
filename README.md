@@ -113,7 +113,9 @@ Si no se quiere usar como formato por defecto `pdf` para las imágenes en latex,
 Por ejemplo, si prefiere usar imágenes en png, cambie el `.pdf` a `.png`.
 
 ## Producir versiones pdf de los problemas de cierre `-cool.ptx`
-Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar a la carpeta con los -cool.ptx` que se quiere procesar. El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 
+Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar el archivo del script a la carpeta con los `-cool.ptx` que se quiere procesar y correr en la terminal con `./createStandaloneCools`. 
+
+El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 
 
 ## Licencia
 
