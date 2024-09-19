@@ -1,13 +1,13 @@
-\documentclass{LEMA-Tikz-IM}
+\documentclass[grado3]{LEMA-Tikz-IM}
 \begin{document}
 
 \begin{tikzpicture}
 \matrix[tablaVertical, % ver def en LEMA-Tikz-IM.sty
         row 1/.append style={nodes={minimum height=9ex}},
-        column 1/.append style={nodes={text width = 3cm}},
-        column 2/.append style={nodes={text width = 5cm}},
-        column 3/.append style={nodes={text width = 2cm}},
-        column 4/.append style={nodes={text width = 4.5cm}},
+        column 1/.append style={nodes={text width = 18ex}},
+        column 2/.append style={nodes={text width = 28ex}},
+        column 3/.append style={nodes={text width = 10ex}},
+        column 4/.append style={nodes={text width = 25ex}},
     ] (myTable) {
         % Header Row 
         {número total de manzanas} & 
@@ -17,9 +17,10 @@
         % 
         &  &  & \\ 
         &  &  & \\ 
-        &  &  & \\ 
+        &  &  & \\
   };
 
 \end{tikzpicture}
+
 
 \end{document}
