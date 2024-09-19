@@ -6,6 +6,7 @@
 
 \usepackage{sansmath}
 \usepackage{sfmath}
+\usepackage{xcolor}
 % \usepackage[default,scale=0.95]{opensans}
 % \usepackage[T1]{fontenc}
 \usetikzlibrary{
@@ -17,7 +18,7 @@
     % arrows.meta,
     % shapes.geometric,
     % shapes,
-    % matrix,
+    matrix,
     % shapes.symbols,
     % backgrounds,
     % decorations,
@@ -30,7 +31,7 @@
 }
 
 
-\tikzset{every node/.append style={font=\gradeFontSize\sansmath\sffamily}}
+\tikzset{every node/.append style={font=\gradeFontSize\sansmath\sffamily}} %\gradeFontSize defined in LEMA-Tikz-IM.cls
 \tikzset{every picture/.append style={line join=round}}
 \tikzset{every picture/.append style={line width=0.75pt}}
 
@@ -129,3 +130,67 @@
   \end{scope}
 }
 
+
+
+%%%%%%%%%%%%%%%%%%%
+% Tablas
+%%%%%%%%%%%%%%%%%%%
+% Las celdas son nodes rectangulares
+% Notación \matrix[tablaVertical, OPCIONES] (myTable) { contenido-de-tabla };
+% Cada celda recibe un nombre, de la forma (myTable-<row>-<column>)
+% Por ejemplo, 
+%     - fila 1 y columna 5 es la coordenada (myTable-1-5)
+%     - la parte de abajo de la fila 2 y col 6 es (myTable-1-5.south)
+%     - la esquina de abajo a la derecha (myTable-1-5.south east)
+% Ejemplo:
+% \matrix[tablaVertical, % ver def en LEMA-Tikz-IM.sty
+%         row 1/.append style={nodes={minimum height=9ex}},
+%         column 1/.append style={nodes={text width = 3cm}},
+%         column 2/.append style={nodes={text width = 5cm}},
+%         column 3/.append style={nodes={text width = 2cm}},
+%         column 4/.append style={nodes={text width = 4.5cm}},
+%     ] (myTable) {
+%         % Header Row 
+%         {número total de manzanas} & 
+%         {número de manzanas que no están en cajas} & 
+%         {número de cajas} & 
+%         {número de manzanas\\en cada caja}\\
+%         % 
+%         3  & 4    &   & 7\\ 
+%         3  & hola & 1 & 0\\ 
+%   };
+
+\def\minTableColWidth{2cm}
+\def\minTableRowHeight{1cm}
+\def\tableLineWidth{1pt}
+\def\tableHeaderLineWidth{2pt}
+\definecolor{tableBlack}{RGB}{0,0,0}   % uses \usepackage{xcolor}
+\definecolor{tableGray}{RGB}{50,50,50} % \usepackage{xcolor}
+
+% TikZ matrix style
+\tikzset{
+  tablaVertical/.style={
+    matrix of nodes,
+    nodes in empty cells,
+    row sep=-\tableLineWidth,
+    column sep=-\tableLineWidth,
+    inner sep=0pt,
+    outer sep=0pt,
+    nodes={
+      rectangle,
+      text width=\minTableColWidth,
+      minimum height=\minTableRowHeight,
+      inner xsep= 0.2cm,
+      inner ysep= 0.2cm,
+      align=center,
+      anchor=center,
+      draw,
+      line width=\tableLineWidth,
+      draw=tableGray,
+    },
+    % Header row font override
+    row 1/.append style={nodes={font={\bfseries\gradeFontSize\sansmath\sffamily}}},
+    % Header row thick border (column sep needs to be redefined so that all columns in table don't separate)
+    row 1/.append style={column sep=-\tableHeaderLineWidth, nodes={line width=\tableHeaderLineWidth}},
+  }
+}

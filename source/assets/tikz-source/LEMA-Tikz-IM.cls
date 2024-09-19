@@ -3,7 +3,7 @@
 
 % Opciones dependiendo del grado (por ejemplo, tamaño de la fuente)
 % Ejemplo: \documentclass[grado3]{LEMA-IM}
-\newcommand{\gradeFontSize}{\large}
+\newcommand{\gradeFontSize}{\normalsize}
 \DeclareOption{grado0}{\renewcommand{\gradeFontSize}{\huge}}
 \DeclareOption{grado1}{\renewcommand{\gradeFontSize}{\LARGE}}
 \DeclareOption{grado2}{\renewcommand{\gradeFontSize}{\Large}}
