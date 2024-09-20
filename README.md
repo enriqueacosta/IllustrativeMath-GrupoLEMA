@@ -112,6 +112,13 @@ Si no se quiere usar como formato por defecto `pdf` para las imágenes en latex,
 ```
 Por ejemplo, si prefiere usar imágenes en png, cambie el `.pdf` a `.png`.
 
+## Imágenes nuevas con código Tikz
+Este repositorio tiene su propia definición de tipo de documento de LaTeX para generar figuras con TikZ. Ver los archivos `source/assets/tikz-source/LEMA-Tikz-IM.cls` y `source/assets/tikz-source/LEMA-Tikz-IM.sty`. Esto habilita el `\documentclass{LEMA-Tikz-IM}` que tiene la opción de grado, como `\documentclass[grado3]{LEMA-Tikz-IM}` que ajusta la fuente de las imágenes de acuerdo al grado (la fuente debe ser mayor para los primeros grados). Por eso, es importante usar la unidad de medidad `ex` o `em` en las partes de estas imágenes TikZ que se deben adaptar al tamaño del texto (por ejemplo, los anchos de tablas, las distancias de las etiquetas a los objetos, etc). 
+
+Ver ejemplos de los archivos `.tex` de imagenes en la carpeta `souce/assets/tikz-source.
+
+Para estas imágenes se debe generar el formato `.pdf` con pdfLaTeX, y el formato `.svg` para la web a partir del pdf que produce pdfLaTeX. Esto se puede hacer de manera automática con el script `scripts/convertAllPDFtoSVGinFolder` que se escribió para este fin.
+
 ## Producir versiones pdf de los problemas de cierre `-cool.ptx`
 Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar el archivo del script a la carpeta con los `-cool.ptx` que se quiere procesar y correr en la terminal con `./createStandaloneCools`. 
 
