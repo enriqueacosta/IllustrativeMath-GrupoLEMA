@@ -2,11 +2,20 @@
 
 \typeout{Enrique Acosta - 2024}
 
-\usepackage{tikz,pgfplots,amsmath,xcolor}
 
-\usepackage{sansmath}
-\usepackage{sfmath}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath}
 \usepackage{xcolor}
+
+% \usepackage{sansmath}
+\usepackage{sfmath}
+\renewcommand{\familydefault}{\sfdefault}
+
+% \usepackage[fontsize=10pt]{fontsize}
+% \gradeFontSize
+
 % \usepackage[default,scale=0.95]{opensans}
 % \usepackage[T1]{fontenc}
 \usetikzlibrary{
@@ -31,7 +40,10 @@
 }
 
 
-\tikzset{every node/.append style={font=\gradeFontSize\sansmath\sffamily}} %\gradeFontSize defined in LEMA-Tikz-IM.cls
+% Default font used to be set for all nodes, but now is set in LEMA-Tikz-IM.cls
+% \tikzset{every node/.append style={font=\gradeFontSize\sansmath}} %\gradeFontSize defined in LEMA-Tikz-IM.cls
+
+% Default line style
 \tikzset{every picture/.append style={line join=round}}
 \tikzset{every picture/.append style={line width=0.75pt}}
 
@@ -156,12 +168,12 @@
 %         {número de cajas} & 
 %         {número de manzanas\\en cada caja}\\
 %         % 
-%         3  & 4    &   & 7\\ 
+%         3  & 4    &  & 7\\ 
 %         3  & hola & 1 & 0\\ 
 %   };
 
-\def\minTableColWidth{2cm}
-\def\minTableRowHeight{1cm}
+\def\minTableColWidth{20ex}
+\def\minTableRowHeight{5ex}
 \def\tableLineWidth{1pt}
 \def\tableHeaderLineWidth{2pt}
 \definecolor{tableBlack}{RGB}{0,0,0}   % uses \usepackage{xcolor}
@@ -189,7 +201,7 @@
       draw=tableGray,
     },
     % Header row font override
-    row 1/.append style={nodes={font={\bfseries\gradeFontSize\sansmath\sffamily}}},
+    row 1/.append style={nodes={font={\bfseries}}},
     % Header row thick border (column sep needs to be redefined so that all columns in table don't separate)
     row 1/.append style={column sep=-\tableHeaderLineWidth, nodes={line width=\tableHeaderLineWidth}},
   }
