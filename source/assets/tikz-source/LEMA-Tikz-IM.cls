@@ -22,15 +22,15 @@
 % \DeclareOption{grado2}{\renewcommand{\gradeFontSize}{\Large}}
 
 % Default scaling factor
-\newcommand{\scalefactor}{1}
+\newcommand{\myscalefactor}{1}
 
 % Declare options for each grade level, adjusting the scale factor
-\DeclareOption{grado0}{\renewcommand{\scalefactor}{2.0}}  % 200% scale
-\DeclareOption{grado1}{\renewcommand{\scalefactor}{1.7}}  % 170% scale
-\DeclareOption{grado2}{\renewcommand{\scalefactor}{1.5}}  % 150% scale
-\DeclareOption{grado3}{\renewcommand{\scalefactor}{1.3}}  % 130% scale
-\DeclareOption{grado4}{\renewcommand{\scalefactor}{1.1}}  % 110% scale
-\DeclareOption{grado5}{\renewcommand{\scalefactor}{1.0}}  % 100% scale
+\DeclareOption{grado0}{\renewcommand{\myscalefactor}{2.0}}  % 200% scale
+\DeclareOption{grado1}{\renewcommand{\myscalefactor}{1.7}}  % 170% scale
+\DeclareOption{grado2}{\renewcommand{\myscalefactor}{1.5}}  % 150% scale
+\DeclareOption{grado3}{\renewcommand{\myscalefactor}{1.3}}  % 130% scale
+\DeclareOption{grado4}{\renewcommand{\myscalefactor}{1.1}}  % 110% scale
+\DeclareOption{grado5}{\renewcommand{\myscalefactor}{1.0}}  % 100% scale
 
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{standalone}}
@@ -39,32 +39,32 @@
 
 % Separate scaling for each font size category
 \newcommand{\setscaledfonts}{
-  \pgfmathparse{10 * \scalefactor}\let\normalsizevalue\pgfmathresult
-  \pgfmathparse{12 * \scalefactor}\let\normalsizebaselineskip\pgfmathresult
+  \pgfmathparse{10 * \myscalefactor}\let\normalsizevalue\pgfmathresult
+  \pgfmathparse{12 * \myscalefactor}\let\normalsizebaselineskip\pgfmathresult
 
-  \pgfmathparse{12 * \scalefactor}\let\largevalue\pgfmathresult
-  \pgfmathparse{14 * \scalefactor}\let\largebaselineskip\pgfmathresult
+  \pgfmathparse{12 * \myscalefactor}\let\largevalue\pgfmathresult
+  \pgfmathparse{14 * \myscalefactor}\let\largebaselineskip\pgfmathresult
 
-  \pgfmathparse{14 * \scalefactor}\let\Largevalue\pgfmathresult
-  \pgfmathparse{18 * \scalefactor}\let\Largebaselineskip\pgfmathresult
+  \pgfmathparse{14 * \myscalefactor}\let\Largevalue\pgfmathresult
+  \pgfmathparse{18 * \myscalefactor}\let\Largebaselineskip\pgfmathresult
 
-  \pgfmathparse{18 * \scalefactor}\let\LARGEvalue\pgfmathresult
-  \pgfmathparse{22 * \scalefactor}\let\LARGEbaselineskip\pgfmathresult
+  \pgfmathparse{18 * \myscalefactor}\let\LARGEvalue\pgfmathresult
+  \pgfmathparse{22 * \myscalefactor}\let\LARGEbaselineskip\pgfmathresult
 
-  \pgfmathparse{24 * \scalefactor}\let\Hugevalue\pgfmathresult
-  \pgfmathparse{30 * \scalefactor}\let\Hugebaselineskip\pgfmathresult
+  \pgfmathparse{24 * \myscalefactor}\let\Hugevalue\pgfmathresult
+  \pgfmathparse{30 * \myscalefactor}\let\Hugebaselineskip\pgfmathresult
 
-  \pgfmathparse{9 * \scalefactor}\let\smallvalue\pgfmathresult
-  \pgfmathparse{11 * \scalefactor}\let\smallbaselineskip\pgfmathresult
+  \pgfmathparse{9 * \myscalefactor}\let\smallvalue\pgfmathresult
+  \pgfmathparse{11 * \myscalefactor}\let\smallbaselineskip\pgfmathresult
 
-  \pgfmathparse{8 * \scalefactor}\let\footnotesizevalue\pgfmathresult
-  \pgfmathparse{9 * \scalefactor}\let\footnotesizebaselineskip\pgfmathresult
+  \pgfmathparse{8 * \myscalefactor}\let\footnotesizevalue\pgfmathresult
+  \pgfmathparse{9 * \myscalefactor}\let\footnotesizebaselineskip\pgfmathresult
 
-  \pgfmathparse{7 * \scalefactor}\let\scriptsizevalue\pgfmathresult
-  \pgfmathparse{8 * \scalefactor}\let\scriptsizebaselineskip\pgfmathresult
+  \pgfmathparse{7 * \myscalefactor}\let\scriptsizevalue\pgfmathresult
+  \pgfmathparse{8 * \myscalefactor}\let\scriptsizebaselineskip\pgfmathresult
 
-  \pgfmathparse{5 * \scalefactor}\let\tinyvalue\pgfmathresult
-  \pgfmathparse{6 * \scalefactor}\let\tinybaselineskip\pgfmathresult
+  \pgfmathparse{5 * \myscalefactor}\let\tinyvalue\pgfmathresult
+  \pgfmathparse{6 * \myscalefactor}\let\tinybaselineskip\pgfmathresult
 
   % Apply the computed sizes
   \renewcommand\normalsize{\fontsize{\normalsizevalue pt}{\normalsizebaselineskip pt}\selectfont}
