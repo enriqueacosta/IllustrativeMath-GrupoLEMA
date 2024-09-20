@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-gruposEnBusYAlmuerzo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Grupos en el bus y grupos en el almuerzo</title>
 
@@ -8,18 +8,33 @@
   <p>En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.</p>
 
   <ol>
-    <li>Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar 156 aros. El viernes, Kiran y 2 amigos hicieron más aros. Cada uno de ellos hizo 9 aros más. ¿Cuántos aros hicieron durante toda la semana? 
+    <li>Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar <m>156</m> aros. El viernes, Kiran y <m>2</m> amigos hicieron más aros. Cada uno de ellos hizo <m>9</m> aros más. ¿Cuántos aros hicieron durante toda la semana? 
     </li>
-    <li>En otra excursión, 72 estudiantes y profesores fueron al museo de ciencias en 3 buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus? 
+    <li>En otra excursión, <m>72</m> estudiantes y profesores fueron al museo de ciencias en <m>3</m> buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus? 
     </li>
-    <li>Durante el almuerzo, las 72 personas se sentaron en unas mesas largas. Había 12 personas en cada mesa. ¿Cuántas mesas usaron?
+    <li>Durante el almuerzo, las <m>72</m> personas se sentaron en unas mesas grandes. Había <m>12</m> personas en cada mesa. ¿Cuántas mesas usaron?
     </li>
   </ol>
 
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+    <ol>
+      <li><m>24</m> personas. Ejemplos de respuestas:
+      <ul>
+        <li>Dividí <m>72</m> cubos encajables en <m>3</m> grupos y vi que hay <m>24</m> cubos en cada grupo.</li>
+        <li>Si ponemos <m>10</m> personas en cada autobús, eso son 30 personas. Si ponemos <m>10</m> personas más en cada autobús, eso son <m>60</m> personas, y hay <m>12</m> personas más que aún no están en un autobús. Al poner <m>4</m> personas más en cada autobús, ubicamos esas <m>12</m> personas. <m>10 + 10 + 4 = 24</m>.</li>
+        <li>Sé que <m>3</m> grupos de <m>20</m> son <m>60</m> y <m>3</m> grupos de <m>4</m> son <m>12</m>, así que <m>3</m> grupos de <m>24</m> son <m>72</m>.</li>
+      </ul>
+      </li>
+      <li><m>6</m> mesas. Ejemplos de respuestas:
+      <ul>
+        <li>Puse <m>72</m> cubos en grupos de <m>12</m> y hice <m>6</m> grupos.</li>
+        <li>Sé que hay <m>2</m> grupos de <m>12</m> en <m>24</m>, así que las <m>24</m> personas en cada autobús ocupan <m>2</m> mesas. Esto significa <m>6</m> mesas para las <m>72</m> personas en <m>3</m> autobuses.</li>
+        <li>Le resté <m>12</m> a <m>72</m> seis veces hasta que ya no quedaba más para restar.</li>
+      </ul>
+      </li>
+    </ol>
 </solution>
 
 
@@ -37,29 +52,42 @@
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad es que los estudiantes consideren sus estrategias mientras resuelven otros dos problemas de división que involucran grupos iguales con números más grandes. El divisor en el primer problema es un número de un solo dígito bajo. Los estudiantes pueden ver desde la situación dada que es el número de grupos. En el segundo problema, el divisor es un número del <m>11</m> al <m>19</m>, y el contexto sugiere que es el tamaño de un grupo. Es probable que los estudiantes ajusten su estrategia en base a estas observaciones. Enfoque la discusión en cómo los estudiantes pueden haber razonado de manera diferente dado un divisor más grande o dado lo que entienden sobre la situación.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+     <xi:include href="./gra3-uni4-secD-lec18-act1-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <ul>
+        <li>Grupos de 2.</li>
+        <li>
+      <q>Lean los dos problemas sobre otra excursión. Piensen qué estrategias pueden usar para resolverlos</q>.</li>
+        <li>1 minuto: tiempo para pensar en silencio.</li>
+        <li>
+      <q>Compartan con su compañero cómo pensaron</q>.</li>
+        <li>1 minuto: discusión en pareja.</li>
+        <li>Dé a los estudiantes acceso a cubos encajables o fichas, bloques en base diez y papel cuadriculado.</li>
+      </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <ul>
+        <li>
+      <q>Trabajen individualmente en los problemas durante unos minutos. Después, compartan sus respuestas con su compañero</q>.</li>
+        <li>5 minutos: tiempo de trabajo independiente.</li>
+        <li><span>3 minutos: discusión en pareja.</span></li>
+        <li><span>Identifique a los estudiantes que utilizan diferentes representaciones (dibujaron varios diagramas o escribieron diferentes tipos de expresiones o ecuaciones) para los dos problemas.</span></li>
+      </ul>
   </paragraphs>
 
 </prelude>
@@ -80,7 +108,16 @@
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+       <ul>
+        <li>Invite a los estudiantes a compartir sus respuestas. Muestre o registre sus razonamientos.</li>
+        <li>Encueste a la clase sobre si usaron una estrategia diferente para resolver el segundo problema que la que usaron para el primero.</li>
+        <li>Pregúntele a los que usaron una estrategia diferente: <q>¿Por qué cambiaron su estrategia?</q>. (Ejemplo de respuestas:
+        <ul>
+          <li>En el primero, el <m>3</m> representa <m>3</m> grupos. En el segundo, el <m>12</m> es cuántos hay en cada grupo.</li>
+          <li>En el primero, el número usado para dividir es más pequeño. En el segundo, el número es más grande.)</li>
+        </ul>
+        </li>
+      </ul>
   </paragraphs>
 
 

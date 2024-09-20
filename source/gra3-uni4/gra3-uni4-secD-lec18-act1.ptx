@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-gruposEnExcursion" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <title>Grupos en una excursión</title>
 
@@ -9,14 +9,19 @@
 
   <p>Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.</p>
 
-  <image source="png-source/CS 3.4 Lesson 18 Activity 1.png" width="100%">
+  <image source="png-source/CS 3.4 Lesson 18 Activity 1.png" width="70%">
     <shortdescription>Un acuario</shortdescription>
   </image>
 
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+    <p><m>12</m>. Ejemplos de respuestas:</p>
+  
+    <ul>
+      <li>Sé que <m>4\times 10</m> es <m>40</m> y luego <m>4\times 2</m> es <m>8</m>, por eso hay <m>10 + 2 = 12</m> grupos de <m>4</m> en <m>48</m>.</li>
+      <li>Sé que <m>5</m> grupos de <m>4</m> son <m>20</m>, por eso <m>10</m> grupos de <m>4</m> son <m>40</m>. Quedan <m>8</m> estudiantes, lo que hace <m>2</m> grupos de <m>4</m>. Al sumar <m>10</m> y <m>2</m> da <m>12</m>.</li>
+    </ul>
 </solution>
 
 
@@ -34,29 +39,58 @@
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <p>El propósito de esta actividad de las 5 Prácticas es generar las estrategias existentes de los estudiantes para encontrar el valor de los cocientes con números más grandes. Se debe motivar a los estudiantes a usar cualquier estrategia o representación que les parezca lógica.</p>
+      
+      <p>Identifique a los estudiantes que usan las siguientes estrategias para compartir en la síntesis:</p>
+      
+      <ul>
+              <li>hacer grupos de <m>4</m> y ver cuántos grupos hay (con objetos, dibujos, arreglos o bloques en base diez)</li>
+              <li>multiplicar hacia arriba comenzando con <m>4 \times10</m></li>
+              <li>descomponer el dividendo en decenas y unidades, y dividir cada parte</li>
+      </ul>
+      
+      <p>Si es apropiado, discuta las conexiones entre las estrategias a medida que se comparten, en lugar de después de que se compartan todas las estrategias. No es esencial discutir todas las estrategias enumeradas, ya que los estudiantes considerarán estas ideas en las próximas lecciones. El objetivo principal aquí es generar lo que los estudiantes entienden actualmente.</p>
+      
+      <p>Cuando los estudiantes dan sentido al problema contextual de la división, razonan abstracta y cuantitativamente (MP2). Los estudiantes que utilizan la relación entre la multiplicación y la división hacen uso de la estructura (MP7).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec18-act2-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <ul>
+        <li>Muestre la afirmación: <q>En una excursión al acuario, un curso de estudiantes se divide en grupos.</q></li>
+        <li><q>¿Qué observan? ¿Qué se preguntan?</q> (Los estudiantes pueden observar: Van al acuario en grupos. No pueden ir en un grupo grande. Los estudiantes pueden preguntarse: ¿Cuántos niños hay en la clase? ¿Cuántos niños hay en cada grupo? ¿Son los grupos del mismo tamaño?).</li>
+        <li>1 minuto: tiempo para pensar en silencio.</li>
+        <li>Compartir y registrar las respuestas.</li>
+        <li>Dé a los estudiantes acceso a cubos de encajar o fichas, bloques en base diez y papel cuadriculado.</li>
+      </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <ul>
+        <li>
+      <q>Resuelvan este problema. Usen la estrategia o la representación que prefieran</q>.</li>
+        <li>5 minutos: tiempo de trabajo independiente.</li>
+        <li><p>Mientras los estudiantes trabajan, considere preguntar:</p>
+          <ul>
+            <li><q>¿En qué parte de su trabajo están los grupos de 4?</q>.</li>
+            <li><q>¿En qué parte de su trabajo está el número de grupos?</q>.</li>
+          </ul>
+        </li>
+        <li>
+      <q>Compartan su respuesta y estrategia con su compañero. Discutan en qué se parecen y en qué son diferentes</q>.</li>
+        <li>3 minutos: discusión en pareja.</li>
+      </ul>
   </paragraphs>
 
 </prelude>
@@ -70,28 +104,36 @@
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Si los estudiantes dicen que no están seguros de cómo comenzar el problema, considere preguntar: <q>¿De qué se trata el problema?</q> y <q>¿Cómo podrías representar el problema?</q>.</p>
   </paragraphs>
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <ul>
+        <li>Seleccione a los estudiantes previamente identificados para compartir en el orden indicado en la narrativa de la actividad.</li>
+        <li>Al presentar cada estrategia, invite a la clase a hacer preguntas.</li>
+        <li>Mantenga todas las estrategias mostradas.</li>
+        <li><q>¿En qué se parecen las estrategias?</q>. (Todas las estrategias usaron <m>4\times 10 = 40</m> para ayudar a dividir el problema en partes más pequeñas. Las estrategias con ecuaciones de división y multiplicación tenían <m>10 + 2 = 12</m>).</li>
+        <li><q>¿En qué son diferentes las estrategias?</q>. (En algunas estrategias, los estudiantes dibujaron una representación. En otras, los estudiantes escribieron expresiones o ecuaciones de multiplicación o división.)</li>
+      </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>MLR7 Comparar y Conectar. Síntesis: Invite a los estudiantes a preparar una presentación visual que muestre la estrategia que utilizaron para averiguar el número de grupos. Anímelos a incluir detalles que ayuden a otros a interpretar su pensamiento. Por ejemplo, lenguaje específico, uso de diferentes colores, sombreado, flechas, etiquetas, notas, diagramas o dibujos. Dé tiempo a los estudiantes para investigar el trabajo de los demás. Durante la discusión en clase, pregunte a los estudiantes, <q>¿Alguien resolvió el problema de la misma manera, pero lo explicaría de otra forma? ¿Cómo se vieron los grupos de 4 en cada método? ¿Por qué al usar diferentes estrategias obtuvimos el mismo resultado?</q></p>
+      <p>Avances: Representación, Conversación</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Representación: Acceso para la Percepción. Síntesis: A medida que los estudiantes identifican correspondencias entre las estrategias, siga y señale las partes relevantes de cada estrategia para ampliar el pensamiento del estudiante e ilustrar conexiones. </p>
+      <p>Apoya la accesibilidad para: Procesamiento Conceptual, Procesamiento Visual-Espacial</p>
   </paragraphs>
 
 </postlude>
