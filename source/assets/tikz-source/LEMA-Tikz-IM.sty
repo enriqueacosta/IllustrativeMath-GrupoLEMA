@@ -51,8 +51,9 @@
 %%%%%%%%%%%%%%%%%%%
 % Dot groups
 %%%%%%%%%%%%%%%%%%%
+% inner sep = 0pt guarantees size is exactly minimum size (otherwise a space may be added, which grows with lower grades).
 \def\midDotSize{0.4cm}
-\tikzstyle{midDot}=[circle, draw, fill=cyan!60, minimum size = \midDotSize]
+\tikzstyle{midDot}=[circle, draw, fill=cyan!60, minimum size = \midDotSize, inner sep = 0pt] 
 \tikzstyle{midDotRoundedRect}=[draw, rectangle, rounded corners=0.5*\midDotSize, inner sep=3*\midDotSize/10]
 
 % ------------------------------------------
@@ -76,8 +77,9 @@
 % Dice
 %%%%%%%%%%%%%%%%%%%
 % Adjust \diceDotSize to change the size of all the dice. The dice edge is computed from \diceDotSize
+% inner sep = 0pt guarantees size is exactly minimum size (otherwise a space may be added, which grows with lower grades).
 \def\diceDotSize{\midDotSize}
-\tikzstyle{diceDot}=[circle, draw, fill=cyan!60, minimum size = \diceDotSize]
+\tikzstyle{diceDot}=[circle, draw, fill=cyan!60, minimum size = \diceDotSize, inner sep = 0pt]
 % ------------------------------------------
 % Usage: \diceThree[shift={(5*\diceDotSize,0)}]
 % WARNING: Make sure to always use shifts in terms of \diceDotSize so that \diceDotSize can be changed without breaking all the figures.
