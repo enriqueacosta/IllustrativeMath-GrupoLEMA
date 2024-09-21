@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Una aventura con manzanas</title>
+
+<statement>
+  <p>Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.</p>
+  <p>Escoge <m>4</m> números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos <m>4</m> números.</p>
+  <image source="svg-source/tikz-file-149345">
+    <shortdescription>Lista de números: 400, 300, 240, 12, 350, 290, 230, 10, 340, 280, 170, 5.</shortdescription>
+  </image>
+  <image source="tikz-source/3-4-21-act1-tabla">
+  <shortdescription>Tabla de respuesta</shortdescription>
+  </image>
+  <image source="png-source/3.4.D21.S_Sp.png" width="50%">
+  <shortdescription>Granero</shortdescription>
+  </image>
+</statement>
+
+<solution>
+  <p>Ejemplos de respuestas:</p>
+  <image source="tikz-source/3-4-21-act1-tabla-response">
+    <shortdescription>Tabla con ejemplos de respuestas</shortdescription>
+  </image>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>20 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>El propósito de esta actividad es que los estudiantes piensen en lo que necesitan saber para resolver problemas de dos pasos. Los estudiantes eligen números que tengan sentido juntos para completar el problema del calentamiento. Articulan las relaciones entre las cantidades en el problema para justificar sus elecciones numéricas. Si los estudiantes encuentran rápidamente una combinación de números que funcione, anímelos a ver si hay otras posibilidades o a escribir una situación con los números que han elegido.</p>
+
+    <p>Los estudiantes que no eligen rápidamente un conjunto de números correspondientes logran comprender y perseveran en la resolución del problema al considerar la relación entre las diferentes cantidades y las restricciones que eso impone sobre qué números pueden describir la situación (MP1).</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    @@@@@ -->
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+  <!-- </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <ul>
+      <li>Grupos de 2 y 4.</li>
+      <li>Mantén la situación de la actividad de calentamiento visible.</li>
+      <li><q>Supongamos que todas las cajas que empaca el agricultor tienen el mismo tamaño.</q></li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <ul>
+      <li><q>En la actividad se muestra una lista de números. Con su compañero, escojan 4 números que al estar juntos tengan sentido en esta situación. Si encuentran una combinación de números que funcione, pueden buscar otras combinaciones.</q></li>
+      <li>8 a 10 minutos: Tiempo de trabajo en parejas.</li>
+      <li>Grupos de 4.</li>
+      <li><q>Compartan con otro grupo por qué los números que escogieron tienen sentido.</q></li>
+      <li>2 a 3 minutos: Discusión en grupos pequeños.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <ul>
+      <li>
+        <p>Muestre una fila de la tabla parcialmente terminada:</p>
+        <image source="tikz-source/3-4-21-act1-tabla-synthesis">
+          <shortdescription>Tabla de respuesta</shortdescription>
+        </image>
+      </li>
+      <li><q>Si les dieran esta información, ¿cómo encontrarían el número de manzanas que hay en cada caja?</q> (Podría restar <m>152</m> del total de <m>200</m> y dividir el resultado entre <m>8</m>.)</li>
+      <li><q>¿Qué ecuación podemos escribir para representar la situación de este ejemplo? Usemos una letra para representar la cantidad que no conocemos.</q></li>
+      <li>1 minuto: tiempo para pensar en silencio.</li>
+      <li>
+        <p>Anota las ecuaciones que los estudiantes escribieron, por ejemplo:</p>
+        <ul>
+          <li><m>(200 - 152) \div 8 = n</m></li>
+          <li><m>8 \times n + 152 = 200</m></li>
+          <li><m>152 + 8 \times n = 200</m></li>
+        </ul>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>Acción y Expresión: Internalizar las Funciones Ejecutivas.</p>
+    <p>Invite a los estudiantes a planear una estrategia, incluyendo las herramientas que utilizarán, para completar el cuadro. Si el tiempo lo permite, invite a los estudiantes a compartir su plan con su compañero antes de comenzar.</p>
+    <p>Apoya la accesibilidad para: Organización, Procesamiento Conceptual.</p>
+  </paragraphs> 
+
+</postlude>
+
+</activity>
