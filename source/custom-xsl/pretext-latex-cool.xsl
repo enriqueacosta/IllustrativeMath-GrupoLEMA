@@ -62,11 +62,16 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <!-- load custom cool-down latex preamble (defined below) -->
     <xsl:call-template name="latex-preamble-cool" />
 
+    <!-- EAJ - desabilitado: se pone un título genérico y el <title> se carca en una \section -->
     <!-- load <title> (into \title{} command) using pretext-latex.xsl template -->
-    <xsl:call-template name="title-page-info-article" />
+    <!-- <xsl:call-template name="title-page-info-article" /> -->
 
     <!-- begin document -->
     <xsl:text>\begin{document}&#xa;</xsl:text>
+
+    <!-- Add title -->
+    <xsl:text>\maketitle&#xa;</xsl:text>
+    <xsl:text>\vspace{-1cm}&#xa;</xsl:text>
 
     <!-- alternate loading of <title> element -->
     <xsl:text>\section*{</xsl:text>
@@ -135,6 +140,8 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\fancyfoot[C]{} %Remove default Latex numbering&#xa;</xsl:text>
     <xsl:text>\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{barra-colorGrupoLEMA.png}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header&#xa;</xsl:text>
     <xsl:text>\fancyfoot[L]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}&#xa;</xsl:text>
+    <!-- <xsl:text>\fancyhead[L]{Nombre: \underline{\hspace{8cm}}}&#xa;</xsl:text> -->
+    <xsl:text>\fancyhead[L]{\hfill Nombre: \underline{\hspace{8cm}}}&#xa;</xsl:text>
     <xsl:text>\fancyhead[R]{}&#xa;</xsl:text>
     <xsl:text>\fancyfoot[R]{}&#xa;</xsl:text>
     <xsl:text>\fancyfootoffset{2cm}&#xa;</xsl:text>
@@ -149,6 +156,9 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\renewcommand{\familydefault}{\sfdefault}&#xa;</xsl:text>
     <xsl:text>%% quitar hyphenation&#xa;</xsl:text>
     <xsl:text>\usepackage[none]{hyphenat}&#xa;</xsl:text>
+    <!-- Título genérico -->
+    <xsl:text>\title{Problema de Cierre\\Matemáticas Ilustrativas + LEMA}&#xa;</xsl:text>
+    <xsl:text>\date{}&#xa;</xsl:text>
 </xsl:template>
 
 
