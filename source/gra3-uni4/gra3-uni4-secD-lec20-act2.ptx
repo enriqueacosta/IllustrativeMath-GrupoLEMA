@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-ComoDividirias" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>¿Cómo dividirías?</title>
 
@@ -68,9 +68,7 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec20-act2-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
