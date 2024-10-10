@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-ComoDividirias" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>¿Cómo dividirías?</title>
 
@@ -15,7 +15,33 @@
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><m>16</m>. Ejemplo de respuesta: <m>5</m> grupos de <m>10</m> son <m>50</m>. <m>5</m> grupos de <m>6</m> son <m>30</m>. <m>10 + 6 = 16</m></li>
+    <li><p><m>17</m>. Ejemplo de respuesta:</p>
+      <p>
+        <line><m>4 \times 10 =40</m></line>
+        <line><m>4 \times \phantom{0}5 =20</m></line>
+        <line><m>4 \times \phantom{0}2 = \phantom{0}8</m></line>
+        <line><m>\overline {4 \times 17 = 68}</m></line>
+      </p>
+    </li>
+    <li><m>13</m>. Ejemplo de respuesta: Si pongo <m>70</m> en <m>7</m> grupos, eso es <m>10</m> en cada grupo. Si pongo los <m>21</m> restantes en los <m>7</m> grupos, eso son <m>3</m> más en cada grupo. <m>10+3=13</m></li>
+  </ol>
+  
+  <p>Si tienes tiempo: <m>6</m> grupos. Ejemplo de respuesta:</p>
+  
+  <ul>
+    <li>Un dibujo en base diez que muestra <m>6</m> decenas y <m>24</m> unidades organizadas en <m>6</m> grupos de <m>1</m> decena y <m>4</m> unidades cada uno.</li>
+    <li>Sé que <m>2</m> veces <m>14</m> es <m>28</m> y <m>4</m> veces <m>14</m> es el doble de <m>28</m>, que es <m>56</m>. Al sumar otros <m>28</m> da <m>84</m>, entonces <m>6</m> por <m>14</m> es <m>84</m>.</li>
+    <li>
+      <p>
+        <line><m>2 \times 14 = 28</m></line>
+        <line><m>2 \times 14 = 28</m></line>
+        <line><m>2 \times 14 = 28</m></line>
+        <line><m>\overline {6 \times 14 = 84}</m></line>
+      </p>
+    </li>
+  </ul>
 </solution>
 
 
@@ -33,29 +59,40 @@
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad es que los estudiantes practiquen cómo encontrar el valor de expresiones de división usando cualquier estrategia que les parezca lógica. Pueden dividir el dividendo en grupos iguales o usar el divisor para multiplicar hasta llegar al dividendo dado. Pueden optar por representar la división o la multiplicación con bloques en base diez o dibujando diagramas.</p>
+
+    <p>Durante la síntesis, destaque las estrategias que se basan en el valor posicional, las propiedades de las operaciones y la relación entre la multiplicación y la división (MP7).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec20-act2-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+          <ul>
+        <li>Grupos de 2.</li>
+        <li>Dé a los estudiantes acceso a bloques en base diez y papel cuadriculado.</li>
+      </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+    <q>Encuentren el valor de cada cociente. Pueden usar la estrategia o la representación que prefieran</q>.</li>
+      <li>8–10 minutos: tiempo de trabajo individual.</li>
+      <li>Identifique a los estudiantes que usan varias estrategias y representaciones. Identifique a los estudiantes para compartir en la síntesis.</li>
+      <li>
+    <q>Compartan con su compañero cuál es su forma favorita de dividir</q>.</li>
+      <li>2–3 minutos: discusión en parejas.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -66,31 +103,37 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades
+   NO HAY
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Haga que los estudiantes previamente seleccionados compartan sus respuestas. Muestre o registre las estrategias y representaciones que los estudiantes usan.</li>
+      <li>Para cada problema, considere encuestar a la clase sobre la estrategia que usaron.</li>
+    </ul>
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático
+   NO HAY
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>Representación: Desarrollar Lenguaje y Símbolos. Síntesis: Hacer visibles las conexiones entre las representaciones. Genere de los estudiantes las conexiones entre las diferentes estrategias y representaciones compartidas por los estudiantes.</p>
+      <p>Apoya la accesibilidad para: Procesamiento Visual-Espacial, Procesamiento Conceptual</p>
   </paragraphs>
 
 </postlude>
