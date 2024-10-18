@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="comparaDivideHasta100-tarjetas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>“Compara: Divide hasta 100” [OPCIONAL]</title>
 
 <statement>
-  <p>Juega “Compara” con dos jugadores.</p>
+  <p>Juega <q>Compara</q> con dos jugadores.</p>
   <ol>
     <li>Mezclen las tarjetas y dividan el montón entre los jugadores.</li>
     <li>Cada jugador voltea una tarjeta.</li>
@@ -15,7 +15,7 @@
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <p>No se necesita respuesta.</p>
 </solution>
 
 
@@ -33,29 +33,39 @@
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>El propósito de esta actividad opcional es que los estudiantes practiquen la evaluación de expresiones de división para hacer comparaciones. Compara es un centro que se enfoca en las habilidades procedimentales necesarias para resolver problemas de palabras de uno o varios pasos. En esta etapa, los estudiantes usarán la división para evaluar y comparar cocientes hasta 100.</p>
+
+    <p>Esta etapa del centro Compara se usa en los grados 3, 4 y 5. Cuando se use en el grado 3, retire las tarjetas con divisores de dos dígitos.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <xi:include href="./gra3-uni4-secD-lec20-act3-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Grupos de 2.</li>
+      <li>Entregue a cada grupo de estudiantes un conjunto de tarjetas de las hojas reproducibles en blanco y negro.</li>
+      <li><q>Ahora juguemos ‘Compara’ para practicar lo que han aprendido sobre dividir números</q>.</li>
+      <li><q>Tómense un minuto para leer las instrucciones con su compañero</q>.</li>
+      <li>1 minuto: tiempo para pensar en silencio.</li>
+      <li>Responda cualquier pregunta sobre las instrucciones. Si es necesario, juegue una ronda con la clase.</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+     <ul>
+      <li>5-7 minutos: tiempo de trabajo en parejas.</li>
+      <li>Si el tiempo lo permite, dé un tiempo extra para jugar Compara.</li>
+     </ul>
   </paragraphs>
 
 </prelude>
@@ -66,32 +76,38 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades
+   NO HAY
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>Muestre: <m>92 \div 4</m> y <m>72 \div 3</m>.</li>
+      <li>
+    <q>Supongamos que estas son las dos tarjetas que tomaron. ¿Cómo decidirían cuál expresión tiene el mayor valor?</q>.</li>
+    </ul>
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático 
+   NO HAY
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades NO HAY
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 </postlude>
 
