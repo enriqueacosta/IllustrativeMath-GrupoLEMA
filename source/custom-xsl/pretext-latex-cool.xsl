@@ -152,6 +152,9 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>\usepackage{graphicx}&#xa;</xsl:text>
     <xsl:text>\usepackage{xcolor}&#xa;</xsl:text>
     <xsl:text>\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}&#xa;</xsl:text>
+    <xsl:text>\definecolor{plotblue}{HTML}{2e70b3}&#xa;</xsl:text>
+    <xsl:text>\usepackage{sectsty}&#xa;</xsl:text>
+    <xsl:text>\sectionfont{\color{plotblue}}  %% This line sets the color of the section titles&#xa;</xsl:text>
     <xsl:text>%% Fuente sans-serif&#xa;</xsl:text>
     <xsl:text>\renewcommand{\familydefault}{\sfdefault}&#xa;</xsl:text>
     <xsl:text>%% quitar hyphenation&#xa;</xsl:text>
