@@ -1,0 +1,1 @@
+../../LEMA-Tikz-IM.cls
