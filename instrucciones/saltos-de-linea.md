@@ -1,4 +1,4 @@
-# Saltos de linea
+# Saltos de línea
 
 PreTeXt, siguiendo su filosofía que el markup XML debe especificar estructura del contenido y no forma, no permite el uso de tags `<br/>` para saltar linea.
 
