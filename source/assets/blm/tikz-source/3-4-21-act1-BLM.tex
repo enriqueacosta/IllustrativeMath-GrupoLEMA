@@ -1,12 +1,20 @@
 \documentclass[grado3]{LEMA-Tikz-IM}
 
 \usepackage{graphicx}  % Needed to include graphics
+\usepackage{pifont} % For the scissors symbol
 
 \begin{document}
 \begin{tikzpicture}
+% \pgfplotsset{compat=1.18}
 
 % page canvas letter size
 \path (0,0) rectangle (8.5in,11in);
+
+% draw cut line
+\usetikzlibrary{decorations.text}
+\node at (0.5in, 11in/2) {\scalebox{2}{\ding{36}}};
+\node at (8.5in-0.5in, 11in/2) {\scalebox{2}{\ding{36}}};
+\draw[dashed, line width=1pt] (0,11in/2) -- (8.5in, 11in/2);
 
 \def\myMargin{1in}
 
@@ -38,6 +46,12 @@
 % Add BLM heading to top and bottom
 \node[below right] at (topLeft) {\bf Una aventura con manzanas};
 \node[below right] at (midLeft) {\bf Una aventura con manzanas};
+
+
+% Espacio de nombre
+\node[below left] at ([yshift=-8pt]topRight) {Nombre: \underline{\hspace{6cm}}};
+\node[below left] at ([yshift=-8pt]midRight) {Nombre: \underline{\hspace{6cm}}};
+
 
 
 \end{tikzpicture}
