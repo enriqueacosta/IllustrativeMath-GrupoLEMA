@@ -15,7 +15,7 @@
 \coordinate (topRight) at (8.5in-\myMargin,11in-\myMargin);
 \coordinate (topLeft) at (\myMargin,11in-\myMargin);
 
-% clip outside the margin
+% clip outside the margin 
 \clip (botLeft) rectangle (topRight);
 
 % draw middle line
@@ -23,7 +23,7 @@
 \coordinate (midRight) at ($ (botRight)!0.5!(topRight) $);
 \draw (midLeft)  -- (midRight);
 
-% find center of top and bottom pieces
+% find center of top and bottom parts of the page
 \coordinate (centerTop) at ($ (midLeft)!0.5!(topRight) $);
 \coordinate (centerBot) at ($ (midLeft)!0.5!(botRight) $);
 
@@ -32,8 +32,8 @@
 \node (tableBot) at ([yshift=-1cm]centerBot) {\includegraphics{3-4-21-act1-BLM-table.pdf}};
 
 % Add png decoration to top and bottom
-\node[above] at (tableTop.north) {\includegraphics[width=2.5cm]{../../png-source/3.4.D21.S_Sp.png}};
-\node[above] at (tableBot.north) {\includegraphics[width=2.5cm]{../../png-source/3.4.D21.S_Sp.png}};
+\node[above] at (tableTop.north) {\includegraphics[width=3.5cm]{../../png-source/3.4.D21.S_Sp.png}};
+\node[above] at (tableBot.north) {\includegraphics[width=3.5cm]{../../png-source/3.4.D21.S_Sp.png}};
 
 % Add BLM heading to top and bottom
 \node[below right] at (topLeft) {\bf Una aventura con manzanas};
