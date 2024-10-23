@@ -1,3 +1,71 @@
-html {
-    font-size: 18px; /* or any other size */
-}
+@import url("custom-styles.css");
+
+/* ajustes de fuente con estilo WIDE */
+    :root {
+        --content-font-size: 20px;
+    }
+    body.pretext{
+        font-size: var(--content-font-size);
+    }
+    .ptx-toc {
+        font-size: var(--content-font-size);
+    }
+
+/* ajustes de fuente con estilo CRC */
+    /* .ptx-page {
+        font-size: 20px;
+    }
+
+    .ptx-toc {
+        font-size: unset;
+    }
+
+    .pretext .ptx-content-footer .button.next-button,
+    .pretext .ptx-content-footer .button.previous-button,
+    .ptx-content-footer .top-button {
+        font-size: unset;
+        margin-top: 3em;
+    }
+
+    .ptx-navbar .button{
+        font-size: unset;
+    } */
+
+
+/* ajustes al "pop-up" de imágenes más amigable para chiqitos a continiación */
+
+    .ptx-content img.mag_popup {
+        /* Increase the size */
+        width: 100%;
+        height: auto;
+        max-width: unset;
+        
+        /* Add a thick, colorful border */
+        border: 5px solid #ff6f61; /* Bright coral color */
+        border-radius: 15px; /* Rounded corners for a friendly look */
+        
+        /* Add a drop shadow to create depth */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        
+        /* Apply a simple animation when the pop-up appears */
+        animation: popupAnimation 0.5s ease-out forwards;
+        
+        /* Make the image "grow" when hovered */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    img.mag_popup:hover {
+        transform: scale(1.1); /* Increase size on hover */
+    }
+    
+    /* Keyframes for the pop-up animation */
+    @keyframes popupAnimation {
+        from {
+        transform: scale(0.5);
+        opacity: 0;
+        }
+        to {
+        transform: scale(1);
+        opacity: 1;
+        }
+    }

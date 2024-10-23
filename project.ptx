@@ -60,7 +60,8 @@
       source="gra3-uni4/gra3-uni4.ptx"
       publication="publication-est-web.ptx"
       output-dir="web-est/gra3-uni4">
-      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+      <!-- <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/> -->
+      <stringparams author.tools="yes" html.css.extra="external/css/grado3-est.css"/>
     </target>
     <target name="gra3-uni4-print-est" 
       latex-engine="pdflatex" 
