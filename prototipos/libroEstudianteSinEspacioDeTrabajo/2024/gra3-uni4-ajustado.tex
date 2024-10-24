@@ -56,11 +56,11 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Space afterwards will be controlled by environment,
 %% independent of constructions of the tcb title
 %% Places \blocktitlefont onto many block titles
-\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper,} }
 %% Spacing prior to each exercise, anywhere
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 %% Spacing prior to each block
-\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
+\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}}}
 %% xparse allows the construction of more robust commands,
 %% this is a necessity for isolating styling and behavior
 %% The tcolorbox library of the same name loads the base library
@@ -453,8 +453,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Hanging indent occupies a 5ex width slot prior to left margin
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={} } }
+\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}, }
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
 %% \linewidth, and are guaranteed to be positive and sum to 1.0
@@ -508,6 +508,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% More flexible list management, esp. for references
 %% But also for specifying labels (i.e. custom order) on nested lists
 \usepackage{enumitem}
+\setlist{nosep, topsep=0pt, partopsep=1ex, parsep=1ex}
 %% Lists of references in their own section, maximum depth 1
 \newlist{referencelist}{description}{4}
 \setlist[referencelist]{leftmargin=!,labelwidth=!,labelsep=0ex,itemsep=1.0ex,topsep=1.0ex,partopsep=0pt,parsep=0pt}
@@ -585,13 +586,13 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% tcolorbox, with styles, for PROJECT-LIKE
 %%
 %% exploration: fairly simple numbered block/structure
-\tcbset{ explorationstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={}, colback=purple!5, colbacktitle=purple!70, coltitle=white, } }
+\tcbset{ explorationstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
 %% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={, , blockspacingstyle, after title={\space}, before upper app={}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, } }
+\tcbset{ activitystyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
 %% project: fairly simple numbered block/structure
-\tcbset{ projectstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={}, colback=teal!5, colbacktitle=teal!70, coltitle=white,  } }
+\tcbset{ projectstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white,  } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
 %%
 %% tcolorbox, with styles, for GOAL-LIKE
@@ -618,7 +619,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \usetikzlibrary{decorations.markings}
 %% If tikz has been loaded, replace ampersand with \amp macro
 %% tcolorbox styles for sidebyside layout
-\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster equal height=rows, raster force size=false} }
+\tcbset{ sbsstyle/.style={raster before skip=1.0ex, raster equal height=rows, raster force size=false} }
 \tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont} }
 %% Enviroments for side-by-side and components
 %% Necessary to use \NewTColorBox for boxes of the panels
@@ -667,8 +668,9 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 % \fancyfoot[C]{{\small Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\scriptsize Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
 \fancyhead[L]{}%{\rightmark}
 \fancyhead[R]{}
-\fancyfoot[R]{}
-\fancyfootoffset{2cm}
+% \fancyfoot[R]{}
+\fancyfoot[LO, RE]{\textcolor{PineGreen}{\textbf{\thepage}}}
+% \fancyfootoffset{2cm}
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 % \renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
 \renewcommand{\headrulewidth}{0pt}  % Quitar linea del header
@@ -1653,7 +1655,7 @@ Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo n
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec6-act1}
 \begin{activity}{Actividad}{Ecuaciones acerca de cebollas.}{gra3-uni4-secB-lec6-act1-3}%
-\begin{image}{0.15}{0.7}{0.15}{-1.5\baselineskip}%
+\begin{image}{0.15}{0.7}{0.15}{-0.5\baselineskip}%
 \includegraphics[scale=1.3, max width=\linewidth, center]{external/jpg-source/3.4.B6 Act 1 Launch.jpg}
 \end{image}%
 Un agricultor pone 14 cebollas en 2 bolsas. Pone el mismo número de cebollas en cada bolsa.%
@@ -1862,7 +1864,6 @@ Escribe una ecuación de multiplicación y una ecuación de división que repres
 \begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec8-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: Multiplicación y división.}{gra3-uni4-secB-lec8-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
-%
 \begin{itemize}[label=\textbullet]
 \item{}\(\displaystyle 4\times 10\)%
 \item{}\(\displaystyle 40\div 40\)%
@@ -3518,7 +3519,7 @@ En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para exp
 \end{enumerate}
 \end{sbspanel}%
 \begin{sbspanel}{0.2}%
-\includegraphics[scale=1.3, max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 19 Activity 1.png}
+\includegraphics[scale=1.0, max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 19 Activity 1.png}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
