@@ -1,7 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{LEMA-Tikz-IM}
 
-\LoadClass[border=5pt, tikz]{standalone}
+% The command is to automatically convert to svg with 1.5 scale
+% One needs to run pdflatez with -shell-escape for it to work
+\LoadClass[border=5pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.5 --format svg --output "\jobname.svg" "\jobname.svg"}}}]{standalone}
 
 \RequirePackage{pgf}       % for floating pint arithmetic arithmetic
 \RequirePackage{fix-cm}    % allow for arbitrary font sizes using fix-cm
