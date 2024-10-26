@@ -1,9 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{LEMA-Tikz-IM}
 
-% The command is to automatically convert to svg with 1.5 scale
-% One needs to run pdflatez with -shell-escape for it to work
-\LoadClass[border=5pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.5 --format svg --output "\jobname.svg" "\jobname.svg"}}}]{standalone}
+% The convert command is to automatically convert the pdf
+% to svg with 1.5 scale and to png with 300 density
+% One needs to run pdflatex with -shell-escape for it to work
+\LoadClass[border=5pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.5 --format svg --output "\jobname.svg" "\jobname.svg" && convert -density 300 \infile\space "\jobname.png"}}}]{standalone}
 
 \RequirePackage{pgf}       % for floating pint arithmetic arithmetic
 \RequirePackage{fix-cm}    % allow for arbitrary font sizes using fix-cm
