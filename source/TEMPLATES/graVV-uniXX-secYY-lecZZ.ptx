@@ -36,7 +36,7 @@
   <!-- índice de la lección (automático) -->
   <paragraphs>
     <title><custom ref="timeline-leccion-titulo"/></title>
-    <list-of elements="subsubsection" scope="subsection"/>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
   </paragraphs>
 
   <!-- Propósito de la lección -->
@@ -145,10 +145,11 @@
 
 
 
-<!-- ============================================
+<!-- ======================================================================
   Cool-down (problema de cierre / de salida)
-================================================= -->
-<subsubsection xml:id="graVV-uniXX-secYY-lecZZ-cool">
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="graVV-uniXX-secYY-lecZZ-cool"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
 
@@ -159,7 +160,7 @@
 
   <!-- Archivo con el contenido -->
   <xi:include href="./graVV-uniXX-secYY-lecZZ-cool.ptx"/>
-</subsubsection>
+</reading-questions>
 
 
 
