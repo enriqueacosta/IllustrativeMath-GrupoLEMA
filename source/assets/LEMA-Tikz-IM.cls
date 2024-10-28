@@ -40,30 +40,31 @@
 
 
 % Separate scaling for each font size category
+% Default size is set at 12pt, and scaling goes from there.
 \newcommand{\setscaledfonts}{
-  \pgfmathparse{10 * \myscalefactor}\let\normalsizevalue\pgfmathresult
-  \pgfmathparse{12 * \myscalefactor}\let\normalsizebaselineskip\pgfmathresult
+  \pgfmathparse{12 * \myscalefactor}\let\normalsizevalue\pgfmathresult
+  \pgfmathparse{14.4 * \myscalefactor}\let\normalsizebaselineskip\pgfmathresult
 
-  \pgfmathparse{12 * \myscalefactor}\let\largevalue\pgfmathresult
-  \pgfmathparse{14 * \myscalefactor}\let\largebaselineskip\pgfmathresult
+  \pgfmathparse{14.4 * \myscalefactor}\let\largevalue\pgfmathresult
+  \pgfmathparse{17.28 * \myscalefactor}\let\largebaselineskip\pgfmathresult
 
-  \pgfmathparse{14 * \myscalefactor}\let\Largevalue\pgfmathresult
-  \pgfmathparse{18 * \myscalefactor}\let\Largebaselineskip\pgfmathresult
+  \pgfmathparse{17.28 * \myscalefactor}\let\Largevalue\pgfmathresult
+  \pgfmathparse{20.74 * \myscalefactor}\let\Largebaselineskip\pgfmathresult
 
-  \pgfmathparse{18 * \myscalefactor}\let\LARGEvalue\pgfmathresult
-  \pgfmathparse{22 * \myscalefactor}\let\LARGEbaselineskip\pgfmathresult
+  \pgfmathparse{20.74 * \myscalefactor}\let\LARGEvalue\pgfmathresult
+  \pgfmathparse{24.88 * \myscalefactor}\let\LARGEbaselineskip\pgfmathresult
 
-  \pgfmathparse{24 * \myscalefactor}\let\Hugevalue\pgfmathresult
-  \pgfmathparse{30 * \myscalefactor}\let\Hugebaselineskip\pgfmathresult
+  \pgfmathparse{29.86 * \myscalefactor}\let\Hugevalue\pgfmathresult
+  \pgfmathparse{35.83 * \myscalefactor}\let\Hugebaselineskip\pgfmathresult
 
   \pgfmathparse{9 * \myscalefactor}\let\smallvalue\pgfmathresult
-  \pgfmathparse{11 * \myscalefactor}\let\smallbaselineskip\pgfmathresult
+  \pgfmathparse{10.5 * \myscalefactor}\let\smallbaselineskip\pgfmathresult
 
   \pgfmathparse{8 * \myscalefactor}\let\footnotesizevalue\pgfmathresult
-  \pgfmathparse{9 * \myscalefactor}\let\footnotesizebaselineskip\pgfmathresult
+  \pgfmathparse{9.6 * \myscalefactor}\let\footnotesizebaselineskip\pgfmathresult
 
   \pgfmathparse{7 * \myscalefactor}\let\scriptsizevalue\pgfmathresult
-  \pgfmathparse{8 * \myscalefactor}\let\scriptsizebaselineskip\pgfmathresult
+  \pgfmathparse{8.4 * \myscalefactor}\let\scriptsizebaselineskip\pgfmathresult
 
   \pgfmathparse{5 * \myscalefactor}\let\tinyvalue\pgfmathresult
   \pgfmathparse{6 * \myscalefactor}\let\tinybaselineskip\pgfmathresult
