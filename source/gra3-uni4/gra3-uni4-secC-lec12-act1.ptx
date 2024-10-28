@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="granCantidadDeDolares" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-unaGranCantidadDeDolares" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Una gran cantidad de dólares</title>
 
@@ -14,53 +14,9 @@
       <p>
         Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.
       </p>
-      <tabular>
-        <row header="yes" bottom="major">
-          <cell>billetes</cell>
-          <cell>expresión</cell>
-          <cell>cantidad de dólares</cell>
-        </row>
-        <row>
-          <cell>un billete de $100</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>cuatro billetes de $20</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>diez billetes de $10</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>diez billetes de $5</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>cinco billetes de $20 	</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>veinte billetes de $10</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>veinte billetes de $5</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>dos billetes de $50</cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
+      <image source="tikz-source/unaGranCantidadDeDolares-tab1">
+        <shortdescription>(for accessibility)</shortdescription>
+      </image>
     </li>
     <li>
       <p>
@@ -86,54 +42,9 @@
       <p>
         Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.
       </p>
-      <tabular>
-        <col width="15%" halign="center"></col>
-        <col width="35%" halign="center"></col>
-        <col width="25%"></col>
-        <col width="25%"></col>
-        <row header="yes" bottom="major">
-          <cell><p>jugador</p></cell>
-          <cell><p>billetes</p></cell>
-          <cell><p>expresión</p></cell>
-          <cell><p>cantidad de dólares</p></cell>
-        </row>
-        <row>
-          <cell><p>Andre</p></cell>
-          <cell><p>nueve billetes de $10 y diez billetes de $5</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-        <row>
-          <cell><p>Clare</p></cell>
-          <cell><p>catorce billetes de $10</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-        <row>
-          <cell><p>Jada</p></cell>
-          <cell><p>diez billetes de $10 y tres billetes de $50</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-        <row>
-          <cell><p>Lin</p></cell>
-          <cell><p>ocho billetes de $20 	</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-        <row>
-          <cell><p>Noah</p></cell>
-          <cell><p>seis billetes de $50</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-        <row>
-          <cell><p>Tyler</p></cell>
-          <cell><p>veintiún billetes de $10</p></cell>
-          <cell><p></p></cell>
-          <cell><p></p></cell>
-        </row>
-      </tabular>
+      <image source="tikz-source/unaGranCantidadDeDolares-tab2">
+        <shortdescription>(for accessibility)</shortdescription>
+      </image>
     </li>
   </ol>
 </statement>
@@ -141,58 +52,9 @@
 <solution>
   <ol>
     <li>
-      <tabular >
-        <col width="35%" halign="center"></col>
-        <col width="35%" halign="center"></col>
-        <col width="20%" halign="center"></col>
-        <row header="yes" bottom="major" valign="bottom">
-          <cell><p>billetes</p></cell>
-          <cell>expresión</cell>
-          <cell><line>cantidad de</line> 
-                <line>dólares</line>
-          </cell>
-        </row>
-        <row valign="bottom">
-          <cell>un billete de $100</cell>
-          <cell><m>1 \times 100</m></cell>
-          <cell>100</cell>
-        </row>
-        <row>
-          <cell>cuatro billetes de $20</cell>
-          <cell><m>4 \times 20</m></cell>
-          <cell>80</cell>
-        </row>
-        <row>
-          <cell>diez billetes de $10</cell>
-          <cell><m>10 \times 10</m></cell>
-          <cell>100</cell>
-        </row>
-        <row>
-          <cell>diez billetes de $5</cell>
-          <cell><m>10 \times 5</m></cell>
-          <cell>50</cell>
-        </row>
-        <row>
-          <cell>cinco billetes de $20</cell>
-          <cell><m>5 \times 20</m></cell>
-          <cell>100</cell>
-        </row>
-        <row>
-          <cell>veinte billetes de $10</cell>
-          <cell><m>20 \times 10</m></cell>
-          <cell>200</cell>
-        </row>
-        <row>
-          <cell>veinte billetes de $5</cell>
-          <cell><m>20 \times 5</m></cell>
-          <cell>100</cell>
-        </row>
-        <row>
-          <cell>dos billetes de $50</cell>
-          <cell><m>2 \times 50</m></cell>
-          <cell>100</cell>
-        </row>
-      </tabular>
+      <image source="tikz-source/unaGranCantidadDeDolares-tab1-sol">
+        <shortdescription>(for accessibility)</shortdescription>
+      </image>
     </li>
     <li>
       <ol>
@@ -204,54 +66,9 @@
       <p>
         Hoah ganó el juego.
       </p>
-      <tabular halign="center">
-        <col width="15%"></col>
-        <col width="35%"></col>
-        <col width="25%"></col>
-        <col width="25%"></col>
-        <row header="yes" bottom="major">
-          <cell><p>jugador</p></cell>
-          <cell><p>billetes</p></cell>
-          <cell><p>expresión</p></cell>
-          <cell><p>cantidad de dólares</p></cell>
-        </row>
-        <row>
-          <cell><p>Andre</p></cell>
-          <cell><p>nueve billetes de $10 y diez billetes de $5</p></cell>
-          <cell><p><m>(9 \times 10) + (10 \times 5)</m></p></cell>
-          <cell><p>140</p></cell>
-        </row>
-        <row>
-          <cell><p>Clare</p></cell>
-          <cell><p>catorce billetes de $10</p></cell>
-          <cell><p><m>14\times 10</m></p></cell>
-          <cell><p>140</p></cell>
-        </row>
-        <row>
-          <cell><p>Jada</p></cell>
-          <cell><p>diez billetes de $10 y tres billetes de $50</p></cell>
-          <cell><p><m>(10 \times 10) + (3 \times 50)</m></p></cell>
-          <cell><p>250</p></cell>
-        </row>
-        <row>
-          <cell><p>Lin</p></cell>
-          <cell><p>ocho billetes de $20 	</p></cell>
-          <cell><p><m>8\times 20</m></p></cell>
-          <cell><p>160</p></cell>
-        </row>
-        <row>
-          <cell><p>Noah</p></cell>
-          <cell><p>seis billetes de $50</p></cell>
-          <cell><p><m>6\times 50</m></p></cell>
-          <cell><p>160</p></cell>
-        </row>
-        <row>
-          <cell><p>Tyler</p></cell>
-          <cell><p>veintiún billetes de $10</p></cell>
-          <cell><p><m>21\times 10</m></p></cell>
-          <cell><p>210</p></cell>
-        </row>
-      </tabular>
+      <image source="tikz-source/unaGranCantidadDeDolares-tab2-sol">
+        <shortdescription>(for accessibility)</shortdescription>
+      </image>
     </li>
   </ol>
 </solution>
