@@ -1,6 +1,6 @@
 %********************************************%
 %*       Generated from PreTeXt source      *%
-%*       on 2024-10-23T21:11:49-05:00       *%
+%*       on 2024-10-28T20:28:47-05:00       *%
 %*   A recent stable commit (2022-07-01):   *%
 %* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
 %*                                          *%
@@ -270,6 +270,31 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \subsubsection[{#4}]{#2}%
 \label{#7}%
 }{}%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
+\NewDocumentEnvironment{reading-questions-subsubsection}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\subsubsection[{#4}]{#2}%
+\label{#7}%
+}{}%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
+\NewDocumentEnvironment{reading-questions-subsubsection-numberless}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\subsubsection*{#2}%
+\addcontentsline{toc}{subsubsection}{#4}
+\label{#7}%
+}{}%
 %% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
 \NewDocumentEnvironment{exercises-subsection}{mmmmmmm}
 {%
@@ -318,31 +343,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\epigraphptx}{#6}%
 \subsection*{#2}%
 \addcontentsline{toc}{subsection}{#4}
-\label{#7}%
-}{}%
-%% Environment for a PTX "solutions" at the level of a LaTeX "section"
-\NewDocumentEnvironment{solutions-section}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\section[{#4}]{#2}%
-\label{#7}%
-}{}%
-%% Environment for a PTX "solutions" at the level of a LaTeX "section"
-\NewDocumentEnvironment{solutions-section-numberless}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\section*{#2}%
-\addcontentsline{toc}{section}{#4}
 \label{#7}%
 }{}%
 %%
@@ -429,17 +429,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
 }
 %% End: Semantic Macros
-%% begin: environments for duplicates in solutions divisions
-%% Solutions to division exercises, not in exercise group
-%% Parameter #1 is type-name and is ignored
-\tcbset{ divisionsolutionstyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, after title={\space}, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{divisionsolution}[4]{divisionsolutionstyle, title={\hyperlink{#4}{#2}.\notblank{#3}{\space#3}{}}}
-\tcbset{ explorationsolutionstyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, after title={\space}, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{explorationsolution}[4]{explorationsolutionstyle, title={\hyperref[#4]{#1~#2}\notblank{#3}{\space#3}{}}}
-\tcbset{ activitysolutionstyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, after title={\space}, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{activitysolution}[4]{activitysolutionstyle, title={\hyperref[#4]{#1~#2}\notblank{#3}{\space#3}{}}}
-\tcbset{ projectsolutionstyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, after title={\space}, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{projectsolution}[4]{projectsolutionstyle, title={\hyperref[#4]{#1~#2}\notblank{#3}{\space#3}{}}}
 %% Divisional exercises (and worksheet) as LaTeX environments
 %% Third argument is option for extra workspace in worksheets
 %% Hanging indent occupies a 5ex width slot prior to left margin
@@ -490,8 +479,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% tcolorbox to place tabular outside of a sidebyside
 \tcbset{ tabularboxstyle/.style={bwminimalstyle,} }
 \newtcolorbox{tabularbox}[3]{tabularboxstyle, left skip=#1\linewidth, width=#2\linewidth,}
-\newcommand{\tablecelllines}[3]%
-{\begin{tabular}[#2]{@{}#1@{}}#3\end{tabular}}
 %% Footnote Numbering
 %% Specified by numbering.footnotes.level
 %% Global numbering, since numbering.footnotes.level = 0
@@ -524,8 +511,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \NewDocumentEnvironment{dlimedium}{mm}%
 {\begin{tcolorbox}[dlimediumstyle, phantom={\hypertarget{#2}{}}]\textbf{#1}\tcblower}%
 {\end{tcolorbox}}%
-%% Package for tables (potentially) spanning multiple pages
-\usepackage{longtable}
 %% hyperref driver does not need to be specified, it will be detected
 %% Footnote marks in tcolorbox have broken linking under
 %% hyperref, so it is necessary to turn off all linking
@@ -652,7 +637,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \author{Adaptación del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}})\\
 \href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}}
 }
-\date{October 23, 2024}
+\date{October 28, 2024}
 \begin{document}
 %% bottom alignment is explicit, since it normally depends on oneside, twoside
 \raggedbottom
@@ -711,10 +696,7 @@ Este material puede que incluya imágenes con licencias abiertas que tiene copyr
 %
 \begin{subsectionptx}{Subsección}{Lección 1 -~¿Cuántos grupos?}{}{Lección 1}{}{}{gra3-uni4-secA-lec1}
 \begin{objectives}{Objetivos}{gra3-uni4-secA-lec1-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Representemos y resolvamos problemas.%
-\end{itemize}
+Representemos y resolvamos problemas.%
 \end{objectives}
 %
 %
@@ -768,14 +750,14 @@ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diag
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec1-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec1-cool}
 \begin{project}{Actividad de cierre}{¿Cuántas bolsas?}{gra3-uni4-secA-lec1-cool-3}%
 Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -785,10 +767,7 @@ Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pon
 %
 \begin{subsectionptx}{Subsección}{Lección 2 -~¿Cuántos hay en cada grupo?}{}{Lección 2}{}{}{gra3-uni4-secA-lec2}
 \begin{objectives}{Objetivos}{gra3-uni4-secA-lec2-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Representemos y resolvamos más problemas.%
-\end{itemize}
+Representemos y resolvamos más problemas.%
 \end{objectives}
 %
 %
@@ -866,14 +845,14 @@ Discute con tu compañero:%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec2-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec2-cool}
 \begin{project}{Actividad de cierre}{Bolsas de manzanas.}{gra3-uni4-secA-lec2-cool-3}%
 Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en cada bolsa para dárselas a sus amigos. ¿Cuántas manzanas hay en cada bolsa? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -883,10 +862,7 @@ Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en
 %
 \begin{subsectionptx}{Subsección}{Lección 3 -~Dibujos de situaciones de división}{}{Lección 3}{}{}{gra3-uni4-secA-lec3}
 \begin{objectives}{Objetivos}{gra3-uni4-secA-lec3-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Representemos situaciones de división con dibujos.%
-\end{itemize}
+Representemos situaciones de división con dibujos.%
 \end{objectives}
 %
 %
@@ -987,10 +963,10 @@ C.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec3-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec3-cool}
 \begin{project}{Actividad de cierre}{Regalitos para invitados.}{gra3-uni4-secA-lec3-cool-3}%
 Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?%
 \par
@@ -1008,7 +984,7 @@ B.%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1018,10 +994,7 @@ B.%
 %
 \begin{subsectionptx}{Subsección}{Lección 4 -~Interpretemos expresiones de división}{}{Lección 4}{}{}{gra3-uni4-secA-lec4}
 \begin{objectives}{Objetivos}{gra3-uni4-secA-lec4-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Démosle sentido a expresiones de división.%
-\end{itemize}
+Démosle sentido a expresiones de división.%
 \end{objectives}
 %
 %
@@ -1032,15 +1005,15 @@ B.%
 \begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec4-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: ¿Más o menos?}{gra3-uni4-secA-lec4-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
-\par
 %
+\begin{multicols}{2}
 \begin{enumerate}
 \item{}\(\displaystyle 500 - 475\)%
 \item{}\(\displaystyle 504 - 475\)%
 \item{}\(\displaystyle 512 - 475\)%
 \item{}\(\displaystyle 512 - 449\)%
 \end{enumerate}
-%
+\end{multicols}
 \end{exploration}%
 \end{subsubsectionptx}
 %
@@ -1193,10 +1166,10 @@ D%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec4-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec4-cool}
 \begin{project}{Actividad de cierre}{Los trompos de Han.}{gra3-uni4-secA-lec4-cool-3}%
 Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?%
 \par
@@ -1241,7 +1214,7 @@ D%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1251,10 +1224,7 @@ D%
 %
 \begin{subsectionptx}{Subsección}{Lección 5 -~Escribamos expresiones de división}{}{Lección 5}{}{}{gra3-uni4-secA-lec5}
 \begin{objectives}{Objetivos}{gra3-uni4-secA-lec5-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Escribamos expresiones de división y resolvamos problemas de "¿cuántos grupos?" y "¿cuántos hay en cada grupo?"%
-\end{itemize}
+Escribamos expresiones de división y resolvamos problemas de "¿cuántos grupos?" y "¿cuántos hay en cada grupo?"%
 \end{objectives}
 %
 %
@@ -1323,21 +1293,21 @@ Haz una presentación visual que muestre cómo pensaste y que muestre tu soluci�
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec5-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec5-cool}
 \begin{project}{Actividad de cierre}{Patas de hormigas.}{gra3-uni4-secA-lec5-cool-3}%
 Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.%
 \par
 %
-\begin{enumerate}
+\begin{enumerate}[label=(\alph*)]
 \item{}Escribe una expresión de división que represente esta situación.%
 \item{}¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.%
 \end{enumerate}
 %
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1583,10 +1553,7 @@ Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo n
 %
 \begin{subsectionptx}{Subsección}{Lección 6 -~La división como un factor desconocido}{}{Lección 6}{}{}{gra3-uni4-secB-lec6}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec6-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Conectemos ecuaciones de división con ecuaciones de multiplicación.%
-\end{itemize}
+Conectemos ecuaciones de división con ecuaciones de mintroductiontiplicación.%
 \end{objectives}
 %
 %
@@ -1651,43 +1618,20 @@ Mai dice que la situación debe representarse con la ecuación:%
 \typeout{************************************************}
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec6-act2}
-\begin{activity}{Actividad}{En el mercado agrícola.}{gra3-uni4-secB-lec6-act2-3}%
+\begin{activity}{Actividad}{En el mercado agrícola.}{act-enElMercadoAgricola}%
 Completa cada fila. Prepárate para explicar tu razonamiento.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AlAcAcAcA}\hrulethin
-{\bfseries{}situación}&{\bfseries{}dibujo o diagrama}&{\bfseries{}ecuación de multiplicación}&{\bfseries{}ecuación de división}\tabularnewline\hrulethick
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-La familia de Elena compra 18 aguacates en el mercado agrícola. Hay 3 aguacates en cada bolsa.%
-}&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131870.pdf}
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/tikz-source/enElMercadoAgricola-tab.pdf}
 \end{image}%
-&&\(18 \div 3 = \underline{\hspace{1 cm}}\)\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-Andre ve 25 tomates. Están en 5 racimos. Cada racimo tiene el mismo número de tomates.%
-}&&\(5 \times {?} = 25\)&\(25 \div 5 = {?}\)\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-Lin pide 6 buñuelos de banano. Los buñuelos se sirven en 2 platos y cada plato tiene el mismo número de buñuelos.%
-}&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131871.pdf}
-\end{image}%
-&\(2 \times{ ?} = 6\)&\tabularnewline\hrulethin
-&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131872.pdf}
-\end{image}%
-&\(\underline{\hspace{1 cm}} \times 10 = 30\)&\(30 \div 10 = \underline{\hspace{1 cm}}\)\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
 \end{activity}%
 \end{subsubsectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec6-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec6-cool}
 \begin{project}{Actividad de cierre}{Muffins en cajas.}{gra3-uni4-secB-lec6-cool-3}%
 Hay 30 \emph{muffins} y varias cajas para la feria de pastelería. En cada caja hay 6 \emph{muffins}. ¿Cuántas cajas hay?%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
@@ -1703,7 +1647,7 @@ Tyler escribió dos ecuaciones para este problema.%
 \par
 Él dice que en cada espacio en blanco va el mismo número, aunque una ecuación es de multiplicación y la otra es de división. ¿Tiene razón? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1713,10 +1657,7 @@ Tyler escribió dos ecuaciones para este problema.%
 %
 \begin{subsectionptx}{Subsección}{Lección 7 -~Relacionemos multiplicación y división}{}{Lección 7}{}{}{gra3-uni4-secB-lec7}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec7-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Hagamos más conexiones entre la multiplicación y la división.%
-\end{itemize}
+Hagamos más conexiones entre la multiplicación y la división.%
 \end{objectives}
 %
 %
@@ -1800,16 +1741,16 @@ b. Resuelve el problema y encuentra el número desconocido de la ecuación. Prep
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec7-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec7-cool}
 \begin{project}{Actividad de cierre}{Rosas para compartir.}{gra3-uni4-secB-lec7-cool-3}%
 Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?%
 \par
 Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1819,10 +1760,7 @@ Escribe una ecuación de multiplicación y una ecuación de división que repres
 %
 \begin{subsectionptx}{Subsección}{Lección 8 -~Relacionemos cocientes con productos que nos sabemos}{}{Lección 8}{}{}{gra3-uni4-secB-lec8}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec8-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Consideremos los productos y cocientes que nos sabemos de inmediato o que podemos encontrar rápidamente.%
-\end{itemize}
+Consideremos los productos y cocientes que nos sabemos de inmediato o que podemos encontrar rápidamente.%
 \end{objectives}
 %
 %
@@ -1857,15 +1795,7 @@ Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica l
 \item{}lo puede encontrar rápidamente%
 \item{}todavía no se lo sabe%
 \end{enumerate}
-Expresiones de multiplicación que voy a practicar:%
-%
-\begin{enumerate}
-\item{}%
-\item{}%
-\item{}%
-\item{}%
-\item{}%
-\end{enumerate}
+Anota expresiones de multiplicación que vas a practicar.%
 \end{activity}%
 \end{subsubsectionptx}
 %
@@ -1875,7 +1805,7 @@ Expresiones de multiplicación que voy a practicar:%
 \typeout{************************************************}
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec8-act2}
-\begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}.}{gra3-uni4-secB-lec8-act2-3}%
+\begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}.}{act-siSeQueEntoncesSeQue}%
 Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
 %
 \begin{enumerate}
@@ -1884,36 +1814,22 @@ Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
 \item{}Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que \textellipsis{}”%
 \item{}Después, anoten las ecuaciones de división relacionadas en la columna “Entonces sé que   \textellipsis{}”%
 \end{enumerate}
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AlAlA}\hrulethin
-{\bfseries{}Si sé que \textellipsis{}}&{\bfseries{}Entonces sé que \textellipsis{}}\tabularnewline\hrulethick
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-\textendash{}%
-}&\multicolumn{1}{m{0.6\linewidth}A}{\raggedright%
-\textendash{}%
-}\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-\textendash{}%
-}&\multicolumn{1}{m{0.6\linewidth}A}{\raggedright%
-\textendash{}%
-}\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/tikz-source/siSeQueEntoncesSeQue-tab.pdf}
+\end{image}%
 \end{activity}%
 \end{subsubsectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec8-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec8-cool}
 \begin{project}{Actividad de cierre}{Hechos de multiplicación y de división.}{gra3-uni4-secB-lec8-cool-3}%
 Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -1923,10 +1839,7 @@ Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde
 %
 \begin{subsectionptx}{Subsección}{Lección 9 -~Patrones en la tabla de multiplicar}{}{Lección 9}{}{}{gra3-uni4-secB-lec9}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec9-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Encontremos patrones en la tabla de multiplicar y usémoslos para multiplicar.%
-\end{itemize}
+Encontremos patrones en la tabla de multiplicar y usémoslos para multiplicar.%
 \end{objectives}
 %
 %
@@ -1966,13 +1879,6 @@ Esta es una tabla de multiplicar que no se ha completado totalmente.%
 \end{enumerate}
 Prepárate para explicar tu razonamiento.%
 \end{enumerate}
-Los estudiantes se pueden preguntar:%
-%
-\begin{itemize}[label=\textbullet]
-\item{}¿Qué significan los números en la tabla?%
-\item{}¿Cómo funciona la tabla?%
-\item{}¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?%
-\end{itemize}
 \end{activity}%
 \end{subsubsectionptx}
 %
@@ -1982,22 +1888,13 @@ Los estudiantes se pueden preguntar:%
 \typeout{************************************************}
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec9-act2}
-\begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}: Multiplicación.}{gra3-uni4-secB-lec9-act2-3}%
+\begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}: Multiplicación.}{act-siSeQueEntoncesSeQueMult}%
 %
 \begin{enumerate}
 \item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AcAcA}\hrulethin
-{\bfseries{}Si sé que \textellipsis{}}&{\bfseries{}Entonces sé que \textellipsis{}}\tabularnewline\hrulethick
-\(2\times24\)&\(4\times 2\), \(4\times 4\), \(2\times 8\)\tabularnewline\hrulethin
-\(3\times 5\)&\tabularnewline\hrulethin
-\(4\times 10\)&\tabularnewline\hrulethin
-\(7\times 2\)&\tabularnewline\hrulethin
-\(5\times 8\)&\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/tikz-source/siSeQueEntoncesSeQueMult-tab.pdf}
+\end{image}%
 \item{}Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
 \end{enumerate}
 \end{activity}%
@@ -2005,17 +1902,17 @@ Los estudiantes se pueden preguntar:%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec9-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec9-cool}
 \begin{project}{Actividad de cierre}{Encuentra el producto desconocido.}{gra3-uni4-secB-lec9-cool-3}%
 ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-153040.pdf}
 \end{image}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2025,10 +1922,7 @@ Los estudiantes se pueden preguntar:%
 %
 \begin{subsectionptx}{Subsección}{Lección 10 -~Exploremos estrategias de multiplicación con rectángulos}{}{Lección 10}{}{}{gra3-uni4-secB-lec10}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec10-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Usemos rectángulos para explorar estrategias de multiplicación.%
-\end{itemize}
+Usemos rectángulos para explorar estrategias de multiplicación.%
 \end{objectives}
 %
 %
@@ -2180,16 +2074,16 @@ En cada rectángulo:%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec10-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec10-cool}
 \begin{project}{Actividad de cierre}{Marca o colorea partes para encontrar el área.}{gra3-uni4-secB-lec10-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
 El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 %
-\begin{enumerate}
+\begin{enumerate}[label=(\alph*)]
 \item{}Marca o colorea el rectángulo para mostrar que podemos escribir \(2 \times (3 \times 7)\) o \((6 \times 5) + (6 \times 2)\) para encontrar su área.%
 \item{}¿Cuál es el valor de \(6 \times 7\)? Explica o muestra tu razonamiento.%
 \end{enumerate}
@@ -2199,7 +2093,7 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2209,10 +2103,7 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 %
 \begin{subsectionptx}{Subsección}{Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula}{}{Lección 11}{}{}{gra3-uni4-secB-lec11}
 \begin{objectives}{Objetivos}{gra3-uni4-secB-lec11-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Usemos diferentes estrategias para encontrar el área de rectángulos sin cuadrícula.%
-\end{itemize}
+Usemos diferentes estrategias para encontrar el área de rectángulos sin cuadrícula.%
 \end{objectives}
 %
 %
@@ -2299,7 +2190,7 @@ Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas
 Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
 \par
 Si te ayuda, puedes dibujar rectángulos.%
-\begin{image}{0}{1}{0}{}%
+\begin{image}{0.25}{0.5}{0.25}{}%
 \includegraphics[width=\linewidth]{external/png-source/Card Sort Different Expressions, Same Rectangle for Screenshot Only.png}
 \end{image}%
 \end{activity}%
@@ -2307,15 +2198,15 @@ Si te ayuda, puedes dibujar rectángulos.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec11-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec11-cool}
 \begin{project}{Actividad de cierre}{Expresiones para un rectángulo.}{gra3-uni4-secB-lec11-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
 %
-\begin{enumerate}
+\begin{enumerate}[label=(\alph*)]
 \item{}Marca o colorea este rectángulo para mostrar una estrategia que ayude a encontrar su área.%
 \item{}Escribe una o más expresiones que representen cómo encuentras el área.%
 \end{enumerate}
@@ -2325,7 +2216,7 @@ Si te ayuda, puedes dibujar rectángulos.%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2454,10 +2345,7 @@ Usamos estrategias para multiplicar y dividir, y trabajamos para multiplicar y d
 %
 \begin{subsectionptx}{Subsección}{Lección 12 -~Multipliquemos múltiplos de diez}{}{Lección 12}{}{}{gra3-uni4-secC-lec12}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec12-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Multipliquemos números de un dígito por múltiplos de 10.%
-\end{itemize}
+Multipliquemos números de un dígito por múltiplos de 10.%
 \end{objectives}
 %
 %
@@ -2480,28 +2368,16 @@ Usamos estrategias para multiplicar y dividir, y trabajamos para multiplicar y d
 \typeout{************************************************}
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec12-act1}
-\begin{activity}{Actividad}{Una gran cantidad de dólares.}{granCantidadDeDolares}%
+\begin{activity}{Actividad}{Una gran cantidad de dólares.}{act-unaGranCantidadDeDolares}%
 Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
 %
 \begin{enumerate}
 \item{}Cada jugador recibió \textdollar{}100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?%
 \par
 Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{lll}
-{\bfseries{}billetes}&{\bfseries{}expresión}&{\bfseries{}cantidad de dólares}\tabularnewline\hrulethick
-un billete de \textdollar{}100&&\tabularnewline[0pt]
-cuatro billetes de \textdollar{}20&&\tabularnewline[0pt]
-diez billetes de \textdollar{}10&&\tabularnewline[0pt]
-diez billetes de \textdollar{}5&&\tabularnewline[0pt]
-cinco billetes de \textdollar{}20&&\tabularnewline[0pt]
-veinte billetes de \textdollar{}10&&\tabularnewline[0pt]
-veinte billetes de \textdollar{}5&&\tabularnewline[0pt]
-dos billetes de \textdollar{}50&&
-\end{tabular}
-}%
-\end{center}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/tikz-source/unaGranCantidadDeDolares-tab1.pdf}
+\end{image}%
 \item{}En un momento del juego, Noah tuvo que pagarle a Lin \textdollar{}150. Él le dio esa cantidad usando billetes del mismo tipo.%
 %
 \begin{enumerate}
@@ -2511,75 +2387,9 @@ dos billetes de \textdollar{}50&&
 \item{}La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?%
 \par
 Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{ccll}
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-jugador%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-billetes%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-expresión%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-cantidad de dólares%
-}\tabularnewline\hrulethick
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Andre%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-nueve billetes de \textdollar{}10 y diez billetes de \textdollar{}5%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Clare%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-catorce billetes de \textdollar{}10%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Jada%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-diez billetes de \textdollar{}10 y tres billetes de \textdollar{}50%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Lin%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-ocho billetes de \textdollar{}20%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Noah%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-seis billetes de \textdollar{}50%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Tyler%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-veintiún billetes de \textdollar{}10%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}
-\end{tabular}
-}%
-\end{center}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/tikz-source/unaGranCantidadDeDolares-tab2.pdf}
+\end{image}%
 \end{enumerate}
 \end{activity}%
 \end{subsubsectionptx}
@@ -2618,14 +2428,14 @@ veintiún billetes de \textdollar{}10%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec12-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec12-cool}
 \begin{project}{Actividad de cierre}{¿Cuál es el valor?}{gra3-uni4-secC-lec12-cool-3}%
 Encuentra el valor de \(6\times 40\). Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2635,10 +2445,7 @@ Encuentra el valor de \(6\times 40\). Explica o muestra tu razonamiento.%
 %
 \begin{subsectionptx}{Subsección}{Lección 13 -~Resolvamos problemas de grupos iguales}{}{Lección 13}{}{}{gra3-uni4-secC-lec13}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec13-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Multipliquemos algunos números del 11 al 19.%
-\end{itemize}
+Multipliquemos algunos números del 11 al 19.%
 \end{objectives}
 %
 %
@@ -2701,16 +2508,16 @@ Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y 
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec13-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec13-cool}
 \begin{project}{Actividad de cierre}{Bolsas de naranjas.}{gra3-uni4-secC-lec13-cool-3}%
 Hay 6 bolsas de naranjas y cada bolsa contiene 11 naranjas. ¿Cuántas naranjas hay en las bolsas?%
 \par
 Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2720,10 +2527,7 @@ Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 %
 \begin{subsectionptx}{Subsección}{Lección 14 -~Formas de representar la multiplicación de números del 11 al 19}{}{Lección 14}{}{}{gra3-uni4-secC-lec14}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec14-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Démosle sentido a algunas formas de representar la multiplicación de números del 11 al 19.%
-\end{itemize}
+Démosle sentido a algunas formas de representar la multiplicación de números del 11 al 19.%
 \end{objectives}
 %
 %
@@ -2757,15 +2561,17 @@ Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 \begin{activity}{Actividad}{Un factor mayor que diez.}{gra3-uni4-secC-lec14-act1-3}%
 %
 \begin{enumerate}
-\item{}Tyler dice que puede usar bloques en base diez para encontrar el valor de \(7\times 13\) porque él se sabe \(7\times 10\) y \(7\times 3\). Él dice que este diagrama muestra que su forma de pensar es correcta.%
-\begin{sidebyside}{2}{0}{0.05}{0.05}%
-\begin{sbspanel}{0.5}%
+\item{}\begin{sidebyside}{2}{0}{0}{0.05}%
+\begin{sbspanel}{0.55}%
+Tyler dice que puede usar bloques en base diez para encontrar el valor de \(7\times 13\) porque él se sabe \(7\times 10\) y \(7\times 3\). Él dice que este diagrama muestra que su forma de pensar es correcta.%
+\par
 ¿Estás de acuerdo o en desacuerdo? Explica tu razonamiento.%
 \end{sbspanel}%
 \begin{sbspanel}{0.4}%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-141823.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
+%
 \item{}Usa el método de Tyler para encontrar el valor de  \(3\times 14\). Explica o muestra tu razonamiento.%
 \end{enumerate}
 \end{activity}%
@@ -2813,10 +2619,10 @@ Diego%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec14-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec14-cool}
 \begin{project}{Actividad de cierre}{Multiplica y explica.}{gra3-uni4-secC-lec14-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.5}%
@@ -2827,7 +2633,7 @@ Encuentra el valor de \(5\times 15\) y explica cómo está representado esto en 
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2837,10 +2643,7 @@ Encuentra el valor de \(5\times 15\) y explica cómo está representado esto en 
 %
 \begin{subsectionptx}{Subsección}{Lección 15 -~Grupos iguales, números más grandes}{}{Lección 15}{}{}{gra3-uni4-secC-lec15}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec15-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Resolvamos algunos problemas de grupos iguales que tienen números más grandes.%
-\end{itemize}
+Resolvamos algunos problemas de grupos iguales que tienen números más grandes.%
 \end{objectives}
 %
 %
@@ -2909,14 +2712,14 @@ Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y 
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec15-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec15-cool}
 \begin{project}{Actividad de cierre}{Encuentra el área.}{gra3-uni4-secC-lec15-cool-3}%
 Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -2926,10 +2729,7 @@ Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Exp
 %
 \begin{subsectionptx}{Subsección}{Lección 16 -~Multipliquemos números más grandes que 20}{}{Lección 16}{}{}{gra3-uni4-secC-lec16}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec16-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Multipliquemos números que son más grandes que 20.%
-\end{itemize}
+Multipliquemos números que son más grandes que 20.%
 \end{objectives}
 %
 %
@@ -3125,14 +2925,14 @@ Ronda 2%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec16-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec16-cool}
 \begin{project}{Actividad de cierre}{Multiplica números mayores que 20.}{gra3-uni4-secC-lec16-cool-3}%
 ¿Cuál es el valor de \(4\times 24\)? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3142,10 +2942,7 @@ Ronda 2%
 %
 \begin{subsectionptx}{Subsección}{Lección 17 -~Usemos las cuatro operaciones para resolver problemas}{}{Lección 17}{}{}{gra3-uni4-secC-lec17}
 \begin{objectives}{Objetivos}{gra3-uni4-secC-lec17-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Usemos las cuatro operaciones para resolver problemas.%
-\end{itemize}
+Usemos las cuatro operaciones para resolver problemas.%
 \end{objectives}
 %
 %
@@ -3187,13 +2984,13 @@ En una fiesta hay 142 invitados. Todos los invitados están en 2 salas. En la sa
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec17-act2}
 \begin{activity}{Actividad}{Problemas sobre una fiesta.}{act-problemsMultiplicativosFiesta}%
 En cada problema:%
-\begin{sidebyside}{2}{0}{0}{0}%
+\begin{sidebyside}{2}{0.05}{0.05}{0}%
 \begin{sbspanel}{0.6}%
 a. Escribe una ecuación que represente la situación. Usa una letra para representar la cantidad desconocida.%
 \par
 b. Resuelve el problema. Explica o muestra tu razonamiento.%
 \end{sbspanel}%
-\begin{sbspanel}{0.4}%
+\begin{sbspanel}{0.3}%
 \includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 17.png}
 \end{sbspanel}%
 \end{sidebyside}%
@@ -3208,19 +3005,19 @@ b. Resuelve el problema. Explica o muestra tu razonamiento.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec17-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec17-cool}
 \begin{project}{Actividad de cierre}{Los globos de Andre.}{gra3-uni4-secC-lec17-cool-3}%
 Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?%
 %
-\begin{enumerate}
+\begin{enumerate}[label=(\alph*)]
 \item{}Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.%
 \item{}Resuelve el problema. Explica o muestra cómo razonaste.%
 \end{enumerate}
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3366,10 +3163,7 @@ En esta sección, aprendimos a multiplicar números de un dígito por múltiplos
 %
 \begin{subsectionptx}{Subsección}{Lección 18 -~Números más grandes en grupos iguales}{}{Lección 18}{}{}{gra3-uni4-secD-lec18}
 \begin{objectives}{Objetivos}{gra3-uni4-secD-lec18-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Dividamos con números más grandes.%
-\end{itemize}
+Dividamos con números más grandes.%
 \end{objectives}
 %
 %
@@ -3418,16 +3212,16 @@ En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras repre
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec18-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec18-cool}
 \begin{project}{Actividad de cierre}{Equipos en el recreo.}{gra3-uni4-secD-lec18-cool-3}%
 En el recreo, \(42\) estudiantes jugaron un juego. Armaron \(3\) equipos con el mismo número de estudiantes cada uno. ¿Cuántos estudiantes había en cada equipo?%
 \par
 Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3437,10 +3231,7 @@ Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 %
 \begin{subsectionptx}{Subsección}{Lección 19 -~Formas de dividir números más grandes}{}{Lección 19}{}{}{gra3-uni4-secD-lec19}
 \begin{objectives}{Objetivos}{gra3-uni4-secD-lec19-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Démosle sentido a las representaciones de la división.%
-\end{itemize}
+Démosle sentido a las representaciones de la división.%
 \end{objectives}
 %
 %
@@ -3468,7 +3259,7 @@ En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para exp
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec19-act1}
 \begin{activity}{Actividad}{Dividamos con bloques en base diez.}{gra3-uni4-secD-lec19-act1-3}%
-\begin{sidebyside}{2}{0}{0.1}{0}%
+\begin{sidebyside}{2}{0}{0}{0.1}%
 \begin{sbspanel}{0.7}%
 %
 \begin{enumerate}
@@ -3532,14 +3323,14 @@ Este es el trabajo de Han:%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec19-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec19-cool}
 \begin{project}{Actividad de cierre}{Encuentra el valor.}{gra3-uni4-secD-lec19-cool-3}%
 Encuentra el valor de \(51 \div 3.\) Usa bloques en base diez si crees que te pueden ayudar. Explica o muestra cómo razonaste.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3549,10 +3340,7 @@ Encuentra el valor de \(51 \div 3.\) Usa bloques en base diez si crees que te pu
 %
 \begin{subsectionptx}{Subsección}{Lección 20 -~Estrategias para dividir}{}{Lección 20}{}{}{gra3-uni4-secD-lec20}
 \begin{objectives}{Objetivos}{gra3-uni4-secD-lec20-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Usemos diferentes estrategias para dividir.%
-\end{itemize}
+Usemos diferentes estrategias para dividir.%
 \end{objectives}
 %
 %
@@ -3652,14 +3440,14 @@ Juega ``Compara'' con dos jugadores.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec20-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec20-cool}
 \begin{project}{Actividad de cierre}{Una división más.}{gra3-uni4-secD-lec20-cool-3}%
 Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3669,10 +3457,7 @@ Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
 %
 \begin{subsectionptx}{Subsección}{Lección 21 -~Resolvamos problemas usando las cuatro operaciones}{}{Lección 21}{}{}{gra3-uni4-secD-lec21}
 \begin{objectives}{Objetivos}{gra3-uni4-secD-lec21-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Representar problemas de dos pasos utilizando ecuaciones con una letra que represente la cantidad desconocida.%
-\end{itemize}
+Representar problemas de dos pasos utilizando ecuaciones con una letra que represente la cantidad desconocida.%
 \end{objectives}
 %
 %
@@ -3697,7 +3482,14 @@ Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacada
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec21-act1}
 \begin{activity}{Actividad}{Una aventura con manzanas.}{act-unaAventuraConManzanas}%
+\begin{sidebyside}{2}{0}{0}{0.1}%
+\begin{sbspanel}{0.6}%
 Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
+\includegraphics[width=\linewidth]{external/png-source/3.4.D21.S_Sp.png}
+\end{sbspanel}%
+\end{sidebyside}%
 \par
 Escoge \(4\) números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos \(4\) números.%
 \begin{image}{0}{1}{0}{}%
@@ -3705,9 +3497,6 @@ Escoge \(4\) números de la lista que describan correctamente la situación. Ús
 \end{image}%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/tikz-source/3-4-21-act1-tab.pdf}
-\end{image}%
-\begin{image}{0.25}{0.5}{0.25}{}%
-\includegraphics[width=\linewidth]{external/png-source/3.4.D21.S_Sp.png}
 \end{image}%
 \end{activity}%
 \end{subsubsectionptx}
@@ -3719,10 +3508,14 @@ Escoge \(4\) números de la lista que describan correctamente la situación. Ús
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec21-act2}
 \begin{activity}{Actividad}{Días de manzanas.}{gra3-uni4-secD-lec21-act2-3}%
+\begin{sidebyside}{2}{0}{0.05}{0.05}%
+\begin{sbspanel}{0.6}%
 Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
-\begin{image}{0.25}{0.5}{0.25}{}%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
 \includegraphics[width=\linewidth]{external/jpg-source/apple-3535566_1920.jpg}
-\end{image}%
+\end{sbspanel}%
+\end{sidebyside}%
 %
 \begin{enumerate}
 \item{}Tyler apila manzanas para vender en el evento. Tiene \(85\) manzanas para apilar. Ya ha hecho \(5\) filas de \(10\) manzanas. ¿Cuántas manzanas quedan?%
@@ -3749,19 +3542,19 @@ Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad de cierre}
+\typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec21-cool}
+\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec21-cool}
 \begin{project}{Actividad de cierre}{Las manzanas en el puesto de la huerta.}{gra3-uni4-secD-lec21-cool-3}%
 En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en \(6\) cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?%
 %
-\begin{enumerate}
+\begin{enumerate}[label=(\alph*)]
 \item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
 \item{}Resuelve el problema. Explica o muestra tu razonamiento.%
 \end{enumerate}
 \end{project}%
-\end{subsubsectionptx}
+\end{reading-questions-subsubsection}
 \end{subsectionptx}
 %
 %
@@ -3771,10 +3564,7 @@ En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manz
 %
 \begin{subsectionptx}{Subsección}{Lección 22 -~La huerta comunitaria de la escuela}{}{Lección 22}{}{}{gra3-uni4-secD-lec22}
 \begin{objectives}{Objetivos}{gra3-uni4-secD-lec22-4}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Planeemos una huerta para la escuela.%
-\end{itemize}
+Planeemos una huerta para la escuela.%
 \end{objectives}
 %
 %
@@ -3798,14 +3588,7 @@ En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manz
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec22-act1}
 \begin{activity}{Actividad}{La producción.}{gra3-uni4-secD-lec22-act1-3}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
 En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
-\end{sbspanel}%
-\end{sidebyside}%
 %
 \begin{enumerate}
 \item{}Una parcela de fresas tiene \(7\) filas con \(8\) plantas de fresas en cada fila.%
@@ -3815,7 +3598,15 @@ En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.
 \item{}Para cultivar fresas de la mejor manera, las filas deben estar separadas por \(4\) pies. En cada fila, debe haber \(2\) pies de distancia entre planta y planta. ¿Qué tan larga y qué tan ancha es la parcela de fresas?%
 \item{}Se pueden cosechar \(12\) fresas de cada planta. ¿Cuántas fresas van a crecer en cada fila?%
 \end{enumerate}
-\item{}Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven los números de la expresión o de la ecuación que escribieron.%
+\item{}\begin{sidebyside}{2}{0}{0}{0.1}%
+\begin{sbspanel}{0.6}%
+Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven los números de la expresión o de la ecuación que escribieron.%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
+\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
+\end{sbspanel}%
+\end{sidebyside}%
+%
 \end{enumerate}
 \end{activity}%
 \end{subsubsectionptx}
@@ -3848,8 +3639,8 @@ En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.
 \item{}Haz un diagrama que muestre cómo están organizadas las plantas y cuánto espacio se necesita.%
 \end{enumerate}
 \alert{Requisitos para el cultivo}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
+\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
 %
 \par
@@ -3862,7 +3653,7 @@ fresas%
 \item{}Cada planta produce \(12\) fresas.%
 \end{itemize}
 \end{sbspanel}%
-\begin{sbspanel}{0.5}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-melon-cantalupo.jpg}
 %
 \par
@@ -3876,8 +3667,8 @@ melones cantalupos%
 \end{itemize}
 \end{sbspanel}%
 \end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
+\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-calabacin.jpg}
 %
 \par
@@ -3890,7 +3681,7 @@ calabacín%
 \item{}Cada planta produce aproximadamente \(8\) calabacines.%
 \end{itemize}
 \end{sbspanel}%
-\begin{sbspanel}{0.5}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-tomate.jpg}
 %
 \par
@@ -3904,8 +3695,8 @@ tomates%
 \end{itemize}
 \end{sbspanel}%
 \end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
+\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-frijoles-pintos.jpg}
 %
 \par
@@ -3918,7 +3709,7 @@ frijoles pintos%
 \item{}Cada planta produce entre \(20\) y \(25\) vainas y cada vaina produce aproximadamente \(5\) frijoles.%
 \end{itemize}
 \end{sbspanel}%
-\begin{sbspanel}{0.5}%
+\begin{sbspanel}{0.45}%
 \includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-papas.jpg}
 %
 \par
@@ -4117,1963 +3908,5 @@ Una forma de decir de qué número de cierto tipo está más cerca un número da
 \end{dlimedium}%
 \end{descriptionlist}
 \end{subsectionptx}
-\end{sectionptx}
-%
-%
-\typeout{************************************************}
-\typeout{Soluciones  Actividades de cierre}
-\typeout{************************************************}
-%
-\begin{solutions-section}{Soluciones}{Actividades de cierre}{}{Actividades de cierre}{}{}{gra3-uni4-9}
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Sección A -~¿Qué es la división?\\
-\space\textperiodcentered\space{}Lección 1 -~¿Cuántos grupos?\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{1}{Cuántos ves: Manzanas.}{gra3-uni4-secA-lec1-warm-3}%
-¿Cuántas ves? ¿Cómo lo sabes?, ¿qué ves?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/jpg-source/apples-1642732_1920.jpg}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{2}{¿Cuántas manzanas?}{gra3-uni4-secA-lec1-actividad1-3}%
-Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
-\par
-%
-\begin{enumerate}
-\item{}Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?%
-\item{}Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?%
-\item{}Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?%
-\end{enumerate}
-%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{3}{Recorrido por el salón: Manzanas en cajas.}{gra3-uni4-secA-lec1-actividad2-3}%
-%
-\begin{enumerate}
-\item{}Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.%
-\item{}Reflexiona sobre lo que viste. Escribe una cosa en la que se parecen y una cosa en la que se diferencian las ideas que se muestran en los pósteres.%
-\end{enumerate}
-%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{4}{¿Cuántas bolsas?}{gra3-uni4-secA-lec1-cool-3}%
-Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 2 -~¿Cuántos hay en cada grupo?\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{5}{Observa y pregúntate: Más manzanas.}{gra3-uni4-secA-lec2-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/jpg-source/3.4.A2 Warrm-up.jpg}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{6}{¿Cuántas manzanas?}{gra3-uni4-secA-lec2-actividad1-3}%
-Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
-\par
-%
-\begin{enumerate}
-\item{}Si 20 manzanas se empacan en 4 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?%
-\item{}Si 36 manzanas se empacan en 6 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?%
-\item{}Si 45 manzanas se empacan en 9 cajas y en cada caja hay el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?%
-\end{enumerate}
-%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{7}{Recorrido por el salón.}{gra3-uni4-secA-lec2-actividad2-3}%
-Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 3}
-\begin{activitysolution}{Actividad}{8}{Todas las manzanas.}{gra3-uni4-secA-lec2-actividad3-3}%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\par
-Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?%
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-Discute con tu compañero:%
-\par
-%
-\begin{itemize}[label=\textbullet]
-\item{}¿En qué se parecen estos problemas?%
-\item{}¿En qué se diferencian?%
-\item{}¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?%
-\end{itemize}
-%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{9}{Bolsas de manzanas.}{gra3-uni4-secA-lec2-cool-3}%
-Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en cada bolsa para dárselas a sus amigos. ¿Cuántas manzanas hay en cada bolsa? Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 3 -~Dibujos de situaciones de división\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{10}{Conversación numérica: Cuanto más cambien las cosas....}{gra3-uni4-secA-lec3-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-\par
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 120 + 120\)%
-\item{}\(\displaystyle 121 + 119\)%
-\item{}\(\displaystyle 125 + 115\)%
-\item{}\(\displaystyle 129 + 111\)%
-\end{itemize}
-%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{11}{Grupos de estudiantes.}{gra3-uni4-secA-lec3-act1-3}%
-%
-\begin{enumerate}
-\item{}¿Qué observaste acerca de cómo los estudiantes se organizaron en grupos de 2?%
-\item{}¿Qué observaste acerca de cómo los estudiantes se organizaron en 2 grupos?%
-\end{enumerate}
-%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{12}{Los lápices de colores de Elena.}{gra3-uni4-secA-lec3-act2-3}%
-Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices irán en cada caja?%
-\par
-¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-149310.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-149311.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 3}
-\begin{activitysolution}{Actividad}{13}{¿Cuál dibujo corresponde?}{gra3-uni4-secA-lec3-act3-3}%
-Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.%
-\begin{sidebyside}{2}{0}{0}{0.05}%
-\begin{sbspanel}{0.55}[center]%
-%
-\begin{enumerate}
-\item{}Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?%
-\item{}Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?%
-\item{}Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?%
-\item{}Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?%
-\item{}Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?%
-\item{}Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?%
-\end{enumerate}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}[center]%
-A.%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149313.pdf}
-B.%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149314.pdf}
-C.%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149315.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{14}{Regalitos para invitados.}{gra3-uni4-secA-lec3-cool-3}%
-Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?%
-\par
-¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-A.%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-246306.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-B.%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-246307.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 4 -~Interpretemos expresiones de división\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{15}{Conversación numérica: ¿Más o menos?}{gra3-uni4-secA-lec4-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-\par
-%
-\begin{enumerate}
-\item{}\(\displaystyle 500 - 475\)%
-\item{}\(\displaystyle 504 - 475\)%
-\item{}\(\displaystyle 512 - 475\)%
-\item{}\(\displaystyle 512 - 449\)%
-\end{enumerate}
-%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{16}{Trompos.}{gra3-uni4-secA-lec4-actividad1-3}%
-Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.%
-\begin{sidebyside}{5}{0}{0}{0}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Mexican Trompo.jpg}
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Dreidels.jpg}
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Indonesian Gasing.jpg}
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/png-source/V1 3.4.A.4 German Kreisel Copy.png}
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Colorful Top.jpg}
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-Empareja cada situación sobre trompos con una expresión que pueda representarla.%
-\begin{sidebyside}{2}{0.05}{0}{0.15}%
-\begin{sbspanel}{0.6}%
-1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?%
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\par
-A. \(24 \div 2\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0}{0.15}%
-\begin{sbspanel}{0.6}%
-2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada persona pinta el mismo número de trompos, ¿cuántos trompos pinta cada persona?%
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\par
-B. \(12 \div 2\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0}{0.15}%
-\begin{sbspanel}{0.6}%
-3. En una tienda tienen 24 trompos de todo el mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?%
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\par
-C. \(24 \div 4\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0}{0.15}%
-\begin{sbspanel}{0.6}%
-4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?%
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\par
-D. \(12 \div 6\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0}{0.15}%
-\begin{sbspanel}{0.6}%
-5. Seis amigos están jugando con 12 \emph{dreidels}. Si cada uno juega con el mismo número de \emph{dreidels} que los demás, ¿cuántos \emph{dreidels} tiene cada persona?%
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\par
-E. \(24 \div 6\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{17}{Autos en cajas.}{gra3-uni4-secA-lec4-actividad2-3}%
-Considera estas dos situaciones.%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\par
-B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?%
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-¿Cuál situación está representada por la expresión \(21\div 3\)? Explica tu razonamiento.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 3}
-\begin{activitysolution}{Actividad}{18}{Pilas de bloques.}{gra3-uni4-secA-lec4-actividad3-3}%
-Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.%
-%
-\begin{enumerate}
-\item{}Kiran usa 6 bloques para hacer pilas. Cada pila tiene 2 bloques. ¿Cuántas pilas hay?%
-\item{}Han usa 6 bloques para hacer dos pilas iguales. ¿Cuántos bloques hay en cada pila?%
-\item{}Jada usa 6 bloques para construir pilas que tienen 3 bloques cada una. ¿Cuántas pilas hay?%
-\item{}Mai usa 6 bloques para hacer 3 pilas iguales. ¿Cuántos bloques hay en cada pila?%
-\end{enumerate}
-Dibujos%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149316.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149317.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-Expresiones%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-C%
-\begin{equation*}
-6\div 2
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\par
-D%
-\begin{equation*}
-6\div 3
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{19}{Los trompos de Han.}{gra3-uni4-secA-lec4-cool-3}%
-Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?%
-\par
-Selecciona \alert{todas} las formas en las que podemos representar la situación.%
-\begin{sidebyside}{4}{0.0075}{0.0075}{0.015}%
-\begin{sbspanel}{0.02}%
-A%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151100.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.02}%
-B%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151101.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{4}{0.0075}{0.0075}{0.015}%
-\begin{sbspanel}{0.02}%
-C%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-\par
-%
-\begin{equation*}
-14\div 2
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.02}%
-\par
-D%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-\par
-%
-\begin{equation*}
-14\div 7
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 5 -~Escribamos expresiones de división\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{20}{Conversación numérica: ¿En qué se parecen?}{gra3-uni4-secA-lec5-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-\par
-%
-\begin{enumerate}
-\item{}\(\displaystyle 225 - 100\)%
-\item{}\(\displaystyle 227 - 102\)%
-\item{}\(\displaystyle 230 - 105\)%
-\item{}\(\displaystyle 220 - 95\)%
-\end{enumerate}
-%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{21}{Clasificación de tarjetas: Todo sobre bichos.}{clasificacionDeTarjetas-todoSobreBichos}%
-\begin{figureptx}{Figura}{By Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. \href{https://en.wikipedia.org/wiki/Insect\#/media/File:Insect_collage.png}{Source}\protect\footnotemark{}.}{clasificacionDeTarjetas-todoSobreBichos-2-1}{}%
-\begin{image}{0.25}{0.5}{0.25}{}%
-\includegraphics[width=\linewidth]{external/png-source/v1 3.4.A5 Launch.png}
-\end{image}%
-\tcblower
-\end{figureptx}%
-%
-\begin{enumerate}
-\item{}Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.%
-%
-\begin{enumerate}[label=(\Alph*)]
-\item{}El grillo topo tiene unas patas especiales para cavar. Diez patas especiales pertenecen a 5 grillos topo. ¿Cuántas patas especiales tiene cada grillo topo?%
-\item{}Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?%
-\item{}Catorce antenas pertenecen a un grupo de abejas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?%
-\item{}Hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?%
-\item{}Treinta patas pertenecen a 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?%
-\item{}En total, hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?%
-\end{enumerate}
-\item{}Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{22}{Resolvamos un problema sobre bichos.}{gra3-uni4-secA-lec5-act2-3}%
-Tu profesor les va a asignar un problema.%
-\par
-Haz una presentación visual que muestre cómo pensaste y que muestre tu solución al problema.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{23}{Patas de hormigas.}{gra3-uni4-secA-lec5-cool-3}%
-Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.%
-\par
-%
-\begin{enumerate}
-\item{}Escribe una expresión de división que represente esta situación.%
-\item{}¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.%
-\end{enumerate}
-%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Sección B -~Relacionemos la multiplicación y la división\\
-\space\textperiodcentered\space{}Lección 6 -~La división como un factor desconocido\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{24}{Observa y pregúntate: Números desconocidos.}{gra3-uni4-secB-lec6-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-%
-\begin{equation*}
-3\times {?} =12
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\par
-%
-\begin{equation*}
-12\div 3 ={?}
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{25}{Ecuaciones acerca de cebollas.}{gra3-uni4-secB-lec6-act1-3}%
-\begin{image}{0.15}{0.7}{0.15}{-1.5\baselineskip}%
-\includegraphics[width=\linewidth]{external/jpg-source/3.4.B6 Act 1 Launch.jpg}
-\end{image}%
-Un agricultor pone 14 cebollas en 2 bolsas. Pone el mismo número de cebollas en cada bolsa.%
-\par
-Lin dice que la situación debe representarse con la ecuación:%
-\begin{equation*}
-2 \times \boxed{\phantom{3}} = 14
-\end{equation*}
-%
-\par
-Mai dice que la situación debe representarse con la ecuación:%
-\begin{equation*}
-14 \div 2 = \boxed{\phantom{3}}
-\end{equation*}
-%
-\par
-¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{26}{En el mercado agrícola.}{gra3-uni4-secB-lec6-act2-3}%
-Completa cada fila. Prepárate para explicar tu razonamiento.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AlAcAcAcA}\hrulethin
-{\bfseries{}situación}&{\bfseries{}dibujo o diagrama}&{\bfseries{}ecuación de multiplicación}&{\bfseries{}ecuación de división}\tabularnewline\hrulethick
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-La familia de Elena compra 18 aguacates en el mercado agrícola. Hay 3 aguacates en cada bolsa.%
-}&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131870.pdf}
-\end{image}%
-&&\(18 \div 3 = \underline{\hspace{1 cm}}\)\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-Andre ve 25 tomates. Están en 5 racimos. Cada racimo tiene el mismo número de tomates.%
-}&&\(5 \times {?} = 25\)&\(25 \div 5 = {?}\)\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-Lin pide 6 buñuelos de banano. Los buñuelos se sirven en 2 platos y cada plato tiene el mismo número de buñuelos.%
-}&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131871.pdf}
-\end{image}%
-&\(2 \times{ ?} = 6\)&\tabularnewline\hrulethin
-&\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-3-4-B-131872.pdf}
-\end{image}%
-&\(\underline{\hspace{1 cm}} \times 10 = 30\)&\(30 \div 10 = \underline{\hspace{1 cm}}\)\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{27}{Muffins en cajas.}{gra3-uni4-secB-lec6-cool-3}%
-Hay 30 \emph{muffins} y varias cajas para la feria de pastelería. En cada caja hay 6 \emph{muffins}. ¿Cuántas cajas hay?%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-Tyler escribió dos ecuaciones para este problema.%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\(\underline{\hspace{1 cm}} \times 6 = 30\)%
-\par
-\(30 \div 6 = \underline{\hspace{1 cm}}\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-Él dice que en cada espacio en blanco va el mismo número, aunque una ecuación es de multiplicación y la otra es de división. ¿Tiene razón? Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 7 -~Relacionemos multiplicación y división\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{28}{Cuántos ves: Decenas.}{gra3-uni4-secB-lec7-warm-3}%
-¿Cuántos ves? ¿Cómo lo sabes?, ¿qué ves?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147480.pdf}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{29}{Mesa redonda de división.}{mesaRedondaDeDivision}%
-Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.%
-\par
-Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.%
-%
-\begin{enumerate}
-\item{}Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.%
-\item{}En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.%
-\item{}En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.%
-\item{}En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.%
-\end{enumerate}
-\begin{image}{0.2}{0.6}{0.2}{}%
-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 7 Activity 1.png}
-\end{image}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{30}{Grupos de útiles escolares.}{gra3-uni4-secB-lec7-act2-3}%
-En cada situación:%
-\par
-a. Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.%
-\par
-b. Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.%
-%
-\begin{enumerate}
-\item{}Kiran tenía32 clips. Le dio 4 clips a cada estudiante. ¿Cuántos estudiantes recibieron clips?%
-%
-\begin{enumerate}
-\item{}Ecuación:\fillintext{10}%
-\item{}%
-\end{enumerate}
-\item{}Hay 28 libros en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?%
-%
-\begin{enumerate}
-\item{}Ecuación:\fillintext{10}%
-\item{}%
-\end{enumerate}
-\item{}Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay?%
-%
-\begin{enumerate}
-\item{}Ecuación:\fillintext{10}%
-\item{}%
-\end{enumerate}
-\item{}Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?%
-%
-\begin{enumerate}
-\item{}Ecuación:\fillintext{10}%
-\item{}%
-\end{enumerate}
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{31}{Rosas para compartir.}{gra3-uni4-secB-lec7-cool-3}%
-Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?%
-\par
-Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 8 -~Relacionemos cocientes con productos que nos sabemos\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{32}{Conversación numérica: Multiplicación y división.}{gra3-uni4-secB-lec8-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 4\times 10\)%
-\item{}\(\displaystyle 40\div 40\)%
-\item{}\(\displaystyle 40\div 10\)%
-\item{}\(\displaystyle 60\div 6\)%
-\end{itemize}
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{33}{Clasificación de tarjetas: Multiplicación.}{clasificacionDeTarjetas-multiplicacion}%
-Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:%
-%
-\begin{enumerate}
-\item{}se lo sabe de inmediato%
-\item{}lo puede encontrar rápidamente%
-\item{}todavía no se lo sabe%
-\end{enumerate}
-Expresiones de multiplicación que voy a practicar:%
-%
-\begin{enumerate}
-\item{}%
-\item{}%
-\item{}%
-\item{}%
-\item{}%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{34}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}.}{gra3-uni4-secB-lec8-act2-3}%
-Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
-%
-\begin{enumerate}
-\item{}Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.%
-\item{}Por turnos, tomen una tarjeta de hechos de multiplicación.%
-\item{}Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que \textellipsis{}”%
-\item{}Después, anoten las ecuaciones de división relacionadas en la columna “Entonces sé que   \textellipsis{}”%
-\end{enumerate}
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AlAlA}\hrulethin
-{\bfseries{}Si sé que \textellipsis{}}&{\bfseries{}Entonces sé que \textellipsis{}}\tabularnewline\hrulethick
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-\textendash{}%
-}&\multicolumn{1}{m{0.6\linewidth}A}{\raggedright%
-\textendash{}%
-}\tabularnewline\hrulethin
-\multicolumn{1}{Am{0.4\linewidth}A}{\raggedright%
-\textendash{}%
-}&\multicolumn{1}{m{0.6\linewidth}A}{\raggedright%
-\textendash{}%
-}\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{35}{Hechos de multiplicación y de división.}{gra3-uni4-secB-lec8-cool-3}%
-Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 9 -~Patrones en la tabla de multiplicar\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{36}{Observa y pregúntate: Tabla de multiplicar.}{gra3-uni4-secB-lec9-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152968.pdf}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{37}{Productos en la tabla.}{gra3-uni4-secB-lec9-act1-3}%
-Esta es una tabla de multiplicar que no se ha completado totalmente.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152978.pdf}
-\end{image}%
-%
-\begin{enumerate}
-\item{}Usa los productos de la tabla para ayudarte a encontrar los números que deberían ir en lugar de las letras de la A a la G. Prepárate para explicar tu razonamiento.%
-\item{}Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Usa:%
-%
-\begin{enumerate}
-\item{}7 como un factor%
-\item{}9 como un factor%
-\item{}10 como un factor%
-\end{enumerate}
-Prepárate para explicar tu razonamiento.%
-\end{enumerate}
-Los estudiantes se pueden preguntar:%
-%
-\begin{itemize}[label=\textbullet]
-\item{}¿Qué significan los números en la tabla?%
-\item{}¿Cómo funciona la tabla?%
-\item{}¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?%
-\end{itemize}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{38}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}: Multiplicación.}{gra3-uni4-secB-lec9-act2-3}%
-%
-\begin{enumerate}
-\item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{AcAcA}\hrulethin
-{\bfseries{}Si sé que \textellipsis{}}&{\bfseries{}Entonces sé que \textellipsis{}}\tabularnewline\hrulethick
-\(2\times24\)&\(4\times 2\), \(4\times 4\), \(2\times 8\)\tabularnewline\hrulethin
-\(3\times 5\)&\tabularnewline\hrulethin
-\(4\times 10\)&\tabularnewline\hrulethin
-\(7\times 2\)&\tabularnewline\hrulethin
-\(5\times 8\)&\tabularnewline\hrulethin
-\end{tabular}
-}%
-\end{center}%
-\item{}Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{39}{Encuentra el producto desconocido.}{gra3-uni4-secB-lec9-cool-3}%
-¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153040.pdf}
-\end{image}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 10 -~Exploremos estrategias de multiplicación con rectángulos\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{40}{Cuántos ves: Cuadrados.}{gra3-uni4-secB-lec10-warm-3}%
-¿Cuántos ves? ¿Cómo lo sabes?, ¿qué ves?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147481.pdf}
-\end{image}%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141805.pdf}
-\end{image}%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147478.pdf}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{41}{De diagramas a expresiones.}{gra3-uni4-secB-lec10-act1-3}%
-\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
-\begin{sbspanel}{0.4}%
-Andre y Elena están hallando el área de este rectángulo.%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153043.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{3}{0}{0}{0.065}%
-\begin{sbspanel}{0.27}%
-Andre escribe \(6\times 3\).%
-\end{sbspanel}%
-\begin{sbspanel}{0.35}%
-Él marca el rectángulo así:%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153044.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.25}%
-Después, Andre escribe:%
-\par
-\(2 \times (3 \times 3)\)\\
- \(2 \times 9 = 18\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{3}{0}{0}{0.065}%
-\begin{sbspanel}{0.27}%
-Elena escribe \(3\times 6\).%
-\end{sbspanel}%
-\begin{sbspanel}{0.35}%
-Ella marca el rectángulo así:%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153045.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.25}%
-Después, Elena escribe:%
-\par
-\(3 \times (5 + 1)\)\\
- \((3 \times 5) + (3 \times 1)\)\\
- \(15+3\)\\
- \(18\)%
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Discute con un compañero:%
-%
-\begin{enumerate}
-\item{}¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?%
-\item{}¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?%
-\item{}¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?%
-\end{enumerate}
-\item{}\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-Este es otro rectángulo.%
-\par
-Podemos encontrar su área hallando \(4 \times 9\).%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153048.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.%
-\item{}Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.%
-\end{enumerate}
-%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{42}{De expresiones a diagramas.}{gra3-uni4-secB-lec10-act2-3}%
-\begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
-\begin{sbspanel}{0.3}%
-Noah%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153051.pdf}
-%
-\begin{equation*}
-(5\times 3)+(2 \times 3)
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-Priya%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153053.pdf}
-%
-\begin{equation*}
-2 \times (2 \times 6)
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-Tyler%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153054.pdf}
-%
-\begin{equation*}
-(5 \times 8) + (3 \times 8)
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\par
-En cada rectángulo:%
-%
-\begin{enumerate}
-\item{}Escribe los dos factores que se pueden multiplicar para encontrar su área.%
-\item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{43}{Marca o colorea partes para encontrar el área.}{gra3-uni4-secB-lec10-cool-3}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.6}%
-El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
-%
-\begin{enumerate}
-\item{}Marca o colorea el rectángulo para mostrar que podemos escribir \(2 \times (3 \times 7)\) o \((6 \times 5) + (6 \times 2)\) para encontrar su área.%
-\item{}¿Cuál es el valor de \(6 \times 7\)? Explica o muestra tu razonamiento.%
-\end{enumerate}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153042.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{44}{Cuál es diferente: Una multiplicación representada de muchas formas.}{gra3-uni4-secB-lec11-warm-3}%
-¿Cuál es diferente?%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153081.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153082.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-C%
-\par
-%
-\begin{equation*}
-(3\times 2) + (3\times 4)
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-D%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153083.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{45}{Marca y después expresa.}{gra3-uni4-secB-lec11-act1-3}%
-En cada caso:%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.%
-\item{}Escribe una o más expresiones que representen cómo encuentras el área.%
-\end{itemize}
-\begin{sidebyside}{3}{0}{0}{0}%
-\begin{sbspanel}{0.391}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153084.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.261}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153085.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.348}%
-C%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153086.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{46}{Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.}{clasificacionDeTarjetas-expresionesMultiplicacionRectangulos}%
-Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.%
-\par
-Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
-\par
-Si te ayuda, puedes dibujar rectángulos.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/png-source/Card Sort Different Expressions, Same Rectangle for Screenshot Only.png}
-\end{image}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{47}{Expresiones para un rectángulo.}{gra3-uni4-secB-lec11-cool-3}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.6}%
-%
-\begin{enumerate}
-\item{}Marca o colorea este rectángulo para mostrar una estrategia que ayude a encontrar su área.%
-\item{}Escribe una o más expresiones que representen cómo encuentras el área.%
-\end{enumerate}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-158678.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Sección C -~Multipliquemos números más grandes\\
-\space\textperiodcentered\space{}Lección 12 -~Multipliquemos múltiplos de diez\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{48}{Observa y pregúntate: Decenas.}{gra3-uni4-secC-lec12-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149355.pdf}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{49}{Una gran cantidad de dólares.}{granCantidadDeDolares}%
-Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
-%
-\begin{enumerate}
-\item{}Cada jugador recibió \textdollar{}100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?%
-\par
-Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{lll}
-{\bfseries{}billetes}&{\bfseries{}expresión}&{\bfseries{}cantidad de dólares}\tabularnewline\hrulethick
-un billete de \textdollar{}100&&\tabularnewline[0pt]
-cuatro billetes de \textdollar{}20&&\tabularnewline[0pt]
-diez billetes de \textdollar{}10&&\tabularnewline[0pt]
-diez billetes de \textdollar{}5&&\tabularnewline[0pt]
-cinco billetes de \textdollar{}20&&\tabularnewline[0pt]
-veinte billetes de \textdollar{}10&&\tabularnewline[0pt]
-veinte billetes de \textdollar{}5&&\tabularnewline[0pt]
-dos billetes de \textdollar{}50&&
-\end{tabular}
-}%
-\end{center}%
-\item{}En un momento del juego, Noah tuvo que pagarle a Lin \textdollar{}150. Él le dio esa cantidad usando billetes del mismo tipo.%
-%
-\begin{enumerate}
-\item{}¿Cuáles y cuántos billetes podría haber usado Noah para completar \textdollar{}150? Nombra todas las posibilidades.%
-\item{}Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.%
-\end{enumerate}
-\item{}La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?%
-\par
-Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{ccll}
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-jugador%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-billetes%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-expresión%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-cantidad de dólares%
-}\tabularnewline\hrulethick
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Andre%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-nueve billetes de \textdollar{}10 y diez billetes de \textdollar{}5%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Clare%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-catorce billetes de \textdollar{}10%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Jada%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-diez billetes de \textdollar{}10 y tres billetes de \textdollar{}50%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Lin%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-ocho billetes de \textdollar{}20%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Noah%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-seis billetes de \textdollar{}50%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}\tabularnewline[0pt]
-\multicolumn{1}{m{0.15\linewidth}}{\centering%
-Tyler%
-}&\multicolumn{1}{m{0.35\linewidth}}{\centering%
-veintiún billetes de \textdollar{}10%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}&\multicolumn{1}{m{0.25\linewidth}}{\raggedright%
-%
-}
-\end{tabular}
-}%
-\end{center}%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{50}{Dos estrategias.}{dosEstrategias}%
-%
-\begin{enumerate}
-\item{}Dos estudiantes usaron bloques en base diez para encontrar el valor de \(8\times 30\).%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149356.pdf}
-\end{image}%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Jada contó: 30, 60, 90, 120, 150, 180, 210, 240 y dijo que la respuesta es 240.%
-\item{}Kiran dijo que él sabía que \(8\times 3\) es 24, luego encontró \(24\times 10\) y obtuvo 240.%
-\end{itemize}
-¿En qué se parecen las estrategias de Jada y de Kiran? ¿En qué son diferentes?%
-\item{}Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.%
-%
-\begin{enumerate}
-\item{}\(\displaystyle 5 \times 60\)%
-\item{}\(\displaystyle 8 \times 50\)%
-\item{}\(\displaystyle 4 \times 30\)%
-\item{}\(\displaystyle 7 \times 40\)%
-\item{}\(\displaystyle 9 \times 20\)%
-\end{enumerate}
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{51}{¿Cuál es el valor?}{gra3-uni4-secC-lec12-cool-3}%
-Encuentra el valor de \(6\times 40\). Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 13 -~Resolvamos problemas de grupos iguales\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{52}{Exploración de estimación: Multipliquemos.}{gra3-uni4-secC-lec13-warm-3}%
-%
-\begin{equation*}
-4\times 18
-\end{equation*}
-Escribe una estimación que sea:%
-\begin{center}%
-{\tabularfont%
-\begin{tabular}{lAlAl}
-{\bfseries{}muy baja}&{\bfseries{}razonable}&{\bfseries{}muy alta}\tabularnewline\hrulethin
-~&~&~
-\end{tabular}
-}%
-\end{center}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{53}{Problemas con números del 11 al 19.}{act-problemasNumerosAdolescentes}%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.5}%
-Resuelve cada problema. Muestra cómo pensaste. Usa objetos, dibujos o un diagrama.%
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-\includegraphics[width=\linewidth]{external/png-source/egg_carton.png}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Un vendedor de un mercado agrícola tiene 7 docenas de huevos al finalizar el día. ¿Cuántos huevos tiene el vendedor?%
-\item{}En el mercado agrícola hay un espacio para que los artistas toquen su música. El sitio tiene algunas sillas para que las personas se sienten a escucharlos. Hay 5 filas de sillas y cada fila tiene 15 sillas. ¿Cuántas sillas hay?%
-\item{}En un puesto de un mercado agrícola hay una mesa. Los lados de la parte de arriba de la mesa miden 4 pies y 6 pies. ¿Cuál es el área de la parte de arriba de la mesa?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{54}{Recorrido por el salón: Problemas con números del 11 al 19.}{gra3-uni4-secC-lec13-act2-3}%
-Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{55}{Bolsas de naranjas.}{gra3-uni4-secC-lec13-cool-3}%
-Hay 6 bolsas de naranjas y cada bolsa contiene 11 naranjas. ¿Cuántas naranjas hay en las bolsas?%
-\par
-Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 14 -~Formas de representar la multiplicación de números del 11 al 19\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{56}{Observa y pregúntate: Veamos grupos.}{gra3-uni4-secC-lec14-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{sidebyside}{3}{0}{0}{0}%
-\begin{sbspanel}{0.333333333333333}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149346.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.333333333333333}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149347.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.333333333333333}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141822.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{57}{Un factor mayor que diez.}{gra3-uni4-secC-lec14-act1-3}%
-%
-\begin{enumerate}
-\item{}Tyler dice que puede usar bloques en base diez para encontrar el valor de \(7\times 13\) porque él se sabe \(7\times 10\) y \(7\times 3\). Él dice que este diagrama muestra que su forma de pensar es correcta.%
-\begin{sidebyside}{2}{0}{0.05}{0.05}%
-\begin{sbspanel}{0.5}%
-¿Estás de acuerdo o en desacuerdo? Explica tu razonamiento.%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141823.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\item{}Usa el método de Tyler para encontrar el valor de  \(3\times 14\). Explica o muestra tu razonamiento.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{58}{Formas de representar.}{gra3-uni4-secC-lec14-act2-3}%
-Andre, Clare y Diego representaron la misma expresión. Estas son sus representaciones.%
-\begin{sidebyside}{2}{0.05}{0.4}{0.05}%
-\begin{sbspanel}{0.1}[center]%
-Andre%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147551.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0.4}{0.05}%
-\begin{sbspanel}{0.1}[center]%
-Clare%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147552.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0.4}{0.05}%
-\begin{sbspanel}{0.1}[center]%
-Diego%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147553.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}¿En qué parte de cada diagrama ves los factores?%
-\item{}¿En qué parte de cada diagrama ves el producto?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{59}{Multiplica y explica.}{gra3-uni4-secC-lec14-cool-3}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-Encuentra el valor de \(5\times 15\) y explica cómo está representado esto en el diagrama.%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147479.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 15 -~Grupos iguales, números más grandes\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{60}{Cuál es diferente: Rectángulos.}{gra3-uni4-secC-lec15-warm-3}%
-¿Cuál es diferente?%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149350.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149351.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-C%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149352.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-D%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149353.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{61}{Grupos iguales, números más grandes.}{act-problemasMultNums11a19}%
-Resuelve cada problema. Explica o muestra tu razonamiento.%
-%
-\begin{enumerate}
-\item{}Noah ve un gran mural pintado que tiene lados de longitudes 15 pies y 4 pies. ¿Cuál es el área del mural?%
-\item{}La familia de Noah compra un mosaico que tiene 12 filas y 8 columnas de baldosas de 1 pulgada de lado. ¿Cuál es el área del mosaico?%
-\item{}En el festival de arte, Noah usa tiza para ayudar a decorar un pedazo rectangular de acera de 6 pies por 14 pies. ¿Cuál es el área del pedazo de acera que Noah ayudó a decorar?%
-\item{}En el festival de arte, Noah compra un paquete de calcomanías. En el paquete hay 5 hojas y cada hoja tiene 16 calcomanías. ¿Cuántas calcomanías hay en el paquete?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{62}{Recorrido por el salón: Grupos iguales, números más grandes.}{gra3-uni4-secC-lec15-act2-3}%
-Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{63}{Encuentra el área.}{gra3-uni4-secC-lec15-cool-3}%
-Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 16 -~Multipliquemos números más grandes que 20\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{64}{Conversación numérica: Tres multiplicado por algunos números.}{gra3-uni4-secC-lec16-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 3\times 10\)%
-\item{}\(\displaystyle 3\times 20\)%
-\item{}\(\displaystyle 3\times 50\)%
-\item{}\(\displaystyle 3\times 25\)%
-\end{itemize}
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{65}{\(4\times 23\), representado.}{act-representar4por23}%
-%
-\begin{enumerate}
-\item{}Estas son las formas en las que Clare y Andre representaron \(4\times 23\).%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-Clare%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152969.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-Andre%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152970.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}¿Cómo muestra cada diagrama \(4\times 23\)?%
-\item{}¿Cómo podríamos usar el diagrama de Clare para encontrar el valor de \(4\times 23\)?%
-\item{}¿Cómo podríamos usar el diagrama de Andre para encontrar el valor de \(4\times 23\)?%
-\end{enumerate}
-\item{}Diego trató de partir o dividir un diagrama de varias maneras para poder encontrar el valor de \(4\times 23\).%
-\begin{sidebyside}{2}{0}{0.3}{0.05}%
-\begin{sbspanel}{0.05}[center]%
-A%
-\end{sbspanel}%
-\begin{sbspanel}{0.6}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152971.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0.3}{0.05}%
-\begin{sbspanel}{0.05}[center]%
-B%
-\end{sbspanel}%
-\begin{sbspanel}{0.6}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152972.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0.3}{0.05}%
-\begin{sbspanel}{0.05}[center]%
-C%
-\end{sbspanel}%
-\begin{sbspanel}{0.6}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152973.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0.3}{0.05}%
-\begin{sbspanel}{0.05}[center]%
-D%
-\end{sbspanel}%
-\begin{sbspanel}{0.6}[center]%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152974.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}¿Qué observas sobre los números de sus diagramas?%
-\item{}¿Cuál diagrama usarías para encontrar el valor de \(4\times 23\)? Explica tu razonamiento.%
-\end{enumerate}
-\item{}Encuentra el valor de \(3\times 28\). Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{66}{Unos productos bonitos.}{act-prodsUnDigitoPorMayorA20}%
-%
-\begin{enumerate}
-\item{}Para encontrar el valor de \(2\times 37\), Mai empezó escribiendo esta ecuación:%
-\par
-\(2 \times 30 = 60\)%
-\par
-Describe o muestra lo que haría Mai para terminar de encontrar el valor de \(2\times 37\).%
-\item{}Encuentra el valor de cada producto. Muestra cómo razonaste.%
-%
-\begin{enumerate}
-\item{}\(\displaystyle 3\times 32\)%
-\item{}\(\displaystyle 2\times 43\)%
-\item{}\(\displaystyle 4\times 22\)%
-\item{}\(\displaystyle 3\times 29\)%
-\end{enumerate}
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 3}
-\begin{activitysolution}{Actividad}{67}{Juguemos “Cerca de 100, multiplicación” (opcional).}{act-juegoCerca100Multiplicacion}%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.5}%
-Juega “Cerca de 100, multiplicación” con un compañero.%
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 16 Activity 2.png}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Pon las tarjetas boca abajo.%
-\item{}Cada jugador toma 4 tarjetas.%
-\item{}Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.%
-\item{}El jugador que esté más cerca de 100, gana esa ronda.%
-\item{}Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.%
-\end{enumerate}
-\begin{sidebyside}{2}{0}{0}{0.1}%
-\begin{sbspanel}{0.45}%
-\alert{Partida 1}%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-\par
-\alert{Partida 2}%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0.1}%
-\begin{sbspanel}{0.45}%
-Ronda 1%
-\par
-%
-\begin{equation*}
-\boxed{\phantom{\frac{00}{00}}} \times 1 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-Ronda 1%
-\par
-%
-\begin{equation*}
-\boxed{\phantom{\frac{00}{00}}} \times 2 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0.1}%
-\begin{sbspanel}{0.45}%
-Ronda 2%
-\par
-%
-\begin{equation*}
-\boxed{\phantom{\frac{00}{00}}} \times 1 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.45}%
-Ronda 2%
-\par
-%
-\begin{equation*}
-\boxed{\phantom{\frac{00}{00}}} \times 2 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}
-\end{equation*}
-%
-\end{sbspanel}%
-\end{sidebyside}%
-\alert{Nota:} \emph{Espacio para más rondas en el tablero de juego.}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{68}{Multiplica números mayores que 20.}{gra3-uni4-secC-lec16-cool-3}%
-¿Cuál es el valor de \(4\times 24\)? Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 17 -~Usemos las cuatro operaciones para resolver problemas\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{69}{Verdadero o falso: Multiplicar por 10.}{gra3-uni4-secC-lec17-warm-3}%
-En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 2 \times 40 = 2 \times 4 \times 10\)%
-\item{}\(\displaystyle 2 \times 40 = 8 \times 10\)%
-\item{}\(\displaystyle 3 \times 50 = 15 \times 10\)%
-\item{}\(\displaystyle 3 \times 40 = 7 \times 10\)%
-\end{itemize}
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{70}{Preguntas sobre una situación.}{gra3-uni4-secC-lec17-act1-3}%
-¿Qué preguntas puedes hacer sobre esta situación?%
-\par
-En una fiesta hay 142 invitados. Todos los invitados están en 2 salas. En la sala A hay 94 invitados. En la sala B hay 6 mesas, cada una con el mismo número de invitados. Hay 4 cubiertos y 1 plato para cada invitado.%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{71}{Problemas sobre una fiesta.}{act-problemsMultiplicativosFiesta}%
-En cada problema:%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.6}%
-a. Escribe una ecuación que represente la situación. Usa una letra para representar la cantidad desconocida.%
-\par
-b. Resuelve el problema. Explica o muestra tu razonamiento.%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 17.png}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar 156 aros. El viernes, Kiran y 2 amigos hicieron más aros. Cada uno de ellos hizo 9 aros más. ¿Cuántos aros hicieron durante toda la semana?%
-\item{}Mai tiene 168 pastelitos. Ella puso 104 de los pastelitos en una cesta. Ella empacó el resto de los pastelitos en 8 cajas, cada una con el mismo número de pastelitos. ¿Cuántos pastelitos había en cada caja?%
-\item{}Había 184 vasos sobre una mesa. En tres mesas en las que había 8 personas en cada una, todas las personas fueron por una bebida y cada una usó un vaso. ¿Cuántos vasos hay ahora en la mesa?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{72}{Los globos de Andre.}{gra3-uni4-secC-lec17-cool-3}%
-Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?%
-%
-\begin{enumerate}
-\item{}Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.%
-\item{}Resuelve el problema. Explica o muestra cómo razonaste.%
-\end{enumerate}
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Sección D -~Dividamos números más grandes\\
-\space\textperiodcentered\space{}Lección 18 -~Números más grandes en grupos iguales\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{73}{¿Qué sabes sobre la división?}{gra3-uni4-secD-lec18-warm-3}%
-¿Qué sabes sobre la división?%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{74}{Grupos en una excursión.}{act-gruposEnExcursion}%
-Hay 48 estudiantes que van de excursión al acuario. Ellos visitan las exhibiciones en grupos de 4 estudiantes. ¿Cuántos grupos habrá?%
-\par
-Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
-\begin{image}{0.15}{0.7}{0.15}{}%
-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 18 Activity 1.png}
-\end{image}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{75}{Grupos en el bus y grupos en el almuerzo.}{act-gruposEnBusYAlmuerzo}%
-En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
-%
-\begin{enumerate}
-\item{}Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar \(156\) aros. El viernes, Kiran y \(2\) amigos hicieron más aros. Cada uno de ellos hizo \(9\) aros más. ¿Cuántos aros hicieron durante toda la semana?%
-\item{}En otra excursión, \(72\) estudiantes y profesores fueron al museo de ciencias en \(3\) buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus?%
-\item{}Durante el almuerzo, las \(72\) personas se sentaron en unas mesas grandes. Había \(12\) personas en cada mesa. ¿Cuántas mesas usaron?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{76}{Equipos en el recreo.}{gra3-uni4-secD-lec18-cool-3}%
-En el recreo, \(42\) estudiantes jugaron un juego. Armaron \(3\) equipos con el mismo número de estudiantes cada uno. ¿Cuántos estudiantes había en cada equipo?%
-\par
-Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 19 -~Formas de dividir números más grandes\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{77}{Verdadero o falso: Unidades, decenas, veintenas.}{gra3-uni4-secD-lec19-warm-3}%
-En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 4 \times 10 = 40 \times 1\)%
-\item{}\(\displaystyle 4 \times 20 = 4 \times 2 \times 10\)%
-\item{}\(\displaystyle 8 \times 20 = 8 \times 2 \times 1\)%
-\item{}\(\displaystyle 8 \times 20 = 16 \times 10\)%
-\end{itemize}
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{78}{Dividamos con bloques en base diez.}{gra3-uni4-secD-lec19-act1-3}%
-\begin{sidebyside}{2}{0}{0.1}{0}%
-\begin{sbspanel}{0.7}%
-%
-\begin{enumerate}
-\item{}Usa bloques en base diez para representar cada expresión. Después, encuentra su valor.%
-%
-\begin{enumerate}
-\item{}\(\displaystyle 55 \div 5\)%
-\item{}\(\displaystyle 45 \div 3\)%
-\end{enumerate}
-\item{}Encuentra el valor de cada expresión. Usa bloques en base diez si crees que te pueden ayudar.%
-%
-\begin{enumerate}
-\item{}\(\displaystyle 63 \div 3\)%
-\item{}\(\displaystyle 84 \div 7\)%
-\item{}\(\displaystyle 100 \div 5\)%
-\end{enumerate}
-\end{enumerate}
-\end{sbspanel}%
-\begin{sbspanel}{0.2}%
-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 19 Activity 1.png}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{79}{Diferentes formas de mostrar la división.}{gra3-uni4-secD-lec19-act2-3}%
-Jada y Han usaron bloques en base diez para representar \(60 \div 5\).%
-\par
-Este es el trabajo de Jada:%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152963.pdf}
-\end{image}%
-Este es el trabajo de Han:%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152964.pdf}
-\end{image}%
-%
-\begin{enumerate}
-\item{}Dale sentido al trabajo de Jada y de Han.%
-%
-\begin{enumerate}
-\item{}¿Cómo se diferencia lo que hicieron?%
-\item{}¿En qué parte del trabajo de cada uno vemos el valor de \(60 \div 5\)?%
-\end{enumerate}
-\item{}¿Cómo usarías bloques en base diez para poder representar estas expresiones y encontrar su valor? Prepárate para explicar tu razonamiento.%
-%
-\begin{enumerate}
-\item{}\(64 \div 4:\) ¿Harías \(4\) grupos o grupos de \(4\)?%
-\item{}\(72 \div 6:\) ¿Harías \(6\) grupos o grupos de \(6\)?%
-\item{}\(75 \div 15:\) ¿Harías \(15\) grupos o grupos de \(15\)?%
-\end{enumerate}
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{80}{Encuentra el valor.}{gra3-uni4-secD-lec19-cool-3}%
-Encuentra el valor de \(51 \div 3.\) Usa bloques en base diez si crees que te pueden ayudar. Explica o muestra cómo razonaste.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 20 -~Estrategias para dividir\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{81}{Conversación numérica: Multiplicación y división.}{gra3-uni4-secD-lec20-warm-3}%
-Encuentra mentalmente el valor de cada expresión.%
-%
-\begin{itemize}[label=\textbullet]
-\item{}\(\displaystyle 3\times 5\)%
-\item{}\(\displaystyle 6\times 5\)%
-\item{}\(\displaystyle 10\times 5\)%
-\item{}\(\displaystyle 65\div 5\)%
-\end{itemize}
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{82}{Formas de dividir.}{gra3-uni4-secD-lec20-act1-3}%
-%
-\begin{enumerate}
-\item{}Lin, Priya y Tyler encontraron el valor de \(78 \div 3\). Este es su trabajo. Dale sentido al trabajo de cada estudiante.%
-\par
-Lin%
-\par
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149344.pdf}
-\end{image}%
-%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-Priya%
-\par
-\(3\times 10 = 30\)\\
- \(3\times 10 = 30\)\\
- \(3\times \phantom{0}6 = 18\)\\
- \(\overline {3 \times 26 =78}\)%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-Tyler%
-\par
-\(3\times 20 = 60\)\\
- \(3\times \phantom{0}6 = 18\)\\
- \\
- \(20 + 6 = 26\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\item{}¿En qué se parecen los trabajos de los tres estudiantes?%
-\item{}¿En qué son diferentes?%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{83}{¿Cómo dividirías?}{act-ComoDividirias}%
-Encuentra el valor de cada cociente. Explica o muestra tu razonamiento. Organízalo para que los demás lo puedan entender.%
-%
-\begin{enumerate}
-\item{}\(\displaystyle 80\div 5\)%
-\item{}\(\displaystyle 68\div 4\)%
-\item{}\(\displaystyle 91\div 7\)%
-\end{enumerate}
-Si te queda tiempo: Ochenta y cuatro estudiantes de una excursión se organizaron en grupos. Cada grupo tiene \(14\) estudiantes. ¿Cuántos grupos hay?%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 3}
-\begin{activitysolution}{Actividad}{84}{“Compara: Divide hasta 100” [OPCIONAL].}{comparaDivideHasta100-tarjetas}%
-Juega ``Compara'' con dos jugadores.%
-%
-\begin{enumerate}
-\item{}Mezclen las tarjetas y dividan el montón entre los jugadores.%
-\item{}Cada jugador voltea una tarjeta.%
-\item{}Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.%
-\item{}Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{85}{Una división más.}{gra3-uni4-secD-lec20-cool-3}%
-Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 21 -~Resolvamos problemas usando las cuatro operaciones\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{86}{Observa y pregúntate: Otra vez manzanas.}{gra3-uni4-secD-lec21-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\par
-\begin{quote}%
-Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.\end{quote}
-%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{87}{Una aventura con manzanas.}{act-unaAventuraConManzanas}%
-Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.%
-\par
-Escoge \(4\) números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos \(4\) números.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149345.pdf}
-\end{image}%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/tikz-source/3-4-21-act1-tab.pdf}
-\end{image}%
-\begin{image}{0.25}{0.5}{0.25}{}%
-\includegraphics[width=\linewidth]{external/png-source/3.4.D21.S_Sp.png}
-\end{image}%
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{88}{Días de manzanas.}{gra3-uni4-secD-lec21-act2-3}%
-Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
-\begin{image}{0.25}{0.5}{0.25}{}%
-\includegraphics[width=\linewidth]{external/jpg-source/apple-3535566_1920.jpg}
-\end{image}%
-%
-\begin{enumerate}
-\item{}Tyler apila manzanas para vender en el evento. Tiene \(85\) manzanas para apilar. Ya ha hecho \(5\) filas de \(10\) manzanas. ¿Cuántas manzanas quedan?%
-%
-\begin{enumerate}
-\item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
-\item{}Resuelve el problema. Explica o muestra tu razonamiento.%
-\end{enumerate}
-\item{}Clare ayuda a vender alimentos horneados en el evento. Un cliente compra \(8\) brownies que cuestan \(\$3\) cada uno. Clare mete ese dinero en la caja del dinero y ahora hay \(\$125\) en la caja. ¿Cuánto dinero había en la caja antes de esa compra?%
-%
-\begin{enumerate}
-\item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
-\item{}Resuelve el problema. Explica o muestra tu razonamiento.%
-\end{enumerate}
-\item{}En el mercado de la huerta había \(200\) tarros de puré de manzana para la venta. Al final del evento, se habían vendido \(184\) tarros. El resto de los tarros se repartió por igual entre 4 personas que trabajan en la huerta. ¿Cuántos tarros de puré de manzana recibió cada persona?%
-%
-\begin{enumerate}
-\item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
-\item{}Resuelve el problema. Explica o muestra tu razonamiento.%
-\end{enumerate}
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad de cierre}
-\begin{projectsolution}{Actividad de cierre}{89}{Las manzanas en el puesto de la huerta.}{gra3-uni4-secD-lec21-cool-3}%
-En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en \(6\) cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?%
-%
-\begin{enumerate}
-\item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
-\item{}Resuelve el problema. Explica o muestra tu razonamiento.%
-\end{enumerate}
-\end{projectsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Lección 22 -~La huerta comunitaria de la escuela\\
-\space\textperiodcentered\space{}Calentamiento}
-\begin{explorationsolution}{Calentamiento}{90}{Observa y pregúntate: Huerta.}{gra3-uni4-secD-lec22-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{image}{0.125}{0.75}{0.125}{}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22-warm-garden-934189_1920.jpg}
-\end{image}%
-\end{explorationsolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 1}
-\begin{activitysolution}{Actividad}{91}{La producción.}{gra3-uni4-secD-lec22-act1-3}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
-\end{sbspanel}%
-\end{sidebyside}%
-%
-\begin{enumerate}
-\item{}Una parcela de fresas tiene \(7\) filas con \(8\) plantas de fresas en cada fila.%
-%
-\begin{enumerate}
-\item{}¿Cuántas plantas de fresas hay en la parcela?%
-\item{}Para cultivar fresas de la mejor manera, las filas deben estar separadas por \(4\) pies. En cada fila, debe haber \(2\) pies de distancia entre planta y planta. ¿Qué tan larga y qué tan ancha es la parcela de fresas?%
-\item{}Se pueden cosechar \(12\) fresas de cada planta. ¿Cuántas fresas van a crecer en cada fila?%
-\end{enumerate}
-\item{}Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven los números de la expresión o de la ecuación que escribieron.%
-\end{enumerate}
-\end{activitysolution}%
-\par\medskip
-\noindent\textbf{\large{}\space\textperiodcentered\space{}Actividad 2}
-\begin{activitysolution}{Actividad}{92}{Planeemos la huerta.}{act-Planeemos-la-huerta}%
-%
-\begin{enumerate}
-\item{}Lee la información sobre algunas plantas que puedes cultivar en una huerta. Luego, marca \(2\) tipos de plantas que quieras cultivar en tu parte de la huerta de la escuela.%
-%
-\begin{enumerate}
-\item{}fresas%
-\item{}melón cantalupo%
-\item{}calabacín%
-\item{}tomates%
-\item{}frijoles pintos%
-\item{}papas%
-\end{enumerate}
-\item{}Planea tu huerta. Tus plantas deben producir entre \(50\) y \(100\) frutas o vegetales.%
-%
-\begin{enumerate}
-\item{}¿Cuántas plantas de cada tipo vas a cultivar?%
-\item{}Predice cuántas frutas o vegetales vas a producir. Muestra o explica tu razonamiento.%
-\end{enumerate}
-\item{}Haz un diagrama que muestre cómo están organizadas las plantas y cuánto espacio se necesita.%
-\end{enumerate}
-\alert{Requisitos para el cultivo}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
-%
-\par
-fresas%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en parcelas%
-\item{}Espacio entre filas: \(4\) pies%
-\item{}Espacio entre plantas: \(2\) pies%
-\item{}Cada planta produce \(12\) fresas.%
-\end{itemize}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-melon-cantalupo.jpg}
-%
-\par
-melones cantalupos%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en enredaderas.%
-\item{}Espacio entre filas: \(4\) pies%
-\item{}Espacio entre plantas: \(1\) pie%
-\item{}Cada planta produce aproximadamente \(8\) melones cantalupos.%
-\end{itemize}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-calabacin.jpg}
-%
-\par
-calabacín%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en enredaderas.%
-\item{}Espacio entre filas: \(5\) pies%
-\item{}Espacio entre plantas: \(1\) pie%
-\item{}Cada planta produce aproximadamente \(8\) calabacines.%
-\end{itemize}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-tomate.jpg}
-%
-\par
-tomates%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en enredaderas.%
-\item{}Espacio entre filas: \(4\) pies%
-\item{}Espacio entre plantas: \(2\) pies%
-\item{}Cada planta produce aproximadamente \(20\) tomates.%
-\end{itemize}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0}{0}{0}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-frijoles-pintos.jpg}
-%
-\par
-frijoles pintos%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en arbustos, en vainas.%
-\item{}Espacio entre filas: \(2\) pies%
-\item{}Espacio entre plantas: \(1\) pie%
-\item{}Cada planta produce entre \(20\) y \(25\) vainas y cada vaina produce aproximadamente \(5\) frijoles.%
-\end{itemize}
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-papas.jpg}
-%
-\par
-papas%
-%
-\begin{itemize}[label=\textbullet]
-\item{}Se cultivan en filas.%
-\item{}Espacio entre filas: de \(2\) a \(3\) pies.%
-\item{}Espacio entre plantas: \(1\) pie.%
-\item{}Cada planta produce entre \(5\) y \(10\) papas.%
-\end{itemize}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{activitysolution}%
-\end{solutions-section}
-%
-%
-\typeout{************************************************}
-\typeout{Sección  Actividades de cierre}
-\typeout{************************************************}
-%
-\begin{sectionptx}{Sección}{Actividades de cierre}{}{Actividades de cierre}{}{}{gra3-uni4-10}
-\noindent
-\begin{longtable}[l]{ll}
-\addtocounter{table}{-1}
-\endfirsthead
-\endhead
-\multicolumn{2}{r}{(Continúa en la página siguiente)}\\
-\endfoot
-\endlastfoot
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Sección A -~¿Qué es la división?}\\[0.5ex]
-\hyperref[gra3-uni4-secA-lec1-cool-3]{Actividad de cierre 4}& ¿Cuántas bolsas?\\
-\hyperref[gra3-uni4-secA-lec2-cool-3]{Actividad de cierre 9}& Bolsas de manzanas\\
-\hyperref[gra3-uni4-secA-lec3-cool-3]{Actividad de cierre 14}& Regalitos para invitados\\
-\hyperref[gra3-uni4-secA-lec4-cool-3]{Actividad de cierre 19}& Los trompos de Han\\
-\hyperref[gra3-uni4-secA-lec5-cool-3]{Actividad de cierre 23}& Patas de hormigas\\
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Sección B -~Relacionemos la multiplicación y la división}\\[0.5ex]
-\hyperref[gra3-uni4-secB-lec6-cool-3]{Actividad de cierre 27}& Muffins en cajas\\
-\hyperref[gra3-uni4-secB-lec7-cool-3]{Actividad de cierre 31}& Rosas para compartir\\
-\hyperref[gra3-uni4-secB-lec8-cool-3]{Actividad de cierre 35}& Hechos de multiplicación y de división\\
-\hyperref[gra3-uni4-secB-lec9-cool-3]{Actividad de cierre 39}& Encuentra el producto desconocido\\
-\hyperref[gra3-uni4-secB-lec10-cool-3]{Actividad de cierre 43}& Marca o colorea partes para encontrar el área\\
-\hyperref[gra3-uni4-secB-lec11-cool-3]{Actividad de cierre 47}& Expresiones para un rectángulo\\
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Sección C -~Multipliquemos números más grandes}\\[0.5ex]
-\hyperref[gra3-uni4-secC-lec12-cool-3]{Actividad de cierre 51}& ¿Cuál es el valor?\\
-\hyperref[gra3-uni4-secC-lec13-cool-3]{Actividad de cierre 55}& Bolsas de naranjas\\
-\hyperref[gra3-uni4-secC-lec14-cool-3]{Actividad de cierre 59}& Multiplica y explica\\
-\hyperref[gra3-uni4-secC-lec15-cool-3]{Actividad de cierre 63}& Encuentra el área\\
-\hyperref[gra3-uni4-secC-lec16-cool-3]{Actividad de cierre 68}& Multiplica números mayores que 20\\
-\hyperref[gra3-uni4-secC-lec17-cool-3]{Actividad de cierre 72}& Los globos de Andre\\
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Sección D -~Dividamos números más grandes}\\[0.5ex]
-\hyperref[gra3-uni4-secD-lec18-cool-3]{Actividad de cierre 76}& Equipos en el recreo\\
-\hyperref[gra3-uni4-secD-lec19-cool-3]{Actividad de cierre 80}& Encuentra el valor\\
-\hyperref[gra3-uni4-secD-lec20-cool-3]{Actividad de cierre 85}& Una división más\\
-\hyperref[gra3-uni4-secD-lec21-cool-3]{Actividad de cierre 89}& Las manzanas en el puesto de la huerta\\
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Glosario}\\[0.5ex]
-\multicolumn{2}{l}{\null}\\[1.5ex] \multicolumn{2}{l}{\large Sección  Actividades de cierre}\\[0.5ex]
-\end{longtable}
 \end{sectionptx}
 \end{document}

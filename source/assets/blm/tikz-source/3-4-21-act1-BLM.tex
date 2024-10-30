@@ -24,7 +24,7 @@
 \coordinate (topLeft) at (\myMargin,11in-\myMargin);
 
 % clip outside the margin 
-\draw (botLeft) rectangle (topRight);
+% \draw (botLeft) rectangle (topRight);
 
 % draw middle line
 \coordinate (midLeft) at ($ (botLeft)!0.5!(topLeft) $);
@@ -36,8 +36,8 @@
 \coordinate (centerBot) at ($ (midLeft)!0.5!(botRight) $);
 
 % add tables to top and bottom
-\node (tableTop) at ([yshift=-1cm]centerTop) {\includegraphics{3-4-21-act1-BLM-table.pdf}};
-\node (tableBot) at ([yshift=-1cm]centerBot) {\includegraphics{3-4-21-act1-BLM-table.pdf}};
+\node (tableTop) at ([yshift=-8ex]centerTop) {\includegraphics{3-4-21-act1-BLM-table.pdf}};
+\node (tableBot) at ([yshift=-8ex]centerBot) {\includegraphics{3-4-21-act1-BLM-table.pdf}};
 
 % Add png decoration to top and bottom
 \node[above] at (tableTop.north) {\includegraphics[width=3.5cm]{../../png-source/3.4.D21.S_Sp.png}};
