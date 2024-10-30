@@ -7,7 +7,7 @@
 %*         https://pretextbook.org          *%
 %*                                          *%
 %********************************************%
-\documentclass[twoside,14pt,]{extarticle}
+\documentclass[twoside,14pt]{extarticle}
 %% Custom Preamble Entries, early (use latex.preamble.early)
 %% Always open on odd page
 %%   The following adjusts cleardoublepage to remove twosided
@@ -96,7 +96,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% See Bringhurst 2.1.1 on measure for recommendations
 %% 75 characters per line (count spaces, punctuation) is target
 %% which is the upper limit of Bringhurst's recommendations
-\geometry{letterpaper,total={450pt,9.5in}}
+\geometry{letterpaper, inner=1.5in, outer=1in, top=0.6in, bottom=0.7in}
 %% Custom Page Layout Adjustments (use publisher page-geometry entry)
 %% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
 %% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
@@ -571,15 +571,19 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %%
 %% tcolorbox, with styles, for PROJECT-LIKE
 %%
+\usepackage{fontawesome}
+% \faCommentO      comment bubble icon
+% \faLightbulbO    light-bulb icon
+% \faCheckSquareO  check-mark icon
 %% exploration: fairly simple numbered block/structure
-\tcbset{ explorationstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, } }
+\tcbset{ explorationstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faBolt}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, fonttitle=\bfseries,  } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
 %% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, } }
+\tcbset{ activitystyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faLightbulbO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, fonttitle=\bfseries,  } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
 %% project: fairly simple numbered block/structure
-\tcbset{ projectstyle/.style={, , blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white,  } }
-\newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
+\tcbset{ projectstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faCheckSquareO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white, fonttitle=\bfseries, } }
+\newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, after={\par}, projectstyle, }
 % \newenvironment{project}[3]{\comment}{\endcomment}
 %%
 %% tcolorbox, with styles, for GOAL-LIKE
@@ -654,8 +658,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \fancyhead[L]{}%{\rightmark}
 \fancyhead[R]{}
 % \fancyfoot[R]{}
-\fancyfoot[LO, RE]{\textcolor{PineGreen}{\textbf{\thepage}}}
-% \fancyfootoffset{2cm}
+\fancyfoot[RO, LE]{\textcolor{PineGreen}{\textbf{\thepage}}}
+\fancyfootoffset{1cm} % Set offsets for header/footer closer to the edge
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 % \renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
 \renewcommand{\headrulewidth}{0pt}  % Quitar linea del header
