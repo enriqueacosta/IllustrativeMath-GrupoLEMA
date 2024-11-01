@@ -443,7 +443,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Hanging indent occupies a 5ex width slot prior to left margin
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parskip}{\medskipamount}}, } }
 \newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
@@ -610,7 +610,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \usetikzlibrary{decorations.markings}
 %% If tikz has been loaded, replace ampersand with \amp macro
 %% tcolorbox styles for sidebyside layout
-\tcbset{ sbsstyle/.style={raster before skip=1.0ex, raster equal height=rows, raster force size=false} }
+\tcbset{ sbsstyle/.style={raster before skip={2ex}, raster after skip={2ex}, raster equal height=rows, raster force size=false} }
 \tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont} }
 %% Enviroments for side-by-side and components
 %% Necessary to use \NewTColorBox for boxes of the panels
@@ -668,6 +668,10 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 % stop hyphenation
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
+
+% estilo de párrafos
+\setlength{\parindent}{0pt}    % No indentation for new paragraphs
+\setlength{\parskip}{1ex}    % Small space between paragraphs
 
 %% End: Author-provided macros
 %% Title page information for article
