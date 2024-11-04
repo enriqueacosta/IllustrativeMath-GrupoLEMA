@@ -52,3 +52,22 @@
     **Note que:** no se incluye la extensión (`.svg`) en el `source="...`. Esto es MUY importante para que PreTexT agregue la extensión apropiada de acuerdo al formato (es distinto si es una página web, o un pdf con LaTeX)
 
 4. Si las imágenes son de `png-source` o `jpg-source`, hay que agregar el `width="_____%"` y hay que ajustar el porcentaje deseado revisando la página web generada (build).
+
+5. Si las imágenes necesitan atribución, se debe:
+    *  agregar un `<description>` con la atribución. Así:
+        ```xml
+        <image source="jpg-source/3-4-D-22 Act1-Fresas.jpg" width="30%">
+          <shortdescription>Varias fresas en una parcela</shortdescription>
+          <description>
+            <p>Fruchthandel_Magazin. Pixabay License. <url href="https://pixabay.com/photos/strawberries-red-cute-plant-field-196798/">https://pixabay.com/</url>.
+            </p>
+          </description>
+        </image>
+        ```
+   *  agregar la atribución a la página de atribuciónes de la unidad, por ejemplo `gra3-uni4-atribuciones`. Así:
+        ```xml
+        <li>
+           <xref ref="act-produccionFresas" text="title"/> Fresas en una parcela. Fruchthandel_Magazin. Pixabay License. <url  ref="https://pixabay.com/photos/strawberries-red-cute-plant-field-196798/">https://pixabay.com/.</url>
+        </li>
+        ```
+        en donde `act-produccionFresas` es el `xml:id` de la actividad en la que está la imagen.

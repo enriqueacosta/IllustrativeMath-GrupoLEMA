@@ -153,7 +153,7 @@
 % Dot groups
 %%%%%%%%%%%%%%%%%%%
 % inner sep = 0pt guarantees size is exactly minimum size (otherwise a space may be added, which grows with lower grades).
-\def\midDotSize{0.4cm}
+\def\midDotSize{2ex} % en unidades [ex] para ajustarse al tamaño de la fuente
 \tikzstyle{midDot}=[circle, draw, fill=cyan!60, minimum size = \midDotSize, inner sep = 0pt] 
 \tikzstyle{midDotRoundedRect}=[draw, rectangle, rounded corners=0.5*\midDotSize, inner sep=3*\midDotSize/10]
 
