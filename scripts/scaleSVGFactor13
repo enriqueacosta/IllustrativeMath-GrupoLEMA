@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# scaleSVGFactor13 - Scales the width and height of an SVG by 1.3
+# Author: Enrique Acosta, November 2024
+#
+# Usage: ./scaleSVGFactor13 <input-file.svg or input-file>
+# - Adds .svg if not present in the filename.
+# - Creates <input-filename>-scale13.svg with updated dimensions.
+
+# Check if an input file was provided
+if [[ -z "$1" ]]; then
+  echo "Usage: $0 <input-file.svg or input-file>"
+  exit 1
+fi
+
+# Set input file, adding .svg if not present, and define output file
+input_file="${1%.svg}.svg"
+output_file="${input_file%.svg}-scale13.svg"
+scale_factor=1.3
+
+# Extract width, height, and units if they exist
+width=$(sed -nE "s/.*width=['\"]([0-9.]+)([a-z]*)['\"].*/\1/p" "$input_file" | head -n 1)
+height=$(sed -nE "s/.*height=['\"]([0-9.]+)([a-z]*)['\"].*/\1/p" "$input_file" | head -n 1)
+unit=$(sed -nE "s/.*(width|height)=['\"][0-9.]+([a-z]*)['\"].*/\2/p" "$input_file" | head -n 1)
+
+# Scale dimensions if present and add units back
+new_width=""
+new_height=""
+[[ -n "$width" ]] && new_width=$(echo "$width * $scale_factor" | bc)${unit}
+[[ -n "$height" ]] && new_height=$(echo "$height * $scale_factor" | bc)${unit}
+
+# Substitute scaled values into SVG and save to output file
+sed_script=""
+[[ -n "$new_width" ]] && sed_script="s/width=['\"]${width}${unit}['\"]/width=\"$new_width\"/"
+[[ -n "$new_height" ]] && sed_script="${sed_script}; s/height=['\"]${height}${unit}['\"]/height=\"$new_height\"/"
+sed -E "$sed_script" "$input_file" > "$output_file"
+
+echo "Resized SVG saved as $output_file"
