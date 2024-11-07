@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Emparejemos diagramas de cinta y ecuaciones</title>
+
+<statement>
+  <p>Estos son dos diagramas de cinta. Empareja cada ecuación con uno de los diagramas de cinta.</p>
+
+  <image source="png-source/6-6.6.A1.Image.Revision.05.png" width="100%">
+    <shortdescription>Dos diagramas de cinta. El de la izquierda, dos partes marcadas 4 y x. Total, 12. El de la derecha, cuatro partes iguales marcadas x. Total, 12</shortdescription>
+  </image>
+
+  <sidebyside widths="30% 30% 30%" margins="0% 0%" valign="top">
+    <ul>
+      <li><m>4 + x = 12</m></li>
+      <li><m>12 \div 4 = x</m></li>
+      <li><m>4 \boldcdot x = 12</m></li>
+    </ul>
+
+    <ul>
+      <li><m>12 = 4 + x</m></li>
+      <li><m>12 - x = 4</m></li>
+      <li><m>12 = 4 \boldcdot x</m></li>
+    </ul>
+
+    <ul>
+      <li><m>12 - 4 = x</m></li>
+      <li><m>x = 12 - 4</m></li>
+      <li><m>x + x + x + x = 12</m></li>
+    </ul>
+  </sidebyside>
+</statement>
+
+<solution>
+  <p>Diagrama de la izquierda:</p>
+
+  <ul>
+    <li><m>4 + x = 12</m></li>
+    <li><m>12 = 4 + x</m></li>
+    <li><m>12 - x = 4</m></li>
+    <li><m>12 - 4 = x</m></li>
+    <li><m>x = 12 - 4</m></li>
+  </ul>
+
+  <p>Diagrama de la derecha:</p>
+
+  <ul>
+    <li><m>12 \div 4 = x</m></li>
+    <li><m>4 \boldcdot x = 12</m></li>
+    <li><m>12 = 4 \boldcdot x</m></li>
+    <li><m>x + x + x + x = 12</m></li>
+  </ul>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>
+      En esta primera actividad sobre representar ecuaciones con variables en diagramas de cinta, los estudiantes usan lo que saben sobre las relaciones entre operaciones para identificar múltiples ecuaciones que coinciden con un diagrama determinado. Se supone que los estudiantes han visto representaciones como estas en grados anteriores. Si este no es el caso, regrese a los ejemplos del calentamiento y pida a los estudiantes que escriban otras ecuaciones para cada uno de los diagramas. Por ejemplo, la relación entre <m>2</m>, <m>5</m> y <m>7</m> expresada en la ecuación <m>2 + 5 = 7</m> puede ser escrita como <m>2 = 7 - 5</m>, <m>5 = 7 - 2</m>, <m>7 = 2 + 5</m> y <m>7 - 2 = 5</m>. Pida a los estudiantes que expliquen cómo estas ecuaciones coinciden con las partes del diagrama de cinta.
+    </p>
+
+    <p>
+      Tenga en cuenta que la palabra "variable" no se define hasta la próxima lección. No es necesario utilizar ese término con los estudiantes todavía. Además, estamos introduciendo las expresiones equivalentes <m>x + x + x + x</m> y <m>4 \boldcdot x</m> porque deberían resultarles familiares por lecciones de años anteriores, pero las expresiones equivalentes se definen con más cuidado más adelante en esta unidad. En esta lección, sin embargo, el enfoque no está en el concepto de expresiones equivalentes.
+    </p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    @@@@@ -->
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+  <!-- </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>
+      Organice a los estudiantes en grupos de <m>2</m>. Déles <m>2</m> minutos de tiempo de trabajo en silencio. Luego, pídales que compartan sus respuestas con su compañero y continúe con una discusión con toda la clase.
+    </p>
+
+    <p>
+      Si es necesario, explique que l<m>x</m> en cada diagrama simplemente reemplaza un número.
+    </p>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>Es posible que los estudiantes no tengan mucha experiencia con una letra que sustituye a un número. Si los estudiantes se resisten a participar, explíqueles que la <m>x</m> simplemente sustituye a un número. Es posible que los estudiantes prefieran calcular el valor que <m>x</m> debe tomar para que cada diagrama tenga sentido (<m>8</m> en el primer diagrama y <m>3</m> en el segundo diagrama) antes de pensar qué ecuaciones pueden representar cada diagrama.</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>
+      Centre la discusión en la razón por la que más de una ecuación puede describir a cada diagrama de cinta. Es decir, la misma relación puede expresarse de más de una manera. Estas ideas deben ser familiares para los estudiantes por trabajos anteriores. Ideas que se pueden destacar:
+    </p>
+
+    <ul>
+      <li>Una relación multiplicativa se puede expresar mediante división.</li>
+      <li>Una relación aditiva se puede expresar mediante resta.</li>
+      <li>No importa cómo se ordenen las expresiones alrededor de un signo igual. Por ejemplo, <m>4 + x = 12</m> y <m>12 = 4 + x</m> describen lo mismo.</li>
+      <li>La suma repetida se puede representar con la multiplicación. Por ejemplo, <m>4x</m> es otro manera de representar <m>x + x + x + x</m>.</li>
+    </ul>
+
+    <p>
+      Es probable que los estudiantes expresen estas ideas utilizando un lenguaje informal, y eso está bien. Anímelos a revisar sus afirmaciones utilizando un lenguaje más preciso, pero no hay razón para insistir en que utilicen términos particulares.
+    </p>
+
+    <p>
+      Algunas preguntas para orientar la discusión:
+    </p>
+
+    <ul>
+      <li><q>¿Cómo puedes saber si un diagrama representa una suma o una multiplicación?</q></li>
+      <li><q>Una vez que estuviste seguro de una ecuación, ¿cómo encontraste otras que coincidieran con el mismo diagrama?</q></li>
+      <li>Respecto a dos ecuaciones que representen el mismo diagrama: <q>¿Qué tienen en común las ecuaciones? ¿En qué se diferencian?</q></li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>
+      Escribir, representar, hablar: RLM 2 (recopilar y mostrar). Mientras las parejas trabajan, circule y escuche a los estudiantes hablar sobre las similitudes y diferencias entre los diagramas de cinta y las ecuaciones. Pida a los estudiantes que expliquen cómo estas ecuaciones coinciden con las partes del diagrama de cinta. Escriba frases comunes o importantes que escuche de los estudiantes sobre cada representación, tanto de los diagramas de cinta como de las ecuaciones, en una presentación visual. Esto ayudará a los estudiantes a utilizar el lenguaje matemático durante sus discusiones en parejas y en grupo.
+    </p>
+
+    <p>
+      Principio(s) de diseño: apoyar la creación de sentido; promover la conversación.
+    </p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</activity>
