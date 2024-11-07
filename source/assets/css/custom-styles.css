@@ -115,6 +115,50 @@ article[class*='project'] .heading .type {
 }
 
 
+
+/* EAJ - quitar los números a retos (Estas listo para más - are you ready for more) est */
+details[class*='question example-like'] .heading  .codenumber {
+  display:none !important;
+}
+
+/* EAJ - quitar los puntos a retos (Estas listo para más - are you ready for more) est*/
+details[class*='question example-like'] .heading  .period {
+  display:none !important;
+}
+
+/* EAJ - quitar los espacios a retos (Estas listo para más - are you ready for more) est*/
+details[class*='question example-like'] .heading .space {
+  display:none !important;
+}
+
+/* EAJ -  quitar el tipo de retos (Estas listo para más - are you ready for more) est*/
+/* details[class*='question example-like'] .heading .type {
+  display:none !important;
+} */
+
+/* EAJ - quitar los números a retos (Estas listo para más - are you ready for more) para el profe */
+article[class*='question example-like'] .heading  .codenumber {
+  display:none !important;
+}
+
+/* EAJ - quitar los puntos a retos (Estas listo para más - are you ready for more) para el profe */
+article[class*='question example-like'] .heading  .period {
+  display:none !important;
+}
+
+/* EAJ - quitar los espacios a retos (Estas listo para más - are you ready for more) para el profe */
+article[class*='question example-like'] .heading .space {
+  display:none !important;
+}
+
+/* EAJ -  quitar el tipo de retos (Estas listo para más - are you ready for more) para el profe */
+/* article[class*='question example-like'] .heading .type {
+  display:none !important;
+} */
+
+
+
+
 /* EAJ - agregar salto de línea después del título de project*/
 /*.pretext-content section article.project-like > .heading + p {
   display: block;
