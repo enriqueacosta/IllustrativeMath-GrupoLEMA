@@ -9,12 +9,21 @@
 <!-- ============================================ 
   Objetivos de aprendizaje                        
 =================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="estudiante"> 
+  <p>Veamos cómo los diagramas de cinta y las ecuaciones pueden mostrar relaciones entre cantidades.</p>
+</introduction>
+
+<!-- Objetivos estudiante. Originalmente [Student-Facing Targets] -->
 <objectives component="estudiante">
-  <introduction> <!-- intro porque PreTeXt no acepta <p> como hijo de <objectives> --> 
-    <p>Veamos cómo los diagramas de cinta y las ecuaciones pueden mostrar relaciones entre cantidades.</p>
-  </introduction>
+  <ul>
+    <li>Puedo saber si una ecuación puede representar un diagrama de cinta.</li>
+    <li>Puedo usar un diagrama de cinta para representar una ecuación.</li>
+</ul>
 </objectives>
 
+<!-- Objetivos de aprendizaje que solo ve el profesor -->
 <objectives component="profesor">
   <ul>
     <li>Dibujar diagramas de cinta para representar ecuaciones de las formas <m>x + p = q</m> y <m>px = q</m>.</li>
