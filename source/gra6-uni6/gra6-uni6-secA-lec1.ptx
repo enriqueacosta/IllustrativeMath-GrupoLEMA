@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="graVV-uniXX-secYY-lecZZ" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 1</shorttitle>
+<title>Lección 1 -<nbsp/></title>
+<title>Diagramas de cinta y ecuaciones</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+<objectives component="estudiante">
+  <introduction> <!-- intro porque PreTeXt no acepta <p> como hijo de <objectives> --> 
+    <p>Veamos cómo los diagramas de cinta y las ecuaciones pueden mostrar relaciones entre cantidades.</p>
+  </introduction>
+</objectives>
+
+<objectives component="profesor">
+  <ul>
+    <li>Dibujar diagramas de cinta para representar ecuaciones de las formas <m>x + p = q</m> y <m>px = q</m>.</li>
+    <li>Interpretar (oralmente y por escrito) diagramas de cinta que representan ecuaciones de la forma <m>p + x = q</m> o <m>px = q</m>.</li>
+    <li>Usar diagramas de cinta para hallar valores desconocidos en ecuaciones de las formas <m>x + p = q</m> y <m>px = q</m> y explicar (oralmente) el método de solución.</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title> 
+    <p>6.EE.B.5, 6.EE.B.6, 6.EE.B.7</p>
+  </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <!-- <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Materiales requeridos -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    [@@@@@@@@] -->
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./graVV-uniXX-secYY-lecZZ-act1-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./graVV-uniXX-secYY-lecZZ-act2-mat.ptx"/>
+      </li>
+    </ul>  -->
+  <!-- </paragraphs> -->
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>
+      El propósito de esta lección es ayudar a los estudiantes a recordar de grados anteriores cómo se pueden usar los diagramas de cinta para representar operaciones. Hay dos funciones que pueden desempeñar los diagramas de cinta (o cualquier diagrama): Ayudar a visualizar una relación y ayudar a resolver un problema. El enfoque aquí es la primera de ellas, para que posteriormente los estudiantes puedan usar diagramas para la segunda función. En esta lección, los estudiantes interpretan diagramas de cinta y crean los suyos propios.
+    </p>
+
+    <p>
+      Tenga en cuenta que los términos "solución" y "variable" no se definen hasta la próxima lección, y tampoco se debe generalizar ningún método de solución todavía. Los estudiantes deben participar en las actividades y razonar sobre cantidades desconocidas de manera que tengan sentido para ellos.
+    </p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <!-- <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="gra6-uni6-secA-lec1-warm">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(5 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra6-uni6-secA-lec1-warm.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="gra6-uni6-secA-lec1-act1">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra6-uni6-secA-lec1-act1.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="gra6-uni6-secA-lec1-act2">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra6-uni6-secA-lec1-act2.ptx"/> 
+
+  <!-- si hay una pregunta reto, crear el siguiente archivo -reto.ptx (usar el template asociado) -->
+  <xi:include href="./gra6-uni6-secA-lec1-act2-reto.ptx"/>
+</subsubsection>
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="gra6-uni6-secA-lec1-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
+
+  <p>Para asegurarse de que los estudiantes comprendan el uso y la utilidad de los diagramas de cinta para representar ecuaciones y encontrar valores desconocidos, considere hacer algunas de las siguientes preguntas:</p>
+
+  <ul>
+    <li><q>¿Por qué son útiles los diagramas de cinta para visualizar una relación?</q> (Las respuestas pueden variar. Ejemplo de respuesta: Puedes ver la forma en que se relacionan las cantidades.)</li>
+    <li><q>¿En qué parte del diagrama de cinta encontramos el signo igual que está en la ecuación que representa?</q> (El hecho de que la suma de las partes tiene el mismo valor que el todo; los números y letras en los cuadros suman el total que se muestra para todo el rectángulo.)</li>
+    <li><q>¿Por qué un diagrama puede representarse por más de una ecuación?</q> (Porque se puede utilizar más de una operación; por ejemplo, el mismo diagrama se puede representar mediante una ecuación de suma o resta. Porque cuando dos expresiones son iguales, no importa cómo se ordenen alrededor del signo igual.)</li>
+    <li><q>Describe algunas formas de representar la relación <m>23 + x = 132</m>.</q> (Diagrama de cinta con dos partes desiguales; otras ecuaciones equivalentes como <m>x = 132 - 23</m>.)</li>
+    <li><q>Describe algunas formas de representar la relación <m>5x = 230</m>.</q> (Diagrama de cinta con <m>5</m> partes iguales; otras ecuaciones equivalentes como <m>x = 230 \div 5</m>.)</li>
+  </ul>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="gra6-uni6-secA-lec1-cool"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+
+  <!-- pdf imprimible -->
+  <url component="profesor" href="external/cools-pdf/graVV-uniXX-secYY-lecZZ-cool-standalone.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./gra6-uni6-secA-lec1-cool.ptx"/>
+</reading-questions>
+
+<!-- ================================================
+  Resumen de la lección (se usa a partir de grado 6)
+===================================================== -->
+<xi:include href="./gra6-uni6-secA-lec1-resumen.ptx"/>
+
+
+</subsection>

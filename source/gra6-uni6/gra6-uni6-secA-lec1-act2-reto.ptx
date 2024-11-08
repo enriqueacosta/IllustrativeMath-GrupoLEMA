@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+  Un reto [¿Estás listo para más? - Are you ready for more] es un <question> 
+  (distinto a las otras actividades y a los Practice Problems y a los cools)
+  La solución necesita [component="profesor"] porque la visibilidad no se puede
+  controlar como en todos los otros casos desde <common> en el publication file.
+================================================= =========================== -->
+
+<question xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<statement>
+  <p>
+    Estás caminando por una carretera buscando un tesoro. La carretera se divide en tres caminos. Hay un guardia en cada camino. Sabes que solamente uno de los guardias dice la verdad y que los otros dos mienten. Esto es lo que dicen:
+  </p>
+
+  <ul>
+    <li>Guardia 1: el tesoro está por este camino.</li>
+    <li>Guardia 2: por este camino no hay tesoro, busca en otro lado.</li>
+    <li>Guardia 3: el primer guardia miente.</li>
+  </ul>
+
+  <p>
+    ¿Cuál camino lleva al tesoro?
+  </p>
+</statement>
+
+
+<solution component="profesor">  
+  <p>
+    El camino <m>2</m> conduce al tesoro.
+  </p> 
+
+  <p>
+    Supongamos que el Guardia 1 dice la verdad. Entonces, sería cierto que el Camino 1 conduce al tesoro. Entonces, la afirmación del Guardia 2 también debe ser cierta. Pero sólo uno de los guardias dice la verdad. Esto significa que el Guardia 1 debe estar mintiendo.
+  </p>
+
+  <p>
+    Dado que el Guardia 1 miente, el Guardia 3 está diciendo la verdad sobre la mentira del Guardia 1. Eso significa que el Guardia 3 tiene la única afirmación verdadera. El Guardia 2, entonces, miente acerca de que su camino es el camino equivocado, por lo que el tesoro se encuentra en el camino <m>2</m>.
+  </p>
+</solution>
+
+</question>
