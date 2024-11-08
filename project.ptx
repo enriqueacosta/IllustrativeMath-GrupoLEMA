@@ -98,6 +98,52 @@
     </target>
 
 
+    <!-- ============================================ 
+      grado6-unidad6
+    =================================================  -->
+    <target name="gra6-uni6-web-est" 
+      format="html" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/gra6-uni6">
+      <!-- <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/> -->
+      <stringparams author.tools="yes" html.css.extra="external/css/grado6-est.css"/>
+    </target>
+    <target name="gra6-uni6-print-est" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/gra6-uni6">
+    </target>
+    <target name="gra6-uni6-print-latex-est" 
+      format="latex" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/gra6-uni6">
+    </target>
+    <target name="gra6-uni6-web-prof" 
+      format="html" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/gra6-uni6">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra6-uni6-print-prof" 
+      latex-engine="pdflatex" 
+      format="pdf" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/gra6-uni6">
+    </target>
+    <target name="gra6-uni6-print-latex-prof" 
+      format="latex" 
+      source="gra6-uni6/gra6-uni6.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/gra6-uni6">
+    </target>
+
+
 
     <!-- ============================================ 
       CENTROS

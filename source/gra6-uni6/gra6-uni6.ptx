@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template article provided -->
+<!-- by the `pretext new article` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your article         -->
+  <article xml:id="gra6-uni6">
+    <!-- The article needs a title and can have a subtitle  -->
+    <title>Matemáticas Ilustrativas </title>
+    <subtitle>Grado 6 - Unidad 6</subtitle>
+
+    <frontmatter>
+
+      <!-- contenido de <titlepage> que es igual para todas las unidades-->
+      <xi:include href="../meta/meta_titlepage.ptx" />
+
+      <abstract xml:id="gra6-uni6-intro">
+        <title>Presentación de la unidad</title>
+        
+        <!--
+        <p>
+          Secciones:
+          <ul>
+            <li><xref ref="gra6-uni6-secA" text="title"></xref></li>
+            <li><xref ref="gra6-uni6-secB" text="title"></xref></li>
+            <li><xref ref="gra6-uni6-secC" text="title"></xref></li>
+            <li><xref ref="gra6-uni6-secD" text="title"></xref></li>
+          </ul>
+        </p>
+        -->
+
+        <!-- 
+        <p>
+          <list-of elements="chapter"/>
+          <list-of elements="theorem lemma" divisions="chapter" empty="yes"/>
+        </p> 
+        -->  
+        <remark component="profesor">
+          <p>
+            En esta unidad los estudiantes aprenden [@@@@@@@@@]
+          </p>
+        </remark>
+      </abstract>
+
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../meta/meta_source.ptx" />
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
+
+    </frontmatter>
+
+
+    <section xml:id="gra6-uni6-secA">
+      <title>Sección A -<nbsp/></title>
+      <title>Ecuaciones en una variable</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra6-uni6-secA.ptx" />
+      
+      <!-- Lecciones de la sección -->
+      <xi:include href="./gra6-uni6-secA-lec1.ptx"/>
+      <!-- <xi:include href="./gra6-uni6-secA-lec2.ptx"/> -->
+      <!-- <xi:include href="./gra6-uni6-secA-lec3.ptx"/> -->
+      <!-- <xi:include href="./gra6-uni6-secA-lec4.ptx"/> -->
+      <!-- <xi:include href="./gra6-uni6-secA-lec5.ptx"/> -->
+
+      <!-- Problemas de práctica de la sección -->
+      <!-- <xi:include href="./gra6-uni6-secA-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
+      <!-- <xi:include href="./gra6-uni6-secA-resumen.ptx"/> -->
+    </section>
+
+    <!-- Más secciones -->
+
+    <section>
+      <title>Glosario</title>
+      <!-- <xi:include href="./gra6-uni6-Glosario.ptx"/> -->
+    </section>
+
+
+    <!-- Centros -->
+    <section xml:id="centros-gra6-uni6" component="profesor">
+      <title>Centros</title>
+      <!-- <xi:include href="../centros/centro-bloquesSolidosGeometricos.ptx"/> -->
+      <!-- <xi:include href="../centros/centro-librosDeImagenes.ptx"/> -->
+    </section>
+
+    <!-- Hojas Reproducibles (BLM) -->
+    <section xml:id="BLM-gra6-uni6" component="profesor">
+      <title>Hojas reproducibles</title>
+      <!-- <xi:include href="../blm/blm-centro-bloquesSolidosGeometricos-tarjetasBloques.ptx"/> -->
+      <!-- <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/> -->
+    </section>
+
+     <!-- Dos versiones de compilaciones de actividades de cierre -->
+
+    <solutions project="statement">
+      <title>Actividades de cierre</title>
+    </solutions>
+
+    <section>        
+      <title>Actividades de cierre</title>
+        <list-of elements="project" divisions="section" empty="yes" solutions="no"/>
+    </section>
+
+    <!-- Finaly we place the backmatter in its own file and inlcude-->
+    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
+    
+  </article>
+</pretext>
