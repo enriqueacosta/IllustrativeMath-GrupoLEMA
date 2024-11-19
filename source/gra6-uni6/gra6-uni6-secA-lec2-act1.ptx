@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Tiempo para una historia</title>
+
+<statement>
+  <p>Estas son tres situaciones y seis ecuaciones. ¿Cuál ecuación representa mejor cada situación? Si tienes dificultades, considera dibujar un diagrama.</p>
+
+  <sidebyside widths="30% 30% 30%" margins="auto" valign="top">
+      <p>
+        <line><m>x + 5 = 20</m></line>
+        <line><m>x\times 20 = 5</m></line>
+      </p>
+
+      <p>
+        <line><m>x = 20 + 5</m></line>
+        <line><m>5 \boldcdot {20} = x</m></line>
+      </p>
+
+      <p>
+        <line><m>5x = 20</m></line>
+        <line><m>20x = 5</m></line>
+      </p>
+  </sidebyside>
+
+  <ol>
+    <li>Después de correr <m>5</m> kilómetros el viernes, Elena habrá corrido un total de <m>20</m> millas en la semana. Ella corrió <m>x</m> kilómetros antes del viernes.</li>
+    <li>La escuela de Andre tiene <m>20</m> clubes, que es cinco veces la cantidad de clubes de la escuela de su primo. La escuela de su primo tiene <m>x</m> clubes.</li>
+    <li>Jada es voluntaria en el refugio de animales. Dividió <m>5</m> tazas de comida para gato equitativamente para alimentar a <m>20</m> gatos. Cada gato recibió <m>x</m> tazas de comida.</li>
+  </ol>
+</statement>
+
+<solution>
+  <ol>
+    <li><p><m>x + 5 = 20</m></p></li>
+    <li><p><m>5x = 20</m></p></li>
+    <li><p><m>20x = 5</m></p></li>
+  </ol>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>En esta actividad, los estudiantes exploran cómo una ecuación puede representar una situación con una cantidad desconocida. Se les presentan tres historias, cada una de las cuales involucra las mismas tres cantidades: <m>5</m>, <m>20</m> y una cantidad desconocida <m>x</m>. Los estudiantes reflexionan sobre las acciones (como correr una cantidad de millas o repartir tazas de comida para gatos) y las relaciones (como cinco veces más clubes) en las situaciones, y analizan las operaciones necesarias para describirlas. También interpretan qué representa la cantidad desconocida en cada historia y cómo mostrar su relación con los otros dos números y las cantidades que representan. Por cada situación, identifica a un estudiante que seleccione una ecuación correcta y tenga una forma razonable de explicar su razonamiento, ya sea verbalmente o mediante un diagrama.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    @@@@@ -->
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+  <!-- </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>
+      Es probable que la notación "junto a" sea nueva para los estudiantes. Explique que <m>20x</m> significa lo mismo que <m>20 \boldcdot x</m> y que utilizarán esta notación con frecuencia de ahora en adelante. Señale que, en el término <m>20x</m>, el número <m>20</m> se llama <term>coeficiente</term>. Use este término a lo largo de la lección cuando sea necesario nombrarlo de forma natural.  
+    </p>
+
+    <p>
+      Aclare que, para cada situación, la tarea es encontrar una ecuación que la represente. Algunas de las ecuaciones no se utilizarán.  
+    </p>
+      
+    <p>
+      Dé a los estudiantes 5 minutos de trabajo en silencio para responder las preguntas, seguido de una discusión con todo el grupo.
+    </p>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>
+      Los estudiantes que se concentran en palabras clave podrían confundirse en cada situación. En la primera, podrían ver la palabra “total” y decidir que necesitan sumar 5 y 20. En la segunda, las palabras “cinco veces más” podrían llevarlos a multiplicar 5 por 20. La tercera historia presenta desafíos adicionales: los estudiantes ven la palabra “dividido”, pero no hay una ecuación con división. Además, podrían pensar que dividir siempre implica dividir el número mayor por el menor. Aquí hay algunas formas de ayudar a los estudiantes a comprender las situaciones y cómo las ecuaciones pueden representarlas:  
+    </p>
+
+    <ul>
+      <li>Sugiere que los estudiantes actúen la situación o dibujen un diagrama. Enfócate en qué cantidad representa cada número o variable en la historia y en las relaciones entre ellas. </li>
+      <li>Utiliza diagramas de cinta para representar las cantidades y reflexiona sobre dónde la situación describe un total y dónde describe partes del total.</li>
+      <li>Pregunta a los estudiantes sobre las relaciones entre las operaciones. Para la tercera situación, pregunta qué operación está relacionada con dividir y cómo podría ayudar a describir la situación.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>
