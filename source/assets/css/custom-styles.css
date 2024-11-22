@@ -38,6 +38,11 @@
     /*  white-space: pre;  Ensures the linebreak is rendered */
 }
 
+/* EAJ -  quitar el número del título de problemas de práctica */
+.exercises > h2 .codenumber {
+    display: none;
+}
+
 
 /* EAJ - arreglar el estilo de los chapter en TOC */
 .ptx-toc.focused:not(.depth2) .toc-chapter {
