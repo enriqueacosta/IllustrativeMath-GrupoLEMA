@@ -21,6 +21,30 @@
 /* EAJ: FIN de ajuste de footer */
 
 
+/* EAJ - quitar los números del TOC */
+.ptx-toc a > .codenumber {
+  display: none;
+}
+
+/* EAJ - quitar la numeración I,II,.. de los <part> */
+.part > h2 .codenumber {
+    display: none;
+}
+
+/* EAJ - agregar algo después del título "Lección XX" y antes del título de la lección */
+.chapter > h2 .title::before {
+    content: "- ";
+    /*  content: "\A";  Inserts a linebreak */
+    /*  white-space: pre;  Ensures the linebreak is rendered */
+}
+
+
+/* EAJ - arreglar el estilo de los chapter en TOC */
+.ptx-toc.focused:not(.depth2) .toc-chapter {
+    background-color: var(--sectiontoc);
+    color: var(--sectiontoctext);
+}
+
 /* EAJ - para que las imagenes no necesiten width= 
    Importante para que los objetos de las figuras tikz (svg) tengan tamaños uniformes
    (por ejemplo, que todos los puntos de todos los dados tenga el mismo tamaño)
