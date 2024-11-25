@@ -1,13 +1,13 @@
 %********************************************%
 %*       Generated from PreTeXt source      *%
-%*       on 2024-10-28T20:28:47-05:00       *%
+%*       on 2024-11-22T20:46:10-05:00       *%
 %*   A recent stable commit (2022-07-01):   *%
 %* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
 %*                                          *%
 %*         https://pretextbook.org          *%
 %*                                          *%
 %********************************************%
-\documentclass[twoside,14pt]{extarticle}
+\documentclass[twoside,14pt,openany]{extbook}
 %% Custom Preamble Entries, early (use latex.preamble.early)
 %% Always open on odd page
 %%   The following adjusts cleardoublepage to remove twosided
@@ -220,9 +220,26 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \usepackage[explicit, newparttoc, pagestyles]{titlesec}
 %% The companion titletoc package for the ToC.
 \usepackage{titletoc}
+%% Fixes a bug with transition from chapters to appendices in a "book"
+%% See generating XSL code for more details about necessity
+\newtitlemark{\chaptertitlename}
 %% begin: customizations of page styles via the modal "titleps-style" template
 %% Designed to use commands from the LaTeX "titleps" package
-\pagestyle{plain}
+%% Plain pages should have the same font for page numbers
+\renewpagestyle{plain}{%
+\setfoot{}{\pagefont\thepage}{}%
+}%
+%% Two-page spread as in default LaTeX
+\renewpagestyle{headings}{%
+\sethead%
+[\pagefont\thepage]%
+[]
+[\pagefont\slshape\MakeUppercase{\ifthechapter{\chaptertitlename\space\thechapter.\space}{}\chaptertitle}]%
+{\pagefont\slshape\MakeUppercase{\ifthesection{\thesection.\space\sectiontitle}{}}}%
+{}%
+{\pagefont\thepage}%
+}%
+\pagestyle{headings}
 %% end: customizations of page styles via the modal "titleps-style" template
 %%
 %% Create globally-available macros to be provided for style writers
@@ -234,6 +251,30 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \newcommand{\authorsptx}{\relax}%
 \newcommand{\epigraphptx}{\relax}%
 %% Create environments for possible occurences of each division
+%% Environment for a PTX "part" at the level of a LaTeX "part"
+\NewDocumentEnvironment{partptx}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\part[{#4}]{#2}%
+\label{#7}%
+}{}%
+%% Environment for a PTX "chapter" at the level of a LaTeX "chapter"
+\NewDocumentEnvironment{chapterptx}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\chapter{#2}%
+\label{#7}%
+}{}%
 %% Environment for a PTX "section" at the level of a LaTeX "section"
 \NewDocumentEnvironment{sectionptx}{mmmmmmm}
 {%
@@ -243,8 +284,36 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\newpage
-\section[{#4}]{\LARGE #2}%
+\section[{#4}]{#2}%
+\label{#7}%
+}{}%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "section"
+\NewDocumentEnvironment{reading-questions-section}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+% \section[{#4}]{#2}%
+% \label{#7}%
+}{}%
+% EAJ - apagar cools redefiniendolos como comentarios 
+% \usepackage{comment}
+% \excludecomment{reading-questions-section}
+%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "section"
+\NewDocumentEnvironment{reading-questions-section-numberless}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\section*{#2}%
+\addcontentsline{toc}{section}{#4}
 \label{#7}%
 }{}%
 %% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
@@ -256,67 +325,11 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\newpage
-\subsection[{#4}]{\Large #2}%
-\vspace{-0.3cm}%
-\label{#7}%
-}{}%
-%% Environment for a PTX "subsubsection" at the level of a LaTeX "subsubsection"
-\NewDocumentEnvironment{subsubsectionptx}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\vspace{-0.4cm}
-\subsubsection[{#4}]{#2}\nobreak%
-\vspace{-0.4cm}
-\label{#7}%
-}{}%
-%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
-\NewDocumentEnvironment{reading-questions-subsubsection}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\vspace{-0.4cm}
-\subsubsection[{#4}]{#2}\nobreak%
-\vspace{-0.4cm}
-\label{#7}%
-}{}%
-%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
-\NewDocumentEnvironment{reading-questions-subsubsection-numberless}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\subsubsection*{#2}\nobreak%
-\addcontentsline{toc}{subsubsection}{#4}
-\label{#7}%
-}{}%
-%% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
-\NewDocumentEnvironment{exercises-subsection}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\newpage
 \subsection[{#4}]{#2}%
 \label{#7}%
 }{}%
-%% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
-\NewDocumentEnvironment{exercises-subsection-numberless}{mmmmmmm}
+%% Environment for a PTX "exercises" at the level of a LaTeX "part"
+\NewDocumentEnvironment{exercises-part}{mmmmmmm}
 {%
 \renewcommand{\divisionnameptx}{#1}%
 \renewcommand{\titleptx}{#2}%
@@ -324,12 +337,10 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\subsection*{#2}%
-\addcontentsline{toc}{subsection}{#4}
+\chapter*{#2}%
 \label{#7}%
 }{}%
-%% Environment for a PTX "references" at the level of a LaTeX "subsection"
-\NewDocumentEnvironment{references-subsection}{mmmmmmm}
+\NewDocumentEnvironment{references-part}{mmmmmmm}
 {%
 \renewcommand{\divisionnameptx}{#1}%
 \renewcommand{\titleptx}{#2}%
@@ -337,42 +348,29 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\newpage
-\subsection[{#4}]{#2}%
-\label{#7}%
-}{}%
-%% Environment for a PTX "references" at the level of a LaTeX "subsection"
-\NewDocumentEnvironment{references-subsection-numberless}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-\subsection*{#2}%
-\addcontentsline{toc}{subsection}{#4}
+\chapter*{#2}%
 \label{#7}%
 }{}%
 %%
 %% Styles for six traditional LaTeX divisions
+\renewcommand{\thepart}{\Alph{part}}
 \titleformat{\part}[display]
 {\divisionfont\Huge\bfseries\centering}{\divisionnameptx\space\thepart}{30pt}{\Huge#1}
 [{\Large\centering\authorsptx}]
 \titleformat{\chapter}[display]
-{\divisionfont\huge\bfseries}{\divisionnameptx\space\thechapter}{20pt}{\Huge#1}
+{\divisionfont\large\bfseries}{\divisionnameptx\space\thechapter}{-1ex}{\Large#1}
 [{\Large\authorsptx}]
 \titleformat{name=\chapter,numberless}[display]
-{\divisionfont\huge\bfseries}{}{0pt}{#1}
+{\divisionfont\Large\bfseries}{}{-2ex}{#1}
 [{\Large\authorsptx}]
-\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titlespacing*{\chapter}{0ex}{-7ex}{0pt}
 \titleformat{\section}[hang]
-{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
-[{\large\authorsptx}]
+{\divisionfont\normalsize\bfseries}{\thesection}{1ex}{#1}
+[{\normalsize\authorsptx}]
 \titleformat{name=\section,numberless}[block]
-{\divisionfont\Large\bfseries}{}{0pt}{#1}
-[{\large\authorsptx}]
-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+[{\normalsize\authorsptx}]
+\titlespacing*{\section}{0pt}{0.5ex plus 0ex minus .2ex}{-1ex minus .2ex}
 \titleformat{\subsection}[hang]
 {\divisionfont\large\bfseries}{\thesubsection}{1ex}{#1}
 [{\normalsize\authorsptx}]
@@ -490,6 +488,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \newtcolorbox{tabularbox}[3]{tabularboxstyle, left skip=#1\linewidth, width=#2\linewidth,}
 %% Footnote Numbering
 %% Specified by numbering.footnotes.level
+%% Undo counter reset by chapter for a book
+\counterwithout{footnote}{chapter}
 %% Global numbering, since numbering.footnotes.level = 0
 %% Multiple column, column-major lists
 \usepackage{multicol}
@@ -584,19 +584,6 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% project: fairly simple numbered block/structure
 \tcbset{ projectstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faCheckSquareO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white, fonttitle=\bfseries, } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, after={\par}, projectstyle, }
-% \newenvironment{project}[3]{\comment}{\endcomment}
-%%
-%% tcolorbox, with styles, for GOAL-LIKE
-%%
-%% objectives: early in a subdivision, introduction/list/conclusion
-\tcbset{ objectivesstyle/.style={bwminimalstyle, blockspacingstyle, fonttitle=\blocktitlefont\large\bfseries, fontupper={}, toprule=0ex, toptitle=0ex, top=0ex, bottom=0.5ex, bottomrule=0.1ex} }
-\newtcolorbox{objectives}[2]{title={}, phantomlabel={#2}, breakable, before upper app={\setlength{\parindent}{0pt}}, objectivesstyle}
-%%
-%% tcolorbox, with styles, for FIGURE-LIKE
-%%
-%% figureptx: 2-D display structure
-\tcbset{ figureptxstyle/.style={bwminimalstyle, middle=1ex, blockspacingstyle, fontlower=\blocktitlefont} }
-\newtcolorbox[use counter from=block]{figureptx}[4]{lower separated=false, before lower={{\textbf{#1~\thetcbcounter}\space#2}}, phantomlabel={#3}, unbreakable, figureptxstyle, }
 %%
 %% xparse environments for introductions and conclusions of divisions
 %%
@@ -638,10 +625,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Begin: Author-provided macros
 %% (From  docinfo/macros  element)
 %% Plus three from PTX for XML characters
-\newcommand{\N}{\mathbb N}
-\newcommand{\Z}{\mathbb Z}
-\newcommand{\Q}{\mathbb Q}
-\newcommand{\R}{\mathbb R}
+\newcommand{\boldcdot}{\boldsymbol{\cdot}}
 \newcommand{\lt}{<}
 \newcommand{\gt}{>}
 \newcommand{\amp}{&}
@@ -659,109 +643,163 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \fancyhead[R]{}
 % \fancyfoot[R]{}
 \fancyfoot[RO, LE]{\textcolor{PineGreen}{\textbf{\thepage}}}
-\fancyfoot[C]{\rightmark}
+\renewcommand{\chaptermark}[1]{% defines \leftmark and \rightmark
+  \markboth{Lección \thechapter}{}
+}
+\fancyfoot[C]{\leftmark}
 \fancyfootoffset{1cm} % Set offsets for header/footer closer to the edge
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 % \renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
 \renewcommand{\headrulewidth}{0pt}  % Quitar linea del header
-
 % stop hyphenation
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
-
 % estilo de párrafos
 \setlength{\parindent}{0pt}    % No indentation for new paragraphs
 \setlength{\parskip}{1ex}    % Small space between paragraphs
 
 %% End: Author-provided macros
-%% Title page information for article
-\title{Matemáticas Ilustrativas\\
-{\large Grado 3 - Unidad 4}}
-\author{Adaptación del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}})\\
-\href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}}
-}
-\date{October 28, 2024}
 \begin{document}
 %% bottom alignment is explicit, since it normally depends on oneside, twoside
 \raggedbottom
-%% Target for xref to top-level element is document start
-\label{gra3-uni4}\hypertarget{gra3-uni4}{}
-\maketitle
+\frontmatter
+%% begin: half-title
 \thispagestyle{empty}
-\renewcommand*{\abstractname}{Resumen}
-\begin{abstract}
-\end{abstract}
-\renewcommand*{\abstractname}{Resumen}
-\begin{abstract}
-El código fuente que generó este documento (HTML, pdf, latex o epub) se enceuntra en \href{https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA}{\nolinkurl{github.com/enriqueacosta}}.%
-\end{abstract}
-\renewcommand*{\abstractname}{Resumen}
-\begin{abstract}
-www.grupolema.org www.grupolema.org2023Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{www.grupolema.org}})Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).%
+{\titlepagefont\centering
+\vspace*{0.28\textheight}
+{\Huge Matemáticas Ilustrativas}\\[2\baselineskip]
+{\LARGE Grado 3 - Unidad 4}\\
+}
+\clearpage
+%% end:   half-title
+%% begin: adcard (empty)
+\thispagestyle{empty}
+\null%
+\clearpage
+%% end:   adcard (empty)
+%% begin: title page
+%% Inspired by Peter Wilson's "titleDB" in "titlepages" CTAN package
+\thispagestyle{empty}
+{\titlepagefont\centering
+\vspace*{0.14\textheight}
+%% Target for xref to top-level element is ToC
+\addtocontents{toc}{\protect\label{gra3-uni4}\protect\hypertarget{gra3-uni4}{}}
+{\Huge Matemáticas Ilustrativas}\\[\baselineskip]
+{\LARGE Grado 3 - Unidad 4}\\[3\baselineskip]
+{\Large Adaptación del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}})}\\[3\baselineskip]
+{\Large November 22, 2024}\\}
+\clearpage
+%% end:   title page
+%% begin: copyright-page
+\thispagestyle{empty}
+\vspace*{\stretch{2}}
+\vspace*{\stretch{1}}
+\null\clearpage
+%% end:   copyright-page
+Este documento (HTML, pdf, latex o epub) se generó con \href{https://pretextbook.org}{PreTeXt}\footnote{\nolinkurl{pretextbook.org}\label{meta-source-2-2}}. El código fuente con el contenido para generarlo se encuentra en \href{https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA}{\nolinkurl{github.com/enriqueacosta}}.%
+2024© Enrique Acosta (\href{https://enriqueacosta.github.io}{\nolinkurl{enriqueacosta.github.io}}). Iniciativa del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{www.grupolema.org}})Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).%
 \par
-En breve e incompleto (los detalles están en las licencias), \alert{tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione al Grupo LEMA y a Illustrative Mathematics) y lo use para fines no comerciales}. No hay restricciones para su uso comercial a excepción de las soluciones, las cuales no se pueden usar para fines comerciales.%
+En breve e incompleto (los detalles están en las licencias), \alert{tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources de forma que se describe abajo) y lo use para fines no comerciales}.%
 \par
-Ver una copia de las licencias en \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{\nolinkurl{https://creativecommons.org/licenses/by-nc-sa/4.0/}}%
+Ver detalles de la licencia en \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{creativecommons.org}\footnote{\nolinkurl{creativecommons.org/licenses/by-nc-sa/4.0/}\label{meta-copyright-6-2}}.%
 \par
-Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® \href{https://curriculum.illustrativemathematics.org}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{meta-copyright-8-2}} en su versión en español en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{meta-copyright-8-4}}, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en \href{https://creativecommons.org/licenses/by/4.0/}{\nolinkurl{https://creativecommons.org/licenses/by/4.0/}}.%
+Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.%
 \par
-Soluciones en español adaptadas de Open Up Resources © 2022, \href{https://access.openupresources.org/curricula/our-k5-math}{openupresources.org}\footnote{\nolinkurl{access.openupresources.org/curricula/our-k5-math}\label{meta-copyright-9-2}}. Publicadas bajo una licencia Creative Commons Attribution-NonCommercial 4.0 International license.%
+Grados K-5 adaptados de IM K–5 Math v.I, ©~2021 Illustrative Mathematics~® \href{https://curriculum.illustrativemathematics.org}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{meta-copyright-8-4}} en su versión en español en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{meta-copyright-8-6}}, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en \href{https://creativecommons.org/licenses/by/4.0/}{creativecommons.org}\footnote{\nolinkurl{creativecommons.org/licenses/by/4.0/}\label{meta-copyright-8-8}}.%
+\par
+Grados 6-8 adaptados de IM 6–8 v3.1415, ©~2019 Illustrative Mathematics~® \href{https://curriculum.illustrativemathematics.org}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{meta-copyright-9-4}} en su versión en español en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{meta-copyright-9-6}}, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez ©~2017-2019 Open Up Resources 6–8 Math v2, disponibles en \href{https://openupresources.org/math-curriculum/}{openupresources.org}\footnote{\nolinkurl{openupresources.org/math-curriculum/}\label{meta-copyright-9-9}}, con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en \href{https://creativecommons.org/licenses/by/4.0/}{creativecommons.org}\footnote{\nolinkurl{creativecommons.org/licenses/by/4.0/}\label{meta-copyright-9-11}}.%
 \par
 \alert{Nota:} Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:%
 \begin{itemize}[label=\textbullet]
-\item{}\href{https://curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html}\label{meta-copyright-10-2-1-2}}%
-\item{}XXXXXX link open up XXXXXXXX%
+\item{}K-5: \href{https://curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html}\label{meta-copyright-10-2-1-2}}%
+\item{}6-8: \href{https://curriculum.illustrativemathematics.org/MS/teachers/1/contributors.html}{illustrativemathematics.org}\footnote{\nolinkurl{curriculum.illustrativemathematics.org/MS/teachers/1/contributors.html}\label{meta-copyright-10-2-2-2}}%
+\item{}\href{https://enriqueacosta.github.io/blog/es/posts/translating-im/}{enriqueacosta.github.io}\footnote{\nolinkurl{enriqueacosta.github.io/blog/es/posts/translating-im/}\label{meta-copyright-10-2-3-2}}%
 \end{itemize}
 %
 \par
-Este material puede que incluya imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso.%
-\end{abstract}
-%
-%
-\typeout{************************************************}
-\typeout{Sección  Sección A -~¿Qué es la división?}
-\typeout{************************************************}
-%
-\begin{sectionptx}{Sección}{Sección A -~¿Qué es la división?}{}{Sección A -~¿Qué es la división?}{}{}{gra3-uni4-secA}
-\begin{introduction}{}%
-\begin{objectives}{Objetivos}{gra3-uni4-secA-intro-1}
+Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.%
+Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.%
+\par
+Traducción y procesamiento de contenido%
 %
 \begin{itemize}[label=\textbullet]
-\item{}Representar y solucionar problemas del tipo “¿Cuántos grupos?” y “¿Cuántos en cada grupo?”%
+\item{}Enrique Acosta Jaramillo%
+\item{}Jonathan Defelipe Payane%
+\item{}Andrés Forero Cuervo%
+\item{}Nathaly Otero Paternina%
 \end{itemize}
-\end{objectives}
+Ingeniería y desarrollo%
+%
+\begin{itemize}[label=\textbullet]
+\item{}Enrique Acosta Jaramillo%
+\end{itemize}
+Autores (en inglés)%
+%
+\begin{itemize}[label=\textbullet]
+\item{}Illustrative Mathematics. Ver detalles en los siguientes enlaces.%
+%
+\begin{itemize}[label=$\circ$]
+\item{}K-5: \href{https://im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html}{https:\slash{}\slash{}im.kendallhunt.com\slash{}k5\slash{}}\footnote{\nolinkurl{im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html}\label{meta-contributors-8-1-2-1-2}}%
+\item{}6-8: \href{https://im.kendallhunt.com/MS/teachers/2/contributors.html}{https:\slash{}\slash{}im.kendallhunt.com\slash{}MS\slash{}}\footnote{\nolinkurl{im.kendallhunt.com/MS/teachers/2/contributors.html}\label{meta-contributors-8-1-2-2-2}}%
+\end{itemize}
+\end{itemize}
+Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre los proyectos destacados están:%
+%
+\begin{itemize}[label=\textbullet]
+\item{}\href{https://pretextbook.org}{Pretext}\footnote{\nolinkurl{pretextbook.org}\label{meta-attributionsOpenSource-3-1-2}}: Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.%
+\item{}\href{https://www.mathjax.org}{MathJax}\footnote{\nolinkurl{www.mathjax.org}\label{meta-attributionsOpenSource-3-2-2}}: Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.%
+\item{}\href{https://www.latex-project.org}{LaTeX}\footnote{\nolinkurl{www.latex-project.org}\label{meta-attributionsOpenSource-3-3-2}} y \href{https://tug.org}{TeX}\footnote{\nolinkurl{tug.org}\label{meta-attributionsOpenSource-3-3-4}}: Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.%
+\item{}\href{https://ctan.org/pkg/pgf}{TikZ}\footnote{\nolinkurl{ctan.org/pkg/pgf}\label{meta-attributionsOpenSource-3-4-2}}: Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.%
+\item{}\href{https://ctan.org/pkg/fontawesome}{FontAwesome}\footnote{\nolinkurl{ctan.org/pkg/fontawesome}\label{meta-attributionsOpenSource-3-5-2}}: Iconos vectoriales y herramientas de diseño para LaTeX.%
+\end{itemize}
+%% begin: table of contents
+%% Adjust Table of Contents
+\setcounter{tocdepth}{0}
+\renewcommand*\contentsname{Índice}
+\tableofcontents
+%% end:   table of contents
+\mainmatter
+%
+%
+\typeout{************************************************}
+\typeout{Parte  Sección A -~¿Qué es la división?}
+\typeout{************************************************}
+%
+\begin{partptx}{Parte}{Sección A -~¿Qué es la división?}{}{Sección A -~¿Qué es la división?}{}{}{gra3-uni4-secA}
+\renewcommand*{\partname}{Parte}
+    %
+%
+\typeout{************************************************}
+\typeout{Lección  ¿Cuántos grupos?}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{¿Cuántos grupos?}{}{\hyperref[gra3-uni4-secA-lec1]{Lección~, p.\,\pageref{gra3-uni4-secA-lec1}}}{}{}{gra3-uni4-secA-lec1}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
+Representemos y resolvamos problemas.%
 \end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 1 -~¿Cuántos grupos?}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 1 -~¿Cuántos grupos?}{}{Lección 1}{}{}{gra3-uni4-secA-lec1}
-\begin{objectives}{Objetivos}{gra3-uni4-secA-lec1-4}
-Representemos y resolvamos problemas.%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec1-warm}
-\begin{exploration}{Calentamiento}{Cuántos ves: Manzanas.}{gra3-uni4-secA-lec1-warm-3}%
-¿Cuántas ves? ¿Cómo lo sabes?, ¿qué ves?%
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec1-warm}
+\begin{exploration}{Calentamiento}{Cuántos ves: Manzanas.}{warm-observa-cajaManzanas}%
+¿Cuántas ves?\\
+ ¿Cómo lo sabes?, ¿qué ves?%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=0.7\linewidth, max width=\linewidth, center]{external/jpg-source/apples-1642732_1920.jpg}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec1-actividad1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec1-actividad1}
 \begin{activity}{Actividad}{¿Cuántas manzanas?}{gra3-uni4-secA-lec1-actividad1-3}%
 Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 \par
@@ -773,14 +811,14 @@ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diag
 \end{enumerate}
 %
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec1-actividad2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec1-actividad2}
 \begin{activity}{Actividad}{Recorrido por el salón: Manzanas en cajas.}{gra3-uni4-secA-lec1-actividad2-3}%
 %
 \begin{enumerate}
@@ -789,50 +827,52 @@ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diag
 \end{enumerate}
 %
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec1-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec1-cool}
 \begin{project}{Actividad de cierre}{¿Cuántas bolsas?}{gra3-uni4-secA-lec1-cool-3}%
 Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 2 -~¿Cuántos hay en cada grupo?}
+\typeout{Lección  ¿Cuántos hay en cada grupo?}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 2 -~¿Cuántos hay en cada grupo?}{}{Lección 2}{}{}{gra3-uni4-secA-lec2}
-\begin{objectives}{Objetivos}{gra3-uni4-secA-lec2-4}
+\begin{chapterptx}{Lección}{¿Cuántos hay en cada grupo?}{}{\hyperref[gra3-uni4-secA-lec2]{Lección~, p.\,\pageref{gra3-uni4-secA-lec2}}}{}{}{gra3-uni4-secA-lec2}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Representemos y resolvamos más problemas.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec2-warm}
-\begin{exploration}{Calentamiento}{Observa y pregúntate: Más manzanas.}{gra3-uni4-secA-lec2-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=0.8\linewidth, max width=\linewidth, center]{external/jpg-source/3.4.A2 Warrm-up.jpg}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec2-warm}
+\begin{exploration}{Calentamiento}{Observa y pregúntate: Más manzanas.}{warm-observa-arbolManzanas}%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
+\begin{image}{0.15}{0.7}{0.15}{}%
+\includegraphics[max width=\linewidth, center]{external/jpg-source/3.4.A2 Warm-up.jpg}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec2-actividad1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec2-actividad1}
 \begin{activity}{Actividad}{¿Cuántas manzanas?}{gra3-uni4-secA-lec2-actividad1-3}%
 Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 \par
@@ -844,25 +884,25 @@ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diag
 \end{enumerate}
 %
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec2-actividad2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec2-actividad2}
 \begin{activity}{Actividad}{Recorrido por el salón.}{gra3-uni4-secA-lec2-actividad2-3}%
 Con tu compañero, ve a ver los pósteres alrededor del salón. Discute con tu compañero en qué se parecen y en qué se diferencian las ideas que se muestran en los pósteres.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 3}
+\typeout{Sección  Actividad 3}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec2-actividad3}
+\begin{sectionptx}{Sección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec2-actividad3}
 \begin{activity}{Actividad}{Todas las manzanas.}{gra3-uni4-secA-lec2-actividad3-3}%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
 \begin{sbspanel}{0.4}%
@@ -884,56 +924,57 @@ Discute con tu compañero:%
 \end{itemize}
 %
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec2-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec2-cool}
 \begin{project}{Actividad de cierre}{Bolsas de manzanas.}{gra3-uni4-secA-lec2-cool-3}%
 Lin tiene 30 manzanas. Ella prepara 6 bolsas con el mismo número de manzanas en cada bolsa para dárselas a sus amigos. ¿Cuántas manzanas hay en cada bolsa? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 3 -~Dibujos de situaciones de división}
+\typeout{Lección  Dibujos de situaciones de división}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 3 -~Dibujos de situaciones de división}{}{Lección 3}{}{}{gra3-uni4-secA-lec3}
-\begin{objectives}{Objetivos}{gra3-uni4-secA-lec3-4}
+\begin{chapterptx}{Lección}{Dibujos de situaciones de división}{}{\hyperref[gra3-uni4-secA-lec3]{Lección~, p.\,\pageref{gra3-uni4-secA-lec3}}}{}{}{gra3-uni4-secA-lec3}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Representemos situaciones de división con dibujos.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec3-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec3-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: Cuanto más cambien las cosas....}{gra3-uni4-secA-lec3-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 \par
 %
-\begin{itemize}[label=\textbullet]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 120 + 120\)%
 \item{}\(\displaystyle 121 + 119\)%
 \item{}\(\displaystyle 125 + 115\)%
 \item{}\(\displaystyle 129 + 111\)%
-\end{itemize}
+\end{enumerate}
 %
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec3-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec3-act1}
 \begin{activity}{Actividad}{Grupos de estudiantes.}{gra3-uni4-secA-lec3-act1-3}%
 %
 \begin{enumerate}
@@ -942,14 +983,14 @@ Encuentra mentalmente el valor de cada expresión.%
 \end{enumerate}
 %
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec3-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec3-act2}
 \begin{activity}{Actividad}{Los lápices de colores de Elena.}{gra3-uni4-secA-lec3-act2-3}%
 Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices irán en cada caja?%
 \par
@@ -967,14 +1008,14 @@ B%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 3}
+\typeout{Sección  Actividad 3}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec3-act3}
+\begin{sectionptx}{Sección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec3-act3}
 \begin{activity}{Actividad}{¿Cuál dibujo corresponde?}{gra3-uni4-secA-lec3-act3-3}%
 Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.%
 \begin{sidebyside}{2}{0}{0}{0.05}%
@@ -1002,14 +1043,14 @@ C.%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec3-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec3-cool}
 \begin{project}{Actividad de cierre}{Regalitos para invitados.}{gra3-uni4-secA-lec3-cool-3}%
 Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?%
 \par
@@ -1027,46 +1068,46 @@ B.%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 4 -~Interpretemos expresiones de división}
+\typeout{Lección  Interpretemos expresiones de división}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 4 -~Interpretemos expresiones de división}{}{Lección 4}{}{}{gra3-uni4-secA-lec4}
-\begin{objectives}{Objetivos}{gra3-uni4-secA-lec4-4}
+\begin{chapterptx}{Lección}{Interpretemos expresiones de división}{}{\hyperref[gra3-uni4-secA-lec4]{Lección~, p.\,\pageref{gra3-uni4-secA-lec4}}}{}{}{gra3-uni4-secA-lec4}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Démosle sentido a expresiones de división.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec4-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec4-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: ¿Más o menos?}{gra3-uni4-secA-lec4-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-% \begin{multicols}{2}
-\begin{enumerate}
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 500 - 475\)%
 \item{}\(\displaystyle 504 - 475\)%
 \item{}\(\displaystyle 512 - 475\)%
 \item{}\(\displaystyle 512 - 449\)%
 \end{enumerate}
-% \end{multicols}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
+
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec4-actividad1}
-\begin{activity}{Actividad}{Trompos.}{gra3-uni4-secA-lec4-actividad1-3}%
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec4-actividad1}
+\begin{activity}{Actividad}{Trompos.}{act-trompos}%
 Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.%
 \begin{sidebyside}{5}{0}{0}{0}%
 \begin{sbspanel}{0.2}%
@@ -1134,14 +1175,14 @@ E. \(24 \div 6\)%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec4-actividad2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec4-actividad2}
 \begin{activity}{Actividad}{Autos en cajas.}{gra3-uni4-secA-lec4-actividad2-3}%
 Considera estas dos situaciones.%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
@@ -1156,14 +1197,14 @@ B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cad
 \par
 ¿Cuál situación está representada por la expresión \(21\div 3\)? Explica tu razonamiento.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 3}
+\typeout{Sección  Actividad 3}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec4-actividad3}
+\begin{sectionptx}{Sección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secA-lec4-actividad3}
 \begin{activity}{Actividad}{Pilas de bloques.}{gra3-uni4-secA-lec4-actividad3-3}%
 Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.%
 %
@@ -1206,14 +1247,14 @@ D%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec4-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec4-cool}
 \begin{project}{Actividad de cierre}{Los trompos de Han.}{gra3-uni4-secA-lec4-cool-3}%
 Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?%
 \par
@@ -1258,30 +1299,31 @@ D%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
+\end{reading-questions-section}
+\end{chapterptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Lección  Escribamos expresiones de división}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{Escribamos expresiones de división}{}{\hyperref[gra3-uni4-secA-lec5]{Lección~, p.\,\pageref{gra3-uni4-secA-lec5}}}{}{}{gra3-uni4-secA-lec5}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
+Escribamos expresiones de división y resolvamos problemas de “¿cuántos grupos?” y “¿cuántos hay en cada grupo?”%
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 5 -~Escribamos expresiones de división}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 5 -~Escribamos expresiones de división}{}{Lección 5}{}{}{gra3-uni4-secA-lec5}
-\begin{objectives}{Objetivos}{gra3-uni4-secA-lec5-4}
-Escribamos expresiones de división y resolvamos problemas de "¿cuántos grupos?" y "¿cuántos hay en cada grupo?"%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec5-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secA-lec5-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: ¿En qué se parecen?}{gra3-uni4-secA-lec5-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 \par
 %
-\begin{enumerate}
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 225 - 100\)%
 \item{}\(\displaystyle 227 - 102\)%
 \item{}\(\displaystyle 230 - 105\)%
@@ -1289,21 +1331,18 @@ Encuentra mentalmente el valor de cada expresión.%
 \end{enumerate}
 %
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec5-act1}
-\begin{activity}{Actividad}{Clasificación de tarjetas: Todo sobre bichos.}{clasificacionDeTarjetas-todoSobreBichos}%
-\begin{figureptx}{Figura}{By Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. \href{https://en.wikipedia.org/wiki/Insect\#/media/File:Insect_collage.png}{Source}\protect\footnotemark{}.}{clasificacionDeTarjetas-todoSobreBichos-2-1}{}%
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secA-lec5-act1}
+\begin{activity}{Actividad}{Clasificación de tarjetas: Todo sobre bichos.}{act-clasificacionDeTarjetas-todoSobreBichos}%
 \begin{image}{0.25}{0.5}{0.25}{}%
 \includegraphics[max width=\linewidth, center]{external/png-source/v1 3.4.A5 Launch.png}
 \end{image}%
-\tcblower
-\end{figureptx}%
 %
 \begin{enumerate}
 \item{}Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.%
@@ -1319,28 +1358,27 @@ Encuentra mentalmente el valor de cada expresión.%
 \item{}Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.%
 \end{enumerate}
 \end{activity}%
-\footnotetext[5]{\nolinkurl{en.wikipedia.org/wiki/Insect\#/media/File:Insect_collage.png}\label{clasificacionDeTarjetas-todoSobreBichos-2-1-2-2}}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec5-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secA-lec5-act2}
 \begin{activity}{Actividad}{Resolvamos un problema sobre bichos.}{gra3-uni4-secA-lec5-act2-3}%
 Tu profesor les va a asignar un problema.%
 \par
 Haz una presentación visual que muestre cómo pensaste y que muestre tu solución al problema.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec5-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secA-lec5-cool}
 \begin{project}{Actividad de cierre}{Patas de hormigas.}{gra3-uni4-secA-lec5-cool-3}%
 Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.%
 \par
@@ -1351,15 +1389,15 @@ Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo n
 \end{enumerate}
 %
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+  %
 %
 \typeout{************************************************}
 \typeout{Ejercicios  Problemas de práctica de la sección A}
 \typeout{************************************************}
 %
-\begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección A}{}{Problemas de práctica}{}{}{gra3-uni4-secA-ProblemasPractica}
+\begin{exercises-part}{Ejercicios}{Problemas de práctica de la sección A}{}{Problemas de práctica}{}{}{gra3-uni4-secA-ProblemasPractica}
 \begin{divisionexercise}{1}{(Previo a la sección).}{}{gra3-uni4-secA-ProblemasPractica-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.3}[center]%
@@ -1381,12 +1419,12 @@ Encuentra el área de cada rectángulo.%
 \begin{sbspanel}{0.3}%
 A.%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151669.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151669-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.5}%
 B.%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151670.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151670-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{divisionexercise}%
@@ -1397,7 +1435,7 @@ El área del rectángulo es 40 centímetros cuadrados.%
 Encuentra la longitud de lado desconocida del rectángulo. Explica tu razonamiento.%
 \end{sbspanel}%
 \begin{sbspanel}{0.5}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151673.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151673-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{divisionexercise}%
@@ -1423,6 +1461,7 @@ Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuá
 \end{enumerate}
 %
 \end{divisionexercise}%
+\pagebreak
 \begin{divisionexercise}{6}{}{}{gra3-uni4-secA-ProblemasPractica-8}%
 En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 \par
@@ -1519,14 +1558,14 @@ C%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{divisionexercise}%
-\end{exercises-subsection}
-%
+\end{exercises-part}
+  %
 %
 \typeout{************************************************}
 \typeout{Referencias  Resumen de la sección}
 \typeout{************************************************}
 %
-\begin{references-subsection}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{gra3-uni4-secA-resumen}
+\begin{references-part}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{gra3-uni4-secA-resumen}
 En esta sección, aprendimos que la división es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división.%
 \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
 \begin{sbspanel}{0.45}%
@@ -1571,43 +1610,37 @@ Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo n
 %
 \end{sbspanel}%
 \end{sidebyside}%
-\end{references-subsection}
-\end{sectionptx}
+\end{references-part}
+\end{partptx}
 %
 %
 \typeout{************************************************}
-\typeout{Sección  Sección B -~Relacionemos la multiplicación y la división}
+\typeout{Parte  Sección B -~Relacionemos la multiplicación y la división}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Sección}{Sección B -~Relacionemos la multiplicación y la división}{}{Sección B -~Relacionemos la multiplicación y la división}{}{}{gra3-uni4-secB}
+\begin{partptx}{Parte}{Sección B -~Relacionemos la multiplicación y la división}{}{Sección B -~Relacionemos la multiplicación y la división}{}{}{gra3-uni4-secB}
+\renewcommand*{\partname}{Parte}
+    %
+%
+\typeout{************************************************}
+\typeout{Lección  La división como un factor desconocido}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{La división como un factor desconocido}{}{\hyperref[gra3-uni4-secB-lec6]{Lección~, p.\,\pageref{gra3-uni4-secB-lec6}}}{}{}{gra3-uni4-secB-lec6}
+\renewcommand*{\chaptername}{Lección}
 \begin{introduction}{}%
-\begin{objectives}{Objetivos}{gra3-uni4-secB-intro-1}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Entender la división como un problema de factor desconocido.%
-\item{}Usar las propiedades de las operaciones para desarrollar fluidez con hechos de multiplicación de un dígito y sus hechos de división asociados.%
-\end{itemize}
-\end{objectives}
+Conectemos ecuaciones de división con ecuaciones de multiplicación.%
 \end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 6 -~La división como un factor desconocido}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 6 -~La división como un factor desconocido}{}{Lección 6}{}{}{gra3-uni4-secB-lec6}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec6-4}
-Conectemos ecuaciones de división con ecuaciones de mintroductiontiplicación.%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec6-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec6-warm}
 \begin{exploration}{Calentamiento}{Observa y pregúntate: Números desconocidos.}{gra3-uni4-secB-lec6-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.5}%
 %
@@ -1626,16 +1659,16 @@ Conectemos ecuaciones de división con ecuaciones de mintroductiontiplicación.%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec6-act1}
-\begin{activity}{Actividad}{Ecuaciones acerca de cebollas.}{gra3-uni4-secB-lec6-act1-3}%
-\begin{image}{0.15}{0.7}{0.15}{-0.8\baselineskip}%
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec6-act1}
+\begin{activity}{Actividad}{Ecuaciones acerca de cebollas.}{act-ecuacionesCebollas}%
+\begin{image}{0.15}{0.7}{0.15}{}%
 \includegraphics[max width=\linewidth, center]{external/jpg-source/3.4.B6 Act 1 Launch.jpg}
 \end{image}%
 Un agricultor pone 14 cebollas en 2 bolsas. Pone el mismo número de cebollas en cada bolsa.%
@@ -1654,28 +1687,28 @@ Mai dice que la situación debe representarse con la ecuación:%
 \par
 ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec6-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec6-act2}
 \begin{activity}{Actividad}{En el mercado agrícola.}{act-enElMercadoAgricola}%
 Completa cada fila. Prepárate para explicar tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[max width=\linewidth, center]{external/tikz-source/enElMercadoAgricola-tab.pdf}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec6-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec6-cool}
 \begin{project}{Actividad de cierre}{Muffins en cajas.}{gra3-uni4-secB-lec6-cool-3}%
 Hay 30 \emph{muffins} y varias cajas para la feria de pastelería. En cada caja hay 6 \emph{muffins}. ¿Cuántas cajas hay?%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
@@ -1691,39 +1724,41 @@ Tyler escribió dos ecuaciones para este problema.%
 \par
 Él dice que en cada espacio en blanco va el mismo número, aunque una ecuación es de multiplicación y la otra es de división. ¿Tiene razón? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 7 -~Relacionemos multiplicación y división}
+\typeout{Lección  Relacionemos multiplicación y división}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 7 -~Relacionemos multiplicación y división}{}{Lección 7}{}{}{gra3-uni4-secB-lec7}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec7-4}
+\begin{chapterptx}{Lección}{Relacionemos multiplicación y división}{}{\hyperref[gra3-uni4-secB-lec7]{Lección~, p.\,\pageref{gra3-uni4-secB-lec7}}}{}{}{gra3-uni4-secB-lec7}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Hagamos más conexiones entre la multiplicación y la división.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec7-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec7-warm}
 \begin{exploration}{Calentamiento}{Cuántos ves: Decenas.}{gra3-uni4-secB-lec7-warm-3}%
-¿Cuántos ves? ¿Cómo lo sabes?, ¿qué ves?%
+¿Cuántos ves?\\
+ ¿Cómo lo sabes?, ¿qué ves?%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147480.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147480-scale13.pdf}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec7-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec7-act1}
 \begin{activity}{Actividad}{Mesa redonda de división.}{mesaRedondaDeDivision}%
 Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.%
 \par
@@ -1736,23 +1771,23 @@ Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te
 \item{}En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.%
 \end{enumerate}
 \begin{image}{0.2}{0.6}{0.2}{}%
-\includegraphics[width=0.5\linewidth, max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 7 Activity 1.png}
+\includegraphics[width=0.4\linewidth, max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 7 Activity 1.png}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec7-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec7-act2}
 \begin{activity}{Actividad}{Grupos de útiles escolares.}{gra3-uni4-secB-lec7-act2-3}%
 En cada situación:%
 \par
-a. Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.%
+(a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.%
 \par
-b. Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.%
+(b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.%
 %
 \begin{enumerate}
 \item{}Kiran tenía32 clips. Le dio 4 clips a cada estudiante. ¿Cuántos estudiantes recibieron clips?%
@@ -1781,58 +1816,57 @@ b. Resuelve el problema y encuentra el número desconocido de la ecuación. Prep
 \end{enumerate}
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec7-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec7-cool}
 \begin{project}{Actividad de cierre}{Rosas para compartir.}{gra3-uni4-secB-lec7-cool-3}%
 Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?%
 \par
 Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 8 -~Relacionemos cocientes con productos que nos sabemos}
+\typeout{Lección  Relacionemos cocientes con productos que nos sabemos}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 8 -~Relacionemos cocientes con productos que nos sabemos}{}{Lección 8}{}{}{gra3-uni4-secB-lec8}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec8-4}
+\begin{chapterptx}{Lección}{Relacionemos cocientes con productos que nos sabemos}{}{\hyperref[gra3-uni4-secB-lec8]{Lección~, p.\,\pageref{gra3-uni4-secB-lec8}}}{}{}{gra3-uni4-secB-lec8}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Consideremos los productos y cocientes que nos sabemos de inmediato o que podemos encontrar rápidamente.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec8-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec8-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: Multiplicación y división.}{gra3-uni4-secB-lec8-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-% \begin{multicols}{2}
-\begin{enumerate}[label=\Alph*.]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 4\times 10\)%
 \item{}\(\displaystyle 40\div 40\)%
 \item{}\(\displaystyle 40\div 10\)%
 \item{}\(\displaystyle 60\div 6\)%
 \end{enumerate}
-% \end{multicols}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec8-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec8-act1}
 \begin{activity}{Actividad}{Clasificación de tarjetas: Multiplicación.}{clasificacionDeTarjetas-multiplicacion}%
 Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:%
 %
@@ -1843,15 +1877,15 @@ Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica l
 \end{enumerate}
 Anota expresiones de multiplicación que vas a practicar.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\newpage
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec8-act2}
+\pagebreak
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec8-act2}
 \begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}.}{act-siSeQueEntoncesSeQue}%
 Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
 %
@@ -1865,58 +1899,61 @@ Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
 \includegraphics[max width=\linewidth, center]{external/tikz-source/siSeQueEntoncesSeQue-tab.pdf}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec8-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec8-cool}
 \begin{project}{Actividad de cierre}{Hechos de multiplicación y de división.}{gra3-uni4-secB-lec8-cool-3}%
 Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 9 -~Patrones en la tabla de multiplicar}
+\typeout{Lección  Patrones en la tabla de multiplicar}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 9 -~Patrones en la tabla de multiplicar}{}{Lección 9}{}{}{gra3-uni4-secB-lec9}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec9-4}
+\begin{chapterptx}{Lección}{Patrones en la tabla de multiplicar}{}{\hyperref[gra3-uni4-secB-lec9]{Lección~, p.\,\pageref{gra3-uni4-secB-lec9}}}{}{}{gra3-uni4-secB-lec9}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Encontremos patrones en la tabla de multiplicar y usémoslos para multiplicar.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec9-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec9-warm}
 \begin{exploration}{Calentamiento}{Observa y pregúntate: Tabla de multiplicar.}{gra3-uni4-secB-lec9-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152968.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152968-scale13.pdf}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec9-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec9-act1}
 \begin{activity}{Actividad}{Productos en la tabla.}{gra3-uni4-secB-lec9-act1-3}%
 Esta es una tabla de multiplicar que no se ha completado totalmente.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152978.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152978-scale13.pdf}
 \end{image}%
 %
 \begin{enumerate}
 \item{}Usa los productos de la tabla para ayudarte a encontrar los números que deberían ir en lugar de las letras de la A a la G. Prepárate para explicar tu razonamiento.%
+\pagebreak
 \item{}Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Usa:%
 %
 \begin{enumerate}
@@ -1927,77 +1964,81 @@ Esta es una tabla de multiplicar que no se ha completado totalmente.%
 Prepárate para explicar tu razonamiento.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec9-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec9-act2}
 \begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}: Multiplicación.}{act-siSeQueEntoncesSeQueMult}%
 %
 \begin{enumerate}
 \item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[scale=0.9, max width=\linewidth, center]{external/tikz-source/siSeQueEntoncesSeQueMult-tab.pdf}
+\includegraphics[max width=\linewidth, center]{external/tikz-source/siSeQueEntoncesSeQueMult-tab.pdf}
 \end{image}%
 \item{}Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec9-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec9-cool}
 \begin{project}{Actividad de cierre}{Encuentra el producto desconocido.}{gra3-uni4-secB-lec9-cool-3}%
 ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153040.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153040-scale13.pdf}
 \end{image}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 10 -~Exploremos estrategias de multiplicación con rectángulos}
+\typeout{Lección  Exploremos estrategias de multiplicación con rectángulos}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 10 -~Exploremos estrategias de multiplicación con rectángulos}{}{Lección 10}{}{}{gra3-uni4-secB-lec10}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec10-4}
+\begin{chapterptx}{Lección}{Exploremos estrategias de multiplicación con rectángulos}{}{\hyperref[gra3-uni4-secB-lec10]{Lección~, p.\,\pageref{gra3-uni4-secB-lec10}}}{}{}{gra3-uni4-secB-lec10}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Usemos rectángulos para explorar estrategias de multiplicación.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec10-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec10-warm}
 \begin{exploration}{Calentamiento}{Cuántos ves: Cuadrados.}{gra3-uni4-secB-lec10-warm-3}%
-¿Cuántos ves? ¿Cómo lo sabes?, ¿qué ves?%
-\begin{image}{0}{1}{0}{}%
+¿Cuántos ves?\\
+ ¿Cómo lo sabes?, ¿qué ves?%
+\begin{sidebyside}{3}{0}{0}{0.05}%
+\begin{sbspanel}{0.3}%
 \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147481.pdf}
-\end{image}%
-\begin{image}{0}{1}{0}{}%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
 \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141805.pdf}
-\end{image}%
-\begin{image}{0}{1}{0}{}%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
 \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147478.pdf}
-\end{image}%
+\end{sbspanel}%
+\end{sidebyside}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec10-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec10-act1}
 \begin{activity}{Actividad}{De diagramas a expresiones.}{gra3-uni4-secB-lec10-act1-3}%
 \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
 \begin{sbspanel}{0.4}%
@@ -2068,14 +2109,14 @@ Podemos encontrar su área hallando \(4 \times 9\).%
 %
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec10-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec10-act2}
 \begin{activity}{Actividad}{De expresiones a diagramas.}{gra3-uni4-secB-lec10-act2-3}%
 \begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
 \begin{sbspanel}{0.3}%
@@ -2117,14 +2158,14 @@ En cada rectángulo:%
 \item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec10-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec10-cool}
 \begin{project}{Actividad de cierre}{Marca o colorea partes para encontrar el área.}{gra3-uni4-secB-lec10-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
@@ -2140,25 +2181,26 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula}
+\typeout{Lección  Estrategias de multiplicación para rectángulos sin cuadrícula}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula}{}{Lección 11}{}{}{gra3-uni4-secB-lec11}
-\begin{objectives}{Objetivos}{gra3-uni4-secB-lec11-4}
+\begin{chapterptx}{Lección}{Estrategias de multiplicación para rectángulos sin cuadrícula}{}{\hyperref[gra3-uni4-secB-lec11]{Lección~, p.\,\pageref{gra3-uni4-secB-lec11}}}{}{}{gra3-uni4-secB-lec11}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Usemos diferentes estrategias para encontrar el área de rectángulos sin cuadrícula.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec11-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec11-warm}
 \begin{exploration}{Calentamiento}{Cuál es diferente: Una multiplicación representada de muchas formas.}{gra3-uni4-secB-lec11-warm-3}%
 ¿Cuál es diferente?%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
@@ -2170,7 +2212,7 @@ A%
 \begin{sbspanel}{0.4}%
 B%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153082.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153082-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
@@ -2190,14 +2232,14 @@ D%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec11-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec11-act1}
 \begin{activity}{Actividad}{Marca y después expresa.}{gra3-uni4-secB-lec11-act1-3}%
 En cada caso:%
 %
@@ -2223,14 +2265,14 @@ C%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec11-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec11-act2}
 \begin{activity}{Actividad}{Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.}{clasificacionDeTarjetas-expresionesMultiplicacionRectangulos}%
 Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.%
 \par
@@ -2241,14 +2283,14 @@ Si te ayuda, puedes dibujar rectángulos.%
 \includegraphics[max width=\linewidth, center]{external/png-source/Card Sort Different Expressions, Same Rectangle for Screenshot Only.png}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec11-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secB-lec11-cool}
 \begin{project}{Actividad de cierre}{Expresiones para un rectángulo.}{gra3-uni4-secB-lec11-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
@@ -2259,19 +2301,19 @@ Si te ayuda, puedes dibujar rectángulos.%
 \end{enumerate}
 \end{sbspanel}%
 \begin{sbspanel}{0.4}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-158678.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-158678-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+  %
 %
 \typeout{************************************************}
 \typeout{Ejercicios  Problemas de práctica de la sección B}
 \typeout{************************************************}
 %
-\begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección B}{}{Problemas de práctica}{}{}{gra3-uni4-secB-ProblemasPractica}
+\begin{exercises-part}{Ejercicios}{Problemas de práctica de la sección B}{}{Problemas de práctica}{}{}{gra3-uni4-secB-ProblemasPractica}
 \begin{divisionexercise}{1}{}{}{gra3-uni4-secB-ProblemasPractica-3}%
 Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones \(35 ÷ 7 = {?}\) y \({?} × 7 = 35\) representan la situación.%
 \end{divisionexercise}%
@@ -2296,18 +2338,19 @@ Lin sabe que \(8 \times 5 = 40\). Explica cómo puede usar este hecho para encon
 \begin{enumerate}[label=(\alph*)]
 \item{}Resalta partes del diagrama para mostrar la expresión \((5 \times 7) + (2 \times 7)\)%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151677.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151677-scale13.pdf}
 \end{image}%
 \item{}Explica cómo podrías usar el diagrama para calcular \(7\times 7\).%
 \end{enumerate}
 \end{divisionexercise}%
 \begin{divisionexercise}{6}{}{}{gra3-uni4-secB-ProblemasPractica-8}%
 \begin{sidebyside}{2}{0}{0}{0}%
+\vspace{-1ex}
 \begin{sbspanel}{0.6}%
 Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.%
 \end{sbspanel}%
 \begin{sbspanel}{0.4}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-159147.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-159147-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{divisionexercise}%
@@ -2319,14 +2362,14 @@ Noah encuentra \(9 \times 8\) calculando \((10 \times 8) - (1 \times 8)\).%
 \item{}Usa el método de Noah para calcular \(9\times 8\).%
 \end{enumerate}
 \end{divisionexercise}%
-\end{exercises-subsection}
-%
+\end{exercises-part}
+  %
 %
 \typeout{************************************************}
 \typeout{Referencias  Resumen de la sección}
 \typeout{************************************************}
 %
-\begin{references-subsection}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{grado3-unidad4-seccion4-resumen}
+\begin{references-part}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{grado3-unidad4-seccion4-resumen}
 En esta sección, aprendimos cómo se relacionan la multiplicación y la división.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-176322.pdf}
@@ -2367,54 +2410,49 @@ Usamos estrategias para multiplicar y dividir, y trabajamos para multiplicar y d
  \((5\times3)+(2\times3)\)%
 \end{sbspanel}%
 \end{sidebyside}%
-\end{references-subsection}
-\end{sectionptx}
+\end{references-part}
+\end{partptx}
 %
 %
 \typeout{************************************************}
-\typeout{Sección  Sección C -~Multipliquemos números más grandes}
+\typeout{Parte  Sección C -~Multipliquemos números más grandes}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Sección}{Sección C -~Multipliquemos números más grandes}{}{Sección C -~Multipliquemos números más grandes}{}{}{gra3-uni4-secC}
+\begin{partptx}{Parte}{Sección C -~Multipliquemos números más grandes}{}{Sección C -~Multipliquemos números más grandes}{}{}{gra3-uni4-secC}
+\renewcommand*{\partname}{Parte}
+    %
+%
+\typeout{************************************************}
+\typeout{Lección  Multipliquemos múltiplos de diez}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{Multipliquemos múltiplos de diez}{}{\hyperref[gra3-uni4-secC-lec12]{Lección~, p.\,\pageref{gra3-uni4-secC-lec12}}}{}{}{gra3-uni4-secC-lec12}
+\renewcommand*{\chaptername}{Lección}
 \begin{introduction}{}%
-\begin{objectives}{Objetivos}{gra3-uni4-secC-intro-1}
-%
-\begin{itemize}[label=\textbullet]
-\item{}Usar las propiedades de las operaciones y el valor posicional para desarrollar estrategias para multiplicar con números hasta 100 y multiplicar números de un dígito por un múltiplo de 10.%
-\end{itemize}
-\end{objectives}
+Multipliquemos números de un dígito por múltiplos de 10.%
 \end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 12 -~Multipliquemos múltiplos de diez}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 12 -~Multipliquemos múltiplos de diez}{}{Lección 12}{}{}{gra3-uni4-secC-lec12}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec12-4}
-Multipliquemos números de un dígito por múltiplos de 10.%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec12-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec12-warm}
 \begin{exploration}{Calentamiento}{Observa y pregúntate: Decenas.}{gra3-uni4-secC-lec12-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149355.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149355-scale13.pdf}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec12-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec12-act1}
 \begin{activity}{Actividad}{Una gran cantidad de dólares.}{act-unaGranCantidadDeDolares}%
 Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
 %
@@ -2440,21 +2478,21 @@ Escribe una expresión que represente los billetes que tiene cada persona y escr
 \end{image}%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\newpage
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec12-act2}
+\pagebreak
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec12-act2}
 \begin{activity}{Actividad}{Dos estrategias.}{dosEstrategias}%
 %
 \begin{enumerate}
 \item{}Dos estudiantes usaron bloques en base diez para encontrar el valor de \(8\times 30\).%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149356.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149356-scale13.pdf}
 \end{image}%
 %
 \begin{itemize}[label=\textbullet]
@@ -2473,36 +2511,37 @@ Escribe una expresión que represente los billetes que tiene cada persona y escr
 \end{enumerate}
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec12-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec12-cool}
 \begin{project}{Actividad de cierre}{¿Cuál es el valor?}{gra3-uni4-secC-lec12-cool-3}%
 Encuentra el valor de \(6\times 40\). Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 13 -~Resolvamos problemas de grupos iguales}
+\typeout{Lección  Resolvamos problemas de grupos iguales}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 13 -~Resolvamos problemas de grupos iguales}{}{Lección 13}{}{}{gra3-uni4-secC-lec13}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec13-4}
+\begin{chapterptx}{Lección}{Resolvamos problemas de grupos iguales}{}{\hyperref[gra3-uni4-secC-lec13]{Lección~, p.\,\pageref{gra3-uni4-secC-lec13}}}{}{}{gra3-uni4-secC-lec13}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Multipliquemos algunos números del 11 al 19.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec13-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec13-warm}
 \begin{exploration}{Calentamiento}{Exploración de estimación: Multipliquemos.}{gra3-uni4-secC-lec13-warm-3}%
 %
 \begin{equation*}
@@ -2518,14 +2557,14 @@ Escribe una estimación que sea:%
 }%
 \end{center}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec13-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec13-act1}
 \begin{activity}{Actividad}{Problemas con números del 11 al 19.}{act-problemasNumerosAdolescentes}%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
 \begin{sbspanel}{0.5}%
@@ -2542,90 +2581,92 @@ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, dibujos o un diagra
 \item{}En un puesto de un mercado agrícola hay una mesa. Los lados de la parte de arriba de la mesa miden 4 pies y 6 pies. ¿Cuál es el área de la parte de arriba de la mesa?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec13-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec13-act2}
 \begin{activity}{Actividad}{Recorrido por el salón: Problemas con números del 11 al 19.}{gra3-uni4-secC-lec13-act2-3}%
 Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec13-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec13-cool}
 \begin{project}{Actividad de cierre}{Bolsas de naranjas.}{gra3-uni4-secC-lec13-cool-3}%
 Hay 6 bolsas de naranjas y cada bolsa contiene 11 naranjas. ¿Cuántas naranjas hay en las bolsas?%
 \par
 Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 14 -~Formas de representar la multiplicación de números del 11 al 19}
+\typeout{Lección  Formas de representar la multiplicación de números del 11 al 19}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 14 -~Formas de representar la multiplicación de números del 11 al 19}{}{Lección 14}{}{}{gra3-uni4-secC-lec14}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec14-4}
+\begin{chapterptx}{Lección}{Formas de representar la multiplicación de números del 11 al 19}{}{\hyperref[gra3-uni4-secC-lec14]{Lección~, p.\,\pageref{gra3-uni4-secC-lec14}}}{}{}{gra3-uni4-secC-lec14}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Démosle sentido a algunas formas de representar la multiplicación de números del 11 al 19.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec14-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec14-warm}
 \begin{exploration}{Calentamiento}{Observa y pregúntate: Veamos grupos.}{gra3-uni4-secC-lec14-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \begin{sidebyside}{3}{0}{0}{0}%
 \begin{sbspanel}{0.333333333333333}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149346.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149346-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.333333333333333}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149347.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149347-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.333333333333333}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141822.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141822-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec14-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec14-act1}
 \begin{activity}{Actividad}{Un factor mayor que diez.}{gra3-uni4-secC-lec14-act1-3}%
 %
 \begin{enumerate}
 \item{}Tyler dice que puede usar bloques en base diez para encontrar el valor de \(7\times 13\) porque él se sabe \(7\times 10\) y \(7\times 3\). Él dice que este diagrama muestra que su forma de pensar es correcta.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823-scale13.pdf}
 \end{image}%
 ¿Estás de acuerdo o en desacuerdo? Explica tu razonamiento.%
 \item{}Usa el método de Tyler para encontrar el valor de  \(3\times 14\). Explica o muestra tu razonamiento.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec14-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec14-act2}
 \begin{activity}{Actividad}{Formas de representar.}{gra3-uni4-secC-lec14-act2-3}%
 Andre, Clare y Diego representaron la misma expresión. Estas son sus representaciones.%
 \begin{sidebyside}{2}{0.05}{0.4}{0.05}%
@@ -2633,7 +2674,7 @@ Andre, Clare y Diego representaron la misma expresión. Estas son sus representa
 Andre%
 \end{sbspanel}%
 \begin{sbspanel}{0.4}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147551.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147551-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0.05}{0.4}{0.05}%
@@ -2641,7 +2682,7 @@ Andre%
 Clare%
 \end{sbspanel}%
 \begin{sbspanel}{0.4}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147552.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147552-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0.05}{0.4}{0.05}%
@@ -2649,7 +2690,7 @@ Clare%
 Diego%
 \end{sbspanel}%
 \begin{sbspanel}{0.4}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147553.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147553-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 %
@@ -2658,78 +2699,79 @@ Diego%
 \item{}¿En qué parte de cada diagrama ves el producto?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec14-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec14-cool}
 \begin{project}{Actividad de cierre}{Multiplica y explica.}{gra3-uni4-secC-lec14-cool-3}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.5}%
 Encuentra el valor de \(5\times 15\) y explica cómo está representado esto en el diagrama.%
 \end{sbspanel}%
 \begin{sbspanel}{0.5}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147479.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147479-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 15 -~Grupos iguales, números más grandes}
+\typeout{Lección  Grupos iguales, números más grandes}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 15 -~Grupos iguales, números más grandes}{}{Lección 15}{}{}{gra3-uni4-secC-lec15}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec15-4}
+\begin{chapterptx}{Lección}{Grupos iguales, números más grandes}{}{\hyperref[gra3-uni4-secC-lec15]{Lección~, p.\,\pageref{gra3-uni4-secC-lec15}}}{}{}{gra3-uni4-secC-lec15}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Resolvamos algunos problemas de grupos iguales que tienen números más grandes.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec15-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec15-warm}
 \begin{exploration}{Calentamiento}{Cuál es diferente: Rectángulos.}{gra3-uni4-secC-lec15-warm-3}%
 ¿Cuál es diferente?%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.5}%
 A%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149350.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149350-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.5}%
 B%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149351.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149351-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.5}%
 C%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149352.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149352-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.5}%
 D%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149353.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149353-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec15-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec15-act1}
 \begin{activity}{Actividad}{Grupos iguales, números más grandes.}{act-problemasMultNums11a19}%
 Resuelve cada problema. Explica o muestra tu razonamiento.%
 %
@@ -2740,65 +2782,66 @@ Resuelve cada problema. Explica o muestra tu razonamiento.%
 \item{}En el festival de arte, Noah compra un paquete de calcomanías. En el paquete hay 5 hojas y cada hoja tiene 16 calcomanías. ¿Cuántas calcomanías hay en el paquete?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec15-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec15-act2}
 \begin{activity}{Actividad}{Recorrido por el salón: Grupos iguales, números más grandes.}{gra3-uni4-secC-lec15-act2-3}%
 Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec15-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec15-cool}
 \begin{project}{Actividad de cierre}{Encuentra el área.}{gra3-uni4-secC-lec15-cool-3}%
 Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 16 -~Multipliquemos números más grandes que 20}
+\typeout{Lección  Multipliquemos números más grandes que 20}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 16 -~Multipliquemos números más grandes que 20}{}{Lección 16}{}{}{gra3-uni4-secC-lec16}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec16-4}
+\begin{chapterptx}{Lección}{Multipliquemos números más grandes que 20}{}{\hyperref[gra3-uni4-secC-lec16]{Lección~, p.\,\pageref{gra3-uni4-secC-lec16}}}{}{}{gra3-uni4-secC-lec16}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Multipliquemos números que son más grandes que 20.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec16-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec16-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: Tres multiplicado por algunos números.}{gra3-uni4-secC-lec16-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-\begin{itemize}[label=\textbullet]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 3\times 10\)%
 \item{}\(\displaystyle 3\times 20\)%
 \item{}\(\displaystyle 3\times 50\)%
 \item{}\(\displaystyle 3\times 25\)%
-\end{itemize}
+\end{enumerate}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec16-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec16-act1}
 \begin{activity}{Actividad}{\(4\times 23\), representado.}{act-representar4por23}%
 %
 \begin{enumerate}
@@ -2807,12 +2850,12 @@ Encuentra mentalmente el valor de cada expresión.%
 \begin{sbspanel}{0.5}%
 Clare%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152969.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152969-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.5}%
 Andre%
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152970.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152970-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 %
@@ -2827,7 +2870,7 @@ Andre%
 A%
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152971.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152971-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0}{0.3}{0.05}%
@@ -2835,7 +2878,7 @@ A%
 B%
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152972.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152972-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0}{0.3}{0.05}%
@@ -2843,7 +2886,7 @@ B%
 C%
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152973.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152973-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0}{0.3}{0.05}%
@@ -2851,7 +2894,7 @@ C%
 D%
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152974.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152974-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 %
@@ -2862,20 +2905,22 @@ D%
 \item{}Encuentra el valor de \(3\times 28\). Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec16-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec16-act2}
 \begin{activity}{Actividad}{Unos productos bonitos.}{act-prodsUnDigitoPorMayorA20}%
 %
 \begin{enumerate}
 \item{}Para encontrar el valor de \(2\times 37\), Mai empezó escribiendo esta ecuación:%
-\par
-\(2 \times 30 = 60\)%
+\begin{equation*}
+2 \times 30 = 60
+\end{equation*}
+%
 \par
 Describe o muestra lo que haría Mai para terminar de encontrar el valor de \(2\times 37\).%
 \item{}Encuentra el valor de cada producto. Muestra cómo razonaste.%
@@ -2888,15 +2933,14 @@ Describe o muestra lo que haría Mai para terminar de encontrar el valor de \(2\
 \end{enumerate}
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 3}
+\typeout{Sección  Actividad 3}
 \typeout{************************************************}
 %
-\newpage
-\begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secC-lec16-act3}
+\begin{sectionptx}{Sección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secC-lec16-act3}
 \begin{activity}{Actividad}{Juguemos “Cerca de 100, multiplicación” (opcional).}{act-juegoCerca100Multiplicacion}%
 \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
 \begin{sbspanel}{0.5}%
@@ -2965,74 +3009,75 @@ Ronda 2%
 \end{sidebyside}%
 \alert{Nota:} \emph{Espacio para más rondas en el tablero de juego.}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec16-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec16-cool}
 \begin{project}{Actividad de cierre}{Multiplica números mayores que 20.}{gra3-uni4-secC-lec16-cool-3}%
 ¿Cuál es el valor de \(4\times 24\)? Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 17 -~Usemos las cuatro operaciones para resolver problemas}
+\typeout{Lección  Usemos las cuatro operaciones para resolver problemas}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 17 -~Usemos las cuatro operaciones para resolver problemas}{}{Lección 17}{}{}{gra3-uni4-secC-lec17}
-\begin{objectives}{Objetivos}{gra3-uni4-secC-lec17-4}
+\begin{chapterptx}{Lección}{Usemos las cuatro operaciones para resolver problemas}{}{\hyperref[gra3-uni4-secC-lec17]{Lección~, p.\,\pageref{gra3-uni4-secC-lec17}}}{}{}{gra3-uni4-secC-lec17}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Usemos las cuatro operaciones para resolver problemas.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec17-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secC-lec17-warm}
 \begin{exploration}{Calentamiento}{Verdadero o falso: Multiplicar por 10.}{gra3-uni4-secC-lec17-warm-3}%
 En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
 %
-\begin{itemize}[label=\textbullet]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 2 \times 40 = 2 \times 4 \times 10\)%
 \item{}\(\displaystyle 2 \times 40 = 8 \times 10\)%
 \item{}\(\displaystyle 3 \times 50 = 15 \times 10\)%
 \item{}\(\displaystyle 3 \times 40 = 7 \times 10\)%
-\end{itemize}
+\end{enumerate}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec17-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secC-lec17-act1}
 \begin{activity}{Actividad}{Preguntas sobre una situación.}{gra3-uni4-secC-lec17-act1-3}%
 ¿Qué preguntas puedes hacer sobre esta situación?%
 \par
 En una fiesta hay 142 invitados. Todos los invitados están en 2 salas. En la sala A hay 94 invitados. En la sala B hay 6 mesas, cada una con el mismo número de invitados. Hay 4 cubiertos y 1 plato para cada invitado.%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec17-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secC-lec17-act2}
 \begin{activity}{Actividad}{Problemas sobre una fiesta.}{act-problemsMultiplicativosFiesta}%
 En cada problema:%
 \begin{sidebyside}{2}{0.02}{0}{0.08}%
 \begin{sbspanel}{0.6}%
-a. Escribe una ecuación que represente la situación. Usa una letra para representar la cantidad desconocida.%
+(a) Escribe una ecuación que represente la situación. Usa una letra para representar la cantidad desconocida.%
 \par
-b. Resuelve el problema. Explica o muestra tu razonamiento.%
+(b) Resuelve el problema. Explica o muestra tu razonamiento.%
 \end{sbspanel}%
 \begin{sbspanel}{0.3}%
 \includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 17.png}
@@ -3045,14 +3090,14 @@ b. Resuelve el problema. Explica o muestra tu razonamiento.%
 \item{}Había 184 vasos sobre una mesa. En tres mesas en las que había 8 personas en cada una, todas las personas fueron por una bebida y cada una usó un vaso. ¿Cuántos vasos hay ahora en la mesa?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec17-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secC-lec17-cool}
 \begin{project}{Actividad de cierre}{Los globos de Andre.}{gra3-uni4-secC-lec17-cool-3}%
 Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?%
 %
@@ -3061,15 +3106,15 @@ Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una
 \item{}Resuelve el problema. Explica o muestra cómo razonaste.%
 \end{enumerate}
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+  %
 %
 \typeout{************************************************}
 \typeout{Ejercicios  Problemas de práctica de la sección C}
 \typeout{************************************************}
 %
-\begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección C}{}{Problemas de práctica}{}{}{gra3-uni4-secC-ProblemasPractica}
+\begin{exercises-part}{Ejercicios}{Problemas de práctica de la sección C}{}{Problemas de práctica}{}{}{gra3-uni4-secC-ProblemasPractica}
 \begin{divisionexercise}{1}{}{}{gra3-uni4-secC-ProblemasPractica-3}%
 %
 \begin{enumerate}[label=(\alph*)]
@@ -3084,7 +3129,7 @@ Hay 4 mesas para el almuerzo. Hay 12 estudiantes en cada mesa. ¿Cuántos estudi
 \begin{divisionexercise}{3}{}{}{gra3-uni4-secC-ProblemasPractica-5}%
 \begin{sidebyside}{2}{0.0125}{0.0125}{0.025}%
 \begin{sbspanel}{0.35}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151678.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151678-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
 %
@@ -3119,7 +3164,7 @@ Esta es la estrategia de Mai para calcular \(4 \times 21\): “Primero duplico 2
 \end{divisionexercise}%
 \begin{divisionexercise}{8}{Exploración.}{}{gra3-uni4-secC-ProblemasPractica-10}%
 \begin{image}{0}{1}{0}{-1.5\baselineskip}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151679.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151679-scale13.pdf}
 \end{image}%
 %
 \begin{enumerate}[label=(\alph*)]
@@ -3132,10 +3177,10 @@ Esta es la estrategia de Mai para calcular \(4 \times 21\): “Primero duplico 2
 Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:%
 \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
 \begin{sbspanel}{0.45}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151680.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151680-scale13.pdf}
 \end{sbspanel}%
 \begin{sbspanel}{0.45}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151681.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151681-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 %
@@ -3146,21 +3191,21 @@ Mira dos diagramas diferentes que corresponden a la misma expresión de multipli
 \item{}Escribe un problema-historia que le corresponda a la expresión.%
 \end{enumerate}
 \end{divisionexercise}%
-\end{exercises-subsection}
-%
+\end{exercises-part}
+  %
 %
 \typeout{************************************************}
 \typeout{Referencias  Resumen de la sección}
 \typeout{************************************************}
 %
-\begin{references-subsection}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{graVV-uniXX-secYY-resumen}
+\begin{references-part}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{graVV-uniXX-secYY-resumen}
 En esta sección, aprendimos a multiplicar números de un dígito por múltiplos de diez. Usamos estrategias para multiplicar números del 11 al 19 y números mayores que 20.%
 \begin{sidebyside}{2}{0.0375}{0.0375}{0.075}%
 \begin{sbspanel}{0.15}[center]%
 \(4\times 30\)%
 \end{sbspanel}%
 \begin{sbspanel}{0.7}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147742.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147742-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0.0375}{0.0375}{0.075}%
@@ -3168,7 +3213,7 @@ En esta sección, aprendimos a multiplicar números de un dígito por múltiplos
 \(7\times 13\)%
 \end{sbspanel}%
 \begin{sbspanel}{0.7}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
 \begin{sidebyside}{2}{0.0375}{0.0375}{0.075}%
@@ -3176,57 +3221,50 @@ En esta sección, aprendimos a multiplicar números de un dígito por múltiplos
 \(3\times 28\)%
 \end{sbspanel}%
 \begin{sbspanel}{0.7}[center]%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141827.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141827-scale13.pdf}
 \par
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-158683.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-158683-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
-\end{references-subsection}
-\end{sectionptx}
+\end{references-part}
+\end{partptx}
 %
 %
 \typeout{************************************************}
-\typeout{Sección  Sección D -~Dividamos números más grandes}
+\typeout{Parte  Sección D -~Dividamos números más grandes}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Sección}{Sección D -~Dividamos números más grandes}{}{Sección D -~Dividamos números más grandes}{}{}{gra3-uni4-secD}
+\begin{partptx}{Parte}{Sección D -~Dividamos números más grandes}{}{Sección D -~Dividamos números más grandes}{}{}{gra3-uni4-secD}
+\renewcommand*{\partname}{Parte}
+    %
+%
+\typeout{************************************************}
+\typeout{Lección  Números más grandes en grupos iguales}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{Números más grandes en grupos iguales}{}{\hyperref[gra3-uni4-secD-lec18]{Lección~, p.\,\pageref{gra3-uni4-secD-lec18}}}{}{}{gra3-uni4-secD-lec18}
+\renewcommand*{\chaptername}{Lección}
 \begin{introduction}{}%
-\begin{objectives}{Objetivos}{gra3-uni4-secD-intro-1}
-%
-\begin{itemize}[label=\textbullet]
-\item{}[@@@@@@@@@@@@@@@@@@]%
-\item{}[@@@@@@@@@@@@@@@@@@]%
-\end{itemize}
-\end{objectives}
+Dividamos con números más grandes.%
 \end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 18 -~Números más grandes en grupos iguales}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 18 -~Números más grandes en grupos iguales}{}{Lección 18}{}{}{gra3-uni4-secD-lec18}
-\begin{objectives}{Objetivos}{gra3-uni4-secD-lec18-4}
-Dividamos con números más grandes.%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec18-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec18-warm}
 \begin{exploration}{Calentamiento}{¿Qué sabes sobre la división?}{gra3-uni4-secD-lec18-warm-3}%
 ¿Qué sabes sobre la división?%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec18-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec18-act1}
 \begin{activity}{Actividad}{Grupos en una excursión.}{act-gruposEnExcursion}%
 Hay 48 estudiantes que van de excursión al acuario. Ellos visitan las exhibiciones en grupos de 4 estudiantes. ¿Cuántos grupos habrá?%
 \par
@@ -3235,14 +3273,14 @@ Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 \includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 18 Activity 1.png}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec18-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec18-act2}
 \begin{activity}{Actividad}{Grupos en el bus y grupos en el almuerzo.}{act-gruposEnBusYAlmuerzo}%
 En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 %
@@ -3252,56 +3290,57 @@ En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras repre
 \item{}Durante el almuerzo, las \(72\) personas se sentaron en unas mesas grandes. Había \(12\) personas en cada mesa. ¿Cuántas mesas usaron?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec18-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec18-cool}
 \begin{project}{Actividad de cierre}{Equipos en el recreo.}{gra3-uni4-secD-lec18-cool-3}%
 En el recreo, \(42\) estudiantes jugaron un juego. Armaron \(3\) equipos con el mismo número de estudiantes cada uno. ¿Cuántos estudiantes había en cada equipo?%
 \par
 Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 19 -~Formas de dividir números más grandes}
+\typeout{Lección  Formas de dividir números más grandes}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 19 -~Formas de dividir números más grandes}{}{Lección 19}{}{}{gra3-uni4-secD-lec19}
-\begin{objectives}{Objetivos}{gra3-uni4-secD-lec19-4}
+\begin{chapterptx}{Lección}{Formas de dividir números más grandes}{}{\hyperref[gra3-uni4-secD-lec19]{Lección~, p.\,\pageref{gra3-uni4-secD-lec19}}}{}{}{gra3-uni4-secD-lec19}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Démosle sentido a las representaciones de la división.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec19-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec19-warm}
 \begin{exploration}{Calentamiento}{Verdadero o falso: Unidades, decenas, veintenas.}{gra3-uni4-secD-lec19-warm-3}%
 En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
 %
-\begin{itemize}[label=\textbullet]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 4 \times 10 = 40 \times 1\)%
 \item{}\(\displaystyle 4 \times 20 = 4 \times 2 \times 10\)%
 \item{}\(\displaystyle 8 \times 20 = 8 \times 2 \times 1\)%
 \item{}\(\displaystyle 8 \times 20 = 16 \times 10\)%
-\end{itemize}
+\end{enumerate}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec19-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec19-act1}
 \begin{activity}{Actividad}{Dividamos con bloques en base diez.}{gra3-uni4-secD-lec19-act1-3}%
 \begin{sidebyside}{2}{0}{0}{0.1}%
 \begin{sbspanel}{0.7}%
@@ -3327,25 +3366,24 @@ En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para exp
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\newpage
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec19-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec19-act2}
 \begin{activity}{Actividad}{Diferentes formas de mostrar la división.}{gra3-uni4-secD-lec19-act2-3}%
 Jada y Han usaron bloques en base diez para representar \(60 \div 5\).%
 \par
 Este es el trabajo de Jada:%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152963.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152963-scale13.pdf}
 \end{image}%
 Este es el trabajo de Han:%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152964.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152964-scale13.pdf}
 \end{image}%
 %
 \begin{enumerate}
@@ -3364,54 +3402,55 @@ Este es el trabajo de Han:%
 \end{enumerate}
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec19-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec19-cool}
 \begin{project}{Actividad de cierre}{Encuentra el valor.}{gra3-uni4-secD-lec19-cool-3}%
 Encuentra el valor de \(51 \div 3.\) Usa bloques en base diez si crees que te pueden ayudar. Explica o muestra cómo razonaste.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 20 -~Estrategias para dividir}
+\typeout{Lección  Estrategias para dividir}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 20 -~Estrategias para dividir}{}{Lección 20}{}{}{gra3-uni4-secD-lec20}
-\begin{objectives}{Objetivos}{gra3-uni4-secD-lec20-4}
+\begin{chapterptx}{Lección}{Estrategias para dividir}{}{\hyperref[gra3-uni4-secD-lec20]{Lección~, p.\,\pageref{gra3-uni4-secD-lec20}}}{}{}{gra3-uni4-secD-lec20}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Usemos diferentes estrategias para dividir.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec20-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec20-warm}
 \begin{exploration}{Calentamiento}{Conversación numérica: Multiplicación y división.}{gra3-uni4-secD-lec20-warm-3}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-\begin{itemize}[label=\textbullet]
+\begin{enumerate}[label=\Alph*]
 \item{}\(\displaystyle 3\times 5\)%
 \item{}\(\displaystyle 6\times 5\)%
 \item{}\(\displaystyle 10\times 5\)%
 \item{}\(\displaystyle 65\div 5\)%
-\end{itemize}
+\end{enumerate}
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec20-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec20-act1}
 \begin{activity}{Actividad}{Formas de dividir.}{gra3-uni4-secD-lec20-act1-3}%
 %
 \begin{enumerate}
@@ -3420,7 +3459,7 @@ Encuentra mentalmente el valor de cada expresión.%
 Lin%
 \par
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149344.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149344-scale13.pdf}
 \end{image}%
 %
 \begin{sidebyside}{2}{0}{0}{0}%
@@ -3445,15 +3484,14 @@ Tyler%
 \item{}¿En qué son diferentes?%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\newpage
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec20-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec20-act2}
 \begin{activity}{Actividad}{¿Cómo dividirías?}{act-ComoDividirias}%
 Encuentra el valor de cada cociente. Explica o muestra tu razonamiento. Organízalo para que los demás lo puedan entender.%
 %
@@ -3464,14 +3502,14 @@ Encuentra el valor de cada cociente. Explica o muestra tu razonamiento. Organíz
 \end{enumerate}
 Si te queda tiempo: Ochenta y cuatro estudiantes de una excursión se organizaron en grupos. Cada grupo tiene \(14\) estudiantes. ¿Cuántos grupos hay?%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 3}
+\typeout{Sección  Actividad 3}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secD-lec20-act3}
+\begin{sectionptx}{Sección}{Actividad 3}{}{Actividad 3}{}{}{gra3-uni4-secD-lec20-act3}
 \begin{activity}{Actividad}{“Compara: Divide hasta 100” [OPCIONAL].}{comparaDivideHasta100-tarjetas}%
 Juega ``Compara'' con dos jugadores.%
 %
@@ -3482,51 +3520,53 @@ Juega ``Compara'' con dos jugadores.%
 \item{}Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec20-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec20-cool}
 \begin{project}{Actividad de cierre}{Una división más.}{gra3-uni4-secD-lec20-cool-3}%
 Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
+\end{reading-questions-section}
+\end{chapterptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Lección  Resolvamos problemas usando las cuatro operaciones}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Lección}{Resolvamos problemas usando las cuatro operaciones}{}{\hyperref[gra3-uni4-secD-lec21]{Lección~, p.\,\pageref{gra3-uni4-secD-lec21}}}{}{}{gra3-uni4-secD-lec21}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
+Representemos problemas de dos pasos utilizando ecuaciones con una letra que represente la cantidad desconocida.%
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 21 -~Resolvamos problemas usando las cuatro operaciones}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 21 -~Resolvamos problemas usando las cuatro operaciones}{}{Lección 21}{}{}{gra3-uni4-secD-lec21}
-\begin{objectives}{Objetivos}{gra3-uni4-secD-lec21-4}
-Representar problemas de dos pasos utilizando ecuaciones con una letra que represente la cantidad desconocida.%
-\end{objectives}
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec21-warm}
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec21-warm}
 \begin{exploration}{Calentamiento}{Observa y pregúntate: Otra vez manzanas.}{gra3-uni4-secD-lec21-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \par
 \begin{quote}%
 Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.\end{quote}
 %
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec21-act1}
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec21-act1}
 \begin{activity}{Actividad}{Una aventura con manzanas.}{act-unaAventuraConManzanas}%
 \begin{sidebyside}{2}{0}{0}{0.1}%
 \begin{sbspanel}{0.6}%
@@ -3539,21 +3579,21 @@ Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacada
 \par
 Escoge \(4\) números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos \(4\) números.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149345.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149345-scale13.pdf}
 \end{image}%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[max width=\linewidth, center]{external/tikz-source/3-4-21-act1-tab.pdf}
 \end{image}%
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec21-act2}
-\begin{activity}{Actividad}{Días de manzanas.}{gra3-uni4-secD-lec21-act2-3}%
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec21-act2}
+\begin{activity}{Actividad}{Días de manzanas.}{act-diasDeManzanas}%
 \begin{sidebyside}{2}{0}{0.05}{0.05}%
 \begin{sbspanel}{0.6}%
 Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
@@ -3584,14 +3624,14 @@ Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
 \end{enumerate}
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
 \typeout{Preguntas de comprensión  Actividad de cierre}
 \typeout{************************************************}
 %
-\begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec21-cool}
+\begin{reading-questions-section}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{gra3-uni4-secD-lec21-cool}
 \begin{project}{Actividad de cierre}{Las manzanas en el puesto de la huerta.}{gra3-uni4-secD-lec21-cool-3}%
 En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en \(6\) cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?%
 %
@@ -3600,41 +3640,50 @@ En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manz
 \item{}Resuelve el problema. Explica o muestra tu razonamiento.%
 \end{enumerate}
 \end{project}%
-\end{reading-questions-subsubsection}
-\end{subsectionptx}
-%
+\end{reading-questions-section}
+\end{chapterptx}
+ %
 %
 \typeout{************************************************}
-\typeout{Subsección  Lección 22 -~La huerta comunitaria de la escuela}
+\typeout{Lección  La huerta comunitaria de la escuela}
 \typeout{************************************************}
 %
-\begin{subsectionptx}{Subsección}{Lección 22 -~La huerta comunitaria de la escuela}{}{Lección 22}{}{}{gra3-uni4-secD-lec22}
-\begin{objectives}{Objetivos}{gra3-uni4-secD-lec22-4}
+\begin{chapterptx}{Lección}{La huerta comunitaria de la escuela}{}{\hyperref[gra3-uni4-secD-lec22]{Lección~, p.\,\pageref{gra3-uni4-secD-lec22}}}{}{}{gra3-uni4-secD-lec22}
+\renewcommand*{\chaptername}{Lección}
+\begin{introduction}{}%
 Planeemos una huerta para la escuela.%
-\end{objectives}
+\end{introduction}%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
+\typeout{Sección  Calentamiento}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec22-warm}
-\begin{exploration}{Calentamiento}{Observa y pregúntate: Huerta.}{gra3-uni4-secD-lec22-warm-3}%
-¿Qué observas? ¿Qué te preguntas?%
+\begin{sectionptx}{Sección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secD-lec22-warm}
+\begin{exploration}{Calentamiento}{Observa y pregúntate: Huerta.}{act-ObservaHuerta}%
+¿Qué observas?\\
+ ¿Qué te preguntas?%
 \begin{image}{0.125}{0.75}{0.125}{}%
 \includegraphics[max width=\linewidth, center]{external/jpg-source/3-4-D-22-warm-garden-934189_1920.jpg}
 \end{image}%
 \end{exploration}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 1}
+\typeout{Sección  Actividad 1}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec22-act1}
-\begin{activity}{Actividad}{La producción.}{gra3-uni4-secD-lec22-act1-3}%
+\begin{sectionptx}{Sección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secD-lec22-act1}
+\begin{activity}{Actividad}{La producción.}{act-produccionFresas}%
+\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+\begin{sbspanel}{0.6}%
 En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.%
+\end{sbspanel}%
+\begin{sbspanel}{0.3}%
+\includegraphics[max width=\linewidth, center]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
+\end{sbspanel}%
+\end{sidebyside}%
 %
 \begin{enumerate}
 \item{}Una parcela de fresas tiene \(7\) filas con \(8\) plantas de fresas en cada fila.%
@@ -3643,27 +3692,18 @@ En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.
 \item{}¿Cuántas plantas de fresas hay en la parcela?%
 \item{}Para cultivar fresas de la mejor manera, las filas deben estar separadas por \(4\) pies. En cada fila, debe haber \(2\) pies de distancia entre planta y planta. ¿Qué tan larga y qué tan ancha es la parcela de fresas?%
 \item{}Se pueden cosechar \(12\) fresas de cada planta. ¿Cuántas fresas van a crecer en cada fila?%
-\newpage
 \end{enumerate}
-\item{}\begin{sidebyside}{2}{0}{0}{0.1}%
-\begin{sbspanel}{0.6}%
-Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven los números de la expresión o de la ecuación que escribieron.%
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-\includegraphics[max width=\linewidth, center]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
-\end{sbspanel}%
-\end{sidebyside}%
-%
+\item{}Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven los números de la expresión o de la ecuación que escribieron.%
 \end{enumerate}
 \end{activity}%
-\end{subsubsectionptx}
+\end{sectionptx}
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Actividad 2}
+\typeout{Sección  Actividad 2}
 \typeout{************************************************}
 %
-\begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec22-act2}
+\begin{sectionptx}{Sección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secD-lec22-act2}
 \begin{activity}{Actividad}{Planeemos la huerta.}{act-Planeemos-la-huerta}%
 %
 \begin{enumerate}
@@ -3685,7 +3725,7 @@ Con tu compañero, tomen turnos para explicar en qué parte de su diagrama ven l
 \end{enumerate}
 \item{}Haz un diagrama que muestre cómo están organizadas las plantas y cuánto espacio se necesita.%
 \end{enumerate}
-\newpage
+\pagebreak
 \alert{Requisitos para el cultivo}%
 \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
 \begin{sbspanel}{0.45}%
@@ -3772,15 +3812,15 @@ papas%
 \end{sbspanel}%
 \end{sidebyside}%
 \end{activity}%
-\end{subsubsectionptx}
-\end{subsectionptx}
-%
+\end{sectionptx}
+\end{chapterptx}
+  %
 %
 \typeout{************************************************}
 \typeout{Ejercicios  Problemas de práctica de la sección D}
 \typeout{************************************************}
 %
-\begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección D}{}{Problemas de práctica}{}{}{gra3-uni4-secD-ProblemasPractica}
+\begin{exercises-part}{Ejercicios}{Problemas de práctica de la sección D}{}{Problemas de práctica}{}{}{gra3-uni4-secD-ProblemasPractica}
 \begin{divisionexercise}{1}{}{}{gra3-uni4-secD-ProblemasPractica-3}%
 En el gimnasio hay \(85\) sillas. Están organizadas en \(5\) filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
 \end{divisionexercise}%
@@ -3830,14 +3870,14 @@ Para encontrar el valor de \(96 \div 3\), Diego divide \(9\) entre \(3\) y \(6\)
 \item{}Escribe una ecuación de multiplicación o de división para cada forma.%
 \end{enumerate}
 \end{divisionexercise}%
-\end{exercises-subsection}
-%
+\end{exercises-part}
+  %
 %
 \typeout{************************************************}
 \typeout{Referencias  Resumen de la sección}
 \typeout{************************************************}
 %
-\begin{references-subsection}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{gra3-uni4-secD-resumen}
+\begin{references-part}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{gra3-uni4-secD-resumen}
 En esta sección, dividimos números más grandes y resolvimos problemas en los que hicimos divisiones. Usamos bloques en base diez, diagramas y ecuaciones para representar los números que dividimos. Para ayudarnos a dividir, usamos lo que ya sabemos sobre el valor posicional, sobre grupos iguales y sobre la relación que hay entre la multiplicación y la división.%
 \par
 Por ejemplo, estas son algunas formas en las que podemos encontrar el valor de \(52 \div 4\):%
@@ -3845,7 +3885,7 @@ Por ejemplo, estas son algunas formas en las que podemos encontrar el valor de \
 \begin{itemize}[label=\textbullet]
 \item{}Poner \(5\) decenas y \(2\) unidades en \(4\) grupos iguales.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147697.pdf}
+\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147697-scale13.pdf}
 \end{image}%
 \item{}Pensar en cuántos grupos de \(4\) hay en \(52\).%
 %
@@ -3855,29 +3895,26 @@ Por ejemplo, estas son algunas formas en las que podemos encontrar el valor de \
 \item{}\(13\) grupos de \(4\) forman \(52\).%
 \end{itemize}
 \item{}Usar los hechos de multiplicación y escribir ecuaciones.%
-\begin{sidebyside}{2}{0}{0.2}{0}%
-\begin{sbspanel}{0.4}%
-\(4 \times 10 = 40\)\\
- \(4 \times 3 = 12\)%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-\par
-\(10 + 3 = 13\)\\
- \(4 \times 13 = 52\)%
-\end{sbspanel}%
-\end{sidebyside}%
+%
+\begin{itemize}[label=$\circ$]
+\item{}\(\displaystyle 4 \times 10 = 40\)%
+\item{}\(\displaystyle 4 \times 3 = 12\)%
+\item{}\(\displaystyle 10 + 3 = 13\)%
+\item{}\(\displaystyle 4 \times 13 = 52\)%
+\end{itemize}
 \end{itemize}
 Al final de la sección, usamos las cuatro operaciones para resolver problemas.%
-\end{references-subsection}
-\end{sectionptx}
+\end{references-part}
+\end{partptx}
 %
 %
 \typeout{************************************************}
-\typeout{Sección  Glosario}
+\typeout{Parte  Glosario}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Sección}{Glosario}{}{Glosario}{}{}{gra3-uni4-glo-acum}
-%
+\begin{partptx}{Parte}{Glosario}{}{Glosario}{}{}{gra3-uni4-glo-acum}
+\renewcommand*{\partname}{Parte}
+    %
 %
 \typeout{************************************************}
 \typeout{Subsección  Glosario unidad 3-4}
@@ -3956,5 +3993,43 @@ Una forma de decir de qué número de cierto tipo está más cerca un número da
 \end{dlimedium}%
 \end{descriptionlist}
 \end{subsectionptx}
-\end{sectionptx}
+\end{partptx}
+%
+%
+\typeout{************************************************}
+\typeout{Referencias  Atribuciones de imágenes}
+\typeout{************************************************}
+%
+\begin{references-part}{Referencias}{Atribuciones de imágenes}{}{Atribuciones de imágenes}{}{}{gra3-uni4-9}
+%
+\begin{itemize}[label=\textbullet]
+\item{}\hyperref[warm-observa-cajaManzanas]{Cuántos ves: Manzanas, p.\,\pageref{warm-observa-cajaManzanas}} Pavel Bokr. Pixabay. \href{https://pixabay.com/photos/apples-fruit-apple-1642732/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/apples-fruit-apple-1642732/}\label{gra3-uni4-9-2-1-3}}.%
+\item{}\hyperref[warm-observa-arbolManzanas]{Observa y pregúntate: Más manzanas, p.\,\pageref{warm-observa-arbolManzanas}}  Petr Kratochvil. CC0 \href{https://www.publicdomainpictures.net/en/view-image.php?image=267667\&picture=apple-orchard}{https:\slash{}\slash{}www.publicdomainpictures.net}\footnote{\nolinkurl{www.publicdomainpictures.net/en/view-image.php?image=267667\&picture=apple-orchard}\label{gra3-uni4-9-2-2-3}}.%
+\item{}\hyperref[act-trompos]{Trompos, p.\,\pageref{act-trompos}}%
+%
+\begin{itemize}[label=$\circ$]
+\item{}Trompo de madera. Alberto Adán \href{https://pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}\label{gra3-uni4-9-2-3-2-1-2}}.%
+\item{}Dreidels. PublicDomainPictures \href{https://pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}\label{gra3-uni4-9-2-3-2-2-2}}%
+\item{}Whirligig. PublicDomainPictures \href{https://pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}\label{gra3-uni4-9-2-3-2-3-2}}%
+\item{}Kreisel. Federlight. CC BY-SA 4.0. Wikimedia Commons \href{https://commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}{https:\slash{}\slash{}commons.wikimedia.org}\footnote{\nolinkurl{commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}\label{gra3-uni4-9-2-3-2-4-2}}%
+\item{}Trompo metálico.  Anthony. Pexel License \href{https://www.pexels.com/photo/blue-and-green-spin-toy-170288/}{https:\slash{}\slash{}www.pexels.com\slash{}}\footnote{\nolinkurl{www.pexels.com/photo/blue-and-green-spin-toy-170288/}\label{gra3-uni4-9-2-3-2-5-2}}%
+\end{itemize}
+\item{}\hyperref[act-clasificacionDeTarjetas-todoSobreBichos]{Clasificación de tarjetas: Todo sobre bichos, p.\,\pageref{act-clasificacionDeTarjetas-todoSobreBichos}} Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. \href{https://en.wikipedia.org/wiki/File:Insect_collage.png}{https:\slash{}\slash{}en.wikipedia.org}\footnote{\nolinkurl{en.wikipedia.org/wiki/File:Insect_collage.png}\label{gra3-uni4-9-2-4-3}}.%
+\item{}\hyperref[act-ecuacionesCebollas]{Ecuaciones acerca de cebollas, p.\,\pageref{act-ecuacionesCebollas}} Martin Winkler. Pixabay Content License \href{https://pixabay.com/photos/market-vegetable-market-1558658/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/market-vegetable-market-1558658/}\label{gra3-uni4-9-2-5-3}}.%
+\item{}\hyperref[act-diasDeManzanas]{Días de manzanas, p.\,\pageref{act-diasDeManzanas}} Capri23auto. Pixabay License. \href{https://pixabay.com/photos/apples-fruits-apple-tree-harvest-3535566/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/apples-fruits-apple-tree-harvest-3535566/}\label{gra3-uni4-9-2-6-3}}.%
+\item{}\hyperref[act-ObservaHuerta]{Observa y pregúntate: Huerta, p.\,\pageref{act-ObservaHuerta}} Silvia Thor. Pixabay License. \href{https://pixabay.com/photos/garden-strawberries-plant-red-934189/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/garden-strawberries-plant-red-934189/}\label{gra3-uni4-9-2-7-3}}.%
+\item{}\hyperref[act-produccionFresas]{La producción, p.\,\pageref{act-produccionFresas}} Fresas en una parcela. Fruchthandel\textunderscore{}Magazin. Pixabay License. \href{https://pixabay.com/photos/strawberries-red-cute-plant-field-196798/}{https:\slash{}\slash{}pixabay.com\slash{}.}\footnote{\nolinkurl{pixabay.com/photos/strawberries-red-cute-plant-field-196798/}\label{gra3-uni4-9-2-8-3}}%
+\item{}\hyperref[act-Planeemos-la-huerta]{Planeemos la huerta, p.\,\pageref{act-Planeemos-la-huerta}}%
+%
+\begin{itemize}[label=$\circ$]
+\item{}Fresas en una parcela. Fruchthandel\textunderscore{}Magazin. Pixabay License. \href{https://pixabay.com/photos/strawberries-red-cute-plant-field-196798/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/strawberries-red-cute-plant-field-196798/}\label{gra3-uni4-9-2-9-2-1-1-2}}%
+\item{}Melones cantalupos. Davgood Kirshot. Pixabay License. \href{https://pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}\label{gra3-uni4-9-2-9-2-2-1-2}}.%
+\item{}Calabacín. Monika. Pixabay License. \href{https://pixabay.com/photos/zucchini-vegetables-cultivation-1522535/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/zucchini-vegetables-cultivation-1522535/}\label{gra3-uni4-9-2-9-2-3-1-2}}.%
+\item{}Tomates. kie-ker. Pixabay License. \href{https://pixabay.com/photos/tomatoes-vines-water-droplets-wet-1561565/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/tomatoes-vines-water-droplets-wet-1561565/}\label{gra3-uni4-9-2-9-2-4-1-2}}.%
+\item{}Frijoles. Russell Lee. Public Domain. Wikimedia Commons. \href{https://commons.wikimedia.org/wiki/File:Pinto_beans,_main_crop_1a34133v.jpg}{https:\slash{}\slash{}commons.wikimedia.org}\footnote{\nolinkurl{commons.wikimedia.org/wiki/File:Pinto_beans,_main_crop_1a34133v.jpg}\label{gra3-uni4-9-2-9-2-5-1-2}}.%
+\item{}Papas. IlonaF. Pixabay license. \href{https://pixabay.com/photos/potatoes-agriculture-crop-tubers-3690562/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/potatoes-agriculture-crop-tubers-3690562/}\label{gra3-uni4-9-2-9-2-6-1-2}}.%
+\end{itemize}
+\end{itemize}
+Las imágenes sin atrubición las produjo LEMA \href{https://www.grupolema.org}{www.grupolema.org}\footnote{\nolinkurl{www.grupolema.org}\label{gra3-uni4-9-3-2}} específicamente para esta adaptación y se liberan con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), o son © 2021 \href{https://curriculum.illustrativemathematics.org}{Illustrative Mathematics}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{gra3-uni4-9-3-4}} con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0) y se reproducen directamente de la versión en Español disponible en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{gra3-uni4-9-3-6}}.%
+\end{references-part}
 \end{document}
