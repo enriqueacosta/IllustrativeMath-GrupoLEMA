@@ -22,10 +22,16 @@
 
 <solution component="profesor">  
   <p>
-    [@@@@@@@@@@@@@@@]
+    Si <m>a</m>, <m>b</m> y <m>c</m> son positivos, hay <m>36</m> soluciones. Si <m>a = 1</m>, las posibilidades son que <m>b = 1</m> y <m>c = 8</m>, <m>b = 2</m> y <m>c = 7</m>, y así sucesivamente, dando <m>8</m> soluciones. Si <m>a = 2</m>, entonces <m>b</m> y <m>c</m> podrían ser respectivamente <m>1</m> y <m>7</m>, <m>2</m> y <m>6</m>, <m>3</m> y <m>5</m>, etc. Esto da <m>7</m> soluciones para <m>a = 2</m>. Si <m>a = 9</m> y todos los números son positivos, no hay números posibles para ambos <m>a</m> y <m>b</m>. El número total de soluciones (para un valor <m>a</m> de <m>1</m> a <m>8</m>) es <m>8 + 7 + 6 + 5 + 4 + 3 + 2 + 1</m> o <m>36</m>.
+  </p> 
+
+  <p>
+    Si <m>a</m>, <m>b</m> y <m>c</m> son no negativos e incluyen el  <m>0</m>, hay <m>66</m> soluciones. Si <m>a = 0</m>, hay <m>11</m> combinaciones de <m>b</m> y <m>c</m>. Si <m>a = 1</m>, hay <m>10</m> combinaciones, y así sucesivamente. El número total de soluciones (para un valor <m>a</m> de <m>0</m> a <m>10</m>) es <m>11 + 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1</m>, que es <m>66</m>.
+  </p>
+
+  <p>
+    Si <m>a</m>, <m>b</m> y <m>c</m> son números enteros (incluyendo negativos), entonces hay un número ilimitado de soluciones.
   </p>
 </solution>
-
-
 
 </question>
