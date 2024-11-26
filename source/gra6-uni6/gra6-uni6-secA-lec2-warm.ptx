@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ============================================ 
+   El calentamiento es un <exploration> (distinto a las otras actividades)                      
+=================================================  -->
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+  <title>Tres letras</title>
+
+  <statement>
+    <ol>
+      <li>
+        <p>La ecuación <m>a + b = c</m> puede ser verdadera o falsa.</p>
+        <ol>
+          <li>Si <m>a</m> es <m>3</m>, <m>b</m> es <m>4</m> y <m>c</m> es <m>5</m>, ¿la ecuación es verdadera o falsa?</li>
+          <li>Encuentra otros valores de <m>a</m>, <m>b</m> y <m>c</m> que hagan verdadera la ecuación.</li>
+          <li>Encuentra otros valores de <m>a</m>, <m>b</m> y <m>c</m> que hagan falsa la ecuación.</li>
+        </ol>
+      </li>
+  
+      <li>
+        <p>La ecuación <m>x \boldcdot y = z</m> puede ser verdadera o falsa.</p>
+        <ol>
+          <li>Si <m>x</m> es <m>3</m>, <m>y</m> es <m>4</m> y <m>z</m> es <m>12</m>, ¿la ecuación es verdadera o falsa?</li>
+          <li>Encuentra otros valores de <m>x</m>, <m>y</m> y <m>z</m> que hagan verdadera la ecuación.</li>
+          <li>Encuentra otros valores de <m>x</m>, <m>y</m> y <m>z</m> que hagan falsa la ecuación.</li>
+        </ol>
+      </li>
+    </ol>
+  </statement>
+
+<solution>
+  <p>Las respuestas pueden variar. Ejemplo de respuestas:</p>
+  <ol>
+    <li>
+      <ol>
+        <li>Falsa</li>
+        <li><m>a</m> es <m>1</m>, <m>b</m> es <m>2</m>, <m>c</m> es <m>3</m></li>
+        <li><m>a</m> es <m>4</m>, <m>b</m> es <m>5</m>, <m>c</m> es <m>10</m></li>
+      </ol>
+    </li>
+
+    <li>
+      <ol>
+        <li>Verdadera</li>
+        <li><m>x</m> es <m>3</m>, <m>y</m> es <m>5</m>, <m>z</m> es <m>15</m></li>
+        <li><m>x</m> es <m>1</m>, <m>y</m> es <m>2</m>, <m>z</m> es <m>3</m></li>
+      </ol>
+    </li>
+  </ol>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>En esta actividad de calentamiento, los estudiantes razonan sobre lo que significa que una ecuación sea verdadera o falsa. También practican reemplazar de valores por una letra y resolver de expresiones con suma y multiplicación. Se introduce el término <term>variable</term>.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>
+      En la primera parte de la primera pregunta, dé a los estudiantes 2 minutos de tiempo de trabajo en silencio y pídales que hagan una pausa en su trabajo. Pida a un alumno que explique cómo decidió si la ecuación era verdadera o falsa dados los valores de <m>a</m>, <m>b</m> y <m>c</m>. Mientras el estudiante explica, ilustre este proceso escribiendo:
+    </p>
+
+    <p>
+      <line><m>a + b = c</m></line>
+      <line><m>3 + 4 = 5</m></line>
+    </p>
+
+    <p>
+      Como la suma de <m>3</m> y <m>4</m> no es <m>5</m>, la ecuación es falsa para estos valores. Explique que una letra que se utiliza para sustituir a un número se llama <term>variable</term>. A lo largo de esta unidad, los estudiantes tendrán muchas oportunidades de comprender y utilizar este término.
+    </p>
+
+    <p>
+      Dé a los estudiantes 2 minutos para completar el resto de la actividad.
+    </p>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>
+      La discusión debe centrarse en la idea de que una ecuación puede ser verdadera o falsa, y que para que una ecuación sea verdadera, depende de los valores de las variables. Este es un concepto importante para resaltar, ya que, a lo largo de su trabajo en grados anteriores, probablemente se asumía implícitamente que las ecuaciones eran verdaderas. Además, es posible que el signo igual se haya utilizado anteriormente para indicar que debía realizarse un cálculo, en lugar de comunicar que dos expresiones eran iguales entre sí. Comparte que podemos escribir <m>2 + 3 = 7</m>, lo cual, tanto estudiantes como docentes probablemente habrían considerado antes como "incorrecto" o "un error", pero que ahora puede entenderse como una afirmación matemática que no es verdadera.
+    </p>
+
+    <p>
+      Invite a los estudiantes a compartir los valores que asignan a las ecuaciones verdaderas y falsas. Si los estudiantes tienen dificultades para expresar sus ideas sobre las ecuaciones, algunas preguntas orientadoras podrían ser útiles:
+    </p>
+ 
+    <ul>
+      <li>
+        <p>
+          <q>¿Qué significa cuando una ecuación contiene una letra?</q> (La letra se llama variable; representa un número). 
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>¿Qué hace que una ecuación sea verdadera? ¿Qué hace que una ecuación sea falsa?</q> (Si las expresiones en cada lado tienen el mismo valor, la ecuación es verdadera. Si las expresiones en cada lado tienen valores diferentes, la ecuación es falsa). 
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>¿Cómo podemos determinar si una ecuación es verdadera o falsa?</q> (Se evalúa ambos lados y se verifica si los valores en cada lado de la ecuación son iguales. Si lo son, la ecuación es verdadera. Si no lo son, la ecuación es falsa).
+        </p>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</exploration>
