@@ -1,5 +1,9 @@
 # Formatos de números
 
+## Regla: números siempre en `<m>...</m>`
+Siempre que aparezca un número, ponerlo en modo LaTeX con `<m>...</m>`. Esto garantiza uniformidad de cómo se ven los números en todo el grado (tamaño, fuente, color).
+
+
 ## Números con unidades
 Es importante que las unidades abreviadas (como km, g, oz) estén pegadas al número correspondiente para que no se separen con un salto de linea. Para esto, se creó el comando `\unit{}` para usar en modo `<m>...</m>` de LaTeX. 
 
