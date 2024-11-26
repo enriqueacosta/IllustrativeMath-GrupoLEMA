@@ -7,22 +7,18 @@
 <statement>
   <p>Estas son tres situaciones y seis ecuaciones. ¿Cuál ecuación representa mejor cada situación? Si tienes dificultades, considera dibujar un diagrama.</p>
 
-  <sidebyside widths="30% 30% 30%" margins="auto" valign="top">
-      <p>
-        <line><m>x + 5 = 20</m></line>
-        <line><m>x\times 20 = 5</m></line>
-      </p>
-
-      <p>
-        <line><m>x = 20 + 5</m></line>
-        <line><m>5 \boldcdot {20} = x</m></line>
-      </p>
-
-      <p>
-        <line><m>5x = 20</m></line>
-        <line><m>20x = 5</m></line>
-      </p>
-  </sidebyside>
+  <sbsgroup widths="30% 30% 30%" margins="auto" valign="top">
+    <sidebyside>
+      <p><m>x + 5 = 20</m></p>
+      <p><m>x = 20 + 5</m></p>
+      <p><m>5x = 20</m></p>
+    </sidebyside>
+    <sidebyside>
+      <p><m>x\times 20 = 5</m></p>
+      <p><m>5 \boldcdot {20} = x</m></p>
+      <p><m>20x = 5</m></p>
+    </sidebyside>
+  </sbsgroup>
 
   <ol>
     <li>Después de correr <m>5</m> kilómetros el viernes, Elena habrá corrido un total de <m>20</m> millas en la semana. Ella corrió <m>x</m> kilómetros antes del viernes.</li>
