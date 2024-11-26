@@ -19,3 +19,5 @@ Para 6-8:
    <img width="600" alt="Screenshot 2024-11-26 at 10 50 40 AM" src="https://github.com/user-attachments/assets/e63ac338-2c8e-4c4c-a8e2-484b8846b313">
    
     En ese caso, el archivo se debe crear con el mismo template `graVV-uniXX-secYY-lecZZ-PP1.ptx`, pero se debe nombrar como `graAA-uniBB-secCC-lecDD-PPalign1.ptx`, donde el A.B.C.D corresponde a la lección con la que está alineado.
+
+   Por ejemplo, ver gra6-uni6-secA-lec1.ptx y gra6-uni5-secD-lec13-PPalign1.ptx (primer ejemplo de la imagen anterior).
