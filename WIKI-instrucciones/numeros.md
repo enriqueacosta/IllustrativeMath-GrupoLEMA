@@ -11,7 +11,7 @@ La dosis diaria es <m>1200\unit{mg}</m>
 Correcto:
 *  `<m>1200\unit{mg}</m>`
 *  `<m>1200 \unit{mg}</m>`
-*  `<m>1200    \unit{mg}</m>` (los espacios no importan --- en modo `<m>` se ignoran, y el comando `\unit{}` agrega el espacio apropiado entre en número y la unidad (menos de un espacio completo en su primera implementación)
+*  `<m>1200    \unit{mg}</m>` (los espacios no importan --- en modo `<m>` se ignoran, y el comando `\unit{}` agrega el espacio apropiado entre en número y la unidad).
 
 Incorrecto:
 *  `<m>1200</m> \unit{mg}`
@@ -19,4 +19,8 @@ Incorrecto:
 *  `1200 mg`
 *  `<m>1200</m> mg`
 
-El commando 
+Ver def del marco `\unit{}` en `<macros>` en meta_docinfo.ptx.
+
+
+## Números con decimales y separadores de miles
+Decisión temporal: usar los números tal como se encuentran en el original. El cambio de decimales a comas se puede hacer después simpre y cuendo haya consistencia.
