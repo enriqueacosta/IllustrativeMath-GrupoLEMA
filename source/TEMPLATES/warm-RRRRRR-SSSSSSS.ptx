@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<!-- ============================================ 
+   El calentamiento es un <exploration> (distinto a las otras actividades)                      
+=================================================  -->
+<exploration xml:id="warm-RRRRRR-SSSSSSS" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>[@@@@@@@@@]</title>
 
@@ -24,19 +27,16 @@
     <p>[@@@@@@@@@] minutos</p>
   </paragraphs>
 
-  <!-- Introducción de la actividad -->
+  <!-- Introducción de la actividad -->  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
-
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    @@@@@
-    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./graVV-uniXX-secYY-lecZZ-actRR-mat.ptx"/>  -->
+    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -44,7 +44,6 @@
     <title><custom ref="launch-titulo"/></title>
     <p>[@@@@@@@@@]</p>
   </paragraphs>
-
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
@@ -66,7 +65,6 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -80,7 +78,6 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>
 
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
@@ -89,4 +86,4 @@
 
 </postlude>
 
-</activity>
+</exploration>
