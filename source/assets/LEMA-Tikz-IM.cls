@@ -324,24 +324,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Rectas numericas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  TikZ Styles for Number Lines
 \tikzset{
-  tickLabel/.style={ % style of labels of ticks
-      font=\small,
-      above/.style={yshift=1.9ex}, % Adjust spacing for above
-      below/.style={yshift=-1.9ex}, % Adjust spacing for below
+  tickLabelAbove/.style={
+      font=\small,        % Font size for tick labels
+      anchor=mid,         % Baseline align text vertically across nodes
+      yshift=2.0ex,       % Vertical offset for labels above the line
   },
-  numLineTick/.style={ % style of tickmark nodes in number lines
-      draw, 
-      minimum width=0.0pt, 
-      minimum height=7pt,
-      line cap=round, 
-      inner sep=0pt, 
-      outer sep=2pt, 
-      line width=0.35pt,
+  tickLabelBelow/.style={
+      font=\small,        % Font size for tick labels
+      anchor=mid,         % Baseline align text vertically across nodes
+      yshift=-2.3ex,      % Slightly larger offset below the line to account 
+                          % for the label's baseline alignment (ensures visual balance).
   },
-  % numLineTickmark/.style={ % style of ticks
-  %     line width=0.35pt,
-  % },
+  numLineTick/.style={
+      draw,               % Draw tickmark node
+      minimum width=0pt,  % No width for the node box
+      minimum height=7pt, % Height of the tickmark
+      line cap=round,     % Rounded ends for ticks
+      inner sep=0pt,      % No inner padding
+      outer sep=2pt,      % Space around the tick
+      line width=0.35pt,  % Thickness of the tick line
+  },
 }
 
 % Macro to draw double number line with labeled ticks and labels at the left
@@ -357,8 +362,9 @@
   % #4: Top line label (placed at the left)
   % #5: Bottom mark labels (comma-separated)
   % #6: Bottom line label (placed at the left)
+
+   % Internal constants
   \def\numLineExtra{0.3cm} % Hardcoded extra space at the ends
-  \def\numLineMarkLabelYShift{2.0ex} % Hardcoded distance of mark label from line
   
   %%% TOP number line
   \begin{scope}
@@ -373,14 +379,11 @@
     % draw ticks as nodes (top-mark-n). 1st mark is (top-mark-1).
     \foreach \x in {1,...,#2}{%
         \node[numLineTick] (top-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
-        % \coordinate (top-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(#2-1)},0);
-        % \draw[numLineTickmark] ([yshift=-0.6ex]top-mark-\x) -- ([yshift=0.6ex]top-mark-\x) ;
     }
 
     % add mark labels
-    % anchor=mid aligns text vertically across nodes (default anchor depends on letters inside node)
     \foreach \num [count=\i] in #3 {
-        \node[tickLabel, yshift=\numLineMarkLabelYShift, anchor=mid] at (top-mark-\i) {\num};
+        \node[tickLabelAbove] at (top-mark-\i) {\num};
     }
   \end{scope}
 
@@ -397,15 +400,11 @@
     % draw ticks as nodes (bot-mark-n). 1st mark is (bot-mark-1).
     \foreach \x in {1,...,#2}{%
         \node[numLineTick] (bot-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
-        % \coordinate (bot-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(#2-1)},0);
-        % \draw[numLineTickmark] ([yshift=-0.6ex]bot-mark-\x) -- ([yshift=0.6ex]bot-mark-\x) ;
     }
 
     % add mark labels
-    % anchor=mid aligns text vertically across nodes (default anchor depends on letters inside node)
-    % yshift is a bit more than in the top node, because anchor=mid is the base line of the text.
     \foreach \num [count=\i] in #5 {
-        \node[tickLabel, yshift=-1.2*\numLineMarkLabelYShift, anchor=mid] at (bot-mark-\i) {\num};
+        \node[tickLabelBelow] at (bot-mark-\i) {\num};
     }
   \end{scope}
 }
