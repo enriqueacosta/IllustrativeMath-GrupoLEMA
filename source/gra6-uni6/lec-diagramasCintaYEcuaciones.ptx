@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<subsection xml:id="gra6-uni6-secA-lec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="lec-diagramasCintaYEcuaciones" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <shorttitle>Lección 1</shorttitle>
 <title>Lección 1 -<nbsp/></title>
@@ -63,11 +63,11 @@
     <!-- <ul>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./graVV-uniXX-secYY-lecZZ-act1-mat.ptx"/>
+        <xi:include href="./act-RRRRRRRR-mat.ptx"/>
       </li>
       <li>
         <p>Actividad 2</p>
-        <xi:include href="./graVV-uniXX-secYY-lecZZ-act2-mat.ptx"/>
+        <xi:include href="./act-SSSSSSSS-mat.ptx"/>
       </li>
     </ul>  -->
   <!-- </paragraphs> -->
@@ -95,52 +95,52 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="gra6-uni6-secA-lec1-warm">
+<subsubsection xml:id="lec-diagramasCintaYEcuaciones-warm">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(5 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./gra6-uni6-secA-lec1-warm.ptx"/> 
+  <xi:include href="./warm-cualDiagramaEsCual.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="gra6-uni6-secA-lec1-act1">
+<subsubsection xml:id="lec-diagramasCintaYEcuaciones-act1">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./gra6-uni6-secA-lec1-act1.ptx"/> 
+  <xi:include href="./act-emparejarDiagramasCintaYEcuaciones.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="gra6-uni6-secA-lec1-act2">
+<subsubsection xml:id="lec-diagramasCintaYEcuaciones-act2">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./gra6-uni6-secA-lec1-act2.ptx"/> 
+  <xi:include href="./act-dibujarDiagramasParaEcuaciones.ptx"/> 
 
   <!-- si hay una pregunta reto, crear el siguiente archivo -reto.ptx (usar el template asociado) -->
-  <xi:include href="./gra6-uni6-secA-lec1-act2-reto.ptx"/>
+  <xi:include href="./act-dibujarDiagramasParaEcuaciones-reto.ptx"/>
 </subsubsection>
 
 
 <!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
-<subsubsection xml:id="gra6-uni6-secA-lec1-sintesis" component="profesor">
+<subsubsection xml:id="lec-diagramasCintaYEcuaciones-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(15 mins)</title>
@@ -163,19 +163,19 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
-<reading-questions xml:id="gra6-uni6-secA-lec1-cool"> 
+<reading-questions xml:id="lec-diagramasCintaYEcuaciones-cool"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>
 
 
   <!-- pdf imprimible -->
-  <url component="profesor" href="external/cools-pdf/graVV-uniXX-secYY-lecZZ-cool-standalone.pdf">
+  <url component="profesor" href="external/cools-pdf/cool-completaDiagramas-standalone.pdf">
     <custom ref="texto-link-pdf-cool-down"/>
   </url>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./gra6-uni6-secA-lec1-cool.ptx"/>
+  <xi:include href="./cool-completaDiagramas.ptx"/>
 </reading-questions>
 
 
@@ -183,7 +183,7 @@
 <!-- ================================================
   Resumen de la lección (se usa a partir de grado 6)
 ===================================================== -->
-<xi:include href="./gra6-uni6-secA-lec1-resumen.ptx"/>
+<xi:include href="./lec-diagramasCintaYEcuaciones-resumen.ptx"/>
 
 
 
@@ -191,7 +191,7 @@
 <!-- ======================================================================
   Problemas de práctica
 =========================================================================== -->
-<exercises xml:id="gra6-uni6-secA-lec1-ProblemasPractica"> 
+<exercises xml:id="lec-diagramasCintaYEcuaciones-ProblemasPractica"> 
   <title><custom ref="titulo-problemas-practica-lec"/></title>
   <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
   <introduction>
@@ -199,10 +199,10 @@
   </introduction>
 
   <!-- un archivo por problema -->
-  <xi:include href="./gra6-uni6-secA-lec1-PP1.ptx"/>
-  <xi:include href="./gra6-uni6-secA-lec1-PP2.ptx"/>
-  <xi:include href="./gra6-uni6-secA-lec1-PP3.ptx"/>
-  <xi:include href="./gra6-uni6-secA-lec1-PP4.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PP1.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PP2.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PP3.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PP4.ptx"/>
   <xi:include href="./gra6-uni5-secD-lec13-PPalign1.ptx"/>
   <xi:include href="./gra6-uni3-secD-lec14-PPalign1.ptx"/>
   <xi:include href="./gra6-uni3-secD-lec11-PPalign2.ptx"/>
