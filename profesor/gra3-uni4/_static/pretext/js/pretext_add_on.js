@@ -117,7 +117,17 @@ function permalinkDescription(elem) {
         }
         resultNodes = headerNode.getElementsByClassName("title");
         if (resultNodes.length > 0) {
-            titleStr = resultNodes[0].innerText;
+            for (let n of resultNodes[0].childNodes) {
+                if (n.nodeType == Node.TEXT_NODE) {
+                    titleStr += n.nodeValue;
+                } else if (n.nodeType == Node.ELEMENT_NODE) {
+                    if (n.classList.contains("process-math")) {
+                        titleStr += n.innerText.replace(/[\n\r]/g, "");
+                    } else {
+                        titleStr += n.innerText;
+                    }
+                }
+            }
         }
     }
     retStr = typeStr;
@@ -330,7 +340,10 @@ console.log("this is e", e);
                }
             }
             if(this_anchor) {
-                this_permalink_url = this_url + "#" + this_anchor;
+                this_file_name = this_url.split('/').pop().split(".")[0];
+                this_permalink_url = this_url;
+                if (this_file_name !== this_anchor)
+                    this_permalink_url += "#" + this_anchor;
                 const this_permalink_description = permalinkDescription(this_item);
                 this_permalink_container = document.createElement('div');
                 this_permalink_container.setAttribute('class', 'autopermalink');
@@ -532,20 +545,6 @@ window.addEventListener("load",function(event) {
      });
 });
 
-window.addEventListener("load",function(event) {
-       if(window.location.href.includes("/preview/")) {
-           console.log("            found preview", window.location.href);
-           $("main p[id], main article[id], main li[id], main section[id], main a[data-knowl]").each(function() {
-               var thisid = $(this).attr('id');
-               if( thisid && ( (thisid.length > 3 && !thisid.includes("-part") && !thisid.startsWith("fn-")) || thisid.startsWith("p-") ) ) {
-                 $( this ).addClass("newstuff");
-                 console.log("           found new", this)
-               }
-           })
-       } else {
-           console.log("not preview", window.location.href);
-       }
-});
 
 /*
 window.addEventListener("load",function(event) {

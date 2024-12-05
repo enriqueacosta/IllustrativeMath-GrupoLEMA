@@ -8,7 +8,7 @@
 %  - rsvg-convert (brew install librsvg) 
 %  - imageMagick (brew install imagemagick)
 %  - pdf2svg (brew install pdf2svg)
-\LoadClass[border=5pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.5 --format svg --output "\jobname.svg" "\jobname.svg" && convert -density 300 \infile\space "\jobname.png"}}}]{standalone}
+\LoadClass[border=2pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.5 --format svg --output "\jobname.svg" "\jobname.svg" && convert -density 300 \infile\space "\jobname.png"}}}]{standalone}
 
 
 \RequirePackage{pgf}       % for floating point arithmetic arithmetic
@@ -47,7 +47,7 @@
 
 
 % Separate scaling for each font size category
-% Default size is set at 12pt, and scaling goes from there.
+% Default size is set at 11pt, and scaling goes from there.
 \newcommand{\setscaledfonts}{
   \pgfmathparse{11 * \myscalefactor}\let\normalsizevalue\pgfmathresult
   \pgfmathparse{13 * \myscalefactor}\let\normalsizebaselineskip\pgfmathresult
@@ -157,9 +157,9 @@
 \tikzset{every picture/.append style={line width=0.75pt}}
 
 
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dot groups
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % inner sep = 0pt guarantees size is exactly minimum size (otherwise a space may be added, which grows with lower grades).
 \def\midDotSize{2ex} % en unidades [ex] para ajustarse al tamaño de la fuente
 \tikzstyle{midDot}=[circle, draw, fill=cyan!60, minimum size = \midDotSize, inner sep = 0pt] 
@@ -182,9 +182,9 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dice
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Adjust \diceDotSize to change the size of all the dice. The dice edge is computed from \diceDotSize
 % inner sep = 0pt guarantees size is exactly minimum size (otherwise a space may be added, which grows with lower grades).
 \def\diceDotSize{\midDotSize}
@@ -316,4 +316,95 @@
     % Header row thick border (column sep needs to be redefined so that all columns in table don't separate)
     row 1/.append style={column sep=-\tableHeaderLineWidth, nodes={line width=\tableHeaderLineWidth}},
   }
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Rectas numericas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  TikZ Styles for Number Lines
+\tikzset{
+  tickLabelAbove/.style={
+      font=\small,        % Font size for tick labels
+      anchor=mid,         % Baseline align text vertically across nodes
+      yshift=2.0ex,       % Vertical offset for labels above the line
+  },
+  tickLabelBelow/.style={
+      font=\small,        % Font size for tick labels
+      anchor=mid,         % Baseline align text vertically across nodes
+      yshift=-2.3ex,      % Slightly larger offset below the line to account 
+                          % for the label's baseline alignment (ensures visual balance).
+  },
+  numLineTick/.style={
+      draw,               % Draw tickmark node
+      minimum width=0pt,  % No width for the node box
+      minimum height=7pt, % Height of the tickmark
+      line cap=round,     % Rounded ends for ticks
+      inner sep=0pt,      % No inner padding
+      outer sep=2pt,      % Space around the tick
+      line width=0.35pt,  % Thickness of the tick line
+  },
+}
+
+% Macro to draw double number line with labeled ticks and labels at the left
+% Command creates several coordinates:
+% - Endpoints for top and bottom line: (top-leftEnd), (top-rightEnd), (bot-leftEnd), (bot-rightEnd)
+% - Nodes of top marks: (top-mark-1), ...,(top-mark-\numMarks)
+% - Nodes of bottom marks: (bot-mark-1), ...,(bot-mark-\numMarks)
+\newcommand{\doubleNumberLine}[6]{%
+  % Parameters:
+  % #1: Number line lengths (without the label)
+  % #2: Number of marks
+  % #3: Top mark labels (comma-separated)
+  % #4: Top line label (placed at the left)
+  % #5: Bottom mark labels (comma-separated)
+  % #6: Bottom line label (placed at the left)
+
+   % Internal constants
+  \def\numLineExtra{0.3cm} % Hardcoded extra space at the ends
+  
+  %%% TOP number line
+  \begin{scope}
+    % Coordinates of endpoints
+    \coordinate (top-leftEnd) at (0, 0);
+    \coordinate (top-rightEnd) at (#1, 0);
+
+    % Draw the number line and add label to the left
+    \draw[->, >=stealth] (top-leftEnd) -- (top-rightEnd);
+    \node[anchor=east, xshift=-1.5ex] at (top-leftEnd) {#4};
+
+    % draw ticks as nodes (top-mark-n). 1st mark is (top-mark-1).
+    \foreach \x in {1,...,#2}{%
+        \node[numLineTick] (top-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
+    }
+
+    % add mark labels
+    \foreach \num [count=\i] in #3 {
+        \node[tickLabelAbove] at (top-mark-\i) {\num};
+    }
+  \end{scope}
+
+  %%% Bottom number line
+  \begin{scope}[yshift=-6ex]
+    % Coordinates of endpoints
+    \coordinate (bot-leftEnd) at (0, 0);
+    \coordinate (bot-rightEnd) at (#1, 0);
+
+    % Draw the number line and add label to the left
+    \draw[->, >=stealth] (bot-leftEnd) -- (bot-rightEnd);
+    \node[anchor=east, xshift=-1.5ex] at (bot-leftEnd) {#6};
+
+    % draw ticks as nodes (bot-mark-n). 1st mark is (bot-mark-1).
+    \foreach \x in {1,...,#2}{%
+        \node[numLineTick] (bot-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
+    }
+
+    % add mark labels
+    \foreach \num [count=\i] in #5 {
+        \node[tickLabelBelow] at (bot-mark-\i) {\num};
+    }
+  \end{scope}
 }
