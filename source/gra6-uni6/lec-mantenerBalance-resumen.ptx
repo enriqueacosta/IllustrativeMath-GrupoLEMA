@@ -3,17 +3,68 @@
 <!--            Encabezado (no editar)              -->
 <!-- ********************************************** -->
 <!-- El resumen es un <references> que queda al mismo nivel de sub en el que está -->
-<references xml:id="lec-VVVVVVVV-resumen" xmlns:xi="http://www.w3.org/2001/XInclude">
+<references xml:id="lec-mantenerBalance-resumen" xmlns:xi="http://www.w3.org/2001/XInclude">
 <shorttitle><custom ref="resumen-leccion-titulo-corto"/></shorttitle>
 <shorttitle component="profesor"><custom ref="resumen-leccion-titulo-extraProfe-corto"/></shorttitle>
 <title><custom ref="resumen-leccion-titulo"/></title>
 <title component="profesor"><custom ref="resumen-leccion-titulo-extraProfe"/></title>
 <!-- ********************************************** -->
 
+<p>
+  Un colgador está balanceado cuando el peso en ambos lados es el mismo. Podemos cambiar los pesos y el colgador se mantendrá balanceado siempre y cuando el cambio sea igual en ambos lados. Por ejemplo, si se agregan 2 libras a cada lado de un colgador balanceado, este se mantendrá balanceado. Al quitar la mitad del peso de cada lado, también se mantendrá balanceado.
+</p>
 
+<p>
+  Una ecuación se puede asociar con un colgador balanceado. Podemos cambiar la ecuación, pero para que una ecuación verdadera siga siendo verdadera, debe hacerse lo mismo a los dos lados del signo igual. Si sumamos o restamos el mismo número a cada lado, o si multiplicamos o dividimos por la misma cantidad a cada lado, la ecuación nueva seguirá siendo verdadera.
+</p>
 
-<p>En esta lección, [@@@@@@@@@].</p>
+<p>
+  Esta forma de pensar nos puede ayudar a encontrar soluciones a ecuaciones. En vez de revisar diferentes valores, podemos pensar en restar la misma cantidad de cada lado o en dividir cada lado entre el mismo número.
+</p>
 
+<image source="png-source/6-6.6.A3.LessonSummary.png" width="100%">
+    <shortdescription>Dos colgadores balanceados, A y B.</shortdescription>
+</image>
 
+<sbsgroup widths="50% 50%" valign="middle">
+  <sidebyside>
+    <p>El Diagrama A se puede representar con la ecuación <m>3x = 11</m>.</p>
+    <p>El Diagrama B se puede representar con la ecuación <m>11 = y + 5</m>.</p>
+  </sidebyside>
+
+  <sidebyside>
+    <p>
+      Si partimos el <m>11</m> en <m>3</m> partes iguales, cada parte tendrá el mismo peso que un bloque con una <m>x</m>.
+    </p>
+    <p>
+      Si quitamos un peso de <m>5</m> de cada lado del colgador, este seguirá balanceado.
+    </p>
+  </sidebyside>
+    
+  <sidebyside>
+    <p>
+      Separar cada lado del colgador en <m>3</m> partes iguales es lo mismo que dividir entre <m>3</m> cada lado de la ecuación.
+    </p>
+    <p>
+      Quitar <m>5</m> de cada lado del colgador es lo mismo que restar <m>5</m> a cada lado de la ecuación.
+    </p>
+  </sidebyside>
+
+  <sidebyside>
+    <ul>
+      <li><p><m>3x</m> dividido entre <m>3</m> es igual a <m>x</m>.</p></li>
+      <li><p><m>11</m> dividido entre <m>3</m> es <m>\frac{11}{3}</m>.</p></li>
+      <li><p>Si <m>3x = 11</m> es verdadera, entonces <m>x = \frac{11}{3}</m> es verdadera.</p></li>
+      <li><p>La solución de <m>3x = 11</m> es <m>\frac{11}{3}</m>.</p></li>
+    </ul>
+
+    <ul>
+      <li><p><m>11 - 5</m> es <m>6</m>.</p></li>
+      <li><p><m>y + 5 - 5</m> es <m>y</m>.</p></li>
+      <li><p>Si <m>11 = y + 5</m> es verdadera, entonces <m>6 = y</m> es verdadera.</p></li>
+      <li><p>La solución de <m>11 = y + 5</m> es <m>6</m>.</p></li>
+    </ul>
+  </sidebyside>
+</sbsgroup>
 
 </references>
