@@ -765,7 +765,7 @@ function handleWW(ww_id, action) {
 				ww_container.prepend(iframe);
 			}
 
-			iFrameResize({ checkOrigin: false, scrolling: 'omit', heightCalculationMethod: 'min' }, iframe);
+			iFrameResize({ checkOrigin: false, scrolling: 'omit', heightCalculationMethod: 'lowestElement' }, iframe);
 
 			iframe.addEventListener('load', () => {
 				// Set up form submission from inside the iframe.
@@ -838,11 +838,6 @@ function WWshowCorrect(ww_id, answers) {
 		const span_id = `${ww_id}-${name}-correct`;
 
 		if (input.type == 'text' && answers[name] && !(iframe.contentDocument.getElementById(span_id))) {
-			const input_id = input.id;
-			const mq_span = iframe.contentDocument.getElementById(`mq-answer-${input_id}`);
-			if (mq_span) {
-				mq_span.style.display = 'none';
-			}
 			const feedbackButton = iframe.contentDocument.getElementById(`${ww_id}-${name}-feedback-button`);
 			if (feedbackButton) {
 				iframe.contentWindow.bootstrap.Popover.getInstance(feedbackButton)?.hide();
@@ -980,6 +975,7 @@ function translateHintSol(ww_id, body_div, ww_domain, b_ptx_has_hint, b_ptx_has_
 	// also if hint/sol were missing from the static version, we want these removed here
 
 	const hintSols = body_div.querySelectorAll('.knowl[data-type="hint"],.knowl[data-type="solution"]');
+	let idCount = 0;
 	let solutionlikewrapper;
 	for (const hintSol of hintSols) {
 		const hintsolp = hintSol.parentNode;
@@ -998,26 +994,25 @@ function translateHintSol(ww_id, body_div, ww_domain, b_ptx_has_hint, b_ptx_has_
 			(hintSolType == 'hint' && !b_ptx_has_hint))
 			continue;
 
-		const knowlDetails = document.createElement('details');
-		knowlDetails.classList.add(hintSolType);
-		knowlDetails.classList.add('solution-like');
-		knowlDetails.classList.add('born-hidden-knowl');
-
-		const knowlSummary = document.createElement('summary');
-		const summaryLabel = document.createElement('span');
-		summaryLabel.classList.add('type');
-		summaryLabel.innerHTML = hintSolType == 'hint' ? hint_label_text : solution_label_text;
-		knowlSummary.appendChild(summaryLabel);
-		knowlDetails.appendChild(knowlSummary);
-
-		const knowlContents = document.createElement('div');
-		knowlContents.classList.add(hintSolType);
-		knowlContents.classList.add('solution-like');
-		knowlContents.innerHTML = hintsolp.firstElementChild.dataset.knowlContents;
-		knowlDetails.appendChild(knowlContents);
-
-		adjustSrcHrefs(knowlContents, ww_domain)
-		solutionlikewrapper.appendChild(knowlDetails);
+		const anchor = document.createElement('a');
+		anchor.className = `id-ref ${hintSolType}-knowl`;
+		anchor.dataset.knowl = '';
+		anchor.dataset.refid = `hk-${hintSolType}-${ww_id}-${idCount}`;
+		const label = document.createElement('span');
+		label.classList.add('type');
+		anchor.appendChild(label);
+		label.innerHTML = hintSolType == 'hint' ? hint_label_text : solution_label_text;
+		const hkdiv = document.createElement('div');
+		hkdiv.classList.add('hidden-content', 'tex2jax_ignore');
+		hkdiv.id = `hk-${hintSolType}-${ww_id}-${idCount}`;
+		const divdiv = document.createElement('div');
+		divdiv.classList.add(hintSolType, 'solution-like');
+		hkdiv.appendChild(divdiv);
+		divdiv.innerHTML = hintsolp.firstElementChild.dataset.knowlContents;
+		adjustSrcHrefs(divdiv, ww_domain)
+		solutionlikewrapper.appendChild(anchor);
+		anchor.parentNode.insertBefore(hkdiv, anchor.nextSibling);
+		++idCount;
 	}
 	for (const hintSol of hintSols) {
 		hintSol.parentNode?.remove();
