@@ -118,9 +118,17 @@
 \RequirePackage{amsmath}
 \RequirePackage{xcolor}
 
+
+
+% Sans serif font
+% \renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[sfdefault]{roboto} 
+
+% Sans serif font for math
 % \RequirePackage{sansmath}
 \RequirePackage{sfmath}
-\renewcommand{\familydefault}{\sfdefault}
+% \RequirePackage{mathastext}
+
 
 % \RequirePackage[fontsize=10pt]{fontsize}
 % \gradeFontSize
