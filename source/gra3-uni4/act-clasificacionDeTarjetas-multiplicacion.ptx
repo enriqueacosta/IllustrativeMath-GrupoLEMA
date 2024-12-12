@@ -4,14 +4,46 @@
 
 <title>Clasificación de tarjetas: Multiplicación</title>
 
-<statement>
+<statement component="no-libroTrabajo">
   <p>Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:</p>
+  <image source="tikz-source/clasificacionTarjetas-mult">
+    <shortdescription>tabla con encabezado "se lo sabe de inmediato", "lo puede encontrar rápidamente", "todavía no se lo sabe". Segunda fila vacía.</shortdescription>
+  </image>
+  <p>Anota cinco expresiones de multiplicación que vas a practicar.</p>
+  <aside component="web">
+     <p>Materiales en el libro de trabajo o descargar acá:</p>
+     <p>
+      <url href="external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf">Tarjetas para imprimir y recortar</url>
+      </p>
+      <p><url href="external/blm/tikz-source/clasificacionTarjetas-mult-blm-hojaRegistro.pdf">Hoja de registro</url></p>
+  </aside>
+</statement>
+<statement component="libroTrabajo">
+  <p> @@@@@@ OPCIÓN 1 @@@@@@: dejar acá nota que hay que insertar con pdfpages los BLMS: clasificacionTarjetas-mult-blm-hojaRegistro.pdf y clasificacionTarjetas-multiplicacion-blm.pdf. Usar <c>\includepdf[pages=-,pagecommand={}]</c> para que los pdf hereden los encabezados, números de página, etc. Habría que dejar acá un mensaje con los commandos que hay que ejecutar en el latex para que estos se ajusten en paginación. Esos includepdf tienen que estar afuera del tcolorbox de activity, porque no funciona bien con eso. Habría que dejar un mensaje para el estudiante diciendo que las páginas que siguen son para esa actividad.</p>
+  <p> @@@@@@ OPCIÓN 2 @@@@@: Crear pseudo-código pretext que se incluye a continuación, que incluye partes que se usan para crear los blm en pdf, y que habría que arreglar a mano en la paginación del libro de trabajo.</p>
+  <p>Tarjetas para recortar:</p>
+  <p>@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.</p>
+  <image source="blm/tikz-source/clasificacionTarjetas-multiplicacion-tarjetas1">
+    <shortdescription></shortdescription>
+  </image>
+  <p>Tarjetas para recortar:</p>
+  <p>@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.</p>
+  <image source="blm/tikz-source/clasificacionTarjetas-multiplicacion-tarjetas2">
+    <shortdescription></shortdescription>
+  </image>
+  <p>@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.</p>
+  <p>Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:</p>
+  <image source="tikz-source/clasificacionTarjetas-mult-paraBLM">
+    <shortdescription>tabla con encabezado "se lo sabe de inmediato", "lo puede encontrar rápidamente", "todavía no se lo sabe" y segunda fila vacía.</shortdescription>
+  </image>
+  <p>Anota cinco expresiones de multiplicación que vas a practicar.</p>
   <ol>
-    <li>se lo sabe de inmediato</li>
-    <li>lo puede encontrar rápidamente</li>
-    <li>todavía no se lo sabe</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
   </ol>
-  <p>Anota expresiones de multiplicación que vas a practicar.</p>
 </statement>
 
 <solution>

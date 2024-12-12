@@ -131,7 +131,7 @@
     fit,
     calc,
     intersections,
-    % positioning,
+    positioning,
     % arrows,
     % arrows.meta,
     % shapes.geometric,

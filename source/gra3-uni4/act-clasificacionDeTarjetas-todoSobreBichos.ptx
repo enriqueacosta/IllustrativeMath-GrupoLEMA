@@ -4,8 +4,10 @@
 
 <title>Clasificación de tarjetas: Todo sobre bichos</title>
 
-<statement>
-  <image source="png-source/v1 3.4.A5 Launch.png" width="50%">
+
+<!-- OJO - hay dos statement en distintos componentes acá -->
+<statement component="no-libroTrabajo">
+  <image source="png-source/v1 3.4.A5 Launch.png" width="40%">
     <shortdescription>Insectos</shortdescription>
     <description>
       <p>Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. <url href="https://en.wikipedia.org/wiki/File:Insect_collage.png">https://en.wikipedia.org</url>.</p>
@@ -14,26 +16,23 @@
   <ol>
     <li>
       <p>Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.</p>
-
-      <ol marker="(A)">      
-        <li>El grillo topo tiene unas patas especiales para cavar. Diez patas especiales pertenecen a 5 grillos topo. ¿Cuántas patas especiales tiene cada grillo topo?</li>
-        <li>Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?</li>
-        
-        <li>Catorce antenas pertenecen a un grupo de abejas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?</li>
-        
-        <li>Hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?</li>
-        
-        <li>Treinta patas pertenecen a 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?</li>
-        
-        <li>En total, hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?</li>
-      </ol>
     </li>
 
     <li>
         Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.
     </li>
   </ol> 
-
+  <p component="web">
+    <url href="external/blm/tikz-source/todoSobreBichos-blm.pdf">Archivo para imprimir y recortar.</url>
+  </p>
+</statement>
+<statement component="libroTrabajo"> 
+  <p>
+    Tarjetas para recortar:
+  </p>
+  <image source="blm/tikz-source/todoSobreBichos-tarjetas">
+    <shortdescription></shortdescription>
+  </image>
 </statement>
 
 <solution>
