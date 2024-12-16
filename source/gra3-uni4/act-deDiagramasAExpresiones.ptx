@@ -4,14 +4,14 @@
 
 <title>De diagramas a expresiones</title>
 
-<statement component="no-libroTrabajo" >
-  <sidebyside widths="40% 50%">
+<statement>
+  <sidebyside component="no-libroTrabajo" widths="40% 50%">
     <p>Andre y Elena están hallando el área de este rectángulo.</p>
     <image source="svg-source/tikz-file-153043">
       <shortdescription>Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.</shortdescription>
     </image>
   </sidebyside>
-  <sbsgroup widths="27% 35% 25%" margins="0% 0%">
+  <sbsgroup component="no-libroTrabajo" widths="27% 35% 25%" margins="0% 0%">
     <sidebyside>
       <p>Andre escribe <m>6\times 3</m>.</p>
       <stack>
@@ -50,7 +50,7 @@
   </sbsgroup>
 
   <ol>
-    <li>
+    <li component="no-libroTrabajo">
       <p>Discute con un compañero:</p>
       <ol>
         <li>¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?</li>
@@ -65,7 +65,7 @@
       </image>
       <p>Podemos encontrar su área hallando <m>4 \times 9</m>.</p>
       <aside component="web">
-        <p>Copia para colorear en el libro de trabajo o <url href="external/blm/tikz-source/diagramasAExpresiones-blm.pdf">descarga para imprimir</url></p>
+        <p>Copia para colorear en el libro de trabajo o <url href="external/act-pdf/act-deDiagramasAExpresiones.pdf">descarga para imprimir</url></p>
       </aside>
       <ol>
         <li>
@@ -75,14 +75,6 @@
       </ol>
     </li>
   </ol>
-</statement>
-<statement component="libroTrabajo">
-  <p>
-    @@@@@ Incluir BLM: @@@@@: Archivo diagramasAExpresiones-blm.pdf. Hacer un clip grande, para que no haya tanto espacio abajo, y para que no salga el título. Ejemplo, pero ajustar el clip y el width!
-    <pre>
-      \includegraphics[page=1, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/diagramasAExpresiones-blm.pdf}
-    </pre>
-  </p>
 </statement>
 
 <solution>

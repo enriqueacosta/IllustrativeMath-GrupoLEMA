@@ -1,14 +1,19 @@
 """
 Enrique Acosta, 2024
-Script para extraer un bloque \begin{activity} específico de un archivo LaTeX basado en un id único y generar un archivo .tex independiente con el contenido de la actividad. 
+Script para extraer bloque \begin{activity} de output LaTeX de PreTeXt con xml:id dado. 
+También reemplaza todos los \includegraphics[width=\linewidth] por \includegraphics[max width=\linewidth, center] para las imágenes.
+Output es 
+-  archivo .tex que incuye actividad y preambulo LaTeX para compilar y 
+-  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
+El preámbulo con el estilo está aparte, en archivo assets/defs-ptxLEMA-latex-standalone.tex, para que sea más modular el sistema.
 Sirve para hacer actividades standalone del tex del libroTrabajo con whitespacing.
-Uso: python crearActividad.py <ruta-archivo> <id-actividad> <tamaño-fuente>
 
-Pendiente: posiblemente cambiar los "includegraphics[width=\line width]" a  "includegraphics[max width=\line width, center]", porque en este momento toca ajustar esto a mano.
+Uso: python extractActivity-latexStandalone.py <ruta-archivo> <id-actividad> <tamaño-fuente>
 """
 
 import sys
 import re
+import subprocess
 
 def extract_activity(file_path, activity_id, font_size):
     try:
@@ -23,6 +28,7 @@ def extract_activity(file_path, activity_id, font_size):
 
         match = pattern.search(content)
         if match:
+            # store full match (group(1) gives the inner match, without the \begin{activity}...\end{activity} lines)
             texto_actividad = match.group(0).strip()
             # Save the output to a file named based on the activity_id
             output_file_name = f"{activity_id}.tex"
@@ -32,6 +38,28 @@ def extract_activity(file_path, activity_id, font_size):
                 output_file.write("\\begin{document}\n")
                 output_file.write(texto_actividad)
                 output_file.write("\n\\end{document}")
+            
+            # Post-processing:
+            # Replace \includegraphics[width=\linewidth] with \includegraphics[max width=\linewidth, center]
+            with open(output_file_name, "r") as output_file:
+                file_content = output_file.read()
+            modified_content = re.sub(
+                r"\\includegraphics\[width=\\linewidth\]",
+                r"\\includegraphics[max width=\\linewidth, center]",
+                file_content
+            )
+            # Write the modified content back to the file
+            with open(output_file_name, "w") as output_file:
+                output_file.write(modified_content)
+
+            # Run pdflatex twice on the file
+            try:
+                subprocess.run(["pdflatex", output_file_name], check=True)
+                subprocess.run(["pdflatex", output_file_name], check=True)
+            except subprocess.CalledProcessError as e:
+                print(f"Error running pdflatex: {e}")
+                return
+            
             print(f"Output saved to '{output_file_name}'")
         else:
             print(f"No activity found with id '{activity_id}'")

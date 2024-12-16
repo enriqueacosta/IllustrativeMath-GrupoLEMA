@@ -4,35 +4,44 @@
 
 <title>Clasificación de tarjetas: Todo sobre bichos</title>
 
-
-<!-- OJO - hay dos statement en distintos componentes acá -->
-<statement component="no-libroTrabajo">
-  <image source="png-source/v1 3.4.A5 Launch.png" width="40%">
+<statement>
+  <image component="no-libroTrabajo" source="png-source/v1 3.4.A5 Launch.png" width="40%">
     <shortdescription>Insectos</shortdescription>
     <description>
       <p>Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. <url href="https://en.wikipedia.org/wiki/File:Insect_collage.png">https://en.wikipedia.org</url>.</p>
     </description>
   </image>
+  <aside component="web">
+    <p>Tarjetas para recortar en el libro de trabajo, o <url href="external/act-pdf/act-clasificacionDeTarjetas-todoSobreBichos.pdf">descargar acá</url>.
+    </p>
+  </aside>
   <ol>
     <li>
       <p>Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.</p>
     </li>
 
     <li>
-        Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.
+        <p>Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.</p>
+        <ol component="libroTrabajo" marker="A.">
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+        </ol>
     </li>
   </ol> 
-  <p component="web">
-    <url href="external/blm/tikz-source/todoSobreBichos-blm.pdf">Archivo para imprimir y recortar.</url>
+  <p component="libroTrabajo">
+    @@@@@ OJO @@@@: poner las tarjetas en su propia página para recortar con un \cleardoublepage. Es posible que toque sacar los \cleardoublepage y la instertada afuera del environment de la actividad.
   </p>
-</statement>
-<statement component="libroTrabajo"> 
-  <p>
+  <p component="libroTrabajo">
     Tarjetas para recortar:
   </p>
-  <image source="blm/tikz-source/todoSobreBichos-tarjetas">
+  <image component="libroTrabajo" source="tikz-source/todoSobreBichos-tarjetas">
     <shortdescription></shortdescription>
   </image>
+
 </statement>
 
 <solution>
@@ -46,7 +55,7 @@
     </li>
     <li>
       <p>Expresiones:
-      <ol marker="(A)">      
+      <ol marker="A.">      
         <li><m>10\div 5</m></li>
         <li><m>8\div 2</m></li>
         <li><m>14\div 2</m></li>
