@@ -1,1 +1,1 @@
-Solo las primeras 9 lecciones
+Solo las primeras 2 secciones

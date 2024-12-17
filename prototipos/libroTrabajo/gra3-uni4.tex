@@ -1,6 +1,6 @@
 %********************************************%
 %*       Generated from PreTeXt source      *%
-%*       on 2024-12-11T23:02:08-05:00       *%
+%*       on 2024-12-15T21:24:17-05:00       *%
 %*   A recent stable commit (2022-07-01):   *%
 %* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
 %*                                          *%
@@ -33,7 +33,7 @@
 %% Color support, xcolor package
 %% Always loaded, for: add/delete text, author tools
 %% Here, since tcolorbox loads tikz, and tikz loads xcolor
-\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames,table}{xcolor}
 \usepackage{xcolor}
 %% begin: defined colors, via xcolor package, for styling
 %% end: defined colors, via xcolor package, for styling
@@ -69,10 +69,12 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \usetikzlibrary{calc}
 %% We use some more exotic tcolorbox keys to restore indentation to parboxes
 \tcbuselibrary{hooks}
-%% Save default paragraph indentation for use later, when adjusting parboxes
+%% Save default paragraph indentation and parskip for use later, when adjusting parboxes
 \newlength{\normalparindent}
+\newlength{\normalparskip}
 \AtBeginDocument{\setlength{\normalparindent}{\parindent}}
-%% Hyperref should be here, but likes to be loaded late
+\AtBeginDocument{\setlength{\normalparskip}{\parskip}}
+\newcommand{\setparstyle}{\setlength{\parindent}{\normalparindent}\setlength{\parskip}{\normalparskip}}%% Hyperref should be here, but likes to be loaded late
 %%
 %% Inline math delimiters, \(, \), need to be robust
 %% 2016-01-31:  latexrelease.sty  supersedes  fixltx2e.sty
@@ -182,8 +184,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% end:   xelatex main font ("font-xelatex-main" template)
 %% begin: xelatex mono font ("font-xelatex-mono" template)
 %% (conditional on non-trivial uses being present in source)
-\IfFontExistsTF{Inconsolatazi4-Regular.otf}{}{\GenericError{}{The font "Inconsolatazi4-Regular.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
-\IfFontExistsTF{Inconsolatazi4-Bold.otf}{}{\GenericError{}{The font "Inconsolatazi4-Bold.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
+\IfFontExistsTF{Inconsolatazi4-Regular.otf}{}{\GenericError{}{The font "Inconsolatazi4-Regular.otf" requested by PreTeXt output processed by the  xelatex  executable is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts, or perhaps try using  pdflatex  as a test.}{}}
+\IfFontExistsTF{Inconsolatazi4-Bold.otf}{}{\GenericError{}{The font "Inconsolatazi4-Bold.otf" requested by PreTeXt output processed by the  xelatex  executable is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts, or perhaps try using  pdflatex  as a test.}{}}
 \usepackage{zi4}
 \setmonofont[BoldFont=Inconsolatazi4-Bold.otf,StylisticSet={1,3}]{Inconsolatazi4-Regular.otf}
 %% end:   xelatex mono font ("font-xelatex-mono" template)
@@ -466,11 +468,13 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Length may compress for output to fit in one line
 \newlength{\fillinmaxwidth}
 \newlength{\fillincontract}
+\newlength{\charmaxwidth}\setlength{\charmaxwidth}{0.5em}
+\newlength{\charminwidth}\setlength{\charminwidth}{0.1em}
 \newlength{\fillinheight}
 \newcommand{\fillintext}[1]{%
-\setlength{\fillinmaxwidth}{#1em*\real{0.5}}%
-\setlength{\fillincontract}{#1em*\real{0.5}*\real{0.2}}%
-\setlength{\fillinheight}{\heightof{\strut}+1.2pt}%
+\setlength{\fillinmaxwidth}{#1\charmaxwidth}%
+\setlength{\fillincontract}{#1\charminwidth}%
+\setlength{\fillinheight}{\baselineskip}\addtolength{\fillinheight}{1.2pt}%
 \strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
 }
 %% End: Semantic Macros
@@ -479,8 +483,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Hanging indent occupies a 5ex width slot prior to left margin
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parindent}{\normalparindent}} } }
-\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setparstyle} } }
+\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\space}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
 %% \linewidth, and are guaranteed to be positive and sum to 1.0
@@ -527,6 +531,10 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Footnote Numbering
 %% Specified by numbering.footnotes.level
 %% Global numbering, since numbering.footnotes.level = 0
+%% Fancy Verbatim for consoles, preformatted, code display, literate programming
+\usepackage{fancyvrb}
+%% Pre-formatted text, a peer of paragraphs
+\DefineVerbatimEnvironment{preformatted}{Verbatim}{}
 %% Multiple column, column-major lists
 \usepackage{multicol}
 %% More flexible list management, esp. for references
@@ -564,7 +572,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% configure hyperref's  \href{}{}  and  \nolinkurl  to match listings' inline verbatim
 \renewcommand\UrlFont{\small\ttfamily}
 %% For a print PDF, no surrounding boxes, so simply textcolor (but still active to preserve spacing)
-\hypersetup{hidelinks=true}
+\hypersetup{hidelinks}
 %% Less-clever names for hyperlinks are more reliable, *especially* for structural parts
 %% See comments in the code to learn more about the importance of this setting
 \hypersetup{hypertexnames=false}
@@ -607,13 +615,13 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% tcolorbox, with styles, for PROJECT-LIKE
 %%
 %% project: fairly simple numbered block/structure
-\tcbset{ projectstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setlength{\parindent}{\normalparindent}}, } }
+\tcbset{ projectstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
 %% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setlength{\parindent}{\normalparindent}}, } }
+\tcbset{ activitystyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
 %% exploration: fairly simple numbered block/structure
-\tcbset{ explorationstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setlength{\parindent}{\normalparindent}}, } }
+\tcbset{ explorationstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
 %%
 %% xparse environments for introductions and conclusions of divisions
@@ -628,8 +636,8 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \usetikzlibrary{decorations.markings}
 %% If tikz has been loaded, replace ampersand with \amp macro
 %% tcolorbox styles for sidebyside layout
-\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster equal height=rows, raster force size=false} }
-\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont} }
+\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster equal height=rows, raster force size=false, raster after skip=0.7\baselineskip} }
+\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont, before upper app={\setparstyle}} }
 %% Enviroments for side-by-side and components
 %% Necessary to use \NewTColorBox for boxes of the panels
 %% "newfloat" environment to squash page-breaks within a single sidebyside
@@ -668,7 +676,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \author{Adaptación del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}})\\
 \href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}}
 }
-\date{December 11, 2024}
+\date{December 15, 2024}
 \begin{document}
 %% bottom alignment is explicit, since it normally depends on oneside, twoside
 \raggedbottom
@@ -924,9 +932,43 @@ Escribamos expresiones de división y resolvamos problemas de “¿cuántos grup
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-escribamosExpresionesDivision-act1}
 \begin{activity}{Actividad}{Clasificación de tarjetas: Todo sobre bichos.}{act-clasificacionDeTarjetas-todoSobreBichos}%
+%
+\begin{enumerate}
+\item{}Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.%
+\item{}Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.%
+%
+\begin{enumerate}[label={\Alph*.}]
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\item{}\begin{image}{0}{1}{0}{-1.5\baselineskip}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
+%
+\end{enumerate}
+\end{enumerate}
+@@@@@ OJO @@@@: poner las tarjetas en su propia página para recortar con un \textbackslash{}cleardoublepage. Es posible que toque sacar los \textbackslash{}cleardoublepage y la instertada afuera del environment de la actividad.%
+\par
 Tarjetas para recortar:%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/blm/tikz-source/todoSobreBichos-tarjetas.pdf}
+\includegraphics[width=\linewidth]{external/tikz-source/todoSobreBichos-tarjetas.pdf}
 \end{image}%
 \end{activity}%
 \end{subsubsectionptx}
@@ -941,7 +983,7 @@ Tarjetas para recortar:%
 Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una expresión de división que represente esta situación.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
@@ -969,7 +1011,7 @@ Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo n
 \end{sbspanel}%
 \begin{sbspanel}{0.7}[center]%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una expresión de multiplicación que represente el arreglo.%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
 \item{}Escribe una ecuación de multiplicación que represente el arreglo.%
@@ -1015,7 +1057,7 @@ Encuentra la longitud de lado desconocida del rectángulo. Explica tu razonamien
 En cada caso, encuentra el número que hace que la ecuación sea verdadera.%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}\(\displaystyle 8 \times 5 = \underline{\hspace{1cm}}\)%
 \item{}\(\displaystyle 5 \times \underline{\hspace{1cm}} = 35\)%
 \item{}\(\displaystyle \underline{\hspace{1cm}} \times 2 = 18\)%
@@ -1026,7 +1068,7 @@ En cada caso, encuentra el número que hace que la ecuación sea verdadera.%
 Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuántos jugadores de voleibol hay en total?%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Haz un dibujo de la situación.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/4cm.pdf}
@@ -1046,7 +1088,7 @@ Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuá
 En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Hay 40 manzanas empacadas en cajas. Si hay 8 manzanas en cada caja, ¿cuántas cajas hay?%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/3cm.pdf}
@@ -1061,7 +1103,7 @@ En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 \begin{divisionexercise}{7}{}{}{gra3-uni4-secA-ProblemasPractica-9}%
 En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Hay 30 naranjas. Si se empacan en 5 bolsas con la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/4cm.pdf}
@@ -1074,7 +1116,7 @@ En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 \end{divisionexercise}%
 \begin{divisionexercise}{8}{}{}{gra3-uni4-secA-ProblemasPractica-10}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}10 personas van a cine en automóviles. En cada automóvil van dos personas. ¿Cuántos automóviles hay? Muestra cómo pensaste. Usa un dibujo o un diagrama.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/4cm.pdf}
@@ -1094,7 +1136,7 @@ En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.%
 Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos. ¿Cuántos pupitres hay en cada grupo?%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}¿Cuál expresión representa esta situación: \(20\div 4\) o \(20\div 5\)? Explica tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
@@ -1126,7 +1168,7 @@ B%
 La familia de Mai recolectó 40 libras de duraznos y los pusieron en bolsas. Pusieron 5 libras en cada bolsa.%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una expresión de división que represente la situación.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
@@ -1142,7 +1184,7 @@ La familia de Mai recolectó 40 libras de duraznos y los pusieron en bolsas. Pus
 Completa cada historia poniendo un número que tenga sentido en el espacio en blanco. Después, responde las preguntas. Dibuja un diagrama para resolver cada problema.%
 \par
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Mai tiene \textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{}\textunderscore{} calcomanías. Ella va a poner el mismo número de calcomanías en cada uno de sus 5 cuadernos. ¿Cuántas calcomanías habrá en cada cuaderno?%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/whitespace-tikz/4cm.pdf}
@@ -1206,7 +1248,7 @@ Conectemos ecuaciones de división con ecuaciones de multiplicación.%
 \begin{activity}{Actividad}{En el mercado agrícola.}{act-enElMercadoAgricola}%
 Completa cada fila. Prepárate para explicar tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/blm/tikz-source/enElMercadoAgricola-blm-tab.pdf}
+\includegraphics[width=\linewidth]{external/tikz-source/enElMercadoAgricola-blm-tab.pdf}
 \end{image}%
 \end{activity}%
 \end{subsubsectionptx}
@@ -1244,6 +1286,29 @@ Tyler escribió dos ecuaciones para este problema.%
 \begin{introduction}{}%
 Hagamos más conexiones entre la multiplicación y la división.%
 \end{introduction}%
+%
+%
+\typeout{************************************************}
+\typeout{Subsubsección  Actividad 1}
+\typeout{************************************************}
+%
+\begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-relacionarMultiplicacionYDivision-act1}
+\begin{activity}{Actividad}{Mesa redonda de división.}{act-mesaRedondaDeDivision}%
+En esta tabla hay 4 recuadros. Tu profesor te pedirá que dibujes o escribas algo en cada uno.%
+\par
+Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.%
+%
+\begin{enumerate}
+\item{}Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.%
+\item{}En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.%
+\item{}En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.%
+\item{}En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.%
+\end{enumerate}
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth,angle=90,origin=c]{external/blm/pdf-source/mesa-redonda-de-division.pdf}
+\end{image}%
+\end{activity}%
+\end{subsubsectionptx}
 %
 %
 \typeout{************************************************}
@@ -1333,24 +1398,6 @@ Consideremos los productos y cocientes que nos sabemos de inmediato o que podemo
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-relCocientesProductos-act1}
 \begin{activity}{Actividad}{Clasificación de tarjetas: Multiplicación.}{act-clasificacionDeTarjetas-multiplicacion}%
-@@@@@@ OPCIÓN 1 @@@@@@: dejar acá nota que hay que insertar con pdfpages los BLMS: clasificacionTarjetas-mult-blm-hojaRegistro.pdf y clasificacionTarjetas-multiplicacion-blm.pdf. Usar \mono{\textbackslash{}includepdf[pages=-,pagecommand=\{\}]} para que los pdf hereden los encabezados, números de página, etc. Habría que dejar acá un mensaje con los commandos que hay que ejecutar en el latex para que estos se ajusten en paginación. Esos includepdf tienen que estar afuera del tcolorbox de activity, porque no funciona bien con eso. Habría que dejar un mensaje para el estudiante diciendo que las páginas que siguen son para esa actividad.%
-\par
-@@@@@@ OPCIÓN 2 @@@@@: Crear pseudo-código pretext que se incluye a continuación, que incluye partes que se usan para crear los blm en pdf, y que habría que arreglar a mano en la paginación del libro de trabajo.%
-\par
-Tarjetas para recortar:%
-\par
-@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-tarjetas1.pdf}
-\end{image}%
-Tarjetas para recortar:%
-\par
-@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.%
-\begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-tarjetas2.pdf}
-\end{image}%
-@@@@ WARNING @@@@ : una imagen por página, y después vienen las instrucciones en nueva página.%
-\par
 Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/tikz-source/clasificacionTarjetas-mult-paraBLM.pdf}
@@ -1364,6 +1411,20 @@ Anota cinco expresiones de multiplicación que vas a practicar.%
 \item{}%
 \item{}%
 \end{enumerate}
+@@@@@@ INSERTAR BLM @@@@@@: clasificacionTarjetas-multiplicacion-blm.pdf. Son dos hojas y cada una debe ser una hoja para arrancar.\begin{preformatted}
+\cleardoublepage
+Tarjetas para recortar:
+\par
+\includegraphics[page=1, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf}
+
+\cleardoublepage
+Más tarjetas para recortar:
+\par
+\includegraphics[page=2, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf}
+\par
+\clearpage
+\end{preformatted}
+%
 \end{activity}%
 \end{subsubsectionptx}
 %
@@ -1453,7 +1514,7 @@ Prepárate para explicar tu razonamiento.%
 \begin{enumerate}
 \item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/blm/tikz-source/siSeQueEntoncesSeQueMult-BLM-tab.pdf}
+\includegraphics[width=\linewidth]{external/tikz-source/siSeQueEntoncesSeQueMult-BLM-tab.pdf}
 \end{image}%
 \item{}Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
 \end{enumerate}
@@ -1490,85 +1551,13 @@ Usemos rectángulos para explorar estrategias de multiplicación.%
 %
 %
 \typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{lec-estrategiasMultConRectangulos-warm}
-\begin{exploration}{Calentamiento}{Cuántos ves: Cuadrados.}{warm-cuantosVes-cuadrados}%
-¿Cuántos ves?\\
- ¿Cómo lo sabes?, ¿qué ves?%
-\begin{sidebyside}{3}{0}{0}{0.05}%
-\begin{sbspanel}{0.3}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147481.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141805.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.3}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147478.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{exploration}%
-\end{subsubsectionptx}
-%
-%
-\typeout{************************************************}
 \typeout{Subsubsección  Actividad 1}
 \typeout{************************************************}
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-estrategiasMultConRectangulos-act1}
 \begin{activity}{Actividad}{De diagramas a expresiones.}{act-deDiagramasAExpresiones}%
-\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
-\begin{sbspanel}{0.4}%
-Andre y Elena están hallando el área de este rectángulo.%
-\end{sbspanel}%
-\begin{sbspanel}{0.5}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153043.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{3}{0}{0}{0.065}%
-\begin{sbspanel}{0.27}%
-Andre escribe \(6\times 3\).%
-\end{sbspanel}%
-\begin{sbspanel}{0.35}%
-Él marca el rectángulo así:%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153044.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.25}%
-Después, Andre escribe:%
-\par
-\(2 \times (3 \times 3)\)\\
- \(2 \times 9 = 18\)%
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{3}{0}{0}{0.065}%
-\begin{sbspanel}{0.27}%
-Elena escribe \(3\times 6\).%
-\end{sbspanel}%
-\begin{sbspanel}{0.35}%
-Ella marca el rectángulo así:%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153045.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.25}%
-Después, Elena escribe:%
-\par
-\(3 \times (5 + 1)\)\\
- \((3 \times 5) + (3 \times 1)\)\\
- \(15+3\)\\
- \(18\)%
-\end{sbspanel}%
-\end{sidebyside}%
 %
 \begin{enumerate}
-\item{}Discute con un compañero:%
-%
-\begin{enumerate}
-\item{}¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?%
-\item{}¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?%
-\item{}¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?%
-\end{enumerate}
 \item{}Este es otro rectángulo.%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-153048.pdf}
@@ -1628,6 +1617,9 @@ En cada rectángulo:%
 \begin{enumerate}
 \item{}Escribe los dos factores que se pueden multiplicar para encontrar su área.%
 \item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{enumerate}
 \end{activity}%
 \end{subsubsectionptx}
@@ -1643,7 +1635,7 @@ En cada rectángulo:%
 \begin{sbspanel}{0.6}%
 El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Marca o colorea el rectángulo para mostrar que podemos escribir \(2 \times (3 \times 7)\) o \((6 \times 5) + (6 \times 2)\) para encontrar su área.%
 \item{}¿Cuál es el valor de \(6 \times 7\)? Explica o muestra tu razonamiento.%
 \end{enumerate}
@@ -1652,6 +1644,9 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-153042.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/3cm.pdf}
+\end{image}%
 \end{project}%
 \end{reading-questions-subsubsection}
 \end{subsectionptx}
@@ -1665,45 +1660,6 @@ El área de este rectángulo se puede encontrar hallando \(6 \times 7\).%
 \begin{introduction}{}%
 Usemos diferentes estrategias para encontrar el área de rectángulos sin cuadrícula.%
 \end{introduction}%
-%
-%
-\typeout{************************************************}
-\typeout{Subsubsección  Calentamiento}
-\typeout{************************************************}
-%
-\begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{gra3-uni4-secB-lec11-warm}
-\begin{exploration}{Calentamiento}{Cuál es diferente: Una multiplicación representada de muchas formas.}{warm-cualDiferente-representacionesMultiplicacion}%
-¿Cuál es diferente?%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-A%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153081.pdf}
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-B%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153082-scale13.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\begin{sidebyside}{2}{0.05}{0.05}{0.1}%
-\begin{sbspanel}{0.4}%
-C%
-\par
-%
-\begin{equation*}
-(3\times 2) + (3\times 4)
-\end{equation*}
-%
-\end{sbspanel}%
-\begin{sbspanel}{0.4}%
-D%
-\par
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153083.pdf}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{exploration}%
-\end{subsubsectionptx}
 %
 %
 \typeout{************************************************}
@@ -1735,6 +1691,9 @@ C%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-153086.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{activity}%
 \end{subsubsectionptx}
 %
@@ -1745,11 +1704,16 @@ C%
 %
 \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec11-act2}
 \begin{activity}{Actividad}{Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.}{act-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos}%
-Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.%
+Estas tarjetas para recortar tienen expresiones que representan áreas de rectángulos.%
 \par
 Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
 \par
 Si te ayuda, puedes dibujar rectángulos.%
+\par
+@@@@@ OJO @@@@@@: asegurarse que toda la actividad, incluidas tarjetas, queden en una misma página y que la pagina quede como hoja para arrancar (impar, con hoja en blanco atrás). \begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/blm/tikz-source/clasificacionTarjetas-expresionesDiferentesMismoRect-tarjetas.pdf}
+\end{image}%
+%
 \end{activity}%
 \end{subsubsectionptx}
 %
@@ -1763,7 +1727,7 @@ Si te ayuda, puedes dibujar rectángulos.%
 \begin{sidebyside}{2}{0}{0}{0}%
 \begin{sbspanel}{0.6}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Marca o colorea este rectángulo para mostrar una estrategia que ayude a encontrar su área.%
 \item{}Escribe una o más expresiones que representen cómo encuentras el área.%
 \end{enumerate}
@@ -1772,6 +1736,9 @@ Si te ayuda, puedes dibujar rectángulos.%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-158678-scale13.pdf}
 \end{sbspanel}%
 \end{sidebyside}%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{project}%
 \end{reading-questions-subsubsection}
 \end{subsectionptx}
@@ -1784,33 +1751,49 @@ Si te ayuda, puedes dibujar rectángulos.%
 \begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección B}{}{Problemas de práctica}{}{}{gra3-uni4-secB-ProblemasPractica}
 \begin{divisionexercise}{1}{}{}{gra3-uni4-secB-ProblemasPractica-3}%
 Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones \(35 ÷ 7 = {?}\) y \({?} × 7 = 35\) representan la situación.%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{divisionexercise}%
 \begin{divisionexercise}{2}{}{}{gra3-uni4-secB-ProblemasPractica-4}%
 Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?%
 \par
 Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{divisionexercise}%
 \begin{divisionexercise}{3}{}{}{gra3-uni4-secB-ProblemasPractica-5}%
+En cada caso, escribe un hecho de división que te sepas y que esté relacionado con la ecuación de multiplicación.%
 %
-\begin{enumerate}[label=(\alph*)]
-\item{}Resalta partes del diagrama para mostrar la expresión \((5 \times 7) + (2 \times 7)\)%
+\begin{enumerate}[label={(\alph*)}]
+\item{}\(\displaystyle 8 \times 5 = 40\)%
 \begin{image}{0}{1}{0}{}%
-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151677-scale13.pdf}
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
 \end{image}%
-\item{}Explica cómo podrías usar el diagrama para calcular \(7\times 7\).%
+\item{}\(\displaystyle 2 \times 9 = 18\)%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/1cm.pdf}
+\end{image}%
 \end{enumerate}
 \end{divisionexercise}%
 \begin{divisionexercise}{4}{}{}{gra3-uni4-secB-ProblemasPractica-6}%
 Lin sabe que \(8 \times 5 = 40\). Explica cómo puede usar este hecho para encontrar \(8 \times 4\).%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{divisionexercise}%
 \begin{divisionexercise}{5}{}{}{gra3-uni4-secB-ProblemasPractica-7}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Resalta partes del diagrama para mostrar la expresión \((5 \times 7) + (2 \times 7)\)%
 \begin{image}{0}{1}{0}{}%
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-151677-scale13.pdf}
 \end{image}%
 \item{}Explica cómo podrías usar el diagrama para calcular \(7\times 7\).%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/2cm.pdf}
+\end{image}%
 \end{enumerate}
 \end{divisionexercise}%
 \begin{divisionexercise}{6}{}{}{gra3-uni4-secB-ProblemasPractica-8}%
@@ -1826,9 +1809,15 @@ Marca o colorea el rectángulo para mostrar una estrategia que te permita encont
 \begin{divisionexercise}{7}{Exploración.}{}{gra3-uni4-secB-ProblemasPractica-9}%
 Noah encuentra \(9 \times 8\) calculando \((10 \times 8) - (1 \times 8)\).%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Haz un dibujo que muestre por qué funciona el cálculo de Noah.%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/6cm.pdf}
+\end{image}%
 \item{}Usa el método de Noah para calcular \(9\times 8\).%
+\begin{image}{0}{1}{0}{}%
+\includegraphics[width=\linewidth]{external/whitespace-tikz/3cm.pdf}
+\end{image}%
 \end{enumerate}
 \end{divisionexercise}%
 \end{exercises-subsection}
@@ -2288,7 +2277,7 @@ Multipliquemos números que son más grandes que 20.%
 \begin{exploration}{Calentamiento}{Conversación numérica: Tres multiplicado por algunos números.}{warm-numTalk-3MultiplicadoPor}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label={\Alph*}]
 \item{}\(\displaystyle 3\times 10\)%
 \item{}\(\displaystyle 3\times 20\)%
 \item{}\(\displaystyle 3\times 50\)%
@@ -2503,7 +2492,7 @@ Usemos las cuatro operaciones para resolver problemas.%
 \begin{exploration}{Calentamiento}{Verdadero o falso: Multiplicar por 10.}{warm-verdaderoFalso-multiplicarPor10}%
 En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
 %
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label={\Alph*}]
 \item{}\(\displaystyle 2 \times 40 = 2 \times 4 \times 10\)%
 \item{}\(\displaystyle 2 \times 40 = 8 \times 10\)%
 \item{}\(\displaystyle 3 \times 50 = 15 \times 10\)%
@@ -2561,7 +2550,7 @@ En cada problema:%
 \begin{project}{Actividad de cierre}{Los globos de Andre.}{cool-globosGruposIguales}%
 Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.%
 \item{}Resuelve el problema. Explica o muestra cómo razonaste.%
 \end{enumerate}
@@ -2577,7 +2566,7 @@ Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una
 \begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección C}{}{Problemas de práctica}{}{}{gra3-uni4-secC-ProblemasPractica}
 \begin{divisionexercise}{1}{}{}{gra3-uni4-secC-ProblemasPractica-3}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}¿Cuántas decenas hay en 50?%
 \item{}¿Cuántas decenas hay en \(7 \times 50\)? Explica cómo razonaste.%
 \item{}¿Cuál es el valor de \(7 \times 50\)? Explica cómo razonaste.%
@@ -2593,7 +2582,7 @@ Hay 4 mesas para el almuerzo. Hay 12 estudiantes en cada mesa. ¿Cuántos estudi
 \end{sbspanel}%
 \begin{sbspanel}{0.6}[center]%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}¿Qué representan el 60 y el 24 del diagrama?%
 \item{}Explica cómo usar el diagrama para calcular \(14 \times 6\)%
 \end{enumerate}
@@ -2606,7 +2595,7 @@ En el mes hubo 14 días de escuela. Cada día hubo 7 horas de escuela. ¿Cuánta
 \begin{divisionexercise}{5}{}{}{gra3-uni4-secC-ProblemasPractica-7}%
 Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}\(\displaystyle 2 \times 47\)%
 \item{}\(\displaystyle 3 \times 25\)%
 \end{enumerate}
@@ -2617,7 +2606,7 @@ Una cuerda tiene 640 pulgadas de longitud. Andre corta 5 pedazos de cuerda, cada
 \begin{divisionexercise}{7}{Exploración.}{}{gra3-uni4-secC-ProblemasPractica-9}%
 Esta es la estrategia de Mai para calcular \(4 \times 21\): “Primero duplico 21 y eso da 42. Luego duplico 42 y eso da 84”.%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Explica por qué la estrategia de Mai funciona.%
 \item{}Usa la estrategia de Mai para encontrar \(4 \times 23\).%
 \end{enumerate}
@@ -2627,7 +2616,7 @@ Esta es la estrategia de Mai para calcular \(4 \times 21\): “Primero duplico 2
 \includegraphics[width=\linewidth]{external/svg-source/tikz-file-151679-scale13.pdf}
 \end{image}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Haz una lista de los números menores que 20 que no aparecen en la tabla de multiplicar.%
 \item{}¿Qué tienen en común esos números?%
 \item{}Escoge uno de esos números y cuenta y separa ese número de objetos. ¿Puedes hacer un arreglo con los objetos?%
@@ -2644,7 +2633,7 @@ Mira dos diagramas diferentes que corresponden a la misma expresión de multipli
 \end{sbspanel}%
 \end{sidebyside}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}¿Qué expresión de multiplicación representan los diagramas?%
 \item{}¿Puedes mostrar una tercera forma de representar la misma expresión de multiplicación?%
 \item{}¿Cuál es el valor de la expresión?%
@@ -2783,7 +2772,7 @@ Démosle sentido a las representaciones de la división.%
 \begin{exploration}{Calentamiento}{Verdadero o falso: Unidades, decenas, veintenas.}{warm-verdaderoFalso-unidadesDecenasVeintenas}%
 En cada caso, decide si la afirmación es verdadera o falsa. Prepárate para explicar tu razonamiento.%
 %
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label={\Alph*}]
 \item{}\(\displaystyle 4 \times 10 = 40 \times 1\)%
 \item{}\(\displaystyle 4 \times 20 = 4 \times 2 \times 10\)%
 \item{}\(\displaystyle 8 \times 20 = 8 \times 2 \times 1\)%
@@ -2892,7 +2881,7 @@ Usemos diferentes estrategias para dividir.%
 \begin{exploration}{Calentamiento}{Conversación numérica: Multiplicación y división.}{warm-numTalk-multYDiv}%
 Encuentra mentalmente el valor de cada expresión.%
 %
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label={\Alph*}]
 \item{}\(\displaystyle 3\times 5\)%
 \item{}\(\displaystyle 6\times 5\)%
 \item{}\(\displaystyle 10\times 5\)%
@@ -3010,7 +2999,7 @@ Representemos problemas de dos pasos utilizando ecuaciones con una letra que rep
  ¿Qué te preguntas?%
 \par
 \begin{quote}%
-Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.\end{quote}
+\end{quote}
 %
 \end{exploration}%
 \end{subsubsectionptx}
@@ -3090,7 +3079,7 @@ Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
 \begin{project}{Actividad de cierre}{Las manzanas en el puesto de la huerta.}{cool-manzanasEnLaHuerta}%
 En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en \(6\) cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
 \item{}Resuelve el problema. Explica o muestra tu razonamiento.%
 \end{enumerate}
@@ -3287,14 +3276,14 @@ En el gimnasio hay \(85\) sillas. Están organizadas en \(5\) filas, cada una co
 \end{divisionexercise}%
 \begin{divisionexercise}{2}{}{}{gra3-uni4-secD-ProblemasPractica-4}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Encuentra el valor de \(96 \div 6\). Si te ayudan, usa bloques en base diez.%
 \item{}Encuentra el valor de \(52 \div 2\). Si te ayudan, usa bloques en base diez.%
 \end{enumerate}
 \end{divisionexercise}%
 \begin{divisionexercise}{3}{}{}{gra3-uni4-secD-ProblemasPractica-5}%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Encuentra el valor de \(78 \div 6\). Si te ayuda, dibuja un diagrama.%
 \item{}Encuentra el valor de \(42 \div 3\). Si te ayuda, dibuja un diagrama.%
 \end{enumerate}
@@ -3302,7 +3291,7 @@ En el gimnasio hay \(85\) sillas. Están organizadas en \(5\) filas, cada una co
 \begin{divisionexercise}{4}{}{}{gra3-uni4-secD-ProblemasPractica-6}%
 Encuentra el valor de cada cociente.%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}\(\displaystyle 96 \div 6\)%
 \item{}\(\displaystyle 87 \div 3\)%
 \end{enumerate}
@@ -3310,7 +3299,7 @@ Encuentra el valor de cada cociente.%
 \begin{divisionexercise}{5}{}{}{gra3-uni4-secD-ProblemasPractica-7}%
 En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay \(150\) espectadores. El resto de las personas están en \(6\) equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.%
 \item{}Resuelve el problema. Explica o muestra cómo pensaste.%
 \end{enumerate}
@@ -3318,15 +3307,15 @@ En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay \(15
 \begin{divisionexercise}{6}{Exploración.}{}{gra3-uni4-secD-ProblemasPractica-8}%
 Para encontrar el valor de \(96 \div 3\), Diego divide \(9\) entre \(3\) y \(6\) entre \(3\), y dice que la respuesta es \(32\).%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.%
 \item{}¿El método de Diego funciona para encontrar el valor de \(78 \div 3\)?%
- Explica cómo pensaste.\end{enumerate}
+\end{enumerate}
 \end{divisionexercise}%
 \begin{divisionexercise}{7}{Exploración.}{}{gra3-uni4-secD-ProblemasPractica-9}%
 ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?%
 %
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}[label={(\alph*)}]
 \item{}Haz una lista.%
 \item{}Escribe una ecuación de multiplicación o de división para cada forma.%
 \end{enumerate}
