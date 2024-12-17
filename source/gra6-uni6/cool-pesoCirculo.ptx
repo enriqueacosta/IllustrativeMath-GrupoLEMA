@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ========================================================== 
+  El cool-down es un <project> 
+  (distinto a las otras actividades y a los Practice Problems)
+===============================================================  -->
+<project xml:id="cool-pesoCirculo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>El peso del círculo</title>
+
+<statement>
+  <p>Este es un colgador balanceado.</p>
+  <sidebyside widths="20% 70%" margins="0% 0%" valign="top">
+    <image source="png-source/6-6.6.A3.hangercooldown.png" width="100%">
+      <shortdescription>Colgador balanceado. Lado izquierdo, cuatro círculos idénticos etiquetados x. Lado derecho, un rectángulo etiquetado 25.</shortdescription>
+    </image>
+    <ol>
+      <li>
+        <p>
+          Escribe una ecuación que represente a este colgador.
+        </p>
+      </li>
+      <li>
+        <p>
+          Encuentra el peso de un círculo. Muestra o explica cómo lo encontraste.
+        </p>
+      </li>
+    </ol>
+  </sidebyside>
+</statement>
+
+<solution>
+  <ol>
+    <li>
+      <p>
+        <m>4w = 25</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>\frac{25}{4}</m> o <m>6\frac{1}{4}</m>
+      </p>
+    </li>
+  </ol>
+</solution>
+
+
+<postlude component="profesor"> <!-- Notas para el profesor -->
+
+  <!-- Posibles errores -->
+  <!-- <paragraphs>
+    <title><custom ref="errores-cool-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
+  <paragraphs>
+    <title><custom ref="apoyo-cool-titulo"/></title>
+    <p>[@@@@@@@]</p>
+    <p>Students will have more opportunities to understand the mathematical ideas in this cool-down, so there is no need to slow down or add additional work to the next lessons. Instead, use the results of this cool-down to provide guidance for what to look for and emphasize over the next several lessons to support students in advancing their current understanding.</p>
+  </paragraphs>
+
+</postlude>
+
+</project>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-mantenerBalance" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 3</shorttitle>
+<title>Lección 3 - <nbsp/></title>
+<title>Mantener el balance</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="estudiante"> 
+  <p>Usemos colgadores balanceados para ayudarnos a resolver ecuaciones.</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<objectives component="estudiante">
+  <ul>
+    <li>
+      <p>[@@@@@@@]</p>
+    </li>
+    <li>
+      I can compare doing the same thing to the weights on each side of a balanced hanger to solving equations by subtracting the same amount from each side or dividing each side by the same number.
+    </li>
+    <li>
+      I can explain what a balanced hanger and a true equation have in common.
+    </li>
+    <li>
+      I can write equations that could represent the weights on a balanced hanger.
+    </li>
+  </ul>
+</objectives>
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">  
+  <ul>
+    <li>
+      <p>[@@@@@@@]</p>
+    </li>
+    <li>
+      <p>
+        Interpret hanger diagrams (orally and in writing) and write equations that represent relationships between the weights on a balanced hanger diagram.
+      </p>
+    </li>
+    <li>
+      <p>
+        Use balanced hangers to explain (orally and in writing) how to find solutions to equations of the form <m>x + p = q</m> or <m>px = q</m>.
+      </p>
+    </li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title> 
+    <p>6.EE.B.7</p>
+  </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <!-- <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[
+    @@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Materiales requeridos -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    [@@@@@@@@] -->
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-RRRRRRRR-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-SSSSSSSS-mat.ptx"/>
+      </li>
+    </ul>  -->
+  <!-- </paragraphs> -->
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[@@@@@@@]</p>
+    <p>
+      The goal of this lesson is for students to understand that we can generally approach <m>p + x = q</m> by subtracting the same thing from each side and that we can generally approach <m>px = q</m> by dividing each side by the same thing. This is accomplished by considering what can be done to a hanger to keep it balanced.
+    </p>
+    <p>
+      Students are solving equations in this lesson in a different way than they did in the previous lessons. They are reasoning about things one could “do” to hangers while keeping them balanced alongside an equation that represents a hanger, so they are thinking about “doing” things to each side of an equation, rather than simply thinking “what value would make this equation true.”
+    </p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <!-- <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-mantenerBalance-warm">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-enganchados.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-mantenerBalance-act1">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-emparejemosEcuacionesDiagramas.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-RRRRRRRRR-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-mantenerBalance-act2">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-conectarDiagramasEcuacionesSols.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <xi:include href="./act-conectarDiagramasEcuacionesSols-reto.ptx"/>
+</subsubsection>
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-mantenerBalance-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
+  <p>[@@@@@@@]</p>
+  <p>
+    Display the two equations <m>5x = 8</m> and <m>5 + x = 8</m>. Ask students to draw a hanger to match each equation. Then have them work with a partner to solve the equation alongside finding the unknown value on the hanger. Ask students to compare the two strategies and discuss how they are alike and how they are different.
+  </p>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="lec-mantenerBalance-cool"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible -->
+  <url component="profesor" href="external/cools-pdf/cool-UUUUUUUUUU-standalone.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-pesoCirculo.ptx"/>
+</reading-questions>
+
+
+
+
+<!-- ================================================
+  Resumen de la lección (se usa a partir de grado 6)
+===================================================== -->
+<xi:include href="./lec-mantenerBalance-resumen.ptx"/>
+
+
+
+
+<!-- ======================================================================
+  Problemas de práctica (a nivel lección a partir de grado 6)
+=========================================================================== -->
+<exercises xml:id="lec-VVVVVV-ProblemasPractica"> 
+  <title><custom ref="titulo-problemas-practica-lec"/></title>
+  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
+  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
+
+  <!-- un archivo por problema -->
+  <xi:include href="./lec-mantenerBalance-PP1.ptx"/>
+  <xi:include href="./lec-mantenerBalance-PP2.ptx"/>
+  <xi:include href="./lec-mantenerBalance-PP3.ptx"/>
+  <xi:include href="./lec-mantenerBalance-PP4.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PPalign1.ptx"/>
+  <xi:include href="./gra6-uni4-secD-lec13-PPalign1.ptx"/>
+  <xi:include href="./gra6-uni3-secD-lec11-PPalign3.ptx"/>
+  
+</exercises>
+
+</subsection>
