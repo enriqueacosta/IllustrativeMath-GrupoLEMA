@@ -291,7 +291,7 @@
 %         3  & hola & 1 & 0\\ 
 %   };
 
-\def\minTableColWidth{20ex}
+\def\minTableColWidth{15ex}
 \def\minTableRowHeight{5ex}
 \def\tableLineWidth{1pt}
 \def\tableHeaderLineWidth{2pt}

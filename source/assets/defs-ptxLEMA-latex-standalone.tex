@@ -69,6 +69,8 @@
 %% activity: fairly simple numbered block/structure
 \tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
+\tcbset{ exploration/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
+\newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, exploration, }
 \NewDocumentEnvironment{paragraphs}{mm}
 {\subparagraph*{#1}\label{#2}\hypertarget{#2}{}}{}
 \usepackage{tikz, pgfplots}
@@ -90,7 +92,7 @@
 \setlength{\parindent}{0pt}
 %% Márgenes 
 \usepackage{geometry}
-\geometry{verbose,top=2.5cm,bottom=2cm,lmargin=2.3cm,rmargin=2.3cm,headheight=3cm,headsep=0.9cm,footskip=1cm}
+\geometry{verbose,top=2.5cm,bottom=2cm,lmargin=2.3cm,rmargin=2.3cm,headheight=3cm,headsep=0.4cm,footskip=1cm}
 % Quitar justificación (lineas igual de anchas)
 \usepackage[document]{ragged2e}
 %% quitar hyphenation
