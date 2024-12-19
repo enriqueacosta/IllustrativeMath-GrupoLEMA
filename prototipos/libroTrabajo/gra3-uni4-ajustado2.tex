@@ -646,6 +646,12 @@
 %% introduction: in a structured division
 \NewDocumentEnvironment{introduction}{m}
 {\notblank{#1}{\noindent\textbf{#1}\space}{}}{\par\medskip}
+%% paragraphs: the terminal, pseudo-division
+%% We use the lowest LaTeX traditional division
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{#1}
+\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
+\NewDocumentEnvironment{paragraphs}{mm}
+{\subparagraph*{#1}\label{#2}\hypertarget{#2}{}}{}
 %% Graphics Preamble Entries
 \usepackage{tikz, pgfplots}
 \usetikzlibrary{positioning,matrix,arrows}
