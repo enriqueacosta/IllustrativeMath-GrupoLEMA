@@ -72,7 +72,7 @@
 \tcbset{ exploration/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, exploration, }
 \NewDocumentEnvironment{paragraphs}{mm}
-{\subparagraph*{#1}\label{#2}\hypertarget{#2}{}}{}
+{\subparagraph*{\removeFinalPeriodIfPresent{#1}}}{}
 \usepackage{tikz, pgfplots}
 \usetikzlibrary{positioning,matrix,arrows}
 \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}

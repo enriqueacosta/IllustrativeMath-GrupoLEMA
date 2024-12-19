@@ -22,7 +22,7 @@ def extract_activity(file_path, activity_id, font_size):
 
         # Regular expression to match the \begin{activity} block with the specific id-string
         pattern = re.compile(
-            r"\\begin\{activity\}\{[^\}]*\}\{[^\}]*\}\{" + re.escape(activity_id) + r"\}(.*?)\\end\{activity\}",
+            r"\\begin\{activity\}\{((?:[^{}]|\\{|\\})*)\}\{((?:[^{}]|\\{|\\})*)\}\{" + re.escape(activity_id) + r"\}(.*?)\\end\{activity\}",
             re.DOTALL
         )
 

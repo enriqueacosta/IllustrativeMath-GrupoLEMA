@@ -6,12 +6,30 @@
 
 <statement>
   <p>Juega <q>Compara</q> con dos jugadores.</p>
-  <ol>
-    <li>Mezclen las tarjetas y dividan el montón entre los jugadores.</li>
-    <li>Cada jugador voltea una tarjeta.</li>
-    <li>Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.</li>
-    <li>Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.</li>
-  </ol>
+  <p component="web">
+    Instrucciones y tarjetas para recortar en el libro de trabajo, o <url href="external/act-pdf/act-comparaDivideHasta100.pdf">descargar acá</url>.
+  </p>
+  <paragraphs component="libroTrabajo">
+    <title>Instrucciones:</title>
+    <ol>
+      <li>Mezclen las tarjetas y dividan el montón entre los jugadores.</li>
+      <li>Cada jugador voltea una tarjeta.</li>
+      <li>Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.</li>
+      <li>Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.</li>
+    </ol>
+  </paragraphs>
+  <p component="libroTrabajo">
+    @@@@ OJO @@@@@: insertar tarjetas para recortar y asegurarse que en el libro de trabajo queden en hoja para arrancar (impar, y con hoja en blanco atrás usando \cleardoublepage).
+  </p>
+  <p component="libroTrabajo">
+    Tarjetas para recortar
+  </p>
+  <image component="libroTrabajo" source="blm/tikz-source/act-comparaDivideHasta100-tarjetas-grandes1.pdf">
+    <shortdescription></shortdescription>
+  </image>
+  <image component="libroTrabajo" source="blm/tikz-source/act-comparaDivideHasta100-tarjetas-grandes2.pdf">
+    <shortdescription></shortdescription>
+  </image>
 </statement>
 
 <solution>
