@@ -77,8 +77,8 @@
 \usetikzlibrary{positioning,matrix,arrows}
 \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
 \usetikzlibrary{decorations.markings}
-\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster equal height=rows, raster force size=false} }
-\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont} }
+\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster after skip=2.0ex, raster equal height=rows, raster force size=false} }
+\tcbset{ sbspanelstyle/.style={blanker, fonttitle=\blocktitlefont} }
 \NewDocumentEnvironment{sidebyside}{mmmm}
   {\begin{tcbraster}
     [sbsstyle,raster columns=#1,
