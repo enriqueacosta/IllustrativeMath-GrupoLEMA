@@ -5,34 +5,42 @@
 <title>Clasificación de tarjetas: Todo sobre bichos</title>
 
 <statement>
-  <image source="png-source/v1 3.4.A5 Launch.png" width="50%">
+  <image component="no-libroTrabajo" source="png-source/v1 3.4.A5 Launch.png" width="40%">
     <shortdescription>Insectos</shortdescription>
     <description>
       <p>Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. <url href="https://en.wikipedia.org/wiki/File:Insect_collage.png">https://en.wikipedia.org</url>.</p>
     </description>
   </image>
+  <aside component="web">
+    <p>Tarjetas para recortar en el libro de trabajo, o <url href="external/act-pdf/act-clasificacionDeTarjetas-todoSobreBichos.pdf">descargar acá</url>.
+    </p>
+  </aside>
   <ol>
     <li>
       <p>Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.</p>
-
-      <ol marker="(A)">      
-        <li>El grillo topo tiene unas patas especiales para cavar. Diez patas especiales pertenecen a 5 grillos topo. ¿Cuántas patas especiales tiene cada grillo topo?</li>
-        <li>Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?</li>
-        
-        <li>Catorce antenas pertenecen a un grupo de abejas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?</li>
-        
-        <li>Hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?</li>
-        
-        <li>Treinta patas pertenecen a 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?</li>
-        
-        <li>En total, hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?</li>
-      </ol>
     </li>
 
     <li>
-        Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.
+        <p>Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.</p>
+        <ol component="libroTrabajo" marker="A.">
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+          <li><xi:include href="../whitespace/1cm.ptx" /></li>
+        </ol>
     </li>
   </ol> 
+  <p component="libroTrabajo">
+    @@@@@ OJO @@@@: poner las tarjetas en su propia página para recortar con un \cleardoublepage. Es posible que toque sacar los \cleardoublepage y la instertada afuera del environment de la actividad.
+  </p>
+  <p component="libroTrabajo">
+    Tarjetas para recortar:
+  </p>
+  <image component="libroTrabajo" source="tikz-source/todoSobreBichos-tarjetas">
+    <shortdescription></shortdescription>
+  </image>
 
 </statement>
 
@@ -47,7 +55,7 @@
     </li>
     <li>
       <p>Expresiones:
-      <ol marker="(A)">      
+      <ol marker="A.">      
         <li><m>10\div 5</m></li>
         <li><m>8\div 2</m></li>
         <li><m>14\div 2</m></li>

@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
     <p>Multipliquemos números de un dígito por múltiplos de 10.</p>
 </introduction>
 
@@ -88,7 +88,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-multiplicarMultiplos10-warm">
+<subsubsection xml:id="lec-multiplicarMultiplos10-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Se agrega al título el tiempo que solo ve el profesor -->
@@ -110,7 +110,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-multiplicarMultiplos10-act2">
+<subsubsection xml:id="lec-multiplicarMultiplos10-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <title component="profesor"><nbsp/>(20 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -141,7 +141,7 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-multiplicarMultiplos10-cool">
+<reading-questions xml:id="lec-multiplicarMultiplos10-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

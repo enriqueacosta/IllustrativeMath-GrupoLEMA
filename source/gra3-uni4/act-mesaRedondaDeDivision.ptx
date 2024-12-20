@@ -5,7 +5,12 @@
 <title>Mesa redonda de división</title>
 
 <statement>
-  <p>Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.</p>
+  <p component="no-libroTrabajo">Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.</p>
+  <p component="libroTrabajo">En la siguiente tabla hay 4 recuadros. Tu profesor te pedirá que dibujes o escribas algo en cada uno.</p>
+  <aside component="web">
+    <p>Hoja para los dibujos en el libro de trabajo, o <url href="external/blm/pdf-source/mesa-redonda-de-division.pdf">descargue para imprimir</url>)
+    </p>
+  </aside>
   <p>Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.</p>
   <ol>
     <li>
@@ -21,8 +26,11 @@
       En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.
     </li>
   </ol>
-  <image source="png-source/CS 3.4 Lesson 7 Activity 1.png" width="60%">
+  <image component="no-libroTrabajo" source="png-source/CS 3.4 Lesson 7 Activity 1.png" width="60%">
     <shortdescription>Estudiantes jugando sentados en una mesa.</shortdescription>
+  </image>
+  <image  component="libroTrabajo" rotate="90" source="blm/pdf-source/mesa-redonda-de-division">
+    <shortdescription></shortdescription>
   </image>
 </statement>
 

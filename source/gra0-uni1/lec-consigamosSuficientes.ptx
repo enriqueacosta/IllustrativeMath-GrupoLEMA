@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
     <p>Consigamos suficientes lápices para todos. </p>
 </introduction>
 
@@ -156,7 +156,7 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-consigamosSuficientes-cool">
+<reading-questions xml:id="lec-consigamosSuficientes-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

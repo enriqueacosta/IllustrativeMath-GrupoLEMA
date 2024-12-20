@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
   <p>Conectemos ecuaciones de división con ecuaciones de multiplicación.</p>
 </introduction>
 
@@ -84,7 +84,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-divisionComoFactorDesconocido-warm">
+<subsubsection xml:id="lec-divisionComoFactorDesconocido-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -98,7 +98,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-divisionComoFactorDesconocido-act1">
+<subsubsection xml:id="lec-divisionComoFactorDesconocido-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -155,7 +155,7 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-divisionComoFactorDesconocido-cool">
+<reading-questions xml:id="lec-divisionComoFactorDesconocido-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

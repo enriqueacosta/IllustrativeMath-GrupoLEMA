@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
     <p>Encontremos patrones en la tabla de multiplicar y usémoslos para multiplicar.</p>
 </introduction>
 
@@ -82,7 +82,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-patronesTablaMultiplicar-warm">
+<subsubsection xml:id="lec-patronesTablaMultiplicar-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -142,7 +142,7 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-patronesTablaMultiplicar-cool">
+<reading-questions xml:id="lec-patronesTablaMultiplicar-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

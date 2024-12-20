@@ -5,20 +5,28 @@
 <title>Juguemos “Cerca de 100, multiplicación” (opcional)</title>
 
 <statement>
-  <sidebyside widths="50% 30%">
-    <p>Juega “Cerca de 100, multiplicación” con un compañero.</p>
+  <sidebyside  component="no-libroTrabajo" widths="50% 30%">
+    <p >Juega “Cerca de 100, multiplicación” con un compañero.</p>
     <image source="png-source/CS 3.4 Lesson 16 Activity 2.png">
-      <shortdescription>Estudaintes jugando con cartas.</shortdescription>
+      <shortdescription>Estudiantes jugando con cartas.</shortdescription>
     </image>
   </sidebyside>
-  <ol>
+  <aside component="no-libroTrabajo">
+    <p >
+      Tablero, tarjetas e instrucciones en el libro de trabajo, o <url href="external/act-pdf/act-juegoCerca100Multiplicacion.pdf">descarga acá</url>.
+    </p>
+  </aside>
+  <p component="libroTrabajo">
+    Tarjetas para recortar en la siguiente página.
+  </p>
+  <ol component="libroTrabajo">
     <li>Pon las tarjetas boca abajo.</li>
     <li>Cada jugador toma 4 tarjetas.</li>
     <li>Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.</li>
     <li>El jugador que esté más cerca de 100, gana esa ronda.</li>
     <li>Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.</li>
   </ol>
-  <sbsgroup widths="45% 45%" margins="0% 0%">
+  <sbsgroup component="libroTrabajo" widths="45% 45%" margins="0% 0%">
     <sidebyside>
       <p><alert>Partida 1</alert></p>
       <p><alert>Partida 2</alert></p>
@@ -51,9 +59,72 @@
         </p>
       </stack>
     </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>Ronda 3</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 1 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+      <stack>
+        <p>Ronda 3</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 2 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>Ronda 4</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 1 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+      <stack>
+        <p>Ronda 4</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 2 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>Ronda 5</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 1 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+      <stack>
+        <p>Ronda 5</p>
+        <p>
+          <me>\boxed{\phantom{\frac{00}{00}}} \times 2 \ \boxed{\phantom{\frac{00}{00}}}= \underline{\hspace{1cm}}</me>
+        </p>
+      </stack>
+    </sidebyside>
   </sbsgroup>
-  <p>
-    <alert>Nota:</alert> <em>Espacio para más rondas en el tablero de juego.</em></p>
+  <p component="libroTrabajo">
+    @@@ NOTA PARA DIAGRAMADOR @@@@
+    asegurarse que las tarjetas están en páginas aparte para recortar (en página impar con hoja en blanco por atrás) con \cleardoublepage. Son tres páginas que se deben insertar aparte con algo por el estilo de     \includegraphics[page=2, trim=70 80 80 100,clip, width=1.05\linewidth]
+    
+    Una posibilidad es poner (afuera del {activity}):
+    <pre>
+      \cleardoublepage
+      Tarjetas para recortar:
+      \begin{image}{0}{1}{0}{}%
+      \includegraphics[page=1, rotate=90, scale=0.55, trim=40 40 20 40, clip, center] {external/blm/pdf-source/tarjetasDeDigitos.pdf}
+      \end{image}%
+      \begin{image}{0}{1}{0}{}%
+      \includegraphics[page=2, rotate=90, scale=0.55, trim=40 40 20 40, clip, center] {external/blm/pdf-source/tarjetasDeDigitos.pdf}
+      \end{image}%
+      \cleardoublepage
+      Tarjetas para recortar:
+      \begin{image}{0}{1}{0}{}%
+      \includegraphics[page=3, rotate=90, scale=0.55, trim=40 40 20 40, clip, center] {external/blm/pdf-source/tarjetasDeDigitos.pdf}
+      \end{image}%
+      \begin{image}{0}{1}{0}{}%
+      \includegraphics[page=4, rotate=90, scale=0.55, trim=40 40 20 40, clip, center] {external/blm/pdf-source/tarjetasDeDigitos.pdf}
+    </pre>
+  </p>
 </statement>
 
 <solution>
