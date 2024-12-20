@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-enganchados" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Enganchados</title>
+
+<statement>
+  <image source="png-source/6-6.6.A3.twohangers.png" width="50%">
+    <shortdescription>Dos colgadores. A, desbalanceado. B, balanceado.</shortdescription>
+  </image>
+
+  <p>Para el Diagrama A, encuentra:</p>
+  <ol>
+    <li>Algo que <em>debe</em> ser cierto</li>
+    <li>Algo que <em>podría</em> ser cierto o falso</li>
+    <li>Algo que <em>no puede</em> ser cierto</li>
+  </ol>
+
+  <p>Para el Diagrama B, encuentra:</p>
+  <ol>
+    <li>Algo que <em>debe</em> ser cierto</li>
+    <li>Algo que <em>podría</em> ser cierto o falso</li>
+    <li>Algo que <em>no puede</em> ser cierto</li>
+  </ol>
+</statement>
+
+<solution>
+  <p>[@@@@@@@]</p>
+
+  <p>Answers vary. Sample responses:</p>
+  
+  <p>
+    Diagram A:
+  </p>
+  <ol>
+    <li>The triangle is heavier than the square.</li>
+    <li>The triangle could weigh 10 ounces and the square could weigh 6 ounces.</li>
+    <li>The square and the triangle weigh the same.</li>
+  </ol>
+    
+  <p>
+    Diagram B:
+  </p>
+  <ol>
+    <li>One triangle weighs the same as three squares.</li>
+    <li>The triangle weighs three pounds and each square weighs one pound.</li>
+    <li>One square is heavier than the triangle.</li>
+  </ol>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[@@@@@@@]</p>
+    <p>Students encounter and reason about a concrete situation, hangers with equal and unequal weights on each side. They then see diagrams of balanced and unbalanced hangers and think about what must be true and false about the situations. In subsequent activities, students will use the hanger diagrams to develop general strategies for solving equations.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[@@@@@@@]</p>
+    <p>
+      Display the photo of socks and ask students, “What do you notice? What do you wonder?”
+    </p>
+
+    <image source="png-source/6-6.6.A3.Image.Revision.0001.png" width="70%">
+      <shortdescription>Dos colgadores de ropa colgando de una varilla. Dos calcetines rosas, balanceados. Dos calcetines azules, desbalanceados.</shortdescription>
+    </image>
+
+    <p>
+      Give students 1 minute to think about the picture. Record their responses for all to see.
+    </p>
+
+    <p>
+      Things students may notice:
+    </p>
+    <ul>
+      <li>There are two pink socks and two blue socks.</li>
+      <li>The socks are clipped to either ends of two clothes hangers. The hangers are hanging from a rod.</li>
+      <li>The hanger holding the pink socks is level; the hanger holding the blue socks is not level.</li>
+    </ul>
+
+    <p>
+      Things students may wonder:
+    </p>
+    <ul>
+      <li>Why is the hanger holding the blue socks not level?</li>
+      <li>Is something inside one of the blue socks to make it heavier than the other sock?</li>
+      <li>What does this picture have to do with math?</li>
+    </ul>
+
+    <p>
+      Use the word “balanced” to describe the hanger on the left and “unbalanced” to describe the hanger on the right. Tell students that the hanger on the left is balanced because the two pink socks have an equal weight, and the hanger on the right is unbalanced because one blue sock is heavier than the other. Tell students that they will look at a diagram that is like the photo of socks, except with more abstract shapes, and they will reason about the weights of the shapes.
+    </p>
+
+    <p>
+      Give students 3 minutes of quiet work time followed by whole-class discussion.
+    </p>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[@@@@@@@]</p>
+    <p>
+      Ask students to share some things that must be true, could be true, and cannot possibly be true about the diagrams. Ask them to explain their reasoning. The purpose of this discussion is to understand how the hanger diagrams work. When the diagram is balanced, there is equal weight on each side. For example, since diagram B is balanced, we know that one triangle weighs the same as three squares. When the diagram is unbalanced, one side is heavier than the other. For example, since diagram A is unbalanced, we know that one triangle is heavier than one square.
+    </p>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</exploration>
