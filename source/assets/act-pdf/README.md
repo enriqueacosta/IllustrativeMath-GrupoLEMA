@@ -11,6 +11,8 @@ Usar el comando siguiente, reemplazando `gra3-uni4-libroTrabajo` con el nombre d
 pretext build gra3-uni4-libroTrabajo
 ```
 
+Esto genera un archivo lates que incluye comandos de whitespace y posibles comentarios para el diagramador.
+
 ### 2. Extraer la actividad con el script de Python.
 Ejecutar el script `extractActivity-latexStandalone.py` en la carpeta donde se generaron los archivos LaTeX (normalmente ubicada en `output/libroTrabajo/<unidad>`). Por ejemplo:
 
