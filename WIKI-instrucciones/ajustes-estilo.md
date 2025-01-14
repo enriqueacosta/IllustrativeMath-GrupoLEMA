@@ -23,3 +23,7 @@ El código para esto se ve así:
   <li><m>60\div 6</m></li>
 </ol>
 ```
+
+
+## Puntos finales en listas con comillas de teacher prompts?
+Ver [issue #114](https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA/issues/144)
