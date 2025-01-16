@@ -64,7 +64,7 @@
 \tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper}, coltitle=black }
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 \tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
-\tcbset{ projectstyle/.style={blockspacingstyle, after title={\space},  } }
+\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
 %% activity: fairly simple numbered block/structure
 \tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }

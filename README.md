@@ -36,11 +36,31 @@ Para generar el código latex que produce el pdf:
 pretext build gra3-uni4-print-latex-est
 ```
 
+Por lo general, es mejor generar el archivo latex porque hay ajustes que se deben hacer a las imágenes para que aparezcan en su tamaño natural. Esto se logra cambiando todos los
+```latex
+\includegraphics[width=\linewidth]
+```
+por
+```latex
+\includegraphics[max width=\linewidth, center]
+```
+
 ### generar versiones del profesor
 
 Cambiar `-est` por `-prof` en todos los comandos.
 
 Ambas versiones (estudiante y profesor) se generan a partir de los mismos archivos fuente. Los elementos que contienen `component="profesor"` solo son visibles en la versión del profesor.
+
+
+### generar libro de trabajo
+
+Para generar el código latex que produce el libro de trabajo en pdf (actividades con espacio para trabajar):
+
+```bash
+pretext build gra3-uni4-libroTrabajo
+```
+
+Al archivo latex que genera hay que ajustarle el prambulo para que todo se vea bien. Una primera versión de un preambulo se encuentra en el archivo `/source/assets/preamble-libroTrabajoGrado3.tex`
 
 
 ## Componentes en el código fuente
@@ -69,6 +89,8 @@ Por ejemplo:
   <li>tableros de 5 <url component="web" href="external/blm/pdf-source/tableros-de-5.pdf">(ver pdf)</url></li>
 </ul>
 ```
+
+Ver todos los componentes disponibles en la carpeta `WIKI-instrucciones`.
 
 
 ## Ajustes globales
@@ -122,9 +144,11 @@ Ver ejemplos de los archivos `.tex` de imagenes en la carpeta `souce/assets/tikz
 Para estas imágenes se debe generar el formato `.pdf` con pdfLaTeX, y el formato `.svg` para la web a partir del pdf que produce pdfLaTeX. Esto se puede hacer de manera automática con el script `scripts/convertAllPDFtoSVGinFolder` que se escribió para este fin.
 
 ## Producir versiones pdf de los problemas de cierre `-cool.ptx`
-Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar el archivo del script a la carpeta con los `-cool.ptx` que se quiere procesar y correr en la terminal con `./createStandaloneCools`. 
+(desactualizado) Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar el archivo del script a la carpeta con los `-cool.ptx` que se quiere procesar y correr en la terminal con `./createStandaloneCools`. 
 
-El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 
+(desactualizado) El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 
+
+Update: Hay una nueva forma de producir los cools que no involucra un custom-xsl: se genera el libro de trabajo (que además incluye el whitespace necesario) y después se usa el script en `/scripts/extractCool-latexStandalone.py`
 
 ## Licencia
 

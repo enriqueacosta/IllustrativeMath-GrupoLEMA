@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante"> 
+<introduction component="est-goal"> 
   <p>Usemos colgadores balanceados para ayudarnos a resolver ecuaciones.</p>
 </introduction>
 
@@ -210,7 +210,7 @@
 <!-- ======================================================================
   Problemas de práctica (a nivel lección a partir de grado 6)
 =========================================================================== -->
-<exercises xml:id="lec-VVVVVV-ProblemasPractica"> 
+<exercises component="PPs" xml:id="lec-VVVVVV-ProblemasPractica"> 
   <title><custom ref="titulo-problemas-practica-lec"/></title>
   <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
   <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>

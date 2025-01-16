@@ -2,11 +2,11 @@ import re
 import sys
 
 # Scale factor for resizing SVG dimensions
-SCALE_FACTOR = 1.3
+SCALE_FACTOR = 1.6
 
 def scale_svg(input_file):
     """
-    Scales the width and height of an SVG file by SCALE_FACTOR (1.3).
+    Scales the width and height of an SVG file by SCALE_FACTOR (1.6).
     Author: Enrique Acosta, November 2024
     
     - Adds ".svg" extension if missing.
@@ -19,7 +19,7 @@ def scale_svg(input_file):
     # Ensure .svg extension
     if not input_file.endswith(".svg"):
         input_file += ".svg"
-    output_file = input_file.replace(".svg", "-scale13.svg")
+    output_file = input_file.replace(".svg", "-scale16.svg")
 
     # Read the SVG file
     with open(input_file, "r", encoding="utf-8") as file:
@@ -51,6 +51,6 @@ def scale_svg(input_file):
 # Main
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: scaleSVGFactor13.py <input-file.svg or input-file>")
+        print("Usage: python scaleSVGFactor16.py <input-file.svg or input-file>")
     else:
         scale_svg(sys.argv[1])
