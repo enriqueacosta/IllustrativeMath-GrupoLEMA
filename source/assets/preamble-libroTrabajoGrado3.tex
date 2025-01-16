@@ -277,7 +277,7 @@
 \renewcommand{\epigraphptx}{#6}%
 \section{}%[{#4}]{#2}%
 \label{#7}%
-\clearpage
+% \clearpage
 }{}%
 %% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
 \NewDocumentEnvironment{subsectionptx}{mmmmmmm}
@@ -332,7 +332,7 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\clearpage
+% \clearpage
 \vspace{-1.0cm}
 \subsubsection[{#4}]{Lección~\thesubsection~-~#2}%
 \vspace{-0.4cm}
@@ -734,7 +734,7 @@
     \footnotesize % Make abstract text smaller
     \let\old@footnotesize\footnotesize % Save original footnotesize
     % \renewcommand{\footnotesize}{\tiny} % Make footnotes in abstract smaller  
-    \renewcommand{\UrlFont}{\scriptsize\ttfamily} % Make \url and \nolinkurl tiny and typewriter font
+    \renewcommand{\UrlFont}{\footnotesize\ttfamily} % Make \url and \nolinkurl tiny and typewriter font
     % \quotation
 }{%
     % \endquotation
