@@ -1,13 +1,13 @@
 %********************************************%
 %*       Generated from PreTeXt source      *%
-%*       on 2024-12-10T16:07:50-05:00       *%
+%*       on 2025-01-16T15:12:28-05:00       *%
 %*   A recent stable commit (2022-07-01):   *%
 %* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
 %*                                          *%
 %*         https://pretextbook.org          *%
 %*                                          *%
 %********************************************%
-\documentclass[twoside, 14pt]{extarticle}
+\documentclass[twoside,14pt]{extarticle}
 %% Custom Preamble Entries, early (use latex.preamble.early)
 %% Always open on odd page
 %%   The following adjusts cleardoublepage to remove twosided
@@ -33,7 +33,7 @@
 %% Color support, xcolor package
 %% Always loaded, for: add/delete text, author tools
 %% Here, since tcolorbox loads tikz, and tikz loads xcolor
-\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames,table}{xcolor}
 \usepackage{xcolor}
 %% begin: defined colors, via xcolor package, for styling
 %% end: defined colors, via xcolor package, for styling
@@ -48,8 +48,8 @@
 %% We load some "stock" tcolorbox styles that we use a lot
 %% Placement here is provisional, there will be some color work also
 %% First, black on white, no border, transparent, but no assumption about titles
-\tcbset{ bwminimalstyle/.style={enhanced, frame empty, extras broken={
-          frame empty}, fonttitle=\bfseries, colback=white, colbacktitle=black!20, coltitle=black, opacityfill=1.0, } }
+\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,
+colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Second, bold title, run-in to text/paragraph/heading
 %% Space afterwards will be controlled by environment,
 %% independent of constructions of the tcb title
@@ -69,10 +69,12 @@
 \usetikzlibrary{calc}
 %% We use some more exotic tcolorbox keys to restore indentation to parboxes
 \tcbuselibrary{hooks}
-%% Save default paragraph indentation for use later, when adjusting parboxes
+%% Save default paragraph indentation and parskip for use later, when adjusting parboxes
 \newlength{\normalparindent}
+\newlength{\normalparskip}
 \AtBeginDocument{\setlength{\normalparindent}{\parindent}}
-%% Hyperref should be here, but likes to be loaded late
+\AtBeginDocument{\setlength{\normalparskip}{\parskip}}
+\newcommand{\setparstyle}{\setlength{\parindent}{\normalparindent}\setlength{\parskip}{\normalparskip}}%% Hyperref should be here, but likes to be loaded late
 %%
 %% Inline math delimiters, \(, \), need to be robust
 %% 2016-01-31:  latexrelease.sty  supersedes  fixltx2e.sty
@@ -96,7 +98,7 @@
 %% See Bringhurst 2.1.1 on measure for recommendations
 %% 75 characters per line (count spaces, punctuation) is target
 %% which is the upper limit of Bringhurst's recommendations
-\geometry{letterpaper, inner=1in, outer=0.7in, top=0.5in, bottom=0.7in}
+\geometry{letterpaper, inner=1.5in, outer=1in, top=0.35in, bottom=0.7in}
 %% Custom Page Layout Adjustments (use publisher page-geometry entry)
 %% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
 %% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
@@ -125,25 +127,6 @@
 %% Default Text Font: The Latin Modern fonts are
 %% "enhanced versions of the [original TeX] Computer Modern fonts."
 %% We use them as the default text font for PreTeXt output.
-%% Default Monospace font: Inconsolata (aka zi4)
-%% Sponsored by TUG: http://levien.com/type/myfonts/inconsolata.html
-%% Loaded for documents with intentional objects requiring monospace
-%% See package documentation for excellent instructions
-%% fontspec will work universally if we use filename to locate OTF files
-%% Loads the "upquote" package as needed, so we don't have to
-%% Upright quotes might come from the  textcomp  package, which we also use
-%% We employ the shapely \ell to match Google Font version
-%% pdflatex: "varl" package option produces shapely \ell
-%% pdflatex: "var0" package option produces plain zero (not used)
-%% pdflatex: "varqu" package option produces best upright quotes
-%% xelatex,lualatex: add OTF StylisticSet 1 for shapely \ell
-%% xelatex,lualatex: add OTF StylisticSet 2 for plain zero (not used)
-%% xelatex,lualatex: add OTF StylisticSet 3 for upright quotes
-%%
-%% Fancy Verbatim for consoles, preformatted, code display, literate programming
-\usepackage{fancyvrb}
-%% Pre-formatted text, a peer of paragraphs
-\DefineVerbatimEnvironment{preformatted}{Verbatim}{}
 %% Automatic Font Control
 %% Portions of a document, are, or may, be affected by defined commands
 %% These are perhaps more flexible when using  xelatex  rather than  pdflatex
@@ -186,10 +169,6 @@
 %% end:   xelatex main font ("font-xelatex-main" template)
 %% begin: xelatex mono font ("font-xelatex-mono" template)
 %% (conditional on non-trivial uses being present in source)
-\IfFontExistsTF{Inconsolatazi4-Regular.otf}{}{\GenericError{}{The font "Inconsolatazi4-Regular.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
-\IfFontExistsTF{Inconsolatazi4-Bold.otf}{}{\GenericError{}{The font "Inconsolatazi4-Bold.otf" requested by PreTeXt output is not available.  Either a file cannot be located in default locations via a filename, or a font is not known by its name as part of your system.}{Consult the PreTeXt Guide for help with LaTeX fonts.}{}}
-\usepackage{zi4}
-\setmonofont[BoldFont=Inconsolatazi4-Bold.otf,StylisticSet={1,3}]{Inconsolatazi4-Regular.otf}
 %% end:   xelatex mono font ("font-xelatex-mono" template)
 %% begin: xelatex font adjustments ("font-xelatex-style" template)
 %% end:   xelatex font adjustments ("font-xelatex-style" template)
@@ -211,7 +190,6 @@
 %% end:   pdflatex main font ("font-pdflatex-main" template)
 %% begin: pdflatex mono font ("font-pdflatex-mono" template)
 %% (conditional on non-trivial uses being present in source)
-\usepackage[varqu,varl]{inconsolata}
 %% end:   pdflatex mono font ("font-pdflatex-mono" template)
 %% begin: pdflatex font adjustments ("font-pdflatex-style" template)
 %% end:   pdflatex font adjustments ("font-pdflatex-style" template)
@@ -251,14 +229,6 @@
 %%
 %% Create globally-available macros to be provided for style writers
 %% These are redefined for each occurence of each division
-%
-% Number subsections ignoring sections
-\renewcommand{\thesubsection}{\arabic{subsection}}
-\makeatletter
-\@removefromreset{subsection}{section}
-\makeatother
-%
-%
 \newcommand{\divisionnameptx}{\relax}%
 \newcommand{\titleptx}{\relax}%
 \newcommand{\subtitleptx}{\relax}%
@@ -275,9 +245,9 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\section{}%[{#4}]{#2}%
+\clearpage
+\section[{#4}]{\LARGE #2}%
 \label{#7}%
-% \clearpage
 }{}%
 %% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
 \NewDocumentEnvironment{subsectionptx}{mmmmmmm}
@@ -288,39 +258,9 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\vspace{-1.5cm}
-\subsection{}%[{#4}]{#2}%
-\label{#7}%
-}{}%
-%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
-\NewDocumentEnvironment{reading-questions-subsubsection}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-% \clearpage
-\vspace{-0.4cm}
-\subsubsection[{#4}]{Lección~\thesubsection~-~#2}%
-\vspace{-0.4cm}
-\label{#7}%
-}{}%
-%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
-\NewDocumentEnvironment{reading-questions-subsubsection-numberless}{mmmmmmm}
-{%
-\renewcommand{\divisionnameptx}{#1}%
-\renewcommand{\titleptx}{#2}%
-\renewcommand{\subtitleptx}{#3}%
-\renewcommand{\shortitleptx}{#4}%
-\renewcommand{\authorsptx}{#5}%
-\renewcommand{\epigraphptx}{#6}%
-% \clearpage
-\vspace{-1.2cm}
-\subsubsection*{Lección~\thesubsection~-~#2}%
-\vspace{-0.4cm}
-\addcontentsline{toc}{subsubsection}{#4}
+\newpage
+\subsection[{#4}]{\Large #2}%
+\vspace{-0.3cm}%
 \label{#7}%
 }{}%
 %% Environment for a PTX "subsubsection" at the level of a LaTeX "subsubsection"
@@ -332,9 +272,8 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-% \clearpage
-\vspace{-1.0cm}
-\subsubsection[{#4}]{Lección~\thesubsection~-~#2}%
+\vspace{-0.4cm}
+\subsubsection[{#4}]{#2}\nobreak%
 \vspace{-0.4cm}
 \label{#7}%
 }{}%
@@ -347,8 +286,7 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\clearpage
-\subsection*{#2}%
+\subsection[{#4}]{#2}%
 \label{#7}%
 }{}%
 %% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
@@ -360,9 +298,8 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-% \subsection*{#2}%
-\subsection[{#4}]{Lección~\thesubsection - #2}
-\addcontentsline{toc}{subsection}{Lección~\thesubsection - #4}
+\subsection*{#2}%
+\addcontentsline{toc}{subsection}{#4}
 \label{#7}%
 }{}%
 %% Environment for a PTX "references" at the level of a LaTeX "subsection"
@@ -374,7 +311,8 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
-\subsection[{#4}]{Lección~\thesubsection - #2}%
+\newpage
+\subsection[{#4}]{#2}%
 \label{#7}%
 }{}%
 %% Environment for a PTX "references" at the level of a LaTeX "subsection"
@@ -386,8 +324,36 @@
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
+\newpage
 \subsection*{#2}%
-\addcontentsline{toc}{subsection}{Lección~\thesubsection - #4}
+\addcontentsline{toc}{subsection}{#4}
+\label{#7}%
+}{}%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
+\NewDocumentEnvironment{reading-questions-subsubsection}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\vspace{-0.4cm}
+\subsubsection[{#4}]{#2}\nobreak%
+\vspace{-0.4cm}
+\label{#7}%
+}{}%
+%% Environment for a PTX "reading-questions" at the level of a LaTeX "subsubsection"
+\NewDocumentEnvironment{reading-questions-subsubsection-numberless}{mmmmmmm}
+{%
+\renewcommand{\divisionnameptx}{#1}%
+\renewcommand{\titleptx}{#2}%
+\renewcommand{\subtitleptx}{#3}%
+\renewcommand{\shortitleptx}{#4}%
+\renewcommand{\authorsptx}{#5}%
+\renewcommand{\epigraphptx}{#6}%
+\subsubsection*{#2}\nobreak%
+\addcontentsline{toc}{subsubsection}{#4}
 \label{#7}%
 }{}%
 %% Environment for a PTX "references" at the level of a LaTeX "section"
@@ -428,26 +394,26 @@
 [{\Large\authorsptx}]
 \titlespacing*{\chapter}{0pt}{50pt}{40pt}
 \titleformat{\section}[hang]
-{\divisionfont\Large\bfseries}{}{1ex}{#1}
+{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
 [{\large\authorsptx}]
 \titleformat{name=\section,numberless}[block]
 {\divisionfont\Large\bfseries}{}{0pt}{#1}
 [{\large\authorsptx}]
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 \titleformat{\subsection}[hang]
-{\divisionfont\large\bfseries}{}{1ex}{#1}
+{\divisionfont\large\bfseries}{\thesubsection}{}{#1}
 [{\normalsize\authorsptx}]
 \titleformat{name=\subsection,numberless}[block]
 {\divisionfont\large\bfseries}{}{0pt}{#1}
 [{\normalsize\authorsptx}]
-\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{0pt}{0.8ex plus 0.2ex minus 0.1ex}
 \titleformat{\subsubsection}[hang]
 {\divisionfont\normalsize\bfseries}{\thesubsubsection}{1em}{#1}
 [{\small\authorsptx}]
 \titleformat{name=\subsubsection,numberless}[block]
 {\divisionfont\normalsize\bfseries}{}{0pt}{#1}
 [{\normalsize\authorsptx}]
-\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{2.5ex plus 0.1ex minus .2ex}{0.5ex plus 0.1ex minus 0.2ex}
 \titleformat{\paragraph}[hang]
 {\divisionfont\normalsize\bfseries}{\theparagraph}{1em}{#1}
 [{\small\authorsptx}]
@@ -491,11 +457,13 @@
 %% Length may compress for output to fit in one line
 \newlength{\fillinmaxwidth}
 \newlength{\fillincontract}
+\newlength{\charmaxwidth}\setlength{\charmaxwidth}{0.5em}
+\newlength{\charminwidth}\setlength{\charminwidth}{0.1em}
 \newlength{\fillinheight}
 \newcommand{\fillintext}[1]{%
-\setlength{\fillinmaxwidth}{#1em*\real{0.5}}%
-\setlength{\fillincontract}{#1em*\real{0.5}*\real{0.2}}%
-\setlength{\fillinheight}{\heightof{\strut}+1.2pt}%
+\setlength{\fillinmaxwidth}{#1\charmaxwidth}%
+\setlength{\fillincontract}{#1\charminwidth}%
+\setlength{\fillinheight}{\baselineskip}\addtolength{\fillinheight}{1.2pt}%
 \strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
 }
 %% End: Semantic Macros
@@ -504,52 +472,19 @@
 %% Hanging indent occupies a 5ex width slot prior to left margin
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=2.3cm, breakable, before upper app={\setlength{\parskip}{\medskipamount}} } }
-\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={}}
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parskip}{\medskipamount}}, } }
+\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\space}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
 %% \linewidth, and are guaranteed to be positive and sum to 1.0
-\tcbset{ imagestyle/.style={bwminimalstyle, blankest} }
-\NewTColorBox{tcbimage}{mmm}{imagestyle}
+\tcbset{ imagestyle/.style={bwminimalstyle} }
+\NewTColorBox{tcbimage}{mmm}{imagestyle,left skip=#1\linewidth,width=#2\linewidth}
 %% Wrapper environment for tcbimage environment with a fourth argument
 %% Fourth argument, if nonempty, is a vertical space adjustment
 %% and implies image will be preceded by \leavevmode\nopagebreak
 %% Intended use is for alignment with a list marker
-\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~\par}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}%
-}%% For improved tables
-\usepackage{array}
-%% Some extra height on each row is desirable, especially with horizontal rules
-%% Increment determined experimentally
-\setlength{\extrarowheight}{0.2ex}
-%% Define variable thickness horizontal rules, full and partial
-%% Thicknesses are 0.03, 0.05, 0.08 in the  booktabs  package
-\newcommand{\hrulethin}  {\noalign{\hrule height 0.04em}}
-\newcommand{\hrulemedium}{\noalign{\hrule height 0.07em}}
-\newcommand{\hrulethick} {\noalign{\hrule height 0.11em}}
-%% We preserve a copy of the \setlength package before other
-%% packages (extpfeil) get a chance to load packages that redefine it
-\let\oldsetlength\setlength
-\newlength{\Oldarrayrulewidth}
-\newcommand{\crulethin}[1]%
-{\noalign{\global\oldsetlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{0.04em}}\cline{#1}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{\Oldarrayrulewidth}}}%
-\newcommand{\crulemedium}[1]%
-{\noalign{\global\oldsetlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{0.07em}}\cline{#1}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
-\newcommand{\crulethick}[1]%
-{\noalign{\global\oldsetlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{0.11em}}\cline{#1}%
-\noalign{\global\oldsetlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
-%% Single letter column specifiers defined via array package
-\newcolumntype{A}{!{\vrule width 0.04em}}
-\newcolumntype{B}{!{\vrule width 0.07em}}
-\newcolumntype{C}{!{\vrule width 0.11em}}
-%% tcolorbox to place tabular outside of a sidebyside
-\tcbset{ tabularboxstyle/.style={bwminimalstyle,} }
-\newtcolorbox{tabularbox}[3]{tabularboxstyle, left skip=#1\linewidth, width=#2\linewidth,}
-%% Footnote Numbering
+\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}%
+}%% Footnote Numbering
 %% Specified by numbering.footnotes.level
 %% Global numbering, since numbering.footnotes.level = 0
 %% Multiple column, column-major lists
@@ -557,7 +492,7 @@
 %% More flexible list management, esp. for references
 %% But also for specifying labels (i.e. custom order) on nested lists
 \usepackage{enumitem}
-\setlist{nosep, topsep=0pt, partopsep=0.3ex, parsep=1ex}
+\setlist{nosep, topsep=0pt, partopsep=0ex, parsep=1ex}
 %% Lists of references in their own section, maximum depth 1
 \newlist{referencelist}{description}{4}
 \setlist[referencelist]{leftmargin=!,labelwidth=!,labelsep=0ex,itemsep=1.0ex,topsep=1.0ex,partopsep=0pt,parsep=0pt}
@@ -590,7 +525,7 @@
 %% configure hyperref's  \href{}{}  and  \nolinkurl  to match listings' inline verbatim
 \renewcommand\UrlFont{\small\ttfamily}
 %% For a print PDF, no surrounding boxes, so simply textcolor (but still active to preserve spacing)
-\hypersetup{hidelinks=true}
+\hypersetup{hidelinks}
 %% Less-clever names for hyperlinks are more reliable, *especially* for structural parts
 %% See comments in the code to learn more about the importance of this setting
 \hypersetup{hypertexnames=false}
@@ -609,7 +544,7 @@
 %% The latex default is 3.  If a larger number is present here, then
 %% removing this command may make some cross-references ambiguous
 %% The precursor variable $numbering-maxlevel is checked for consistency in the common XSL file
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{0}
 %%
 %% AMS "proof" environment is no longer used, but we leave previously
 %% implemented \qedhere in place, should the LaTeX be recycled
@@ -632,27 +567,31 @@
 %%
 %% tcolorbox, with styles, for PROJECT-LIKE
 %%
-%% project: fairly simple numbered block/structure
-\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle, before title={\vspace{0.3em}\strut}, after title={\strut\hfill Lección~\thesubsection \strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, } }
-\newtcolorbox[use counter from=project-distinct]{project}[3]{title={#2}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
-%% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, before title={\vspace{0.3em}}, after title={\strut\hfill Lección~\thesubsection \strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}}, }
-\newtcolorbox[use counter from=project-distinct]{activity}[3]{title={#2}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
+\usepackage{fontawesome}
+% \faCommentO      comment bubble icon
+% \faLightbulbO    light-bulb icon
+% \faCheckSquareO  check-mark icon
 %% exploration: fairly simple numbered block/structure
-\tcbset{ explorationstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setlength{\parskip}{\medskipamount}}, } }
-\newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
+\tcbset{ explorationstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faBolt}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, fonttitle=\bfseries,  } }
+\newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
+%% activity: fairly simple numbered block/structure
+\tcbset{ activitystyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faLightbulbO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, fonttitle=\bfseries,  } }
+\newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
+%% project: fairly simple numbered block/structure
+\tcbset{ projectstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faCheckSquareO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white, fonttitle=\bfseries, } }
+\newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, after={\par}, projectstyle, }
+%%
+%% tcolorbox, with styles, for ASIDE-LIKE
+%%
+%% aside: fairly simple un-numbered block/structure
+\tcbset{ asidestyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
+\newtcolorbox{aside}[3]{title={\notblank{#2}{#2}{}}, phantomlabel={#3}, breakable, before upper app={\setparstyle}, asidestyle}
 %%
 %% xparse environments for introductions and conclusions of divisions
 %%
-%% paragraphs: the terminal, pseudo-division
-%% We use the lowest LaTeX traditional division
-\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{#1}
-\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
-\NewDocumentEnvironment{paragraphs}{mm}
-{\subparagraph*{#1}\hypertarget{#2}{}}{}
 %% introduction: in a structured division
 \NewDocumentEnvironment{introduction}{m}
-{\notblank{#1}{\noindent\textbf{#1}\space}{}}{\par\medskip}
+{\notblank{#1}{\noindent\textbf{#1}\space}{}}{\par}
 %% Graphics Preamble Entries
 \usepackage{tikz, pgfplots}
 \usetikzlibrary{positioning,matrix,arrows}
@@ -660,8 +599,8 @@
 \usetikzlibrary{decorations.markings}
 %% If tikz has been loaded, replace ampersand with \amp macro
 %% tcolorbox styles for sidebyside layout
-\tcbset{ sbsstyle/.style={raster before skip=0.3ex, raster equal height=rows, raster force size=false, } }
-\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont, } }
+\tcbset{ sbsstyle/.style={raster before skip={2ex}, raster after skip={2ex}, raster equal height=rows, raster force size=false} }
+\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont, before upper app={\setparstyle}} }
 %% Enviroments for side-by-side and components
 %% Necessary to use \NewTColorBox for boxes of the panels
 %% "newfloat" environment to squash page-breaks within a single sidebyside
@@ -669,10 +608,10 @@
 \NewDocumentEnvironment{sidebyside}{mmmm}
   {\begin{tcbraster}
     [sbsstyle,raster columns=#1,
-    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth, ]}
+    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth]}
   {\end{tcbraster}}
 %% "tcolorbox" environment for a panel of sidebyside
-\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2, }
+\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}
 %% Custom Preamble Entries, late (use latex.preamble.late)
 %% extpfeil package for certain extensible arrows,
 %% as also provided by MathJax extension of the same name
@@ -693,25 +632,11 @@
 \newcommand{\lt}{<}
 \newcommand{\gt}{>}
 \newcommand{\amp}{&}
-\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics
-% \renewcommand{\familydefault}{\sfdefault}
+%% End: Author-provided macros
 \usepackage[sfdefault]{roboto} 
 \usepackage{sansmath}
 \sansmath % Apply sansmath globally to all math environments
-% \usepackage{microtype}
-% stop hyphenation
-\setlength{\emergencystretch}{3em}
-\tolerance=1000
-\hbadness=1000
-\usepackage[none]{hyphenat} % Disable hyphenation
-\hyphenpenalty=10000
-\exhyphenpenalty=10000
-% estilo de párrafos
-\setlength{\parindent}{0pt}    % No indentation for new paragraphs
-\setlength{\parskip}{1ex}     % Small space between paragraphs 
-% Quitar justificación (lineas igual de anchas)
-\usepackage[document]{ragged2e}
-% headers y footers
+\usepackage[export]{adjustbox}% 'export' allows adjustbox keys in \includegraphics
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyfoot[C]{} %Remove default Latex numbering
@@ -721,12 +646,19 @@
 \fancyhead[R]{}
 % \fancyfoot[R]{}
 \fancyfoot[RO, LE]{\textcolor{PineGreen}{\textbf{\thepage}}}
-\fancyfoot[C]{\small Libro de trabajo}%{\rightmark}
+\fancyfoot[C]{\rightmark}
 \fancyfootoffset{1cm} % Set offsets for header/footer closer to the edge
 \fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
 % \renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
 \renewcommand{\headrulewidth}{0pt}  % Quitar linea del header
-%% End: Author-provided macros
+% stop hyphenation
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+% estilo de párrafos
+\setlength{\parindent}{0pt}    % No indentation for new paragraphs
+\setlength{\parskip}{1ex}    % Small space between paragraphs
+% Quitar justificación (lineas igual de anchas)
+\usepackage[document]{ragged2e}
 % Custom abstract environment for smaller text and smaller footnotes
 \makeatletter
 \renewenvironment{abstract}{%
