@@ -621,7 +621,7 @@
  Este documento (HTML, pdf, latex o epub) se generó con \href{https://pretextbook.org}{PreTeXt}\footnote{\nolinkurl{pretextbook.org}\label{meta-source-2-2}}. El código fuente con el contenido para generarlo se encuentra en \href{https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA}{\nolinkurl{github.com/enriqueacosta}}.%
  \end{abstract}
 -\renewcommand*{\abstractname}{Resumen}
-+\clearpage
++\cleardoublepage
 +\renewcommand*{\abstractname}{Licencia}
  \begin{abstract}
  2024~Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta (\href{https://enriqueacosta.github.io}{\nolinkurl{enriqueacosta.github.io}}). Iniciativa del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{www.grupolema.org}})Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).%
@@ -1108,16 +1108,19 @@
  \end{divisionexercise}%
  \end{exercises-subsection}
  \end{sectionptx}
-@@ -1156,7 +566,7 @@
+@@ -1155,8 +565,9 @@
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-divisionComoFactorDesconocido-act2}
  \begin{activity}{Actividad}{En el mercado agrícola.}{act-enElMercadoAgricola}%
  Completa cada fila. Prepárate para explicar tu razonamiento.%
- \begin{image}{0}{1}{0}{}%
+-\begin{image}{0}{1}{0}{}%
 -\includegraphics[width=\linewidth]{external/tikz-source/enElMercadoAgricola-blm-tab.pdf}
++\vspace{-0.3cm}
++\begin{image}{0}{1}{0}{}%
 +\includegraphics[max width=\linewidth, center]{external/tikz-source/enElMercadoAgricola-blm-tab.pdf}
  \end{image}%
  \end{activity}%
  \end{subsubsectionptx}
-@@ -1182,7 +592,7 @@
+@@ -1182,7 +593,7 @@
  \par
  Él dice que en cada espacio en blanco va el mismo número, aunque una ecuación es de multiplicación y la otra es de división. ¿Tiene razón? Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1126,7 +1129,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -1200,22 +610,24 @@
+@@ -1200,22 +611,24 @@
  \typeout{Subsubsección  Actividad 1}
  \typeout{************************************************}
  %
@@ -1162,7 +1165,7 @@
  \end{subsubsectionptx}
  %
  %
-@@ -1230,34 +642,32 @@
+@@ -1230,34 +643,32 @@
  (a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.%
  \par
  (b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.%
@@ -1211,7 +1214,7 @@
  \end{image}%
  %
  \end{enumerate}
-@@ -1265,8 +675,8 @@
+@@ -1265,8 +676,8 @@
  %
  \begin{enumerate}
  \item{}Ecuación: \fillintext{30}%
@@ -1222,7 +1225,7 @@
  \end{image}%
  %
  \end{enumerate}
-@@ -1285,7 +695,7 @@
+@@ -1285,7 +696,7 @@
  \par
  Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1231,7 +1234,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -1293,32 +703,33 @@
+@@ -1293,32 +704,33 @@
  %
  %
  \typeout{************************************************}
@@ -1279,17 +1282,19 @@
  \cleardoublepage
  Tarjetas para recortar:
  \par
-@@ -1330,9 +741,6 @@
+@@ -1329,10 +741,7 @@
+ \par
  \includegraphics[page=2, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf}
  \par
- \clearpage
+-\clearpage
 -\end{preformatted}
 -%
 -\end{activity}%
++\cleardoublepage
  \end{subsubsectionptx}
  %
  %
-@@ -1348,10 +756,10 @@
+@@ -1348,10 +757,10 @@
  \item{}Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.%
  \item{}Por turnos, tomen una tarjeta de hechos de multiplicación.%
  \item{}Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que \textellipsis{}”%
@@ -1304,7 +1309,7 @@
  \end{image}%
  \end{activity}%
  \end{subsubsectionptx}
-@@ -1361,11 +769,12 @@
+@@ -1361,11 +770,12 @@
  \typeout{Preguntas de comprensión  Actividad de cierre}
  \typeout{************************************************}
  %
@@ -1318,7 +1323,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -1385,14 +794,14 @@
+@@ -1385,14 +795,14 @@
  %
  \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-patronesTablaMultiplicar-act1}
  \begin{activity}{Actividad}{Productos en la tabla.}{act-productosTablaMultiplicar}%
@@ -1338,7 +1343,7 @@
  %
  \begin{enumerate}
  \item{}7 como un factor%
-@@ -1400,9 +809,9 @@
+@@ -1400,9 +810,9 @@
  \item{}10 como un factor%
  \end{enumerate}
  Prepárate para explicar tu razonamiento.%
@@ -1351,7 +1356,7 @@
  \end{enumerate}
  \end{activity}%
  \end{subsubsectionptx}
-@@ -1418,9 +827,9 @@
+@@ -1418,9 +828,9 @@
  \begin{enumerate}
  \item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1364,7 +1369,7 @@
  \end{enumerate}
  \end{activity}%
  \end{subsubsectionptx}
-@@ -1434,11 +843,11 @@
+@@ -1434,11 +844,11 @@
  \begin{project}{Actividad de cierre}{Encuentra el producto desconocido.}{cool-encuentraProductoDesconocido}%
  ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1381,7 +1386,7 @@
  \end{project}%
  \end{reading-questions-subsubsection}
  \end{subsectionptx}
-@@ -1459,20 +868,18 @@
+@@ -1459,20 +869,18 @@
  \begin{activity}{Actividad}{De diagramas a expresiones.}{act-deDiagramasAExpresiones}%
  %
  \begin{enumerate}
@@ -1408,7 +1413,7 @@
  \end{enumerate}
  \end{enumerate}
  \end{activity}%
-@@ -1489,7 +896,7 @@
+@@ -1489,7 +897,7 @@
  \begin{sbspanel}{0.3}%
  Noah%
  \par
@@ -1417,7 +1422,7 @@
  %
  \begin{equation*}
  (5\times 3)+(2 \times 3)
-@@ -1499,7 +906,7 @@
+@@ -1499,7 +907,7 @@
  \begin{sbspanel}{0.3}%
  Priya%
  \par
@@ -1426,7 +1431,7 @@
  %
  \begin{equation*}
  2 \times (2 \times 6)
-@@ -1509,7 +916,7 @@
+@@ -1509,7 +917,7 @@
  \begin{sbspanel}{0.3}%
  Tyler%
  \par
@@ -1435,7 +1440,7 @@
  %
  \begin{equation*}
  (5 \times 8) + (3 \times 8)
-@@ -1524,7 +931,7 @@
+@@ -1524,7 +932,7 @@
  \item{}Escribe los dos factores que se pueden multiplicar para encontrar su área.%
  \item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1444,7 +1449,7 @@
  \end{image}%
  \end{enumerate}
  \end{activity}%
-@@ -1547,12 +954,12 @@
+@@ -1547,12 +955,12 @@
  \end{enumerate}
  \end{sbspanel}%
  \begin{sbspanel}{0.4}%
@@ -1463,7 +1468,7 @@
  \end{project}%
  \end{reading-questions-subsubsection}
  \end{subsectionptx}
-@@ -1581,21 +988,21 @@
+@@ -1581,21 +989,21 @@
  \begin{sbspanel}{0.391}%
  A%
  \par
@@ -1492,7 +1497,7 @@
  \end{image}%
  \end{activity}%
  \end{subsubsectionptx}
-@@ -1605,6 +1012,7 @@
+@@ -1605,6 +1013,7 @@
  \typeout{Subsubsección  Actividad 2}
  \typeout{************************************************}
  %
@@ -1500,7 +1505,7 @@
  \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec11-act2}
  \begin{activity}{Actividad}{Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.}{act-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos}%
  Las tarjetas para recortar tienen expresiones que representan áreas de rectángulos.%
-@@ -1612,12 +1020,12 @@
+@@ -1612,12 +1021,12 @@
  Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
  \par
  Si te ayuda, puedes dibujar rectángulos.%
@@ -1518,7 +1523,7 @@
  \end{subsubsectionptx}
  %
  %
-@@ -1636,11 +1044,11 @@
+@@ -1636,11 +1045,11 @@
  \end{enumerate}
  \end{sbspanel}%
  \begin{sbspanel}{0.4}%
@@ -1535,7 +1540,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -1655,7 +1063,7 @@
+@@ -1655,7 +1064,7 @@
  \begin{divisionexercise}{1}{}{}{gra3-uni4-secB-ProblemasPractica-3}%
  Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones \(35 \div 7 = {?}\) y \({?} \times 7 = 35\) representan la situación.%
  \begin{image}{0}{1}{0}{}%
@@ -1544,7 +1549,7 @@
  \end{image}%
  \end{divisionexercise}%
  \begin{divisionexercise}{2}{}{}{gra3-uni4-secB-ProblemasPractica-4}%
-@@ -1663,7 +1071,7 @@
+@@ -1663,7 +1072,7 @@
  \par
  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.%
  \begin{image}{0}{1}{0}{}%
@@ -1553,7 +1558,7 @@
  \end{image}%
  \end{divisionexercise}%
  \begin{divisionexercise}{3}{}{}{gra3-uni4-secB-ProblemasPractica-5}%
-@@ -1672,54 +1080,57 @@
+@@ -1672,54 +1081,57 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}\(\displaystyle 8 \times 5 = 40\)%
  \begin{image}{0}{1}{0}{}%
@@ -1622,7 +1627,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -1745,6 +1156,7 @@
+@@ -1745,6 +1157,7 @@
  \typeout{Subsubsección  Actividad 1}
  \typeout{************************************************}
  %
@@ -1630,7 +1635,7 @@
  \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-multiplicarMultiplos10-act1}
  \begin{activity}{Actividad}{Una gran cantidad de dólares.}{act-granCantidadDolares}%
  Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
-@@ -1754,25 +1166,25 @@
+@@ -1754,25 +1167,25 @@
  \par
  Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.%
  \begin{image}{0}{1}{0}{}%
@@ -1662,7 +1667,7 @@
  \end{image}%
  \end{enumerate}
  \end{activity}%
-@@ -1787,7 +1199,7 @@
+@@ -1787,7 +1200,7 @@
  \begin{project}{Actividad de cierre}{¿Cuál es el valor?}{cool-cualEsElValor}%
  Encuentra el valor de \(6\times 40\). Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1671,7 +1676,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -1801,20 +1213,22 @@
+@@ -1801,20 +1214,22 @@
  \begin{subsectionptx}{Subsección}{Lección 13 -~Resolvamos problemas de grupos iguales}{}{Lección 13}{}{}{lec-problemasMult11a19}
  %
  %
@@ -1703,7 +1708,7 @@
  \end{subsectionptx}
  %
  %
-@@ -1836,11 +1250,11 @@
+@@ -1836,11 +1251,11 @@
  Encuentra el valor de \(5\times 15\) y explica cómo está representado esto en el diagrama.%
  \end{sbspanel}%
  \begin{sbspanel}{0.4}%
@@ -1720,7 +1725,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection-numberless}
-@@ -1862,7 +1276,7 @@
+@@ -1862,7 +1277,7 @@
  \begin{project}{Actividad de cierre}{Encuentra el área.}{cool-encontrarArea}%
  Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1729,7 +1734,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection-numberless}
-@@ -1880,6 +1294,7 @@
+@@ -1880,6 +1295,7 @@
  \typeout{Subsubsección  Actividad 3}
  \typeout{************************************************}
  %
@@ -1737,7 +1742,7 @@
  \begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{lec-multiplicarNumsMayoresA20-act3}
  \begin{activity}{Actividad}{Juguemos “Cerca de 100, multiplicación” (opcional).}{act-juegoCerca100Multiplicacion}%
  Tarjetas para recortar en la siguiente página.%
-@@ -2000,7 +1415,8 @@
+@@ -2000,7 +1416,8 @@
  %
  \end{sbspanel}%
  \end{sidebyside}%
@@ -1747,7 +1752,7 @@
  \cleardoublepage
  Tarjetas para recortar:
  \begin{image}{0}{1}{0}{}%
-@@ -2017,9 +1433,7 @@
+@@ -2017,9 +1434,7 @@
  \begin{image}{0}{1}{0}{}%
  \includegraphics[page=4, rotate=90, scale=0.55, trim=40 40 20 40, clip, center] {external/blm/pdf-source/tarjetasDeDigitos.pdf}
  \end{image}
@@ -1758,7 +1763,7 @@
  \end{subsubsectionptx}
  %
  %
-@@ -2031,7 +1445,7 @@
+@@ -2031,7 +1446,7 @@
  \begin{project}{Actividad de cierre}{Multiplica números mayores que 20.}{cool-mutiplicarNumsMayores20}%
  ¿Cuál es el valor de \(4\times 24\)? Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1767,7 +1772,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -2056,11 +1470,11 @@
+@@ -2056,11 +1471,11 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.%
  \begin{image}{0}{1}{0}{}%
@@ -1781,7 +1786,7 @@
  \end{image}%
  \end{enumerate}
  \end{project}%
-@@ -2075,36 +1489,40 @@
+@@ -2075,36 +1490,40 @@
  \begin{exercises-subsection}{Ejercicios}{Problemas de práctica de la sección C}{}{Problemas de práctica}{}{}{gra3-uni4-secC-ProblemasPractica}
  \begin{divisionexercise}{1}{}{}{gra3-uni4-secC-ProblemasPractica-3}%
  %
@@ -1829,7 +1834,7 @@
  \end{enumerate}
  \end{sbspanel}%
  \end{sidebyside}%
-@@ -2112,7 +1530,7 @@
+@@ -2112,7 +1531,7 @@
  \begin{divisionexercise}{4}{}{}{gra3-uni4-secC-ProblemasPractica-6}%
  En el mes hubo 14 días de escuela. Cada día hubo 7 horas de escuela. ¿Cuántas horas de escuela hubo durante el mes?%
  \begin{image}{0}{1}{0}{}%
@@ -1838,7 +1843,7 @@
  \end{image}%
  \end{divisionexercise}%
  \begin{divisionexercise}{5}{}{}{gra3-uni4-secC-ProblemasPractica-7}%
-@@ -2121,18 +1539,18 @@
+@@ -2121,18 +1540,18 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}\(\displaystyle 2 \times 47\)%
  \begin{image}{0}{1}{0}{}%
@@ -1860,7 +1865,7 @@
  \end{image}%
  \end{divisionexercise}%
  \begin{divisionexercise}{7}{Exploración.}{}{gra3-uni4-secC-ProblemasPractica-9}%
-@@ -2141,61 +1559,61 @@
+@@ -2141,61 +1560,61 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}Explica por qué la estrategia de Mai funciona.%
  \begin{image}{0}{1}{0}{}%
@@ -1936,7 +1941,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -2227,7 +1645,7 @@
+@@ -2227,7 +1646,7 @@
  \par
  Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
  \begin{image}{0}{1}{0}{}%
@@ -1945,7 +1950,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection-numberless}
-@@ -2249,7 +1667,7 @@
+@@ -2249,7 +1668,7 @@
  \begin{project}{Actividad de cierre}{Encuentra el valor.}{cool-encuentraElValor}%
  Encuentra el valor de \(51 \div 3.\) Usa bloques en base diez si crees que te pueden ayudar. Explica o muestra cómo razonaste.%
  \begin{image}{0}{1}{0}{}%
@@ -1954,7 +1959,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection-numberless}
-@@ -2279,17 +1697,17 @@
+@@ -2279,17 +1698,17 @@
  \item{}Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.%
  \end{enumerate}
  \end{paragraphs}%
@@ -1981,7 +1986,7 @@
  \end{subsubsectionptx}
  %
  %
-@@ -2301,7 +1719,7 @@
+@@ -2301,7 +1720,7 @@
  \begin{project}{Actividad de cierre}{Una división más.}{cool-unaDivisionMas}%
  Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -1990,7 +1995,7 @@
  \end{image}%
  \end{project}%
  \end{reading-questions-subsubsection}
-@@ -2319,6 +1737,7 @@
+@@ -2319,6 +1738,7 @@
  \typeout{Subsubsección  Actividad 1}
  \typeout{************************************************}
  %
@@ -1998,7 +2003,7 @@
  \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-problemas4Operaciones-act1}
  \begin{activity}{Actividad}{Una aventura con manzanas.}{act-unaAventuraConManzanas}%
  \begin{sidebyside}{2}{0}{0}{0.1}%
-@@ -2326,16 +1745,16 @@
+@@ -2326,16 +1746,16 @@
  Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.%
  \end{sbspanel}%
  \begin{sbspanel}{0.3}%
@@ -2020,7 +2025,7 @@
  \end{image}%
  \end{activity}%
  \end{subsubsectionptx}
-@@ -2345,6 +1764,7 @@
+@@ -2345,6 +1765,7 @@
  \typeout{Preguntas de comprensión  Actividad de cierre}
  \typeout{************************************************}
  %
@@ -2028,7 +2033,7 @@
  \begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{lec-problemas4Operaciones-cool}
  \begin{project}{Actividad de cierre}{Las manzanas en el puesto de la huerta.}{cool-manzanasEnLaHuerta}%
  En un puesto de la huerta de manzanas hay \(225\) manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en \(6\) cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?%
-@@ -2352,11 +1772,11 @@
+@@ -2352,11 +1773,11 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
  \begin{image}{0}{1}{0}{}%
@@ -2042,7 +2047,7 @@
  \end{image}%
  \end{enumerate}
  \end{project}%
-@@ -2380,32 +1800,37 @@
+@@ -2380,32 +1801,37 @@
  \begin{divisionexercise}{1}{}{}{gra3-uni4-secD-ProblemasPractica-3}%
  En el gimnasio hay \(85\) sillas. Están organizadas en \(5\) filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
  \begin{image}{0}{1}{0}{}%
@@ -2091,7 +2096,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -2415,25 +1840,26 @@
+@@ -2415,25 +1841,26 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}\(\displaystyle 96 \div 6\)%
  \begin{image}{0}{1}{0}{}%
@@ -2125,7 +2130,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -2443,11 +1869,11 @@
+@@ -2443,11 +1870,11 @@
  \begin{enumerate}[label={(\alph*)}]
  \item{}Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.%
  \begin{image}{0}{1}{0}{}%
@@ -2139,7 +2144,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -2458,7 +1884,7 @@
+@@ -2458,7 +1885,7 @@
  \item{}Haz una lista.%
  \item{}Escribe una ecuación de multiplicación o de división para cada forma.%
  \begin{image}{0}{1}{0}{}%
@@ -2148,7 +2153,7 @@
  \end{image}%
  \end{enumerate}
  \end{divisionexercise}%
-@@ -2470,37 +1896,13 @@
+@@ -2470,37 +1897,15 @@
  \typeout{Referencias  Atribuciones de imágenes}
  \typeout{************************************************}
  %
@@ -2188,5 +2193,7 @@
 -Las imágenes sin atrubición las produjo LEMA \href{https://www.grupolema.org}{www.grupolema.org}\footnote{\nolinkurl{www.grupolema.org}\label{gra3-uni4-8-3-2}} específicamente para esta adaptación y se liberan con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), o son © 2021 \href{https://curriculum.illustrativemathematics.org}{Illustrative Mathematics}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{gra3-uni4-8-3-4}} con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0) y se reproducen directamente de la versión en Español disponible en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{gra3-uni4-8-3-6}}.%
 +Las imágenes sin atrubición las produjo LEMA \href{https://www.grupolema.org}{www.grupolema.org}\footnote{\nolinkurl{www.grupolema.org}\label{gra3-uni4-9-3-2}} específicamente para esta adaptación y se liberan con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), o son © 2021 \href{https://curriculum.illustrativemathematics.org}{Illustrative Mathematics}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{gra3-uni4-9-3-4}} con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0) y se reproducen directamente de la versión en Español disponible en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{gra3-uni4-9-3-6}}.%
  \end{references-section}
++\par
++\cleardoublepage
  \end{document}
  
