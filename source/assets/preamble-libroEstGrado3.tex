@@ -48,7 +48,7 @@
 %% We load some "stock" tcolorbox styles that we use a lot
 %% Placement here is provisional, there will be some color work also
 %% First, black on white, no border, transparent, but no assumption about titles
-\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,
+\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=0pt, frame empty,
 colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Second, bold title, run-in to text/paragraph/heading
 %% Space afterwards will be controlled by environment,
@@ -98,7 +98,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% See Bringhurst 2.1.1 on measure for recommendations
 %% 75 characters per line (count spaces, punctuation) is target
 %% which is the upper limit of Bringhurst's recommendations
-\geometry{letterpaper, inner=1.5in, outer=1in, top=0.35in, bottom=0.7in}
+\geometry{letterpaper, inner=1.2in, outer=0.7in, top=0.35in, bottom=0.7in}
 %% Custom Page Layout Adjustments (use publisher page-geometry entry)
 %% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
 %% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
@@ -246,7 +246,9 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
 \clearpage
-\section[{#4}]{\LARGE #2}%
+\vspace*{8cm}
+\section[{#4}]{#2}%
+\vfill
 \label{#7}%
 }{}%
 %% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
@@ -286,6 +288,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
+\clearpage
 \subsection[{#4}]{#2}%
 \label{#7}%
 }{}%
@@ -365,6 +368,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \renewcommand{\shortitleptx}{#4}%
 \renewcommand{\authorsptx}{#5}%
 \renewcommand{\epigraphptx}{#6}%
+\clearpage
 \section[{#4}]{#2}%
 \label{#7}%
 }{}%
@@ -394,10 +398,10 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 [{\Large\authorsptx}]
 \titlespacing*{\chapter}{0pt}{50pt}{40pt}
 \titleformat{\section}[hang]
-{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
+{\divisionfont\LARGE\bfseries}{\thesection}{1ex}{#1}
 [{\large\authorsptx}]
 \titleformat{name=\section,numberless}[block]
-{\divisionfont\Large\bfseries}{}{0pt}{#1}
+{\divisionfont\Huge\bfseries}{}{0pt}{#1}
 [{\large\authorsptx}]
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 \titleformat{\subsection}[hang]
@@ -473,7 +477,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
 \tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parskip}{\medskipamount}}, } }
-\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\space}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
+\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\notblank{#2}{\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
 %% \linewidth, and are guaranteed to be positive and sum to 1.0
