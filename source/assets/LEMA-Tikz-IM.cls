@@ -118,9 +118,17 @@
 \RequirePackage{amsmath}
 \RequirePackage{xcolor}
 
+
+
+% Sans serif font
+% \renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[sfdefault]{roboto} 
+
+% Sans serif font for math
 % \RequirePackage{sansmath}
 \RequirePackage{sfmath}
-\renewcommand{\familydefault}{\sfdefault}
+% \RequirePackage{mathastext}
+
 
 % \RequirePackage[fontsize=10pt]{fontsize}
 % \gradeFontSize
@@ -131,7 +139,7 @@
     fit,
     calc,
     intersections,
-    % positioning,
+    positioning,
     % arrows,
     % arrows.meta,
     % shapes.geometric,
@@ -283,7 +291,7 @@
 %         3  & hola & 1 & 0\\ 
 %   };
 
-\def\minTableColWidth{20ex}
+\def\minTableColWidth{15ex}
 \def\minTableRowHeight{5ex}
 \def\tableLineWidth{1pt}
 \def\tableHeaderLineWidth{2pt}

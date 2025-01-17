@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante"> 
+<introduction component="est-goal"> 
   <p>Usemos ecuaciones para representar historias y veamos qué significa resolver ecuaciones.</p>
 </introduction>
 
@@ -185,7 +185,7 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
-<reading-questions xml:id="lec-verdadEcuaciones-cool"> 
+<reading-questions xml:id="lec-verdadEcuaciones-cool" component="cools"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>
@@ -214,7 +214,7 @@
 <!-- ======================================================================
   Problemas de práctica (a nivel lección a partir de grado 6)
 =========================================================================== -->
-<exercises xml:id="lec-verdadEcuaciones-ProblemasPractica"> 
+<exercises component="PPs" xml:id="lec-verdadEcuaciones-ProblemasPractica"> 
   <title><custom ref="titulo-problemas-practica-lec"/></title>
   <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
   <introduction>

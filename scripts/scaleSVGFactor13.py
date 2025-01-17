@@ -51,6 +51,6 @@ def scale_svg(input_file):
 # Main
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python scale_svg.py <input-file.svg or input-file>")
+        print("Usage: scaleSVGFactor13.py <input-file.svg or input-file>")
     else:
         scale_svg(sys.argv[1])

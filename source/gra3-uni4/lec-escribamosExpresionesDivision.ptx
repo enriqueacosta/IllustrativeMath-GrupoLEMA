@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
   <p>Escribamos expresiones de división y resolvamos problemas de “¿cuántos grupos?” y “¿cuántos hay en cada grupo?”</p>
 </introduction>
 
@@ -72,7 +72,7 @@
   <!-- Narrative de la lección -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>Los estudiantes clasifican situaciones de división según si el número de grupos es desconocido o si el número de objetos en cada grupo es desconocido y escriben expresiones de división para representar cada situación (MP2). Luego, los estudiantes tienen la oportunidad de usar las representaciones que han aprendido en esta sección para resolver problemas de división.</p>
+    <p>Los estudiantes clasifican situaciones de división dependiendo de si el número de grupos es desconocido o si el número de objetos en cada grupo es desconocido y escriben expresiones de división para representar cada situación (MP2). Luego, los estudiantes tienen la oportunidad de usar las representaciones que han aprendido en esta sección para resolver problemas de división.</p>
   </paragraphs>
 
   <!-- Preguntas de reflexión teacher -->
@@ -86,7 +86,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-escribamosExpresionesDivision-warm">
+<subsubsection xml:id="lec-escribamosExpresionesDivision-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -109,7 +109,7 @@
 <!-- ============================================ 
   Actividad 2                        
 =================================================  -->
-<subsubsection xml:id="lec-escribamosExpresionesDivision-act2">
+<subsubsection xml:id="lec-escribamosExpresionesDivision-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <title component="profesor"><nbsp/>(20 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -133,11 +133,11 @@
     <ul>
       <li>La división es sobre <em>grupos iguales</em>.</li>
       <li>Con la división podemos encontrar el número de grupos, o cuántos hay en cada grupo.</li>
-      <li>Podemos representar la división con dibujos y con expresiones con <m>\div</m>.</li>
+      <li>Podemos representar la división haciendo dibujos y escribiendo expresiones con <m>\div</m>.</li>
     </ul>
   </p>  
   <p>
-    Organice las ideas de la clase en un gráfico con dos columnas, con representaciones de "¿cuántos grupos?" en una columna y las de "¿cuántos en cada grupo?" en la otra (como en el resumen de la sección para estudiantes).
+    Organice las ideas de la clase en un gráfico con dos columnas, con representaciones de "¿cuántos grupos?" en una columna y las de "¿cuántos en cada grupo?" en la otra (como aparece en el resumen de la sección para estudiantes).
   </p>
 </subsubsection>
 
@@ -145,7 +145,7 @@
 <!-- ============================================
   Cool-down
 ================================================= -->
-<reading-questions xml:id="lec-escribamosExpresionesDivision-cool">
+<reading-questions xml:id="lec-escribamosExpresionesDivision-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

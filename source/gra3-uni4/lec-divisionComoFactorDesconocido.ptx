@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
   <p>Conectemos ecuaciones de división con ecuaciones de multiplicación.</p>
 </introduction>
 
@@ -25,8 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>Explicar la relación entre ecuaciones de multiplicación y división.</li>
-    <li>Interpretar ecuaciones de división y ecuaciones de multiplicación con un factor desconocido.</li>
+    <li>Explicar la relación entre ecuaciones de multiplicación y ecuaciones de división.</li>
+    <li>Interpretar ecuaciones de división y ecuaciones de multiplicación que incluyan un factor desconocido.</li>
   </ul>
 </objectives>
 
@@ -51,7 +51,7 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>El propósito de esta lección es que los estudiantes relacionen la multiplicación y la división y reconozcan la división como un problema de factor desconocido.</p>
+    <p>El propósito de esta lección es que los estudiantes relacionen la multiplicación y la división y reconozcan que la división es equivalente a un problema de factor desconocido.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -84,7 +84,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-divisionComoFactorDesconocido-warm">
+<subsubsection xml:id="lec-divisionComoFactorDesconocido-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -98,7 +98,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-divisionComoFactorDesconocido-act1">
+<subsubsection xml:id="lec-divisionComoFactorDesconocido-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -155,7 +155,7 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-divisionComoFactorDesconocido-cool">
+<reading-questions xml:id="lec-divisionComoFactorDesconocido-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

@@ -11,7 +11,7 @@
   Objetivos de aprendizaje                        
 =================================================  -->
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
   <p>Representemos situaciones de división con dibujos.</p>
 </introduction>
 
@@ -26,7 +26,7 @@
 <objectives component="profesor">
   <ul>
     <li>Interpretar y relacionar dibujos y descripciones de situaciones de división.</li>
-    <li>Entender que una situación de división puede involucrar un número de grupos desconocido o un número de objectos en cada grupo desconocido.</li>
+    <li>Entender que una situación de división puede involucrar un número de grupos desconocido o un número desconocido de objectos en cada grupo.</li>
   </ul>
 </objectives>
 
@@ -57,18 +57,18 @@
  <!--  <paragraphs>
     <title><custom ref="materials-act-titulo"/></title>
     <ul>
-      <li>Cubos encajables o fichas de dos colores</li>
+      <li>Cubos encajables o fichas para contar</li>
       <li>Herramientas para crear una presentación visual</li>
     </ul>
   </paragraphs> -->
 
   <paragraphs>
       <title><custom ref="narrative-leccion-titulo"/></title>
-      <p>Los estudiantes ven los dos tipos de situaciones de división lado a lado en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <m>\div</m>, se introduce en la síntesis de la lección.</p>
+      <p>Los estudiantes ven los dos tipos de situaciones de división en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <m>\div</m>, se introduce en la síntesis de la lección.</p>
   </paragraphs>
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>¿Cómo están aprovechando los estudiantes los dibujos que utilizaron al multiplicar para resolver problemas de división?</p>  
+    <p>Los estudiantes utilizaron cierto tipo de dibujos al multiplicar, ¿cómo los están aprovechando ahora para resolver problemas de división?</p>  
   </paragraphs>
 </introduction>
 
@@ -76,7 +76,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-dibujosSituacionesDivision-warm">
+<subsubsection xml:id="lec-dibujosSituacionesDivision-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -87,7 +87,7 @@
 <!-- ============================================ 
   Actividad 1                        
 =================================================  -->
-<subsubsection xml:id="lec-dibujosSituacionesDivision-act1">
+<subsubsection xml:id="lec-dibujosSituacionesDivision-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -99,7 +99,7 @@
 <!-- ============================================ 
   Actividad 2                        
 =================================================  -->
-<subsubsection xml:id="lec-dibujosSituacionesDivision-act2">
+<subsubsection xml:id="lec-dibujosSituacionesDivision-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -111,7 +111,7 @@
 <!-- ============================================ 
   Actividad 3                        
 =================================================  -->
-<subsubsection xml:id="lec-dibujosSituacionesDivision-act3">
+<subsubsection xml:id="lec-dibujosSituacionesDivision-act3" component="no-libroTrabajo">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -136,11 +136,11 @@
       Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?
     </p>
     <p>
-      Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?
+      Lin tiene 8 lápices de colores y 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?
     </p>
   </sidebyside>
   <p>
-    <q>¿En qué se parecen y en qué se diferencian estas situaciones de división?</q> (Ambas situaciones tienen los números 8, 2 y 4 en ellas. Ambas involucran poner objetos en grupos iguales. Los objetos son diferentes, uno se trata de marcadores y el otro de lápices de colores. Una situación nos dice cuántos elementos van en cada contenedor y la otra nos dice cuántos contenedores hay)
+    <q>¿En qué se parecen y en qué se diferencian estas situaciones de división?</q> (Ambas situaciones tienen los números 8, 2 y 4 en ellas. Ambas involucran poner objetos en grupos iguales. Los objetos son diferentes, una se trata de marcadores y la otra de lápices de colores. Una situación nos dice cuántos elementos van en cada contenedor y la otra nos dice cuántos contenedores hay)
   </p>
   <p>
     <q>En la primera situación, debemos averiguar cuántos grupos hay. Sabemos que hay 4 marcadores en cada caja, pero no sabemos cuántas cajas hay. En la segunda situación, debemos averiguar cuántos hay en cada grupo. Sabemos que hay 2 bolsas, pero no sabemos cuántos lápices de colores hay en cada bolsa.</q>
@@ -149,7 +149,7 @@
     <q>Ahora que estamos dividiendo, necesitamos un símbolo nuevo para escribir expresiones de división. Si queremos representar "8 dividido en grupos de 4", escribimos: <m>8\div 4</m>.</q>
   </p>
   <p>
-    <q>¿Qué expresión podríamos escribir para representar "8 dividido en 2 grupos"?</q>
+    <q>¿Qué expresión podríamos escribir para representar "8 dividido en 2 grupos"?</q> (<m>8\div2</m>)
   </p>
 </subsubsection>
 
@@ -157,7 +157,7 @@
 <!-- ============================================
   Cool-down
 ================================================= -->
-<reading-questions xml:id="lec-dibujosSituacionesDivision-cool">
+<reading-questions xml:id="lec-dibujosSituacionesDivision-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

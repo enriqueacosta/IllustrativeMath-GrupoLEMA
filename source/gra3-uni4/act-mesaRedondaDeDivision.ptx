@@ -5,29 +5,38 @@
 <title>Mesa redonda de división</title>
 
 <statement>
-  <p>Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.</p>
-  <p>Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.</p>
+  <p component="no-libroTrabajo">Tu profesor te dará una hoja de papel con 4 recuadros. La actividad tiene 4 rondas. En cada ronda trabajarás en una hoja distinta y tu profesor te pedirá que dibujes o escribas algo en uno de los recuadros.</p>
+  <p component="libroTrabajo">En la siguiente tabla hay 4 recuadros. Tu profesor te pedirá que dibujes o escribas algo en cada uno. Espera hasta recibir las instrucciones.</p>
+  <aside component="web">
+    <p>Hoja para los dibujos en el libro de trabajo, o <url href="external/blm/pdf-source/mesa-redonda-de-division.pdf">descargue para imprimir</url>)
+    </p>
+  </aside>
+  <p>Después de trabajar en cada recuadro, haz una pausa y espera a que el profesor te dé las instrucciones de la siguiente ronda.</p>
   <ol>
     <li>
-      Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.
+      En el recuadro 1 de tu hoja, haz un dibujo de grupos iguales.
     </li>
     <li>
-      En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.
+      Observa el dibujo que tu compañero dibujó en la hoja que acabaste de recibir. En el recuadro 2, escribe una descripción de una situación de división que corresponda a ese dibujo.
     </li>
     <li>
-      En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.
+      Observa los recuadros 1 y 2 de la hoja que acabaste de recibir. En el recuadro 3, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división de esa hoja. Usa un símbolo para representar la cantidad desconocida.
     </li>
     <li>
-      En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.
+      Observa los recuadros 1, 2 y 3 de la hoja que acabaste de recibir. En el recuadro 4, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.
     </li>
   </ol>
-  <image source="png-source/CS 3.4 Lesson 7 Activity 1.png" width="60%">
+  <image component="no-libroTrabajo" source="png-source/CS 3.4 Lesson 7 Activity 1.png" width="60%">
     <shortdescription>Estudiantes jugando sentados en una mesa.</shortdescription>
+  </image>
+  <image  component="libroTrabajo" rotate="90" source="blm/pdf-source/mesa-redonda-de-division">
+    <shortdescription></shortdescription>
   </image>
 </statement>
 
 <solution>
-  <p>Las respuestas pueden variar.</p>
+  <p>Las respuestas pueden variar. Ejemplo de solución:</p>
+  <p>Recuadro 1: 3 grupos con 4 objetos en cada grupo. Recuadro 2: Lin tiene 12 limones y quiere repartirlos en 3 grupos del mismo tamaño. ¿Cuántos limones puede poner en cada grupo? Recuadro 3: <m>3 \times {?} = 12</m>. Recuadro 4: <m>12 \div 3 = {?} </m> </p>
 </solution>
 
 
@@ -46,13 +55,13 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>
-      El propósito de esta actividad es que los estudiantes consoliden lo que han aprendido sobre la relación entre la multiplicación y la división. Los estudiantes comienzan creando un dibujo de grupos iguales. Luego reciben un dibujo creado por otro estudiante en su grupo y escriben una situación de división que le corresponda. Luego pasan su hoja a otro estudiante y reciben otra hoja y utilizan el dibujo de grupos iguales y la situación para escribir una ecuación de multiplicación. En la última ronda de esta estructura de “carrusel”, los estudiantes escriben una ecuación de división para que corresponda con las otras representaciones.
+      El propósito de esta actividad es que los estudiantes consoliden lo que han aprendido sobre la relación entre la multiplicación y la división. Los estudiantes comienzan creando un dibujo de grupos iguales. Luego reciben un dibujo creado por otro estudiante de su grupo y escriben una situación de división que le corresponda. Después pasan su hoja a otro estudiante y reciben otra hoja y utilizan el dibujo de grupos iguales y la situación para escribir una ecuación de multiplicación. En la última ronda de esta estructura de “carrusel”, los estudiantes escriben una ecuación de división que corresponda con las otras representaciones.
     </p>
     <p>  
       Cuando los estudiantes relacionan dibujos, situaciones y ecuaciones, razonan de manera abstracta y cuantitativa (MP2). Al mirar el trabajo de los demás, los estudiantes pueden agregar observaciones a las representaciones y pueden defender diferentes puntos de vista. Los estudiantes pueden criticar el trabajo de otros y construir argumentos razonables (MP3).
     </p>
     <p>  
-      Los estudiantes trabajan en la misma casilla en un organizador gráfico que los otros estudiantes de su grupo, por lo que si tienen dificultades, anímelos a hablar con su grupo. Recuérdeles a los estudiantes que lo que están creando debe coincidir con lo que ya se ha completado.
+      Cada estudiante trabaja en una hoja, pero todos trabajan en la misma casilla del organizador gráfico. Por lo tanto, anímelos a hablar con su grupo si tienen dificultades. En cada ronda, recuérdeles a los estudiantes que lo que están creando debe coincidir con lo que sus compañeros completaron en esa misma hoja en rondas anteriores.
     </p>
   </paragraphs>
 
@@ -70,9 +79,9 @@
       <li>Grupos de 4</li>
       <li>Entregue a cada estudiante una hoja de registro.</li>
       <li>
-        <q>En el primer recuadro de su hoja, hagan un dibujo que muestre grupos iguales de objetos. Otros estudiantes de su grupo van a usar este dibujo para completar los otros recuadros</q>
+        <q>En el primer recuadro de su hoja, hagan un dibujo que muestre grupos iguales de objetos. Los demás estudiantes del grupo van a usar este dibujo para completar los otros recuadros</q>
       </li>
-      <li>3 minutos: tiempo de trabajo independiente</li>
+      <li>3 minutos: tiempo de trabajo individual</li>
     </ul>
   </paragraphs>
 
@@ -82,12 +91,12 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <ul>
       <li><q>Pásenle su hoja al compañero que está a su derecha. En el recuadro 2, escriban una descripción de una situación de división que corresponda al dibujo que les acabaron de pasar</q>.</li>
-      <li>3 minutes: tiempo de trabajo independiente</li>
+      <li>3 minutes: tiempo de trabajo individual</li>
       <li><q>Pasen su hoja a la derecha. En el recuadro 3, escriban una ecuación de multiplicación que corresponda al dibujo y a la situación de división que acabaron de recibir. Usen un símbolo para representar la cantidad desconocida</q>.</li>
-      <li>2 minutes: tiempo de trabajo independiente</li>
+      <li>2 minutes: tiempo de trabajo individual</li>
       <li><q>Pasen su hoja a la derecha. En el recuadro 4, escriban una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación que acabaron de recibir. Usen un símbolo para representar la cantidad desconocida</q></li>
-      <li>2 minutes: tiempo de trabajo independiente</li>
-      <li><q>Pasen su hoja una vez más. Deberían tener su dibujo original de vuelta</q></li>
+      <li>2 minutes: tiempo de trabajo individual</li>
+      <li><q>Pasen su hoja a la derecha una vez más. Cada uno debería recibir su dibujo original de vuelta</q></li>
       <li><q>Hablen con su grupo sobre cuál recuadro les pareció más difícil de completar. Compartan ideas acerca de qué fue lo que más les ayudó durante esta actividad</q></li>
       <li>5 minutes: discusión en grupos pequeños</li>
     </ul>
@@ -136,7 +145,7 @@
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>Participación: Desarrollar el esfuerzo y la persistencia. De a cada grupo retroalimentación que fomente la colaboración y la creación de comunidad. Por ejemplo, apoye a los estudiantes para que participen, pasando la hoja a la derecha y escribiendo el símbolo.</p>
+    <p>Participación: Desarrollar el esfuerzo y la persistencia. Dé a cada grupo retroalimentación que fomente la colaboración y la creación de comunidad. Por ejemplo, apoye a los estudiantes para que participen, para que pasen la hoja a la derecha y escriban el símbolo.</p>
 
     <p>Apoya la accesibilidad para: Funcionamiento social-emocional, Lenguaje</p>
   </paragraphs>

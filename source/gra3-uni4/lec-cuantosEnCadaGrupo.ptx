@@ -10,7 +10,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante">
+<introduction component="est-goal">
   <p>Representemos y resolvamos más problemas.</p>
 </introduction>
 
@@ -24,7 +24,7 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>Solucionar problemas de “¿cuántos hay en cada grupo?” usando alguna estrategia que tenga sentido para ellos.</li>  </ul>
+    <li>Solucionar problemas de “¿cuántos hay en cada grupo?” usando alguna estrategia que tenga sentido para los estudiantes.</li>  </ul>
 </objectives>
 
 
@@ -65,11 +65,11 @@
 
   <paragraphs>
       <title><custom ref="narrative-leccion-titulo"/></title>
-      <p>Previamente, los estudiantes resolvieron problemas de "¿cuántos grupos?" de una manera que tenía sentido para ellos. En esta lección, los estudiantes amplían los problemas que involucran repartir en grupos de igual tamaño para incluir problemas de "¿cuántos en cada grupo?". Los estudiantes nuevamente tienen la flexibilidad de representar y resolver problemas utilizando cualquier estrategia que tenga sentido para ellos en esta lección. Si los estudiantes usan cubos encajables, motívelos a dibujar una imagen que coincida con su trabajo. Al final de esta lección, la división se define como encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos en grupos de igual tamaño.</p>
+      <p>Previamente, los estudiantes resolvieron problemas de "¿cuántos grupos?" de una manera que tenía sentido para ellos. En esta lección, los estudiantes trabajan con problemas más amplios que involucran repartir en grupos de igual tamaño e incluyen problemas de "¿cuántos en cada grupo?". Nuevamente en esta lección los estudiantes tienen la flexibilidad de representar y resolver problemas utilizando cualquier estrategia que tenga sentido para ellos. Si los estudiantes usan cubos encajables, invítelos a dibujar una imagen que coincida con su trabajo. Al final de esta lección, la división se define como encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos en grupos de igual tamaño.</p>
   </paragraphs>
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>¿Qué dije, hice o pregunté durante la síntesis de la lección que ayudó a los estudiantes a tener claridad sobre el aprendizaje del día? ¿Cómo me ayudó entender la actividad de cierre de la lección antes de comenzar a enseñar hoy a sintetizar ese aprendizaje?</p>  
+    <p>¿Qué dije, hice o pregunté durante la síntesis de la lección que ayudó a los estudiantes a tener claridad sobre el aprendizaje del día? ¿Haber entendido la actividad de cierre antes de enseñar hoy tuvo algún beneficio a la hora de sintetizar el aprendizaje de la lección? ¿Cómo?</p>  
   </paragraphs>
 </introduction>
 
@@ -77,7 +77,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-cuantosEnCadaGrupo-warm">
+<subsubsection xml:id="lec-cuantosEnCadaGrupo-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -88,7 +88,7 @@
 <!-- ============================================ 
   Actividad 1                        
 =================================================  -->
-<subsubsection xml:id="lec-cuantosEnCadaGrupo-act1">
+<subsubsection xml:id="lec-cuantosEnCadaGrupo-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <title component="profesor"><nbsp/>(15 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -100,7 +100,7 @@
 <!-- ============================================ 
   Actividad 2                        
 =================================================  -->
-<subsubsection xml:id="lec-cuantosEnCadaGrupo-act2">
+<subsubsection xml:id="lec-cuantosEnCadaGrupo-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -112,7 +112,7 @@
 <!-- ============================================ 
   Actividad 3                        
 =================================================  -->
-<subsubsection xml:id="lec-cuantosEnCadaGrupo-act3">
+<subsubsection xml:id="lec-cuantosEnCadaGrupo-act3" component="no-libroTrabajo">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <title component="profesor"><nbsp/>(10 mins)</title> <!-- Tiempo que solo ve el profesor -->
@@ -128,14 +128,14 @@
     <p>Tiempo recomendado: 10 mins.</p>
     <p><q>Ayer, resolvimos problemas en los que preguntaban cuántos grupos podíamos hacer. Hoy resolvimos problemas en los que preguntaban cuántas cosas hay en cada grupo. Ambas ideas se conocen con el nombre de división.</q></p>
 
-    <p><q>La <term>división</term> es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos algo en grupos de igual tamaño.</q></p>
+    <p><q>La <term>división</term> es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando repartimos una colección de objetos en grupos de igual tamaño.</q></p>
 </subsubsection>
 
 
 <!-- ============================================
   Cool-down
 ================================================= -->
-<reading-questions xml:id="lec-cuantosEnCadaGrupo-cool">
+<reading-questions xml:id="lec-cuantosEnCadaGrupo-cool" component="cools">
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>

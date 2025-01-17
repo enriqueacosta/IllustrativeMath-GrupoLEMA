@@ -11,7 +11,7 @@
 =================================================  -->
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
-<introduction component="estudiante"> 
+<introduction component="est-goal"> 
   <p>Veamos cómo los diagramas de cinta y las ecuaciones pueden mostrar relaciones entre cantidades.</p>
 </introduction>
 
@@ -163,7 +163,7 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
-<reading-questions xml:id="lec-diagramasCintaYEcuaciones-cool"> 
+<reading-questions xml:id="lec-diagramasCintaYEcuaciones-cool" component="cools"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>
@@ -191,7 +191,7 @@
 <!-- ======================================================================
   Problemas de práctica
 =========================================================================== -->
-<exercises xml:id="lec-diagramasCintaYEcuaciones-ProblemasPractica"> 
+<exercises component="PPs" xml:id="lec-diagramasCintaYEcuaciones-ProblemasPractica"> 
   <title><custom ref="titulo-problemas-practica-lec"/></title>
   <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
   <introduction>

@@ -5,14 +5,52 @@
 <title>Clasificación de tarjetas: Multiplicación</title>
 
 <statement>
-  <p>Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:</p>
-  <ol>
-    <li>se lo sabe de inmediato</li>
-    <li>lo puede encontrar rápidamente</li>
-    <li>todavía no se lo sabe</li>
+  <p>Pregúntale a tu compañero hechos de multiplicación. Clasifícalos en una de estas columnas:</p>
+  <image component="no-libroTrabajo" source="tikz-source/clasificacionTarjetas-mult">
+    <shortdescription>tabla con encabezado "se lo sabe de inmediato", "lo puede encontrar rápidamente", "todavía no se lo sabe". Segunda fila vacía.</shortdescription>
+  </image>
+  <image component="libroTrabajo" source="tikz-source/clasificacionTarjetas-mult-paraBLM">
+    <shortdescription>tabla con encabezado "se lo sabe de inmediato", "lo puede encontrar rápidamente", "todavía no se lo sabe". Segunda fila vacía.</shortdescription>
+  </image>
+  <aside component="web">
+     <p>Materiales en el libro de trabajo o descargar acá:</p>
+     <p>
+      <url href="external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf">Tarjetas para imprimir y recortar</url>
+      </p>
+      <p><url href="external/act-pdf/act-clasificacionDeTarjetas-multiplicacion.pdf">Hoja de registro</url></p>
+  </aside>
+  <p>Anota cinco expresiones de multiplicación que vas a practicar.</p>
+  <ol component="libroTrabajo">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
   </ol>
-  <p>Anota expresiones de multiplicación que vas a practicar.</p>
+  <p component="libroTrabajo"> 
+    @@@@@@ INSERTAR BLM @@@@@@: clasificacionTarjetas-multiplicacion-blm.pdf. Son dos hojas y cada una debe ser una hoja para arrancar. 
+    <pre>
+    \cleardoublepage
+    Tarjetas para recortar:
+    \par
+    \includegraphics[page=1, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf}
+
+    \cleardoublepage
+    Más tarjetas para recortar:
+    \par
+    \includegraphics[page=2, trim=70 80 80 100,clip, width=1.05\linewidth]{external/blm/tikz-source/clasificacionTarjetas-multiplicacion-blm.pdf}
+    \par
+    \clearpage
+    </pre>
+  </p>
 </statement>
+<!-- <statement>
+  <p> @@@@@@ INSERTAR BLM @@@@@@: clasificacionTarjetas-mult-blm-hojaRegistro.pdf. No es necesario que sea una hoja para arrancar. 
+  <pre>
+  \includegraphics[trim=70 70 60 160,clip, width=1.0\linewidth]{external/blm/tikz-source/clasificacionTarjetas-mult-blm-hojaRegistro.pdf}
+  </pre>
+  </p>
+</statement> -->
 
 <solution>
   <p>Las respuestas pueden variar.</p>
@@ -33,7 +71,7 @@
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>En esta actividad, los estudiantes revisan en parejas su progreso en multiplicar con números hasta 100 de forma fluida. Clasifican los productos en los que conocen de inmediato, los que pueden encontrar rápidamente y los que aún no conocen. Se discute en el lanzamiento de la actividad lo qué significa conocer un hecho rápidamente y los estudiantes eligen cinco productos para practicar y mejorar su competencia. Las tarjetas se usarán en la siguiente actividad.
+    <p>En esta actividad, los estudiantes evalúan en parejas su progreso en la fluidez para multiplicar usando números hasta 100. Clasifican los productos en los que conocen de inmediato, los que pueden encontrar rápidamente y los que aún no conocen. Se discute en el lanzamiento de la actividad lo qué significa conocer un hecho rápidamente y los estudiantes eligen cinco productos para practicar y mejorar su competencia. Las tarjetas se usarán en la siguiente actividad.
   </p>
   </paragraphs>
 
@@ -50,7 +88,7 @@
     <ul>
       <li>Grupos de 2</li>
       <li><q>Hoy vamos a retomar los hechos de multiplicación para ver cuántos se han aprendido hasta ahora. Pero recuerden que tienen el resto del año para aprendérselos</q></li>
-      <li><q>Todos sabemos lo que significa saberse un producto de inmediato, ¿pero qué significa encontrar un producto rápidamente?</q> (Podemos resolverlo en un par de segundos con una estrategia. Podemos resolverlo en menos de 5 segundos.)</li>
+      <li><q>Todos sabemos lo que significa saberse un producto de inmediato, ¿pero qué significa encontrar un producto rápidamente?</q> (Podemos resolverlo en un par de segundos usando alguna estrategia. Podemos resolverlo en menos de 5 segundos.)</li>
       <li>Discutir con toda la clase y llegar a un acuerdo sobre lo que significa encontrar un producto rápidamente.</li>
       <li>
         <p>Considere preguntar:</p>
@@ -60,7 +98,7 @@
           <li><q>A partir de esta discusión, ¿alguien quiere reconsiderar sus ideas acerca de lo que significa encontrar un producto rápidamente?</q></li>
         </ul>
       </li>
-      <li>De a cada grupo un set de tarjetas precortadas y una tabla de clasificación.
+      <li>Dé a cada grupo una colección de tarjetas previamente recortadas y una tabla de clasificación.
     </li>
     </ul>
   </paragraphs>
@@ -71,13 +109,13 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <ul>
       <li>
-        <q>Tómense un momento para hacerse preguntas mutuamente sobre hechos de multiplicación. Mientras le hacen preguntas a su compañero, usen la tabla para clasificar las expresiones en tres grupos que muestren si su compañero se lo sabe de inmediato, si lo puede encontrar rápidamente o si todavía no se lo sabe</q>
+        <q>Tómense un momento para preguntarse mutuamente hechos de multiplicación. Mientras le hacen preguntas a su compañero, usen la tabla para clasificar las expresiones en tres grupos que muestren si su compañero se lo sabe de inmediato, si lo puede encontrar rápidamente o si todavía no se lo sabe</q>
       </li>
       <li>7–10 minutos: tiempo de trabajo en pareja</li>
       <li>
-        <q>Escojan 5 hechos de multiplicación que todavía no se sepan y escriban las expresiones. Estos son los productos que van a practicar</q>
+        <q>Cada uno escoja 5 hechos de multiplicación que todavía no se sepa y escriba las expresiones. Estos son los productos que van a practicar</q>
       </li>
-      <li>1 minuto: tiempo de trabajo independiente</li>
+      <li>1 minuto: tiempo de trabajo individual</li>
       <li>
         <q>Ahora, compartan con su compañero los productos que quieren practicar. Pídanle que les ayude a pensar en algunas estrategias que pueden usar para encontrar los productos rápidamente</q>
       </li>
@@ -102,7 +140,7 @@
     <p>Si los estudiantes aún no tienen una estrategia para uno de los hechos que han elegido practicar, considere preguntar:</p>
     <ul>
       <li><q>¿Qué has intentado hasta el momento para encontrar este producto?</q></li>
-      <li><q>¿Podrías hablar con otro grupo para ver si te pueden sugerir una estrategia para encontrar este producto?</q></li>
+      <li><q>¿Quieres hablar con otro grupo para ver si te pueden sugerir una estrategia para encontrar este producto?</q></li>
     </ul>
   </paragraphs>
 

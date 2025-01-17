@@ -10,30 +10,15 @@
     <li>Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.</li>
     <li>Por turnos, tomen una tarjeta de hechos de multiplicación.</li>
     <li>Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que <ellipsis/>”</li>
-    <li>Después, anoten las ecuaciones de división relacionadas en la columna “Entonces sé que   <ellipsis/>”</li>
+    <li>Después, en la columna “Entonces sé que   <ellipsis/>”, anoten las ecuaciones de división relacionadas.</li>
   </ol>
-  <image source="tikz-source/siSeQueEntoncesSeQue-tab">
+  <p component="web">(Tabla para rellenar en el libro de trabajo. También se puede <url href="external/act-pdf/act-siSeQueEntoncesSeQue.pdf">descargar</url>.)</p>
+  <image component="no-libroTrabajo" source="tikz-source/siSeQueEntoncesSeQue-tab">
+    <shortdescription>Tabla, dos columnas. Columna 1 "Si se qué....", Columna 2 "Entonces sé qué". Fila debajo del encabezado vacía.</shortdescription>
+  </image>
+  <image component="libroTrabajo" source="tikz-source/siSeQueEntoncesSeQue-tab-libroTrabajo">
     <shortdescription>Tabla, dos columnas. Columna 1 "Si se qué....", Columna 2 "Entonces sé qué". Filas debajo del encabezado vacías.</shortdescription>
   </image>
-  <!-- <tabular top="minor" left="minor">
-    <col right="minor" left="minor" width="40%"></col> 
-    <col right="minor" width="60%"></col> 
-
-    <row header="yes" bottom="major">
-      <cell>Si sé que <ellipsis/></cell>
-      <cell>Entonces sé que <ellipsis/></cell>
-    </row>
-
-    <row  bottom="minor">
-      <cell><p><ndash/></p></cell>
-      <cell><p><ndash/></p></cell>
-    </row>
-
-    <row bottom="minor">
-      <cell><p><ndash/></p></cell>
-      <cell><p><ndash/></p></cell>
-    </row>
-  </tabular> -->
 </statement>
 
 <solution>
@@ -41,25 +26,6 @@
   <image source="tikz-source/siSeQueEntoncesSeQue-tab-sol">
     <shortdescription>Tabla, dos columnas. Columna 1 "Si se qué....", Columna 2 "Entonces sé qué". Filas debajo del encabezado vacías. Dos filas debajo del encabezado con productos y hechos de división: 3*4=12 con divisiones 12÷4=3 y 12÷3=4, y 2*8=16 con divisiones 16÷2=8, 16÷8=2, y equivalencias.</shortdescription>
   </image>
-  <!-- <tabular top="minor" left="minor">
-    <col right="minor" left="minor" width="40%"></col> 
-    <col right="minor" width="60%"></col> 
-    
-    <row header="yes" bottom="major">
-      <cell>Si sé que <ellipsis/></cell>
-      <cell>Entonces sé que <ellipsis/></cell>
-    </row>
-    
-    <row  bottom="minor">
-      <cell><m>3\times 4 = 12</m></cell>
-      <cell><m>12\div 4 = 3</m>, <m>12\div 3 = 4</m></cell>
-    </row>
-    
-    <row bottom="minor">
-      <cell><m>2 \times 8 = 16</m></cell>
-      <cell><line><m>16\div 2 = 8</m>, <m>16\div 8 =2</m>,</line> <line><m>8 = 16\div 2</m>, <m>2= 16\div 8</m></line></cell>
-    </row>
-  </tabular> -->
 </solution>
 
 
@@ -78,10 +44,10 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>
-      El propósito de esta actividad es que los estudiantes identifiquen hechos de división que estén relacionados con hechos de multiplicación que ya conocen. Los estudiantes completan afirmaciones de <q>Si sé, entonces sé</q> utilizando sus tarjetas de hechos de multiplicación de la actividad anterior. Dé tiempo a los estudiantes, si es necesario, para determinar el producto antes de escribir la ecuación de división relacionada. Algunos estudiantes pueden proponer 4 ecuaciones de división relacionadas para cada producto moviendo el cociente al lado izquierdo del signo igual. Si esto sucede, reconozca que es posible, pero mantenga el énfasis en que hay dos hechos de división relacionados, uno para cada uno de los factores como número desconocido.
+      El propósito de esta actividad es que los estudiantes identifiquen hechos de división relacionados con hechos de multiplicación que ya conocen. Los estudiantes completan afirmaciones de <q>Si sé ___, entonces sé ___</q> utilizando sus tarjetas de hechos de multiplicación de la actividad anterior. Si es necesario, dé tiempo a los estudiantes para determinar el producto antes de escribir la ecuación de división relacionada. Algunos estudiantes pueden proponer 4 ecuaciones de división relacionadas para cada producto (pues también escriben el cociente al lado izquierdo del signo igual). Si esto sucede, reconozca que es correcto, pero mantenga el énfasis en que hay dos hechos de división relacionados, uno para cada uno de los factores como número desconocido.
     </p>
     <p>
-      Cuando los estudiantes utilizan la relación entre la multiplicación y la división para identificar dos hechos de división a partir de un hecho de multiplicación, buscan y hacen uso de la estructura (MP7).
+      Cuando los estudiantes utilizan la relación entre la multiplicación y la división para identificar dos hechos de división a partir de un hecho de multiplicación, buscan y hacen uso de estructuras (MP7).
     </p>
   </paragraphs>
 
@@ -109,7 +75,7 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <ul>
       <li>
-        <q>Ahora, por turnos, van a tomar una tarjeta y van a usar el hecho que escogieron para completar una frase como esta: 'Si sé que..., entonces sé que...'. La van a completar con el hecho de multiplicación de la tarjeta que tomaron y los hechos de división relacionados. Si es necesario, tómense un momento para averiguar el hecho de multiplicación con su compañero. Después de cada turno, en la tabla, escriban la ecuación de multiplicación y las ecuaciones de división relacionadas</q></li>
+        <q>Ahora, por turnos, van a tomar una tarjeta y van a usar el hecho de multiplicación que sacaron para completar una frase como esta: 'Si sé que..., entonces sé que...'. La van a completar con el hecho de multiplicación de la tarjeta que tomaron y los hechos de división relacionados. Si aún no se saben el hecho de multiplicación, pueden preguntárselo a su compañero. En cada turno, escriban en la tabla la ecuación de multiplicación y las ecuaciones de división relacionadas</q></li>
       <li>7–10 minutos: tiempo de trabajo en pareja</li>
     </ul>
   </paragraphs>
@@ -136,7 +102,7 @@
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <ul>
       <li>
-        <q>¿Cuántas ecuaciones de división se les ocurrieron para cada ecuación de multiplicación? Expliquen su razonamiento</q> (2, porque pude encontrar una ecuación en la que el cociente era 1 factor y una ecuación donde era el otro factor. 4, porque pude encontrar una para cada uno de los factores como cociente, y puedo tener el cociente a la derecha o a la izquierda del signo igual).
+        <q>¿Cuántas ecuaciones de división se les ocurrieron para cada ecuación de multiplicación? Expliquen su razonamiento</q> (2, porque pude encontrar una ecuación en la que el cociente era un factor y una ecuación donde era el otro factor. 4, porque pude encontrar una para cada uno de los factores como cociente, y puedo tener el cociente a la derecha o a la izquierda del signo igual).
       </li>
     </ul>
   </paragraphs>
