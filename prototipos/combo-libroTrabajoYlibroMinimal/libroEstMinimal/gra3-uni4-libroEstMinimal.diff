@@ -1,0 +1,2366 @@
+--- /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/output/print-latex-est/gra3-uni4/gra3-uni4.tex
++++ /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/output/print-latex-est/gra3-uni4/gra3-uni4-libroEstMinimal.tex
+@@ -1,596 +1,5 @@
+-%********************************************%
+-%*       Generated from PreTeXt source      *%
+-%*       on 2025-01-16T21:58:11-05:00       *%
+-%*   A recent stable commit (2022-07-01):   *%
+-%* 6c761d3dba23af92cba35001c852aac04ae99a5f *%
+-%*                                          *%
+-%*         https://pretextbook.org          *%
+-%*                                          *%
+-%********************************************%
+-\documentclass[twoside,10pt,]{article}
+-%% Custom Preamble Entries, early (use latex.preamble.early)
+-%% Always open on odd page
+-%%   The following adjusts cleardoublepage to remove twosided
+-%%   check so that we open on odd pages even in one-sided mode
+-%%   by adding an extra blank page on the preceding even page.
+-\makeatletter%
+-\def\cleardoublepage{%
+-\clearpage\ifodd\c@page\else\thispagestyle{empty}\hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi%
+-}
+-\makeatother%
+-%% Default LaTeX packages
+-%%   1.  always employed (or nearly so) for some purpose, or
+-%%   2.  a stylewriter may assume their presence
+-\usepackage{geometry}
+-%% Some aspects of the preamble are conditional,
+-%% the LaTeX engine is one such determinant
+-\usepackage{ifthen}
+-%% etoolbox has a variety of modern conveniences
+-\usepackage{etoolbox}
+-\usepackage{ifxetex,ifluatex}
+-%% Raster graphics inclusion
+-\usepackage{graphicx}
+-%% Color support, xcolor package
+-%% Always loaded, for: add/delete text, author tools
+-%% Here, since tcolorbox loads tikz, and tikz loads xcolor
+-\PassOptionsToPackage{dvipsnames,svgnames,table}{xcolor}
+-\usepackage{xcolor}
+-%% begin: defined colors, via xcolor package, for styling
+-%% end: defined colors, via xcolor package, for styling
+-%% Colored boxes, and much more, though mostly styling
+-%% skins library provides "enhanced" skin, employing tikzpicture
+-%% boxes may be configured as "breakable" or "unbreakable"
+-%% "raster" controls grids of boxes, aka side-by-side
+-\usepackage{tcolorbox}
+-\tcbuselibrary{skins}
+-\tcbuselibrary{breakable}
+-\tcbuselibrary{raster}
+-%% We load some "stock" tcolorbox styles that we use a lot
+-%% Placement here is provisional, there will be some color work also
+-%% First, black on white, no border, transparent, but no assumption about titles
+-\tcbset{ bwminimalstyle/.style={size=minimal, boxrule=-0.3pt, frame empty,
+-colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
+-%% Second, bold title, run-in to text/paragraph/heading
+-%% Space afterwards will be controlled by environment,
+-%% independent of constructions of the tcb title
+-%% Places \blocktitlefont onto many block titles
+-\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }
+-%% Spacing prior to each exercise, anywhere
+-\tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
+-%% Spacing prior to each block
+-\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
+-%% xparse allows the construction of more robust commands,
+-%% this is a necessity for isolating styling and behavior
+-%% The tcolorbox library of the same name loads the base library
+-\tcbuselibrary{xparse}
+-%% The tcolorbox library loads TikZ, its calc package is generally useful,
+-%% and is necessary for some smaller documents that use partial tcolor boxes
+-%% See:  https://github.com/PreTeXtBook/pretext/issues/1624
+-\usetikzlibrary{calc}
+-%% We use some more exotic tcolorbox keys to restore indentation to parboxes
+-\tcbuselibrary{hooks}
+-%% Save default paragraph indentation and parskip for use later, when adjusting parboxes
+-\newlength{\normalparindent}
+-\newlength{\normalparskip}
+-\AtBeginDocument{\setlength{\normalparindent}{\parindent}}
+-\AtBeginDocument{\setlength{\normalparskip}{\parskip}}
+-\newcommand{\setparstyle}{\setlength{\parindent}{\normalparindent}\setlength{\parskip}{\normalparskip}}%% Hyperref should be here, but likes to be loaded late
+-%%
+-%% Inline math delimiters, \(, \), need to be robust
+-%% 2016-01-31:  latexrelease.sty  supersedes  fixltx2e.sty
+-%% If  latexrelease.sty  exists, bugfix is in kernel
+-%% If not, bugfix is in  fixltx2e.sty
+-%% See:  https://tug.org/TUGboat/tb36-3/tb114ltnews22.pdf
+-%% and read "Fewer fragile commands" in distribution's  latexchanges.pdf
+-\IfFileExists{latexrelease.sty}{}{\usepackage{fixltx2e}}
+-%% shorter subnumbers in some side-by-side require manipulations
+-\usepackage{xstring}
+-%% Footnote counters and part/chapter counters are manipulated
+-%% April 2018:  chngcntr  commands now integrated into the kernel,
+-%% but circa 2018/2019 the package would still try to redefine them,
+-%% so we need to do the work of loading conditionally for old kernels.
+-%% From version 1.1a,  chngcntr  should detect defintions made by LaTeX kernel.
+-\ifdefined\counterwithin
+-\else
+-    \usepackage{chngcntr}
+-\fi
+-%% Text height identically 9 inches, text width varies on point size
+-%% See Bringhurst 2.1.1 on measure for recommendations
+-%% 75 characters per line (count spaces, punctuation) is target
+-%% which is the upper limit of Bringhurst's recommendations
+-\geometry{letterpaper,total={340pt,9.0in}}
+-%% Custom Page Layout Adjustments (use publisher page-geometry entry)
+-%% This LaTeX file may be compiled with pdflatex, xelatex, or lualatex executables
+-%% LuaTeX is not explicitly supported, but we do accept additions from knowledgeable users
+-%% The conditional below provides  pdflatex  specific configuration last
+-%% begin: engine-specific capabilities
+-\ifthenelse{\boolean{xetex} \or \boolean{luatex}}{%
+-%% begin: xelatex and lualatex-specific default configuration
+-\ifxetex\usepackage{xltxtra}\fi
+-%% realscripts is the only part of xltxtra relevant to lualatex 
+-\ifluatex\usepackage{realscripts}\fi
+-%% end:   xelatex and lualatex-specific default configuration
+-}{
+-%% begin: pdflatex-specific default configuration
+-%% We assume a PreTeXt XML source file may have Unicode characters
+-%% and so we ask LaTeX to parse a UTF-8 encoded file
+-%% This may work well for accented characters in Western language,
+-%% but not with Greek, Asian languages, etc.
+-%% When this is not good enough, switch to the  xelatex  engine
+-%% where Unicode is better supported (encouraged, even)
+-\usepackage[utf8]{inputenc}
+-%% end: pdflatex-specific default configuration
+-}
+-%% end:   engine-specific capabilities
+-%%
+-%% Fonts.  Conditional on LaTex engine employed.
+-%% Default Text Font: The Latin Modern fonts are
+-%% "enhanced versions of the [original TeX] Computer Modern fonts."
+-%% We use them as the default text font for PreTeXt output.
+-%% Automatic Font Control
+-%% Portions of a document, are, or may, be affected by defined commands
+-%% These are perhaps more flexible when using  xelatex  rather than  pdflatex
+-%% The following definitions are meant to be re-defined in a style, using \renewcommand
+-%% They are scoped when employed (in a TeX group), and so should not be defined with an argument
+-\newcommand{\divisionfont}{\relax}
+-\newcommand{\blocktitlefont}{\relax}
+-\newcommand{\contentsfont}{\relax}
+-\newcommand{\pagefont}{\relax}
+-\newcommand{\tabularfont}{\relax}
+-\newcommand{\xreffont}{\relax}
+-\newcommand{\titlepagefont}{\relax}
+-%%
+-\ifthenelse{\boolean{xetex} \or \boolean{luatex}}{%
+-%% begin: font setup and configuration for use with xelatex
+-%% Generally, xelatex is necessary for non-Western fonts
+-%% fontspec package provides extensive control of system fonts,
+-%% meaning *.otf (OpenType), and apparently *.ttf (TrueType)
+-%% that live *outside* your TeX/MF tree, and are controlled by your *system*
+-%% (it is possible that a TeX distribution will place fonts in a system location)
+-%%
+-%% The fontspec package is the best vehicle for using different fonts in  xelatex
+-%% So we load it always, no matter what a publisher or style might want
+-%%
+-\usepackage{fontspec}
+-%%
+-%% begin: xelatex main font ("font-xelatex-main" template)
+-%% Latin Modern Roman is the default font for xelatex and so is loaded with a TU encoding
+-%% *in the format* so we can't touch it, only perhaps adjust it later
+-%% in one of two ways (then known by NFSS names such as "lmr")
+-%% (1) via NFSS with font family names such as "lmr" and "lmss"
+-%% (2) via fontspec with commands like \setmainfont{Latin Modern Roman}
+-%% The latter requires the font to be known at the system-level by its font name,
+-%% but will give access to OTF font features through optional arguments
+-%% https://tex.stackexchange.com/questions/470008/
+-%% where-and-how-does-fontspec-sty-specify-the-default-font-latin-modern-roman
+-%% http://tex.stackexchange.com/questions/115321
+-%% /how-to-optimize-latin-modern-font-with-xelatex
+-%%
+-%% end:   xelatex main font ("font-xelatex-main" template)
+-%% begin: xelatex mono font ("font-xelatex-mono" template)
+-%% (conditional on non-trivial uses being present in source)
+-%% end:   xelatex mono font ("font-xelatex-mono" template)
+-%% begin: xelatex font adjustments ("font-xelatex-style" template)
+-%% end:   xelatex font adjustments ("font-xelatex-style" template)
+-%%
+-%% Extensive support for other languages
+-\usepackage{polyglossia}
+-%% Set main/default language based on pretext/@xml:lang value
+-%% document language code is "es-ES", Spanish
+-\setmainlanguage{spanish}
+-%% Enable secondary languages based on discovery of @xml:lang values
+-%% Enable fonts/scripts based on discovery of @xml:lang values
+-%% Western languages should be ably covered by Latin Modern Roman
+-%% end:   font setup and configuration for use with xelatex
+-}{%
+-%% begin: font setup and configuration for use with pdflatex
+-%% begin: pdflatex main font ("font-pdflatex-main" template)
+-\usepackage{lmodern}
+-\usepackage[T1]{fontenc}
+-%% end:   pdflatex main font ("font-pdflatex-main" template)
+-%% begin: pdflatex mono font ("font-pdflatex-mono" template)
+-%% (conditional on non-trivial uses being present in source)
+-%% end:   pdflatex mono font ("font-pdflatex-mono" template)
+-%% begin: pdflatex font adjustments ("font-pdflatex-style" template)
+-%% end:   pdflatex font adjustments ("font-pdflatex-style" template)
+-%% end:   font setup and configuration for use with pdflatex
+-}
+-%% Micromanage spacing, etc.  The named "microtype-options"
+-%% template may be employed to fine-tune package behavior
+-\usepackage{microtype}
+-%% Symbols, align environment, commutative diagrams, bracket-matrix
+-\usepackage{amsmath}
+-\usepackage{amscd}
+-\usepackage{amssymb}
+-%% allow page breaks within display mathematics anywhere
+-%% level 4 is maximally permissive
+-%% this is exactly the opposite of AMSmath package philosophy
+-%% there are per-display, and per-equation options to control this
+-%% split, aligned, gathered, and alignedat are not affected
+-\allowdisplaybreaks[4]
+-%% allow more columns to a matrix
+-%% can make this even bigger by overriding with  latex.preamble.late  processing option
+-\setcounter{MaxMatrixCols}{30}
+-%%
+-%%
+-%% Division Titles, and Page Headers/Footers
+-%% titlesec package, loading "titleps" package cooperatively
+-%% See code comments about the necessity and purpose of "explicit" option.
+-%% The "newparttoc" option causes a consistent entry for parts in the ToC 
+-%% file, but it is only effective if there is a \titleformat for \part.
+-%% "pagestyles" loads the  titleps  package cooperatively.
+-\usepackage[explicit, newparttoc, pagestyles]{titlesec}
+-%% The companion titletoc package for the ToC.
+-\usepackage{titletoc}
+-%% begin: customizations of page styles via the modal "titleps-style" template
+-%% Designed to use commands from the LaTeX "titleps" package
+-\pagestyle{plain}
+-%% end: customizations of page styles via the modal "titleps-style" template
+-%%
+-%% Create globally-available macros to be provided for style writers
+-%% These are redefined for each occurence of each division
+-\newcommand{\divisionnameptx}{\relax}%
+-\newcommand{\titleptx}{\relax}%
+-\newcommand{\subtitleptx}{\relax}%
+-\newcommand{\shortitleptx}{\relax}%
+-\newcommand{\authorsptx}{\relax}%
+-\newcommand{\epigraphptx}{\relax}%
+-%% Create environments for possible occurences of each division
+-%% Environment for a PTX "section" at the level of a LaTeX "section"
+-\NewDocumentEnvironment{sectionptx}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\section[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "subsection" at the level of a LaTeX "subsection"
+-\NewDocumentEnvironment{subsectionptx}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsection[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "subsubsection" at the level of a LaTeX "subsubsection"
+-\NewDocumentEnvironment{subsubsectionptx}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsubsection[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
+-\NewDocumentEnvironment{exercises-subsection}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsection[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "exercises" at the level of a LaTeX "subsection"
+-\NewDocumentEnvironment{exercises-subsection-numberless}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsection*{#2}%
+-\addcontentsline{toc}{subsection}{#4}
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "references" at the level of a LaTeX "subsection"
+-\NewDocumentEnvironment{references-subsection}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsection[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "references" at the level of a LaTeX "subsection"
+-\NewDocumentEnvironment{references-subsection-numberless}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\subsection*{#2}%
+-\addcontentsline{toc}{subsection}{#4}
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "references" at the level of a LaTeX "section"
+-\NewDocumentEnvironment{references-section}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\section[{#4}]{#2}%
+-\label{#7}%
+-}{}%
+-%% Environment for a PTX "references" at the level of a LaTeX "section"
+-\NewDocumentEnvironment{references-section-numberless}{mmmmmmm}
+-{%
+-\renewcommand{\divisionnameptx}{#1}%
+-\renewcommand{\titleptx}{#2}%
+-\renewcommand{\subtitleptx}{#3}%
+-\renewcommand{\shortitleptx}{#4}%
+-\renewcommand{\authorsptx}{#5}%
+-\renewcommand{\epigraphptx}{#6}%
+-\section*{#2}%
+-\addcontentsline{toc}{section}{#4}
+-\label{#7}%
+-}{}%
+-%%
+-%% Styles for six traditional LaTeX divisions
+-\titleformat{\part}[display]
+-{\divisionfont\Huge\bfseries\centering}{\divisionnameptx\space\thepart}{30pt}{\Huge#1}
+-[{\Large\centering\authorsptx}]
+-\titleformat{\chapter}[display]
+-{\divisionfont\huge\bfseries}{\divisionnameptx\space\thechapter}{20pt}{\Huge#1}
+-[{\Large\authorsptx}]
+-\titleformat{name=\chapter,numberless}[display]
+-{\divisionfont\huge\bfseries}{}{0pt}{#1}
+-[{\Large\authorsptx}]
+-\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+-\titleformat{\section}[hang]
+-{\divisionfont\Large\bfseries}{\thesection}{1ex}{#1}
+-[{\large\authorsptx}]
+-\titleformat{name=\section,numberless}[block]
+-{\divisionfont\Large\bfseries}{}{0pt}{#1}
+-[{\large\authorsptx}]
+-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+-\titleformat{\subsection}[hang]
+-{\divisionfont\large\bfseries}{\thesubsection}{1ex}{#1}
+-[{\normalsize\authorsptx}]
+-\titleformat{name=\subsection,numberless}[block]
+-{\divisionfont\large\bfseries}{}{0pt}{#1}
+-[{\normalsize\authorsptx}]
+-\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+-\titleformat{\subsubsection}[hang]
+-{\divisionfont\normalsize\bfseries}{\thesubsubsection}{1em}{#1}
+-[{\small\authorsptx}]
+-\titleformat{name=\subsubsection,numberless}[block]
+-{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+-[{\normalsize\authorsptx}]
+-\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+-\titleformat{\paragraph}[hang]
+-{\divisionfont\normalsize\bfseries}{\theparagraph}{1em}{#1}
+-[{\small\authorsptx}]
+-\titleformat{name=\paragraph,numberless}[block]
+-{\divisionfont\normalsize\bfseries}{}{0pt}{#1}
+-[{\normalsize\authorsptx}]
+-\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5em}
+-%%
+-%% Styles for five traditional LaTeX divisions
+-\titlecontents{part}%
+-[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+-{\Large\thecontentslabel\enspace}{\Large}%
+-{}%
+-[\addvspace{.5pc}]%
+-\titlecontents{chapter}%
+-[0pt]{\contentsmargin{0em}\addvspace{1pc}\contentsfont\bfseries}%
+-{\large\thecontentslabel\enspace}{\large}%
+-{\hfill\bfseries\thecontentspage}%
+-[\addvspace{.5pc}]%
+-\dottedcontents{section}[3.8em]{\contentsfont}{2.3em}{1pc}%
+-\dottedcontents{subsection}[6.1em]{\contentsfont}{3.2em}{1pc}%
+-\dottedcontents{subsubsection}[9.3em]{\contentsfont}{4.3em}{1pc}%
+-%%
+-%% Begin: Semantic Macros
+-%% To preserve meaning in a LaTeX file
+-%%
+-%% \mono macro for content of "c", "cd", "tag", etc elements
+-%% Also used automatically in other constructions
+-%% Simply an alias for \texttt
+-%% Always defined, even if there is no need, or if a specific tt font is not loaded
+-\newcommand{\mono}[1]{\texttt{#1}}
+-%%
+-%% Following semantic macros are only defined here if their
+-%% use is required only in this specific document
+-%%
+-%% Used for warnings, typically bold and italic
+-\newcommand{\alert}[1]{\textbf{\textit{#1}}}
+-%% Used for fillin answer blank in text
+-%% Relies on calc package, loaded via tcolorbox
+-%% Argument is intended number of characters of blank
+-%% Length may compress for output to fit in one line
+-\newlength{\fillinmaxwidth}
+-\newlength{\fillincontract}
+-\newlength{\charmaxwidth}\setlength{\charmaxwidth}{0.5em}
+-\newlength{\charminwidth}\setlength{\charminwidth}{0.1em}
+-\newlength{\fillinheight}
+-\newcommand{\fillintext}[1]{%
+-\setlength{\fillinmaxwidth}{#1\charmaxwidth}%
+-\setlength{\fillincontract}{#1\charminwidth}%
+-\setlength{\fillinheight}{\baselineskip}\addtolength{\fillinheight}{1.2pt}%
+-\strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
+-}
+-%% End: Semantic Macros
+-%% Divisional exercises (and worksheet) as LaTeX environments
+-%% Third argument is option for extra workspace in worksheets
+-%% Hanging indent occupies a 5ex width slot prior to left margin
+-%% Experimentally this seems just barely sufficient for a bold "888."
+-%% Division exercises, not in exercise group
+-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setparstyle} } }
+-\newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\space}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
+-%% "tcolorbox" environment for a single image, occupying entire \linewidth
+-%% arguments are left-margin, width, right-margin, as multiples of
+-%% \linewidth, and are guaranteed to be positive and sum to 1.0
+-\tcbset{ imagestyle/.style={bwminimalstyle} }
+-\NewTColorBox{tcbimage}{mmm}{imagestyle,left skip=#1\linewidth,width=#2\linewidth}
+-%% Wrapper environment for tcbimage environment with a fourth argument
+-%% Fourth argument, if nonempty, is a vertical space adjustment
+-%% and implies image will be preceded by \leavevmode\nopagebreak
+-%% Intended use is for alignment with a list marker
+-\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}%
+-}%% Footnote Numbering
+-%% Specified by numbering.footnotes.level
+-%% Global numbering, since numbering.footnotes.level = 0
+-%% Multiple column, column-major lists
+-\usepackage{multicol}
+-%% More flexible list management, esp. for references
+-%% But also for specifying labels (i.e. custom order) on nested lists
+-\usepackage{enumitem}
+-%% Lists of references in their own section, maximum depth 1
+-\newlist{referencelist}{description}{4}
+-\setlist[referencelist]{leftmargin=!,labelwidth=!,labelsep=0ex,itemsep=1.0ex,topsep=1.0ex,partopsep=0pt,parsep=0pt}
+-%% Description lists as tcolorbox sidebyside
+-%% "dli" short for "description list item"
+-\newlength{\dlititlewidth}
+-\newlength{\dlimaxnarrowtitle}\setlength{\dlimaxnarrowtitle}{11ex}
+-\newlength{\dlimaxmediumtitle}\setlength{\dlimaxmediumtitle}{18ex}
+-\tcbset{ dlistyle/.style={sidebyside, sidebyside align=top seam, lower separated=false, bwminimalstyle, bottomtitle=0.75ex, after skip=1.5ex, boxsep=0pt, left=0pt, right=0pt, top=0pt, bottom=0pt} }
+-\tcbset{ dlinarrowstyle/.style={dlistyle, lefthand width=\dlimaxnarrowtitle, sidebyside gap=1ex, halign=flush left, righttitle=10ex} }
+-\tcbset{ dlimediumstyle/.style={dlistyle, lefthand width=\dlimaxmediumtitle, sidebyside gap=4ex, halign=flush right} }
+-\NewDocumentEnvironment{descriptionlist}{}{\par\vspace*{1.5ex}}{\par\vspace*{1.5ex}}%
+-%% begin enviroment has an if/then to open the tcolorbox
+-\NewDocumentEnvironment{dlinarrow}{mm}{%
+-\settowidth{\dlititlewidth}{{\textbf{#1}}}%
+-\ifthenelse{\dlititlewidth > \dlimaxnarrowtitle}%
+-{\begin{tcolorbox}[title={\textbf{#1}}, phantom={\hypertarget{#2}{}}, dlinarrowstyle]\tcblower}%
+-{\begin{tcolorbox}[dlinarrowstyle, phantom={\hypertarget{#2}{}}]\textbf{#1}\tcblower}%
+-}%
+-{\end{tcolorbox}}%
+-%% medium option is simpler
+-\NewDocumentEnvironment{dlimedium}{mm}%
+-{\begin{tcolorbox}[dlimediumstyle, phantom={\hypertarget{#2}{}}]\textbf{#1}\tcblower}%
+-{\end{tcolorbox}}%
+-%% hyperref driver does not need to be specified, it will be detected
+-%% Footnote marks in tcolorbox have broken linking under
+-%% hyperref, so it is necessary to turn off all linking
+-%% It *must* be given as a package option, not with \hypersetup
+-\usepackage[hyperfootnotes=false]{hyperref}
+-%% configure hyperref's  \href{}{}  and  \nolinkurl  to match listings' inline verbatim
+-\renewcommand\UrlFont{\small\ttfamily}
+-%% For a print PDF, no surrounding boxes, so simply textcolor (but still active to preserve spacing)
+-\hypersetup{hidelinks}
+-%% Less-clever names for hyperlinks are more reliable, *especially* for structural parts
+-%% See comments in the code to learn more about the importance of this setting
+-\hypersetup{hypertexnames=false}
+-%%The  hypertexnames  setting then confuses the hyperlinking from the index
+-%%This patch resolves the incorrect links, see code for StackExchange post.
+-\makeatletter
+-\patchcmd\Hy@EveryPageBoxHook{\Hy@EveryPageAnchor}{\Hy@hypertexnamestrue\Hy@EveryPageAnchor}{}{\fail}
+-\makeatother
+-\hypersetup{pdftitle={Matemáticas Ilustrativas}}
+-%% If you manually remove hyperref, leave in this next command
+-%% This will allow LaTeX compilation, employing this no-op command
+-\providecommand\phantomsection{}
+-%% Division Numbering: Chapters, Sections, Subsections, etc
+-%% Division numbers may be turned off at some level ("depth")
+-%% A section *always* has depth 1, contrary to us counting from the document root
+-%% The latex default is 3.  If a larger number is present here, then
+-%% removing this command may make some cross-references ambiguous
+-%% The precursor variable $numbering-maxlevel is checked for consistency in the common XSL file
+-\setcounter{secnumdepth}{0}
+-%%
+-%% AMS "proof" environment is no longer used, but we leave previously
+-%% implemented \qedhere in place, should the LaTeX be recycled
+-\newcommand{\qedhere}{\relax}
+-%%
+-%% A faux tcolorbox whose only purpose is to provide common numbering
+-%% facilities for most blocks (possibly not projects, 2D displays)
+-%% Controlled by  numbering.theorems.level  processing parameter
+-\newtcolorbox[auto counter]{block}{}
+-%%
+-%% This document is set to number PROJECT-LIKE on a separate numbering scheme
+-%% So, a faux tcolorbox whose only purpose is to provide this numbering
+-%% Controlled by  numbering.projects.level  processing parameter
+-\newtcolorbox[auto counter]{project-distinct}{}
+-%% A faux tcolorbox whose only purpose is to provide common numbering
+-%% facilities for 2D displays which are subnumbered as part of a "sidebyside"
+-\makeatletter
+-\newtcolorbox[auto counter, number within=tcb@cnt@block, number freestyle={\noexpand\thetcb@cnt@block(\noexpand\alph{\tcbcounter})}]{subdisplay}{}
+-\makeatother
+-%%
+-%% tcolorbox, with styles, for PROJECT-LIKE
+-%%
+-%% exploration: fairly simple numbered block/structure
+-\tcbset{ explorationstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
+-\newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
+-%% activity: fairly simple numbered block/structure
+-\tcbset{ activitystyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
+-\newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{#1~\thetcbcounter\notblank{#2}{\space\space#2}{}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
+-%%
+-%% tcolorbox, with styles, for ASIDE-LIKE
+-%%
+-%% aside: fairly simple un-numbered block/structure
+-\tcbset{ asidestyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, before upper app={\setparstyle}, } }
+-\newtcolorbox{aside}[3]{title={\notblank{#2}{#2}{}}, phantomlabel={#3}, breakable, before upper app={\setparstyle}, asidestyle}
+-%%
+-%% xparse environments for introductions and conclusions of divisions
+-%%
+-%% introduction: in a structured division
+-\NewDocumentEnvironment{introduction}{m}
+-{\notblank{#1}{\noindent\textbf{#1}\space}{}}{\par\medskip}
+-%% Graphics Preamble Entries
+-\usepackage{tikz, pgfplots}
+-\usetikzlibrary{positioning,matrix,arrows}
+-\usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+-\usetikzlibrary{decorations.markings}
+-%% If tikz has been loaded, replace ampersand with \amp macro
+-%% tcolorbox styles for sidebyside layout
+-\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster equal height=rows, raster force size=false, raster after skip=0.7\baselineskip} }
+-\tcbset{ sbspanelstyle/.style={bwminimalstyle, fonttitle=\blocktitlefont, before upper app={\setparstyle}} }
+-%% Enviroments for side-by-side and components
+-%% Necessary to use \NewTColorBox for boxes of the panels
+-%% "newfloat" environment to squash page-breaks within a single sidebyside
+-%% "xparse" environment for entire sidebyside
+-\NewDocumentEnvironment{sidebyside}{mmmm}
+-  {\begin{tcbraster}
+-    [sbsstyle,raster columns=#1,
+-    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth]}
+-  {\end{tcbraster}}
+-%% "tcolorbox" environment for a panel of sidebyside
+-\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}
+-%% Custom Preamble Entries, late (use latex.preamble.late)
+-%% extpfeil package for certain extensible arrows,
+-%% as also provided by MathJax extension of the same name
+-%% NB: this package loads mtools, which loads calc, which redefines
+-%%     \setlength, so it can be removed if it seems to be in the 
+-%%     way and your math does not use:
+-%%     
+-%%     \xtwoheadrightarrow, \xtwoheadleftarrow, \xmapsto, \xlongequal, \xtofrom
+-%%     
+-%%     we have had to be extra careful with variable thickness
+-%%     lines in tables, and so also load this package late
+-\usepackage{extpfeil}
+-%% Begin: Author-provided macros
+-%% (From  docinfo/macros  element)
+-%% Plus three from PTX for XML characters
+-\newcommand{\boldcdot}{\boldsymbol{\cdot}}
+-\newcommand{\unit}[1]{\,\text{#1}}
+-\newcommand{\lt}{<}
+-\newcommand{\gt}{>}
+-\newcommand{\amp}{&}
+-%% End: Author-provided macros
++%  NOTA - en este apagué a mano todas las actividades que aparecen en el libro de trabajo. Buscar [Ver libro de trabajo].
++\input{../../../source/assets/preamble-libroEstGrado3.tex}
+ %% Title page information for article
+ \title{Matemáticas Ilustrativas\\
+ {\large Grado 3 - Unidad 4}}
+@@ -598,6 +7,11 @@
+ \href{https://www.grupolema.org}{\nolinkurl{https://www.grupolema.org}}
+ }
+ \date{January 16, 2025}
++
++% EAJ - apagar PPs redefiniendolos como comentarios 
++\usepackage{comment}
++\excludecomment{exercises-subsection}
++
+ \begin{document}
+ %% bottom alignment is explicit, since it normally depends on oneside, twoside
+ \raggedbottom
+@@ -605,14 +19,12 @@
+ \label{gra3-uni4}\hypertarget{gra3-uni4}{}
+ \maketitle
+ \thispagestyle{empty}
+-\renewcommand*{\abstractname}{Resumen}
+-\begin{abstract}
+-\end{abstract}
+-\renewcommand*{\abstractname}{Resumen}
++\renewcommand*{\abstractname}{}
+ \begin{abstract}
+ Este documento (HTML, pdf, latex o epub) se generó con \href{https://pretextbook.org}{PreTeXt}\footnote{\nolinkurl{pretextbook.org}\label{meta-source-2-2}}. El código fuente con el contenido para generarlo se encuentra en \href{https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA}{\nolinkurl{github.com/enriqueacosta}}.%
+ \end{abstract}
+-\renewcommand*{\abstractname}{Resumen}
++\cleardoublepage
++\renewcommand*{\abstractname}{Licencia}
+ \begin{abstract}
+ 2024~Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta (\href{https://enriqueacosta.github.io}{\nolinkurl{enriqueacosta.github.io}}). Iniciativa del Grupo LEMA (\href{https://www.grupolema.org}{\nolinkurl{www.grupolema.org}})Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).%
+ \par
+@@ -636,7 +48,8 @@
+ \par
+ Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.%
+ \end{abstract}
+-\renewcommand*{\abstractname}{Resumen}
++\clearpage
++\renewcommand*{\abstractname}{Gracias a ...}
+ \begin{abstract}
+ Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.%
+ \par
+@@ -669,7 +82,7 @@
+ \end{itemize}
+ \end{itemize}
+ \end{abstract}
+-\renewcommand*{\abstractname}{Resumen}
++\renewcommand*{\abstractname}{y gracias a ...}
+ \begin{abstract}
+ Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:%
+ %
+@@ -682,19 +95,23 @@
+ \end{itemize}
+ \end{abstract}
+ %
++\clearpage
++\setcounter{tocdepth}{2}
++\renewcommand{\contentsname}{Tabla de contenido}
++\tableofcontents
+ %
+ \typeout{************************************************}
+ \typeout{Sección  Sección A -~¿Qué es la división?}
+ \typeout{************************************************}
+ %
+-\begin{sectionptx}{Sección}{Sección A -~¿Qué es la división?}{}{Sección A -~¿Qué es la división?}{}{}{gra3-uni4-secA}
++\begin{sectionptx}{Sección}{{\Large Sección A\\}¿Qué es la división?}{}{Sección A -~¿Qué es la división?}{}{}{gra3-uni4-secA}
+ %
+ %
+ \typeout{************************************************}
+ \typeout{Subsección  Lección 1 -~¿Cuántos grupos?}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 1 -~¿Cuántos grupos?}{}{Lección 1}{}{}{lec-cuantosGrupos}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 1\\[-0.05cm]}¿Cuántos grupos?}{}{Lección 1}{}{}{lec-cuantosGrupos}
+ \begin{introduction}{}%
+ Representemos y resolvamos problemas.%
+ \end{introduction}%
+@@ -709,7 +126,7 @@
+ ¿Cuántas ves?\\
+  ¿Cómo lo sabes?, ¿qué ves?%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/jpg-source/apples-1642732_1920.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/apples-1642732_1920.jpg}
+ \end{image}%
+ \end{exploration}%
+ \footnotetext[21]{\nolinkurl{pixabay.com/photos/apples-fruit-apple-1642732/}\label{warm-cuantosVes-Manzanas-2-2-2-1-2}}%
+@@ -720,6 +137,7 @@
+ \typeout{Subsubsección  Actividad 1}
+ \typeout{************************************************}
+ %
++\clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-cuantosGrupos-act1}
+ \begin{activity}{Actividad}{¿Cuántas manzanas?}{act-cuantasManzanas}%
+ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.%
+@@ -756,7 +174,7 @@
+ \typeout{Subsección  Lección 2 -~¿Cuántos hay en cada grupo?}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 2 -~¿Cuántos hay en cada grupo?}{}{Lección 2}{}{}{lec-cuantosEnCadaGrupo}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 2\\[-0.05cm]}¿Cuántos hay en cada grupo?}{}{Lección 2}{}{}{lec-cuantosEnCadaGrupo}
+ \begin{introduction}{}%
+ Representemos y resolvamos más problemas.%
+ \end{introduction}%
+@@ -771,7 +189,7 @@
+ ¿Qué observas?\\
+  ¿Qué te preguntas?%
+ \begin{image}{0.15}{0.7}{0.15}{}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3.4.A2 Warm-up.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/3.4.A2 Warm-up.jpg}
+ \end{image}%
+ \end{exploration}%
+ \footnotetext[22]{\nolinkurl{www.publicdomainpictures.net/en/view-image.php?image=267667\&picture=apple-orchard}\label{warm-observa-arbolManzanas-2-2-2-1-2}}%
+@@ -842,7 +260,7 @@
+ \typeout{Subsección  Lección 3 -~Dibujos de situaciones de división}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 3 -~Dibujos de situaciones de división}{}{Lección 3}{}{}{lec-dibujosSituacionesDivision}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 3\\[-0.05cm]}Dibujos de situaciones de división}{}{Lección 3}{}{}{lec-dibujosSituacionesDivision}
+ \begin{introduction}{}%
+ Representemos situaciones de división con dibujos.%
+ \end{introduction}%
+@@ -897,12 +315,12 @@
+ \begin{sbspanel}{0.5}%
+ A%
+ \par
+-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-149310.pdf}
++\includegraphics[max width=\linewidth, center]{external/tikz-source/tikz-file-149310.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+ B%
+ \par
+-\includegraphics[width=\linewidth]{external/tikz-source/tikz-file-149311.pdf}
++\includegraphics[max width=\linewidth, center]{external/tikz-source/tikz-file-149311.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{activity}%
+@@ -931,13 +349,13 @@
+ \begin{sbspanel}{0.4}[center]%
+ A.%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149313.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149313.pdf}
+ B.%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149314.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149314.pdf}
+ C.%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149315.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149315.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{activity}%
+@@ -949,7 +367,7 @@
+ \typeout{Subsección  Lección 4 -~Interpretemos expresiones de división}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 4 -~Interpretemos expresiones de división}{}{Lección 4}{}{}{lec-interpretarExpresionesDivision}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 4\\[-0.05cm]}Interpretemos expresiones de división}{}{Lección 4}{}{}{lec-interpretarExpresionesDivision}
+ \begin{introduction}{}%
+ Démosle sentido a expresiones de división.%
+ \end{introduction}%
+@@ -971,6 +389,11 @@
+ \end{enumerate}
+ \end{exploration}%
+ \end{subsubsectionptx}
++\footnotetext[23]{\nolinkurl{pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}\label{act-trompos-2-2-1-2-1-2}}%
++\footnotetext[24]{\nolinkurl{pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}\label{act-trompos-2-2-2-2-1-2}}%
++\footnotetext[25]{\nolinkurl{pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}\label{act-trompos-2-2-3-2-1-2}}%
++\footnotetext[26]{\nolinkurl{commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}\label{act-trompos-2-2-4-2-1-2}}%
++\footnotetext[27]{\nolinkurl{www.pexels.com/photo/blue-and-green-spin-toy-170288/}\label{act-trompos-2-2-5-2-1-2}}%
+ %
+ %
+ \typeout{************************************************}
+@@ -982,23 +405,24 @@
+ Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.%
+ \begin{sidebyside}{5}{0}{0}{0}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Mexican Trompo.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/V1 3.4.A.4 Mexican Trompo.jpg}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Dreidels.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/V1 3.4.A.4 Dreidels.jpg}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Indonesian Gasing.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/V1 3.4.A.4 Indonesian Gasing.jpg}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/png-source/V1 3.4.A.4 German Kreisel Copy.png}
++\includegraphics[max width=\linewidth, center]{external/png-source/V1 3.4.A.4 German Kreisel Copy.png}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/jpg-source/V1 3.4.A.4 Colorful Top.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/V1 3.4.A.4 Colorful Top.jpg}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \par
+ Empareja cada situación sobre trompos con una expresión que pueda representarla.%
++\clearpage
+ \begin{sidebyside}{2}{0.05}{0}{0.15}%
+ \begin{sbspanel}{0.6}%
+ 1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?%
+@@ -1045,11 +469,6 @@
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{activity}%
+-\footnotetext[23]{\nolinkurl{pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}\label{act-trompos-2-2-1-2-1-2}}%
+-\footnotetext[24]{\nolinkurl{pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}\label{act-trompos-2-2-2-2-1-2}}%
+-\footnotetext[25]{\nolinkurl{pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}\label{act-trompos-2-2-3-2-1-2}}%
+-\footnotetext[26]{\nolinkurl{commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}\label{act-trompos-2-2-4-2-1-2}}%
+-\footnotetext[27]{\nolinkurl{www.pexels.com/photo/blue-and-green-spin-toy-170288/}\label{act-trompos-2-2-5-2-1-2}}%
+ \end{subsubsectionptx}
+ %
+ %
+@@ -1079,6 +498,7 @@
+ \typeout{Subsubsección  Actividad 3}
+ \typeout{************************************************}
+ %
++\clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{lec-interpretarExpresionesDivision-act3}
+ \begin{activity}{Actividad}{Pilas de bloques.}{act-pilasBloques}%
+ Asocia cada situación con un dibujo y con una expresión que representan la situación. Prepárate para explicar tu razonamiento.%
+@@ -1094,12 +514,12 @@
+ \begin{sbspanel}{0.4}%
+ A%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149316.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149316.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}%
+ B%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149317.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149317.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \par
+@@ -1130,7 +550,7 @@
+ \typeout{Subsección  Lección 5 -~Escribamos expresiones de división}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 5 -~Escribamos expresiones de división}{}{Lección 5}{}{}{lec-escribamosExpresionesDivision}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 5\\[-0.05cm]}Escribamos expresiones de división}{}{Lección 5}{}{}{lec-escribamosExpresionesDivision}
+ \begin{introduction}{}%
+ Escribamos expresiones de división y resolvamos problemas de “¿cuántos grupos?” y “¿cuántos hay en cada grupo?”%
+ \end{introduction}%
+@@ -1162,14 +582,15 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-escribamosExpresionesDivision-act1}
+ \begin{activity}{Actividad}{Clasificación de tarjetas: Todo sobre bichos.}{act-clasificacionDeTarjetas-todoSobreBichos}%
+-\begin{image}{0.3}{0.4}{0.3}{-1.5\baselineskip}%
+-\includegraphics[width=\linewidth]{external/png-source/v1 3.4.A5 Launch.png}
+-\end{image}%
+-%
+-\begin{enumerate}
+-\item{}Tu profesor te dará un grupo de tarjetas que describen situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.%
+-\item{}Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.%
+-\end{enumerate}
++% \begin{image}{0.3}{0.4}{0.3}{}%
++% \includegraphics[max width=\linewidth, center]{external/png-source/v1 3.4.A5 Launch.png}
++% \end{image}%
++% %
++% \begin{enumerate}
++% \item{}Tu profesor te dará un grupo de tarjetas que describen situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.%
++% \item{}Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.%
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \footnotetext[28]{\nolinkurl{en.wikipedia.org/wiki/File:Insect_collage.png}\label{act-clasificacionDeTarjetas-todoSobreBichos-2-1-2-1-2}}%
+ \end{subsubsectionptx}
+@@ -1197,7 +618,7 @@
+ \begin{divisionexercise}{1}{(Previo a la sección).}{}{gra3-uni4-secA-ProblemasPractica-3}%
+ \begin{sidebyside}{2}{0}{0}{0}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151668.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151668.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.7}%
+ %
+@@ -1215,12 +636,12 @@
+ \begin{sbspanel}{0.3}%
+ A.%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151669-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151669-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+ B.%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151670-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151670-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{divisionexercise}%
+@@ -1231,7 +652,7 @@
+ Encuentra la longitud de lado desconocida del rectángulo. Explica tu razonamiento.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151673-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151673-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{divisionexercise}%
+@@ -1284,6 +705,7 @@
+ \end{enumerate}
+ %
+ \end{divisionexercise}%
++\clearpage
+ \begin{divisionexercise}{9}{}{}{gra3-uni4-secA-ProblemasPractica-11}%
+ Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos (es decir, la misma cantidad de pupitres en cada grupo). ¿Cuántos pupitres hay en cada grupo?%
+ \par
+@@ -1296,7 +718,7 @@
+ A%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.93}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151671.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151671.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0}{0}%
+@@ -1304,7 +726,7 @@
+ B%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.93}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151672.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151672.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{enumerate}
+@@ -1330,23 +752,24 @@
+ \end{enumerate}
+ %
+ \end{divisionexercise}%
++\clearpage
+ \begin{divisionexercise}{12}{Exploración.}{}{gra3-uni4-secA-ProblemasPractica-14}%
+ Escribe una situación de división que corresponda a cada diagrama.%
+ \begin{sidebyside}{3}{0}{0}{0.02}%
+ \begin{sbspanel}{0.32}%
+ A%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151674.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151674.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.32}%
+ B%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151675.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151675.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.32}%
+ C%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151676.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151676.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{divisionexercise}%
+@@ -1379,10 +802,10 @@
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147695.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147695.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147696.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147696.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+@@ -1410,14 +833,14 @@
+ \typeout{Sección  Sección B -~Relacionemos la multiplicación y la división}
+ \typeout{************************************************}
+ %
+-\begin{sectionptx}{Sección}{Sección B -~Relacionemos la multiplicación y la división}{}{Sección B -~Relacionemos la multiplicación y la división}{}{}{gra3-uni4-secB}
++\begin{sectionptx}{Sección}{{\Large Sección B\\}Relacionemos la multiplicación y la división}{}{Sección B -~Relacionemos la multiplicación y la división}{}{}{gra3-uni4-secB}
+ %
+ %
+ \typeout{************************************************}
+ \typeout{Subsección  Lección 6 -~La división como un factor desconocido}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 6 -~La división como un factor desconocido}{}{Lección 6}{}{}{lec-divisionComoFactorDesconocido}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 6\\[-0.05cm]}La división como un factor desconocido}{}{Lección 6}{}{}{lec-divisionComoFactorDesconocido}
+ \begin{introduction}{}%
+ Conectemos ecuaciones de división con ecuaciones de multiplicación.%
+ \end{introduction}%
+@@ -1429,8 +852,7 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{lec-divisionComoFactorDesconocido-warm}
+ \begin{exploration}{Calentamiento}{Observa y pregúntate: Números desconocidos.}{warm-observa-numerosDesconocidos}%
+-¿Qué observas?\\
+- ¿Qué te preguntas?%
++¿Qué observas? ¿Qué te preguntas?%
+ \begin{sidebyside}{2}{0}{0}{0}%
+ \begin{sbspanel}{0.5}%
+ %
+@@ -1458,8 +880,8 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-divisionComoFactorDesconocido-act1}
+ \begin{activity}{Actividad}{Ecuaciones acerca de cebollas.}{act-ecuacionesCebollas}%
+-\begin{image}{0.15}{0.7}{0.15}{-1.5\baselineskip}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3.4.B6 Act 1 Launch.jpg}
++\begin{image}{0.15}{0.7}{0.15}{}%
++\includegraphics[width=0.5\linewidth, max width=\linewidth, center]{external/jpg-source/3.4.B6 Act 1 Launch.jpg}
+ \end{image}%
+ Un agricultor tiene 14 cebollas y 2 bolsas. Pone el mismo número de cebollas en cada bolsa.%
+ \par
+@@ -1477,7 +899,6 @@
+ \par
+ ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.%
+ \end{activity}%
+-\footnotetext[29]{\nolinkurl{pixabay.com/photos/market-vegetable-market-1558658/}\label{act-ecuacionesCebollas-2-1-2-1-2}}%
+ \end{subsubsectionptx}
+ %
+ %
+@@ -1487,10 +908,11 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-divisionComoFactorDesconocido-act2}
+ \begin{activity}{Actividad}{En el mercado agrícola.}{act-enElMercadoAgricola}%
+-Completa cada fila. Prepárate para explicar tu razonamiento.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/enElMercadoAgricola-tab.pdf}
+-\end{image}%
++% Completa cada fila. Prepárate para explicar tu razonamiento.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/enElMercadoAgricola-tab.pdf}
++% \end{image}%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ \end{subsectionptx}
+@@ -1500,7 +922,7 @@
+ \typeout{Subsección  Lección 7 -~Relacionemos multiplicación y división}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 7 -~Relacionemos multiplicación y división}{}{Lección 7}{}{}{lec-relacionarMultiplicacionYDivision}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 7\\[-0.05cm]}Relacionemos multiplicación y división}{}{Lección 7}{}{}{lec-relacionarMultiplicacionYDivision}
+ \begin{introduction}{}%
+ Hagamos más conexiones entre la multiplicación y la división.%
+ \end{introduction}%
+@@ -1515,7 +937,7 @@
+ ¿Cuántos ves?\\
+  ¿Cómo lo sabes?, ¿qué ves?%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147480-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147480-scale13.pdf}
+ \end{image}%
+ \end{exploration}%
+ \end{subsubsectionptx}
+@@ -1527,19 +949,20 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-relacionarMultiplicacionYDivision-act1}
+ \begin{activity}{Actividad}{Mesa redonda de división.}{act-mesaRedondaDeDivision}%
+-Tu profesor te dará una hoja de papel con 4 recuadros. La actividad tiene 4 rondas. En cada ronda trabajarás en una hoja distinta y tu profesor te pedirá que dibujes o escribas algo en uno de los recuadros.%
+-\par
+-Después de trabajar en cada recuadro, haz una pausa y espera a que el profesor te dé las instrucciones de la siguiente ronda.%
+-%
+-\begin{enumerate}
+-\item{}En el recuadro 1 de tu hoja, haz un dibujo de grupos iguales.%
+-\item{}Observa el dibujo que tu compañero dibujó en la hoja que acabaste de recibir. En el recuadro 2, escribe una descripción de una situación de división que corresponda a ese dibujo.%
+-\item{}Observa los recuadros 1 y 2 de la hoja que acabaste de recibir. En el recuadro 3, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división de esa hoja. Usa un símbolo para representar la cantidad desconocida.%
+-\item{}Observa los recuadros 1, 2 y 3 de la hoja que acabaste de recibir. En el recuadro 4, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.%
+-\end{enumerate}
+-\begin{image}{0.2}{0.6}{0.2}{}%
+-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 7 Activity 1.png}
+-\end{image}%
++% Tu profesor te dará una hoja de papel con 4 recuadros. La actividad tiene 4 rondas. En cada ronda trabajarás en una hoja distinta y tu profesor te pedirá que dibujes o escribas algo en uno de los recuadros.%
++% \par
++% Después de trabajar en cada recuadro, haz una pausa y espera a que el profesor te dé las instrucciones de la siguiente ronda.%
++% %
++% \begin{enumerate}
++% \item{}En el recuadro 1 de tu hoja, haz un dibujo de grupos iguales.%
++% \item{}Observa el dibujo que tu compañero dibujó en la hoja que acabaste de recibir. En el recuadro 2, escribe una descripción de una situación de división que corresponda a ese dibujo.%
++% \item{}Observa los recuadros 1 y 2 de la hoja que acabaste de recibir. En el recuadro 3, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división de esa hoja. Usa un símbolo para representar la cantidad desconocida.%
++% \item{}Observa los recuadros 1, 2 y 3 de la hoja que acabaste de recibir. En el recuadro 4, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.%
++% \end{enumerate}
++% \begin{image}{0.2}{0.6}{0.2}{}%
++% \includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 7 Activity 1.png}
++% \end{image}%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -1573,7 +996,7 @@
+ \typeout{Subsección  Lección 8 -~Relacionemos cocientes con productos conocidos}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 8 -~Relacionemos cocientes con productos conocidos}{}{Lección 8}{}{}{lec-relCocientesProductos}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 8\\[-0.05cm]}Relacionemos cocientes con productos conocidos}{}{Lección 8}{}{}{lec-relCocientesProductos}
+ \begin{introduction}{}%
+ Consideremos los productos y cocientes que nos sabemos de inmediato o que podemos encontrar rápidamente.%
+ \end{introduction}%
+@@ -1603,11 +1026,12 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-relCocientesProductos-act1}
+ \begin{activity}{Actividad}{Clasificación de tarjetas: Multiplicación.}{act-clasificacionDeTarjetas-multiplicacion}%
+-Pregúntale a tu compañero hechos de multiplicación. Clasifícalos en una de estas columnas:%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/clasificacionTarjetas-mult.pdf}
+-\end{image}%
+-Anota cinco expresiones de multiplicación que vas a practicar.%
++% Pregúntale a tu compañero hechos de multiplicación. Clasifícalos en una de estas columnas:%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/clasificacionTarjetas-mult.pdf}
++% \end{image}%
++% Anota cinco expresiones de multiplicación que vas a practicar.%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -1616,19 +1040,21 @@
+ \typeout{Subsubsección  Actividad 2}
+ \typeout{************************************************}
+ %
++% \clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-relCocientesProductos-act2}
+ \begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}.}{act-siSeQueEntoncesSeQue}%
+-Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
+-%
+-\begin{enumerate}
+-\item{}Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.%
+-\item{}Por turnos, tomen una tarjeta de hechos de multiplicación.%
+-\item{}Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que \textellipsis{}”%
+-\item{}Después, en la columna “Entonces sé que   \textellipsis{}”, anoten las ecuaciones de división relacionadas.%
+-\end{enumerate}
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/siSeQueEntoncesSeQue-tab.pdf}
+-\end{image}%
++% Si sé que \(4 \times 5 = 20\), entonces sé que \fillintext{10}.%
++% %
++% \begin{enumerate}
++% \item{}Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.%
++% \item{}Por turnos, tomen una tarjeta de hechos de multiplicación.%
++% \item{}Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que \textellipsis{}”%
++% \item{}Después, en la columna “Entonces sé que   \textellipsis{}”, anoten las ecuaciones de división relacionadas.%
++% \end{enumerate}
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/siSeQueEntoncesSeQue-tab.pdf}
++% \end{image}%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ \end{subsectionptx}
+@@ -1638,7 +1064,7 @@
+ \typeout{Subsección  Lección 9 -~Patrones en la tabla de multiplicar}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 9 -~Patrones en la tabla de multiplicar}{}{Lección 9}{}{}{lec-patronesTablaMultiplicar}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 9\\[-0.05cm]}Patrones en la tabla de multiplicar}{}{Lección 9}{}{}{lec-patronesTablaMultiplicar}
+ \begin{introduction}{}%
+ Encontremos patrones en la tabla de multiplicar y usémoslos para multiplicar.%
+ \end{introduction}%
+@@ -1653,7 +1079,7 @@
+ ¿Qué observas?\\
+  ¿Qué te preguntas?%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152968-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152968-scale13.pdf}
+ \end{image}%
+ \end{exploration}%
+ \end{subsubsectionptx}
+@@ -1665,22 +1091,23 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-patronesTablaMultiplicar-act1}
+ \begin{activity}{Actividad}{Productos en la tabla.}{act-productosTablaMultiplicar}%
+-Esta es una tabla de multiplicar que no se ha terminado de completar.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152978-scale13.pdf}
+-\end{image}%
+-%
+-\begin{enumerate}
+-\item{}Usa los productos que ya aparecen en la tabla para ayudarte a encontrar los números que deberían ir en las casillas donde están las letras de la A a la G. Prepárate para explicar tu razonamiento.%
+-\item{}Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Encuentra alguno que tenga:%
+-%
+-\begin{enumerate}
+-\item{}7 como un factor%
+-\item{}9 como un factor%
+-\item{}10 como un factor%
+-\end{enumerate}
+-Prepárate para explicar tu razonamiento.%
+-\end{enumerate}
++% Esta es una tabla de multiplicar que no se ha terminado de completar.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152978-scale13.pdf}
++% \end{image}%
++% %
++% \begin{enumerate}
++% \item{}Usa los productos que ya aparecen en la tabla para ayudarte a encontrar los números que deberían ir en las casillas donde están las letras de la A a la G. Prepárate para explicar tu razonamiento.%
++% \item{}Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Encuentra alguno que tenga:%
++% %
++% \begin{enumerate}
++% \item{}7 como un factor%
++% \item{}9 como un factor%
++% \item{}10 como un factor%
++% \end{enumerate}
++% Prepárate para explicar tu razonamiento.%
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -1691,14 +1118,15 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-patronesTablaMultiplicar-act2}
+ \begin{activity}{Actividad}{Si sé que \textellipsis{}, entonces sé que \textellipsis{}: Multiplicación.}{act-siSeQueEntoncesSeQueMult}%
+-%
+-\begin{enumerate}
+-\item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/siSeQueEntoncesSeQueMult-tab.pdf}
+-\end{image}%
+-\item{}Si te queda tiempo, completa el resto de la tabla de multiplicar de la actividad anterior. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
+-\end{enumerate}
++% %
++% \begin{enumerate}
++% \item{}En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/siSeQueEntoncesSeQueMult-tab.pdf}
++% \end{image}%
++% \item{}Si te queda tiempo, completa el resto de la tabla de multiplicar de la actividad anterior. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.%
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ \end{subsectionptx}
+@@ -1708,7 +1136,7 @@
+ \typeout{Subsección  Lección 10 -~Exploremos estrategias de multiplicación con rectángulos}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 10 -~Exploremos estrategias de multiplicación con rectángulos}{}{Lección 10}{}{}{lec-estrategiasMultConRectangulos}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 10\\[-0.05cm]}Exploremos estrategias de multiplicación con\\rectángulos}{}{Lección 10}{}{}{lec-estrategiasMultConRectangulos}
+ \begin{introduction}{}%
+ Usemos rectángulos para explorar estrategias de multiplicación.%
+ \end{introduction}%
+@@ -1724,13 +1152,13 @@
+  ¿Cómo lo sabes?, ¿qué ves?%
+ \begin{sidebyside}{3}{0}{0}{0.05}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147481.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147481.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141805.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141805.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147478.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147478.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{exploration}%
+@@ -1743,68 +1171,69 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-estrategiasMultConRectangulos-act1}
+ \begin{activity}{Actividad}{De diagramas a expresiones.}{act-deDiagramasAExpresiones}%
+-\begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+-\begin{sbspanel}{0.4}%
+-Andre y Elena están hallando el área de este rectángulo.%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.5}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153043.pdf}
+-\end{sbspanel}%
+-\end{sidebyside}%
+-\begin{sidebyside}{3}{0}{0}{0.065}%
+-\begin{sbspanel}{0.27}%
+-Andre escribe \(6\times 3\).%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.35}%
+-Él marca el rectángulo así:%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153044.pdf}
+-\end{sbspanel}%
+-\begin{sbspanel}{0.25}%
+-Después, Andre escribe:%
+-\par
+-\(2 \times (3 \times 3)\)\\
+- \(2 \times 9 = 18\)%
+-\end{sbspanel}%
+-\end{sidebyside}%
+-\begin{sidebyside}{3}{0}{0}{0.065}%
+-\begin{sbspanel}{0.27}%
+-Elena escribe \(3\times 6\).%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.35}%
+-Ella marca el rectángulo así:%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153045.pdf}
+-\end{sbspanel}%
+-\begin{sbspanel}{0.25}%
+-Después, Elena escribe:%
+-\par
+-\(3 \times (5 + 1)\)\\
+- \((3 \times 5) + (3 \times 1)\)\\
+- \(15+3\)\\
+- \(18\)%
+-\end{sbspanel}%
+-\end{sidebyside}%
+-%
+-\begin{enumerate}
+-\item{}Discute con un compañero:%
+-%
+-\begin{enumerate}
+-\item{}¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?%
+-\item{}¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?%
+-\item{}¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?%
+-\end{enumerate}
+-\item{}Este es otro rectángulo.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153048.pdf}
+-\end{image}%
+-Podemos encontrar su área hallando \(4 \times 9\).%
+-%
+-\begin{enumerate}
+-\item{}Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.%
+-\item{}Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.%
+-\end{enumerate}
+-\end{enumerate}
++% \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
++% \begin{sbspanel}{0.4}%
++% Andre y Elena están hallando el área de este rectángulo.%
++% \end{sbspanel}%
++% \begin{sbspanel}{0.5}%
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153043.pdf}
++% \end{sbspanel}%
++% \end{sidebyside}%
++% \begin{sidebyside}{3}{0}{0}{0.065}%
++% \begin{sbspanel}{0.27}%
++% Andre escribe \(6\times 3\).%
++% \end{sbspanel}%
++% \begin{sbspanel}{0.35}%
++% Él marca el rectángulo así:%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153044.pdf}
++% \end{sbspanel}%
++% \begin{sbspanel}{0.25}%
++% Después, Andre escribe:%
++% \par
++% \(2 \times (3 \times 3)\)\\
++%  \(2 \times 9 = 18\)%
++% \end{sbspanel}%
++% \end{sidebyside}%
++% \begin{sidebyside}{3}{0}{0}{0.065}%
++% \begin{sbspanel}{0.27}%
++% Elena escribe \(3\times 6\).%
++% \end{sbspanel}%
++% \begin{sbspanel}{0.35}%
++% Ella marca el rectángulo así:%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153045.pdf}
++% \end{sbspanel}%
++% \begin{sbspanel}{0.25}%
++% Después, Elena escribe:%
++% \par
++% \(3 \times (5 + 1)\)\\
++%  \((3 \times 5) + (3 \times 1)\)\\
++%  \(15+3\)\\
++%  \(18\)%
++% \end{sbspanel}%
++% \end{sidebyside}%
++% %
++% \begin{enumerate}
++% \item{}Discute con un compañero:%
++% %
++% \begin{enumerate}
++% \item{}¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?%
++% \item{}¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?%
++% \item{}¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?%
++% \end{enumerate}
++% \item{}Este es otro rectángulo.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153048.pdf}
++% \end{image}%
++% Podemos encontrar su área hallando \(4 \times 9\).%
++% %
++% \begin{enumerate}
++% \item{}Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.%
++% \item{}Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.%
++% \end{enumerate}
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -1815,45 +1244,46 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-estrategiasMultConRectangulos-act2}
+ \begin{activity}{Actividad}{De expresiones a diagramas.}{act-deExpresionesADiagramas}%
+-\begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
+-\begin{sbspanel}{0.3}%
+-Noah%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153051.pdf}
+-%
+-\begin{equation*}
+-(5\times 3)+(2 \times 3)
+-\end{equation*}
+-%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.3}%
+-Priya%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153053.pdf}
+-%
+-\begin{equation*}
+-2 \times (2 \times 6)
+-\end{equation*}
+-%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.3}%
+-Tyler%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153054.pdf}
+-%
+-\begin{equation*}
+-(5 \times 8) + (3 \times 8)
+-\end{equation*}
+-%
+-\end{sbspanel}%
+-\end{sidebyside}%
+-\par
+-En cada rectángulo:%
+-%
+-\begin{enumerate}
+-\item{}Escribe los dos factores que se pueden multiplicar para encontrar su área.%
+-\item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
+-\end{enumerate}
++% \begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
++% \begin{sbspanel}{0.3}%
++% Noah%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153051.pdf}
++% %
++% \begin{equation*}
++% (5\times 3)+(2 \times 3)
++% \end{equation*}
++% %
++% \end{sbspanel}%
++% \begin{sbspanel}{0.3}%
++% Priya%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153053.pdf}
++% %
++% \begin{equation*}
++% 2 \times (2 \times 6)
++% \end{equation*}
++% %
++% \end{sbspanel}%
++% \begin{sbspanel}{0.3}%
++% Tyler%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153054.pdf}
++% %
++% \begin{equation*}
++% (5 \times 8) + (3 \times 8)
++% \end{equation*}
++% %
++% \end{sbspanel}%
++% \end{sidebyside}%
++% \par
++% En cada rectángulo:%
++% %
++% \begin{enumerate}
++% \item{}Escribe los dos factores que se pueden multiplicar para encontrar su área.%
++% \item{}Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.%
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ \end{subsectionptx}
+@@ -1863,7 +1293,7 @@
+ \typeout{Subsección  Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 11 -~Estrategias de multiplicación para rectángulos sin cuadrícula}{}{Lección 11}{}{}{lec-estrategiasMultRectangulosSinCuadricula}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 11\\[-0.05cm]}Estrategias de multiplicación para rectángulos sin\\cuadrícula}{}{Lección 11}{}{}{lec-estrategiasMultRectangulosSinCuadricula}
+ \begin{introduction}{}%
+ Usemos diferentes estrategias para encontrar el área de rectángulos sin cuadrícula.%
+ \end{introduction}%
+@@ -1880,12 +1310,12 @@
+ \begin{sbspanel}{0.4}%
+ A%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153081.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153081.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}%
+ B%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153082-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153082-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
+@@ -1901,7 +1331,7 @@
+ \begin{sbspanel}{0.4}%
+ D%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153083.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153083.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{exploration}%
+@@ -1914,29 +1344,30 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{gra3-uni4-secB-lec11-act1}
+ \begin{activity}{Actividad}{Marca y después expresa.}{act-marcaDespuesExpresa}%
+-En cada caso:%
+-%
+-\begin{itemize}[label=\textbullet]
+-\item{}Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.%
+-\item{}Escribe una o más expresiones que representen cómo encuentras el área.%
+-\end{itemize}
+-\begin{sidebyside}{3}{0}{0}{0}%
+-\begin{sbspanel}{0.391}%
+-A%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153084.pdf}
+-\end{sbspanel}%
+-\begin{sbspanel}{0.261}%
+-B%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153085.pdf}
+-\end{sbspanel}%
+-\begin{sbspanel}{0.348}%
+-C%
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-153086.pdf}
+-\end{sbspanel}%
+-\end{sidebyside}%
++% En cada caso:%
++% %
++% \begin{itemize}[label=\textbullet]
++% \item{}Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.%
++% \item{}Escribe una o más expresiones que representen cómo encuentras el área.%
++% \end{itemize}
++% \begin{sidebyside}{3}{0}{0}{0}%
++% \begin{sbspanel}{0.391}%
++% A%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153084.pdf}
++% \end{sbspanel}%
++% \begin{sbspanel}{0.261}%
++% B%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153085.pdf}
++% \end{sbspanel}%
++% \begin{sbspanel}{0.348}%
++% C%
++% \par
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-153086.pdf}
++% \end{sbspanel}%
++% \end{sidebyside}%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -1947,11 +1378,12 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{gra3-uni4-secB-lec11-act2}
+ \begin{activity}{Actividad}{Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.}{act-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos}%
+-Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.%
+-\par
+-Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
+-\par
+-Si te ayuda, puedes dibujar rectángulos.%
++% Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.%
++% \par
++% Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.%
++% \par
++% Si te ayuda, puedes dibujar rectángulos.%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ \end{subsectionptx}
+@@ -1983,24 +1415,27 @@
+ \end{divisionexercise}%
+ \begin{divisionexercise}{5}{}{}{gra3-uni4-secB-ProblemasPractica-7}%
+ %
++\vspace{-1.4\baselineskip}
+ \begin{enumerate}[label={(\alph*)}]
+ \item{}Resalta partes del diagrama para mostrar la expresión \((5 \times 7) + (2 \times 7)\)%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151677-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151677-scale13.pdf}
+ \end{image}%
+ \item{}Explica cómo podrías usar el diagrama para calcular \(7\times 7\).%
+ \end{enumerate}
+ \end{divisionexercise}%
+ \begin{divisionexercise}{6}{}{}{gra3-uni4-secB-ProblemasPractica-8}%
++\vspace{-1.4\baselineskip}
+ \begin{sidebyside}{2}{0}{0}{0}%
+ \begin{sbspanel}{0.6}%
+ Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-159147-scale13.pdf}
+-\end{sbspanel}%
+-\end{sidebyside}%
+-\end{divisionexercise}%
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-159147-scale13.pdf}
++\end{sbspanel}%
++\end{sidebyside}%
++\end{divisionexercise}%
++\clearpage
+ \begin{divisionexercise}{7}{Exploración.}{}{gra3-uni4-secB-ProblemasPractica-9}%
+ Noah encuentra \(9 \times 8\) calculando \((10 \times 8) - (1 \times 8)\).%
+ %
+@@ -2019,7 +1454,7 @@
+ \begin{references-subsection}{Referencias}{Resumen de la sección}{}{Resumen sección}{}{}{gra3-uni4-secB-resumen}
+ En esta sección, aprendimos cómo se relacionan la multiplicación y la división.%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-176322.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-176322.pdf}
+ \end{image}%
+ \begin{sidebyside}{3}{0}{0}{0}%
+ \begin{sbspanel}{0.333333333333333}%
+@@ -2050,7 +1485,7 @@
+ Usamos estrategias para multiplicar y dividir, y trabajamos para multiplicar y dividir con fluidez hasta 100.%
+ \begin{sidebyside}{2}{0}{0}{0}%
+ \begin{sbspanel}{0.5}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141807.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141807.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}[center]%
+ \(7\times 3\)\\
+@@ -2065,14 +1500,14 @@
+ \typeout{Sección  Sección C -~Multipliquemos números más grandes}
+ \typeout{************************************************}
+ %
+-\begin{sectionptx}{Sección}{Sección C -~Multipliquemos números más grandes}{}{Sección C -~Multipliquemos números más grandes}{}{}{gra3-uni4-secC}
++\begin{sectionptx}{Sección}{{\Large Sección C\\}Multipliquemos números más grandes}{}{Sección C -~Multipliquemos números más grandes}{}{}{gra3-uni4-secC}
+ %
+ %
+ \typeout{************************************************}
+ \typeout{Subsección  Lección 12 -~Multipliquemos múltiplos de diez}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 12 -~Multipliquemos múltiplos de diez}{}{Lección 12}{}{}{lec-multiplicarMultiplos10}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 12\\[-0.05cm]}Multipliquemos múltiplos de diez}{}{Lección 12}{}{}{lec-multiplicarMultiplos10}
+ \begin{introduction}{}%
+ Multipliquemos números de un dígito por múltiplos de 10.%
+ \end{introduction}%
+@@ -2087,7 +1522,7 @@
+ ¿Qué observas?\\
+  ¿Qué te preguntas?%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149355-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149355-scale13.pdf}
+ \end{image}%
+ \end{exploration}%
+ \end{subsubsectionptx}
+@@ -2099,28 +1534,30 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-multiplicarMultiplos10-act1}
+ \begin{activity}{Actividad}{Una gran cantidad de dólares.}{act-granCantidadDolares}%
+-Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
+-%
+-\begin{enumerate}
+-\item{}Cada jugador recibió \textdollar{}100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?%
+-\par
+-Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/unaGranCantidadDeDolares-tab1.pdf}
+-\end{image}%
+-\item{}En un momento del juego, Noah tuvo que pagarle a Lin \textdollar{}150. Él le dio esa cantidad usando billetes del mismo tipo.%
+-%
+-\begin{enumerate}
+-\item{}¿Cuáles y cuántos billetes podría haber usado Noah para completar \textdollar{}150? Nombra todas las posibilidades.%
+-\item{}Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.%
+-\end{enumerate}
+-\item{}La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?%
+-\par
+-Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/unaGranCantidadDeDolares-tab2.pdf}
+-\end{image}%
+-\end{enumerate}
++% Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de \textdollar{}5, \textdollar{}10, \textdollar{}20, \textdollar{}50 y de \textdollar{}100.%
++% %
++% \begin{enumerate}
++% \item{}Cada jugador recibió \textdollar{}100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?%
++% \par
++% Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/unaGranCantidadDeDolares-tab1.pdf}
++% \end{image}%
++% \item{}En un momento del juego, Noah tuvo que pagarle a Lin \textdollar{}150. Él le dio esa cantidad usando billetes del mismo tipo.%
++% %
++% \begin{enumerate}
++% \item{}¿Cuáles y cuántos billetes podría haber usado Noah para completar \textdollar{}150? Nombra todas las posibilidades.%
++% \item{}Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.%
++% \end{enumerate}
++% \clearpage
++% \item{}La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?%
++% \par
++% Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/unaGranCantidadDeDolares-tab2.pdf}
++% \end{image}%
++% \end{enumerate}
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -2129,13 +1566,14 @@
+ \typeout{Subsubsección  Actividad 2}
+ \typeout{************************************************}
+ %
++% \clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-multiplicarMultiplos10-act2}
+ \begin{activity}{Actividad}{Dos estrategias.}{act-dosEstrategias}%
+ %
+ \begin{enumerate}
+ \item{}Dos estudiantes usaron bloques en base diez para encontrar el valor de \(8\times 30\).%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149356-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149356-scale13.pdf}
+ \end{image}%
+ %
+ \begin{itemize}[label=\textbullet]
+@@ -2162,7 +1600,7 @@
+ \typeout{Subsección  Lección 13 -~Resolvamos problemas de grupos iguales}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 13 -~Resolvamos problemas de grupos iguales}{}{Lección 13}{}{}{lec-problemasMult11a19}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 13\\[-0.05cm]}Resolvamos problemas de grupos iguales}{}{Lección 13}{}{}{lec-problemasMult11a19}
+ \begin{introduction}{}%
+ Multipliquemos algunos números del 11 al 19.%
+ \end{introduction}%
+@@ -2172,6 +1610,7 @@
+ \typeout{Subsubsección  Calentamiento}
+ \typeout{************************************************}
+ %
++% \vspace{-0.2cm}
+ \begin{subsubsectionptx}{Subsubsección}{Calentamiento}{}{Calentamiento}{}{}{lec-problemasMult11a19-warm}
+ \begin{exploration}{Calentamiento}{Exploración de estimación: Multipliquemos.}{warm-estimacion-multiplicar}%
+ %
+@@ -2180,7 +1619,7 @@
+ \end{equation*}
+ Escribe una estimación que sea:%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/expolacionEstimacion-tab-gra3.pdf}
++\includegraphics[scale=0.9, max width=\linewidth, center]{external/tikz-source/expolacionEstimacion-tab-gra3.pdf}
+ \end{image}%
+ \end{exploration}%
+ \end{subsubsectionptx}
+@@ -2190,6 +1629,7 @@
+ \typeout{Subsubsección  Actividad 1}
+ \typeout{************************************************}
+ %
++\vspace{-0.2cm}
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-problemasMult11a19-act1}
+ \begin{activity}{Actividad}{Problemas con números del 11 al 19.}{act-problemasNumerosAdolescentes}%
+ \begin{sidebyside}{2}{0.05}{0.05}{0.1}%
+@@ -2197,7 +1637,7 @@
+ Resuelve cada problema. Muestra cómo pensaste. Usa objetos, dibujos o un diagrama.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/png-source/egg_carton.png}
++\includegraphics[max width=0.7\linewidth, center]{external/png-source/egg_carton.png}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2214,6 +1654,7 @@
+ \typeout{Subsubsección  Actividad 2}
+ \typeout{************************************************}
+ %
++\vspace{-0.2cm}
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-problemasMult11a19-act2}
+ \begin{activity}{Actividad}{Recorrido por el salón: Problemas con números del 11 al 19.}{act-recorridoSalon-multiplicarNums11a19}%
+ Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.%
+@@ -2226,7 +1667,7 @@
+ \typeout{Subsección  Lección 14 -~Formas de representar la multiplicación de números del 11 al 19}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 14 -~Formas de representar la multiplicación de números del 11 al 19}{}{Lección 14}{}{}{lec-representarMultiplicacion11a19}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 14\\[-0.05cm]}Formas de representar la multiplicación de números del 11 al 19}{}{Lección 14}{}{}{lec-representarMultiplicacion11a19}
+ \begin{introduction}{}%
+ Démosle sentido a algunas formas de representar la multiplicación de números del 11 al 19.%
+ \end{introduction}%
+@@ -2242,13 +1683,13 @@
+  ¿Qué te preguntas?%
+ \begin{sidebyside}{3}{0}{0}{0}%
+ \begin{sbspanel}{0.333333333333333}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149346-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149346-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.333333333333333}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149347-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149347-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.333333333333333}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141822-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141822-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{exploration}%
+@@ -2265,7 +1706,7 @@
+ \begin{enumerate}
+ \item{}Tyler dice que puede usar bloques en base diez para encontrar el valor de \(7\times 13\) porque él se sabe \(7\times 10\) y \(7\times 3\). Él dice que este diagrama muestra que su forma de pensar es correcta.%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141823-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823-scale13.pdf}
+ \end{image}%
+ ¿Estás de acuerdo o en desacuerdo? Explica tu razonamiento.%
+ \item{}Usa el método de Tyler para encontrar el valor de  \(3\times 14\). Explica o muestra tu razonamiento.%
+@@ -2286,7 +1727,7 @@
+ Andre%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147551-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147551-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.05}{0.4}{0.05}%
+@@ -2294,7 +1735,7 @@
+ Clare%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147552-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147552-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.05}{0.4}{0.05}%
+@@ -2302,7 +1743,7 @@
+ Diego%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.4}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147553-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147553-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2319,7 +1760,7 @@
+ \typeout{Subsección  Lección 15 -~Grupos iguales, números más grandes}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 15 -~Grupos iguales, números más grandes}{}{Lección 15}{}{}{lec-problemasMult11a19MasGrandes}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 15\\[-0.05cm]}Grupos iguales, números más grandes}{}{Lección 15}{}{}{lec-problemasMult11a19MasGrandes}
+ \begin{introduction}{}%
+ Resolvamos algunos problemas de grupos iguales que tienen números más grandes.%
+ \end{introduction}%
+@@ -2336,24 +1777,24 @@
+ \begin{sbspanel}{0.5}%
+ A%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149350-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149350-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+ B%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149351-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149351-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0}{0}%
+ \begin{sbspanel}{0.5}%
+ C%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149352-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149352-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+ D%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149353-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149353-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{exploration}%
+@@ -2394,7 +1835,7 @@
+ \typeout{Subsección  Lección 16 -~Multipliquemos números más grandes que 20}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 16 -~Multipliquemos números más grandes que 20}{}{Lección 16}{}{}{lec-multiplicarNumsMayoresA20}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 16\\[-0.05cm]}Multipliquemos números más grandes que 20}{}{Lección 16}{}{}{lec-multiplicarNumsMayoresA20}
+ \begin{introduction}{}%
+ Multipliquemos números que son más grandes que 20.%
+ \end{introduction}%
+@@ -2431,12 +1872,12 @@
+ \begin{sbspanel}{0.5}%
+ Clare%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152969-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152969-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.5}%
+ Andre%
+ \par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152970-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152970-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2445,13 +1886,14 @@
+ \item{}¿Cómo podríamos usar el diagrama de Clare para encontrar el valor de \(4\times 23\)?%
+ \item{}¿Cómo podríamos usar el diagrama de Andre para encontrar el valor de \(4\times 23\)?%
+ \end{enumerate}
++\clearpage
+ \item{}Diego trató de partir o dividir un diagrama de varias maneras para poder encontrar el valor de \(4\times 23\).%
+ \begin{sidebyside}{2}{0}{0.3}{0.05}%
+ \begin{sbspanel}{0.05}[center]%
+ A%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.6}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152971-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152971-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0.3}{0.05}%
+@@ -2459,7 +1901,7 @@
+ B%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.6}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152972-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152972-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0.3}{0.05}%
+@@ -2467,7 +1909,7 @@
+ C%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.6}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152973-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152973-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0.3}{0.05}%
+@@ -2475,7 +1917,7 @@
+ D%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.6}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152974-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152974-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2493,6 +1935,7 @@
+ \typeout{Subsubsección  Actividad 2}
+ \typeout{************************************************}
+ %
++\clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-multiplicarNumsMayoresA20-act2}
+ \begin{activity}{Actividad}{Unos productos bonitos.}{act-prodsUnDigitoPorMayorA20}%
+ %
+@@ -2504,6 +1947,7 @@
+ %
+ \par
+ Describe o muestra lo que haría Mai para terminar de encontrar el valor de \(2\times 37\).%
++\clearpage
+ \item{}Encuentra el valor de cada producto. Muestra cómo razonaste.%
+ %
+ \begin{enumerate}
+@@ -2528,7 +1972,7 @@
+ Juega “Cerca de 100, multiplicación” con un compañero.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 16 Activity 2.png}
++\includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 16 Activity 2.png}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{aside}{[aside]}{}{act-juegoCerca100Multiplicacion-2-2}%
+@@ -2544,7 +1988,7 @@
+ \typeout{Subsección  Lección 17 -~Usemos las cuatro operaciones para resolver problemas}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 17 -~Usemos las cuatro operaciones para resolver problemas}{}{Lección 17}{}{}{lec-problemasCuatroOperaciones}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 17\\[-0.05cm]}Usemos las cuatro operaciones para\\resolver problemas}{}{Lección 17}{}{}{lec-problemasCuatroOperaciones}
+ \begin{introduction}{}%
+ Usemos las cuatro operaciones para resolver problemas.%
+ \end{introduction}%
+@@ -2585,6 +2029,7 @@
+ \typeout{Subsubsección  Actividad 2}
+ \typeout{************************************************}
+ %
++\clearpage
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 2}{}{Actividad 2}{}{}{lec-problemasCuatroOperaciones-act2}
+ \begin{activity}{Actividad}{Problemas sobre una fiesta.}{act-problemasMultiplicativosFiesta}%
+ En cada problema:%
+@@ -2595,7 +2040,7 @@
+ (b) Resuelve el problema. Explica o muestra tu razonamiento.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 17.png}
++\includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 17.png}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2628,7 +2073,7 @@
+ \begin{divisionexercise}{3}{}{}{gra3-uni4-secC-ProblemasPractica-5}%
+ \begin{sidebyside}{2}{0.0125}{0.0125}{0.025}%
+ \begin{sbspanel}{0.35}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151678-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151678-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.6}%
+ %
+@@ -2663,7 +2108,7 @@
+ \end{divisionexercise}%
+ \begin{divisionexercise}{8}{Exploración.}{}{gra3-uni4-secC-ProblemasPractica-10}%
+ \begin{image}{0}{1}{0}{-1.5\baselineskip}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151679-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151679-scale13.pdf}
+ \end{image}%
+ %
+ \begin{enumerate}[label={(\alph*)}]
+@@ -2676,10 +2121,10 @@
+ Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151680-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151680-scale13.pdf}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-151681-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-151681-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -2704,7 +2149,7 @@
+ \(4\times 30\)%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.7}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147742-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147742-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.0375}{0.0375}{0.075}%
+@@ -2712,7 +2157,7 @@
+ \(7\times 13\)%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.7}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141823-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141823-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.0375}{0.0375}{0.075}%
+@@ -2720,9 +2165,9 @@
+ \(3\times 28\)%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.7}[center]%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-141827-scale13.pdf}
+-\par
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-158683-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-141827-scale13.pdf}
++\par
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-158683-scale13.pdf}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{references-subsection}
+@@ -2733,14 +2178,14 @@
+ \typeout{Sección  Sección D -~Dividamos números más grandes}
+ \typeout{************************************************}
+ %
+-\begin{sectionptx}{Sección}{Sección D -~Dividamos números más grandes}{}{Sección D -~Dividamos números más grandes}{}{}{gra3-uni4-secD}
++\begin{sectionptx}{Sección}{{\Large Sección D\\}Dividamos números más\\grandes}{}{Sección D -~Dividamos números más grandes}{}{}{gra3-uni4-secD}
+ %
+ %
+ \typeout{************************************************}
+ \typeout{Subsección  Lección 18 -~Números más grandes en grupos iguales}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 18 -~Números más grandes en grupos iguales}{}{Lección 18}{}{}{lec-gruposIgualesMasGrandes}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 18\\[-0.05cm]}Números más grandes en grupos iguales}{}{Lección 18}{}{}{lec-gruposIgualesMasGrandes}
+ \begin{introduction}{}%
+ Dividamos con números más grandes.%
+ \end{introduction}%
+@@ -2766,9 +2211,9 @@
+ Hay 48 estudiantes que van de excursión al acuario. Ellos visitan las exhibiciones en grupos de 4 estudiantes. ¿Cuántos grupos habrá?%
+ \par
+ Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.%
+-\begin{image}{0.15}{0.7}{0.15}{}%
+-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 18 Activity 1.png}
+-\end{image}%
++% \begin{image}{0.15}{0.7}{0.15}{}%
++% \includegraphics[width=0.2\linewidth, max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 18 Activity 1.png}
++% \end{image}%
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -2795,7 +2240,7 @@
+ \typeout{Subsección  Lección 19 -~Formas de dividir números más grandes}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 19 -~Formas de dividir números más grandes}{}{Lección 19}{}{}{lec-formasDividirNumerosMasGrandes}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 19\\[-0.05cm]}Formas de dividir números más grandes}{}{Lección 19}{}{}{lec-formasDividirNumerosMasGrandes}
+ \begin{introduction}{}%
+ Démosle sentido a las representaciones de la división.%
+ \end{introduction}%
+@@ -2845,7 +2290,7 @@
+ \end{enumerate}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.2}%
+-\includegraphics[width=\linewidth]{external/png-source/CS 3.4 Lesson 19 Activity 1.png}
++\includegraphics[max width=\linewidth, center]{external/png-source/CS 3.4 Lesson 19 Activity 1.png}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ \end{activity}%
+@@ -2862,11 +2307,11 @@
+ \par
+ Este es el trabajo de Jada:%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152963-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152963-scale13.pdf}
+ \end{image}%
+ Este es el trabajo de Han:%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-152964-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-152964-scale13.pdf}
+ \end{image}%
+ %
+ \begin{enumerate}
+@@ -2893,7 +2338,7 @@
+ \typeout{Subsección  Lección 20 -~Estrategias para dividir}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 20 -~Estrategias para dividir}{}{Lección 20}{}{}{lec-estrategiasDividir}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 20\\[-0.05cm]}Estrategias para dividir}{}{Lección 20}{}{}{lec-estrategiasDividir}
+ \begin{introduction}{}%
+ Usemos diferentes estrategias para dividir.%
+ \end{introduction}%
+@@ -2930,7 +2375,7 @@
+ Lin%
+ \par
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149344-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149344-scale13.pdf}
+ \end{image}%
+ %
+ \begin{sidebyside}{2}{0}{0}{0}%
+@@ -2982,8 +2427,21 @@
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 3}{}{Actividad 3}{}{}{lec-estrategiasDividir-act3}
+ \begin{activity}{Actividad}{“Compara: Divide hasta 100” [OPCIONAL].}{act-comparaDivideHasta100}%
+ Juega ``Compara'' con dos jugadores.%
+-\end{activity}%
+-\end{subsubsectionptx}
++\par
++Ver libro de trabajo.
++\end{activity}%
++\end{subsubsectionptx}
++%
++%
++% \typeout{************************************************}
++% \typeout{Preguntas de comprensión  Actividad de cierre}
++% \typeout{************************************************}
++% %
++% \begin{reading-questions-subsubsection}{Preguntas de comprensión}{Actividad de cierre}{}{Actividad de cierre}{}{}{lec-estrategiasDividir-cool}
++% \begin{project}{Actividad de cierre}{Una división más.}{cool-unaDivisionMas}%
++% Encuentra el valor de \(96 \div 6\). Explica o muestra tu razonamiento.%
++% \end{project}%
++% \end{reading-questions-subsubsection}
+ \end{subsectionptx}
+ %
+ %
+@@ -2991,7 +2449,7 @@
+ \typeout{Subsección  Lección 21 -~Resolvamos problemas usando las cuatro operaciones}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 21 -~Resolvamos problemas usando las cuatro operaciones}{}{Lección 21}{}{}{lec-problemas4Operaciones}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 21\\[-0.05cm]}Resolvamos problemas usando las cuatro operaciones}{}{Lección 21}{}{}{lec-problemas4Operaciones}
+ \begin{introduction}{}%
+ Representemos problemas de dos pasos utilizando ecuaciones con una letra que represente la cantidad desconocida.%
+ \end{introduction}%
+@@ -3018,22 +2476,23 @@
+ %
+ \begin{subsubsectionptx}{Subsubsección}{Actividad 1}{}{Actividad 1}{}{}{lec-problemas4Operaciones-act1}
+ \begin{activity}{Actividad}{Una aventura con manzanas.}{act-unaAventuraConManzanas}%
+-\begin{sidebyside}{2}{0}{0}{0.1}%
+-\begin{sbspanel}{0.6}%
+-Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.%
+-\end{sbspanel}%
+-\begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/png-source/3.4.D21.S_Sp.png}
+-\end{sbspanel}%
+-\end{sidebyside}%
+-\par
+-Escoge \(4\) números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos \(4\) números.%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-149345-scale13.pdf}
+-\end{image}%
+-\begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/tikz-source/3-4-21-act1-tab-est-noLibroTrabajo.pdf}
+-\end{image}%
++% \begin{sidebyside}{2}{0}{0}{0.1}%
++% \begin{sbspanel}{0.6}%
++% Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.%
++% \end{sbspanel}%
++% \begin{sbspanel}{0.3}%
++% \includegraphics[max width=\linewidth, center]{external/png-source/3.4.D21.S_Sp.png}
++% \end{sbspanel}%
++% \end{sidebyside}%
++% \par
++% Escoge \(4\) números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos \(4\) números.%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-149345-scale13.pdf}
++% \end{image}%
++% \begin{image}{0}{1}{0}{}%
++% \includegraphics[max width=\linewidth, center]{external/tikz-source/3-4-21-act1-tab-est-noLibroTrabajo.pdf}
++% \end{image}%
++Ver libro de trabajo.
+ \end{activity}%
+ \end{subsubsectionptx}
+ %
+@@ -3049,10 +2508,10 @@
+ Tyler y Clare ayudan durante un festival en una huerta de manzanas.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/jpg-source/apple-3535566_1920.jpg}
+-\end{sbspanel}%
+-\end{sidebyside}%
+-%
++\includegraphics[max width=0.6\linewidth, center]{external/jpg-source/apple-3535566_1920.jpg}
++\end{sbspanel}%
++\end{sidebyside}%
++\vspace{-0.3cm}
+ \begin{enumerate}
+ \item{}Tyler apila manzanas para vender en el evento. Tiene \(85\) manzanas para apilar. Ya ha hecho \(5\) filas de \(10\) manzanas. ¿Cuántas manzanas quedan?%
+ %
+@@ -3060,6 +2519,7 @@
+ \item{}Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.%
+ \item{}Resuelve el problema. Explica o muestra tu razonamiento.%
+ \end{enumerate}
++\clearpage
+ \item{}Clare ayuda a vender alimentos horneados en el evento. Un cliente compra \(8\) brownies que cuestan \(\$3\) cada uno. Clare mete ese dinero en la caja del dinero y ahora hay \(\$125\) en la caja. ¿Cuánto dinero había en la caja antes de esa compra?%
+ %
+ \begin{enumerate}
+@@ -3083,7 +2543,7 @@
+ \typeout{Subsección  Lección 22 -~La huerta comunitaria de la escuela}
+ \typeout{************************************************}
+ %
+-\begin{subsectionptx}{Subsección}{Lección 22 -~La huerta comunitaria de la escuela}{}{Lección 22}{}{}{lec-huertaComunitaria}
++\begin{subsectionptx}{Subsección}{{\normalsize Lección 22\\[-0.05cm]}La huerta comunitaria de la escuela}{}{Lección 22}{}{}{lec-huertaComunitaria}
+ \begin{introduction}{}%
+ Planeemos una huerta para la escuela.%
+ \end{introduction}%
+@@ -3098,7 +2558,7 @@
+ ¿Qué observas?\\
+  ¿Qué te preguntas?%
+ \begin{image}{0.125}{0.75}{0.125}{}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22-warm-garden-934189_1920.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/3-4-D-22-warm-garden-934189_1920.jpg}
+ \end{image}%
+ \end{exploration}%
+ \footnotetext[32]{\nolinkurl{pixabay.com/photos/garden-strawberries-plant-red-934189/}\label{warm-observa-huerta-2-2-2-1-2}}%
+@@ -3116,7 +2576,7 @@
+ En cada situación, dibuja un diagrama y escribe una ecuación o una expresión.%
+ \end{sbspanel}%
+ \begin{sbspanel}{0.3}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
++\includegraphics[max width=\linewidth, center]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
+ \end{sbspanel}%
+ \end{sidebyside}%
+ %
+@@ -3161,10 +2621,11 @@
+ \end{enumerate}
+ \item{}Haz un diagrama que muestre cómo están organizadas las plantas y cuánto espacio se necesita.%
+ \end{enumerate}
++\newpage
+ \alert{Requisitos para el cultivo}%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act1-Fresas.jpg}
+ %
+ \par
+ fresas%
+@@ -3177,7 +2638,7 @@
+ \end{itemize}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-melon-cantalupo.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act2-melon-cantalupo.jpg}
+ %
+ \par
+ melones cantalupos%
+@@ -3192,7 +2653,7 @@
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-calabacin.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act2-calabacin.jpg}
+ %
+ \par
+ calabacín%
+@@ -3205,7 +2666,7 @@
+ \end{itemize}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-tomate.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act2-tomate.jpg}
+ %
+ \par
+ tomates%
+@@ -3220,7 +2681,7 @@
+ \end{sidebyside}%
+ \begin{sidebyside}{2}{0.025}{0.025}{0.05}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-frijoles-pintos.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act2-frijoles-pintos.jpg}
+ %
+ \par
+ frijoles pintos%
+@@ -3233,7 +2694,7 @@
+ \end{itemize}
+ \end{sbspanel}%
+ \begin{sbspanel}{0.45}%
+-\includegraphics[width=\linewidth]{external/jpg-source/3-4-D-22 Act2-papas.jpg}
++\includegraphics[max width=0.8\linewidth, center]{external/jpg-source/3-4-D-22 Act2-papas.jpg}
+ %
+ \par
+ papas%
+@@ -3326,7 +2787,7 @@
+ \begin{itemize}[label=\textbullet]
+ \item{}Poner \(5\) decenas y \(2\) unidades en \(4\) grupos iguales.%
+ \begin{image}{0}{1}{0}{}%
+-\includegraphics[width=\linewidth]{external/svg-source/tikz-file-147697-scale13.pdf}
++\includegraphics[max width=\linewidth, center]{external/svg-source/tikz-file-147697-scale13.pdf}
+ \end{image}%
+ \item{}Pensar en cuántos grupos de \(4\) hay en \(52\).%
+ %
+@@ -3353,7 +2814,7 @@
+ \typeout{Sección  Glosario}
+ \typeout{************************************************}
+ %
+-\begin{sectionptx}{Sección}{Glosario}{}{Glosario}{}{}{gra3-uni4-glo-acum}
++% \begin{sectionptx}{Sección}{Glosario}{}{Glosario}{}{}{gra3-uni4-glo-acum}
+ %
+ %
+ \typeout{************************************************}
+@@ -3433,7 +2894,7 @@
+ \end{dlimedium}%
+ \end{descriptionlist}
+ \end{subsectionptx}
+-\end{sectionptx}
++% \end{sectionptx}
+ %
+ %
+ \typeout{************************************************}
+@@ -3451,7 +2912,7 @@
+ \item{}Trompo de madera. Alberto Adán \href{https://pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/wooden-spinning-top-top-mexican-3868460/}\label{gra3-uni4-9-2-3-2-1-2}}.%
+ \item{}Dreidels. PublicDomainPictures \href{https://pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/dreidels-hanukkah-spinning-tops-20347/}\label{gra3-uni4-9-2-3-2-2-2}}%
+ \item{}Whirligig. PublicDomainPictures \href{https://pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/whirligig-traditional-folklore-wood-2316859/}\label{gra3-uni4-9-2-3-2-3-2}}%
+-\item{}Kreisel. Federlight. CC BY-SA 4.0. Wikimedia Commons \href{https://commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}{https:\slash{}\slash{}commons.wikimedia.org}\footnote{\nolinkurl{commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}\label{gra3-uni4-9-2-3-2-4-2}}%
++\item{}Kreisel. Federlight. CC BY-SA 4.0. Wikimedia Commons\\\href{https://commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}{https:\slash{}\slash{}commons.wikimedia.org}\footnote{\nolinkurl{commons.wikimedia.org/wiki/File:Spinning_Top.jpeg}\label{gra3-uni4-9-2-3-2-4-2}}%
+ \item{}Trompo metálico.  Anthony. Pexel License \href{https://www.pexels.com/photo/blue-and-green-spin-toy-170288/}{https:\slash{}\slash{}www.pexels.com\slash{}}\footnote{\nolinkurl{www.pexels.com/photo/blue-and-green-spin-toy-170288/}\label{gra3-uni4-9-2-3-2-5-2}}%
+ \end{itemize}
+ \item{}\hyperref[act-clasificacionDeTarjetas-todoSobreBichos]{Clasificación de tarjetas: Todo sobre bichos, p.\,\pageref{act-clasificacionDeTarjetas-todoSobreBichos}} Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. \href{https://en.wikipedia.org/wiki/File:Insect_collage.png}{https:\slash{}\slash{}en.wikipedia.org}\footnote{\nolinkurl{en.wikipedia.org/wiki/File:Insect_collage.png}\label{gra3-uni4-9-2-4-3}}.%
+@@ -3463,7 +2924,7 @@
+ %
+ \begin{itemize}[label=$\circ$]
+ \item{}Fresas en una parcela. Fruchthandel\textunderscore{}Magazin. Pixabay License. \href{https://pixabay.com/photos/strawberries-red-cute-plant-field-196798/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/strawberries-red-cute-plant-field-196798/}\label{gra3-uni4-9-2-9-2-1-1-2}}%
+-\item{}Melones cantalupos. Davgood Kirshot. Pixabay License. \href{https://pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}\label{gra3-uni4-9-2-9-2-2-1-2}}.%
++\item{}Melones cantalupos. Davgood Kirshot. Pixabay License.\\\href{https://pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/cantaloupe-fruit-melon-healthy-3634128/}\label{gra3-uni4-9-2-9-2-2-1-2}}.%
+ \item{}Calabacín. Monika. Pixabay License. \href{https://pixabay.com/photos/zucchini-vegetables-cultivation-1522535/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/zucchini-vegetables-cultivation-1522535/}\label{gra3-uni4-9-2-9-2-3-1-2}}.%
+ \item{}Tomates. kie-ker. Pixabay License. \href{https://pixabay.com/photos/tomatoes-vines-water-droplets-wet-1561565/}{https:\slash{}\slash{}pixabay.com}\footnote{\nolinkurl{pixabay.com/photos/tomatoes-vines-water-droplets-wet-1561565/}\label{gra3-uni4-9-2-9-2-4-1-2}}.%
+ \item{}Frijoles. Russell Lee. Public Domain. Wikimedia Commons. \href{https://commons.wikimedia.org/wiki/File:Pinto_beans,_main_crop_1a34133v.jpg}{https:\slash{}\slash{}commons.wikimedia.org}\footnote{\nolinkurl{commons.wikimedia.org/wiki/File:Pinto_beans,_main_crop_1a34133v.jpg}\label{gra3-uni4-9-2-9-2-5-1-2}}.%
+@@ -3472,5 +2933,6 @@
+ \end{itemize}
+ Las imágenes sin atrubición las produjo LEMA \href{https://www.grupolema.org}{www.grupolema.org}\footnote{\nolinkurl{www.grupolema.org}\label{gra3-uni4-9-3-2}} específicamente para esta adaptación y se liberan con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), o son © 2021 \href{https://curriculum.illustrativemathematics.org}{Illustrative Mathematics}\footnote{\nolinkurl{curriculum.illustrativemathematics.org}\label{gra3-uni4-9-3-4}} con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0) y se reproducen directamente de la versión en Español disponible en \href{https://im.kendallhunt.com/K5_ES/curriculum.html}{im.kendallhunt.com}\footnote{\nolinkurl{im.kendallhunt.com/K5_ES/curriculum.html}\label{gra3-uni4-9-3-6}}.%
+ \end{references-section}
++\cleardoublepage
+ \end{document}
+ 
