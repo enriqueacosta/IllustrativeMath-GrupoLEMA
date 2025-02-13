@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<subsection xml:id="lec-VVVVVV" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="lec-interpretarAsobreB" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<shorttitle>Lección [@##@] </shorttitle>
-<title>Lección [@##@] -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<shorttitle>Lección 5 </shorttitle>
+<title>Lección 5 -<nbsp/></title>
+<title>Una nueva forma de interpretar a sobre b</title>
 
 
 <!-- ============================================ 
@@ -12,20 +12,43 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Investiguemos qué significa una fracción cuando el numerador y el denominador no son números enteros.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
-<!-- <objectives component="estudiante">
+<objectives component="estudiante">
   <ul>
-    <li>[@@@@@@@@@@@@@@]</li>
+    <li>
+      <p>
+        [@@@@@@@@@@@@@@] I understand the meaning of a fraction made up of fractions or decimals, like <m>\frac{2.1}{0.07}</m> or <m>\frac{\frac{4}{5}}{\frac{3}{2}}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        When I see an equation, I can make up a story that the equation might represent, explain what the variable represents in the story, and solve the equation.
+      </p>
+    </li>
   </ul>
-</objectives> -->
+</objectives>
 
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>
+      <p>
+        [@@@@@@@@@] Comprehend that the notation <m>\frac{a}{b}</m> can be used to represent division generally, and the numerator and denominator can include fractions, decimals, or variables.
+      </p>
+    </li>
+    <li>
+      <p>
+        Describe (orally) a situation that could be represented by a given equation of the form <m>x + p = q</m> or <m>px = q</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Express division as a fraction (in writing) when solving equations of the form <m>px = q</m>.
+      </p>
+    </li>
   </ul>
 </objectives>
 
@@ -38,7 +61,18 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <p>
+          [@@@@@@@@@] Building On: 6.NS.A.1, 6.NS.B.3
+        </p>
+      </li>
+      <li>
+        <p>
+          Addressing 6.EE.B, 6.EE.B.5, 6.EE.B.6, 6.EE.B.7
+        </p>
+      </li>
+    </ul>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -48,15 +82,15 @@
   </paragraphs>
 
   <!-- Propósito de la lección -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
   <!-- Materiales requeridos -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    [@@@@@@@@]
+    [@@@@@@@@] -->
     <!-- <ul>
       <li>
         <p>Actividad 1</p>
@@ -67,64 +101,69 @@
         <xi:include href="./act-SSSSSSSS-mat.ptx"/>
       </li>
     </ul>  -->
-  </paragraphs>
+  <!-- </paragraphs> -->
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [@@@@@@@@@] In this lesson, students apply the general procedure they just learned for solving <m>px = q</m> in order to define what <m>\frac{a}{b}</m> means when <m>a</m> and <m>b</m> are not whole numbers. Up until now, students have likely only seen a fraction bar separating two whole numbers. This is because before grade 6, they couldn't divide arbitrary rational numbers. Now an expression like <m>\frac{2.5}{8.9}</m> or <m>\frac{\frac{1}{2}}{\frac{3}{5}}</m> can be well-defined.
+    </p>
+    <p>
+      But the definition is not the same as what they learned for, for example, <m>\frac{2}{5}</m> in grade 3, where they learned that <m>\frac{2}{5}</m> is the number you get by partitioning the interval from <m>0</m> to <m>1</m> into <m>5</m> equal parts and then marking off <m>2</m> of the parts. That definition only works for whole numbers. However, in grade 5, students learned that <m>2 \div 3 = \frac{2}{3}</m>, so in grade 6 it makes sense to define <m>\frac{2.5}{8.9}</m> as <m>2.5 \div 8.9</m>. 
+    </p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 </introduction>
 
 
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-VVVVVV-warm" component="no-libroTrabajo">
+<subsubsection xml:id="lec-interpretarAsobreB-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./warm-QQQQQQQQ.ptx"/> 
+  <xi:include href="./warm-formasDeResolverEcuaciones.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-VVVVVV-act1" component="no-libroTrabajo">
+<subsubsection xml:id="lec-interpretarAsobreB-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>([15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-RRRRRRRRR.ptx"/> 
+  <xi:include href="./act-interpretemosAsobreB.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-RRRRRRRRR-reto.ptx"/>  -->
+  <xi:include href="./act-interpretemosAsobreB-reto.ptx"/>
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-VVVVVV-act2" component="no-libroTrabajo">
+<subsubsection xml:id="lec-interpretarAsobreB-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-SSSSSSSSS.ptx"/> 
+  <xi:include href="./act-tiempoParaHistoriaEraseOtraVez.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
   <!-- <xi:include href="./act-SSSSSSSSS-reto.ptx"/>  -->
@@ -132,31 +171,14 @@
 
 
 <!-- ============================================ 
-  Actividad 3
-=================================================  -->
-<subsubsection xml:id="lec-VVVVVV-act3" component="no-libroTrabajo">
-  <shorttitle>Actividad 3</shorttitle>
-  <title>Actividad 3</title>
-  <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
-
-  <!-- Archivo con el contenido -->
-  <xi:include href="./act-TTTTTTTT.ptx"/> 
-
-  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-TTTTTTTT-reto.ptx"/>  -->
-</subsubsection>
-
-
-<!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
-<subsubsection xml:id="lec-VVVVVV-sintesis" component="profesor">
+<subsubsection xml:id="lec-interpretarAsobreB-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[@@@@@@@@@] Ask students to work with their partner. Each partner writes a number that is in fraction or decimal form. Have them choose one number to be the coefficient in an equation of the form <m>px = q</m> and the second number the quantity on the other side of the equal sign. They then work together to write and evaluate the solution of the equation. Complete multiple rounds as time allows.</p>
 
 </subsubsection>
 
@@ -166,19 +188,19 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
-<reading-questions xml:id="lec-VVVVVV-cool" component="cools"> 
+<reading-questions xml:id="lec-interpretarAsobreB-cool" component="cools"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>
 
 
   <!-- pdf imprimible -->
-  <url component="profesor" href="external/cools-pdf/cool-UUUUUUUUUU-standalone.pdf">
+  <url component="profesor" href="external/cools-pdf/cool-eligiendoSoluciones-standalone.pdf">
     <custom ref="texto-link-pdf-cool-down"/>
   </url>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./cool-UUUUUUUUUU.ptx"/>
+  <xi:include href="./cool-eligiendoSoluciones.ptx"/>
 </reading-questions>
 
 
@@ -187,7 +209,7 @@
 <!-- ================================================
   Resumen de la lección (se usa a partir de grado 6)
 ===================================================== -->
-<xi:include href="./lec-VVVVVV-resumen.ptx"/>
+<xi:include href="./lec-interpretarAsobreB-resumen.ptx"/>
 
 
 
@@ -195,13 +217,19 @@
 <!-- ======================================================================
   Problemas de práctica (a nivel lección a partir de grado 6)
 =========================================================================== -->
-<exercises component="PPs" xml:id="lec-VVVVVV-ProblemasPractica"> 
+<exercises component="PPs" xml:id="lec-interpretarAsobreB-ProblemasPractica"> 
   <title><custom ref="titulo-problemas-practica-lec"/></title>
   <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
   <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
 
   <!-- un archivo por problema -->
-  <xi:include href="./lec-VVVVVV-PP1.ptx"/>
+  <xi:include href="./lec-interpretarAsobreB-PP1.ptx"/>
+  <xi:include href="./lec-interpretarAsobreB-PP2.ptx"/>
+  <xi:include href="./lec-interpretarAsobreB-PP3.ptx"/>
+  <xi:include href="./lec-interpretarAsobreB-PP4.ptx"/>
+  <xi:include href="./gra6-uni3-secD-lec13-PPalign2.ptx"/>
+  <xi:include href="./gra6-uni3-secD-lec12-PPalign2.ptx"/>
+  <xi:include href="./lec-diagramasCintaYEcuaciones-PPalign3.ptx"/>
   
 </exercises>
 
