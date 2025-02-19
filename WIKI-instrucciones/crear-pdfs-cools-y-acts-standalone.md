@@ -5,6 +5,8 @@
 Instrucciones para crear un PDF de una sola actividad o cool listo para impresión
 (con comandos de espaciado, encabezado y pie de página con información de licencia)
 
+*Pendiente*: Estos pdf no tienen info de la lección o unidad a la que corresponden. Ver [#161](https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA/issues/161) sobre posibles formas de implementar esto.
+
 ### 1. Verificar la actividad para impresión
 Asegúrese de que la actividad está lista para impresión (incluyendo comandos de espaciado `whitespace`).
 
