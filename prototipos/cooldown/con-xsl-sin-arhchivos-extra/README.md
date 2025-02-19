@@ -1,1 +1,0 @@
-Ver archivo `.xsl` en `/source/custom-xsl/pretext-latex-cool.xsl`
