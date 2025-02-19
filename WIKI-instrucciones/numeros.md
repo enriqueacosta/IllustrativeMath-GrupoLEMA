@@ -32,7 +32,7 @@ Decisión temporal: usar los números tal como se encuentran en el original. El 
 
 
 ## Números mixtos
-Para números mixtos (como 3⅘) usar siempre el código LaTeX `n\trac{p}{q}`.
+Para números mixtos (como 3⅘) usar siempre el código LaTeX `n\trac{p}{q}` (con `\tfrac`, no con `\frac`).
 
 **Explicación de por qué usar `\tfrac`**: La fracción en el número mixto 3⅘ debe aparecer pequeña. Si uno está en `<m>` y no en `<me>` o `<md>`, el código `<m>3\frac{4}{5}</m>` va a funcionar perfecto *excepto* si el `<m>` es el único contenido de un item de una lista (un `<li>`), porque en ese caso PreTeXt agrega un \displaystyle sin que se le solicite y esto causa que `\frac{4}{5}` se muestre grande (incorrecto). La solución en los casos de `<me>`, `<md>` o [`<m>` solo adentro de un `<li>`] es usar el comando especial `\tfrac{4}{5}`. Este commando le indica a LaTeX o a MathJaX que esta es una fracción que no se debe agrandar. Como el comando `\tfrac{4}{5}` también funciona and `<m>` es mejor unificar todos los casos y que el código latex no dependa del lugar en el que está.
 
