@@ -27,9 +27,21 @@ Ver def del marco `\unit{}` en `<macros>` en meta_docinfo.ptx.
 
 
 ## Números con decimales y separadores de miles
-Decisión temporal: usar los números tal como se encuentran en el original. El cambio de decimales a comas se puede hacer después simpre y cuendo haya consistencia.
+Todo número que tenga un separador decimal se debe escribir con el formato `\num{1234.56}`. 
 
+Ejemplos:
 
+*  `<m> 3x + \num{14.56} +10 = \num{13.45} </m>`
+*  `<m>\num{1200.532} \unit{mg}</m>`
+*  `x+ \frac{\num{45.321}}{\num{0.1}}`
+
+Solo los números con separador decimal necesitan `\num`, pero no pasa nada si se lo ponen a un entero, como `\num{10}`.
+
+**Qué se logra con esto:** en HTML y LaTeX se puede definir `\num` para que haga cosas como:
+*  Cambiar el separador decimal de `.` a `,`
+*  Agregar separadores de miles para números mayores que 9999.
+
+Ver https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA/issues/113 sobre lo que se debe hacer.
 
 ## Números mixtos
 Para números mixtos (como 3⅘) usar siempre el código LaTeX `n\trac{p}{q}` (con `\tfrac`, no con `\frac`). 
