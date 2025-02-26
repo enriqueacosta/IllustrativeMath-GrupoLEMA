@@ -29,6 +29,7 @@ quiet think time --> tiempo para pensar en silencio
 geoblock --> bloque sólido geométrico
 partner discussion --> discusión en pareja
 ```
+(ver mini GLO abajo)
 
 Para quitar las líneas con ####:
 ```
@@ -41,3 +42,58 @@ Haz que el español sea más corto, más fluido, y más fácil de entender.
 ```
 
 Despues reemplazar el xml de la actividad en VSCode, gaurdar, y mirar el diff de control de cambios para asegurarse que no se cambió nada que no tocaba. Se puede editar sobre el diff mismo.
+
+
+
+## mini-GLO de launch, Activity instructions, synthesis
+
+Instrucciones
+```
+consider > considere
+quiet think time > tiempo para pensar en silencio
+shape > figura
+monitor for students > identifique a los estudiantes
+were introduced > se le presentó
+encourage > motívelos
+flash > muestre rápidamente
+display > muestre
+solved > resolvieron
+share > repartir
+did you say > dijo
+elicit > generar
+independent > individual
+tell students > diga a los estudiantes
+teacher > profesor
+invite students > invite a los estudiantes
+sentence frame > esquema de oración
+```
+
+objetos
+```
+blackline master > hoja reproducible
+poster > póster
+connecting cube > cubo encajable
+array > arreglo
+equal size > igual tamaño
+counter > ficha
+visual display > presentación visual
+pattern block > ficha geométrica
+5-frame > tablero de 5
+number mat > tablero de números
+```
+
+rutinas
+```
+gallery walk > Recorrido por el salón
+what is the same and what is different > en qué se parecen y en qué son diferentes
+Which One Doesn’t Belong > ¿Cuál es diferente?
+```
+
+otros
+```
+warm-up > actividad de calentamiento
+cool-down > actividad de cierre
+matches > corresponde a
+match > emparejan
+perpendicular bisector > mediatriz
+```
