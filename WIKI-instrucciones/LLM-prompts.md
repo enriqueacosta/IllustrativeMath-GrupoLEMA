@@ -47,7 +47,7 @@ Despues reemplazar el xml de la actividad en VSCode, gaurdar, y mirar el diff de
 
 ## mini-GLO de launch, Activity instructions, synthesis
 
-Instrucciones
+Instrucciones de da el profesor:
 ```
 consider > considere
 quiet think time > tiempo para pensar en silencio
@@ -68,7 +68,7 @@ invite students > invite a los estudiantes
 sentence frame > esquema de oración
 ```
 
-objetos
+Objetos:
 ```
 blackline master > hoja reproducible
 poster > póster
@@ -82,14 +82,14 @@ pattern block > ficha geométrica
 number mat > tablero de números
 ```
 
-rutinas
+Rutinas:
 ```
 gallery walk > Recorrido por el salón
 what is the same and what is different > en qué se parecen y en qué son diferentes
 Which One Doesn’t Belong > ¿Cuál es diferente?
 ```
 
-otros
+Otros:
 ```
 warm-up > actividad de calentamiento
 cool-down > actividad de cierre
