@@ -28,6 +28,7 @@ Ajusta estas estas traducciones:
 quiet think time --> tiempo para pensar en silencio
 geoblock --> bloque sólido geométrico
 partner discussion --> discusión en pareja
+independent work time --> tiempo de trabajo individual
 ```
 (ver mini GLO abajo)
 
