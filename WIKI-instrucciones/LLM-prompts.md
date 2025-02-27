@@ -97,4 +97,6 @@ cool-down > actividad de cierre
 matches > corresponde a
 match > emparejan
 perpendicular bisector > mediatriz
+move between centers > pasar de un centro a otro
+classroom > salón de clase
 ```
