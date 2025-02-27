@@ -28,6 +28,7 @@ Ajusta estas estas traducciones:
 quiet think time --> tiempo para pensar en silencio
 geoblock --> bloque sólido geométrico
 partner discussion --> discusión en pareja
+independent work time --> tiempo de trabajo individual
 ```
 (ver mini GLO abajo)
 
@@ -96,4 +97,6 @@ cool-down > actividad de cierre
 matches > corresponde a
 match > emparejan
 perpendicular bisector > mediatriz
+move between centers > pasar de un centro a otro
+classroom > salón de clase
 ```
