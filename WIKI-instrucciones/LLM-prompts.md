@@ -52,6 +52,7 @@ Instrucciones de da el profesor:
 ```
 consider > considere
 quiet think time > tiempo para pensar en silencio
+independent > individual
 shape > figura
 monitor for students > identifique a los estudiantes
 were introduced > se le presentó
@@ -62,11 +63,12 @@ solved > resolvieron
 share > repartir
 did you say > dijo
 elicit > generar
-independent > individual
 tell students > diga a los estudiantes
 teacher > profesor
 invite students > invite a los estudiantes
 sentence frame > esquema de oración
+partner discussion > discusión en pareja
+classroom > salón de clase
 ```
 
 Objetos:
@@ -81,6 +83,7 @@ visual display > presentación visual
 pattern block > ficha geométrica
 5-frame > tablero de 5
 number mat > tablero de números
+geoblock > bloque sólido geométrico
 ```
 
 Rutinas:
@@ -100,3 +103,9 @@ perpendicular bisector > mediatriz
 move between centers > pasar de un centro a otro
 classroom > salón de clase
 ```
+
+A veces:
+```
+introduced > que se presentaron
+monitor for > identifique a
+move between centers > pasar de un centro a otro
