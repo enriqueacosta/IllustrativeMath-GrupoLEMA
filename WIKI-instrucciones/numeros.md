@@ -35,7 +35,12 @@ Ejemplos:
 *  `<m>\num{1200.532} \unit{mg}</m>`
 *  `x+ \frac{\num{45.321}}{\num{0.1}}`
 
-Solo los números con separador decimal necesitan `\num`, pero no pasa nada si se lo ponen a un entero, como `\num{10}`.
+Ojo: no se debe agregar separadores de miles. El comando `\num` se va a encargar de agregarlos. Entonces:
+*  No usar `\num{12,345.45}`. Usar `\num{12345.45}`
+*  No usar `\num{12,\,345.45}`. Usar `\num{12345.45}`
+*  No usar `\num{12{,}345.45}`. Usar `\num{12345.45}`
+
+Solo los números con separador decimal o con más de 3 digitos necesitan `\num`, pero no pasa nada si se lo ponen a un entero, como `\num{10}`.
 
 **Qué se logra con esto:** en HTML y LaTeX se puede definir `\num` para que haga cosas como:
 *  Cambiar el separador decimal de `.` a `,`
