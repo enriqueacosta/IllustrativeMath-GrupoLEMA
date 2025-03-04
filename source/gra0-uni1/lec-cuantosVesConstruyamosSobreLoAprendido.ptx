@@ -13,8 +13,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal">
-    <p>Averigüemos si hay suficientes materiales para todos
-      . </p>
+    <p>Averigüemos si hay suficientes materiales para todos.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -27,7 +26,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>[+++++++++++++++++]</li>
+    <li>Answer “are there enough” questions about objects.</li>
   </ul>
 </objectives>
 
@@ -40,7 +40,7 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>[@@@@@@@@@]</p>
+    <p>K.CC.B.4, K.CC.C.6</p>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -52,35 +52,39 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to develop and practice one-to-one correspondence in the context of answering "are there enough" questions.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    [@@@@@@@@]
-    <!-- <ul>
-      <li>
-        <p>Actividad 1</p>
-        <xi:include href="./act-RRRRRRR-mat.ptx"/>
-      </li>
+    <ul>
       <li>
         <p>Actividad 2</p>
-        <xi:include href="./act-RRRRRRR-mat.ptx"/>
+        <xi:include href="./act-haySuficientes-mat.ptx"/>
       </li>
-    </ul>  -->
+      <li>
+        <p>Actividad 3</p>
+        <xi:include href="./act-centros-escoger6-mat.ptx"/>
+      </li>
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p>While some students might count the number of objects and compare that number to the number of students, the focus of the activity is on matching one object to each person to see if there are enough.</p>
+    <p>Each of the lessons in this section begins with a How Many Do You See routine to build on the subitizing work in a previous section. Students extend the Act It Out routine with a new story.</p>
+    <p>Throughout the section, observe students for the look-fors on the Unit 1, Sections A-D Checkpoint.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p>Reflect on how you can reinforce the work done in today's lesson outside of math class. When can you ask students questions involving are there enough? How can you incorporate it into snack time, transitions, or when passing out materials?</p>
   </paragraphs>
 </introduction>
 
@@ -149,7 +153,18 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(5 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++++]</p>
+  <p>Select 4 students to stand together in the front of the room.</p>
+
+  <p><q>Hoy averiguamos si teníamos suficientes lápices y borradores para todos en nuestro grupo. Ahora, veremos si hay suficientes marcadores para todos en este grupo</q></p>
+
+  <p>Give 1 marker to each student in the group. Show one marker remaining in your hand.</p>
+
+  <p><q>¿Hay suficientes marcadores para todos en el grupo? ¿Cómo lo saben?</q>
+     (There are enough. Everyone has one. There is one extra. There are too many.)
+  </p>
+
+
 
 </subsubsection>
 
@@ -158,20 +173,6 @@
 <!-- ============================================
   Cool-down (problema de cierre / de salida)
 ================================================= -->
-<reading-questions xml:id="lec-cuantosVesConstruyamosSobreLoAprendido-cool" component="cools">
-  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
-  <title><custom ref="cooldown-titulo"/></title>
-  <title component="profesor"><nbsp />(5 mins)</title>
-
-  
-  <!-- pdf imprimible -->
-  <url component="profesor" href="external/cool-pdf/cool-puntoChequeoC.pdf">
-    <custom ref="texto-link-pdf-cool-down"/>
-  </url>
-
-  <!-- Archivo con el contenido -->
-  <xi:include href="./cool-puntoChequeoC.ptx"/>
-</reading-questions>
 
 
 
