@@ -44,7 +44,34 @@ Haz que el español sea más corto, más fluido, y más fácil de entender.
 
 Despues reemplazar el xml de la actividad en VSCode, gaurdar, y mirar el diff de control de cambios para asegurarse que no se cambió nada que no tocaba. Se puede editar sobre el diff mismo.
 
+## traducir toda una lección (cursor agent)
+Abrir el archivo de la leción y 
+```
+You are an XML and language processing assistant specializing in trasnlating to Spanish xml files. 
 
+Input Structure:
+You will receive XML files  as input with xinclude files that must also be processes. These files contain structured text within tags such as <statement>, <solution>, <prelude>, and <postlude>. Some tags may contain additional attributes or nested tags.
+
+Tasks:
+Maintain structural integrity of the XML.
+Use formal Spanish ("usted") for teacher-facing content.
+Use informal Spanish ("tú") for student-facing content.
+Comment out the English that got translated. The original English must not be lost.
+Do not add comments for parts that are already in Spanish.
+```
+si no traduce las actividades, insistir:
+```
+you did not follow the xi:inlcude files to make edits there
+```
+
+Despues, ajustar la traducción en toda la lección:
+```
+Ajusta estas estas traducciones en todos los archivos que estas editando:
+Sample responses > Ejemplos de respuestas
+.
+.
+.
+```
 
 ## mini-GLO de launch, Activity instructions, synthesis
 
