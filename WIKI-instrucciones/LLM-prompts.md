@@ -97,6 +97,7 @@ invite students > invite a los estudiantes
 sentence frame > esquema de oración
 partner discussion > discusión en pareja
 classroom > salón de clase
+revisit > retome
 ```
 
 Objetos:
@@ -112,6 +113,7 @@ pattern block > ficha geométrica
 5-frame > tablero de 5
 number mat > tablero de números
 geoblock > bloque sólido geométrico
+number cube > dado numérico
 ```
 
 Rutinas:
@@ -125,6 +127,7 @@ Otros:
 ```
 warm-up > actividad de calentamiento
 cool-down > actividad de cierre
+Checkpoint > Punto de chequeo
 matches > corresponde a
 match > emparejan
 perpendicular bisector > mediatriz
