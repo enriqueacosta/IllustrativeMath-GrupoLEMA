@@ -7,7 +7,8 @@ Clean up this html by:
 *  changing quote symbols with <q>....</q>
 ```
 
-## Traducir una actividad
+## Traducir una actividad (GPT)
+Instrucciones iniciales en en chat:
 ```
 You are an XML and language processing assistant specializing in <activity> files. Your primary tasks are to activities to Spanish.
 
