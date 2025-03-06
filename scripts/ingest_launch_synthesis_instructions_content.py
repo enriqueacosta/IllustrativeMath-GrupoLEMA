@@ -3,10 +3,10 @@
 Script to update XML lesson files with content from an HTML file.
 
 Usage:
-    python ingest_launch_synthesis_instructions_content.py <lesson_plan_file> <html_content_file>
+    python update_lesson_content.py <lesson_plan_file> <html_content_file>
 
 Example:
-    python ingest_launch_synth_content.py source/gra0-uni1/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
+    python update_lesson_content.py source/gra0-uni1/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
 """
 
 import sys
@@ -15,11 +15,6 @@ import re
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-
-def prettify_xml(elem_str):
-    """Return a pretty-printed XML string for the Element."""
-    reparsed = minidom.parseString(elem_str)
-    return reparsed.toprettyxml(indent="  ")
 
 def extract_html_sections(html_file):
     """Extract sections from the HTML file."""
@@ -32,6 +27,37 @@ def extract_html_sections(html_file):
     current_section = None
     current_h2 = None
     
+    # First, look for the lesson-level sections
+    lesson_section = {
+        'title': 'Lesson',
+        'subsections': []
+    }
+    
+    # Look for h3 elements with specific refs
+    for ref_name, ref_id in [
+        ('Lesson Purpose', 'purpose-leccion-titulo'),
+        ('Lesson Narrative', 'narrative-leccion-titulo'),
+        ('Teacher Reflection Questions', 'reflection-quest-titulo')
+    ]:
+        # Find h3 elements that might contain these sections
+        for h3 in soup.find_all('h3'):
+            if ref_name.lower() in h3.text.lower():
+                # Find the next paragraph or text content
+                next_element = h3.find_next(['p', 'ul'])
+                if next_element:
+                    lesson_section['subsections'].append({
+                        'name': ref_name,
+                        'ref': ref_id,
+                        'content': str(next_element),
+                        'type': next_element.name
+                    })
+                    break
+    
+    # Add the lesson section if it has any subsections
+    if lesson_section['subsections']:
+        sections.append(lesson_section)
+    
+    # Now extract the regular activity sections
     for element in soup.body.children:
         if element.name == 'h2':
             if current_section:
@@ -83,6 +109,14 @@ def extract_html_sections(html_file):
         sections.append(current_section)
     
     return sections
+
+def normalize_title(title):
+    """Normalize a title by removing special characters and converting to lowercase."""
+    # Remove special characters and convert to lowercase
+    normalized = re.sub(r'[^\w\s]', '', title).lower()
+    # Remove extra whitespace
+    normalized = re.sub(r'\s+', ' ', normalized).strip()
+    return normalized
 
 def find_included_files(lesson_plan_file):
     """Find all included files in the lesson plan and their titles."""
@@ -140,14 +174,6 @@ def get_xml_file_title(xml_file):
         return title_match.group(1).strip()
     
     return None
-
-def normalize_title(title):
-    """Normalize a title by removing special characters and converting to lowercase."""
-    # Remove special characters and convert to lowercase
-    normalized = re.sub(r'[^\w\s]', '', title).lower()
-    # Remove extra whitespace
-    normalized = re.sub(r'\s+', ' ', normalized).strip()
-    return normalized
 
 def update_xml_file(xml_file, html_sections):
     """Update an XML file with content from HTML sections."""
@@ -268,6 +294,9 @@ def update_xml_file(xml_file, html_sections):
             else:
                 # For other sections, use empty content
                 replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p></p>\n  </paragraphs>'
+        elif subsection.get('type') == 'p':
+            # For paragraph content
+            replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    {subsection["content"]}\n  </paragraphs>'
         else:
             # Default case
             replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p>[@@@@@@@@@]</p>\n  </paragraphs>'
@@ -336,6 +365,62 @@ def indent_html_content(html_content):
     
     return result
 
+def update_lesson_file(lesson_plan_file, html_sections):
+    """Update the main lesson file with content from HTML sections."""
+    with open(lesson_plan_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Find the lesson section
+    lesson_section = None
+    for section in html_sections:
+        if section['title'] == 'Lesson':
+            lesson_section = section
+            break
+    
+    if not lesson_section:
+        print("Warning: No lesson section found in HTML. Skipping lesson file updates.")
+        return
+    
+    # Update each subsection in the lesson file
+    for subsection in lesson_section['subsections']:
+        if not subsection['ref']:
+            continue
+        
+        # Create the pattern to find the corresponding section in the XML
+        pattern = r'<paragraphs>\s*<title><custom ref="' + subsection['ref'] + r'"/></title>.*?</paragraphs>'
+        
+        # Create the replacement XML based on the content type
+        if subsection['type'] == 'ul':
+            # Apply indentation to the HTML content
+            indented_content = indent_html_content(subsection['content'])
+            replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    {indented_content}\n  </paragraphs>'
+        elif subsection['type'] == 'p':
+            # For paragraph content
+            replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    {subsection["content"]}\n  </paragraphs>'
+        else:
+            # Default case
+            replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p>[@@@@@@@@@]</p>\n  </paragraphs>'
+        
+        # Replace in the content
+        match_count = 0
+        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL, count=0)
+        
+        # Check if any replacements were made
+        if new_content != content:
+            match_count += 1
+            content = new_content
+        
+        if match_count > 0:
+            print(f"  - Updated {match_count} instances of '{subsection['ref']}' in main lesson file")
+        else:
+            print(f"  - No matches found for '{subsection['ref']}' in main lesson file")
+    
+    # Write the updated content back to the file
+    with open(lesson_plan_file, 'w', encoding='utf-8') as f:
+        f.write(content)
+    
+    print(f"Updated main lesson file {lesson_plan_file}")
+
 def update_time_values(lesson_plan_file, html_sections):
     """Update time values in the lesson plan file."""
     with open(lesson_plan_file, 'r', encoding='utf-8') as f:
@@ -371,7 +456,7 @@ def update_time_values(lesson_plan_file, html_sections):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python ingest_launch_synth_content.py <lesson_plan_file> <html_content_file>")
+        print("Usage: python update_lesson_content.py <lesson_plan_file> <html_content_file>")
         sys.exit(1)
     
     lesson_plan_file = sys.argv[1]
@@ -387,6 +472,9 @@ def main():
         for subsection in section['subsections']:
             print(f"    - {subsection['name']} (ref: {subsection['ref']})")
     
+    # Update the main lesson file with lesson-level content
+    update_lesson_file(lesson_plan_file, html_sections)
+    
     # Update time values in the lesson plan file
     update_time_values(lesson_plan_file, html_sections)
     
@@ -400,4 +488,4 @@ def main():
     print("All files updated successfully!")
 
 if __name__ == "__main__":
-    main()
+    main() 
