@@ -3,10 +3,10 @@
 Script to update XML lesson files with content from an HTML file.
 
 Usage:
-    python update_lesson_content.py <lesson_plan_file> <html_content_file>
+    python ingest_simple_lesson_content.py <lesson_plan_file> <html_content_file>
 
 Example:
-    python update_lesson_content.py source/gra0-uni1/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
+    python ingest_simple_lesson_content.py source/gra0-uni1/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
 """
 
 import sys
@@ -456,7 +456,7 @@ def update_time_values(lesson_plan_file, html_sections):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python update_lesson_content.py <lesson_plan_file> <html_content_file>")
+        print("Usage: python ingest_simple_lesson_content.py <lesson_plan_file> <html_content_file>")
         sys.exit(1)
     
     lesson_plan_file = sys.argv[1]
