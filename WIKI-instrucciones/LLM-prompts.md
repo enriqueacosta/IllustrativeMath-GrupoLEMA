@@ -74,8 +74,8 @@ Haz que el español sea más corto, más fluido, y más fácil de entender.
 
 Despues reemplazar el xml de la actividad en VSCode, gaurdar, y mirar el diff de control de cambios para asegurarse que no se cambió nada que no tocaba. Se puede editar sobre el diff mismo.
 
-## Traducir toda una lección (cursor agent)
-Abrir el archivo de la lección y empezar el chat (agent) con
+## Traducir toda una lección (cursor chat edit mode o agent???)
+Abrir el archivo de la lección y empezar el chat (edit mode o agent??) con
 ```
 You are an XML and language processing assistant specializing in trasnlating to Spanish xml files. 
 
