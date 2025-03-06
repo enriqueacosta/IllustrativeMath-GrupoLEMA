@@ -116,7 +116,10 @@ def process_content(content, include_raw_html, strip_qtags):
             next_sibling.extract()
         em_tag.unwrap()
 
+    # Convert extracted content to string
     extracted_content = "".join(str(tag) for tag in content.contents)
+
+    # Replace non-breaking spaces by normal spaces
     extracted_content = extracted_content.replace("\xa0", " ")
 
     # Convert straight quotes into <q> tags
