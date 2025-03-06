@@ -8,7 +8,6 @@ Clean up this html by:
 ```
 
 ## Ingestar launch, activity instructions, activity synthesis, lesson purpose, reflection questions con python
-(probado con Claude Sonnet 3.7 en Marzo 2025)
 
 Gererar el HTML "limpio" con esa info del lesson.html usando el script `extract_HTML_launch_synthesis_instructions.py` con commando:
 ```
@@ -17,7 +16,7 @@ python extract_HTML_lesson_and_preparation.py <path a lesson.html y preparation.
 
 Después, usar el script `ingest_simple_lesson_content.py` para ingerir todo. Este script lo generó cursor y es posible que a veces no funciona 100 bien. Si no funciona, ver siguoente sección.
 
-```
+
 
 
 ## Ingestar launch, activity instructions, activity synthesis con cursor
