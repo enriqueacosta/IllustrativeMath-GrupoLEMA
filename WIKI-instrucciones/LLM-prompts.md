@@ -8,6 +8,8 @@ Clean up this html by:
 ```
 
 ## Ingestar launch, activity instructions, lesson synthesis con cursor
+(probado con Claude Sonnet 3.7 en Marzo 2025)
+
 Gererar el HTML "limpio" con esa info del lesson.html usando el script `extract_HTML_launch_synthesis_instructions.py` con commando:
 ```
 python extract_HTML_launch_synthesis_instructions.py lesson.html --no-raw-html --strip-qtags
