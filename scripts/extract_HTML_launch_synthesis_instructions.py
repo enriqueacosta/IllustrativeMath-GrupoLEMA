@@ -156,10 +156,10 @@ def extract_sections(html_file, include_raw_html=True, strip_qtags=False):
     
     for title, sections in grouped_sections.items():
         corrected_html_output += f"<h2>{title}</h2>\n"
-        corrected_html_output += "<h3>Launch</h3>\n" + "".join(sections["Launch"])
-        corrected_html_output += "<h3>Activity</h3>\n" + "".join(sections["Activity"])
-        corrected_html_output += "<h3>Activity Synthesis</h3>\n" + "".join(sections["Activity Synthesis"])
-        corrected_html_output += "<h3>Advancing Student Thinking</h3>\n" + (
+        corrected_html_output += "<h3>Launch (for ref=\"launch-titulo\")</h3>\n" + "".join(sections["Launch"])
+        corrected_html_output += "<h3>Activity (for ref=\"instructions-teacher-actividad-titulo\")</h3>\n" + "".join(sections["Activity"])
+        corrected_html_output += "<h3>Activity Synthesis (for ref=\"synthesis-actividad-titulo\")</h3>\n" + "".join(sections["Activity Synthesis"])
+        corrected_html_output += "<h3>Advancing Student Thinking (for ref=\"support-actividad-titulo\")</h3>\n" + (
             sections["Advancing Student Thinking"] if isinstance(sections["Advancing Student Thinking"], str) 
             else "--- NOT PRESENT ---"
         )

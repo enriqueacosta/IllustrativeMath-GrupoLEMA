@@ -7,6 +7,33 @@ Clean up this html by:
 *  changing quote symbols with <q>....</q>
 ```
 
+## Ingestar launch, activity instructions, lesson synthesis con cursor
+Gererar el HTML "limpio" con esa info del lesson.html usando el script `extract_HTML_launch_synthesis_instructions.py` con commando:
+```
+python extract_HTML_launch_synthesis_instructions.py lesson.html --no-raw-html --strip-qtags
+```
+
+Después, en Cursor, en el chat en modo `edit` poner la `lec-*.ptx` en el contexto y decir esto:
+
+```
+This xml lesson plan file has several xi:include for each activity or warm-up. Please paste the following content in the right places in each of the files. There are placeholders @@@@@ in the places where it must go. 
+
+Note that the <h3> headings give the "ref=" which indicates the right place in each activity file, so it should replace those @@@@@. 
+
+General instructions:
+* Do not change the xml you are pasting in.
+* Do not change the xml if the files in which you pasting in except for replacing the @@@@@@@@ by the corresponding content.
+*  Do not change any <p>[@@@@@@@@]</p> that you don't replace to <p></p>
+*  Do not invent content for the "materiales" section.
+*  Please indent appropriately the code you pasted
+
+Here is the content:
+
+<<pegar el código HTML directamente>>
+
+```
+
+
 ## Traducir una actividad (GPT)
 Instrucciones iniciales en en chat:
 ```
