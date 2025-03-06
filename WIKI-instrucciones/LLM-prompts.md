@@ -15,6 +15,8 @@ Gererar el HTML "limpio" con esa info del lesson.html usando el script `extract_
 python extract_HTML_launch_synthesis_instructions.py lesson.html --no-raw-html --strip-qtags
 ```
 
+Después, usar el script `ingest_launch_synthesis_instructions_content.py` para ingerir todo. Este script lo generó cursor y es posible que a veces no funciona 100 bien. Si no funciona, usar el chat de cursor como describo abajo.
+
 Después, en Cursor, en el chat en modo `edit` poner la `lec-*.ptx` en el contexto y decir esto:
 
 ```
