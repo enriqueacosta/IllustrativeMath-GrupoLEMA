@@ -125,6 +125,9 @@ def extract_sections(html_file, include_raw_html=True, strip_qtags=False):
                         # Remove the <div class="im-c-content"> but keep its inner content
                         extracted_content = "".join(str(tag) for tag in content.contents)
 
+                        # replace non-breaking spaces with normal spaces
+                        extracted_content = extracted_content.replace("\xa0", " ")
+
                         # Apply <q> tag cleanup if enabled
                         if strip_qtags:
                             extracted_content = clean_q_tags(extracted_content)
