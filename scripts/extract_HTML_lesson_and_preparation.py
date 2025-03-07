@@ -83,6 +83,7 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
         section = title.find_next("div", class_="im-c-container--content")
         if section:
             grouped_sections[title_text] = {
+                "Narrative": [],
                 "Launch": [],
                 "Activity": [],
                 "Activity Synthesis": [],
@@ -97,7 +98,9 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
                     content = row.find("div", class_="im-c-content")
                     if content:
                         extracted_content = process_content(content, include_raw_html, strip_qtags)
-                        if "Launch" in heading.text:
+                        if "Narrative" in heading.text:
+                            grouped_sections[title_text]["Narrative"].append(extracted_content)
+                        elif "Launch" in heading.text:
                             grouped_sections[title_text]["Launch"].append(extracted_content)
                         elif "Activity Synthesis" in heading.text:
                             grouped_sections[title_text]["Activity Synthesis"].append(extracted_content)
@@ -132,6 +135,21 @@ def process_content(content, include_raw_html, strip_qtags):
     # Apply <fillin/> replacement
     extracted_content = replace_underscores_with_fillin(extracted_content)
 
+    # Drop ELL supports <div class="c-annotation c-annotation--ell"> tags and their contents
+    extracted_content = re.sub(r'<div class="c-annotation c-annotation--ell">.*?</div>', '', extracted_content, flags=re.DOTALL)
+
+    # Drop accessinility <div class="c-annotation c-annotation--swd"> tags and their contents
+    extracted_content = re.sub(r'<div class="c-annotation c-annotation--swd">.*?</div>', '', extracted_content, flags=re.DOTALL)
+
+    # Drop <div class="c-annotations"> tags and their contents
+    extracted_content = re.sub(r'<div class="c-annotations">.*?</div>', '', extracted_content, flags=re.DOTALL)
+
+    # Drop empty <p> tags
+    extracted_content = re.sub(r'<p>\s*</p>', '', extracted_content)
+
+    # Drop <br/> tags
+    extracted_content = re.sub(r'<br\s*/?>\s*', ' ', extracted_content)
+
     # Ensure content is wrapped in <p> if it's missing block-level tags
     if not any(tag in extracted_content for tag in ["<p", "<ul", "<ol", "<table", "<div"]):
         extracted_content = f"<p>{extracted_content.strip()}</p>"
@@ -156,6 +174,7 @@ def save_combined_sections(prep_sections, lesson_sections, output_filename):
 
     for title, sections in lesson_sections.items():
         output_content += f"<h2>{title}</h2>\n"
+        output_content += "<h3>Narrative (for ref=\"narrative-actividad-titulo\")</h3>\n" + "".join(sections["Narrative"])
         output_content += "<h3>Launch (for ref=\"launch-titulo\")</h3>\n" + "".join(sections["Launch"])
         output_content += "<h3>Activity (for ref=\"instructions-teacher-actividad-titulo\")</h3>\n" + "".join(sections["Activity"])
         output_content += "<h3>Activity Synthesis (for ref=\"synthesis-actividad-titulo\")</h3>\n" + "".join(sections["Activity Synthesis"])
