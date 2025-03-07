@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Script to update XML lesson files with content from an HTML file.
+Script to update XML lesson files with content from a simple HTML file.
+The HTML file is assumed to be the output of the extract_HTML_lesson_and_preparation
+or extract_HTML_launch_synthesis_instructions script.
 
 Usage:
     python ingest_simple_lesson_content.py <lesson_plan_file> <html_content_file>
@@ -222,6 +224,7 @@ def create_replacement_xml(subsection):
     replacement = (
         f'<paragraphs>\n'
         f'    <title><custom ref="{ref}"/></title>\n'
+        f'    <p>[+++++++++++++++]</p>\n'
         f'    {inner}\n'
         f'  </paragraphs>'
     )
