@@ -79,14 +79,22 @@ def extract_html_sections(html_file):
             # Find the next element after h3
             next_element = element.find_next()
             
-            # Check if it's a ul or contains text like "NOT PRESENT"
-            if next_element and next_element.name == 'ul':
-                current_section['subsections'].append({
-                    'name': subsection_name,
-                    'ref': ref,
-                    'content': str(next_element),
-                    'type': 'ul'
-                })
+            # Check if it's a ul, p, or contains text like "NOT PRESENT"
+            if next_element:
+                if next_element.name == 'ul':
+                    current_section['subsections'].append({
+                        'name': subsection_name,
+                        'ref': ref,
+                        'content': str(next_element),
+                        'type': 'ul'
+                    })
+                elif next_element.name == 'p':
+                    current_section['subsections'].append({
+                        'name': subsection_name,
+                        'ref': ref,
+                        'content': str(next_element),
+                        'type': 'p'
+                    })
             else:
                 # Look for text content that might indicate "NOT PRESENT"
                 text_content = ""
@@ -151,34 +159,31 @@ def find_included_files(lesson_plan_file):
     # Extract the lesson ID
     lesson_id = extract_lesson_id(lesson_plan_file)
     
-    # Find all xi:include tags with their file paths
-    include_pattern = r'<xi:include href="\./([^"]+)\.ptx"/>'
-    all_includes = re.findall(include_pattern, content)
-    
-    # Create a list of file paths
-    file_paths = [os.path.join(base_dir, f + '.ptx') for f in all_includes]
-    
-    # For each file, try to determine its title or activity number
+    # Find all subsubsections with their IDs and included files
     file_info = []
     
-    for file_path in file_paths:
-        file_name = os.path.basename(file_path)
-        
-        # Check if it's a warm-up file
-        if "warm-" in file_name:
-            file_info.append(("Warm-up", file_path))
-        # Check if it's an activity file
-        elif file_name.startswith("act-"):
-            # Try to extract the activity number from the surrounding context
-            act_pattern = r'<subsubsection xml:id="' + lesson_id + r'-act(\d+)".*?<xi:include href="\./' + os.path.splitext(file_name)[0] + r'\.ptx"/>'
-            act_match = re.search(act_pattern, content, re.DOTALL)
-            
-            if act_match:
-                act_num = act_match.group(1)
-                file_info.append((f"Activity {act_num}", file_path))
-            else:
-                # If we can't determine the activity number, just use the filename
-                file_info.append((file_name, file_path))
+    # Find the warm-up section
+    warm_pattern = r'<subsubsection xml:id="' + lesson_id + r'-warm".*?<xi:include href="\./([^"]+)\.ptx"/>'
+    warm_match = re.search(warm_pattern, content, re.DOTALL)
+    if warm_match:
+        warm_file = warm_match.group(1)
+        file_info.append(("warm-up", os.path.join(base_dir, warm_file + '.ptx')))
+    
+    # Find all activity sections
+    for act_num in range(1, 10):  # Check for activities 1-9
+        act_pattern = r'<subsubsection xml:id="' + lesson_id + r'-act' + str(act_num) + r'".*?<xi:include href="\./([^"]+)\.ptx"/>'
+        act_matches = re.findall(act_pattern, content, re.DOTALL)
+        for act_file in act_matches:
+            file_info.append((f"activity-{act_num}", os.path.join(base_dir, act_file + '.ptx')))
+    
+    # Find any other included files that weren't in subsubsections
+    other_pattern = r'<xi:include href="\./([^"]+)\.ptx"/>'
+    all_includes = re.findall(other_pattern, content)
+    for include in all_includes:
+        file_path = os.path.join(base_dir, include + '.ptx')
+        # Check if this file is already in our list
+        if not any(file_path == path for _, path in file_info):
+            file_info.append(("other", file_path))
     
     # Print all files that will be processed
     print(f"Found {len(file_info)} files to process:")
@@ -200,7 +205,7 @@ def get_xml_file_title(xml_file):
     
     return None
 
-def update_xml_file(xml_file, html_sections):
+def update_xml_file(xml_file, html_sections, file_type):
     """Update an XML file with content from HTML sections."""
     if not os.path.exists(xml_file):
         print(f"Warning: File {xml_file} does not exist. Skipping.")
@@ -215,27 +220,30 @@ def update_xml_file(xml_file, html_sections):
     # Get the filename without path
     file_basename = os.path.basename(xml_file)
     
-    # Special case for tableroConteoLlevarCuenta
-    if "tableroConteoLlevarCuenta" in file_basename:
-        print(f"Special handling for {file_basename}")
-        # Find the Activity 2 section
+    # Find the matching HTML section based on the file type
+    matching_section = None
+    
+    if file_type == "warm-up":
+        # Find the warm-up section
         for section in html_sections:
-            if "Activity 2:" in section['title']:
+            if section['title'].startswith("Warm-up:"):
                 matching_section = section
-                print(f"Found direct match for {file_basename} with '{matching_section['title']}'")
+                print(f"  Found match as warm-up!")
                 break
-        else:
-            print(f"Warning: Could not find Activity 2 section for {file_basename}. Skipping.")
-            return
+    elif file_type.startswith("activity-"):
+        # Extract the activity number
+        act_num = file_type.split("-")[1]
+        # Find the corresponding activity section
+        for section in html_sections:
+            if section['title'].startswith(f"Activity {act_num}:"):
+                matching_section = section
+                print(f"  Found match as Activity {act_num}!")
+                break
     else:
-        # Normalize the XML title
+        # For other files, try to match by title
         normalized_xml_title = normalize_title(xml_title)
-        print(f"Looking for match for '{xml_title}' (normalized: '{normalized_xml_title}')")
+        print(f"Looking for match for '{xml_file}' with title '{xml_title}' (normalized: '{normalized_xml_title}')")
         
-        # Find the matching HTML section based on the title or filename
-        matching_section = None
-        
-        # First try to match by normalized title
         for section in html_sections:
             section_title = section['title']
             normalized_section_title = normalize_title(section_title)
@@ -244,51 +252,10 @@ def update_xml_file(xml_file, html_sections):
             print(f"  Comparing with '{section_title}' (normalized: '{normalized_section_title}')")
             
             # Check if the normalized XML title is in the normalized HTML section title
-            # or if significant parts of the title match
-            if normalized_xml_title in normalized_section_title or any(
-                part in normalized_section_title 
-                for part in normalized_xml_title.split() 
-                if len(part) > 5
-            ):
+            if normalized_xml_title in normalized_section_title:
                 matching_section = section
                 print(f"  Found match by normalized title!")
                 break
-        
-        # If no match by title, try to match by activity number or warm-up
-        if not matching_section:
-            if "warm-" in file_basename:
-                # Find the warm-up section
-                for section in html_sections:
-                    if "warm-up" in normalize_title(section['title']):
-                        matching_section = section
-                        print(f"  Found match as warm-up!")
-                        break
-            else:
-                # Try to extract activity number from filename
-                act_match = re.search(r'act-.*?(\d+)', file_basename)
-                if act_match:
-                    act_num = act_match.group(1)
-                    # Find the corresponding activity section
-                    for section in html_sections:
-                        if f"activity {act_num}" in normalize_title(section['title']):
-                            matching_section = section
-                            print(f"  Found match as Activity {act_num}!")
-                            break
-        
-        # Last resort: try to match by keywords in the filename and section title
-        if not matching_section:
-            # Extract keywords from the filename
-            keywords = re.findall(r'[a-zA-Z]+', file_basename)
-            for section in html_sections:
-                section_title = section['title']
-                # Check if any keyword from the filename is in the section title
-                for keyword in keywords:
-                    if len(keyword) > 3 and keyword.lower() in normalize_title(section_title):
-                        matching_section = section
-                        print(f"  Found match by keyword '{keyword}'!")
-                        break
-                if matching_section:
-                    break
     
     if not matching_section:
         print(f"Warning: No matching HTML section found for {xml_file} with title '{xml_title}'. Skipping.")
@@ -314,11 +281,7 @@ def update_xml_file(xml_file, html_sections):
             replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    {indented_content}\n  </paragraphs>'
         elif subsection.get('type') == 'text' and subsection['content'] == 'NOT PRESENT':
             # For "NOT PRESENT" sections, keep the original placeholder
-            if subsection['ref'] == 'support-actividad-titulo':
-                replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p>[@@@@@@@@@]</p>\n  </paragraphs>'
-            else:
-                # For other sections, use empty content
-                replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p></p>\n  </paragraphs>'
+            replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    <p>[@@@@@@@@@]</p>\n  </paragraphs>'
         elif subsection.get('type') == 'p':
             # For paragraph content
             replacement = f'<paragraphs>\n    <title><custom ref="{subsection["ref"]}"/></title>\n    {subsection["content"]}\n  </paragraphs>'
@@ -510,12 +473,12 @@ def main():
     # Update time values in the lesson plan file
     update_time_values(lesson_plan_file, html_sections)
     
-    # Find all included files and their titles
+    # Find all included files and their types
     included_files = find_included_files(lesson_plan_file)
     
     # Update each included file
-    for title, xml_file in included_files:
-        update_xml_file(xml_file, html_sections)
+    for file_type, xml_file in included_files:
+        update_xml_file(xml_file, html_sections, file_type)
     
     print("All files updated successfully!")
 
