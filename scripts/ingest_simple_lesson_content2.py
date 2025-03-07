@@ -39,7 +39,7 @@ def extract_html_sections(html_file):
         for h3 in soup.find_all('h3'):
             if ref_name.lower() in h3.text.lower():
                 next_element = h3.find_next(['p', 'ul'])
-                if next_element:
+                if next_element and "NOT PRESENT" not in str(next_element):
                     lesson_section['subsections'].append({
                         'name': ref_name,
                         'ref': ref_id,
