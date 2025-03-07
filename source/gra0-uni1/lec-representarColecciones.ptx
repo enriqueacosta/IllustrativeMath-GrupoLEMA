@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Contemos colecciones de objetos y mostremos cómo las contamos.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,9 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>[+++++++++++++++]</li>
+    <li>Count collections of objects.</li>
+    <li>Represent a collection of objects.</li>
   </ul>
 </objectives>
 
@@ -38,7 +40,7 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>[@@@@@@@@@]</p>
+    <p>K.CC.A.1, K.CC.B, K.CC.B.4, K.CC.B.5</p>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -50,35 +52,45 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to count collections of objects. The focus is on students representing how they counted.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    [@@@@@@@@]
-    <!-- <ul>
+    <ul>
+      <li>
+        <p>Actividad de calentamiento</p>
+        <xi:include href="./warm-preguntasNosotros-tableroAsistencia-mat.ptx"/>
+      </li>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./act-RRRRRRRR-mat.ptx"/>
+        <xi:include href="./act-contemosColecciones-muestraCuantos-mat.ptx"/>
       </li>
       <li>
         <p>Actividad 2</p>
-        <xi:include href="./act-SSSSSSSS-mat.ptx"/>
+        <xi:include href="./act-preguntasTipoCuantos-mat.ptx"/>
       </li>
-    </ul>  -->
+      <li>
+        <p>Actividad 3</p>
+        <xi:include href="./act-centros-escoger10-mat.ptx"/>
+      </li>
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In the Questions About Us routine, students use 5-frames to determine how many students are at school today. Students then count objects in different collections in a way that makes sense to them and represent their collections. The second activity is an optional activity that provides support in keeping track of which objects have been counted.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>As you finish up this unit, reflect on the norms and activities that have supported each student in learning math. List ways you have seen each student grow as a young mathematician throughout this work. List ways you have seen yourself grow as a teacher. What will you continue to do and what will you improve upon in Unit 2?</p>
   </paragraphs>
 </introduction>
 
@@ -90,7 +102,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-preguntasNosotros-tableroAsistencia.ptx"/> 
@@ -104,7 +116,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-contemosColecciones-muestraCuantos.ptx"/> 
@@ -121,7 +133,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-preguntasTipoCuantos.ptx"/> 
@@ -138,7 +150,7 @@
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-centros-escoger10.ptx"/> 
@@ -154,10 +166,11 @@
 <subsubsection xml:id="lec-representarColecciones-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
-
+  <p>
+    <q>Hoy contamos colecciones para descubrir cuántos objetos había. Háganle una pregunta a su compañero sobre nuestro salón de clase que empiece con ‘cuántos’</q> 
+  </p>
 </subsubsection>
 
 
