@@ -55,9 +55,9 @@ def format_raw_html(html):
 def extract_preparation_sections(soup, include_raw_html=True, strip_qtags=False):
     """Extracts sections from preparation.html."""
     sections_to_extract = {
-        "Lesson Purpose": "--- NOT PRESENT ---",
-        "Lesson Narrative": "--- NOT PRESENT ---",
-        "Teacher Reflection Questions": "--- NOT PRESENT ---"
+        "Lesson Purpose": "<p>--- NOT PRESENT ---</p>",
+        "Lesson Narrative": "<p>--- NOT PRESENT ---</p>",
+        "Teacher Reflection Questions": "<p>--- NOT PRESENT ---</p>"
     }
 
     for heading in soup.find_all("h3", class_="im-c-heading--xsb"):
