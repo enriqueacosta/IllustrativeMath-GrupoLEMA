@@ -11,7 +11,7 @@ followed by the sections from lesson.html under their respective headings.
 Processing:
 - Removes unnecessary tags.
 - Replaces straight quotes with <q> tags.
-- Converts sequences of five or more underscores (_____) into <fillin/>.
+- Converts sequences of four or more underscores (_____) into <fillin/>.
 - Ensures <fillin/> is displayed as "_____" using CSS.
 - Formats raw HTML properly inside <pre><code> blocks.
 - Allows stripping of duplicate <q> tags after // if specified.

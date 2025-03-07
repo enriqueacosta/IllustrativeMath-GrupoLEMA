@@ -118,6 +118,28 @@ def normalize_title(title):
     normalized = re.sub(r'\s+', ' ', normalized).strip()
     return normalized
 
+def extract_lesson_id(lesson_plan_file):
+    """Extract the lesson ID from the lesson plan file."""
+    # Get the filename without path and extension
+    filename = os.path.basename(lesson_plan_file)
+    filename_without_ext = os.path.splitext(filename)[0]
+    
+    # Check if it's a lesson file
+    if filename_without_ext.startswith('lec-'):
+        return filename_without_ext
+    
+    # If not a standard filename, try to extract from content
+    with open(lesson_plan_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Look for the xml:id attribute
+    id_match = re.search(r'<subsection xml:id="([^"]+)"', content)
+    if id_match:
+        return id_match.group(1)
+    
+    # Default to the filename without extension
+    return filename_without_ext
+
 def find_included_files(lesson_plan_file):
     """Find all included files in the lesson plan and their titles."""
     with open(lesson_plan_file, 'r', encoding='utf-8') as f:
@@ -125,6 +147,9 @@ def find_included_files(lesson_plan_file):
     
     # Extract directory of the lesson plan file
     base_dir = os.path.dirname(lesson_plan_file)
+    
+    # Extract the lesson ID
+    lesson_id = extract_lesson_id(lesson_plan_file)
     
     # Find all xi:include tags with their file paths
     include_pattern = r'<xi:include href="\./([^"]+)\.ptx"/>'
@@ -145,7 +170,7 @@ def find_included_files(lesson_plan_file):
         # Check if it's an activity file
         elif file_name.startswith("act-"):
             # Try to extract the activity number from the surrounding context
-            act_pattern = r'<subsubsection xml:id="lec-explicarConteo-act(\d+)".*?<xi:include href="\./' + os.path.splitext(file_name)[0] + r'\.ptx"/>'
+            act_pattern = r'<subsubsection xml:id="' + lesson_id + r'-act(\d+)".*?<xi:include href="\./' + os.path.splitext(file_name)[0] + r'\.ptx"/>'
             act_match = re.search(act_pattern, content, re.DOTALL)
             
             if act_match:
@@ -190,7 +215,7 @@ def update_xml_file(xml_file, html_sections):
     # Get the filename without path
     file_basename = os.path.basename(xml_file)
     
-    # Special case for the problematic file
+    # Special case for tableroConteoLlevarCuenta
     if "tableroConteoLlevarCuenta" in file_basename:
         print(f"Special handling for {file_basename}")
         # Find the Activity 2 section
@@ -426,6 +451,9 @@ def update_time_values(lesson_plan_file, html_sections):
     with open(lesson_plan_file, 'r', encoding='utf-8') as f:
         content = f.read()
     
+    # Extract the lesson ID
+    lesson_id = extract_lesson_id(lesson_plan_file)
+    
     # For each section in the HTML
     for section in html_sections:
         # Extract time from the title
@@ -436,16 +464,16 @@ def update_time_values(lesson_plan_file, html_sections):
             # Create pattern to find the corresponding section in the XML
             section_name = section['title'].split(':')[0].strip()
             if "Warm-up" in section_name:
-                pattern = r'<subsubsection xml:id="lec-explicarConteo-warm".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>'
-                replacement = f'<subsubsection xml:id="lec-explicarConteo-warm" component="no-libroTrabajo">\n  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>\n  <title><custom ref="warm-up-leccion-titulo"/></title>\n  <!-- Tiempo en el título que solo ve el profesor -->\n  <title component="profesor"><nbsp/>({time_value} mins)</title>'
+                pattern = r'<subsubsection xml:id="' + lesson_id + r'-warm".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>'
+                replacement = f'<subsubsection xml:id="{lesson_id}-warm" component="no-libroTrabajo">\n  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>\n  <title><custom ref="warm-up-leccion-titulo"/></title>\n  <!-- Tiempo en el título que solo ve el profesor -->\n  <title component="profesor"><nbsp/>({time_value} mins)</title>'
                 content = re.sub(pattern, replacement, content, flags=re.DOTALL)
             elif "Activity" in section_name:
                 # Extract activity number
                 activity_num = re.search(r'Activity (\d+)', section_name)
                 if activity_num:
                     num = activity_num.group(1)
-                    pattern = r'<subsubsection xml:id="lec-explicarConteo-act' + num + r'".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>'
-                    replacement = f'<subsubsection xml:id="lec-explicarConteo-act{num}" component="no-libroTrabajo">\n  <shorttitle>Actividad {num}</shorttitle>\n  <title>Actividad {num}</title>\n  <!-- Tiempo en el título que solo ve el profesor -->\n  <title component="profesor"><nbsp/>({time_value} mins)</title>'
+                    pattern = r'<subsubsection xml:id="' + lesson_id + r'-act' + num + r'".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>'
+                    replacement = f'<subsubsection xml:id="{lesson_id}-act{num}" component="no-libroTrabajo">\n  <shorttitle>Actividad {num}</shorttitle>\n  <title>Actividad {num}</title>\n  <!-- Tiempo en el título que solo ve el profesor -->\n  <title component="profesor"><nbsp/>({time_value} mins)</title>'
                     content = re.sub(pattern, replacement, content, flags=re.DOTALL)
     
     # Write the updated content back to the file
@@ -461,6 +489,10 @@ def main():
     
     lesson_plan_file = sys.argv[1]
     html_file = sys.argv[2]
+    
+    # Extract the lesson ID
+    lesson_id = extract_lesson_id(lesson_plan_file)
+    print(f"Working with lesson ID: {lesson_id}")
     
     # Extract sections from the HTML file
     html_sections = extract_html_sections(html_file)
