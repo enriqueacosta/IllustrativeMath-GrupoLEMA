@@ -4,9 +4,10 @@ extract_HTML_lesson_and_preparation.py
 This script extracts specific sections from two different lesson HTML files inside a given folder:
 - From preparation.html: "Lesson Purpose", "Lesson Narrative", "Teacher Reflection Questions"
 - From lesson.html: "Launch", "Activity", "Activity Synthesis", "Advancing Student Thinking"
+- Also extracts "Lesson Synthesis" section from lesson.html
 
 The extracted sections from preparation.html appear first under an <h2> titled "Lesson Fields",
-followed by the sections from lesson.html under their respective headings.
+followed by the "Lesson Synthesis" section, then the sections from lesson.html under their respective headings.
 
 Processing:
 - Removes unnecessary tags.
@@ -111,6 +112,24 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
 
     return grouped_sections
 
+def extract_lesson_synthesis(soup, include_raw_html=True, strip_qtags=False):
+    """Extracts the Lesson Synthesis section from lesson.html."""
+    synthesis_title = soup.find("h2", class_="im-c-hero__heading", string=lambda text: "Lesson Synthesis" in text)
+    
+    if not synthesis_title:
+        return "<p>--- NOT PRESENT ---</p>"
+    
+    section = synthesis_title.find_next("div", class_="im-c-container--content")
+    if not section:
+        return "<p>--- NOT PRESENT ---</p>"
+    
+    content_div = section.find("div", class_="im-c-content")
+    if not content_div:
+        return "<p>--- NOT PRESENT ---</p>"
+    
+    extracted_content = process_content(content_div, include_raw_html, strip_qtags)
+    return extracted_content
+
 def process_content(content, include_raw_html, strip_qtags):
     """Processes and cleans up extracted content."""
     for em_tag in content.find_all("em", class_="spanish-translation translation"):
@@ -125,7 +144,7 @@ def process_content(content, include_raw_html, strip_qtags):
     # Replace non-breaking spaces by normal spaces
     extracted_content = extracted_content.replace("\xa0", " ")
 
-    # Convert straight quotes into <q> tags
+    # Convert curly quotes into <q> tags
     extracted_content = extracted_content.replace("“", "<q>").replace("”", "</q>")
 
     # Apply <q> tag cleanup if --strip-qtags is enabled
@@ -159,7 +178,7 @@ def process_content(content, include_raw_html, strip_qtags):
 
     return extracted_content + raw_html
 
-def save_combined_sections(prep_sections, lesson_sections, output_filename):
+def save_combined_sections(prep_sections, lesson_sections, lesson_synthesis, output_filename):
     """Saves combined extracted sections to an HTML file."""
     output_content = """<html><head>
     <title>Extracted Lesson and Preparation Sections</title>
@@ -171,6 +190,9 @@ def save_combined_sections(prep_sections, lesson_sections, output_filename):
     output_content += "<h3>Lesson Purpose (for ref=\"purpose-leccion-titulo\")</h3>\n" + prep_sections["Lesson Purpose"]
     output_content += "<h3>Lesson Narrative (for ref=\"narrative-leccion-titulo\")</h3>\n" + prep_sections["Lesson Narrative"]
     output_content += "<h3>Teacher Reflection Questions (for ref=\"reflection-quest-titulo\")</h3>\n" + prep_sections["Teacher Reflection Questions"]
+    
+    # Add Lesson Synthesis after Lesson Fields and before other h2 sections
+    output_content += "<h2>Lesson Synthesis </h2>\n" + lesson_synthesis
 
     for title, sections in lesson_sections.items():
         output_content += f"<h2>{title}</h2>\n"
@@ -210,5 +232,6 @@ if __name__ == "__main__":
 
     prep_sections = extract_preparation_sections(prep_soup, not args.no_raw_html, args.strip_qtags)
     lesson_sections = extract_lesson_sections(lesson_soup, not args.no_raw_html, args.strip_qtags)
+    lesson_synthesis = extract_lesson_synthesis(lesson_soup, not args.no_raw_html, args.strip_qtags)
 
-    save_combined_sections(prep_sections, lesson_sections, os.path.join(args.folder_path, "lesson_extracted_combined.html"))
+    save_combined_sections(prep_sections, lesson_sections, lesson_synthesis, os.path.join(args.folder_path, "lesson_extracted_combined.html"))
