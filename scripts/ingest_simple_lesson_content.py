@@ -241,6 +241,29 @@ def update_xml_content(content, subsection):
 # -------------------------------
 # File Update Functions
 # -------------------------------
+def update_recommended_time(xml_file, time_value):
+    """Update the recommended time in an XML file."""
+    if not os.path.exists(xml_file):
+        return False
+    
+    with open(xml_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    pattern = r'<paragraphs>\s*<title><custom ref="recommended-time-titulo"/></title>\s*<p>\[@{9,}\] minutos</p>\s*</paragraphs>'
+    replacement = (
+        f'<paragraphs>\n'
+        f'    <title><custom ref="recommended-time-titulo"/></title>\n'
+        f'    <p>{time_value} minutos</p>\n'
+        f'  </paragraphs>'
+    )
+    
+    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    if count > 0:
+        with open(xml_file, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        return True
+    return False
+
 def update_file(xml_file, html_subsections, file_label):
     """Update a single XML file using matching HTML subsections."""
     if not os.path.exists(xml_file):
@@ -281,6 +304,14 @@ def update_file(xml_file, html_subsections, file_label):
         return
 
     print(f"Matched {xml_file} with HTML section '{matching_section['title']}'")
+    
+    # Update recommended time if available
+    time_match = re.search(r'\((\d+) minutes\)', matching_section['title'])
+    if time_match:
+        time_value = time_match.group(1)
+        if update_recommended_time(xml_file, time_value):
+            print(f"  - Updated recommended time to {time_value} minutes in {xml_file}")
+    
     with open(xml_file, 'r', encoding='utf-8') as f:
         content = f.read()
 
