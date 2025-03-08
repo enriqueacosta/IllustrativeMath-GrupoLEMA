@@ -51,6 +51,43 @@ def extract_html_sections(html_file):
                     break
     if lesson_section['subsections']:
         sections.append(lesson_section)
+        
+    # Lesson Synthesis section
+    synthesis_section = {
+        'title': 'Lesson Synthesis',
+        'subsections': []
+    }
+    
+    for h2 in soup.find_all('h2'):
+        if 'lesson synthesis' in h2.text.lower():
+            # Get the content following the h2 until the next h2 or end of document
+            content_elements = []
+            current = h2.next_sibling
+            
+            while current and (not getattr(current, 'name', None) == 'h2'):
+                if getattr(current, 'name', None) in ['p', 'ul']:
+                    content_elements.append(str(current))
+                current = current.next_sibling
+            
+            if content_elements:
+                # Join all content elements or use the first one if there's only one
+                content = content_elements[0] if len(content_elements) == 1 else "\n".join(content_elements)
+                content_type = BeautifulSoup(content, 'html.parser').find().name if content else 'p'
+                
+                synthesis_section['subsections'].append({
+                    'name': 'Lesson Synthesis',
+                    'ref': 'synthesis-leccion-titulo',
+                    'content': content,
+                    'type': content_type
+                })
+                
+                # Extract time if present in the h2 text
+                time_match = re.search(r'\((\d+) minutes\)', h2.text)
+                if time_match:
+                    synthesis_section['time'] = time_match.group(1)
+                
+                sections.append(synthesis_section)
+                break
 
     # Regular activity sections
     current_section = None
@@ -391,6 +428,49 @@ def update_time_values(lesson_plan_file, html_sections):
         f.write(content)
     print(f"Updated time values in {lesson_plan_file}")
 
+def update_synthesis_section(lesson_plan_file, html_sections):
+    """Update the synthesis section in the lesson plan file."""
+    with open(lesson_plan_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    lesson_id = extract_lesson_id(lesson_plan_file)
+    synthesis_section = next((sec for sec in html_sections if sec['title'] == 'Lesson Synthesis'), None)
+    
+    if not synthesis_section or not synthesis_section['subsections']:
+        print("Warning: No Lesson Synthesis section found in HTML. Skipping synthesis update.")
+        return
+    
+    subsection = synthesis_section['subsections'][0]
+    
+    # Pattern to match the synthesis section in the lesson plan file
+    pattern = (r'<subsubsection xml:id="' + re.escape(lesson_id) + 
+               r'-sintesis".*?<p>\[@{9,}\]</p>\s*</subsubsection>')
+    
+    # Create replacement content
+    synthesis_content = subsection['content']
+    
+    # Handle time if available
+    time_value = synthesis_section.get('time', '[@@@@@@@@@]')
+    
+    replacement = (
+        f'<subsubsection xml:id="{lesson_id}-sintesis" component="profesor">\n'
+        f'  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>\n'
+        f'  <title><custom ref="synthesis-leccion-titulo"/></title>\n'
+        f'  <title component="profesor"><nbsp/>({time_value} mins)</title>\n\n'
+        f'  <p>[+++++++++++++++]</p>\n'
+        f'  {synthesis_content}\n\n'
+        f'</subsubsection>'
+    )
+    
+    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    
+    if count > 0:
+        with open(lesson_plan_file, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Updated Lesson Synthesis section in {lesson_plan_file}")
+    else:
+        print(f"Warning: Could not find Lesson Synthesis section in {lesson_plan_file}")
+
 # -------------------------------
 # Main Routine
 # -------------------------------
@@ -414,6 +494,7 @@ def main():
 
     update_lesson_file(lesson_plan_file, html_sections)
     update_time_values(lesson_plan_file, html_sections)
+    update_synthesis_section(lesson_plan_file, html_sections)
 
     included_files = find_included_files(lesson_plan_file)
     for file_label, xml_file in included_files:
