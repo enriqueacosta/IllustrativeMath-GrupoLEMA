@@ -171,6 +171,7 @@ Otros:
 warm-up > actividad de calentamiento
 cool-down > actividad de cierre
 Checkpoint > Punto de chequeo
+Sample responses > Ejemplos de respuestas
 matches > corresponde a
 match > emparejan
 perpendicular bisector > mediatriz
