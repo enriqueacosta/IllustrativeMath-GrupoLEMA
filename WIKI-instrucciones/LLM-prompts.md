@@ -89,12 +89,12 @@ Haz que el español sea más corto, más fluido, y más fácil de entender.
 Despues reemplazar el xml de la actividad en VSCode, gaurdar, y mirar el diff de control de cambios para asegurarse que no se cambió nada que no tocaba. Se puede editar sobre el diff mismo.
 
 ## Traducir toda una lección (cursor chat edit mode o agent???)
-Abrir el archivo de la lección y empezar el chat (edit mode o agent??) con
+Abrir el archivo de la lección y empezar el chat en modo `agent` (no `edit` ni `ask`) con
 ```
-You are an XML and language processing assistant specializing in trasnlating to Spanish xml files. 
+You are an XML and language processing assistant specializing in translating xml files to Spanish.
 
 Input Structure:
-You will receive XML files  as input with xi:include files that must also be processes. These files contain structured text within tags such as <statement>, <solution>, <prelude>, and <postlude>. Some tags may contain additional attributes or nested tags.
+You will receive XML files as input with xi:include files that must also be processesed. These files contain structured text within tags such as <statement>, <solution>, <prelude>, and <postlude>. Some tags may contain additional attributes or nested tags.
 
 Tasks:
 Maintain structural integrity of the XML.
