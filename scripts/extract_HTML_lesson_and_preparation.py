@@ -12,8 +12,15 @@ followed by the "Lesson Synthesis" section, then the sections from lesson.html u
 Processing:
 - Removes unnecessary tags.
 - Replaces straight quotes with <q> tags.
-- Converts sequences of four or more underscores (_____) into <fillin/>.
+- Converts sequences of three or more underscores (_____) into <fillin/>.
 - Ensures <fillin/> is displayed as "_____" using CSS.
+- Places math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> to <m>CONTENT</m>
+- Drops <span> tags but keeps the content inside them
+- Drops <div class="imgrid"> tags and their contents except for <img> tags
+- Drops <figure> tags and their contents except for <img> tags
+- Drops <div class="c-annotation c-annotation--ell"> tags and their contents
+- Drops <div class="c-annotation c-annotation--swd"> tags and their contents
+- Drops <div class="c-annotations"> tags and their contents
 - Formats raw HTML properly inside <pre><code> blocks.
 - Allows stripping of duplicate <q> tags after // if specified.
 - Saves extracted content into a single output file.
@@ -42,8 +49,8 @@ def clean_q_tags(text):
     return re.sub(pattern, r'\1\2', text)
 
 def replace_underscores_with_fillin(text):
-    """Replaces five or more underscores (_____) with <fillin/>."""
-    return re.sub(r'_{4,}', '<fillin/>', text)
+    """Replaces three or more underscores (_____) with <fillin/>."""
+    return re.sub(r'_{3,}', '<fillin/>', text)
 
 def format_raw_html(html):
     """Formats HTML with 2-space indentation while keeping inline elements intact."""
@@ -78,8 +85,8 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
 
     for title in titles:
         title_text = title.get_text(strip=True)
-        if "Cool-down" in title_text:
-            continue
+        # if "Cool-down" in title_text:
+            # continue
 
         section = title.find_next("div", class_="im-c-container--content")
         if section:
@@ -88,7 +95,8 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
                 "Launch": [],
                 "Activity": [],
                 "Activity Synthesis": [],
-                "Advancing Student Thinking": "--- NOT PRESENT ---"
+                "Advancing Student Thinking": "--- NOT PRESENT ---",
+                "Student Response": []
             }
 
             section_rows = section.find_all("div", class_="im-c-row")
@@ -109,6 +117,8 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
                             grouped_sections[title_text]["Activity"].append(extracted_content)
                         elif "Advancing Student Thinking" in heading.text:
                             grouped_sections[title_text]["Advancing Student Thinking"] = extracted_content
+                        elif "Student Response" in heading.text:
+                            grouped_sections[title_text]["Student Response"].append(extracted_content)
 
     return grouped_sections
 
@@ -138,8 +148,34 @@ def process_content(content, include_raw_html, strip_qtags):
             next_sibling.extract()
         em_tag.unwrap()
 
+    # grab only the <img> tags inside <div class="imgrid">
+    imgrid_divs = content.find_all("div", class_="imgrid")
+    for div in imgrid_divs:
+        # Find all descendant <img> tags
+        img_tags = div.find_all("img")
+        # Insert each img tag before the current div (preserving order)
+        for img in img_tags:
+            div.insert_before(img)
+        # Remove the entire div
+        div.decompose()
+    
+    # grab only the <img> tags inside <figure>
+    figure_tags = content.find_all("figure")
+    for figure in figure_tags:
+        # Find all descendant <img> tags
+        img_tags = figure.find_all("img")
+        # Insert each img tag before the current figure (preserving order)
+        for img in img_tags:
+            figure.insert_before(img)
+        # Remove the entire figure
+        figure.decompose()
+
     # Convert extracted content to string
     extracted_content = "".join(str(tag) for tag in content.contents)
+
+    # Ensure content is wrapped in <p> if it's missing block-level tags
+    if not any(tag in extracted_content for tag in ["<p", "<ul", "<ol", "<table", "<div"]):
+        extracted_content = f"<p>{extracted_content.strip()}</p>"
 
     # Replace non-breaking spaces by normal spaces
     extracted_content = extracted_content.replace("\xa0", " ")
@@ -169,9 +205,11 @@ def process_content(content, include_raw_html, strip_qtags):
     # Drop <br/> tags
     extracted_content = re.sub(r'<br\s*/?>\s*', ' ', extracted_content)
 
-    # Ensure content is wrapped in <p> if it's missing block-level tags
-    if not any(tag in extracted_content for tag in ["<p", "<ul", "<ol", "<table", "<div"]):
-        extracted_content = f"<p>{extracted_content.strip()}</p>"
+    # place math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> to <m>CONTENT</m>
+    extracted_content = re.sub(r'<span class="math math-repaired">\\\((.*?)\\\)</span>', r'<m>\1</m>', extracted_content)
+
+    # Drop <span> tags but keep the content inside them
+    extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
 
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
     raw_html = f"<pre><code>{formatted_raw_html.replace('<', '&lt;').replace('>', '&gt;')}</code></pre>" if include_raw_html else ""
@@ -183,6 +221,8 @@ def save_combined_sections(prep_sections, lesson_sections, lesson_synthesis, out
     output_content = """<html><head>
     <title>Extracted Lesson and Preparation Sections</title>
     <style> fillin::before { content: "_____"; font-family: monospace; } </style>
+    <style> m::before { content: "\<m\>"; } </style>
+    <style> m::after { content: "\</m\>"; } </style>
     </head><body>"""
 
     output_content += "<h2>Lesson Fields</h2>"
@@ -201,6 +241,7 @@ def save_combined_sections(prep_sections, lesson_sections, lesson_synthesis, out
         output_content += "<h3>Activity (for ref=\"instructions-teacher-actividad-titulo\")</h3>\n" + "".join(sections["Activity"])
         output_content += "<h3>Activity Synthesis (for ref=\"synthesis-actividad-titulo\")</h3>\n" + "".join(sections["Activity Synthesis"])
         output_content += "<h3>Advancing Student Thinking (for ref=\"support-actividad-titulo\")</h3>\n" + sections["Advancing Student Thinking"]
+        output_content += "<h3>Student Response (for solution)</h3>\n" + "".join(sections["Student Response"])
 
     output_content += "</body></html>"
 
