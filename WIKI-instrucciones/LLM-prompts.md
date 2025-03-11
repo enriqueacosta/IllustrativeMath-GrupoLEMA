@@ -7,6 +7,16 @@ Clean up this html by:
 *  changing quote symbols with <q>....</q>
 ```
 
+## Poner los decimales en \num{....}
+```
+Please warp all  numbers that have decimal periods with \num{} in all the .ptx files in this folder. Do not make any other changes. 
+
+Examples:
+*  <m> 3x + 14.56 +10 = 13.45 </m> --- > <m> 3x + \num{14.56} +10 = \num{13.45} </m>
+*  <m>1200.532 \unit{mg}</m> ---> <m>\num{1200.532} \unit{mg}</m>
+*  x+ \frac{45.321}{0.1}  ---> x+ \frac{\num{45.321}}{\num{0.1}}
+```
+
 ## Ingestar launch, activity instructions, activity synthesis, lesson purpose, reflection questions con python
 
 Gererar el HTML "limpio" con esa info del lesson.html usando el script `extract_HTML_launch_synthesis_instructions.py` con commando:
