@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-formasDeResolverEcuaciones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Recordemos formas de resolver ecuaciones</title>
+
+<statement>
+  <p>Resuelve cada ecuación. Prepárate para explicar tu razonamiento.</p>
+  <ul>
+    <li><p><m>\num{0.07} = 10m</m></p></li>
+    <li><p><m>\num{10.1} = t + \num{7.2}</m></p></li>
+  </ul>
+</statement>
+
+<solution>
+  <ul>
+  <li><p><m>\num{0.007} = m</m></p></li>
+    <li><p><m>\num{2.9} = t</m></p></li>
+  </ul>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>5 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] The purpose of this warm-up is to apply what students have learned to some equations. Note that <m>\num{0.07} \div 10</m> and <m>\num{10.1} - \num{7.2}</m> should be easy to evaluate given that work with fluently computing with decimals precedes this unit.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[@@@@@@@@@] Ask students to summarize what they learned in the previous lessons before setting them to work on this warm-up. Allow 1-2 minutes quiet think time, followed by a whole-class discussion.</p>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] At the conclusion of the previous lesson, students should have seen that we can approach solving any equation of the form <m>px = q</m> (where <m>p</m> and <m>q</m> are rational numbers and <m>x</m> is unknown) by dividing each side by <m>p</m>. Also, we can approach solving any equation of the form <m>x + p = q</m> by subtracting <m>p</m> from each side. Discussion should focus on given <m>\num{0.07} = 10m</m>, we can write <m>\num{0.07} \div 10 = 10m \div 10</m> and then <m>\num{0.007} = m</m>.</p>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</exploration>
