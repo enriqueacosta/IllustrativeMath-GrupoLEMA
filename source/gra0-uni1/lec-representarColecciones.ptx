@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-representarColecciones" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 16 </shorttitle>
+<title>Lección 16 -<nbsp/></title>
+<title>Representemos nuestras colecciones</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>Contemos colecciones de objetos y mostremos cómo las contamos.</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[+++++++++++++++]</li>
+    <li>Count collections of objects.</li>
+    <li>Represent a collection of objects.</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title> 
+    <p>K.CC.A.1, K.CC.B, K.CC.B.4, K.CC.B.5</p>
+  </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to count collections of objects. The focus is on students representing how they counted.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <ul>
+      <li>
+        <p>Actividad de calentamiento</p>
+        <xi:include href="./warm-preguntasNosotros-tableroAsistencia-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-contemosColecciones-muestraCuantos-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-preguntasTipoCuantos-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 3</p>
+        <xi:include href="./act-centros-escoger10-mat.ptx"/>
+      </li>
+    </ul> 
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>In the Questions About Us routine, students use 5-frames to determine how many students are at school today. Students then count objects in different collections in a way that makes sense to them and represent their collections. The second activity is an optional activity that provides support in keeping track of which objects have been counted.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>As you finish up this unit, reflect on the norms and activities that have supported each student in learning math. List ways you have seen each student grow as a young mathematician throughout this work. List ways you have seen yourself grow as a teacher. What will you continue to do and what will you improve upon in Unit 2?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-representarColecciones-warm" component="no-libroTrabajo">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-preguntasNosotros-tableroAsistencia.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-representarColecciones-act1" component="no-libroTrabajo">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-contemosColecciones-muestraCuantos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-RRRRRRRRR-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-representarColecciones-act2" component="no-libroTrabajo">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-preguntasTipoCuantos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-SSSSSSSSS-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+<subsubsection xml:id="lec-representarColecciones-act3" component="no-libroTrabajo">
+  <shorttitle>Actividad 3</shorttitle>
+  <title>Actividad 3</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(20 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-centros-escoger10.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-TTTTTTTT-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-representarColecciones-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
+
+  <p>
+    <q>Hoy contamos colecciones para descubrir cuántos objetos había. Háganle una pregunta a su compañero sobre nuestro salón de clase que empiece con ‘cuántos’</q> 
+  </p>
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+
+
+
+
+
+<!-- ================================================
+  Resumen de la lección (se usa a partir de grado 6)
+===================================================== -->
+<!-- <xi:include href="./lec-representarColecciones-resumen.ptx"/> -->
+
+
+
+
+<!-- ======================================================================
+  Problemas de práctica (a nivel lección a partir de grado 6)
+=========================================================================== -->
+
+
+</subsection>

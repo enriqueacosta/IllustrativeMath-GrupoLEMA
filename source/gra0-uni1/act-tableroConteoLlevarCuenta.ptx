@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-tableroConteoLlevarCuenta" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Usemos un tablero de conteo para llevar la cuenta [Opcional]</title>
+
+<statement>
+  <p>Usemos un tablero de conteo.</p>
+</statement>
+
+<solution>
+  <p>[+++++++++++++++++++]</p>
+  <p>Students move objects from one side of the counting mat to the other, saying one number name for each object.</p>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++++++]</p>
+    <p>The purpose of this optional activity is for students to use a counting mat as a tool to help them keep track of which objects have been counted. Based on formative assessment data from previous sections and observation during the first activity, this activity will be helpful for students who are not counting all objects or counting some objects more than one time.</p>
+    <p>This activity also serves as further formative assessment on students’ counting concepts, including one-to-one matching and understanding that the last number tells us “how many.”</p>
+    <p>This activity can be used with a small group or the whole class. Students who do not need this optional activity may benefit from additional time working in centers.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <xi:include href="./act-tableroConteoLlevarCuenta-mat.ptx"/> 
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display a counting mat and a collection of 6–10 objects.</li>
+      <li>
+        <q>¿Cómo nos puede ayudar el tablero de conteo a estar seguros de que contamos cada objeto 1 vez?</q>
+      </li>
+      <li>30 seconds: quiet think time</li>
+      <li>Share responses.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Give each student a collection of 6–10 objects and a counting mat.</li>
+      <li>
+        <q>Usen el tablero de conteo para descubrir cuántos objetos hay en su colección</q>
+      </li>
+      <li>2 minutes: independent work time</li>
+      <li>As students count, monitor for students who move each object from one side of the counting mat as they say one number.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Invite previously identified students to share how they counted.</li>
+      <li>Display a collection of 6 objects on one side of a counting mat. Demonstrate counting and moving 4 of the objects to the other side of the counting mat.</li>
+      <li>
+        <q>¿Cuáles objetos me falta contar? ¿Cuáles objetos ya conté? ¿Cómo lo saben?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[+++++++++++++++++++]</p>
+    <p>Representation: Internalize Comprehension. Synthesis: Make connections between the location of the objects on the counting mat. For example, restate that when an object is on one side of the mat it has not been counted and when it is on the other side it has been counted.</p>
+    <p>Supports accessibility for: Conceptual Processing, Organization</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-contemosColecciones2" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Contemos colecciones</title>
+
+<statement>
+  <p>Contemos otra colección de objetos</p>
+</statement>
+
+<solution>
+  <p>[+++++++++++++++++]</p>
+  <ul>
+    <li>Students say one number for each object as they count.</li>
+    <li>Students keep track of which objects they have counted.</li>
+  </ul>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <p>The purpose of this activity is for students to count their collection in a way that makes sense to them and keep track of which objects have been counted. Keeping track of which objects have been counted helps students count accurately and ensure they count all of the objects and do not count each object more than once. Most students should be given collections with 6-10 objects. Based on formative assessment data collected in previous sections, adjust the number of objects in collections for individual students. Students are provided with counting mats and 5-frames to help them accurately count or organize their collections. Students use appropriate tools strategically as they choose which tools help them count their collections (MP5).</p>
+    <p>Additional collections can be provided to allow students to choose a new collection to count.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <xi:include href="./act-contemosColecciones2-mat.ptx"/> 
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <ul>
+      <li><q>Hoy contarán otra colección de objetos. Mientras trabajan, piensen en cómo estar seguros de contar cada objeto</q></li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <ul>
+      <li>Give each student a bag of objects. Give students access to 5-frames and a counting mat.</li>
+      <li><q>Descubran cuántos objetos hay en su colección</q></li>
+      <li>2 minutes: independent work time</li>
+      <li><q>Intercambien colecciones con un compañero. Descubran cuántos objetos hay en su nueva colección</q></li>
+      <li>2 minutes: independent work time</li>
+      <li>Monitor for students who have a method of keeping track of which objects have been counted, such as moving and counting or lining up the objects and counting them in order.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <p> If students do not appear to have a method to keep track of the objects they have counted, consider asking:</p>
+    <ul>
+      <li><q>¿Cómo puedes descifrar cuántos objetos tienes? ¿Cómo puedes asegurarte de contar cada objeto una vez?</q></li>
+      <li><q>¿Cómo puede el tablero de conteo ayudarte a estar seguro de que contaste cada objeto una vez?</q></li>
+    </ul>
+    <p>Students may also benefit from the optional activity in the next lesson.</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <ul>
+      <li>Invite previously identified students to demonstrate how they counted their collections.</li>
+      <li><q>¿Qué observan sobre la manera como ellos contaron?</q></li>
+      <li>If needed, <q>Ellos se aseguraron de contar cada objeto una vez</q></li>
+      <li>After each student shares, write or display the number and say <q>Hay <fillin/> objetos en su colección</q></li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <p>Representation: Internalize Comprehension. Activate or supply background knowledge. Ask, “¿Cómo contaron ayer los objetos en su colección?” // “How did you count the objects in your collection yesterday?” and “¿Cómo saben que contaron cada objeto?” // “How did you know that you counted each object?” Invite students to share how they will count the objects in today's collection before they begin.</p>
+    <p>Supports accessibility for: Conceptual Processing, Memory, Organization</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

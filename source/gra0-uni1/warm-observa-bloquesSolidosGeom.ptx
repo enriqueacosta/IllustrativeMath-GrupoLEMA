@@ -12,7 +12,7 @@
     <line>¿Qué observas?</line>
     <line>¿Qué te preguntas?</line>
   </p>
-  <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png">
+  <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png" width="50%">
     <shortdescription></shortdescription>
   </image>
 </statement>
@@ -30,14 +30,12 @@
   <p>
     Se pueden preguntar:
     <ul>
-      <li>¿Cuántas bloques hay?</li>
+      <li>¿Cuántos bloques hay?</li>
       <li>¿De cuál bloque hay más?</li>
       <li>¿Por qué unos son redondos y otros son planos?</li>
     </ul>
   </p>
 </solution>
-
-
 
 <!-- ============================================================== 
    Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
@@ -49,61 +47,87 @@
     <p>10 minutos</p>
   </paragraphs>
 
-  
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    
+    <p>
+      El propósito de esta actividad es recopilar ideas que los estudiantes tienen sobre los bloques sólidos geométricos. Esto permite a los profesores ver qué lenguaje usan los estudiantes para describir las figuras (MP6). No es necesario introducir lenguaje geométrico formal en este punto, ya que esto sucederá en una unidad posterior.
+      <!-- The purpose of this activity is to elicit ideas students have about geoblocks. This allows teachers to see what language students use to describe shapes (MP6). There is no need to introduce formal geometric language at this point since this will happen in a later unit. -->
+    </p>
+    <p>
+      La actividad tiene una imagen de los bloques sólidos geométricos. Sin embargo, es preferible mostrar una colección de bloques reales. 
+      <!-- A picture of geoblocks is provided. However, it is preferable to display a collection of actual blocks. Students also have a few geoblocks to examine up close. -->
+    </p>
   </paragraphs>
-
 
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <xi:include href="./warm-observa-bloquesSolidosGeom-mat.ptx" />
   </paragraphs>
-
 
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    
+    <ul>
+    <li>Grupos de 2</li>
+    <li>Dé a cada estudiante algunos bloques sólidos geométricos y muestre una colección de bloques sólidos geométricos o la imagen en el libro del estudiante.</li>
+    <li>
+      <q>¿Qué observan?</q>
+    </li>
+    <li>30 segundos: tiempo para pensar en silencio</li>
+  </ul>
   </paragraphs>
-
 
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    
+    <ul>
+      <li>
+        <q>Cuéntenle a su compañero qué observaron</q>
+      </li>
+      <li>1 minuto: discusión en pareja</li>
+      <li>Comparta y registre las respuestas.</li>
+      <li>
+        <q>¿Qué se preguntan?</q>
+      </li>
+      <li>1 minuto: tiempo para pensar en silencio</li>
+      <li>
+        <q>Cuéntenle a su compañero qué se preguntaron</q>
+      </li>
+      <li>30 segundos: tiempo para pensar en silencio</li>
+      <li>1 minuto: discusión en pareja</li>
+      <li>Comparta y registre las respuestas.</li>
+    </ul>
   </paragraphs>
-
 </prelude>
-
 
 <!-- ============================================================== 
    Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
 ===================================================================  -->
 <postlude component="profesor">
-
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
+  </paragraphs> -->  
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <ul>
+      <li>
+        <q>Estos se llaman bloques sólidos geométricos. ¿Qué creen que podrían hacer o construir con los bloques sólidos geométricos?</q>
+      </li>
+    </ul>
   </paragraphs>
 
-
-  <paragraphs>
+ <!-- <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
+  </paragraphs> -->
 </postlude>
 
 </exploration>

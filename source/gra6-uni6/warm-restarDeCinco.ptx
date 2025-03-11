@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-restarDeCinco" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Conversación numérica: restar de cinco</title>
+
+<statement>
+  <p>Encuentra mentalmente el valor de cada expresión.</p>
+  <ul>
+    <li>
+      <p>
+        <m>5 - 2</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>5 - 2.1</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>5 - 2.17</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>5 - 2\tfrac{7}{8}</m>
+      </p>
+    </li>
+  </ul>
+</statement>
+
+<solution>
+  <ul>
+    <li>
+      <p>
+        <m>3</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>2.9</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>2.83</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>2\tfrac{1}{8}</m>
+      </p>
+    </li>
+  </ul>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>5 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] The purpose of this number talk is to have students recall subtraction where regrouping needs to happen in preparation for the problems they will solve in the lesson.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[@@@@@@@@@] Display one problem at a time. Give students 30 seconds of quiet think time for each problem and ask them to give a signal when they have an answer and a strategy. Keep all problems displayed throughout the talk. Follow with a whole-class discussion.</p>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <!-- <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] Ask students to share their strategies for each problem. Record and display their responses for all to see. To involve more students in the conversation, consider asking:</p>
+    
+    <ul>
+      <li>
+        <p>
+          <q>Who can restate <fillin/>’s reasoning in a different way?</q>
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>Did anyone have the same strategy but would explain it differently?</q>
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>Did anyone solve the problem in a different way?</q>
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>Does anyone want to add on to <fillin/>’s strategy?</q>
+        </p>
+      </li>
+      <li>
+        <p>
+          <q>Do you agree or disagree? Why?</q>
+        </p>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] Speaking: MLR8 Discussion Supports.: Display sentence frames to support students when they explain their strategy. For example, "First, I <fillin/> because . . ." or "I noticed <fillin/> so I . . . ." Some students may benefit from the opportunity to rehearse what they will say with a partner before they share with the whole class.</p>
+    <p>Design Principle(s): Optimize output (for explanation)</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@] Representation: Internalize Comprehension. To support working memory, provide students with sticky notes or mini whiteboards.</p>
+    <p>Supports accessibility for: Memory; Organization</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>

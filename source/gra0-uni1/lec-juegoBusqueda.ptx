@@ -24,8 +24,10 @@
 
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
+
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>Describir a un compañero cómo vieron grupos de objetos o imágenes.</li>
+    <li>Reconocer y nombrar la cantidad de objetos o imágenes en grupos de hasta 4 sin contar.</li>
   </ul>
 </objectives>
 
@@ -38,7 +40,7 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>[@@@@@@@@@]</p>
+    <p>K.CC, K.CC.B.4</p>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -50,35 +52,34 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      El propósito de esta lección es que los estudiantes reconozcan y nombren pequeños grupos de objetos e imágenes sin contarlos.
+    </p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    [@@@@@@@@]
-    <!-- <ul>
+    <ul>
       <li>
-        <p>Actividad 1</p>
-        <xi:include href="./act-RRRRRRR-mat.ptx"/>
+        <p>Actividad 3</p>
+        <xi:include href="./act-centros-escoger3-mat.ptx"/>
       </li>
-      <li>
-        <p>Actividad 2</p>
-        <xi:include href="./act-SSSSSSS-mat.ptx"/>
-      </li>
-    </ul>  -->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>En una lección anterior, los estudiantes subitizaron, o determinaron cuántos hay sin contar, pequeños grupos de cosas en libros ilustrados. En esta lección, los estudiantes continúan su trabajo con la subitización al reconocer y nombrar pequeños grupos de objetos en el salón de clase sin contarlos. Aunque algunos estudiantes pueden contar para determinar cuántos hay en grupos más grandes de objetos, el enfoque está en encontrar pequeños grupos de objetos que puedan ser reconocidos y nombrados sin contar. Esta lección ayuda a los estudiantes a familiarizarse con su salón de clase y los anima a matematizar su entorno (MP4).</p>
+
+    <p>En una lección futura, los estudiantes crearán sus propios libros ilustrados para mostrar las cantidades que identificaron en el salón de clase.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>¿Pudo recorrer el salón de clase y escuchar el pensamiento de los estudiantes mientras trabajaban en los centros? Si es así, ¿qué rutinas o estructuras ayudaron a los estudiantes a trabajar de forma independiente? Si no, ¿qué rutinas o estructuras puede establecer para asegurarse de poder recorrer el salón de clase y hablar con los estudiantes mientras trabajan?</p>
   </paragraphs>
 </introduction>
 
@@ -86,7 +87,7 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-juegoBusqueda-warm">
+<subsubsection xml:id="lec-juegoBusqueda-warm" component="no-libroTrabajo">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -100,7 +101,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-juegoBusqueda-act1">
+<subsubsection xml:id="lec-juegoBusqueda-act1" component="no-libroTrabajo">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -114,7 +115,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-juegoBusqueda-act2">
+<subsubsection xml:id="lec-juegoBusqueda-act2" component="no-libroTrabajo">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -128,7 +129,7 @@
 <!-- ============================================ 
   Actividad 3
 =================================================  -->
-<subsubsection xml:id="lec-juegoBusqueda-act3">
+<subsubsection xml:id="lec-juegoBusqueda-act3" component="no-libroTrabajo">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -145,9 +146,9 @@
 <subsubsection xml:id="lec-juegoBusqueda-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>Hoy encontramos grupos de objetos en el salón de clase. Cuéntenle a su compañero cómo supieron cuántos objetos había en cada grupo que encontraron</p>
 
 </subsubsection>
 

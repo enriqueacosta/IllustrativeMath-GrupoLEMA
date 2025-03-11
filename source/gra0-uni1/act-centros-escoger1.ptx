@@ -30,11 +30,9 @@
   </sbsgroup>
 </statement>
 
-
 <!-- No hay solución -->
 <!-- <solution> -->
 <!-- </solution> -->
-
 
 <!-- ============================================================== 
    Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
@@ -44,33 +42,67 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>15 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
 
+    <p>
+      El propósito de esta actividad es que los estudiantes elijan entre actividades que se centran en el uso de herramientas matemáticas.
+      <!-- The purpose of this activity is for students to choose from activities that focus on using math tools. -->
+    </p>
+
+    <p>
+      Los estudiantes eligen entre cualquier etapa de los centros que se presentaron anteriormente.
+      <!-- Students choose from any stage of previously introduced centers. -->
+    </p>
+
+    <ul>
+      <li>Cubos encajables</li>
+      <li>Fichas geométricas</li>
+      <li>Bloques sólidos geométricos</li>
+    </ul>
+
+    <p>
+      Las opciones de centros serán las mismas en las próximas lecciones. Mantenga organizados los materiales de cada centro para usarlos cada día.
+      <!-- The center choices will remain the same in the upcoming lessons. Keep the materials from each center organized to use each day. -->
+    </p>
+
+  </paragraphs>
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <xi:include href="./act-centros-escoger1-mat.ptx" /> 
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
 
+    <ul>
+      <li>
+        <q>Hoy pueden escoger la herramienta matemática con la que quieren trabajar</q>
+      </li>
+      <li>Muestre las opciones de centros en el libro del estudiante.</li>
+      <li>
+        <q>Piensen qué les gustaría hacer primero</q>
+      </li>
+      <li>30 segundos: tiempo para pensar en silencio</li>
+    </ul>
+  </paragraphs>
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+
+    <ul>
+      <li>Invite a los estudiantes a trabajar en el centro de su elección.</li>
+      <li>10 minutos: tiempo de trabajo en el centro</li>
+      <li>Identifique a los estudiantes que creen objetos, patrones o construcciones para compartir durante la síntesis.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -81,31 +113,34 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
+  </paragraphs> -->
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
 
+    <ul>
+      <li>Invite a los estudiantes previamente seleccionados a compartir su trabajo.</li>
+      <li>
+        <q>Cuéntenle a su compañero cómo <fillin/> describió su trabajo</q>
+      </li>
+    </ul>
+  </paragraphs>
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
+  </paragraphs> -->
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 </postlude>
 

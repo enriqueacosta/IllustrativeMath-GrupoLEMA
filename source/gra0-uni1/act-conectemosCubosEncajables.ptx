@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-conectemosCubosEncajables" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Contemos cubos</title>
+
+<statement>
+  <p>¿Cuántos cubos hay en tu colección?</p>
+</statement>
+
+<solution>
+  <p>[+++++++++++++++]</p>
+  <p>
+    Students count how many cubes they have and then say the last number when asked "how many?" without recounting the group of objects.
+  </p>
+</solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>20 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to count their collection in a way that makes sense to them and to answer <q>how many</q> questions without recounting the collection. Most students should be given collections with 6–10 connecting cubes. Based on formative assessment data collected in previous sections, adjust the number for individual students. Students are provided with counting mats and 5-frames to help them accurately count or organize their collections. Students use appropriate tools strategically as they choose which tools help them count their collections (MP5).</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <!-- <paragraphs> -->
+    <!-- <title><custom ref="materials-actividad-titulo"/></title> -->
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <xi:include href="./act-conectemosCubosEncajables-mat.ptx"/> 
+  <!-- </paragraphs> -->
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give each student a bag of 6–10 cubes.</li>
+      <li>Give access to 5-frames and counting mats to each group.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Descubran cuántos cubos hay en su colección. Muestren cómo contaron sus colecciones. Usen objetos, dibujos, números o palabras para mostrar cómo pensaron</q>
+      </li>
+      <li>2 minutes: independent work time</li>
+      <li>
+        <q>¿Cuántos cubos hay en su colección? Díganle a su compañero cuántos cubos hay en su colección sin contarlos de nuevo</q>
+      </li>
+      <li>2 minutes: partner discussion</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Invite a few students to demonstrate how they counted their connecting cubes.</li>
+      <li>After each student shares:
+        <q>¿Cuántos cubos hay en la colección de <fillin/>? ¿Cómo lo saben?</q> (There are<fillin/>cubes. I know because that’s the last number they said.)
+      </li>
+      <li>If needed, say
+        <q>Cuando contamos, el último número que dijimos fue <fillin/>. Esto nos dice que hay <fillin/> objetos en nuestra colección</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>MLR8 Discussion Supports. Synthesis: Invite students to use gestures as they count their collections aloud. </p>
+    <p>Advances: Speaking, Representing</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</activity>

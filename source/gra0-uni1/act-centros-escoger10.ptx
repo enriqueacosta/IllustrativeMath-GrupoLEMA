@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-centros-escoger10" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Centros: Momento de escoger</title>
+
+<statement>
+  <p>Escoge un centro.</p>
+  <sbsgroup widths="45% 45%" margins="auto" valign="top">
+    <sidebyside>
+      <stack>
+        <p>Cubos Encajables</p>
+        <image source="svg-source/tikz-file-128850">
+          <shortdescription></shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>Fichas Geométricas</p>
+        <image source="svg-source/tikz-file-147344">
+          <shortdescription></shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    
+    <sidebyside>
+      <stack>
+        <p>Bloques sólidos geométricos</p>
+        <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png">
+          <shortdescription></shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>Libros de imágenes</p>
+        <image source="png-source/K.1.D Beta Student Workbooks.Books.png">
+          <shortdescription></shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
+</statement>
+
+<!-- <solution>
+  <p>[@@@@@@@@@]</p>
+</solution> -->
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>20 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[++++++++++++++]</p>
+    <p>The purpose of this activity is for students to choose from activities that focus on using math tools.</p>
+
+    <p>Students choose from any stage of previously introduced centers.</p>
+
+    <ul>
+      <li>Connecting Cubes</li>
+      <li>Pattern Blocks</li>
+      <li>Geoblocks</li>
+      <li>Picture Books</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <xi:include href="./act-centros-escoger10-mat.ptx"/> 
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Hoy vamos a escoger centros de los que ya conocemos</q>
+      </li>
+      <li>Display the center choices in the student book.</li>
+      <li>"Piensen qué les gustaría hacer primero" //
+        <q>Think about what you would like to do first.</q>
+      </li>
+      <li>30 seconds: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Invite students to work at the center of their choice.</li>
+      <li>8 minutes: center work time</li>
+      <li>
+        <q>Escojan qué les gustaría hacer ahora</q>
+      </li>
+      <li>8 minutes: center work time</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <ul>
+      <li>
+        <q>Hemos trabajado con fichas geométricas, cubos encajables, bloques sólidos geométricos y libros de imágenes durante la unidad. ¿Cuál es tu centro favorito? ¿Por qué?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs> -->
+
+</postlude>
+
+</activity>

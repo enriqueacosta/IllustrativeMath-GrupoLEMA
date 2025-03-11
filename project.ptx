@@ -52,6 +52,51 @@
       output-dir="print-latex-prof/gra0-uni1">
     </target>
 
+
+    <!-- ============================================ 
+      grado1-unidad1
+    =================================================  -->
+    <target name="gra1-uni1-web-est" 
+      format="html" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/gra1-uni1">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra1-uni1-print-est" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/gra1-uni1">
+    </target>
+    <target name="gra1-uni1-print-latex-est" 
+      format="latex" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/gra1-uni1">
+    </target>
+    <target name="gra1-uni1-web-prof" 
+      format="html" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/gra1-uni1">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra1-uni1-print-prof" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/gra1-uni1">
+    </target>
+    <target name="gra1-uni1-print-latex-prof" 
+      format="latex" 
+      source="gra1-uni1/gra1-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/gra1-uni1">
+    </target>
+
     <!-- ============================================ 
       grado3-unidad4
     =================================================  -->

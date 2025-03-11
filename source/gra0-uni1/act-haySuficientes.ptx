@@ -5,11 +5,15 @@
 <title>¿Hay suficientes?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Hay suficientes?</p>
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++++]</p>
+  <ul>
+    <li>There are enough pencils.</li>
+    <li>There are not enough erasers.</li>
+  </ul>
 </solution>
 
 
@@ -21,33 +25,53 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>[@@@@@@@@@] minutos</p>
+    <p>10 minutos</p>
   </paragraphs>
 
   <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p>The purpose of this activity is for students to determine if there are enough pencils and erasers for each student in their group to get one. Students can do this in any way that makes sense to them. The synthesis will focus on determining if there are enough by giving one object to each student in the group.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <xi:include href="./act-haySuficientes-mat.ptx"/>
   </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <ul>
+      <li>Groups of 4</li>
+      <li>Place 4 erasers and 3 pencils at each table of 4 students.</li>
+      <li><q>¿Hay suficientes lápices sobre su mesa para que cada estudiante tome uno?</q></li>
+      <li>30 seconds: quiet think time</li>
+    </ul>
   </paragraphs>
 
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <ul>
+      <li><q>Compartan sus ideas sobre cómo podrían saber si hay suficientes lápices. Luego, decidan si hay suficientes lápices</q></li>
+      <li>2 minutes: small-group work time</li>
+      <li>Share responses.</li>
+      <li><q>¿Hay suficientes borradores sobre su mesa para que cada estudiante tome uno?</q></li>
+      <li>30 seconds: quiet think time</li>
+      <li><q>Compartan sus ideas sobre cómo podrían saber si hay suficientes borradores. Luego, decidan si hay suficientes borradores</q></li>
+      <li>2 minutes: small-group work time</li>
+      <li>Share responses.</li>
+      <li>Monitor for students who give each student one pencil and one eraser to see if there are enough.</li>
+    </ul>
   </paragraphs>
 
 </prelude>
@@ -58,30 +82,37 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p>Invite previously identified students to share.</p>
+    <p>
+      <q>¿Cómo supieron si había suficientes borradores?</q> 
+      (We tried to pass out one eraser to each person, but not everyone got one.)
+    </p>  
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom name="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[+++++++++++++++++]</p>
+    <p>Engagement: Internalize Self Regulation. Remind students that they want to find out if there will be enough pencils and erasers for each student. Acknowledge that it is okay if someone does not get an item.</p>
+    <p>Supports accessibility for: Social-Emotional Functioning</p>
   </paragraphs>
 
 </postlude>

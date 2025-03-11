@@ -34,7 +34,7 @@ def extract_activity(file_path, xml_id, font_size):
             output_file_name = f"{xml_id}.tex"
             with open(output_file_name, "w") as output_file:
                 output_file.write("\\documentclass[" + font_size + "]{extarticle}\n")
-                output_file.write("\\input{external/defs-ptxLEMA-latex-standalone.tex}\n")
+                output_file.write("\\input{external/preamble-latex-cools.tex}\n")
                 output_file.write("\\begin{document}\n")
                 output_file.write(texto_actividad)
                 output_file.write("\n\\end{document}")
