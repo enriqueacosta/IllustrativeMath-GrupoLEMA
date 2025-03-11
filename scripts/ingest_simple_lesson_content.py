@@ -53,14 +53,21 @@ def extract_html_sections(html_file):
     for ref_name, ref_id in lesson_refs:
         h3 = next((h for h in soup.find_all('h3') if ref_name.lower() in h.text.lower()), None)
         if h3:
-            next_elem = h3.find_next(['p', 'ul'])
-            # Only add subsections if valid content is found
-            if next_elem and "NOT PRESENT" not in str(next_elem):
+            # Collect all content elements until the next header
+            content_elements = []
+            current = h3.next_sibling
+            while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
+                if getattr(current, 'name', None) in ['p', 'ul']:
+                    content_elements.append(str(current))
+                current = current.next_sibling
+                
+            if content_elements and not any("NOT PRESENT" in elem for elem in content_elements):
+                content = "\n".join(content_elements)
                 lesson_section['subsections'].append({
                     'name': ref_name,
                     'ref': ref_id,
-                    'content': str(next_elem),
-                    'type': next_elem.name
+                    'content': content,
+                    'type': 'content'
                 })
     if lesson_section['subsections']:
         sections.append(lesson_section)
@@ -76,15 +83,14 @@ def extract_html_sections(html_file):
                     content_elements.append(str(current))
                 current = current.next_sibling
             if content_elements:
-                # Join the content elements if there are multiple
-                content = content_elements[0] if len(content_elements) == 1 else "\n".join(content_elements)
+                content = "\n".join(content_elements)
                 synthesis_section = {
                     'title': 'Lesson Synthesis',
                     'subsections': [{
                         'name': 'Lesson Synthesis',
                         'ref': 'synthesis-leccion-titulo',
                         'content': content,
-                        'type': BeautifulSoup(content, 'html.parser').find().name if content else 'p'
+                        'type': 'content'
                     }]
                 }
                 # Optionally extract time information from the h2 header text
@@ -105,35 +111,81 @@ def extract_html_sections(html_file):
         elif element.name == 'h3' and current_section:
             # Process h3 elements as subsection headers.
             h3_text = element.text
+            
+            # Check if this is a Student Response section
+            if 'student response' in h3_text.lower():
+                # Extract solution content
+                content_elements = []
+                current = element.next_sibling
+                
+                # Skip any whitespace or empty text nodes
+                while current and (not getattr(current, 'name', None)) and not current.strip():
+                    current = current.next_sibling
+                
+                # Collect all content elements until the next header
+                while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
+                    if getattr(current, 'name', None) in ['p', 'ul']:
+                        content_elements.append(str(current))
+                    current = current.next_sibling
+                
+                if content_elements:
+                    content = "\n".join(content_elements)
+                    # Add as a special solution subsection
+                    current_section['subsections'].append({
+                        'name': 'Student Response',
+                        'ref': 'solution',
+                        'content': content,
+                        'type': 'solution'
+                    })
+                continue
+            
+            # Regular subsection processing
             # Look for a reference inside the h3 text using regex
             ref_match = re.search(r'\(for ref="([^"]+)"\)', h3_text)
             ref = ref_match.group(1) if ref_match else None
             # Remove the reference text from the title for clarity
             subsection_name = re.sub(r'\s*\(for ref="[^"]+"\)', '', h3_text)
-            next_elem = element.find_next()
-            if next_elem and next_elem.name in ['p', 'ul']:
+            
+            # Collect all content elements between this h3 and the next header
+            content_elements = []
+            current = element.next_sibling
+            
+            # Skip any whitespace or empty text nodes
+            while current and (not getattr(current, 'name', None)) and not current.strip():
+                current = current.next_sibling
+                
+            # Check for "NOT PRESENT" text
+            if current and isinstance(current, str) and "NOT PRESENT" in current:
                 current_section['subsections'].append({
                     'name': subsection_name,
                     'ref': ref,
-                    'content': str(next_elem),
-                    'type': next_elem.name
+                    'content': "NOT PRESENT",
+                    'type': 'text'
+                })
+                continue
+                
+            # Collect all content elements until the next header
+            while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
+                if getattr(current, 'name', None) in ['p', 'ul']:
+                    content_elements.append(str(current))
+                current = current.next_sibling
+                
+            if content_elements:
+                content = "\n".join(content_elements)
+                current_section['subsections'].append({
+                    'name': subsection_name,
+                    'ref': ref,
+                    'content': content,
+                    'type': 'content'
                 })
             else:
-                # Handle cases where content is indicated as "NOT PRESENT"
-                sibling = element.next_sibling
-                text_content = ""
-                while sibling and (not getattr(sibling, 'name', None) or sibling.name not in ['h2', 'h3']):
-                    if isinstance(sibling, str) and "NOT PRESENT" in sibling:
-                        text_content = "NOT PRESENT"
-                        break
-                    sibling = sibling.next_sibling
-                if text_content:
-                    current_section['subsections'].append({
-                        'name': subsection_name,
-                        'ref': ref,
-                        'content': text_content,
-                        'type': 'text'
-                    })
+                # No content found
+                current_section['subsections'].append({
+                    'name': subsection_name,
+                    'ref': ref,
+                    'content': "[@@@@@@@@@]",
+                    'type': 'text'
+                })
     if current_section:
         sections.append(current_section)
     return sections
@@ -249,7 +301,45 @@ def create_replacement_xml(subsection):
     """
     ref = subsection['ref']
     content_type = subsection.get('type')
-    if content_type == 'ul':
+    
+    # Special handling for solution type
+    if content_type == 'solution':
+        # Format the content for solution tags
+        soup = BeautifulSoup(subsection['content'], 'html.parser')
+        if soup.find('ul'):
+            # Process each element separately to maintain proper indentation
+            elements = []
+            for element in soup.find_all(['p', 'ul'], recursive=False):
+                if element.name == 'ul':
+                    elements.append(indent_html_content(str(element)))
+                else:
+                    elements.append(str(element))
+            inner = "\n".join(elements)
+        else:
+            inner = subsection['content']
+        
+        return (
+            f'<solution>\n'
+            f'    {inner}\n'
+            f'  </solution>'
+        )
+    
+    # Regular content handling
+    if content_type == 'content':
+        # For general content, check if it contains a list that needs indentation
+        soup = BeautifulSoup(subsection['content'], 'html.parser')
+        if soup.find('ul'):
+            # Process each element separately to maintain proper indentation
+            elements = []
+            for element in soup.find_all(['p', 'ul'], recursive=False):
+                if element.name == 'ul':
+                    elements.append(indent_html_content(str(element)))
+                else:
+                    elements.append(str(element))
+            inner = "\n".join(elements)
+        else:
+            inner = subsection['content']
+    elif content_type == 'ul':
         inner = indent_html_content(subsection['content'])
     elif content_type == 'p':
         inner = subsection['content']
@@ -257,6 +347,7 @@ def create_replacement_xml(subsection):
         inner = '<p>[@@@@@@@@@]</p>'
     else:
         inner = '<p>[@@@@@@@@@]</p>'
+    
     return (
         f'<paragraphs>\n'
         f'    <title><custom ref="{ref}"/></title>\n'
@@ -270,7 +361,18 @@ def update_xml_content(content, subsection):
     Replace the XML block corresponding to the given subsection.
     Uses regex to locate the block and replaces it with the new content.
     """
-    pattern = r'<paragraphs>\s*<title><custom ref="' + re.escape(subsection['ref']) + r'"/></title>.*?</paragraphs>'
+    ref = subsection['ref']
+    
+    # Special handling for solution tags
+    if ref == 'solution':
+        # Look for a solution tag in the content
+        pattern = r'<solution>.*?</solution>'
+        replacement = create_replacement_xml(subsection)
+        new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+        return new_content, count
+    
+    # Regular paragraphs handling
+    pattern = r'<paragraphs>\s*<title><custom ref="' + re.escape(ref) + r'"/></title>.*?</paragraphs>'
     replacement = create_replacement_xml(subsection)
     new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
     return new_content, count
