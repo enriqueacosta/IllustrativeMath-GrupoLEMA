@@ -217,6 +217,9 @@ def process_content(content, include_raw_html, strip_qtags):
     # Drop <span> tags but keep the content inside them
     extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
 
+    # remove zero width space
+    extracted_content = re.sub(r'\u200b', '', extracted_content)
+
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
     raw_html = f"<pre><code>{formatted_raw_html.replace('<', '&lt;').replace('>', '&gt;')}</code></pre>" if include_raw_html else ""
 
