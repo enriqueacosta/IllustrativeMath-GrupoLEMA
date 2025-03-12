@@ -21,6 +21,7 @@ Processing:
 - Drops <div class="c-annotation c-annotation--ell"> tags and their contents
 - Drops <div class="c-annotation c-annotation--swd"> tags and their contents
 - Drops <div class="c-annotations"> tags and their contents
+- Wraps text inside <li> tags with <p> tags when there is a nested <ul>
 - Formats raw HTML properly inside <pre><code> blocks.
 - Allows stripping of duplicate <q> tags after // if specified.
 - Saves extracted content into a single output file.
@@ -41,7 +42,7 @@ import argparse
 import os
 import sys
 import re
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 def clean_q_tags(text):
     """Removes duplicate <q>...</q> pairs after // while keeping text inside parentheses."""
@@ -142,6 +143,7 @@ def extract_lesson_synthesis(soup, include_raw_html=True, strip_qtags=False):
 
 def process_content(content, include_raw_html, strip_qtags):
     """Processes and cleans up extracted content."""
+    
     for em_tag in content.find_all("em", class_="spanish-translation translation"):
         next_sibling = em_tag.find_next_sibling()
         if next_sibling and next_sibling.name == "em" and not next_sibling.text.strip():
@@ -156,7 +158,8 @@ def process_content(content, include_raw_html, strip_qtags):
 
         # Insert each img tag before the current div (preserving order)
         for img in img_tags:
-            div.insert_before("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n")
+            warning_html = BeautifulSoup("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n", "html.parser")
+            div.insert_before(warning_html)
             div.insert_before(img)
         # Remove the entire div
         div.decompose()
@@ -168,13 +171,19 @@ def process_content(content, include_raw_html, strip_qtags):
         img_tags = figure.find_all("img")
         # Insert each img tag before the current figure (preserving order)
         for img in img_tags:
-            figure.insert_before("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n")
+            warning_html = BeautifulSoup("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n", "html.parser")
+            figure.insert_before(warning_html)
             figure.insert_before(img)
         # Remove the entire figure
         figure.decompose()
 
+    # print(content)
+
     # Convert extracted content to string
     extracted_content = "".join(str(tag) for tag in content.contents)
+
+    # Wrap text inside <li> tags with <p> tags
+    extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<ul>)', r'\1\n<p>\2</p>\n\3', extracted_content)
 
     # Ensure content is wrapped in <p> if it's missing block-level tags
     if not any(tag in extracted_content for tag in ["<p", "<ul", "<ol", "<table", "<div"]):
