@@ -153,11 +153,10 @@ def process_content(content, include_raw_html, strip_qtags):
     for div in imgrid_divs:
         # Find all descendant <img> tags
         img_tags = div.find_all("img")
-        # if img_tags are found, warn in output they need to be fixed. 
-        # if img_tags:
-        #     div.insert_before("<p>[@@@@@@@@] WARNING: Fix Images.</p>")
+
         # Insert each img tag before the current div (preserving order)
         for img in img_tags:
+            div.insert_before("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n")
             div.insert_before(img)
         # Remove the entire div
         div.decompose()
@@ -167,11 +166,9 @@ def process_content(content, include_raw_html, strip_qtags):
     for figure in figure_tags:
         # Find all descendant <img> tags
         img_tags = figure.find_all("img")
-        # if img_tags are found, warn in output they need to be fixed. 
-        # if img_tags:
-        #     figure.insert_before("<p>[@@@@@@@@] WARNING: Fix Images.</p>")
         # Insert each img tag before the current figure (preserving order)
         for img in img_tags:
+            figure.insert_before("\n<p>[@@@@@@@@] WARNING: Fix Image.</p>\n")
             figure.insert_before(img)
         # Remove the entire figure
         figure.decompose()
