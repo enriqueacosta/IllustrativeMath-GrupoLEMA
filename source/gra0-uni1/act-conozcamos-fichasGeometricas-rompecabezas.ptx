@@ -1,13 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-conozcamos-FichasGeom-rompecabezas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-conozcamos-fichasGeometricas-rompecabezas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Conozcamos “Fichas geométricas: Rompecabezas”</title>
 
 <statement>
+  <aside component="web">
+    <p>
+      Rompecabezas de fichas geométricas disponibles en el libro de trabajo o <url component="web" href="external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf">descargar acá para imprimir</url>
+    </p>
+  </aside>
   <image source="svg-source/tikz-file-148147">
     <shortdescription></shortdescription>
   </image>
+  <p component="libroTrabajo">
+    @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
+    Incluir los rompecabezas en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen.
+  </p>
 </statement>
 
 <solution>
@@ -31,7 +40,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
 
     <p>
-      El propósito de esta actividad es que los estudiantes aprendan la etapa 2 del centro  “Fichas geométricas”.
+      El propósito de esta actividad es que los estudiantes conozcan la etapa 2 del centro <xref ref="centro-fichasGeometricas" text="title"/>.
       Los estudiantes usan fichas geométricas para completar rompecabezas sencillos.
       <!-- The purpose of this activity is for students to learn stage 2 of the Pattern Blocks center. -->
       <!-- Students use pattern blocks to fill in simple puzzles. -->
@@ -41,7 +50,7 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <xi:include href="./act-conozcamos-FichasGeom-rompecabezas-mat.ptx" /> 
+    <xi:include href="./act-conozcamos-fichasGeometricas-rompecabezas-mat.ptx" /> 
   </paragraphs>
 
   <!-- Launch -->
