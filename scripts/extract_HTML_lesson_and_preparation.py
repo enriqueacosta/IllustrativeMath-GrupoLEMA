@@ -63,9 +63,9 @@ def format_raw_html(html):
 def extract_preparation_sections(soup, include_raw_html=True, strip_qtags=False):
     """Extracts sections from preparation.html."""
     sections_to_extract = {
-        "Lesson Purpose": "<p>--- NOT PRESENT ---</p>",
-        "Lesson Narrative": "<p>--- NOT PRESENT ---</p>",
-        "Teacher Reflection Questions": "<p>--- NOT PRESENT ---</p>"
+        "Lesson Purpose": "<p>=== NOT PRESENT ===</p>",
+        "Lesson Narrative": "<p>=== NOT PRESENT ===</p>",
+        "Teacher Reflection Questions": "<p>=== NOT PRESENT ===</p>"
     }
 
     for heading in soup.find_all("h3", class_="im-c-heading--xsb"):
@@ -95,7 +95,7 @@ def extract_lesson_sections(soup, include_raw_html=True, strip_qtags=False):
                 "Launch": [],
                 "Activity": [],
                 "Activity Synthesis": [],
-                "Advancing Student Thinking": "--- NOT PRESENT ---",
+                "Advancing Student Thinking": "<p>=== NOT PRESENT ===</p>",
                 "Student Response": []
             }
 
@@ -127,15 +127,15 @@ def extract_lesson_synthesis(soup, include_raw_html=True, strip_qtags=False):
     synthesis_title = soup.find("h2", class_="im-c-hero__heading", string=lambda text: "Lesson Synthesis" in text)
     
     if not synthesis_title:
-        return "<p>--- NOT PRESENT ---</p>"
+        return "<p>=== NOT PRESENT ===</p>"
     
     section = synthesis_title.find_next("div", class_="im-c-container--content")
     if not section:
-        return "<p>--- NOT PRESENT ---</p>"
+        return "<p>=== NOT PRESENT ===</p>"
     
     content_div = section.find("div", class_="im-c-content")
     if not content_div:
-        return "<p>--- NOT PRESENT ---</p>"
+        return "<p>=== NOT PRESENT ===</p>"
     
     extracted_content = process_content(content_div, include_raw_html, strip_qtags)
     return extracted_content
@@ -186,6 +186,9 @@ def process_content(content, include_raw_html, strip_qtags):
     # Replace non-breaking spaces by normal spaces
     extracted_content = extracted_content.replace("\xa0", " ")
 
+    # remove zero width space
+    extracted_content = re.sub(r'\u200b', '', extracted_content)
+
     # Convert curly quotes into <q> tags
     extracted_content = extracted_content.replace("“", "<q>").replace("”", "</q>")
 
@@ -217,8 +220,6 @@ def process_content(content, include_raw_html, strip_qtags):
     # Drop <span> tags but keep the content inside them
     extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
 
-    # remove zero width space
-    extracted_content = re.sub(r'\u200b', '', extracted_content)
 
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
     raw_html = f"<pre><code>{formatted_raw_html.replace('<', '&lt;').replace('>', '&gt;')}</code></pre>" if include_raw_html else ""
@@ -227,32 +228,36 @@ def process_content(content, include_raw_html, strip_qtags):
 
 def save_combined_sections(prep_sections, lesson_sections, lesson_synthesis, output_filename):
     """Saves combined extracted sections to an HTML file."""
-    output_content = """<html><head>
-    <title>Extracted Lesson and Preparation Sections</title>
-    <style> fillin::before { content: "_____"; font-family: monospace; } </style>
-    <style> m::before { content: "\<m\>"; } </style>
-    <style> m::after { content: "\</m\>"; } </style>
-    </head><body>"""
+    output_content = (
+        "<html>\n"
+        "<head>\n"
+        "  <title>Extracted Lesson and Preparation Sections</title>\n"
+        "  <style> fillin::before { content: \"_____\"; font-family: monospace; } </style>\n"
+        "  <style> m::before { content: \"<m>\"; } </style>\n"
+        "  <style> m::after { content: \"</m>\"; } </style>\n"
+        "</head>\n"
+        "<body>\n"
+    )
 
-    output_content += "<h2>Lesson Fields</h2>"
+    output_content += "\n<h2>Lesson Fields</h2>\n"
 
-    output_content += "<h3>Lesson Purpose (for ref=\"purpose-leccion-titulo\")</h3>\n" + prep_sections["Lesson Purpose"]
-    output_content += "<h3>Lesson Narrative (for ref=\"narrative-leccion-titulo\")</h3>\n" + prep_sections["Lesson Narrative"]
-    output_content += "<h3>Teacher Reflection Questions (for ref=\"reflection-quest-titulo\")</h3>\n" + prep_sections["Teacher Reflection Questions"]
+    output_content += "\n<h3>Lesson Purpose (for ref=\"purpose-leccion-titulo\")</h3>\n" + prep_sections["Lesson Purpose"]
+    output_content += "\n<h3>Lesson Narrative (for ref=\"narrative-leccion-titulo\")</h3>\n" + prep_sections["Lesson Narrative"]
+    output_content += "\n<h3>Teacher Reflection Questions (for ref=\"reflection-quest-titulo\")</h3>\n" + prep_sections["Teacher Reflection Questions"]
     
     # Add Lesson Synthesis after Lesson Fields and before other h2 sections
-    output_content += "<h2>Lesson Synthesis </h2>\n" + lesson_synthesis
+    output_content += "\n<h2>Lesson Synthesis </h2>\n" + lesson_synthesis
 
     for title, sections in lesson_sections.items():
-        output_content += f"<h2>{title}</h2>\n"
-        output_content += "<h3>Narrative (for ref=\"narrative-actividad-titulo\")</h3>\n" + "".join(sections["Narrative"])
-        output_content += "<h3>Launch (for ref=\"launch-titulo\")</h3>\n" + "".join(sections["Launch"])
-        output_content += "<h3>Activity (for ref=\"instructions-teacher-actividad-titulo\")</h3>\n" + "".join(sections["Activity"])
-        output_content += "<h3>Activity Synthesis (for ref=\"synthesis-actividad-titulo\")</h3>\n" + "".join(sections["Activity Synthesis"])
-        output_content += "<h3>Advancing Student Thinking (for ref=\"support-actividad-titulo\")</h3>\n" + sections["Advancing Student Thinking"]
-        output_content += "<h3>Student Response (for solution)</h3>\n" + "".join(sections["Student Response"])
+        output_content += f"\n<h2>{title}</h2>\n"
+        output_content += "\n<h3>Narrative (for ref=\"narrative-actividad-titulo\")</h3>\n" + "".join(sections["Narrative"])
+        output_content += "\n<h3>Launch (for ref=\"launch-titulo\")</h3>\n" + "".join(sections["Launch"])
+        output_content += "\n<h3>Activity (for ref=\"instructions-teacher-actividad-titulo\")</h3>\n" + "".join(sections["Activity"])
+        output_content += "\n<h3>Activity Synthesis (for ref=\"synthesis-actividad-titulo\")</h3>\n" + "".join(sections["Activity Synthesis"])
+        output_content += "\n<h3>Advancing Student Thinking (for ref=\"support-actividad-titulo\")</h3>\n" + sections["Advancing Student Thinking"]
+        output_content += "\n<h3>Student Response (for solution)</h3>\n" + "".join(sections["Student Response"])
 
-    output_content += "</body></html>"
+    output_content += "\n</body>\n</html>"
 
     with open(output_filename, "w", encoding="utf-8") as file:
         file.write(output_content)
