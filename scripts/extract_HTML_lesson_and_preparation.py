@@ -182,8 +182,12 @@ def process_content(content, include_raw_html, strip_qtags):
     # Convert extracted content to string and remove the outer <div> tag
     extracted_content = "".join(str(tag) for tag in content.contents)
 
-    # Wrap text inside <li> tags with <p> tags
-    extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<ul>)', r'\1\n<p>\2</p>\n\3', extracted_content)
+    # remove tabs
+    extracted_content = extracted_content.replace("\t", "")
+
+    # If a <li> has tags inside, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
+    # extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
+    extracted_content = re.sub(r'(<li[^>]*>)([^<]+)\n(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
 
     # Ensure content is wrapped in <p> if it's missing block-level tags
     if not any(tag in extracted_content for tag in ["<p", "<ul", "<ol", "<table", "<div"]):
