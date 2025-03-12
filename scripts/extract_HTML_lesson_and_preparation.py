@@ -179,7 +179,7 @@ def process_content(content, include_raw_html, strip_qtags):
 
     # print(content)
 
-    # Convert extracted content to string
+    # Convert extracted content to string and remove the outer <div> tag
     extracted_content = "".join(str(tag) for tag in content.contents)
 
     # Wrap text inside <li> tags with <p> tags
