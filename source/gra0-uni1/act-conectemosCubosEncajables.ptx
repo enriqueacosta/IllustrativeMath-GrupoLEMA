@@ -6,6 +6,14 @@
 
 <statement>
   <p>¿Cuántos cubos hay en tu colección?</p>
+  <aside component="web">
+    <p>
+      Tableros de 5 disponibles en el libro de trabajo, o <url href="external/blm/pdf-source/tablero-de-5.pdf">descargar acá</url>.
+    </p>
+ 
+    <p>Tableros de conteo disponibles en el libro de trabajo, o <url href="external/blm/pdf-source/contemosColecciones-tableroDeConteo-countingMat.pdf">descargar acá</url>.
+    </p>
+  </aside>
 </statement>
 
 <solution>
@@ -36,11 +44,11 @@
 
 
   <!-- Materiales requeridos de la actividad -->
-  <!-- <paragraphs> -->
-    <!-- <title><custom ref="materials-actividad-titulo"/></title> -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
     <xi:include href="./act-conectemosCubosEncajables-mat.ptx"/> 
-  <!-- </paragraphs> -->
+  </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
