@@ -476,7 +476,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Hanging indent occupies a 5ex width slot prior to left margin
 %% Experimentally this seems just barely sufficient for a bold "888."
 %% Division exercises, not in exercise group
-\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parskip}{\medskipamount}}, } }
+\tcbset{ divisionexercisestyle/.style={bwminimalstyle, runintitlestyle, exercisespacingstyle, left=5ex, breakable, before upper app={\setlength{\parskip}{\medskipamount}\renewcommand{\\}{\par\vspace*{-0.8\parskip}}}, } }
 \newtcolorbox{divisionexercise}[4]{divisionexercisestyle, before title={\hspace*{-5ex}\makebox[5ex][l]{#1.}}, title={\notblank{#2}{#2}{}}, after title={\notblank{#2}{\space}{}}, phantom={\label{#4}\hypertarget{#4}{}}, after={\notblank{#3}{\newline\rule{\workspacestrutwidth}{#3}\newline\vfill}{\par}}}
 %% "tcolorbox" environment for a single image, occupying entire \linewidth
 %% arguments are left-margin, width, right-margin, as multiples of
@@ -576,13 +576,13 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 % \faLightbulbO    light-bulb icon
 % \faCheckSquareO  check-mark icon
 %% exploration: fairly simple numbered block/structure
-\tcbset{ explorationstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faBolt}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, fonttitle=\bfseries,  } }
+\tcbset{ explorationstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faBolt}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}\renewcommand{\\}{\par\vspace*{-0.8\parskip}}}, colback=purple!5, colbacktitle=purple!70, coltitle=white, fonttitle=\bfseries,  } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\notblank{#2}{\space\space#2}{}}\hfill\allowbreak\hbox{}~\hfill{\large|}~\titleptx\hspace{-0.2cm}}, phantomlabel={#3}, breakable, after={\par}, explorationstyle, }
 %% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faLightbulbO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, fonttitle=\bfseries,  } }
+\tcbset{ activitystyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faLightbulbO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}\renewcommand{\\}{\par\vspace*{-0.8\parskip}}}, colback=orange!5, colbacktitle=orange!95!black!80, coltitle=white, fonttitle=\bfseries,  } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\notblank{#2}{\space\space#2}{}}\hfill\allowbreak\hbox{}~\hfill{\large|}~\titleptx\hspace{-0.2cm}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
 %% project: fairly simple numbered block/structure
-\tcbset{ projectstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faCheckSquareO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}}, colback=teal!5, colbacktitle=teal!70, coltitle=white, fonttitle=\bfseries, } }
+\tcbset{ projectstyle/.style={, , blockspacingstyle, before title={\vspace{0.3em}\strut\faCheckSquareO}, after title={\strut\vspace{0.15em}}, before upper app={\setlength{\parskip}{\medskipamount}\renewcommand{\\}{\par\vspace*{-0.8\parskip}}}, colback=teal!5, colbacktitle=teal!70, coltitle=white, fonttitle=\bfseries, } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\notblank{#2}{\space\space#2}{}}\hfill\allowbreak\hbox{}~\hfill{\large|}~\titleptx\hspace{-0.2cm}}, phantomlabel={#3}, after={\par}, projectstyle, }
 %%
 %% tcolorbox, with styles, for ASIDE-LIKE
