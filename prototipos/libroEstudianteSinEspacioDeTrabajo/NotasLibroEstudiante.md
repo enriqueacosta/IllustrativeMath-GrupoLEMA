@@ -31,3 +31,15 @@ Para kinder con fuente más grande
 ```
 \documentclass[14pt]{extbook}
 ```
+
+
+Para que los \\ y los \par se comporten distinto en los tcolorbox
+===================================================================
+
+```
+before upper={%
+\setlength{\parskip}{1.1ex}%
+\renewcommand{\\}{\par\vspace*{-0.8\parskip}}%
+}
+
+```
