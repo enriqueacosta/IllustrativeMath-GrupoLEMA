@@ -194,3 +194,16 @@ A veces:
 introduced > que se presentaron
 monitor for > identifique a
 move between centers > pasar de un centro a otro
+```
+
+## Arreglar todos decimales para que queden adentro de \num{} para una unidad.
+
+En cursor, poner la carpeta de la unidad en el contexto del chat, y en modo agente:
+```
+Please warp all  numbers that have decimal periods with \num{} in all the .ptx files in this folder. Do not make any other changes. 
+
+Examples:
+*  <m> 3x + 14.56 +10 = 13.45 </m> --- > <m> 3x + \num{14.56} +10 = \num{13.45} </m>
+*   <m>1200.532 \unit{mg}</m> ---> <m>\num{1200.532} \unit{mg}</m>
+*  x+ \frac{45.321}{0.1}  ---> x+ \frac{\num{45.321}}{\num{0.1}}
+```
