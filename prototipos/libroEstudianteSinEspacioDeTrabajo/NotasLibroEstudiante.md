@@ -43,3 +43,13 @@ before upper={%
 }
 
 ```
+
+Para footnotes pequeños
+=======================
+```
+% Make footnotes tiny and reduce spacing
+\usepackage{footmisc}  % Package to control footnote formatting
+\renewcommand{\footnotemargin}{1em}  % Align footnotes with no extra indentation
+\renewcommand{\footnotesize}{\tiny}  % Set all footnotes to tiny font
+\setlength{\footnotesep}{0.3\baselineskip}  % Reduce vertical spacing between footnotes
+```
