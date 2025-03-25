@@ -87,6 +87,554 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/css/custom-styles.css">
+<style>
+#act-cuantasManzanas-2-2-1 { counter-set: act-cuantasManzanas-2-2-1 0; }
+#act-cuantasManzanas-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas-2-2-1,decimal)"."; }
+#act-cuantasManzanas-2-2-1 > li { counter-increment: act-cuantasManzanas-2-2-1; }
+#act-cuantasManzanas-3-2 { counter-set: act-cuantasManzanas-3-2 0; }
+#act-cuantasManzanas-3-2 > li::marker { content: ""counter(act-cuantasManzanas-3-2,decimal)"."; }
+#act-cuantasManzanas-3-2 > li { counter-increment: act-cuantasManzanas-3-2; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 { counter-set: act-recorridoSalon-manzanasEnCajas-2-1-1 0; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-2-1-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-2-1-1; }
+#act-recorridoSalon-manzanasEnCajas-3-1 { counter-set: act-recorridoSalon-manzanasEnCajas-3-1 0; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-3-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-3-1; }
+#act-cuantasManzanas2-2-2-1 { counter-set: act-cuantasManzanas2-2-2-1 0; }
+#act-cuantasManzanas2-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas2-2-2-1,decimal)"."; }
+#act-cuantasManzanas2-2-2-1 > li { counter-increment: act-cuantasManzanas2-2-2-1; }
+#act-cuantasManzanas2-3-1 { counter-set: act-cuantasManzanas2-3-1 0; }
+#act-cuantasManzanas2-3-1 > li::marker { content: ""counter(act-cuantasManzanas2-3-1,decimal)"."; }
+#act-cuantasManzanas2-3-1 > li { counter-increment: act-cuantasManzanas2-3-1; }
+#warm-numTalk-cuantoMasCambien-2-2-1 { counter-set: warm-numTalk-cuantoMasCambien-2-2-1 0; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li::marker { content: ""counter(warm-numTalk-cuantoMasCambien-2-2-1,upper-alpha)"."; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li { counter-increment: warm-numTalk-cuantoMasCambien-2-2-1; }
+#act-gruposEstudiantes-2-1-1 { counter-set: act-gruposEstudiantes-2-1-1 0; }
+#act-gruposEstudiantes-2-1-1 > li::marker { content: ""counter(act-gruposEstudiantes-2-1-1,decimal)"."; }
+#act-gruposEstudiantes-2-1-1 > li { counter-increment: act-gruposEstudiantes-2-1-1; }
+#act-gruposEstudiantes-3-1 { counter-set: act-gruposEstudiantes-3-1 0; }
+#act-gruposEstudiantes-3-1 > li::marker { content: ""counter(act-gruposEstudiantes-3-1,decimal)"."; }
+#act-gruposEstudiantes-3-1 > li { counter-increment: act-gruposEstudiantes-3-1; }
+#act-cualDibujoCorresponde-2-2-1 { counter-set: act-cualDibujoCorresponde-2-2-1 0; }
+#act-cualDibujoCorresponde-2-2-1 > li::marker { content: ""counter(act-cualDibujoCorresponde-2-2-1,decimal)"."; }
+#act-cualDibujoCorresponde-2-2-1 > li { counter-increment: act-cualDibujoCorresponde-2-2-1; }
+#act-cualDibujoCorresponde-3-2 { counter-set: act-cualDibujoCorresponde-3-2 0; }
+#act-cualDibujoCorresponde-3-2 > li::marker { content: ""counter(act-cualDibujoCorresponde-3-2,decimal)"."; }
+#act-cualDibujoCorresponde-3-2 > li { counter-increment: act-cualDibujoCorresponde-3-2; }
+#act-numTalk-masOMenos-2-2 { counter-set: act-numTalk-masOMenos-2-2 0; }
+#act-numTalk-masOMenos-2-2 > li::marker { content: ""counter(act-numTalk-masOMenos-2-2,upper-alpha)"."; }
+#act-numTalk-masOMenos-2-2 > li { counter-increment: act-numTalk-masOMenos-2-2; }
+#act-numTalk-masOMenos-3-2-1 { counter-set: act-numTalk-masOMenos-3-2-1 0; }
+#act-numTalk-masOMenos-3-2-1 > li::marker { content: ""counter(act-numTalk-masOMenos-3-2-1,upper-alpha)"."; }
+#act-numTalk-masOMenos-3-2-1 > li { counter-increment: act-numTalk-masOMenos-3-2-1; }
+#act-pilasBloques-2-2 { counter-set: act-pilasBloques-2-2 0; }
+#act-pilasBloques-2-2 > li::marker { content: ""counter(act-pilasBloques-2-2,decimal)"."; }
+#act-pilasBloques-2-2 > li { counter-increment: act-pilasBloques-2-2; }
+#act-pilasBloques-3-1-1 { counter-set: act-pilasBloques-3-1-1 0; }
+#act-pilasBloques-3-1-1 > li::marker { content: ""counter(act-pilasBloques-3-1-1,decimal)"."; }
+#act-pilasBloques-3-1-1 > li { counter-increment: act-pilasBloques-3-1-1; }
+#warm-numTalk-enQueSeParecen-2-2-1 { counter-set: warm-numTalk-enQueSeParecen-2-2-1 0; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-2-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-2-2-1; }
+#warm-numTalk-enQueSeParecen-3-2-1 { counter-set: warm-numTalk-enQueSeParecen-3-2-1 0; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-3-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-3-2-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-2-3 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-2-3,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-2-3; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li::marker { content: "("counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2,lower-alpha)")"; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1,upper-alpha)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1; }
+#act-resolvamosProblemaBichos-3-1-1 { counter-set: act-resolvamosProblemaBichos-3-1-1 0; }
+#act-resolvamosProblemaBichos-3-1-1 > li::marker { content: ""counter(act-resolvamosProblemaBichos-3-1-1,upper-alpha)"."; }
+#act-resolvamosProblemaBichos-3-1-1 > li { counter-increment: act-resolvamosProblemaBichos-3-1-1; }
+#cool-patasHormigas-2-2-1 { counter-set: cool-patasHormigas-2-2-1 0; }
+#cool-patasHormigas-2-2-1 > li::marker { content: "("counter(cool-patasHormigas-2-2-1,lower-alpha)")"; }
+#cool-patasHormigas-2-2-1 > li { counter-increment: cool-patasHormigas-2-2-1; }
+#cool-patasHormigas-3-1-1 { counter-set: cool-patasHormigas-3-1-1 0; }
+#cool-patasHormigas-3-1-1 > li::marker { content: "("counter(cool-patasHormigas-3-1-1,lower-alpha)")"; }
+#cool-patasHormigas-3-1-1 > li { counter-increment: cool-patasHormigas-3-1-1; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-2-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-3-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-3-2; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-4-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-4-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-4-3-2; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-3-1; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-3-1; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-2-1; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 { counter-set: gra3-uni4-secA-ProblemasPractica-9-1-2 0; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-1-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-1-2; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-9-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-2-1; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-1-1-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-1-1-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-1-1-1; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-13-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-13-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-3-2; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-14-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-14-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-14-3-2; }
+#act-mesaRedondaDeDivision-2-4 { counter-set: act-mesaRedondaDeDivision-2-4 0; }
+#act-mesaRedondaDeDivision-2-4 > li::marker { content: ""counter(act-mesaRedondaDeDivision-2-4,decimal)"."; }
+#act-mesaRedondaDeDivision-2-4 > li { counter-increment: act-mesaRedondaDeDivision-2-4; }
+#act-gruposUtilesEscolares-2-5 { counter-set: act-gruposUtilesEscolares-2-5 0; }
+#act-gruposUtilesEscolares-2-5 > li::marker { content: ""counter(act-gruposUtilesEscolares-2-5,decimal)"."; }
+#act-gruposUtilesEscolares-2-5 > li { counter-increment: act-gruposUtilesEscolares-2-5; }
+#act-gruposUtilesEscolares-3-1 { counter-set: act-gruposUtilesEscolares-3-1 0; }
+#act-gruposUtilesEscolares-3-1 > li::marker { content: ""counter(act-gruposUtilesEscolares-3-1,decimal)"."; }
+#act-gruposUtilesEscolares-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1; }
+#act-gruposUtilesEscolares-3-1-1-1 { counter-set: act-gruposUtilesEscolares-3-1-1-1 0; }
+#act-gruposUtilesEscolares-3-1-1-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-1-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-1-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-1-1; }
+#act-gruposUtilesEscolares-3-1-2-1 { counter-set: act-gruposUtilesEscolares-3-1-2-1 0; }
+#act-gruposUtilesEscolares-3-1-2-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-2-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-2-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-2-1; }
+#act-gruposUtilesEscolares-3-1-3-1 { counter-set: act-gruposUtilesEscolares-3-1-3-1 0; }
+#act-gruposUtilesEscolares-3-1-3-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-3-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-3-1; }
+#act-gruposUtilesEscolares-3-1-4-1 { counter-set: act-gruposUtilesEscolares-3-1-4-1 0; }
+#act-gruposUtilesEscolares-3-1-4-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-4-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-4-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-4-1; }
+#warm-numTalk-multiplicacionYDivision-2-2 { counter-set: warm-numTalk-multiplicacionYDivision-2-2 0; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-2-2,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li { counter-increment: warm-numTalk-multiplicacionYDivision-2-2; }
+#warm-numTalk-multiplicacionYDivision-3-1 { counter-set: warm-numTalk-multiplicacionYDivision-3-1 0; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-3-1,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li { counter-increment: warm-numTalk-multiplicacionYDivision-3-1; }
+#act-siSeQueEntoncesSeQue-2-2 { counter-set: act-siSeQueEntoncesSeQue-2-2 0; }
+#act-siSeQueEntoncesSeQue-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQue-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQue-2-2 > li { counter-increment: act-siSeQueEntoncesSeQue-2-2; }
+#act-productosTablaMultiplicar-2-3 { counter-set: act-productosTablaMultiplicar-2-3 0; }
+#act-productosTablaMultiplicar-2-3 > li::marker { content: ""counter(act-productosTablaMultiplicar-2-3,decimal)"."; }
+#act-productosTablaMultiplicar-2-3 > li { counter-increment: act-productosTablaMultiplicar-2-3; }
+#act-productosTablaMultiplicar-2-3-2-2 { counter-set: act-productosTablaMultiplicar-2-3-2-2 0; }
+#act-productosTablaMultiplicar-2-3-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-2-3-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-2-3-2-2 > li { counter-increment: act-productosTablaMultiplicar-2-3-2-2; }
+#act-productosTablaMultiplicar-3-1 { counter-set: act-productosTablaMultiplicar-3-1 0; }
+#act-productosTablaMultiplicar-3-1 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1,decimal)"."; }
+#act-productosTablaMultiplicar-3-1 > li { counter-increment: act-productosTablaMultiplicar-3-1; }
+#act-productosTablaMultiplicar-3-1-1-2 { counter-set: act-productosTablaMultiplicar-3-1-1-2 0; }
+#act-productosTablaMultiplicar-3-1-1-2 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1-1-2,upper-alpha)"."; }
+#act-productosTablaMultiplicar-3-1-1-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-1-2; }
+#act-productosTablaMultiplicar-3-1-2-2 { counter-set: act-productosTablaMultiplicar-3-1-2-2 0; }
+#act-productosTablaMultiplicar-3-1-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-3-1-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-3-1-2-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-2-2; }
+#act-siSeQueEntoncesSeQueMult-2-2 { counter-set: act-siSeQueEntoncesSeQueMult-2-2 0; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li { counter-increment: act-siSeQueEntoncesSeQueMult-2-2; }
+#act-siSeQueEntoncesSeQueMult-3-1 { counter-set: act-siSeQueEntoncesSeQueMult-3-1 0; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-3-1,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li { counter-increment: act-siSeQueEntoncesSeQueMult-3-1; }
+#act-deDiagramasAExpresiones-2-3 { counter-set: act-deDiagramasAExpresiones-2-3 0; }
+#act-deDiagramasAExpresiones-2-3 > li::marker { content: ""counter(act-deDiagramasAExpresiones-2-3,decimal)"."; }
+#act-deDiagramasAExpresiones-2-3 > li { counter-increment: act-deDiagramasAExpresiones-2-3; }
+#act-deDiagramasAExpresiones-2-3-1-2 { counter-set: act-deDiagramasAExpresiones-2-3-1-2 0; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li { counter-increment: act-deDiagramasAExpresiones-2-3-1-2; }
+#act-deDiagramasAExpresiones-2-3-2-5 { counter-set: act-deDiagramasAExpresiones-2-3-2-5 0; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-2-5,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li { counter-increment: act-deDiagramasAExpresiones-2-3-2-5; }
+#act-deDiagramasAExpresiones-3-1 { counter-set: act-deDiagramasAExpresiones-3-1 0; }
+#act-deDiagramasAExpresiones-3-1 > li::marker { content: ""counter(act-deDiagramasAExpresiones-3-1,decimal)"."; }
+#act-deDiagramasAExpresiones-3-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1; }
+#act-deDiagramasAExpresiones-3-1-1-2 { counter-set: act-deDiagramasAExpresiones-3-1-1-2 0; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-1-2; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-1 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-1,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-1; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-2 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-2; }
+#act-deExpresionesADiagramas-2-4 { counter-set: act-deExpresionesADiagramas-2-4 0; }
+#act-deExpresionesADiagramas-2-4 > li::marker { content: ""counter(act-deExpresionesADiagramas-2-4,decimal)"."; }
+#act-deExpresionesADiagramas-2-4 > li { counter-increment: act-deExpresionesADiagramas-2-4; }
+#act-deExpresionesADiagramas-3-1-1-2 { counter-set: act-deExpresionesADiagramas-3-1-1-2 0; }
+#act-deExpresionesADiagramas-3-1-1-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-1-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-1-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-1-2; }
+#act-deExpresionesADiagramas-3-1-2-2 { counter-set: act-deExpresionesADiagramas-3-1-2-2 0; }
+#act-deExpresionesADiagramas-3-1-2-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-2-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-2-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-2-2; }
+#act-deExpresionesADiagramas-3-1-3-2 { counter-set: act-deExpresionesADiagramas-3-1-3-2 0; }
+#act-deExpresionesADiagramas-3-1-3-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-3-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-3-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-3-2; }
+#cool-marcaPartesParaEncontrarArea-2-4 { counter-set: cool-marcaPartesParaEncontrarArea-2-4 0; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-2-4,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li { counter-increment: cool-marcaPartesParaEncontrarArea-2-4; }
+#cool-marcaPartesParaEncontrarArea-3-1 { counter-set: cool-marcaPartesParaEncontrarArea-3-1 0; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-3-1,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li { counter-increment: cool-marcaPartesParaEncontrarArea-3-1; }
+#cool-expresionesParaRectangulo-2-1-1 { counter-set: cool-expresionesParaRectangulo-2-1-1 0; }
+#cool-expresionesParaRectangulo-2-1-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-2-1-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-2-1-1 > li { counter-increment: cool-expresionesParaRectangulo-2-1-1; }
+#cool-expresionesParaRectangulo-3-1 { counter-set: cool-expresionesParaRectangulo-3-1 0; }
+#cool-expresionesParaRectangulo-3-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-3-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-3-1 > li { counter-increment: cool-expresionesParaRectangulo-3-1; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-1-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-1-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-1-2; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-2-2; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-1-1; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-2-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-2-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-2-1-1; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-2-2; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secB-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-3-1; }
+#act-granCantidadDolares-2-3 { counter-set: act-granCantidadDolares-2-3 0; }
+#act-granCantidadDolares-2-3 > li::marker { content: ""counter(act-granCantidadDolares-2-3,decimal)"."; }
+#act-granCantidadDolares-2-3 > li { counter-increment: act-granCantidadDolares-2-3; }
+#act-granCantidadDolares-2-3-2-2 { counter-set: act-granCantidadDolares-2-3-2-2 0; }
+#act-granCantidadDolares-2-3-2-2 > li::marker { content: "("counter(act-granCantidadDolares-2-3-2-2,lower-alpha)")"; }
+#act-granCantidadDolares-2-3-2-2 > li { counter-increment: act-granCantidadDolares-2-3-2-2; }
+#act-granCantidadDolares-3-1 { counter-set: act-granCantidadDolares-3-1 0; }
+#act-granCantidadDolares-3-1 > li::marker { content: ""counter(act-granCantidadDolares-3-1,decimal)"."; }
+#act-granCantidadDolares-3-1 > li { counter-increment: act-granCantidadDolares-3-1; }
+#act-granCantidadDolares-3-1-2-1 { counter-set: act-granCantidadDolares-3-1-2-1 0; }
+#act-granCantidadDolares-3-1-2-1 > li::marker { content: "("counter(act-granCantidadDolares-3-1-2-1,lower-alpha)")"; }
+#act-granCantidadDolares-3-1-2-1 > li { counter-increment: act-granCantidadDolares-3-1-2-1; }
+#act-dosEstrategias-2-1 { counter-set: act-dosEstrategias-2-1 0; }
+#act-dosEstrategias-2-1 > li::marker { content: ""counter(act-dosEstrategias-2-1,decimal)"."; }
+#act-dosEstrategias-2-1 > li { counter-increment: act-dosEstrategias-2-1; }
+#act-dosEstrategias-2-1-2-2 { counter-set: act-dosEstrategias-2-1-2-2 0; }
+#act-dosEstrategias-2-1-2-2 > li::marker { content: "("counter(act-dosEstrategias-2-1-2-2,lower-alpha)")"; }
+#act-dosEstrategias-2-1-2-2 > li { counter-increment: act-dosEstrategias-2-1-2-2; }
+#act-dosEstrategias-3-1 { counter-set: act-dosEstrategias-3-1 0; }
+#act-dosEstrategias-3-1 > li::marker { content: ""counter(act-dosEstrategias-3-1,decimal)"."; }
+#act-dosEstrategias-3-1 > li { counter-increment: act-dosEstrategias-3-1; }
+#act-dosEstrategias-3-1-2-1 { counter-set: act-dosEstrategias-3-1-2-1 0; }
+#act-dosEstrategias-3-1-2-1 > li::marker { content: "("counter(act-dosEstrategias-3-1-2-1,lower-alpha)")"; }
+#act-dosEstrategias-3-1-2-1 > li { counter-increment: act-dosEstrategias-3-1-2-1; }
+#act-problemasNumerosAdolescentes-2-2 { counter-set: act-problemasNumerosAdolescentes-2-2 0; }
+#act-problemasNumerosAdolescentes-2-2 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-2-2,decimal)"."; }
+#act-problemasNumerosAdolescentes-2-2 > li { counter-increment: act-problemasNumerosAdolescentes-2-2; }
+#act-problemasNumerosAdolescentes-3-1 { counter-set: act-problemasNumerosAdolescentes-3-1 0; }
+#act-problemasNumerosAdolescentes-3-1 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-3-1,decimal)"."; }
+#act-problemasNumerosAdolescentes-3-1 > li { counter-increment: act-problemasNumerosAdolescentes-3-1; }
+#act-factorMayorQue10-2-1 { counter-set: act-factorMayorQue10-2-1 0; }
+#act-factorMayorQue10-2-1 > li::marker { content: ""counter(act-factorMayorQue10-2-1,decimal)"."; }
+#act-factorMayorQue10-2-1 > li { counter-increment: act-factorMayorQue10-2-1; }
+#act-factorMayorQue10-3-1 { counter-set: act-factorMayorQue10-3-1 0; }
+#act-factorMayorQue10-3-1 > li::marker { content: ""counter(act-factorMayorQue10-3-1,decimal)"."; }
+#act-factorMayorQue10-3-1 > li { counter-increment: act-factorMayorQue10-3-1; }
+#act-formasRepresentarMultiplicacion-2-3 { counter-set: act-formasRepresentarMultiplicacion-2-3 0; }
+#act-formasRepresentarMultiplicacion-2-3 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-2-3,decimal)"."; }
+#act-formasRepresentarMultiplicacion-2-3 > li { counter-increment: act-formasRepresentarMultiplicacion-2-3; }
+#act-formasRepresentarMultiplicacion-3-1 { counter-set: act-formasRepresentarMultiplicacion-3-1 0; }
+#act-formasRepresentarMultiplicacion-3-1 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-3-1,decimal)"."; }
+#act-formasRepresentarMultiplicacion-3-1 > li { counter-increment: act-formasRepresentarMultiplicacion-3-1; }
+#act-problemasMultNums11a19MasGrandes-2-2 { counter-set: act-problemasMultNums11a19MasGrandes-2-2 0; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-2-2,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li { counter-increment: act-problemasMultNums11a19MasGrandes-2-2; }
+#act-problemasMultNums11a19MasGrandes-3-1 { counter-set: act-problemasMultNums11a19MasGrandes-3-1 0; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-3-1,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li { counter-increment: act-problemasMultNums11a19MasGrandes-3-1; }
+#warm-numTalk-3MultiplicadoPor-2-2 { counter-set: warm-numTalk-3MultiplicadoPor-2-2 0; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li::marker { content: ""counter(warm-numTalk-3MultiplicadoPor-2-2,upper-alpha)"."; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li { counter-increment: warm-numTalk-3MultiplicadoPor-2-2; }
+#act-representar4por23-2-1 { counter-set: act-representar4por23-2-1 0; }
+#act-representar4por23-2-1 > li::marker { content: ""counter(act-representar4por23-2-1,decimal)"."; }
+#act-representar4por23-2-1 > li { counter-increment: act-representar4por23-2-1; }
+#act-representar4por23-2-1-1-3 { counter-set: act-representar4por23-2-1-1-3 0; }
+#act-representar4por23-2-1-1-3 > li::marker { content: "("counter(act-representar4por23-2-1-1-3,lower-alpha)")"; }
+#act-representar4por23-2-1-1-3 > li { counter-increment: act-representar4por23-2-1-1-3; }
+#act-representar4por23-2-1-2-3 { counter-set: act-representar4por23-2-1-2-3 0; }
+#act-representar4por23-2-1-2-3 > li::marker { content: "("counter(act-representar4por23-2-1-2-3,lower-alpha)")"; }
+#act-representar4por23-2-1-2-3 > li { counter-increment: act-representar4por23-2-1-2-3; }
+#act-representar4por23-3-1 { counter-set: act-representar4por23-3-1 0; }
+#act-representar4por23-3-1 > li::marker { content: ""counter(act-representar4por23-3-1,decimal)"."; }
+#act-representar4por23-3-1 > li { counter-increment: act-representar4por23-3-1; }
+#act-representar4por23-3-1-1-2 { counter-set: act-representar4por23-3-1-1-2 0; }
+#act-representar4por23-3-1-1-2 > li::marker { content: "("counter(act-representar4por23-3-1-1-2,lower-alpha)")"; }
+#act-representar4por23-3-1-1-2 > li { counter-increment: act-representar4por23-3-1-1-2; }
+#act-representar4por23-3-1-2-2 { counter-set: act-representar4por23-3-1-2-2 0; }
+#act-representar4por23-3-1-2-2 > li::marker { content: "("counter(act-representar4por23-3-1-2-2,lower-alpha)")"; }
+#act-representar4por23-3-1-2-2 > li { counter-increment: act-representar4por23-3-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-2-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 { counter-set: act-prodsUnDigitoPorMayorA20-2-1-2-2 0; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-2-1-2-2,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-3-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-3-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-3-1-2-1,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1-2-1; }
+#act-juegoCerca100Multiplicacion-2-4 { counter-set: act-juegoCerca100Multiplicacion-2-4 0; }
+#act-juegoCerca100Multiplicacion-2-4 > li::marker { content: ""counter(act-juegoCerca100Multiplicacion-2-4,decimal)"."; }
+#act-juegoCerca100Multiplicacion-2-4 > li { counter-increment: act-juegoCerca100Multiplicacion-2-4; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 { counter-set: warm-verdaderoFalso-multiplicarPor10-2-2 0; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-multiplicarPor10-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li { counter-increment: warm-verdaderoFalso-multiplicarPor10-2-2; }
+#act-problemasMultiplicativosFiesta-2-3 { counter-set: act-problemasMultiplicativosFiesta-2-3 0; }
+#act-problemasMultiplicativosFiesta-2-3 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-2-3,decimal)"."; }
+#act-problemasMultiplicativosFiesta-2-3 > li { counter-increment: act-problemasMultiplicativosFiesta-2-3; }
+#act-problemasMultiplicativosFiesta-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-3-1,decimal)"."; }
+#act-problemasMultiplicativosFiesta-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-1-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-1-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-1-1; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-2-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-2-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-2-1; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-3-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-3-1; }
+#cool-globosGruposIguales-2-2 { counter-set: cool-globosGruposIguales-2-2 0; }
+#cool-globosGruposIguales-2-2 > li::marker { content: "("counter(cool-globosGruposIguales-2-2,lower-alpha)")"; }
+#cool-globosGruposIguales-2-2 > li { counter-increment: cool-globosGruposIguales-2-2; }
+#cool-globosGruposIguales-3-1 { counter-set: cool-globosGruposIguales-3-1 0; }
+#cool-globosGruposIguales-3-1 > li::marker { content: "("counter(cool-globosGruposIguales-3-1,lower-alpha)")"; }
+#cool-globosGruposIguales-3-1 > li { counter-increment: cool-globosGruposIguales-3-1; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-1-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-1-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-1-1; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-2-1; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-5-1-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-1-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-1-1-2; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-5-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-2-1; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-1-2; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-3-1; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-2-2; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-3-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-3-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-3-2; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 { counter-set: gra3-uni4-secC-ProblemasPractica-11-2-3 0; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-2-3,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-2-3; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-11-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-3-1; }
+#act-gruposEnBusYAlmuerzo-2-2 { counter-set: act-gruposEnBusYAlmuerzo-2-2 0; }
+#act-gruposEnBusYAlmuerzo-2-2 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-2-2,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-2-2 > li { counter-increment: act-gruposEnBusYAlmuerzo-2-2; }
+#act-gruposEnBusYAlmuerzo-3-1 { counter-set: act-gruposEnBusYAlmuerzo-3-1 0; }
+#act-gruposEnBusYAlmuerzo-3-1 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-3-1,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-3-1 > li { counter-increment: act-gruposEnBusYAlmuerzo-3-1; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 { counter-set: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 0; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-unidadesDecenasVeintenas-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li { counter-increment: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2; }
+#act-dividirConBloquesBase10-2-1-1 { counter-set: act-dividirConBloquesBase10-2-1-1 0; }
+#act-dividirConBloquesBase10-2-1-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-2-1-1,decimal)"."; }
+#act-dividirConBloquesBase10-2-1-1 > li { counter-increment: act-dividirConBloquesBase10-2-1-1; }
+#act-dividirConBloquesBase10-2-1-1-1-2 { counter-set: act-dividirConBloquesBase10-2-1-1-1-2 0; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-1-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-1-2; }
+#act-dividirConBloquesBase10-2-1-1-2-2 { counter-set: act-dividirConBloquesBase10-2-1-1-2-2 0; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-2-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-2-2; }
+#act-dividirConBloquesBase10-3-1 { counter-set: act-dividirConBloquesBase10-3-1 0; }
+#act-dividirConBloquesBase10-3-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-3-1,decimal)"."; }
+#act-dividirConBloquesBase10-3-1 > li { counter-increment: act-dividirConBloquesBase10-3-1; }
+#act-dividirConBloquesBase10-3-1-1-1 { counter-set: act-dividirConBloquesBase10-3-1-1-1 0; }
+#act-dividirConBloquesBase10-3-1-1-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-1-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-1-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-1-1; }
+#act-dividirConBloquesBase10-3-1-2-1 { counter-set: act-dividirConBloquesBase10-3-1-2-1 0; }
+#act-dividirConBloquesBase10-3-1-2-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-2-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-2-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-2-1; }
+#act-formasMostrarDivision-2-6 { counter-set: act-formasMostrarDivision-2-6 0; }
+#act-formasMostrarDivision-2-6 > li::marker { content: ""counter(act-formasMostrarDivision-2-6,decimal)"."; }
+#act-formasMostrarDivision-2-6 > li { counter-increment: act-formasMostrarDivision-2-6; }
+#act-formasMostrarDivision-2-6-1-2 { counter-set: act-formasMostrarDivision-2-6-1-2 0; }
+#act-formasMostrarDivision-2-6-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-1-2 > li { counter-increment: act-formasMostrarDivision-2-6-1-2; }
+#act-formasMostrarDivision-2-6-2-2 { counter-set: act-formasMostrarDivision-2-6-2-2 0; }
+#act-formasMostrarDivision-2-6-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-2-2 > li { counter-increment: act-formasMostrarDivision-2-6-2-2; }
+#act-formasMostrarDivision-3-1 { counter-set: act-formasMostrarDivision-3-1 0; }
+#act-formasMostrarDivision-3-1 > li::marker { content: ""counter(act-formasMostrarDivision-3-1,decimal)"."; }
+#act-formasMostrarDivision-3-1 > li { counter-increment: act-formasMostrarDivision-3-1; }
+#act-formasMostrarDivision-3-1-1-2 { counter-set: act-formasMostrarDivision-3-1-1-2 0; }
+#act-formasMostrarDivision-3-1-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-1-2 > li { counter-increment: act-formasMostrarDivision-3-1-1-2; }
+#act-formasMostrarDivision-3-1-2-2 { counter-set: act-formasMostrarDivision-3-1-2-2 0; }
+#act-formasMostrarDivision-3-1-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-2-2 > li { counter-increment: act-formasMostrarDivision-3-1-2-2; }
+#warm-numTalk-multYDiv-2-2 { counter-set: warm-numTalk-multYDiv-2-2 0; }
+#warm-numTalk-multYDiv-2-2 > li::marker { content: ""counter(warm-numTalk-multYDiv-2-2,upper-alpha)"."; }
+#warm-numTalk-multYDiv-2-2 > li { counter-increment: warm-numTalk-multYDiv-2-2; }
+#act-formasDividir-2-1 { counter-set: act-formasDividir-2-1 0; }
+#act-formasDividir-2-1 > li::marker { content: ""counter(act-formasDividir-2-1,decimal)"."; }
+#act-formasDividir-2-1 > li { counter-increment: act-formasDividir-2-1; }
+#act-formasDividir-3-1 { counter-set: act-formasDividir-3-1 0; }
+#act-formasDividir-3-1 > li::marker { content: ""counter(act-formasDividir-3-1,decimal)"."; }
+#act-formasDividir-3-1 > li { counter-increment: act-formasDividir-3-1; }
+#act-ComoDividirias-2-2 { counter-set: act-ComoDividirias-2-2 0; }
+#act-ComoDividirias-2-2 > li::marker { content: ""counter(act-ComoDividirias-2-2,decimal)"."; }
+#act-ComoDividirias-2-2 > li { counter-increment: act-ComoDividirias-2-2; }
+#act-ComoDividirias-3-1 { counter-set: act-ComoDividirias-3-1 0; }
+#act-ComoDividirias-3-1 > li::marker { content: ""counter(act-ComoDividirias-3-1,decimal)"."; }
+#act-ComoDividirias-3-1 > li { counter-increment: act-ComoDividirias-3-1; }
+#act-comparaDivideHasta100-2-3-2 { counter-set: act-comparaDivideHasta100-2-3-2 0; }
+#act-comparaDivideHasta100-2-3-2 > li::marker { content: ""counter(act-comparaDivideHasta100-2-3-2,decimal)"."; }
+#act-comparaDivideHasta100-2-3-2 > li { counter-increment: act-comparaDivideHasta100-2-3-2; }
+#act-diasDeManzanas-2-2 { counter-set: act-diasDeManzanas-2-2 0; }
+#act-diasDeManzanas-2-2 > li::marker { content: ""counter(act-diasDeManzanas-2-2,decimal)"."; }
+#act-diasDeManzanas-2-2 > li { counter-increment: act-diasDeManzanas-2-2; }
+#act-diasDeManzanas-2-2-1-2 { counter-set: act-diasDeManzanas-2-2-1-2 0; }
+#act-diasDeManzanas-2-2-1-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-1-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-1-2 > li { counter-increment: act-diasDeManzanas-2-2-1-2; }
+#act-diasDeManzanas-2-2-2-2 { counter-set: act-diasDeManzanas-2-2-2-2 0; }
+#act-diasDeManzanas-2-2-2-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-2-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-2-2 > li { counter-increment: act-diasDeManzanas-2-2-2-2; }
+#act-diasDeManzanas-2-2-3-2 { counter-set: act-diasDeManzanas-2-2-3-2 0; }
+#act-diasDeManzanas-2-2-3-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-3-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-3-2 > li { counter-increment: act-diasDeManzanas-2-2-3-2; }
+#act-diasDeManzanas-3-1 { counter-set: act-diasDeManzanas-3-1 0; }
+#act-diasDeManzanas-3-1 > li::marker { content: ""counter(act-diasDeManzanas-3-1,decimal)"."; }
+#act-diasDeManzanas-3-1 > li { counter-increment: act-diasDeManzanas-3-1; }
+#act-diasDeManzanas-3-1-1-1 { counter-set: act-diasDeManzanas-3-1-1-1 0; }
+#act-diasDeManzanas-3-1-1-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-1-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-1-1 > li { counter-increment: act-diasDeManzanas-3-1-1-1; }
+#act-diasDeManzanas-3-1-2-1 { counter-set: act-diasDeManzanas-3-1-2-1 0; }
+#act-diasDeManzanas-3-1-2-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-2-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-2-1 > li { counter-increment: act-diasDeManzanas-3-1-2-1; }
+#act-diasDeManzanas-3-1-3-1 { counter-set: act-diasDeManzanas-3-1-3-1 0; }
+#act-diasDeManzanas-3-1-3-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-3-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-3-1 > li { counter-increment: act-diasDeManzanas-3-1-3-1; }
+#cool-manzanasEnLaHuerta-2-2 { counter-set: cool-manzanasEnLaHuerta-2-2 0; }
+#cool-manzanasEnLaHuerta-2-2 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-2-2,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-2-2 > li { counter-increment: cool-manzanasEnLaHuerta-2-2; }
+#cool-manzanasEnLaHuerta-3-1 { counter-set: cool-manzanasEnLaHuerta-3-1 0; }
+#cool-manzanasEnLaHuerta-3-1 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-3-1,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-3-1 > li { counter-increment: cool-manzanasEnLaHuerta-3-1; }
+#act-produccionFresas-2-2 { counter-set: act-produccionFresas-2-2 0; }
+#act-produccionFresas-2-2 > li::marker { content: ""counter(act-produccionFresas-2-2,decimal)"."; }
+#act-produccionFresas-2-2 > li { counter-increment: act-produccionFresas-2-2; }
+#act-produccionFresas-2-2-1-2 { counter-set: act-produccionFresas-2-2-1-2 0; }
+#act-produccionFresas-2-2-1-2 > li::marker { content: "("counter(act-produccionFresas-2-2-1-2,lower-alpha)")"; }
+#act-produccionFresas-2-2-1-2 > li { counter-increment: act-produccionFresas-2-2-1-2; }
+#act-produccionFresas-3-1 { counter-set: act-produccionFresas-3-1 0; }
+#act-produccionFresas-3-1 > li::marker { content: ""counter(act-produccionFresas-3-1,decimal)"."; }
+#act-produccionFresas-3-1 > li { counter-increment: act-produccionFresas-3-1; }
+#act-produccionFresas-3-1-1-2 { counter-set: act-produccionFresas-3-1-1-2 0; }
+#act-produccionFresas-3-1-1-2 > li::marker { content: "("counter(act-produccionFresas-3-1-1-2,lower-alpha)")"; }
+#act-produccionFresas-3-1-1-2 > li { counter-increment: act-produccionFresas-3-1-1-2; }
+#act-planeemosLaHuerta-2-1 { counter-set: act-planeemosLaHuerta-2-1 0; }
+#act-planeemosLaHuerta-2-1 > li::marker { content: ""counter(act-planeemosLaHuerta-2-1,decimal)"."; }
+#act-planeemosLaHuerta-2-1 > li { counter-increment: act-planeemosLaHuerta-2-1; }
+#act-planeemosLaHuerta-2-1-1-2 { counter-set: act-planeemosLaHuerta-2-1-1-2 0; }
+#act-planeemosLaHuerta-2-1-1-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-1-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-1-2 > li { counter-increment: act-planeemosLaHuerta-2-1-1-2; }
+#act-planeemosLaHuerta-2-1-2-2 { counter-set: act-planeemosLaHuerta-2-1-2-2 0; }
+#act-planeemosLaHuerta-2-1-2-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-2-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-2-2 > li { counter-increment: act-planeemosLaHuerta-2-1-2-2; }
+#act-planeemosLaHuerta-3-2 { counter-set: act-planeemosLaHuerta-3-2 0; }
+#act-planeemosLaHuerta-3-2 > li::marker { content: ""counter(act-planeemosLaHuerta-3-2,decimal)"."; }
+#act-planeemosLaHuerta-3-2 > li { counter-increment: act-planeemosLaHuerta-3-2; }
+#act-planeemosLaHuerta-3-2-2-1 { counter-set: act-planeemosLaHuerta-3-2-2-1 0; }
+#act-planeemosLaHuerta-3-2-2-1 > li::marker { content: "("counter(act-planeemosLaHuerta-3-2-2-1,lower-alpha)")"; }
+#act-planeemosLaHuerta-3-2-2-1 > li { counter-increment: act-planeemosLaHuerta-3-2-2-1; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-4-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-1-1; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-4-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-2-2; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-5-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-1-1; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-2-2; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-6-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-1-2; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-6-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-2-1; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-1-2; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-7-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-2-1; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-2-2; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-3-2; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-2-2; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-3-2; }
+</style>
 </head>
 <body class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -384,22 +932,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="centros-gra3-uni4.html" class="internal"><span class="title">Centros</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="BLM-gra3-uni4.html" class="internal"><span class="title">Hojas reproducibles</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-todoSobreBichos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Todo sobre bichos)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-mesaRedondaDeDivision.html" class="internal"><span class="title">Hoja de registro (Mesa redonda de división)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-hojaDeRegistro.html" class="internal"><span class="title">Hoja de registro (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-tarjetasDeDigitos.html" class="internal"><span class="title">Tarjetas de dígitos</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-cercaDe100Multiplicacion.html" class="internal"><span class="title">Tablero de juego para “Cerca de 100, multiplicación”</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-comparaDivideHasta100-tarjetas.html" class="internal"><span class="title">Tarjetas (“Compara: Divide hasta 100” [OPCIONAL])</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaAventuraConManzanas-tabla.html" class="internal"><span class="title">Tabla (Una aventura con manzanas)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQue-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQueMult-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-enElMercadoAgricola-tabla.html" class="internal"><span class="title">Tabla (En el mercado agrícola)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaGranCantidadDeDolares-tablas.html" class="internal"><span class="title">Tablas (Una gran cantidad de dólares)</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-references"><div class="toc-title-box"><a href="gra3-uni4-11.html" class="internal"><span class="title">Atribuciones de imágenes</span></a></div></li>
 <li class="toc-item toc-solutions"><div class="toc-title-box"><a href="gra3-uni4-12.html" class="internal"><span class="title">Actividades de cierre</span></a></div></li>
@@ -409,7 +942,9 @@ window.MathJax = {
 <span class="type">Subsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Lección 15 - Grupos iguales, números más grandes</span>
 </h2>
 <article class="objectives goal-like" id="lec-problemasMult11a19MasGrandes-4"><h3 class="heading"><span class="type">Objetivos de aprendizaje</span></h3>
-<ul class="disc"><li id="lec-problemasMult11a19MasGrandes-4-1-1"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-4-1-1">Multiplicar con números hasta 100, donde un factor es un número del 11 al 19.</div></li></ul></article><section class="introduction" id="lec-problemasMult11a19MasGrandes-5"> <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-1"><h3 class="heading"><span class="title">Estándares CCSS asociados.</span></h3> <div class="para" id="lec-problemasMult11a19MasGrandes-5-1-2">3.MD.C.7.c, 3.OA.A.3, 3.OA.B.5, 3.OA.C.7</div></section>  <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-2"><h3 class="heading"><span class="title">Momentos de la lección.</span></h3> <div>
+<ul class="disc" id="lec-problemasMult11a19MasGrandes-4-1"><li id="lec-problemasMult11a19MasGrandes-4-1-1"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-4-1-1">Multiplicar con números hasta 100, donde un factor es un número del 11 al 19.</div></li></ul></article><section class="introduction" id="lec-problemasMult11a19MasGrandes-5"><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-1"><h3 class="heading"><span class="title">Estándares CCSS asociados.</span></h3>
+<div class="para" id="lec-problemasMult11a19MasGrandes-5-1-2">3.MD.C.7.c, 3.OA.A.3, 3.OA.B.5, 3.OA.C.7</div></section><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-2"><h3 class="heading"><span class="title">Momentos de la lección.</span></h3>
+<div>
 <a href="lec-problemasMult11a19MasGrandes.html#lec-problemasMult11a19MasGrandes-warm" class="internal" title="Subsubsección: Calentamiento (10 mins)">Subsubsección </a> Calentamiento (10 mins)</div>
 <div>
 <a href="lec-problemasMult11a19MasGrandes.html#lec-problemasMult11a19MasGrandes-act1" class="internal" title="Subsubsección: Actividad 1 (20 mins)">Subsubsección </a> Actividad 1 (20 mins)</div>
@@ -418,10 +953,12 @@ window.MathJax = {
 <div>
 <a href="lec-problemasMult11a19MasGrandes.html#lec-problemasMult11a19MasGrandes-sintesis" class="internal" title="Subsubsección: Síntesis de la lección (10 mins)">Subsubsección </a> Síntesis de la lección (10 mins)</div>
 <div>
-<a href="lec-problemasMult11a19MasGrandes.html#lec-problemasMult11a19MasGrandes-cool" class="internal" title="Preguntas de comprensión: Actividad de cierre (5 mins)">Preguntas de comprensión </a> Actividad de cierre (5 mins)</div></section>  <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-3"><h3 class="heading"><span class="title">Propósito de la lección.</span></h3> <div class="para" id="lec-problemasMult11a19MasGrandes-5-3-2">Que los estudiantes multipliquen con números hasta 100,  donde un factor es un número del 11 al 19.</div></section>  <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-4"><h3 class="heading"><span class="title">Materiales.</span></h3> <ul class="disc">
+<a href="lec-problemasMult11a19MasGrandes.html#lec-problemasMult11a19MasGrandes-cool" class="internal" title="Preguntas de comprensión: Actividad de cierre (5 mins)">Preguntas de comprensión </a> Actividad de cierre (5 mins)</div></section><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-3"><h3 class="heading"><span class="title">Propósito de la lección.</span></h3>
+<div class="para" id="lec-problemasMult11a19MasGrandes-5-3-2">Que los estudiantes multipliquen con números hasta 100,  donde un factor es un número del 11 al 19.</div></section><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-4"><h3 class="heading"><span class="title">Materiales.</span></h3>
+<ul class="disc" id="lec-problemasMult11a19MasGrandes-5-4-2">
 <li id="lec-problemasMult11a19MasGrandes-5-4-2-1">
 <div class="para" id="lec-problemasMult11a19MasGrandes-5-4-2-1-1">Actividad 1</div>
-<ul class="circle">
+<ul class="circle" id="lec-problemasMult11a19MasGrandes-5-4-2-1-2">
 <li id="lec-problemasMult11a19MasGrandes-5-4-2-1-2-1"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-5-4-2-1-2-1">Bloques en base 10</div></li>
 <li id="lec-problemasMult11a19MasGrandes-5-4-2-1-2-2"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-5-4-2-1-2-2">Herramientas para crear una presentación visual</div></li>
 <li id="lec-problemasMult11a19MasGrandes-5-4-2-1-2-3"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-5-4-2-1-2-3"><a href="blm-papelCuadriculadoCentimetro.html" class="internal" title="Subsección: Hojas reproducibles: papel cuadriculado de 1 centímetro">Hojas reproducibles: papel cuadriculado de 1 centímetro</a></div></li>
@@ -429,17 +966,23 @@ window.MathJax = {
 </li>
 <li id="lec-problemasMult11a19MasGrandes-5-4-2-2">
 <div class="para" id="lec-problemasMult11a19MasGrandes-5-4-2-2-1">Actividad 2</div>
-<ul class="circle"><li id="lec-problemasMult11a19MasGrandes-5-4-2-2-2-1"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-5-4-2-2-2-1">Notas adhesivas</div></li></ul>
+<ul class="circle" id="lec-problemasMult11a19MasGrandes-5-4-2-2-2"><li id="lec-problemasMult11a19MasGrandes-5-4-2-2-2-1"><div class="para" id="p-derived-lec-problemasMult11a19MasGrandes-5-4-2-2-2-1">Notas adhesivas</div></li></ul>
 </li>
-</ul></section>  <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-5"><h3 class="heading"><span class="title">Narrativa de la lección.</span></h3> <div class="para" id="lec-problemasMult11a19MasGrandes-5-5-2">En esta lección, los estudiantes aplican estrategias para resolver problemas con factores del 11 al 19. Se destaca el uso de diferentes formas de representación y resolución y se destaca el uso de digramas de área. Se realiza un recorrido por el salón para compartir las diferentes estrategias utilizadas. Es importante que los diagramas de área presentados a los estudiantes que no sean trabajo de ellos estén siempre a escala.</div> </section>  <section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-6"><h3 class="heading"><span class="title">Preguntas de reflexión.</span></h3> <div class="para" id="lec-problemasMult11a19MasGrandes-5-6-2">¿Qué pregunta me gustaría haber hecho hoy? ¿Cuándo y por qué debí haberla hecho?</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-warm"><h3 class="heading hide-type">
+</ul></section><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-5"><h3 class="heading"><span class="title">Narrativa de la lección.</span></h3>
+<div class="para" id="lec-problemasMult11a19MasGrandes-5-5-2">En esta lección, los estudiantes aplican estrategias para resolver problemas con factores del 11 al 19. Se destaca el uso de diferentes formas de representación y resolución y se destaca el uso de digramas de área. Se realiza un recorrido por el salón para compartir las diferentes estrategias utilizadas. Es importante que los diagramas de área presentados a los estudiantes que no sean trabajo de ellos estén siempre a escala.</div></section><section class="paragraphs" id="lec-problemasMult11a19MasGrandes-5-6"><h3 class="heading"><span class="title">Preguntas de reflexión.</span></h3>
+<div class="para" id="lec-problemasMult11a19MasGrandes-5-6-2">¿Qué pregunta me gustaría haber hecho hoy? ¿Cuándo y por qué debí haberla hecho?</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-warm"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Calentamiento (10 mins)</span>
 </h3>
-<section class="paragraphs" id="warm-cualDiferente-rectangulos-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="warm-cualDiferente-rectangulos-4-1-2">10 minutos</div></section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="warm-cualDiferente-rectangulos-4-2-2">En esta actividad de calentamiento, los estudiantes comparan cuatro diagramas de área con descomposiciones en dos áreas que representan productos diferentes. Esto les ayuda a usar el lenguaje de manera precisa y al usted como profesor a escuchar cómo los estudiantes hablan sobre los diagramas. Durante la síntesis, se le pide a los estudiantes que expliquen el significado de la terminología que utilizan, como <dfn class="terminology">longitud de los lado</dfn>, <dfn class="terminology">área</dfn>, <dfn class="terminology">partes</dfn> y <dfn class="terminology">descomposición</dfn>.</div> </section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="warm-cualDiferente-rectangulos-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="warm-cualDiferente-rectangulos-4-1-2">10 minutos</div></section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="warm-cualDiferente-rectangulos-4-2-2">En esta actividad de calentamiento, los estudiantes comparan cuatro diagramas de área con descomposiciones en dos áreas que representan productos diferentes. Esto les ayuda a usar el lenguaje de manera precisa y al usted como profesor a escuchar cómo los estudiantes hablan sobre los diagramas. Durante la síntesis, se le pide a los estudiantes que expliquen el significado de la terminología que utilizan, como <dfn class="terminology">longitud de los lado</dfn>, <dfn class="terminology">área</dfn>, <dfn class="terminology">partes</dfn> y <dfn class="terminology">descomposición</dfn>.</div></section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="warm-cualDiferente-rectangulos-4-3-2">
 <li id="warm-cualDiferente-rectangulos-4-3-2-1"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-3-2-1">Grupos de 2</div></li>
 <li id="warm-cualDiferente-rectangulos-4-3-2-2"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-3-2-2">Mostrar la imagen.</div></li>
 <li id="warm-cualDiferente-rectangulos-4-3-2-3"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-3-2-3">“Escojan uno que sea diferente. Prepárense para compartir por qué es diferente”</div></li>
 <li id="warm-cualDiferente-rectangulos-4-3-2-4"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-3-2-4">1 minuto: tiempo para pensar en silencio</div></li>
-</ul></section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="warm-cualDiferente-rectangulos-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="warm-cualDiferente-rectangulos-4-4-2">
 <li id="warm-cualDiferente-rectangulos-4-4-2-1"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-4-2-1">“Discutan con su pareja cómo pensaron”</div></li>
 <li id="warm-cualDiferente-rectangulos-4-4-2-2"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-4-2-2">2–3 minutos: discusión en pareja</div></li>
 <li id="warm-cualDiferente-rectangulos-4-4-2-3"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-4-4-2-3">Comparta y registre las respuestas.</div></li>
@@ -466,25 +1009,31 @@ window.MathJax = {
 <img src="external/svg-source/tikz-file-149353-scale13.svg" role="img" class="contained" alt="Diagrama de área. Medida superior de 14. Medida de lado de 7.">
 </div>
 </div></div>
-<div class="solutions"><details id="warm-cualDiferente-rectangulos-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like">
-<div class="para" id="warm-cualDiferente-rectangulos-3-1">Ejemplos de respuestas:</div> <ul class="disc">
+<div class="solutions"><details id="warm-cualDiferente-rectangulos-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="warm-cualDiferente-rectangulos-3-1">Ejemplos de respuestas:</div>
+<ul class="disc" id="warm-cualDiferente-rectangulos-3-2">
 <li id="warm-cualDiferente-rectangulos-3-2-1"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-3-2-1">A es el único que no tiene un rectángulo en blanco en su interior.</div></li>
 <li id="warm-cualDiferente-rectangulos-3-2-2"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-3-2-2">B es el único que no representa <span class="process-math">\(7 \times 14\text{.}\)</span>
 </div></li>
 <li id="warm-cualDiferente-rectangulos-3-2-3"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-3-2-3">C es el único en el que las longitudes no corresponden con el tamaño de los números.</div></li>
 <li id="warm-cualDiferente-rectangulos-3-2-4"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-3-2-4">D es el único que no tiene ninguna línea adentro del rectángulo.</div></li>
 </ul>
-</div></details></div></article><section class="paragraphs" id="warm-cualDiferente-rectangulos-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+</div></details></div></article><section class="paragraphs" id="warm-cualDiferente-rectangulos-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="warm-cualDiferente-rectangulos-5-1-2">
 <li id="warm-cualDiferente-rectangulos-5-1-2-1"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-5-1-2-1">“¿Por qué no tenía sentido que el rectángulo de la imagen C estuviera dividido por la mitad?”</div></li>
 <li id="warm-cualDiferente-rectangulos-5-1-2-2"><div class="para" id="p-derived-warm-cualDiferente-rectangulos-5-1-2-2">Considere preguntar: “Encontremos al menos una razón por la que cada uno es diferente”</div></li>
 </ul></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-act1"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad 1 (20 mins)</span>
 </h3>
-<section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="act-problemasMultNums11a19MasGrandes-4-1-2">20 minutos</div></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="act-problemasMultNums11a19MasGrandes-4-2-2">En esta actividad, los estudiantes resuelven problemas de multiplicación con factores del 11 al 19. Pueden elegir cómo resolver y representar los problemas. En el problema 3, se busca que los estudiantes utilicen diagramas de área de diferentes formas en los pósters para la próxima actividad. De esta manera, los estudiantes desarrollarán habilidades de razonamiento abstracto y cuantitativo al interpretar historias y representarlas con diagramas, expresiones o ecuaciones.</div> </section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-3"><h5 class="heading"><span class="title">Materiales.</span></h5> <ul class="disc">
+<section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="act-problemasMultNums11a19MasGrandes-4-1-2">20 minutos</div></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="act-problemasMultNums11a19MasGrandes-4-2-2">En esta actividad, los estudiantes resuelven problemas de multiplicación con factores del 11 al 19. Pueden elegir cómo resolver y representar los problemas. En el problema 3, se busca que los estudiantes utilicen diagramas de área de diferentes formas en los pósters para la próxima actividad. De esta manera, los estudiantes desarrollarán habilidades de razonamiento abstracto y cuantitativo al interpretar historias y representarlas con diagramas, expresiones o ecuaciones.</div></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-3"><h5 class="heading"><span class="title">Materiales.</span></h5>
+<ul class="disc" id="act-problemasMultNums11a19MasGrandes-4-3-2">
 <li id="act-problemasMultNums11a19MasGrandes-4-3-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-3-2-1">Bloques en base 10</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-3-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-3-2-2">Herramientas para crear una presentación visual</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-3-2-3"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-3-2-3"><a href="blm-papelCuadriculadoCentimetro.html" class="internal" title="Subsección: Hojas reproducibles: papel cuadriculado de 1 centímetro">Hojas reproducibles: papel cuadriculado de 1 centímetro</a></div></li>
-</ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-4"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-4"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="act-problemasMultNums11a19MasGrandes-4-4-2">
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-1">Grupos de 2</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-2">“¿En qué lugares de su comunidad ven arte?”</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-3"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-3">30 segundos: tiempo para pensar en silencio</div></li>
@@ -493,19 +1042,20 @@ window.MathJax = {
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-6"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-6">Dar a los estudiantes acceso a papel cuadriculado y bloques en base diez.</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-7"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-7">“Hablen con su compañero sobre cómo podrían resolver estos problemas”</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-4-2-8"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-4-2-8">1-2 minutos: discusión en pareja</div></li>
-</ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-5"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-4-5"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="act-problemasMultNums11a19MasGrandes-4-5-2">
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-1">“Resuelvan estos problemas. Expliquen o muestren cómo razonaron”</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-2">6-8 minutos: tiempo de trabajo independiente</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-3">
 <div class="para" id="act-problemasMultNums11a19MasGrandes-4-5-2-3-1">Mientras los estudiantes trabajan, considere preguntar:</div>
-<ul class="circle">
+<ul class="circle" id="act-problemasMultNums11a19MasGrandes-4-5-2-3-2">
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-3-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-3-2-1">“¿De qué forma pueden representar la manera en la que piensan en el problema?”</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-3-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-3-2-2">“¿En qué parte de su trabajo pueden ver <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>?”</div></li>
 </ul>
 </li>
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-4">
 <div class="para" id="act-problemasMultNums11a19MasGrandes-4-5-2-4-1">Identifique:</div>
-<ul class="circle">
+<ul class="circle" id="act-problemasMultNums11a19MasGrandes-4-5-2-4-2">
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-4-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-4-2-1">diferentes formas en que los estudiantes utilizan el diagrama de área en el tercer problema</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-4-5-2-4-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-4-5-2-4-2-2">estudiantes que representan el tercer problema de la misma manera para emparejar y crear un póster juntos</div></li>
 </ul>
@@ -516,13 +1066,13 @@ window.MathJax = {
 </ul></section><article class="activity project-like" id="act-problemasMultNums11a19MasGrandes"><h4 class="heading">
 <span class="type">Actividad</span><span class="space"> </span><span class="codenumber">61</span><span class="period">.</span><span class="space"> </span><span class="title">Grupos iguales, números más grandes.</span>
 </h4>
-<div class="para" id="act-problemasMultNums11a19MasGrandes-2-1">Resuelve cada problema. Explica o muestra tu razonamiento.</div> <ol class="decimal">
+<div class="para" id="act-problemasMultNums11a19MasGrandes-2-1">Resuelve cada problema. Explica o muestra tu razonamiento.</div> <ol class="decimal" id="act-problemasMultNums11a19MasGrandes-2-2">
 <li id="act-problemasMultNums11a19MasGrandes-2-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-2-2-1">Noah ve un gran mural pintado que tiene lados de longitudes 15 pies y 4 pies. ¿Cuál es el área del mural?</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-2-2-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-2-2-2">La familia de Noah compra un mosaico que tiene 12 filas y 8 columnas de baldosas de 1 pulgada de lado. ¿Cuál es el área del mosaico?</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-2-2-3"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-2-2-3">En el festival de arte, Noah usa tiza para ayudar a decorar un pedazo rectangular de acera de 6 pies por 14 pies. ¿Cuál es el área del pedazo de acera que Noah ayudó a decorar?</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-2-2-4"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-2-2-4">En el festival de arte, Noah compra un paquete de calcomanías. En el paquete hay 5 hojas y cada hoja tiene 16 calcomanías. ¿Cuántas calcomanías hay en el paquete?</div></li>
 </ol>
-<div class="solutions"><details id="act-problemasMultNums11a19MasGrandes-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like"><ol class="decimal">
+<div class="solutions"><details id="act-problemasMultNums11a19MasGrandes-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><ol class="decimal" id="act-problemasMultNums11a19MasGrandes-3-1">
 <li id="act-problemasMultNums11a19MasGrandes-3-1-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-3-1-1">60 pies cuadrados. Ejemplo de respuesta: El estudiante dibuja un diagrama de área y lo descompone en un rectángulo de 10 por 4 y un rectángulo de 5 por 4. Suma 40 y 20 para encontrar el producto.</div></li>
 <li id="act-problemasMultNums11a19MasGrandes-3-1-2"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-3-1-2">96 pulgadas cuadradas. Ejemplo de respuesta: <span class="process-math">\(10 \times 8 = 80\text{,}\)</span> <span class="process-math">\(2 \times 8 = 16\text{,}\)</span> <span class="process-math">\(80 + 16 = 96\)</span>
 </div></li>
@@ -532,21 +1082,30 @@ window.MathJax = {
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/svg-source/tikz-file-141828.svg" role="img" class="contained" alt="Diagrama de área."></div>
 </li>
 <li id="act-problemasMultNums11a19MasGrandes-3-1-4"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-3-1-4">80 calcomanías. Ejemplo de respuesta: El estudiante hace 5 grupos de 16 usando bloques en base diez, multiplica <span class="process-math">\(5 \times 10\)</span> y <span class="process-math">\(5 \times 6\text{,}\)</span> luego suma 50 y 30 para encontrar el producto.</div></li>
-</ol></div></details></div></article><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-1"><h5 class="heading"><span class="title">Para los estudiantes con dificultades.</span></h5> <div class="para" id="act-problemasMultNums11a19MasGrandes-5-1-2">Si los estudiantes no encuentran una solución a los problemas, considere preguntar: “¿De qué se trata este problema?” y “¿Cómo podrías representar el problema?”</div></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-2"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc"><li id="act-problemasMultNums11a19MasGrandes-5-2-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-5-2-2-1">Mostrar pósters alrededor del salón.</div></li></ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-3"><h5 class="heading"><span class="title">Acceso a estudiantes con discapacidades.</span></h5> <div class="para" id="act-problemasMultNums11a19MasGrandes-5-3-2">Participación: Proporcione acceso al despertar el interés. Aproveche que hay una elección. Invite a los estudiantes a seleccionar al menos 2 de los 4 problemas.</div> <div class="para" id="act-problemasMultNums11a19MasGrandes-5-3-3">Apoya la accesibilidad para: Organización, Atención, Habilidades Socioemocionales</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-act2"><h3 class="heading hide-type">
+</ol></div></details></div></article><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-1"><h5 class="heading"><span class="title">Para los estudiantes con dificultades.</span></h5>
+<div class="para" id="act-problemasMultNums11a19MasGrandes-5-1-2">Si los estudiantes no encuentran una solución a los problemas, considere preguntar: “¿De qué se trata este problema?” y “¿Cómo podrías representar el problema?”</div></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-2"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="act-problemasMultNums11a19MasGrandes-5-2-2"><li id="act-problemasMultNums11a19MasGrandes-5-2-2-1"><div class="para" id="p-derived-act-problemasMultNums11a19MasGrandes-5-2-2-1">Mostrar pósters alrededor del salón.</div></li></ul></section><section class="paragraphs" id="act-problemasMultNums11a19MasGrandes-5-3"><h5 class="heading"><span class="title">Acceso a estudiantes con discapacidades.</span></h5>
+<div class="para" id="act-problemasMultNums11a19MasGrandes-5-3-2">Participación: Proporcione acceso al despertar el interés. Aproveche que hay una elección. Invite a los estudiantes a seleccionar al menos 2 de los 4 problemas.</div>
+<div class="para" id="act-problemasMultNums11a19MasGrandes-5-3-3">Apoya la accesibilidad para: Organización, Atención, Habilidades Socioemocionales</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-act2"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad 2 (15 mins)</span>
 </h3>
-<section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-1-2">15 minutos</div></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-2-2">En esta actividad, los estudiantes ven cómo otros resolvieron un problema con un factor del 11 al 19. Dejan notas adhesivas explicando por qué creen que la respuesta tiene sentido o no. En la síntesis se resaltan ejemplos de cómo usaron diagramas de área para representar el problema.</div> </section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3"><h5 class="heading"><span class="title">Materiales.</span></h5> <ul class="disc"><li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3-2-1">Notas adhesivas</div></li></ul></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-1-2">15 minutos</div></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-2-2">En esta actividad, los estudiantes ven cómo otros resolvieron un problema con un factor del 11 al 19. Dejan notas adhesivas explicando por qué creen que la respuesta tiene sentido o no. En la síntesis se resaltan ejemplos de cómo usaron diagramas de área para representar el problema.</div></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3"><h5 class="heading"><span class="title">Materiales.</span></h5>
+<ul class="disc" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3-2"><li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-3-2-1">Notas adhesivas</div></li></ul></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2">
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-1">Grupos de 2</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-2"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-2">“Antes de que empiecen el recorrido por el salón, ¿qué representaciones esperan ver cuando observen el trabajo de los demás estudiantes?”</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-3"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-3">“Antes de que empiecen el recorrido por el salón, ¿qué representaciones esperan ver cuando observen el trabajo de los demás estudiantes?”</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-4"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-4">Comparta las respuestas.</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-5"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-4-2-5">Entregue notas adhesivas a los estudiantes.</div></li>
-</ul></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2">
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-1">“Mientras visitan los pósteres con su compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres. Además, dejen una nota adhesiva en la que describan por qué creen que la solución tiene o no tiene sentido”</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-2"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-2">8–10 minutos: Recorrido por el salón</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3">
 <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-1">Identifique a los estudiantes que utilizan diagramas de área de diferentes maneras para que compartan su trabajo en la síntesis. Específicamente:</div>
-<ul class="circle">
+<ul class="circle" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2">
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-1">un diagrama de área completamente cuadriculado sin etiquetas y sin descomponer</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-2"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-2">un diagrama de área cuadriculado que también se descompuso en partes o en el que se marcaron los lados o en partes del rectángulo</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-3"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-4-5-2-3-2-3">un rectángulo partido en dos áreas sin cuadrícula, pero marcado con longitudes de los lados o con el área de las partes del rectángulo</div></li>
@@ -556,30 +1115,36 @@ window.MathJax = {
 <span class="type">Actividad</span><span class="space"> </span><span class="codenumber">62</span><span class="period">.</span><span class="space"> </span><span class="title">Recorrido por el salón: Grupos iguales, números más grandes.</span>
 </h4>
 <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-2-1">Mientras visitas los pósteres con tu compañero, discutan en qué se parecen y en qué son diferentes las ideas que se muestran en los pósteres.</div>
-<div class="solutions"><details id="act-recorridoSalon-problemasMultNums11a19MasGrandes-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like"><div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-3-1">Ejemplo de respuestas: Son iguales porque muestran la multiplicación de los mismos números. Son diferentes porque están marcados de manera diferente. El diagrama no tiene una cuadrícula. Las longitudes de los lados están marcadas y el rectángulo está dividido en partes.</div></div></details></div></article><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+<div class="solutions"><details id="act-recorridoSalon-problemasMultNums11a19MasGrandes-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-3-1">Ejemplo de respuestas: Son iguales porque muestran la multiplicación de los mismos números. Son diferentes porque están marcados de manera diferente. El diagrama no tiene una cuadrícula. Las longitudes de los lados están marcadas y el rectángulo está dividido en partes.</div></div></details></div></article><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2">
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-1">Seleccione de 2 a 3 pósters que usen un diagrama para representar el problema. Socialicelos en el orden que se menciono anteriormente.</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2">
 <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-1">Para cada póster, pregunte:</div>
-<ul class="circle">
+<ul class="circle" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2">
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-1"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-1">“¿Cómo se ven los factores en el diagrama?”</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-2"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-2">“¿Cómo se ve el producto en el diagrama?”</div></li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-3"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-2-2-3">“¿Cómo podríamos representar esta estrategia con expresiones?”</div></li>
 </ul>
 </li>
 <li id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-3"><div class="para" id="p-derived-act-recorridoSalon-problemasMultNums11a19MasGrandes-5-1-2-3">Si los estudiantes no usan un diagrama sin cuadrícula, muestre uno que represente los problemas y haga las mismas preguntas.</div></li>
-</ul> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/svg-source/tikz-file-141828.svg" role="img" class="contained" alt="Diagrama de área."></div></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2"><h5 class="heading"><span class="title">Desarrollo de lenguaje matemático.</span></h5> <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2-2">Apoyos para la discusión de MLR8. Síntesis: A medida que los estudiantes comparten sus observaciones sobre los pósters seleccionados, haga anotaciones en el póster para ilustrar conexiones. Por ejemplo, marque factores y el producto y escriba <dfn class="terminology">factores</dfn> y <dfn class="terminology">producto</dfn> respectivamente.</div> <div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2-3">Avances: Escuchar, Representar</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-sintesis"><h3 class="heading hide-type">
+</ul>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/svg-source/tikz-file-141828.svg" role="img" class="contained" alt="Diagrama de área."></div></section><section class="paragraphs" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2"><h5 class="heading"><span class="title">Desarrollo de lenguaje matemático.</span></h5>
+<div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2-2">Apoyos para la discusión de MLR8. Síntesis: A medida que los estudiantes comparten sus observaciones sobre los pósters seleccionados, haga anotaciones en el póster para ilustrar conexiones. Por ejemplo, marque factores y el producto y escriba <dfn class="terminology">factores</dfn> y <dfn class="terminology">producto</dfn> respectivamente.</div>
+<div class="para" id="act-recorridoSalon-problemasMultNums11a19MasGrandes-5-2-3">Avances: Escuchar, Representar</div></section></section><section class="subsubsection" id="lec-problemasMult11a19MasGrandes-sintesis"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Síntesis de la lección (10 mins)</span>
 </h3>
 <div class="para" id="lec-problemasMult11a19MasGrandes-sintesis-4">Mostrar imagen de la actividad de calentamiento.</div>
 <div class="para" id="lec-problemasMult11a19MasGrandes-sintesis-5">“Hoy resolvimos problemas en los que multiplicamos un número del 11 al 19. ¿Cuáles son las ventajas y desventajas de usar cada uno de estos diagramas?” (A es bueno porque se pueden ver todos los cuadrados, pero tomaría mucho tiempo dibujarlos y no facilita encontrar el total. D es rápido de dibujar, pero solo muestra los números que se están multiplicando, lo cual no ayuda a encontrar el producto. B es rápido de dibujar y ayuda porque solo hay que sumar 70 y 21 para encontrar el producto de <span class="process-math">\(7 \times 13\text{.}\)</span>)</div></section><section class="reading-questions" id="lec-problemasMult11a19MasGrandes-cool"><h3 class="heading hide-type">
 <span class="type">Preguntas de comprensión</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad de cierre (5 mins)</span>
 </h3>
-<a class="external" href="external/cools-pdf/cool-encontrarArea-standalone.pdf" target="_blank">Descargar pdf para imprimir o proyectar</a><details class="ptx-footnote" aria-live="polite" id="lec-problemasMult11a19MasGrandes-cool-5"><summary class="ptx-footnote__number" title="Nota a pie de página 44"><sup> 44 </sup></summary><div class="ptx-footnote__contents" id="lec-problemasMult11a19MasGrandes-cool-5"><code class="code-inline tex2jax_ignore">external/cools-pdf/cool-encontrarArea-standalone.pdf</code></div></details><article class="project project-like" id="cool-encontrarArea"><h4 class="heading">
+<a class="external" href="external/cool-pdf/cool-encontrarArea.pdf" target="_blank">Descargar pdf para imprimir o proyectar</a><details class="ptx-footnote" aria-live="polite" id="lec-problemasMult11a19MasGrandes-cool-5"><summary class="ptx-footnote__number" title="Nota a pie de página 80"><sup> 80 </sup></summary><div class="ptx-footnote__contents" id="lec-problemasMult11a19MasGrandes-cool-5"><code class="code-inline tex2jax_ignore">external/cool-pdf/cool-encontrarArea.pdf</code></div></details><article class="project project-like" id="cool-encontrarArea"><h4 class="heading">
 <span class="type">Actividad de cierre</span><span class="space"> </span><span class="codenumber">63</span><span class="period">.</span><span class="space"> </span><span class="title">Encuentra el área.</span>
 </h4>
 <div class="para" id="cool-encontrarArea-2-1">Un rectángulo mide 6 pies por 15 pies. ¿Cuál es el área del rectángulo? Explica o muestra tu razonamiento.</div>
-<div class="solutions"><details id="cool-encontrarArea-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like"><div class="para" id="cool-encontrarArea-3-1">90 pies cuadrados. Ejemplo de respuesta: <span class="process-math">\(6 \times 10 = 60\text{,}\)</span> <span class="process-math">\(6 \times 5 = 30\text{,}\)</span> <span class="process-math">\(60 + 30 = 90\text{.}\)</span>
-</div></div></details></div></article><section class="paragraphs" id="cool-encontrarArea-4-1"><h5 class="heading"><span class="title">Posibles errores.</span></h5> <div class="para" id="cool-encontrarArea-4-1-2">Los estudiantes usan un método ineficiente y como resultado cometen un error. Por ejemplo, dibujar 6 grupos de 15 y contar mal o contar de 6 en 6 y cometer un error en el conteo.</div></section><section class="paragraphs" id="cool-encontrarArea-4-2"><h5 class="heading"><span class="title">Acciones para apoyar el aprendizaje.</span></h5> <div class="para" id="cool-encontrarArea-4-2-2">Antes de la actividad de calentamiento, reparta la actividad de cierre y haga que los estudiantes discutan estrategias que podrían usar para encontrar el producto.</div></section></section></section></div>
+<div class="solutions"><details id="cool-encontrarArea-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="cool-encontrarArea-3-1">90 pies cuadrados. Ejemplo de respuesta: <span class="process-math">\(6 \times 10 = 60\text{,}\)</span> <span class="process-math">\(6 \times 5 = 30\text{,}\)</span> <span class="process-math">\(60 + 30 = 90\text{.}\)</span>
+</div></div></details></div></article><section class="paragraphs" id="cool-encontrarArea-4-1"><h5 class="heading"><span class="title">Posibles errores.</span></h5>
+<div class="para" id="cool-encontrarArea-4-1-2">Los estudiantes usan un método ineficiente y como resultado cometen un error. Por ejemplo, dibujar 6 grupos de 15 y contar mal o contar de 6 en 6 y cometer un error en el conteo.</div></section><section class="paragraphs" id="cool-encontrarArea-4-2"><h5 class="heading"><span class="title">Acciones para apoyar el aprendizaje.</span></h5>
+<div class="para" id="cool-encontrarArea-4-2-2">Antes de la actividad de calentamiento, reparta la actividad de cierre y haga que los estudiantes discutan estrategias que podrían usar para encontrar el producto.</div></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="lec-representarMultiplicacion11a19.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="lec-multiplicarNumsMayoresA20.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

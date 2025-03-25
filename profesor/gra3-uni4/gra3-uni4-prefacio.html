@@ -87,6 +87,554 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/css/custom-styles.css">
+<style>
+#act-cuantasManzanas-2-2-1 { counter-set: act-cuantasManzanas-2-2-1 0; }
+#act-cuantasManzanas-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas-2-2-1,decimal)"."; }
+#act-cuantasManzanas-2-2-1 > li { counter-increment: act-cuantasManzanas-2-2-1; }
+#act-cuantasManzanas-3-2 { counter-set: act-cuantasManzanas-3-2 0; }
+#act-cuantasManzanas-3-2 > li::marker { content: ""counter(act-cuantasManzanas-3-2,decimal)"."; }
+#act-cuantasManzanas-3-2 > li { counter-increment: act-cuantasManzanas-3-2; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 { counter-set: act-recorridoSalon-manzanasEnCajas-2-1-1 0; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-2-1-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-2-1-1; }
+#act-recorridoSalon-manzanasEnCajas-3-1 { counter-set: act-recorridoSalon-manzanasEnCajas-3-1 0; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-3-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-3-1; }
+#act-cuantasManzanas2-2-2-1 { counter-set: act-cuantasManzanas2-2-2-1 0; }
+#act-cuantasManzanas2-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas2-2-2-1,decimal)"."; }
+#act-cuantasManzanas2-2-2-1 > li { counter-increment: act-cuantasManzanas2-2-2-1; }
+#act-cuantasManzanas2-3-1 { counter-set: act-cuantasManzanas2-3-1 0; }
+#act-cuantasManzanas2-3-1 > li::marker { content: ""counter(act-cuantasManzanas2-3-1,decimal)"."; }
+#act-cuantasManzanas2-3-1 > li { counter-increment: act-cuantasManzanas2-3-1; }
+#warm-numTalk-cuantoMasCambien-2-2-1 { counter-set: warm-numTalk-cuantoMasCambien-2-2-1 0; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li::marker { content: ""counter(warm-numTalk-cuantoMasCambien-2-2-1,upper-alpha)"."; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li { counter-increment: warm-numTalk-cuantoMasCambien-2-2-1; }
+#act-gruposEstudiantes-2-1-1 { counter-set: act-gruposEstudiantes-2-1-1 0; }
+#act-gruposEstudiantes-2-1-1 > li::marker { content: ""counter(act-gruposEstudiantes-2-1-1,decimal)"."; }
+#act-gruposEstudiantes-2-1-1 > li { counter-increment: act-gruposEstudiantes-2-1-1; }
+#act-gruposEstudiantes-3-1 { counter-set: act-gruposEstudiantes-3-1 0; }
+#act-gruposEstudiantes-3-1 > li::marker { content: ""counter(act-gruposEstudiantes-3-1,decimal)"."; }
+#act-gruposEstudiantes-3-1 > li { counter-increment: act-gruposEstudiantes-3-1; }
+#act-cualDibujoCorresponde-2-2-1 { counter-set: act-cualDibujoCorresponde-2-2-1 0; }
+#act-cualDibujoCorresponde-2-2-1 > li::marker { content: ""counter(act-cualDibujoCorresponde-2-2-1,decimal)"."; }
+#act-cualDibujoCorresponde-2-2-1 > li { counter-increment: act-cualDibujoCorresponde-2-2-1; }
+#act-cualDibujoCorresponde-3-2 { counter-set: act-cualDibujoCorresponde-3-2 0; }
+#act-cualDibujoCorresponde-3-2 > li::marker { content: ""counter(act-cualDibujoCorresponde-3-2,decimal)"."; }
+#act-cualDibujoCorresponde-3-2 > li { counter-increment: act-cualDibujoCorresponde-3-2; }
+#act-numTalk-masOMenos-2-2 { counter-set: act-numTalk-masOMenos-2-2 0; }
+#act-numTalk-masOMenos-2-2 > li::marker { content: ""counter(act-numTalk-masOMenos-2-2,upper-alpha)"."; }
+#act-numTalk-masOMenos-2-2 > li { counter-increment: act-numTalk-masOMenos-2-2; }
+#act-numTalk-masOMenos-3-2-1 { counter-set: act-numTalk-masOMenos-3-2-1 0; }
+#act-numTalk-masOMenos-3-2-1 > li::marker { content: ""counter(act-numTalk-masOMenos-3-2-1,upper-alpha)"."; }
+#act-numTalk-masOMenos-3-2-1 > li { counter-increment: act-numTalk-masOMenos-3-2-1; }
+#act-pilasBloques-2-2 { counter-set: act-pilasBloques-2-2 0; }
+#act-pilasBloques-2-2 > li::marker { content: ""counter(act-pilasBloques-2-2,decimal)"."; }
+#act-pilasBloques-2-2 > li { counter-increment: act-pilasBloques-2-2; }
+#act-pilasBloques-3-1-1 { counter-set: act-pilasBloques-3-1-1 0; }
+#act-pilasBloques-3-1-1 > li::marker { content: ""counter(act-pilasBloques-3-1-1,decimal)"."; }
+#act-pilasBloques-3-1-1 > li { counter-increment: act-pilasBloques-3-1-1; }
+#warm-numTalk-enQueSeParecen-2-2-1 { counter-set: warm-numTalk-enQueSeParecen-2-2-1 0; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-2-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-2-2-1; }
+#warm-numTalk-enQueSeParecen-3-2-1 { counter-set: warm-numTalk-enQueSeParecen-3-2-1 0; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-3-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-3-2-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-2-3 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-2-3,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-2-3; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li::marker { content: "("counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2,lower-alpha)")"; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1,upper-alpha)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1; }
+#act-resolvamosProblemaBichos-3-1-1 { counter-set: act-resolvamosProblemaBichos-3-1-1 0; }
+#act-resolvamosProblemaBichos-3-1-1 > li::marker { content: ""counter(act-resolvamosProblemaBichos-3-1-1,upper-alpha)"."; }
+#act-resolvamosProblemaBichos-3-1-1 > li { counter-increment: act-resolvamosProblemaBichos-3-1-1; }
+#cool-patasHormigas-2-2-1 { counter-set: cool-patasHormigas-2-2-1 0; }
+#cool-patasHormigas-2-2-1 > li::marker { content: "("counter(cool-patasHormigas-2-2-1,lower-alpha)")"; }
+#cool-patasHormigas-2-2-1 > li { counter-increment: cool-patasHormigas-2-2-1; }
+#cool-patasHormigas-3-1-1 { counter-set: cool-patasHormigas-3-1-1 0; }
+#cool-patasHormigas-3-1-1 > li::marker { content: "("counter(cool-patasHormigas-3-1-1,lower-alpha)")"; }
+#cool-patasHormigas-3-1-1 > li { counter-increment: cool-patasHormigas-3-1-1; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-2-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-3-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-3-2; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-4-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-4-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-4-3-2; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-3-1; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-3-1; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-2-1; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 { counter-set: gra3-uni4-secA-ProblemasPractica-9-1-2 0; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-1-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-1-2; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-9-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-2-1; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-1-1-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-1-1-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-1-1-1; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-13-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-13-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-3-2; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-14-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-14-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-14-3-2; }
+#act-mesaRedondaDeDivision-2-4 { counter-set: act-mesaRedondaDeDivision-2-4 0; }
+#act-mesaRedondaDeDivision-2-4 > li::marker { content: ""counter(act-mesaRedondaDeDivision-2-4,decimal)"."; }
+#act-mesaRedondaDeDivision-2-4 > li { counter-increment: act-mesaRedondaDeDivision-2-4; }
+#act-gruposUtilesEscolares-2-5 { counter-set: act-gruposUtilesEscolares-2-5 0; }
+#act-gruposUtilesEscolares-2-5 > li::marker { content: ""counter(act-gruposUtilesEscolares-2-5,decimal)"."; }
+#act-gruposUtilesEscolares-2-5 > li { counter-increment: act-gruposUtilesEscolares-2-5; }
+#act-gruposUtilesEscolares-3-1 { counter-set: act-gruposUtilesEscolares-3-1 0; }
+#act-gruposUtilesEscolares-3-1 > li::marker { content: ""counter(act-gruposUtilesEscolares-3-1,decimal)"."; }
+#act-gruposUtilesEscolares-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1; }
+#act-gruposUtilesEscolares-3-1-1-1 { counter-set: act-gruposUtilesEscolares-3-1-1-1 0; }
+#act-gruposUtilesEscolares-3-1-1-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-1-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-1-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-1-1; }
+#act-gruposUtilesEscolares-3-1-2-1 { counter-set: act-gruposUtilesEscolares-3-1-2-1 0; }
+#act-gruposUtilesEscolares-3-1-2-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-2-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-2-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-2-1; }
+#act-gruposUtilesEscolares-3-1-3-1 { counter-set: act-gruposUtilesEscolares-3-1-3-1 0; }
+#act-gruposUtilesEscolares-3-1-3-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-3-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-3-1; }
+#act-gruposUtilesEscolares-3-1-4-1 { counter-set: act-gruposUtilesEscolares-3-1-4-1 0; }
+#act-gruposUtilesEscolares-3-1-4-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-4-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-4-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-4-1; }
+#warm-numTalk-multiplicacionYDivision-2-2 { counter-set: warm-numTalk-multiplicacionYDivision-2-2 0; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-2-2,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li { counter-increment: warm-numTalk-multiplicacionYDivision-2-2; }
+#warm-numTalk-multiplicacionYDivision-3-1 { counter-set: warm-numTalk-multiplicacionYDivision-3-1 0; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-3-1,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li { counter-increment: warm-numTalk-multiplicacionYDivision-3-1; }
+#act-siSeQueEntoncesSeQue-2-2 { counter-set: act-siSeQueEntoncesSeQue-2-2 0; }
+#act-siSeQueEntoncesSeQue-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQue-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQue-2-2 > li { counter-increment: act-siSeQueEntoncesSeQue-2-2; }
+#act-productosTablaMultiplicar-2-3 { counter-set: act-productosTablaMultiplicar-2-3 0; }
+#act-productosTablaMultiplicar-2-3 > li::marker { content: ""counter(act-productosTablaMultiplicar-2-3,decimal)"."; }
+#act-productosTablaMultiplicar-2-3 > li { counter-increment: act-productosTablaMultiplicar-2-3; }
+#act-productosTablaMultiplicar-2-3-2-2 { counter-set: act-productosTablaMultiplicar-2-3-2-2 0; }
+#act-productosTablaMultiplicar-2-3-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-2-3-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-2-3-2-2 > li { counter-increment: act-productosTablaMultiplicar-2-3-2-2; }
+#act-productosTablaMultiplicar-3-1 { counter-set: act-productosTablaMultiplicar-3-1 0; }
+#act-productosTablaMultiplicar-3-1 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1,decimal)"."; }
+#act-productosTablaMultiplicar-3-1 > li { counter-increment: act-productosTablaMultiplicar-3-1; }
+#act-productosTablaMultiplicar-3-1-1-2 { counter-set: act-productosTablaMultiplicar-3-1-1-2 0; }
+#act-productosTablaMultiplicar-3-1-1-2 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1-1-2,upper-alpha)"."; }
+#act-productosTablaMultiplicar-3-1-1-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-1-2; }
+#act-productosTablaMultiplicar-3-1-2-2 { counter-set: act-productosTablaMultiplicar-3-1-2-2 0; }
+#act-productosTablaMultiplicar-3-1-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-3-1-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-3-1-2-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-2-2; }
+#act-siSeQueEntoncesSeQueMult-2-2 { counter-set: act-siSeQueEntoncesSeQueMult-2-2 0; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li { counter-increment: act-siSeQueEntoncesSeQueMult-2-2; }
+#act-siSeQueEntoncesSeQueMult-3-1 { counter-set: act-siSeQueEntoncesSeQueMult-3-1 0; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-3-1,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li { counter-increment: act-siSeQueEntoncesSeQueMult-3-1; }
+#act-deDiagramasAExpresiones-2-3 { counter-set: act-deDiagramasAExpresiones-2-3 0; }
+#act-deDiagramasAExpresiones-2-3 > li::marker { content: ""counter(act-deDiagramasAExpresiones-2-3,decimal)"."; }
+#act-deDiagramasAExpresiones-2-3 > li { counter-increment: act-deDiagramasAExpresiones-2-3; }
+#act-deDiagramasAExpresiones-2-3-1-2 { counter-set: act-deDiagramasAExpresiones-2-3-1-2 0; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li { counter-increment: act-deDiagramasAExpresiones-2-3-1-2; }
+#act-deDiagramasAExpresiones-2-3-2-5 { counter-set: act-deDiagramasAExpresiones-2-3-2-5 0; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-2-5,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li { counter-increment: act-deDiagramasAExpresiones-2-3-2-5; }
+#act-deDiagramasAExpresiones-3-1 { counter-set: act-deDiagramasAExpresiones-3-1 0; }
+#act-deDiagramasAExpresiones-3-1 > li::marker { content: ""counter(act-deDiagramasAExpresiones-3-1,decimal)"."; }
+#act-deDiagramasAExpresiones-3-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1; }
+#act-deDiagramasAExpresiones-3-1-1-2 { counter-set: act-deDiagramasAExpresiones-3-1-1-2 0; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-1-2; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-1 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-1,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-1; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-2 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-2; }
+#act-deExpresionesADiagramas-2-4 { counter-set: act-deExpresionesADiagramas-2-4 0; }
+#act-deExpresionesADiagramas-2-4 > li::marker { content: ""counter(act-deExpresionesADiagramas-2-4,decimal)"."; }
+#act-deExpresionesADiagramas-2-4 > li { counter-increment: act-deExpresionesADiagramas-2-4; }
+#act-deExpresionesADiagramas-3-1-1-2 { counter-set: act-deExpresionesADiagramas-3-1-1-2 0; }
+#act-deExpresionesADiagramas-3-1-1-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-1-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-1-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-1-2; }
+#act-deExpresionesADiagramas-3-1-2-2 { counter-set: act-deExpresionesADiagramas-3-1-2-2 0; }
+#act-deExpresionesADiagramas-3-1-2-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-2-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-2-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-2-2; }
+#act-deExpresionesADiagramas-3-1-3-2 { counter-set: act-deExpresionesADiagramas-3-1-3-2 0; }
+#act-deExpresionesADiagramas-3-1-3-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-3-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-3-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-3-2; }
+#cool-marcaPartesParaEncontrarArea-2-4 { counter-set: cool-marcaPartesParaEncontrarArea-2-4 0; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-2-4,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li { counter-increment: cool-marcaPartesParaEncontrarArea-2-4; }
+#cool-marcaPartesParaEncontrarArea-3-1 { counter-set: cool-marcaPartesParaEncontrarArea-3-1 0; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-3-1,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li { counter-increment: cool-marcaPartesParaEncontrarArea-3-1; }
+#cool-expresionesParaRectangulo-2-1-1 { counter-set: cool-expresionesParaRectangulo-2-1-1 0; }
+#cool-expresionesParaRectangulo-2-1-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-2-1-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-2-1-1 > li { counter-increment: cool-expresionesParaRectangulo-2-1-1; }
+#cool-expresionesParaRectangulo-3-1 { counter-set: cool-expresionesParaRectangulo-3-1 0; }
+#cool-expresionesParaRectangulo-3-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-3-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-3-1 > li { counter-increment: cool-expresionesParaRectangulo-3-1; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-1-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-1-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-1-2; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-2-2; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-1-1; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-2-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-2-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-2-1-1; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-2-2; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secB-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-3-1; }
+#act-granCantidadDolares-2-3 { counter-set: act-granCantidadDolares-2-3 0; }
+#act-granCantidadDolares-2-3 > li::marker { content: ""counter(act-granCantidadDolares-2-3,decimal)"."; }
+#act-granCantidadDolares-2-3 > li { counter-increment: act-granCantidadDolares-2-3; }
+#act-granCantidadDolares-2-3-2-2 { counter-set: act-granCantidadDolares-2-3-2-2 0; }
+#act-granCantidadDolares-2-3-2-2 > li::marker { content: "("counter(act-granCantidadDolares-2-3-2-2,lower-alpha)")"; }
+#act-granCantidadDolares-2-3-2-2 > li { counter-increment: act-granCantidadDolares-2-3-2-2; }
+#act-granCantidadDolares-3-1 { counter-set: act-granCantidadDolares-3-1 0; }
+#act-granCantidadDolares-3-1 > li::marker { content: ""counter(act-granCantidadDolares-3-1,decimal)"."; }
+#act-granCantidadDolares-3-1 > li { counter-increment: act-granCantidadDolares-3-1; }
+#act-granCantidadDolares-3-1-2-1 { counter-set: act-granCantidadDolares-3-1-2-1 0; }
+#act-granCantidadDolares-3-1-2-1 > li::marker { content: "("counter(act-granCantidadDolares-3-1-2-1,lower-alpha)")"; }
+#act-granCantidadDolares-3-1-2-1 > li { counter-increment: act-granCantidadDolares-3-1-2-1; }
+#act-dosEstrategias-2-1 { counter-set: act-dosEstrategias-2-1 0; }
+#act-dosEstrategias-2-1 > li::marker { content: ""counter(act-dosEstrategias-2-1,decimal)"."; }
+#act-dosEstrategias-2-1 > li { counter-increment: act-dosEstrategias-2-1; }
+#act-dosEstrategias-2-1-2-2 { counter-set: act-dosEstrategias-2-1-2-2 0; }
+#act-dosEstrategias-2-1-2-2 > li::marker { content: "("counter(act-dosEstrategias-2-1-2-2,lower-alpha)")"; }
+#act-dosEstrategias-2-1-2-2 > li { counter-increment: act-dosEstrategias-2-1-2-2; }
+#act-dosEstrategias-3-1 { counter-set: act-dosEstrategias-3-1 0; }
+#act-dosEstrategias-3-1 > li::marker { content: ""counter(act-dosEstrategias-3-1,decimal)"."; }
+#act-dosEstrategias-3-1 > li { counter-increment: act-dosEstrategias-3-1; }
+#act-dosEstrategias-3-1-2-1 { counter-set: act-dosEstrategias-3-1-2-1 0; }
+#act-dosEstrategias-3-1-2-1 > li::marker { content: "("counter(act-dosEstrategias-3-1-2-1,lower-alpha)")"; }
+#act-dosEstrategias-3-1-2-1 > li { counter-increment: act-dosEstrategias-3-1-2-1; }
+#act-problemasNumerosAdolescentes-2-2 { counter-set: act-problemasNumerosAdolescentes-2-2 0; }
+#act-problemasNumerosAdolescentes-2-2 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-2-2,decimal)"."; }
+#act-problemasNumerosAdolescentes-2-2 > li { counter-increment: act-problemasNumerosAdolescentes-2-2; }
+#act-problemasNumerosAdolescentes-3-1 { counter-set: act-problemasNumerosAdolescentes-3-1 0; }
+#act-problemasNumerosAdolescentes-3-1 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-3-1,decimal)"."; }
+#act-problemasNumerosAdolescentes-3-1 > li { counter-increment: act-problemasNumerosAdolescentes-3-1; }
+#act-factorMayorQue10-2-1 { counter-set: act-factorMayorQue10-2-1 0; }
+#act-factorMayorQue10-2-1 > li::marker { content: ""counter(act-factorMayorQue10-2-1,decimal)"."; }
+#act-factorMayorQue10-2-1 > li { counter-increment: act-factorMayorQue10-2-1; }
+#act-factorMayorQue10-3-1 { counter-set: act-factorMayorQue10-3-1 0; }
+#act-factorMayorQue10-3-1 > li::marker { content: ""counter(act-factorMayorQue10-3-1,decimal)"."; }
+#act-factorMayorQue10-3-1 > li { counter-increment: act-factorMayorQue10-3-1; }
+#act-formasRepresentarMultiplicacion-2-3 { counter-set: act-formasRepresentarMultiplicacion-2-3 0; }
+#act-formasRepresentarMultiplicacion-2-3 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-2-3,decimal)"."; }
+#act-formasRepresentarMultiplicacion-2-3 > li { counter-increment: act-formasRepresentarMultiplicacion-2-3; }
+#act-formasRepresentarMultiplicacion-3-1 { counter-set: act-formasRepresentarMultiplicacion-3-1 0; }
+#act-formasRepresentarMultiplicacion-3-1 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-3-1,decimal)"."; }
+#act-formasRepresentarMultiplicacion-3-1 > li { counter-increment: act-formasRepresentarMultiplicacion-3-1; }
+#act-problemasMultNums11a19MasGrandes-2-2 { counter-set: act-problemasMultNums11a19MasGrandes-2-2 0; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-2-2,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li { counter-increment: act-problemasMultNums11a19MasGrandes-2-2; }
+#act-problemasMultNums11a19MasGrandes-3-1 { counter-set: act-problemasMultNums11a19MasGrandes-3-1 0; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-3-1,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li { counter-increment: act-problemasMultNums11a19MasGrandes-3-1; }
+#warm-numTalk-3MultiplicadoPor-2-2 { counter-set: warm-numTalk-3MultiplicadoPor-2-2 0; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li::marker { content: ""counter(warm-numTalk-3MultiplicadoPor-2-2,upper-alpha)"."; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li { counter-increment: warm-numTalk-3MultiplicadoPor-2-2; }
+#act-representar4por23-2-1 { counter-set: act-representar4por23-2-1 0; }
+#act-representar4por23-2-1 > li::marker { content: ""counter(act-representar4por23-2-1,decimal)"."; }
+#act-representar4por23-2-1 > li { counter-increment: act-representar4por23-2-1; }
+#act-representar4por23-2-1-1-3 { counter-set: act-representar4por23-2-1-1-3 0; }
+#act-representar4por23-2-1-1-3 > li::marker { content: "("counter(act-representar4por23-2-1-1-3,lower-alpha)")"; }
+#act-representar4por23-2-1-1-3 > li { counter-increment: act-representar4por23-2-1-1-3; }
+#act-representar4por23-2-1-2-3 { counter-set: act-representar4por23-2-1-2-3 0; }
+#act-representar4por23-2-1-2-3 > li::marker { content: "("counter(act-representar4por23-2-1-2-3,lower-alpha)")"; }
+#act-representar4por23-2-1-2-3 > li { counter-increment: act-representar4por23-2-1-2-3; }
+#act-representar4por23-3-1 { counter-set: act-representar4por23-3-1 0; }
+#act-representar4por23-3-1 > li::marker { content: ""counter(act-representar4por23-3-1,decimal)"."; }
+#act-representar4por23-3-1 > li { counter-increment: act-representar4por23-3-1; }
+#act-representar4por23-3-1-1-2 { counter-set: act-representar4por23-3-1-1-2 0; }
+#act-representar4por23-3-1-1-2 > li::marker { content: "("counter(act-representar4por23-3-1-1-2,lower-alpha)")"; }
+#act-representar4por23-3-1-1-2 > li { counter-increment: act-representar4por23-3-1-1-2; }
+#act-representar4por23-3-1-2-2 { counter-set: act-representar4por23-3-1-2-2 0; }
+#act-representar4por23-3-1-2-2 > li::marker { content: "("counter(act-representar4por23-3-1-2-2,lower-alpha)")"; }
+#act-representar4por23-3-1-2-2 > li { counter-increment: act-representar4por23-3-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-2-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 { counter-set: act-prodsUnDigitoPorMayorA20-2-1-2-2 0; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-2-1-2-2,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-3-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-3-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-3-1-2-1,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1-2-1; }
+#act-juegoCerca100Multiplicacion-2-4 { counter-set: act-juegoCerca100Multiplicacion-2-4 0; }
+#act-juegoCerca100Multiplicacion-2-4 > li::marker { content: ""counter(act-juegoCerca100Multiplicacion-2-4,decimal)"."; }
+#act-juegoCerca100Multiplicacion-2-4 > li { counter-increment: act-juegoCerca100Multiplicacion-2-4; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 { counter-set: warm-verdaderoFalso-multiplicarPor10-2-2 0; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-multiplicarPor10-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li { counter-increment: warm-verdaderoFalso-multiplicarPor10-2-2; }
+#act-problemasMultiplicativosFiesta-2-3 { counter-set: act-problemasMultiplicativosFiesta-2-3 0; }
+#act-problemasMultiplicativosFiesta-2-3 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-2-3,decimal)"."; }
+#act-problemasMultiplicativosFiesta-2-3 > li { counter-increment: act-problemasMultiplicativosFiesta-2-3; }
+#act-problemasMultiplicativosFiesta-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-3-1,decimal)"."; }
+#act-problemasMultiplicativosFiesta-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-1-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-1-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-1-1; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-2-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-2-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-2-1; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-3-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-3-1; }
+#cool-globosGruposIguales-2-2 { counter-set: cool-globosGruposIguales-2-2 0; }
+#cool-globosGruposIguales-2-2 > li::marker { content: "("counter(cool-globosGruposIguales-2-2,lower-alpha)")"; }
+#cool-globosGruposIguales-2-2 > li { counter-increment: cool-globosGruposIguales-2-2; }
+#cool-globosGruposIguales-3-1 { counter-set: cool-globosGruposIguales-3-1 0; }
+#cool-globosGruposIguales-3-1 > li::marker { content: "("counter(cool-globosGruposIguales-3-1,lower-alpha)")"; }
+#cool-globosGruposIguales-3-1 > li { counter-increment: cool-globosGruposIguales-3-1; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-1-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-1-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-1-1; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-2-1; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-5-1-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-1-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-1-1-2; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-5-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-2-1; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-1-2; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-3-1; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-2-2; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-3-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-3-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-3-2; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 { counter-set: gra3-uni4-secC-ProblemasPractica-11-2-3 0; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-2-3,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-2-3; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-11-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-3-1; }
+#act-gruposEnBusYAlmuerzo-2-2 { counter-set: act-gruposEnBusYAlmuerzo-2-2 0; }
+#act-gruposEnBusYAlmuerzo-2-2 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-2-2,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-2-2 > li { counter-increment: act-gruposEnBusYAlmuerzo-2-2; }
+#act-gruposEnBusYAlmuerzo-3-1 { counter-set: act-gruposEnBusYAlmuerzo-3-1 0; }
+#act-gruposEnBusYAlmuerzo-3-1 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-3-1,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-3-1 > li { counter-increment: act-gruposEnBusYAlmuerzo-3-1; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 { counter-set: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 0; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-unidadesDecenasVeintenas-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li { counter-increment: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2; }
+#act-dividirConBloquesBase10-2-1-1 { counter-set: act-dividirConBloquesBase10-2-1-1 0; }
+#act-dividirConBloquesBase10-2-1-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-2-1-1,decimal)"."; }
+#act-dividirConBloquesBase10-2-1-1 > li { counter-increment: act-dividirConBloquesBase10-2-1-1; }
+#act-dividirConBloquesBase10-2-1-1-1-2 { counter-set: act-dividirConBloquesBase10-2-1-1-1-2 0; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-1-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-1-2; }
+#act-dividirConBloquesBase10-2-1-1-2-2 { counter-set: act-dividirConBloquesBase10-2-1-1-2-2 0; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-2-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-2-2; }
+#act-dividirConBloquesBase10-3-1 { counter-set: act-dividirConBloquesBase10-3-1 0; }
+#act-dividirConBloquesBase10-3-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-3-1,decimal)"."; }
+#act-dividirConBloquesBase10-3-1 > li { counter-increment: act-dividirConBloquesBase10-3-1; }
+#act-dividirConBloquesBase10-3-1-1-1 { counter-set: act-dividirConBloquesBase10-3-1-1-1 0; }
+#act-dividirConBloquesBase10-3-1-1-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-1-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-1-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-1-1; }
+#act-dividirConBloquesBase10-3-1-2-1 { counter-set: act-dividirConBloquesBase10-3-1-2-1 0; }
+#act-dividirConBloquesBase10-3-1-2-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-2-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-2-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-2-1; }
+#act-formasMostrarDivision-2-6 { counter-set: act-formasMostrarDivision-2-6 0; }
+#act-formasMostrarDivision-2-6 > li::marker { content: ""counter(act-formasMostrarDivision-2-6,decimal)"."; }
+#act-formasMostrarDivision-2-6 > li { counter-increment: act-formasMostrarDivision-2-6; }
+#act-formasMostrarDivision-2-6-1-2 { counter-set: act-formasMostrarDivision-2-6-1-2 0; }
+#act-formasMostrarDivision-2-6-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-1-2 > li { counter-increment: act-formasMostrarDivision-2-6-1-2; }
+#act-formasMostrarDivision-2-6-2-2 { counter-set: act-formasMostrarDivision-2-6-2-2 0; }
+#act-formasMostrarDivision-2-6-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-2-2 > li { counter-increment: act-formasMostrarDivision-2-6-2-2; }
+#act-formasMostrarDivision-3-1 { counter-set: act-formasMostrarDivision-3-1 0; }
+#act-formasMostrarDivision-3-1 > li::marker { content: ""counter(act-formasMostrarDivision-3-1,decimal)"."; }
+#act-formasMostrarDivision-3-1 > li { counter-increment: act-formasMostrarDivision-3-1; }
+#act-formasMostrarDivision-3-1-1-2 { counter-set: act-formasMostrarDivision-3-1-1-2 0; }
+#act-formasMostrarDivision-3-1-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-1-2 > li { counter-increment: act-formasMostrarDivision-3-1-1-2; }
+#act-formasMostrarDivision-3-1-2-2 { counter-set: act-formasMostrarDivision-3-1-2-2 0; }
+#act-formasMostrarDivision-3-1-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-2-2 > li { counter-increment: act-formasMostrarDivision-3-1-2-2; }
+#warm-numTalk-multYDiv-2-2 { counter-set: warm-numTalk-multYDiv-2-2 0; }
+#warm-numTalk-multYDiv-2-2 > li::marker { content: ""counter(warm-numTalk-multYDiv-2-2,upper-alpha)"."; }
+#warm-numTalk-multYDiv-2-2 > li { counter-increment: warm-numTalk-multYDiv-2-2; }
+#act-formasDividir-2-1 { counter-set: act-formasDividir-2-1 0; }
+#act-formasDividir-2-1 > li::marker { content: ""counter(act-formasDividir-2-1,decimal)"."; }
+#act-formasDividir-2-1 > li { counter-increment: act-formasDividir-2-1; }
+#act-formasDividir-3-1 { counter-set: act-formasDividir-3-1 0; }
+#act-formasDividir-3-1 > li::marker { content: ""counter(act-formasDividir-3-1,decimal)"."; }
+#act-formasDividir-3-1 > li { counter-increment: act-formasDividir-3-1; }
+#act-ComoDividirias-2-2 { counter-set: act-ComoDividirias-2-2 0; }
+#act-ComoDividirias-2-2 > li::marker { content: ""counter(act-ComoDividirias-2-2,decimal)"."; }
+#act-ComoDividirias-2-2 > li { counter-increment: act-ComoDividirias-2-2; }
+#act-ComoDividirias-3-1 { counter-set: act-ComoDividirias-3-1 0; }
+#act-ComoDividirias-3-1 > li::marker { content: ""counter(act-ComoDividirias-3-1,decimal)"."; }
+#act-ComoDividirias-3-1 > li { counter-increment: act-ComoDividirias-3-1; }
+#act-comparaDivideHasta100-2-3-2 { counter-set: act-comparaDivideHasta100-2-3-2 0; }
+#act-comparaDivideHasta100-2-3-2 > li::marker { content: ""counter(act-comparaDivideHasta100-2-3-2,decimal)"."; }
+#act-comparaDivideHasta100-2-3-2 > li { counter-increment: act-comparaDivideHasta100-2-3-2; }
+#act-diasDeManzanas-2-2 { counter-set: act-diasDeManzanas-2-2 0; }
+#act-diasDeManzanas-2-2 > li::marker { content: ""counter(act-diasDeManzanas-2-2,decimal)"."; }
+#act-diasDeManzanas-2-2 > li { counter-increment: act-diasDeManzanas-2-2; }
+#act-diasDeManzanas-2-2-1-2 { counter-set: act-diasDeManzanas-2-2-1-2 0; }
+#act-diasDeManzanas-2-2-1-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-1-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-1-2 > li { counter-increment: act-diasDeManzanas-2-2-1-2; }
+#act-diasDeManzanas-2-2-2-2 { counter-set: act-diasDeManzanas-2-2-2-2 0; }
+#act-diasDeManzanas-2-2-2-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-2-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-2-2 > li { counter-increment: act-diasDeManzanas-2-2-2-2; }
+#act-diasDeManzanas-2-2-3-2 { counter-set: act-diasDeManzanas-2-2-3-2 0; }
+#act-diasDeManzanas-2-2-3-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-3-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-3-2 > li { counter-increment: act-diasDeManzanas-2-2-3-2; }
+#act-diasDeManzanas-3-1 { counter-set: act-diasDeManzanas-3-1 0; }
+#act-diasDeManzanas-3-1 > li::marker { content: ""counter(act-diasDeManzanas-3-1,decimal)"."; }
+#act-diasDeManzanas-3-1 > li { counter-increment: act-diasDeManzanas-3-1; }
+#act-diasDeManzanas-3-1-1-1 { counter-set: act-diasDeManzanas-3-1-1-1 0; }
+#act-diasDeManzanas-3-1-1-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-1-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-1-1 > li { counter-increment: act-diasDeManzanas-3-1-1-1; }
+#act-diasDeManzanas-3-1-2-1 { counter-set: act-diasDeManzanas-3-1-2-1 0; }
+#act-diasDeManzanas-3-1-2-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-2-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-2-1 > li { counter-increment: act-diasDeManzanas-3-1-2-1; }
+#act-diasDeManzanas-3-1-3-1 { counter-set: act-diasDeManzanas-3-1-3-1 0; }
+#act-diasDeManzanas-3-1-3-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-3-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-3-1 > li { counter-increment: act-diasDeManzanas-3-1-3-1; }
+#cool-manzanasEnLaHuerta-2-2 { counter-set: cool-manzanasEnLaHuerta-2-2 0; }
+#cool-manzanasEnLaHuerta-2-2 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-2-2,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-2-2 > li { counter-increment: cool-manzanasEnLaHuerta-2-2; }
+#cool-manzanasEnLaHuerta-3-1 { counter-set: cool-manzanasEnLaHuerta-3-1 0; }
+#cool-manzanasEnLaHuerta-3-1 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-3-1,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-3-1 > li { counter-increment: cool-manzanasEnLaHuerta-3-1; }
+#act-produccionFresas-2-2 { counter-set: act-produccionFresas-2-2 0; }
+#act-produccionFresas-2-2 > li::marker { content: ""counter(act-produccionFresas-2-2,decimal)"."; }
+#act-produccionFresas-2-2 > li { counter-increment: act-produccionFresas-2-2; }
+#act-produccionFresas-2-2-1-2 { counter-set: act-produccionFresas-2-2-1-2 0; }
+#act-produccionFresas-2-2-1-2 > li::marker { content: "("counter(act-produccionFresas-2-2-1-2,lower-alpha)")"; }
+#act-produccionFresas-2-2-1-2 > li { counter-increment: act-produccionFresas-2-2-1-2; }
+#act-produccionFresas-3-1 { counter-set: act-produccionFresas-3-1 0; }
+#act-produccionFresas-3-1 > li::marker { content: ""counter(act-produccionFresas-3-1,decimal)"."; }
+#act-produccionFresas-3-1 > li { counter-increment: act-produccionFresas-3-1; }
+#act-produccionFresas-3-1-1-2 { counter-set: act-produccionFresas-3-1-1-2 0; }
+#act-produccionFresas-3-1-1-2 > li::marker { content: "("counter(act-produccionFresas-3-1-1-2,lower-alpha)")"; }
+#act-produccionFresas-3-1-1-2 > li { counter-increment: act-produccionFresas-3-1-1-2; }
+#act-planeemosLaHuerta-2-1 { counter-set: act-planeemosLaHuerta-2-1 0; }
+#act-planeemosLaHuerta-2-1 > li::marker { content: ""counter(act-planeemosLaHuerta-2-1,decimal)"."; }
+#act-planeemosLaHuerta-2-1 > li { counter-increment: act-planeemosLaHuerta-2-1; }
+#act-planeemosLaHuerta-2-1-1-2 { counter-set: act-planeemosLaHuerta-2-1-1-2 0; }
+#act-planeemosLaHuerta-2-1-1-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-1-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-1-2 > li { counter-increment: act-planeemosLaHuerta-2-1-1-2; }
+#act-planeemosLaHuerta-2-1-2-2 { counter-set: act-planeemosLaHuerta-2-1-2-2 0; }
+#act-planeemosLaHuerta-2-1-2-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-2-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-2-2 > li { counter-increment: act-planeemosLaHuerta-2-1-2-2; }
+#act-planeemosLaHuerta-3-2 { counter-set: act-planeemosLaHuerta-3-2 0; }
+#act-planeemosLaHuerta-3-2 > li::marker { content: ""counter(act-planeemosLaHuerta-3-2,decimal)"."; }
+#act-planeemosLaHuerta-3-2 > li { counter-increment: act-planeemosLaHuerta-3-2; }
+#act-planeemosLaHuerta-3-2-2-1 { counter-set: act-planeemosLaHuerta-3-2-2-1 0; }
+#act-planeemosLaHuerta-3-2-2-1 > li::marker { content: "("counter(act-planeemosLaHuerta-3-2-2-1,lower-alpha)")"; }
+#act-planeemosLaHuerta-3-2-2-1 > li { counter-increment: act-planeemosLaHuerta-3-2-2-1; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-4-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-1-1; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-4-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-2-2; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-5-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-1-1; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-2-2; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-6-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-1-2; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-6-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-2-1; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-1-2; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-7-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-2-1; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-2-2; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-3-2; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-2-2; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-3-2; }
+</style>
 </head>
 <body class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -384,22 +932,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="centros-gra3-uni4.html" class="internal"><span class="title">Centros</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="BLM-gra3-uni4.html" class="internal"><span class="title">Hojas reproducibles</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-todoSobreBichos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Todo sobre bichos)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-mesaRedondaDeDivision.html" class="internal"><span class="title">Hoja de registro (Mesa redonda de división)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-hojaDeRegistro.html" class="internal"><span class="title">Hoja de registro (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-tarjetasDeDigitos.html" class="internal"><span class="title">Tarjetas de dígitos</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-cercaDe100Multiplicacion.html" class="internal"><span class="title">Tablero de juego para “Cerca de 100, multiplicación”</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-comparaDivideHasta100-tarjetas.html" class="internal"><span class="title">Tarjetas (“Compara: Divide hasta 100” [OPCIONAL])</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaAventuraConManzanas-tabla.html" class="internal"><span class="title">Tabla (Una aventura con manzanas)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQue-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQueMult-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-enElMercadoAgricola-tabla.html" class="internal"><span class="title">Tabla (En el mercado agrícola)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaGranCantidadDeDolares-tablas.html" class="internal"><span class="title">Tablas (Una gran cantidad de dólares)</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-references"><div class="toc-title-box"><a href="gra3-uni4-11.html" class="internal"><span class="title">Atribuciones de imágenes</span></a></div></li>
 <li class="toc-item toc-solutions"><div class="toc-title-box"><a href="gra3-uni4-12.html" class="internal"><span class="title">Actividades de cierre</span></a></div></li>
@@ -412,28 +945,39 @@ window.MathJax = {
 <div class="author-name">Adaptación del Grupo LEMA (<a class="external" href="https://www.grupolema.org" target="_blank"><code class="code-inline tex2jax_ignore">https://www.grupolema.org</code></a>)</div>
 <div class="author-info"><a class="external" href="https://www.grupolema.org" target="_blank"><code class="code-inline tex2jax_ignore">https://www.grupolema.org</code></a></div>
 </div>
-<div class="date">December 9, 2024</div>
+<div class="date">March 25, 2025</div>
 <div class="abstract" id="gra3-uni4-intro">
-<span class="title">Presentación de la unidad</span>      <div class="introduction" id="gra3-uni4-intro-2">
-<div class="para" id="gra3-uni4-intro-2-1">En esta unidad los estudiantes aprenden sobre el concepto de división en términos de grupos iguales y su relación con la multiplicación.</div> <div class="para" id="gra3-uni4-intro-2-2">Por ejemplo, <span class="process-math">\(30\div 5\)</span> puede representar 30 objetos en 5 grupos iguales, o 30 objetos en grupos de 5 objetos cada uno.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<span class="title">Presentación de la unidad</span><div class="introduction" id="gra3-uni4-intro-2">
+<div class="para" id="gra3-uni4-intro-2-1">En esta unidad los estudiantes aprenden sobre el concepto de división en términos de grupos iguales y su relación con la multiplicación.</div>
+<div class="para" id="gra3-uni4-intro-2-2">Por ejemplo, <span class="process-math">\(30\div 5\)</span> puede representar 30 objetos en 5 grupos iguales, o 30 objetos en grupos de 5 objetos cada uno.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel top" style="width:47.3684210526316%;"><div class="para" id="gra3-uni4-intro-2-3-1-1">5 grupos</div></div>
 <div class="sbspanel top" style="width:47.3684210526316%;"><div class="para" id="gra3-uni4-intro-2-3-1-2">Grupos de 5</div></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/svg-source/tikz-file-147473.svg" role="img" class="contained" alt=""></div>
 <div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/svg-source/tikz-file-147472.svg" role="img" class="contained" alt=""></div>
-</div></div> <div class="para" id="gra3-uni4-intro-2-4">Los estudiantes usan la relación entre multiplicación y división para afianzar su conocimiento de hechos de multiplicación y división de un solo dígito. Continúan razonando sobre productos de dos números en términos del área de rectángulos cuyas longitudes de lado representan los factores, descomponiendo longitudes de lado y aplicando propiedades de operaciones en el proceso.</div> <div class="para" id="gra3-uni4-intro-2-5"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/svg-source/tikz-file-170303.svg" role="img" class="contained" alt=""></div></div> <div class="para" id="gra3-uni4-intro-2-6">Hacia el final de la unidad, los estudiantes resuelven problemas de dos pasos que involucran las cuatro operaciones. En algunas situaciones, trabajan con expresiones que usan paréntesis para indicar qué operación se completa primero. Por ejemplo: <span class="process-math">\(276 + (45 \div 5) = {?}\text{.}\)</span>
+</div></div>
+<div class="para" id="gra3-uni4-intro-2-4">Los estudiantes usan la relación entre multiplicación y división para afianzar su conocimiento de hechos de multiplicación y división de un solo dígito. Continúan razonando sobre productos de dos números en términos del área de rectángulos cuyas longitudes de lado representan los factores, descomponiendo longitudes de lado y aplicando propiedades de operaciones en el proceso.</div>
+<div class="para" id="gra3-uni4-intro-2-5"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/svg-source/tikz-file-170303.svg" role="img" class="contained" alt=""></div></div>
+<div class="para" id="gra3-uni4-intro-2-6">Hacia el final de la unidad, los estudiantes resuelven problemas de dos pasos que involucran las cuatro operaciones. En algunas situaciones, trabajan con expresiones que usan paréntesis para indicar qué operación se completa primero. Por ejemplo: <span class="process-math">\(276 + (45 \div 5) = {?}\text{.}\)</span>
 </div>
 </div>
 </div>
 <div class="abstract" id="meta-source">
-<span class="title">Código fuente</span> <div class="para" id="meta-source-2">Este documento (HTML, pdf, latex o epub) se generó con <a class="external" href="https://pretextbook.org" target="_blank">PreTeXt</a><details class="ptx-footnote" aria-live="polite" id="meta-source-2-2"><summary class="ptx-footnote__number" title="Nota a pie de página 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="meta-source-2-2"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></details>. El código fuente con el contenido para generarlo se encuentra en <a class="external" href="https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA" target="_blank"><code class="code-inline tex2jax_ignore">github.com/enriqueacosta</code></a>.</div>
+<span class="title">Código fuente</span><div class="para" id="meta-source-2">Este documento (HTML, pdf, latex o epub) se generó con <a class="external" href="https://pretextbook.org" target="_blank">PreTeXt</a><details class="ptx-footnote" aria-live="polite" id="meta-source-2-2"><summary class="ptx-footnote__number" title="Nota a pie de página 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="meta-source-2-2"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></details>. El código fuente con el contenido para generarlo se encuentra en <a class="external" href="https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA" target="_blank"><code class="code-inline tex2jax_ignore">github.com/enriqueacosta</code></a>.</div>
 </div>
 <div class="abstract" id="meta-copyright">
-<span class="title">Licencia</span>         2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta (<a class="external" href="https://enriqueacosta.github.io" target="_blank"><code class="code-inline tex2jax_ignore">enriqueacosta.github.io</code></a>). Iniciativa del Grupo LEMA (<a class="external" href="https://www.grupolema.org" target="_blank"><code class="code-inline tex2jax_ignore">www.grupolema.org</code></a>)   <div class="para" id="meta-copyright-4">Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).</div> <div class="para" id="meta-copyright-5">En breve e incompleto (los detalles están en las licencias), <em class="alert">tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales</em>.</div> <div class="para" id="meta-copyright-6">Ver detalles de la licencia en <a class="external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-6-2"><summary class="ptx-footnote__number" title="Nota a pie de página 2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-6-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-nc-sa/4.0/</code></div></details>.</div> <div class="para" id="meta-copyright-7">Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.</div> <div class="para" id="meta-copyright-8">Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® <a class="external" href="https://curriculum.illustrativemathematics.org" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-4"><summary class="ptx-footnote__number" title="Nota a pie de página 3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-4"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org</code></div></details> en su versión en español en <a class="external" href="https://im.kendallhunt.com/K5_ES/curriculum.html" target="_blank">im.kendallhunt.com</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-6"><summary class="ptx-footnote__number" title="Nota a pie de página 4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-6"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/K5_ES/curriculum.html</code></div></details>, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en <a class="external" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-8"><summary class="ptx-footnote__number" title="Nota a pie de página 5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-8"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/4.0/</code></div></details>.</div> <div class="para" id="meta-copyright-9">Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® <a class="external" href="https://curriculum.illustrativemathematics.org" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-4"><summary class="ptx-footnote__number" title="Nota a pie de página 6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-4"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org</code></div></details> en su versión en español en <a class="external" href="https://im.kendallhunt.com/K5_ES/curriculum.html" target="_blank">im.kendallhunt.com</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-6"><summary class="ptx-footnote__number" title="Nota a pie de página 7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-6"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/K5_ES/curriculum.html</code></div></details>, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en <a class="external" href="https://openupresources.org/math-curriculum/" target="_blank">openupresources.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-9"><summary class="ptx-footnote__number" title="Nota a pie de página 8"><sup> 8 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-9"><code class="code-inline tex2jax_ignore">openupresources.org/math-curriculum/</code></div></details>, con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en <a class="external" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-11"><summary class="ptx-footnote__number" title="Nota a pie de página 9"><sup> 9 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-11"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/4.0/</code></div></details>.</div>  <div class="para logical" id="meta-copyright-10">
+<span class="title">Licencia</span>2024 Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta (<a class="external" href="https://enriqueacosta.github.io" target="_blank"><code class="code-inline tex2jax_ignore">enriqueacosta.github.io</code></a>). Iniciativa del Grupo LEMA (<a class="external" href="https://www.grupolema.org" target="_blank"><code class="code-inline tex2jax_ignore">www.grupolema.org</code></a>)<div class="para" id="meta-copyright-4">Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).</div>
+<div class="para" id="meta-copyright-5">En breve e incompleto (los detalles están en las licencias), <em class="alert">tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales</em>.</div>
+<div class="para" id="meta-copyright-6">Ver detalles de la licencia en <a class="external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-6-2"><summary class="ptx-footnote__number" title="Nota a pie de página 2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-6-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-nc-sa/4.0/</code></div></details>.</div>
+<div class="para" id="meta-copyright-7">Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.</div>
+<div class="para" id="meta-copyright-8">Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® <a class="external" href="https://curriculum.illustrativemathematics.org" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-4"><summary class="ptx-footnote__number" title="Nota a pie de página 3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-4"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org</code></div></details> en su versión en español en <a class="external" href="https://im.kendallhunt.com/K5_ES/curriculum.html" target="_blank">im.kendallhunt.com</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-6"><summary class="ptx-footnote__number" title="Nota a pie de página 4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-6"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/K5_ES/curriculum.html</code></div></details>, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en <a class="external" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-8-8"><summary class="ptx-footnote__number" title="Nota a pie de página 5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-8-8"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/4.0/</code></div></details>.</div>
+<div class="para" id="meta-copyright-9">Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® <a class="external" href="https://curriculum.illustrativemathematics.org" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-4"><summary class="ptx-footnote__number" title="Nota a pie de página 6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-4"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org</code></div></details> en su versión en español en <a class="external" href="https://im.kendallhunt.com/K5_ES/curriculum.html" target="_blank">im.kendallhunt.com</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-6"><summary class="ptx-footnote__number" title="Nota a pie de página 7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-6"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/K5_ES/curriculum.html</code></div></details>, distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en <a class="external" href="https://openupresources.org/math-curriculum/" target="_blank">openupresources.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-9"><summary class="ptx-footnote__number" title="Nota a pie de página 8"><sup> 8 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-9"><code class="code-inline tex2jax_ignore">openupresources.org/math-curriculum/</code></div></details>, con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en <a class="external" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">creativecommons.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-9-11"><summary class="ptx-footnote__number" title="Nota a pie de página 9"><sup> 9 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-9-11"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by/4.0/</code></div></details>.</div>
+<div class="para logical" id="meta-copyright-10">
 <div class="para">
 <em class="alert">Nota:</em> Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:</div>
-<ul class="disc">
+<ul class="disc" id="meta-copyright-10-2">
 <li id="meta-copyright-10-2-1"><div class="para" id="p-derived-meta-copyright-10-2-1">K-5: <a class="external" href="https://curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-10-2-1-2"><summary class="ptx-footnote__number" title="Nota a pie de página 10"><sup> 10 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-10-2-1-2"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org/k5/teachers/grade-1/course-guide/contributors.html</code></div></details>
 </div></li>
 <li id="meta-copyright-10-2-2"><div class="para" id="p-derived-meta-copyright-10-2-2">6-8: <a class="external" href="https://curriculum.illustrativemathematics.org/MS/teachers/1/contributors.html" target="_blank">illustrativemathematics.org</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-10-2-2-2"><summary class="ptx-footnote__number" title="Nota a pie de página 11"><sup> 11 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-10-2-2-2"><code class="code-inline tex2jax_ignore">curriculum.illustrativemathematics.org/MS/teachers/1/contributors.html</code></div></details>
@@ -442,25 +986,39 @@ window.MathJax = {
 <a class="external" href="https://enriqueacosta.github.io/blog/es/posts/translating-im/" target="_blank">enriqueacosta.github.io</a><details class="ptx-footnote" aria-live="polite" id="meta-copyright-10-2-3-2"><summary class="ptx-footnote__number" title="Nota a pie de página 12"><sup> 12 </sup></summary><div class="ptx-footnote__contents" id="meta-copyright-10-2-3-2"><code class="code-inline tex2jax_ignore">enriqueacosta.github.io/blog/es/posts/translating-im/</code></div></details>
 </div></li>
 </ul>
-</div> <div class="para" id="meta-copyright-11">Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.</div>
+</div>
+<div class="para" id="meta-copyright-11">Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.</div>
 </div>
 <div class="abstract" id="meta-contributors">
-<span class="title">Colaboradores</span> <div class="para" id="meta-contributors-2">Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.</div>  <div class="para" id="meta-contributors-3">Traducción y procesamiento de contenido</div> <ul class="disc">
+<span class="title">Colaboradores</span><div class="para" id="meta-contributors-2">Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.</div>
+<div class="para" id="meta-contributors-3">Traducción y procesamiento de contenido</div>
+<ul class="disc" id="meta-contributors-4">
 <li id="meta-contributors-4-1"><div class="para" id="p-derived-meta-contributors-4-1">Enrique Acosta Jaramillo</div></li>
 <li id="meta-contributors-4-2"><div class="para" id="p-derived-meta-contributors-4-2">Andrés Forero Cuervo</div></li>
 <li id="meta-contributors-4-3"><div class="para" id="p-derived-meta-contributors-4-3">Nathaly Otero Paternina</div></li>
 <li id="meta-contributors-4-4"><div class="para" id="p-derived-meta-contributors-4-4">Jonathan Defelipe Payane</div></li>
-</ul>   <div class="para" id="meta-contributors-5">Ingeniería y desarrollo</div> <ul class="disc"><li id="meta-contributors-6-1"><div class="para" id="p-derived-meta-contributors-6-1">Enrique Acosta Jaramillo</div></li></ul>   <div class="para" id="meta-contributors-7">Autores (en inglés)</div> <ul class="disc"><li id="meta-contributors-8-1">
-<div class="para" id="meta-contributors-8-1-1">Illustrative Mathematics. Ver detalles en los siguientes enlaces.</div>
-<ul class="circle">
-<li id="meta-contributors-8-1-2-1"><div class="para" id="p-derived-meta-contributors-8-1-2-1">K-5: <a class="external" href="https://im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html" target="_blank">https://im.kendallhunt.com/k5/</a><details class="ptx-footnote" aria-live="polite" id="meta-contributors-8-1-2-1-2"><summary class="ptx-footnote__number" title="Nota a pie de página 13"><sup> 13 </sup></summary><div class="ptx-footnote__contents" id="meta-contributors-8-1-2-1-2"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html</code></div></details>
+</ul>
+<div class="para" id="meta-contributors-5">Revisiones</div>
+<ul class="disc" id="meta-contributors-6">
+<li id="meta-contributors-6-1"><div class="para" id="p-derived-meta-contributors-6-1">Miguel Bernal Escobar</div></li>
+<li id="meta-contributors-6-2"><div class="para" id="p-derived-meta-contributors-6-2">Verónica Mariño Salazar</div></li>
+</ul>
+<div class="para" id="meta-contributors-7">Ingeniería y desarrollo</div>
+<ul class="disc" id="meta-contributors-8"><li id="meta-contributors-8-1"><div class="para" id="p-derived-meta-contributors-8-1">Enrique Acosta Jaramillo</div></li></ul>
+<div class="para" id="meta-contributors-9">Autores (en inglés)</div>
+<ul class="disc" id="meta-contributors-10"><li id="meta-contributors-10-1">
+<div class="para" id="meta-contributors-10-1-1">Illustrative Mathematics. Ver detalles en los siguientes enlaces.</div>
+<ul class="circle" id="meta-contributors-10-1-2">
+<li id="meta-contributors-10-1-2-1"><div class="para" id="p-derived-meta-contributors-10-1-2-1">K-5: <a class="external" href="https://im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html" target="_blank">https://im.kendallhunt.com/k5/</a><details class="ptx-footnote" aria-live="polite" id="meta-contributors-10-1-2-1-2"><summary class="ptx-footnote__number" title="Nota a pie de página 13"><sup> 13 </sup></summary><div class="ptx-footnote__contents" id="meta-contributors-10-1-2-1-2"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/k5_es/teachers/grade-4/course-guide/contributors.html</code></div></details>
 </div></li>
-<li id="meta-contributors-8-1-2-2"><div class="para" id="p-derived-meta-contributors-8-1-2-2">6-8: <a class="external" href="https://im.kendallhunt.com/MS/teachers/2/contributors.html" target="_blank">https://im.kendallhunt.com/MS/</a><details class="ptx-footnote" aria-live="polite" id="meta-contributors-8-1-2-2-2"><summary class="ptx-footnote__number" title="Nota a pie de página 14"><sup> 14 </sup></summary><div class="ptx-footnote__contents" id="meta-contributors-8-1-2-2-2"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/MS/teachers/2/contributors.html</code></div></details>
+<li id="meta-contributors-10-1-2-2"><div class="para" id="p-derived-meta-contributors-10-1-2-2">6-8: <a class="external" href="https://im.kendallhunt.com/MS/teachers/2/contributors.html" target="_blank">https://im.kendallhunt.com/MS/</a><details class="ptx-footnote" aria-live="polite" id="meta-contributors-10-1-2-2-2"><summary class="ptx-footnote__number" title="Nota a pie de página 14"><sup> 14 </sup></summary><div class="ptx-footnote__contents" id="meta-contributors-10-1-2-2-2"><code class="code-inline tex2jax_ignore">im.kendallhunt.com/MS/teachers/2/contributors.html</code></div></details>
 </div></li>
 </ul>
-</li></ul> </div>
+</li></ul>
+</div>
 <div class="abstract" id="meta-attributionsOpenSource">
-<span class="title">Atribuciones de Software</span> <div class="para" id="meta-attributionsOpenSource-2">Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:</div> <ul class="disc">
+<span class="title">Atribuciones de Software</span><div class="para" id="meta-attributionsOpenSource-2">Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:</div>
+<ul class="disc" id="meta-attributionsOpenSource-3">
 <li id="meta-attributionsOpenSource-3-1"><div class="para" id="p-derived-meta-attributionsOpenSource-3-1">
 <a class="external" href="https://pretextbook.org" target="_blank">Pretext</a><details class="ptx-footnote" aria-live="polite" id="meta-attributionsOpenSource-3-1-2"><summary class="ptx-footnote__number" title="Nota a pie de página 15"><sup> 15 </sup></summary><div class="ptx-footnote__contents" id="meta-attributionsOpenSource-3-1-2"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></details>: Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.</div></li>
 <li id="meta-attributionsOpenSource-3-2"><div class="para" id="p-derived-meta-attributionsOpenSource-3-2">

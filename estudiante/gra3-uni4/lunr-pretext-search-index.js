@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Introducción a la unidad",
   "number": "",
   "title": "Introducción a la unidad",
-  "body": "    Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )    Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane     Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
+  "body": " Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )    Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane    Revisiones   Miguel Bernal Escobar  Verónica Mariño Salazar    Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
 },
 {
   "id": "meta-source-2",
@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Ingeniería y desarrollo "
+  "body": "Revisiones "
 },
 {
   "id": "meta-contributors-7",
@@ -124,12 +124,21 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
+  "body": "Ingeniería y desarrollo "
+},
+{
+  "id": "meta-contributors-9",
+  "level": "2",
+  "url": "gra3-uni4-prefacio.html#meta-contributors-9",
+  "type": "Párrafo",
+  "number": "",
+  "title": "",
   "body": "Autores (en inglés) "
 },
 {
-  "id": "meta-contributors-8-1-1",
+  "id": "meta-contributors-10-1-1",
   "level": "2",
-  "url": "gra3-uni4-prefacio.html#meta-contributors-8-1-1",
+  "url": "gra3-uni4-prefacio.html#meta-contributors-10-1-1",
   "type": "Párrafo",
   "number": "",
   "title": "",
@@ -151,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento    Cuántos ves: Manzanas    ¿Cuántas ves?  ¿Cómo lo sabes?, ¿qué ves?    Manzanas en una caja.   Pavel Bokr. Pixabay. https:\/\/pixabay.com      Ejemplos de respuestas:   16 porque veo 4 filas (o columnas) de 4.  16 porque veo multipliqué  23 porque veo 4 grupos de 4 en una caja y 7 manzanas más en la otra caja, lo que da 23.       "
+  "body": " Calentamiento  Calentamiento    Cuántos ves: Manzanas    ¿Cuántas ves?  ¿Cómo lo sabes?, ¿qué ves?    Manzanas en una caja.   Pavel Bokr. Pixabay. https:\/\/pixabay.com      Ejemplos de respuestas:   16 porque veo 4 filas (o columnas) de 4.  16 porque veo 2 grupos de 8 manzanas, entonces multipliqué  23 porque veo 4 grupos de 4 en una caja y 7 manzanas más en la otra caja, lo que da 23.       "
 },
 {
   "id": "warm-cuantosVes-Manzanas",
@@ -160,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "1",
   "title": "Cuántos ves: Manzanas.",
-  "body": " Cuántos ves: Manzanas    ¿Cuántas ves?  ¿Cómo lo sabes?, ¿qué ves?    Manzanas en una caja.   Pavel Bokr. Pixabay. https:\/\/pixabay.com      Ejemplos de respuestas:   16 porque veo 4 filas (o columnas) de 4.  16 porque veo multipliqué  23 porque veo 4 grupos de 4 en una caja y 7 manzanas más en la otra caja, lo que da 23.      "
+  "body": " Cuántos ves: Manzanas    ¿Cuántas ves?  ¿Cómo lo sabes?, ¿qué ves?    Manzanas en una caja.   Pavel Bokr. Pixabay. https:\/\/pixabay.com      Ejemplos de respuestas:   16 porque veo 4 filas (o columnas) de 4.  16 porque veo 2 grupos de 8 manzanas, entonces multipliqué  23 porque veo 4 grupos de 4 en una caja y 7 manzanas más en la otra caja, lo que da 23.      "
 },
 {
   "id": "lec-cuantosGrupos-act1",
@@ -169,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1    ¿Cuántas manzanas?   Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?  Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?      Ejemplos de respuestas:   3 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 8 manzanas en cada fila y observan que hay 3 filas.  7 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 42 manzanas y marcan grupos de 6 hasta que no quedan manzanas.  8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y los ponen en grupos de 4 para representar cada caja.       "
+  "body": " Actividad 1  Actividad 1    ¿Cuántas manzanas?   Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?  Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?      Ejemplos de respuestas:   3 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 8 manzanas en cada fila y observan que hay 3 filas.  7 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 42 manzanas y marcan grupos de 6 hasta que no quedan manzanas.  8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y arman grupos de 4 para representar cada caja.       "
 },
 {
   "id": "act-cuantasManzanas",
@@ -178,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "2",
   "title": "¿Cuántas manzanas?",
-  "body": " ¿Cuántas manzanas?   Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?  Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?      Ejemplos de respuestas:   3 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 8 manzanas en cada fila y observan que hay 3 filas.  7 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 42 manzanas y marcan grupos de 6 hasta que no quedan manzanas.  8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y los ponen en grupos de 4 para representar cada caja.      "
+  "body": " ¿Cuántas manzanas?   Resuelve cada problema. Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 42 manzanas se ponen en cajas y en cada caja se ponen 6 manzanas, ¿cuántas cajas hay?  Si 32 manzanas se ponen en cajas y en cada caja se ponen 4 manzanas, ¿cuántas cajas hay?      Ejemplos de respuestas:   3 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 8 manzanas en cada fila y observan que hay 3 filas.  7 cajas. Ejemplo de razonamiento: Los estudiantes dibujan 42 manzanas y marcan grupos de 6 hasta que no quedan manzanas.  8 cajas. Ejemplo de razonamiento: Los estudiantes toman 32 cubos y arman grupos de 4 para representar cada caja.      "
 },
 {
   "id": "lec-cuantosGrupos-act2",
@@ -205,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     ¿Cuántas bolsas?   Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.    Necesitará 5 bolsas. Si pongo las 30 manzanas en grupos de 6, habrá 5 grupos.        "
+  "body": " Actividad de cierre  Actividad de cierre     ¿Cuántas bolsas?   Lin tiene 30 manzanas para compartir con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.    Necesitará 5 bolsas. Si pone las 30 manzanas en grupos de 6, habrá 5 grupos.        "
 },
 {
   "id": "cool-cuantasBolsas",
@@ -214,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "4",
   "title": "¿Cuántas bolsas?",
-  "body": " ¿Cuántas bolsas?   Lin tiene 30 manzanas para compartirlas con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.    Necesitará 5 bolsas. Si pongo las 30 manzanas en grupos de 6, habrá 5 grupos.       "
+  "body": " ¿Cuántas bolsas?   Lin tiene 30 manzanas para compartir con sus amigos. Las pone en bolsas y pone 6 manzanas en cada bolsa. ¿Cuántas bolsas necesita? Explica o muestra tu razonamiento.    Necesitará 5 bolsas. Si pone las 30 manzanas en grupos de 6, habrá 5 grupos.       "
 },
 {
   "id": "lec-cuantosEnCadaGrupo-warm",
@@ -277,7 +286,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 3",
-  "body": " Actividad 3  Actividad 3    Todas las manzanas    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?   Discute con tu compañero:    ¿En qué se parecen estos problemas?  ¿En qué se diferencian?  ¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?      Ejemplos de respuestas:   Ambos problemas eran sobre manzanas.  En ambos problemas había el mismo número de manzanas en cada caja.  En ambos problemas sabíamos el número total de manzanas.  En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, pero sabíamos cuántas manzanas había en cada caja.  En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.       "
+  "body": " Actividad 3  Actividad 3    Todas las manzanas    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?   Discute con tu compañero:    ¿En qué se parecen estos problemas?  ¿En qué se diferencian?  ¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?      Ejemplos de respuestas:   Ambos problemas eran sobre manzanas.  En ambos problemas había el mismo número de manzanas en cada caja.  En ambos problemas sabíamos el número total de manzanas.  En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, sabiendo cuántas manzanas había en cada caja.  En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.       "
 },
 {
   "id": "act-todasLasManzanas",
@@ -286,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "8",
   "title": "Todas las manzanas.",
-  "body": " Todas las manzanas    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?   Discute con tu compañero:    ¿En qué se parecen estos problemas?  ¿En qué se diferencian?  ¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?      Ejemplos de respuestas:   Ambos problemas eran sobre manzanas.  En ambos problemas había el mismo número de manzanas en cada caja.  En ambos problemas sabíamos el número total de manzanas.  En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, pero sabíamos cuántas manzanas había en cada caja.  En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.      "
+  "body": " Todas las manzanas    Si 24 manzanas se ponen en cajas y en cada caja se ponen 8 manzanas, ¿cuántas cajas hay?  Si 20 manzanas se empacan en 4 cajas y cada caja tiene el mismo número de manzanas, ¿cuántas manzanas hay en cada caja?   Discute con tu compañero:    ¿En qué se parecen estos problemas?  ¿En qué se diferencian?  ¿En qué se parecen y en qué se diferencian las formas de representar y resolver estos problemas?      Ejemplos de respuestas:   Ambos problemas eran sobre manzanas.  En ambos problemas había el mismo número de manzanas en cada caja.  En ambos problemas sabíamos el número total de manzanas.  En el primer problema, queríamos averiguar cuántas cajas de manzanas podíamos llenar, sabiendo cuántas manzanas había en cada caja.  En el problema de hoy, sabíamos cuántas cajas había, pero no sabíamos cuántas manzanas había en cada caja.      "
 },
 {
   "id": "lec-cuantosEnCadaGrupo-cool",
@@ -367,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 3",
-  "body": " Actividad 3  Actividad 3    ¿Cuál dibujo corresponde?   Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.    Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?  Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?  Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?  Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?  Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?  Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?    A.   2 groups of 4 dots.   B.   10 groups of 2 dots.   C.   3 groups of 5 dots.       Respuesta del enunciado   A  B  A  C  B  C       "
+  "body": " Actividad 3  Actividad 3    ¿Cuál dibujo corresponde?   Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.    Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?  Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?  Lin tiene 8 lápices de colores y 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?  Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿En cuántos pupitres pondrá crayones?  Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?  Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?    A.   2 groups of 4 dots.   B.   10 groups of 2 dots.   C.   3 groups of 5 dots.       Respuesta del enunciado   A  B  A  C  B  C       "
 },
 {
   "id": "act-cualDibujoCorresponde",
@@ -376,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "13",
   "title": "¿Cuál dibujo corresponde?",
-  "body": " ¿Cuál dibujo corresponde?   Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.    Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?  Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?  Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?  Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?  Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?  Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?    A.   2 groups of 4 dots.   B.   10 groups of 2 dots.   C.   3 groups of 5 dots.       Respuesta del enunciado   A  B  A  C  B  C      "
+  "body": " ¿Cuál dibujo corresponde?   Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.    Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?  Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?  Lin tiene 8 lápices de colores y 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?  Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿En cuántos pupitres pondrá crayones?  Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?  Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?    A.   2 groups of 4 dots.   B.   10 groups of 2 dots.   C.   3 groups of 5 dots.       Respuesta del enunciado   A  B  A  C  B  C      "
 },
 {
   "id": "lec-dibujosSituacionesDivision-cool",
@@ -421,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1    Trompos   Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.    Mexican trompo (spinning top)   Alberto Adán https:\/\/pixabay.com     Dreidels   PublicDomainPictures https:\/\/pixabay.com     Indonesian gasing (spinning tops)   CalculaPR https:\/\/pixabay.com     German kreisel (spinning top)   Federlight. CC BY-SA 4.0. Wikimedia Commons https:\/\/commons.wikimedia.org     Spinning top toy   Anthony. Pexel License https:\/\/www.pexels.com\/     Empareja cada situación sobre trompos con una expresión que pueda representarla.    1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?  A.    2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada persona pinta el mismo número de trompos, ¿cuántos trompos pinta cada persona?  B.    3. En una tienda tienen 24 trompos de todo el mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?  C.    4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?  D.    5. Seis amigos están jugando con 12 dreidels . Si cada uno juega con el mismo número de dreidels que los demás, ¿cuántos dreidels tiene cada persona?  E.      1:C, 2:A, 3:E, 4:B, 5:D      "
+  "body": " Actividad 1  Actividad 1    Trompos   Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.    Mexican trompo (spinning top)   Alberto Adán https:\/\/pixabay.com     Dreidels   PublicDomainPictures https:\/\/pixabay.com     Indonesian gasing (spinning tops)   CalculaPR https:\/\/pixabay.com     German kreisel (spinning top)   Federlight. CC BY-SA 4.0. Wikimedia Commons https:\/\/commons.wikimedia.org     Spinning top toy   Anthony. Pexel License https:\/\/www.pexels.com\/     Empareja cada situación sobre trompos con una expresión que pueda representarla.    1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?  A.    2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada uno pinta el mismo número de trompos, ¿cuántos trompos pinta cada uno?  B.    3. En una tienda tienen 24 trompos de distintas partes del mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?  C.    4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?  D.    5. Seis amigos están jugando con 12 dreidels (trompos judíos). Si cada uno juega con el mismo número de dreidels que los demás, ¿cuántos dreidels tiene cada uno?  E.      1:C, 2:A, 3:E, 4:B, 5:D      "
 },
 {
   "id": "act-trompos",
@@ -430,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "16",
   "title": "Trompos.",
-  "body": " Trompos   Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.    Mexican trompo (spinning top)   Alberto Adán https:\/\/pixabay.com     Dreidels   PublicDomainPictures https:\/\/pixabay.com     Indonesian gasing (spinning tops)   CalculaPR https:\/\/pixabay.com     German kreisel (spinning top)   Federlight. CC BY-SA 4.0. Wikimedia Commons https:\/\/commons.wikimedia.org     Spinning top toy   Anthony. Pexel License https:\/\/www.pexels.com\/     Empareja cada situación sobre trompos con una expresión que pueda representarla.    1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?  A.    2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada persona pinta el mismo número de trompos, ¿cuántos trompos pinta cada persona?  B.    3. En una tienda tienen 24 trompos de todo el mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?  C.    4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?  D.    5. Seis amigos están jugando con 12 dreidels . Si cada uno juega con el mismo número de dreidels que los demás, ¿cuántos dreidels tiene cada persona?  E.      1:C, 2:A, 3:E, 4:B, 5:D     "
+  "body": " Trompos   Los trompos son populares en todo el mundo. Estos son trompos de diferentes culturas.    Mexican trompo (spinning top)   Alberto Adán https:\/\/pixabay.com     Dreidels   PublicDomainPictures https:\/\/pixabay.com     Indonesian gasing (spinning tops)   CalculaPR https:\/\/pixabay.com     German kreisel (spinning top)   Federlight. CC BY-SA 4.0. Wikimedia Commons https:\/\/commons.wikimedia.org     Spinning top toy   Anthony. Pexel License https:\/\/www.pexels.com\/     Empareja cada situación sobre trompos con una expresión que pueda representarla.    1. Clare tiene una colección de 24 trompos de cuatro colores: negro, blanco, rojo y verde. Tiene el mismo número de trompos de cada color. ¿Cuántos trompos tiene de cada color?  A.    2. Priya y su amigo están decorando con pintura 24 trompos de madera. Si cada uno pinta el mismo número de trompos, ¿cuántos trompos pinta cada uno?  B.    3. En una tienda tienen 24 trompos de distintas partes del mundo exhibidos en 6 cajas. Cada caja contiene el mismo número de trompos. ¿Cuántos trompos hay en cada caja?  C.    4. Diego tiene 12 trompos que quiere regalar. Si a cada amigo le da 2 trompos, ¿cuántos amigos recibirán trompos?  D.    5. Seis amigos están jugando con 12 dreidels (trompos judíos). Si cada uno juega con el mismo número de dreidels que los demás, ¿cuántos dreidels tiene cada uno?  E.      1:C, 2:A, 3:E, 4:B, 5:D     "
 },
 {
   "id": "lec-interpretarExpresionesDivision-act2",
@@ -439,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2    Autos en cajas   Considera estas dos situaciones.   A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?  B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?   ¿Cuál situación está representada por la expresión ? Explica tu razonamiento.    Ejemplos de respuestas  Ambas situaciones están representadas por la expresión . El 3 en la situación A es en número de cajas y el 3 en la situación B es el número de autos que va en cada caja.      "
+  "body": " Actividad 2  Actividad 2    Autos en cajas   Considera estas dos situaciones.   A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?  B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?   ¿Cuál situación está representada por la expresión ? Explica tu razonamiento.    Ejemplos de respuestas:   Ambas situaciones están representadas por la expresión .  El 3 en la situación A es en número de cajas y el 3 en la situación B es el número de autos que van en cada caja.       "
 },
 {
   "id": "act-autosCajas",
@@ -448,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "17",
   "title": "Autos en cajas.",
-  "body": " Autos en cajas   Considera estas dos situaciones.   A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?  B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?   ¿Cuál situación está representada por la expresión ? Explica tu razonamiento.    Ejemplos de respuestas  Ambas situaciones están representadas por la expresión . El 3 en la situación A es en número de cajas y el 3 en la situación B es el número de autos que va en cada caja.     "
+  "body": " Autos en cajas   Considera estas dos situaciones.   A. Han tiene 21 autos de juguete y 3 cajas. Él pone el mismo número de autos en cada caja. ¿Cuántos autos habrá en cada caja?  B. Han tiene 21 autos de juguete y varias cajas. Él quiere poner 3 autos en cada caja. ¿Cuántas cajas necesitará?   ¿Cuál situación está representada por la expresión ? Explica tu razonamiento.    Ejemplos de respuestas:   Ambas situaciones están representadas por la expresión .  El 3 en la situación A es en número de cajas y el 3 en la situación B es el número de autos que van en cada caja.      "
 },
 {
   "id": "lec-interpretarExpresionesDivision-act3",
@@ -475,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Los trompos de Han   Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?  Selecciona todas las formas en las que podemos representar la situación.    A   2 groups of 7 dots.   B   Groups of dots.     C   D       A y C     "
+  "body": " Actividad de cierre  Actividad de cierre     Los trompos de Han   Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas (es decir, deja la misma cantidad de trompos en cada caja). ¿Cuántos trompos habrá en cada caja?  Selecciona todas las formas en las que podemos representar la situación.    A   2 groups of 7 dots.   B   Groups of dots.     C   D       A y C     "
 },
 {
   "id": "cool-losTromposDe",
@@ -484,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "19",
   "title": "Los trompos de Han.",
-  "body": " Los trompos de Han   Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas. ¿Cuántos trompos habrá en cada caja?  Selecciona todas las formas en las que podemos representar la situación.    A   2 groups of 7 dots.   B   Groups of dots.     C   D       A y C    "
+  "body": " Los trompos de Han   Han tiene 14 trompos. Él reparte los trompos equitativamente en 2 cajas (es decir, deja la misma cantidad de trompos en cada caja). ¿Cuántos trompos habrá en cada caja?  Selecciona todas las formas en las que podemos representar la situación.    A   2 groups of 7 dots.   B   Groups of dots.     C   D       A y C    "
 },
 {
   "id": "lec-escribamosExpresionesDivision-warm",
@@ -493,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento    Conversación numérica: ¿En qué se parecen?   Encuentra mentalmente el valor de cada expresión.                    Ejemplos de respuestas    125. La diferencia entre 100 y 200 es 100, entonces faltan 25 más para llegar a 225.  125. Me di cuenta de que le sumaron 2 a los dos números del primer problema. Así que ahora son 98 para llegar a 200, más 27 más para llegar a 227. .  125. Se le sumó cinco a cada número del primer problema, así que la diferencia entre los números sigue siendo 125.  125. Esta vez se le restó 5 a los dos números. Le sumé 5 a 95 para llegar a 100 y 120 más para llegar a 220, entonces el valor sigue siendo 125.        "
+  "body": " Calentamiento  Calentamiento    Conversación numérica: ¿En qué se parecen?   Encuentra mentalmente el valor de cada expresión.                    Ejemplos de respuestas    125. La diferencia entre 100 y 200 es 100, entonces faltan 25 más para llegar a 225.  125. Me di cuenta de que le sumaron 2 a los dos números del primer problema. Así que ahora son 98 para llegar a 200, y 27 más para llegar a 227. .  125. Se le sumó 5 a cada número del primer problema, así que la diferencia entre los números sigue siendo 125.  125. Esta vez se le restó 5 a los dos números. Le sumé 5 a 95 para llegar a 100 y 120 más para llegar a 220, entonces el valor sigue siendo 125.        "
 },
 {
   "id": "warm-numTalk-enQueSeParecen",
@@ -502,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "20",
   "title": "Conversación numérica: ¿En qué se parecen?",
-  "body": " Conversación numérica: ¿En qué se parecen?   Encuentra mentalmente el valor de cada expresión.                    Ejemplos de respuestas    125. La diferencia entre 100 y 200 es 100, entonces faltan 25 más para llegar a 225.  125. Me di cuenta de que le sumaron 2 a los dos números del primer problema. Así que ahora son 98 para llegar a 200, más 27 más para llegar a 227. .  125. Se le sumó cinco a cada número del primer problema, así que la diferencia entre los números sigue siendo 125.  125. Esta vez se le restó 5 a los dos números. Le sumé 5 a 95 para llegar a 100 y 120 más para llegar a 220, entonces el valor sigue siendo 125.       "
+  "body": " Conversación numérica: ¿En qué se parecen?   Encuentra mentalmente el valor de cada expresión.                    Ejemplos de respuestas    125. La diferencia entre 100 y 200 es 100, entonces faltan 25 más para llegar a 225.  125. Me di cuenta de que le sumaron 2 a los dos números del primer problema. Así que ahora son 98 para llegar a 200, y 27 más para llegar a 227. .  125. Se le sumó 5 a cada número del primer problema, así que la diferencia entre los números sigue siendo 125.  125. Esta vez se le restó 5 a los dos números. Le sumé 5 a 95 para llegar a 100 y 120 más para llegar a 220, entonces el valor sigue siendo 125.       "
 },
 {
   "id": "lec-escribamosExpresionesDivision-act1",
@@ -511,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1    Clasificación de tarjetas: Todo sobre bichos    Insectos   Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. https:\/\/en.wikipedia.org .      Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.   El grillo topo tiene unas patas especiales para cavar. Diez patas especiales pertenecen a 5 grillos topo. ¿Cuántas patas especiales tiene cada grillo topo?  Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?  Catorce antenas pertenecen a un grupo de abejas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?  Hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?  Treinta patas pertenecen a 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?  En total, hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?    Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.       Ejemplo de respuesta:   Situaciones sobre encontrar el número de grupos: B, C, D  Situaciones sobre encontrar el número de objetos que hay en cada grupo: A, E, F     Expresiones:                "
+  "body": " Actividad 1  Actividad 1    Clasificación de tarjetas: Todo sobre bichos    Insectos   Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. https:\/\/en.wikipedia.org .     Tarjetas para recortar en el libro de trabajo, o descargar acá .     Tu profesor te dará un grupo de tarjetas que describen situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.    Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.        Ejemplo de respuesta:   Situaciones sobre encontrar el número de grupos: B, C, D  Situaciones sobre encontrar el número de objetos que hay en cada grupo: A, E, F     Expresiones:                "
 },
 {
   "id": "act-clasificacionDeTarjetas-todoSobreBichos",
@@ -520,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "21",
   "title": "Clasificación de tarjetas: Todo sobre bichos.",
-  "body": " Clasificación de tarjetas: Todo sobre bichos    Insectos   Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. https:\/\/en.wikipedia.org .      Tu profesor te dará un grupo de tarjetas que muestran situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.   El grillo topo tiene unas patas especiales para cavar. Diez patas especiales pertenecen a 5 grillos topo. ¿Cuántas patas especiales tiene cada grillo topo?  Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?  Catorce antenas pertenecen a un grupo de abejas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?  Hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?  Treinta patas pertenecen a 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?  En total, hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?    Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.       Ejemplo de respuesta:   Situaciones sobre encontrar el número de grupos: B, C, D  Situaciones sobre encontrar el número de objetos que hay en cada grupo: A, E, F     Expresiones:               "
+  "body": " Clasificación de tarjetas: Todo sobre bichos    Insectos   Nicholas Caffarilla. CC-BY-SA 3.0. Wikipedia. https:\/\/en.wikipedia.org .     Tarjetas para recortar en el libro de trabajo, o descargar acá .     Tu profesor te dará un grupo de tarjetas que describen situaciones. Elige dos categorías y clasifica las tarjetas en esas dos categorías. Prepárate para explicar el significado de tus categorías.    Escribe una expresión de división para representar cada situación. Prepárate para explicar tu razonamiento.        Ejemplo de respuesta:   Situaciones sobre encontrar el número de grupos: B, C, D  Situaciones sobre encontrar el número de objetos que hay en cada grupo: A, E, F     Expresiones:               "
 },
 {
   "id": "lec-escribamosExpresionesDivision-act2",
@@ -529,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2    Resolvamos un problema sobre bichos   Tu profesor les va a asignar un problema.  Haz una presentación visual que muestre cómo pensaste y que muestre tu solución al problema.      2 patas especiales  4 escarabajos  7 abejas  3 libélulas  6 patas  10 manchas        "
+  "body": " Actividad 2  Actividad 2    Resolvamos un problema sobre bichos   Tu profesor les va a asignar un problema.  Hagan una presentación visual que muestre cómo pensaron y que muestre su solución al problema.      2 patas especiales  4 escarabajos  7 abejas  3 libélulas  6 patas  10 manchas        "
 },
 {
   "id": "act-resolvamosProblemaBichos",
@@ -538,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "22",
   "title": "Resolvamos un problema sobre bichos.",
-  "body": " Resolvamos un problema sobre bichos   Tu profesor les va a asignar un problema.  Haz una presentación visual que muestre cómo pensaste y que muestre tu solución al problema.      2 patas especiales  4 escarabajos  7 abejas  3 libélulas  6 patas  10 manchas       "
+  "body": " Resolvamos un problema sobre bichos   Tu profesor les va a asignar un problema.  Hagan una presentación visual que muestre cómo pensaron y que muestre su solución al problema.      2 patas especiales  4 escarabajos  7 abejas  3 libélulas  6 patas  10 manchas       "
 },
 {
   "id": "lec-escribamosExpresionesDivision-cool",
@@ -547,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Patas de hormigas   Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.    Escribe una expresión de división que represente esta situación.  ¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.         6 patas. Ejemplo de respuesta: Un dibujo de 4 grupos de 6.       "
+  "body": " Actividad de cierre  Actividad de cierre     Patas de hormigas   En una fila de 4 hormigas se contaron veinticuatro patas. Todas las hormigas tienen el mismo número de patas.     Escribe una expresión de división que represente esta situación.    ¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.          6 patas. Ejemplo de respuesta: Un dibujo de 4 grupos de 6.       "
 },
 {
   "id": "cool-patasHormigas",
@@ -556,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "23",
   "title": "Patas de hormigas.",
-  "body": " Patas de hormigas   Veinticuatro patas pertenecen a 4 hormigas. Todas las hormigas tienen el mismo número de patas.    Escribe una expresión de división que represente esta situación.  ¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.         6 patas. Ejemplo de respuesta: Un dibujo de 4 grupos de 6.      "
+  "body": " Patas de hormigas   En una fila de 4 hormigas se contaron veinticuatro patas. Todas las hormigas tienen el mismo número de patas.     Escribe una expresión de división que represente esta situación.    ¿Cuántas patas tiene cada hormiga? Explica o muestra tu razonamiento.          6 patas. Ejemplo de respuesta: Un dibujo de 4 grupos de 6.      "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica",
@@ -565,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección A",
-  "body": "  Problemas de práctica de la sección A  Problemas de práctica   (Previo a la sección)    Array. 4 rows of 5 dots.     Escribe una expresión de multiplicación que represente el arreglo.  Escribe una ecuación de multiplicación que represente el arreglo.      Ejemplos de respuestas:   o   o    (Previo a la sección)  Encuentra el área de cada rectángulo.    A.   Area diagram.     B.   A rectangle. Left side labeled 4 centimeters. Top labeled 10 centimeters. Other sides unlabeled.      Ejemplos de respuestas   30 unidades cuadradas  40 centímetros cuadrados.    (Previo a la sección)  El área del rectángulo es 40 centímetros cuadrados.   Encuentra la longitud de lado desconocida del rectángulo. Explica tu razonamiento.   A rectangle. Left side labeled 5 centimeters. Top labeled question mark. Other sides unlabeled.     8 cm. Respuesta de muestra: Sé que     (Previo a la sección)  En cada caso, encuentra el número que hace que la ecuación sea verdadera.           40  7  9    (Previo a la sección)  Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuántos jugadores de voleibol hay en total?    Haz un dibujo de la situación.  Escribe una ecuación que represente la situación. Usa un “?” para representar el valor desconocido.  Resuelve el problema.      Los estudiantes dibujan 6 grupos de 10.  o  Hay 60 jugadores de voleibol en los 6 equipos.      En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.    Hay 40 manzanas empacadas en cajas. Si hay 8 manzanas en cada caja, ¿cuántas cajas hay?  Hay 40 manzanas empacadas en cajas. Si hay 10 manzanas en cada caja, ¿cuántas cajas hay?       5. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 8 puntos cada uno.     4. Ejemplo de respuesta   Grupos de puntos. 4 grupos con 10 puntos cada uno.    Hay 10 personas en cada situación y hay un 2 y un 5 en cada situación. En la primera situación, 2 es el número en cada automóvil y 5 es el número de automóviles. En la segunda situación, 5 es el número en cada automóvil y 2 es el número de automóviles.     En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.   Hay 30 naranjas. Si se empacan en 5 bolsas con la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?  Hay 30 naranjas. Si se empacan en 3 bolsas con la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?      6. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 6 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 3 grupos con 10 puntos cada uno.         10 personas van a cine en automóviles. En cada automóvil van dos personas. ¿Cuántos automóviles hay? Muestra cómo pensaste. Usa un dibujo o un diagrama.  Otras 10 personas van a cine en automóviles. Van en 2 automóviles con el mismo número de personas en cada automóvil. ¿Cuántas personas hay en cada automóvil? Muestra cómo pensaste. Usa un dibujo o un diagrama.  ¿En qué se parecen las dos situaciones? ¿En qué son diferentes? ¿En qué se parecen los diagramas? ¿En qué son diferentes?       5.   Grupos de puntos. 5 grupos con 2 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 2 grupos con 5 puntos cada uno.       Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos. ¿Cuántos pupitres hay en cada grupo?    ¿Cuál expresión representa esta situación: o ? Explica tu razonamiento.   Selecciona el diagrama que representa esta situación. Explica tu razonamiento.    A   4 groups of 5 dots.     B   5 groups of 4 dots.          , porque hay 20 pupitres divididos en 5 grupos iguales.  El segundo diagrama, porque muestra 20 dividido en 5 grupos iguales.     La familia de Mai recolectó 40 libras de duraznos y los pusieron en bolsas. Pusieron 5 libras en cada bolsa.    Escribe una expresión de división que represente la situación.  ¿Cuántas bolsas de duraznos recogió la familia de Mai? Explica o muestra tu razonamiento.        8. Ejemplo de respuesta:   8 groups of 5 dots.       Exploración  Completa cada historia poniendo un número que tenga sentido en el espacio en blanco. Después, responde las preguntas. Dibuja un diagrama para resolver cada problema.    Mai tiene __________ calcomanías. Ella va a poner el mismo número de calcomanías en cada uno de sus 5 cuadernos. ¿Cuántas calcomanías habrá en cada cuaderno?  Andre tiene __________ tarjetas. Él va a organizarlas en filas de __________ tarjetas. ¿Cuántas filas de tarjetas hará Andre?     Ejemplos de respuestas:    30. Hay 6 calcomanías en cada cuaderno.   5 grupos cada uno con 6 puntos.     48 cartas, 8 cartas en cada fila. Habrá 6 filas.   6 grupos cada uno con 8 puntos.      Exploración  Escribe una situación de división que corresponda a cada diagrama.   A   2 groups of 7 dots.   B   9 groups of 3 dots.   C   6 groups of 4 dots.     Ejemplos de repuestas:   Hay 14 peras en la caja en 2 filas iguales. ¿Cuántas peras hay en cada fila?  Hay 27 estudiantes en la clase y están en grupos iguales de 3. ¿Cuántos grupos hay?  Hay 24 tarjetas. Se dividen equitativamente entre 6 personas. ¿Cuántas tarjetas recibe cada persona?    "
+  "body": "  Problemas de práctica de la sección A  Problemas de práctica   (Previo a la sección)    Array. 4 rows of 5 dots.      Escribe una expresión de multiplicación que represente el arreglo.    Escribe una ecuación de multiplicación que represente el arreglo.       Ejemplos de respuestas:   o   o    (Previo a la sección)  Encuentra el área de cada rectángulo.    A.   Area diagram.     B.   A rectangle. Left side labeled 4 centimeters. Top labeled 10 centimeters. Other sides unlabeled.      Ejemplos de respuestas   30 unidades cuadradas  40 centímetros cuadrados.    (Previo a la sección)  El área del rectángulo es 40 centímetros cuadrados.   Encuentra la longitud de lado desconocida del rectángulo. Explica tu razonamiento.   A rectangle. Left side labeled 5 centimeters. Top labeled question mark. Other sides unlabeled.     8 cm. Respuesta de muestra: Sé que     (Previo a la sección)  En cada caso, encuentra el número que hace que la ecuación sea verdadera.           40  7  9    (Previo a la sección)  Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuántos jugadores de voleibol hay en total?     Haz un dibujo de la situación.    Escribe una ecuación que represente la situación. Usa un “?” para representar el valor desconocido.    Resuelve el problema.       Los estudiantes dibujan 6 grupos de 10.  o  Hay 60 jugadores de voleibol en los 6 equipos.      En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.     Hay 40 manzanas empacadas en cajas. Si hay 8 manzanas en cada caja, ¿cuántas cajas hay?    Hay 40 manzanas empacadas en cajas. Si hay 10 manzanas en cada caja, ¿cuántas cajas hay?        5. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 8 puntos cada uno.     4. Ejemplo de respuesta   Grupos de puntos. 4 grupos con 10 puntos cada uno.       En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.    Hay 30 naranjas. Las empacan en 5 bolsas. Si hay la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?    Hay 30 naranjas. Las empacan en 3 bolsas. Si hay la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?       6. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 6 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 3 grupos con 10 puntos cada uno.          10 personas van a cine en automóviles. En cada automóvil van dos personas. ¿Cuántos automóviles hay? Muestra cómo pensaste. Usa un dibujo o un diagrama.    Otras 10 personas van a cine en automóviles. Van en 2 automóviles con el mismo número de personas en cada automóvil. ¿Cuántas personas hay en cada automóvil? Muestra cómo pensaste. Usa un dibujo o un diagrama.    ¿En qué se parecen las dos situaciones? ¿En qué son diferentes? ¿En qué se parecen los diagramas? ¿En qué son diferentes?        5.   Grupos de puntos. 5 grupos con 2 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 2 grupos con 5 puntos cada uno.     Ejemplo de respuesta: En ambas situaciones aparecen las mismas cantidades: 2, 5 y 10. En la primera, 2 es el número de personas en cada automóvil. En la segunda, 2 es el número de automóviles.      Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos (es decir, la misma cantidad de pupitres en cada grupo). ¿Cuántos pupitres hay en cada grupo?     ¿Cuál expresión representa esta situación: o ? Explica tu razonamiento.    Selecciona el diagrama que representa esta situación. Explica tu razonamiento.    A   4 groups of 5 dots.     B   5 groups of 4 dots.          , porque hay 20 pupitres divididos en 5 grupos iguales. La respuesta también es válida, porque hay 4 pupitres en cada grupo.  El segundo diagrama, porque muestra 20 dividido en 5 grupos iguales.     Los papás de Mai recolectaron 40 libras de duraznos y los pusieron en bolsas. Pusieron 5 libras en cada bolsa.     Escribe una expresión de división que represente la situación.    ¿Cuántas bolsas de duraznos necesitaron los papás de Mai? Explica o muestra tu razonamiento.         8. Ejemplo de respuesta:   8 groups of 5 dots.       Exploración  Completa cada historia poniendo un número que tenga sentido en el espacio en blanco. Después, responde las preguntas. Dibuja un diagrama para resolver cada problema.     Mai tiene __________ calcomanías. Ella va a poner el mismo número de calcomanías en cada uno de sus 5 cuadernos. ¿Cuántas calcomanías habrá en cada cuaderno?    Andre tiene __________ tarjetas. Él va a organizarlas en filas de __________ tarjetas. ¿Cuántas filas de tarjetas hará Andre?      Ejemplos de respuestas:    30. Si Mai tiene 30 calcmanías, puede poner 6 calcomanías en cada uno de sus 5 cuadernos.   5 grupos cada uno con 6 puntos.     48 y 8. Si Andre tiene 48 tarjetas y organiza filas de 8 tarjetas, hará 6 filas en total.   6 grupos cada uno con 8 puntos.      Exploración  Escribe una situación de división que corresponda a cada diagrama.    A   2 groups of 7 dots.     B   9 groups of 3 dots.     C   6 groups of 4 dots.      Ejemplos de repuestas:   En una caja hay 14 peras organizadas en 2 filas iguales. ¿Cuántas peras hay en cada fila?  En la clase hay 27 estudiantes y están organizados en grupos de 3. ¿Cuántos grupos hay?  Lin reparte 24 tarjetas entre 6 personas de manera que cada una tenga la misma cantidad de tarjetas. ¿Cuántas tarjetas recibe cada persona?    "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-3",
@@ -574,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "1",
   "title": "(Previo a la sección).",
-  "body": "(Previo a la sección)    Array. 4 rows of 5 dots.     Escribe una expresión de multiplicación que represente el arreglo.  Escribe una ecuación de multiplicación que represente el arreglo.      Ejemplos de respuestas:   o   o   "
+  "body": "(Previo a la sección)    Array. 4 rows of 5 dots.      Escribe una expresión de multiplicación que represente el arreglo.    Escribe una ecuación de multiplicación que represente el arreglo.       Ejemplos de respuestas:   o   o   "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-4",
@@ -610,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "5",
   "title": "(Previo a la sección).",
-  "body": "(Previo a la sección)  Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuántos jugadores de voleibol hay en total?    Haz un dibujo de la situación.  Escribe una ecuación que represente la situación. Usa un “?” para representar el valor desconocido.  Resuelve el problema.      Los estudiantes dibujan 6 grupos de 10.  o  Hay 60 jugadores de voleibol en los 6 equipos.   "
+  "body": "(Previo a la sección)  Hay 6 equipos de voleibol en el gimnasio. Cada equipo tiene 10 jugadores. ¿Cuántos jugadores de voleibol hay en total?     Haz un dibujo de la situación.    Escribe una ecuación que represente la situación. Usa un “?” para representar el valor desconocido.    Resuelve el problema.       Los estudiantes dibujan 6 grupos de 10.  o  Hay 60 jugadores de voleibol en los 6 equipos.   "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-8",
@@ -619,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "6",
   "title": "",
-  "body": " En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.    Hay 40 manzanas empacadas en cajas. Si hay 8 manzanas en cada caja, ¿cuántas cajas hay?  Hay 40 manzanas empacadas en cajas. Si hay 10 manzanas en cada caja, ¿cuántas cajas hay?       5. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 8 puntos cada uno.     4. Ejemplo de respuesta   Grupos de puntos. 4 grupos con 10 puntos cada uno.    Hay 10 personas en cada situación y hay un 2 y un 5 en cada situación. En la primera situación, 2 es el número en cada automóvil y 5 es el número de automóviles. En la segunda situación, 5 es el número en cada automóvil y 2 es el número de automóviles.   "
+  "body": " En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.     Hay 40 manzanas empacadas en cajas. Si hay 8 manzanas en cada caja, ¿cuántas cajas hay?    Hay 40 manzanas empacadas en cajas. Si hay 10 manzanas en cada caja, ¿cuántas cajas hay?        5. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 8 puntos cada uno.     4. Ejemplo de respuesta   Grupos de puntos. 4 grupos con 10 puntos cada uno.     "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-9",
@@ -628,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "",
-  "body": " En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.   Hay 30 naranjas. Si se empacan en 5 bolsas con la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?  Hay 30 naranjas. Si se empacan en 3 bolsas con la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?      6. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 6 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 3 grupos con 10 puntos cada uno.     "
+  "body": " En cada problema, usa un dibujo o un diagrama para mostrar cómo pensaste.    Hay 30 naranjas. Las empacan en 5 bolsas. Si hay la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?    Hay 30 naranjas. Las empacan en 3 bolsas. Si hay la misma cantidad de naranjas en cada bolsa, ¿cuántas naranjas hay en cada bolsa?       6. Ejemplo de respuesta   Grupos de puntos. 5 grupos con 6 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 3 grupos con 10 puntos cada uno.     "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-10",
@@ -637,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "8",
   "title": "",
-  "body": "   10 personas van a cine en automóviles. En cada automóvil van dos personas. ¿Cuántos automóviles hay? Muestra cómo pensaste. Usa un dibujo o un diagrama.  Otras 10 personas van a cine en automóviles. Van en 2 automóviles con el mismo número de personas en cada automóvil. ¿Cuántas personas hay en cada automóvil? Muestra cómo pensaste. Usa un dibujo o un diagrama.  ¿En qué se parecen las dos situaciones? ¿En qué son diferentes? ¿En qué se parecen los diagramas? ¿En qué son diferentes?       5.   Grupos de puntos. 5 grupos con 2 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 2 grupos con 5 puntos cada uno.     "
+  "body": "    10 personas van a cine en automóviles. En cada automóvil van dos personas. ¿Cuántos automóviles hay? Muestra cómo pensaste. Usa un dibujo o un diagrama.    Otras 10 personas van a cine en automóviles. Van en 2 automóviles con el mismo número de personas en cada automóvil. ¿Cuántas personas hay en cada automóvil? Muestra cómo pensaste. Usa un dibujo o un diagrama.    ¿En qué se parecen las dos situaciones? ¿En qué son diferentes? ¿En qué se parecen los diagramas? ¿En qué son diferentes?        5.   Grupos de puntos. 5 grupos con 2 puntos cada uno.     10. Ejemplo de respuesta   Grupos de puntos. 2 grupos con 5 puntos cada uno.     Ejemplo de respuesta: En ambas situaciones aparecen las mismas cantidades: 2, 5 y 10. En la primera, 2 es el número de personas en cada automóvil. En la segunda, 2 es el número de automóviles.    "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-11",
@@ -646,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "9",
   "title": "",
-  "body": " Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos. ¿Cuántos pupitres hay en cada grupo?    ¿Cuál expresión representa esta situación: o ? Explica tu razonamiento.   Selecciona el diagrama que representa esta situación. Explica tu razonamiento.    A   4 groups of 5 dots.     B   5 groups of 4 dots.          , porque hay 20 pupitres divididos en 5 grupos iguales.  El segundo diagrama, porque muestra 20 dividido en 5 grupos iguales.   "
+  "body": " Hay 20 pupitres en la clase. Están divididos equitativamente en 5 grupos (es decir, la misma cantidad de pupitres en cada grupo). ¿Cuántos pupitres hay en cada grupo?     ¿Cuál expresión representa esta situación: o ? Explica tu razonamiento.    Selecciona el diagrama que representa esta situación. Explica tu razonamiento.    A   4 groups of 5 dots.     B   5 groups of 4 dots.          , porque hay 20 pupitres divididos en 5 grupos iguales. La respuesta también es válida, porque hay 4 pupitres en cada grupo.  El segundo diagrama, porque muestra 20 dividido en 5 grupos iguales.   "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-12",
@@ -655,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "10",
   "title": "",
-  "body": " La familia de Mai recolectó 40 libras de duraznos y los pusieron en bolsas. Pusieron 5 libras en cada bolsa.    Escribe una expresión de división que represente la situación.  ¿Cuántas bolsas de duraznos recogió la familia de Mai? Explica o muestra tu razonamiento.        8. Ejemplo de respuesta:   8 groups of 5 dots.     "
+  "body": " Los papás de Mai recolectaron 40 libras de duraznos y los pusieron en bolsas. Pusieron 5 libras en cada bolsa.     Escribe una expresión de división que represente la situación.    ¿Cuántas bolsas de duraznos necesitaron los papás de Mai? Explica o muestra tu razonamiento.         8. Ejemplo de respuesta:   8 groups of 5 dots.     "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-13",
@@ -664,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "11",
   "title": "Exploración.",
-  "body": "Exploración  Completa cada historia poniendo un número que tenga sentido en el espacio en blanco. Después, responde las preguntas. Dibuja un diagrama para resolver cada problema.    Mai tiene __________ calcomanías. Ella va a poner el mismo número de calcomanías en cada uno de sus 5 cuadernos. ¿Cuántas calcomanías habrá en cada cuaderno?  Andre tiene __________ tarjetas. Él va a organizarlas en filas de __________ tarjetas. ¿Cuántas filas de tarjetas hará Andre?     Ejemplos de respuestas:    30. Hay 6 calcomanías en cada cuaderno.   5 grupos cada uno con 6 puntos.     48 cartas, 8 cartas en cada fila. Habrá 6 filas.   6 grupos cada uno con 8 puntos.     "
+  "body": "Exploración  Completa cada historia poniendo un número que tenga sentido en el espacio en blanco. Después, responde las preguntas. Dibuja un diagrama para resolver cada problema.     Mai tiene __________ calcomanías. Ella va a poner el mismo número de calcomanías en cada uno de sus 5 cuadernos. ¿Cuántas calcomanías habrá en cada cuaderno?    Andre tiene __________ tarjetas. Él va a organizarlas en filas de __________ tarjetas. ¿Cuántas filas de tarjetas hará Andre?      Ejemplos de respuestas:    30. Si Mai tiene 30 calcmanías, puede poner 6 calcomanías en cada uno de sus 5 cuadernos.   5 grupos cada uno con 6 puntos.     48 y 8. Si Andre tiene 48 tarjetas y organiza filas de 8 tarjetas, hará 6 filas en total.   6 grupos cada uno con 8 puntos.     "
 },
 {
   "id": "gra3-uni4-secA-ProblemasPractica-14",
@@ -673,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "12",
   "title": "Exploración.",
-  "body": "Exploración  Escribe una situación de división que corresponda a cada diagrama.   A   2 groups of 7 dots.   B   9 groups of 3 dots.   C   6 groups of 4 dots.     Ejemplos de repuestas:   Hay 14 peras en la caja en 2 filas iguales. ¿Cuántas peras hay en cada fila?  Hay 27 estudiantes en la clase y están en grupos iguales de 3. ¿Cuántos grupos hay?  Hay 24 tarjetas. Se dividen equitativamente entre 6 personas. ¿Cuántas tarjetas recibe cada persona?   "
+  "body": "Exploración  Escribe una situación de división que corresponda a cada diagrama.    A   2 groups of 7 dots.     B   9 groups of 3 dots.     C   6 groups of 4 dots.      Ejemplos de repuestas:   En una caja hay 14 peras organizadas en 2 filas iguales. ¿Cuántas peras hay en cada fila?  En la clase hay 27 estudiantes y están organizados en grupos de 3. ¿Cuántos grupos hay?  Lin reparte 24 tarjetas entre 6 personas de manera que cada una tenga la misma cantidad de tarjetas. ¿Cuántas tarjetas recibe cada persona?   "
 },
 {
   "id": "gra3-uni4-secA-resumen",
@@ -682,7 +691,7 @@ var ptx_lunr_docs = [
   "type": "Referencias",
   "number": "",
   "title": "Resumen de la sección",
-  "body": " Resumen sección  Resumen de la sección   En esta sección, aprendimos que la división es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división.    ¿Cuántos grupos?  ¿Cuántos hay en cada grupo?    Han tiene 12 lápices de colores. Él quiere ponerlos en cajas. Quiere poner 2 lápices en cada caja hasta que se le acaben los lápices. ¿Cuántas cajas necesita Han?  Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?     6 grupos de dos puntos    2 grupos de 6 puntos         "
+  "body": " Resumen sección  Resumen de la sección   En esta sección, aprendimos que la división se usa para encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división.    ¿Cuántos grupos?  ¿Cuántos hay en cada grupo?    Han tiene 12 lápices de colores. Él quiere ponerlos en cajas. Quiere poner 2 lápices en cada caja hasta que se le acaben los lápices. ¿Cuántas cajas necesita Han?  Elena tiene 12 lápices de colores. Ella tiene 2 cajas y quiere poner el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?     6 grupos de dos puntos    2 grupos de 6 puntos         "
 },
 {
   "id": "gra3-uni4-secA-resumen-3",
@@ -691,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "En esta sección, aprendimos que la división es encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división. "
+  "body": "En esta sección, aprendimos que la división se usa para encontrar el número de grupos o encontrar el tamaño de cada grupo cuando ponemos objetos en grupos de igual tamaño. Representamos situaciones de división con dibujos y expresiones, y resolvimos problemas de división. "
 },
 {
   "id": "gra3-uni4-secA-resumen-4-1-1",
@@ -754,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Números desconocidos    ¿Qué observas?  ¿Qué te preguntas?         Los estudiantes pueden notar:   El 12 se está dividiendo en 3 grupos o en grupos de 3.  Ambas ecuaciones tienen un 3, un 12 y un signo de interrogación, pero no están en los mismos lugares.  Poner 4 en el lugar del signo de interrogación tendría sentido para ambas ecuaciones.   Los estudiantes pueden preguntarse:   ¿Es el número desconocido el mismo en ambas ecuaciones?  ¿Cuál es el número desconocido?  ¿Están relacionadas las dos ecuaciones?       "
+  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Números desconocidos    ¿Qué observas?  ¿Qué te preguntas?         Los estudiantes pueden notar que:   El 12 se está dividiendo en 3 grupos de igual tamaño o en grupos de 3.  Ambas ecuaciones tienen un 3, un 12 y un signo de interrogación, pero no están en los mismos lugares.  Poner un 4 en el lugar del signo de interrogación tendría sentido en ambas ecuaciones.   Los estudiantes pueden preguntarse:   ¿Es el número desconocido el mismo en ambas ecuaciones?  ¿Cuál es el número desconocido?  ¿Están relacionadas las dos ecuaciones?       "
 },
 {
   "id": "warm-observa-numerosDesconocidos",
@@ -763,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "24",
   "title": "Observa y pregúntate: Números desconocidos.",
-  "body": " Observa y pregúntate: Números desconocidos    ¿Qué observas?  ¿Qué te preguntas?         Los estudiantes pueden notar:   El 12 se está dividiendo en 3 grupos o en grupos de 3.  Ambas ecuaciones tienen un 3, un 12 y un signo de interrogación, pero no están en los mismos lugares.  Poner 4 en el lugar del signo de interrogación tendría sentido para ambas ecuaciones.   Los estudiantes pueden preguntarse:   ¿Es el número desconocido el mismo en ambas ecuaciones?  ¿Cuál es el número desconocido?  ¿Están relacionadas las dos ecuaciones?      "
+  "body": " Observa y pregúntate: Números desconocidos    ¿Qué observas?  ¿Qué te preguntas?         Los estudiantes pueden notar que:   El 12 se está dividiendo en 3 grupos de igual tamaño o en grupos de 3.  Ambas ecuaciones tienen un 3, un 12 y un signo de interrogación, pero no están en los mismos lugares.  Poner un 4 en el lugar del signo de interrogación tendría sentido en ambas ecuaciones.   Los estudiantes pueden preguntarse:   ¿Es el número desconocido el mismo en ambas ecuaciones?  ¿Cuál es el número desconocido?  ¿Están relacionadas las dos ecuaciones?      "
 },
 {
   "id": "lec-divisionComoFactorDesconocido-act1",
@@ -772,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Ecuaciones acerca de cebollas    A farmers market.   Martin Winkler. Pixabay Content License https:\/\/pixabay.com     Un agricultor pone 14 cebollas en 2 bolsas. Pone el mismo número de cebollas en cada bolsa.  Lin dice que la situación debe representarse con la ecuación:   Mai dice que la situación debe representarse con la ecuación:   ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.    Ejemplos de respuestas:   Lin, porque sabemos el total y cuántos grupos hay, pero no sabemos cuántos hay en cada grupo, así que uno de los factores es desconocido.  Mai, porque sabemos que el total se está dividiendo en 2 grupos, así que estamos dividiendo para encontrar el número en cada grupo.       "
+  "body": " Actividad 1  Actividad 1     Ecuaciones acerca de cebollas    A farmers market.   Martin Winkler. Pixabay Content License https:\/\/pixabay.com     Un agricultor tiene 14 cebollas y 2 bolsas. Pone el mismo número de cebollas en cada bolsa.  Lin dice que la situación debe representarse con la ecuación:   Mai dice que la situación debe representarse con la ecuación:   ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.    Ejemplos de respuestas:   Lin, porque sabemos el total y cuántos grupos hay, pero no sabemos cuántos hay en cada grupo, así que uno de los factores es desconocido.  Mai, porque sabemos que el total se está dividiendo en 2 grupos, así que estamos dividiendo para encontrar el número en cada grupo.       "
 },
 {
   "id": "act-ecuacionesCebollas",
@@ -781,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "25",
   "title": "Ecuaciones acerca de cebollas.",
-  "body": " Ecuaciones acerca de cebollas    A farmers market.   Martin Winkler. Pixabay Content License https:\/\/pixabay.com     Un agricultor pone 14 cebollas en 2 bolsas. Pone el mismo número de cebollas en cada bolsa.  Lin dice que la situación debe representarse con la ecuación:   Mai dice que la situación debe representarse con la ecuación:   ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.    Ejemplos de respuestas:   Lin, porque sabemos el total y cuántos grupos hay, pero no sabemos cuántos hay en cada grupo, así que uno de los factores es desconocido.  Mai, porque sabemos que el total se está dividiendo en 2 grupos, así que estamos dividiendo para encontrar el número en cada grupo.      "
+  "body": " Ecuaciones acerca de cebollas    A farmers market.   Martin Winkler. Pixabay Content License https:\/\/pixabay.com     Un agricultor tiene 14 cebollas y 2 bolsas. Pone el mismo número de cebollas en cada bolsa.  Lin dice que la situación debe representarse con la ecuación:   Mai dice que la situación debe representarse con la ecuación:   ¿Con qué ecuación estás de acuerdo? Prepárate para explicar tu razonamiento.    Ejemplos de respuestas:   Lin, porque sabemos el total y cuántos grupos hay, pero no sabemos cuántos hay en cada grupo, así que uno de los factores es desconocido.  Mai, porque sabemos que el total se está dividiendo en 2 grupos, así que estamos dividiendo para encontrar el número en cada grupo.      "
 },
 {
   "id": "lec-divisionComoFactorDesconocido-act2",
@@ -790,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     En el mercado agrícola   Completa cada fila. Prepárate para explicar tu razonamiento.   Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, falta la ecuación de multiplicación, división: 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 elementos en 3 grupos de 10, falta la ecuación de multiplicación, división: 30 ÷ 10 = ___.\"      Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, ecuaciones: ___ por 3 = 18 y 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 naranjas en cajas de 10, ecuaciones: ___ por 10 = 30 y 30 ÷ 10 = ___.       "
+  "body": " Actividad 2  Actividad 2     En el mercado agrícola   Completa cada fila. Prepárate para explicar tu razonamiento.   Tabla para rellenar en el libro de trabajo o descargar para imprimir y rellenar .    Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, falta la ecuación de multiplicación, división: 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 elementos en 3 grupos de 10, falta la ecuación de multiplicación, división: 30 ÷ 10 = ___.\"      Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, ecuaciones: ___ por 3 = 18 y 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 naranjas en cajas de 10, ecuaciones: ___ por 10 = 30 y 30 ÷ 10 = ___.       "
 },
 {
   "id": "act-enElMercadoAgricola",
@@ -799,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "26",
   "title": "En el mercado agrícola.",
-  "body": " En el mercado agrícola   Completa cada fila. Prepárate para explicar tu razonamiento.   Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, falta la ecuación de multiplicación, división: 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 elementos en 3 grupos de 10, falta la ecuación de multiplicación, división: 30 ÷ 10 = ___.\"      Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, ecuaciones: ___ por 3 = 18 y 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 naranjas en cajas de 10, ecuaciones: ___ por 10 = 30 y 30 ÷ 10 = ___.      "
+  "body": " En el mercado agrícola   Completa cada fila. Prepárate para explicar tu razonamiento.   Tabla para rellenar en el libro de trabajo o descargar para imprimir y rellenar .    Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, falta la ecuación de multiplicación, división: 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 elementos en 3 grupos de 10, falta la ecuación de multiplicación, división: 30 ÷ 10 = ___.\"      Una tabla con cuatro filas y cuatro columnas. Cada fila presenta una situación con dibujos, ecuaciones de multiplicación y división. Fila 1: 18 aguacates en bolsas de 3, ecuaciones: ___ por 3 = 18 y 18 ÷ 3 = ___. Fila 2: 25 tomates en 5 racimos, ecuaciones: 5 por ? = 25, 25 ÷ 5 = ?. Fila 3: 6 buñuelos de banano en 2 platos, ecuaciones: 2 por ? = 6, sin ecuación de división. Fila 4: 30 naranjas en cajas de 10, ecuaciones: ___ por 10 = 30 y 30 ÷ 10 = ___.      "
 },
 {
   "id": "lec-divisionComoFactorDesconocido-cool",
@@ -826,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Cuántos ves: Decenas    ¿Cuántos ves?  ¿Cómo lo sabes?, ¿qué ves?    Diagrama en base 10. 6 decenas     60. Sample responses:   Veo 6 grupos de 10.  Veo 2 decenas en cada fila y hay 3 filas, así que hay 6 decenas.  Veo 2 decenas en cada grupo y hay 3 grupos, así que hay 6 decenas.       "
+  "body": " Calentamiento  Calentamiento     Cuántos ves: Decenas    ¿Cuántos ves?  ¿Cómo lo sabes?, ¿qué ves?    Diagrama en base 10. 6 decenas     60. Ejemplos de respuesta:   Veo 6 grupos de 10.  Veo 2 decenas en cada fila y hay 3 filas, así que hay 6 decenas.  Veo 2 decenas en cada grupo y hay 3 grupos, así que hay 6 decenas.  Veo 2 grupos con 3 decenas en cada grupo, así que hay 6 decenas.       "
 },
 {
   "id": "warm-cuantosVes-decenas",
@@ -835,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "28",
   "title": "Cuántos ves: Decenas.",
-  "body": " Cuántos ves: Decenas    ¿Cuántos ves?  ¿Cómo lo sabes?, ¿qué ves?    Diagrama en base 10. 6 decenas     60. Sample responses:   Veo 6 grupos de 10.  Veo 2 decenas en cada fila y hay 3 filas, así que hay 6 decenas.  Veo 2 decenas en cada grupo y hay 3 grupos, así que hay 6 decenas.      "
+  "body": " Cuántos ves: Decenas    ¿Cuántos ves?  ¿Cómo lo sabes?, ¿qué ves?    Diagrama en base 10. 6 decenas     60. Ejemplos de respuesta:   Veo 6 grupos de 10.  Veo 2 decenas en cada fila y hay 3 filas, así que hay 6 decenas.  Veo 2 decenas en cada grupo y hay 3 grupos, así que hay 6 decenas.  Veo 2 grupos con 3 decenas en cada grupo, así que hay 6 decenas.      "
 },
 {
   "id": "lec-relacionarMultiplicacionYDivision-act1",
@@ -844,7 +853,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Mesa redonda de división   Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.  Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.   Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.  En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.  En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.  En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.    Estudiantes jugando sentados en una mesa.     Las respuestas pueden variar.      "
+  "body": " Actividad 1  Actividad 1     Mesa redonda de división   Tu profesor te dará una hoja de papel con 4 recuadros. La actividad tiene 4 rondas. En cada ronda trabajarás en una hoja distinta y tu profesor te pedirá que dibujes o escribas algo en uno de los recuadros.   Hoja para los dibujos en el libro de trabajo, o descargue para imprimir )   Después de trabajar en cada recuadro, haz una pausa y espera a que el profesor te dé las instrucciones de la siguiente ronda.   En el recuadro 1 de tu hoja, haz un dibujo de grupos iguales.  Observa el dibujo que tu compañero dibujó en la hoja que acabaste de recibir. En el recuadro 2, escribe una descripción de una situación de división que corresponda a ese dibujo.  Observa los recuadros 1 y 2 de la hoja que acabaste de recibir. En el recuadro 3, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división de esa hoja. Usa un símbolo para representar la cantidad desconocida.  Observa los recuadros 1, 2 y 3 de la hoja que acabaste de recibir. En el recuadro 4, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.    Estudiantes jugando sentados en una mesa.     Las respuestas pueden variar. Ejemplo de solución:  Recuadro 1: 3 grupos con 4 objetos en cada grupo. Recuadro 2: Lin tiene 12 limones y quiere repartirlos en 3 grupos del mismo tamaño. ¿Cuántos limones puede poner en cada grupo? Recuadro 3: . Recuadro 4:       "
 },
 {
   "id": "act-mesaRedondaDeDivision",
@@ -853,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "29",
   "title": "Mesa redonda de división.",
-  "body": " Mesa redonda de división   Tu profesor te dará una hoja de papel con 4 recuadros y te pedirá que dibujes o escribas algo en cada recuadro.  Después de trabajar en cada recuadro, haz una pausa y espera que el profesor te dé las instrucciones para el siguiente recuadro.   Dibuja grupos iguales en el recuadro 1 de tu hoja de registro.  En el recuadro 2 de la hoja que acabaste de recibir, escribe una descripción de una situación de división que corresponda al dibujo.  En el recuadro 3 de la hoja que acabas de recibir, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división. Usa un símbolo para representar la cantidad desconocida.  En el recuadro 4 de la hoja que acabas de recibir, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.    Estudiantes jugando sentados en una mesa.     Las respuestas pueden variar.     "
+  "body": " Mesa redonda de división   Tu profesor te dará una hoja de papel con 4 recuadros. La actividad tiene 4 rondas. En cada ronda trabajarás en una hoja distinta y tu profesor te pedirá que dibujes o escribas algo en uno de los recuadros.   Hoja para los dibujos en el libro de trabajo, o descargue para imprimir )   Después de trabajar en cada recuadro, haz una pausa y espera a que el profesor te dé las instrucciones de la siguiente ronda.   En el recuadro 1 de tu hoja, haz un dibujo de grupos iguales.  Observa el dibujo que tu compañero dibujó en la hoja que acabaste de recibir. En el recuadro 2, escribe una descripción de una situación de división que corresponda a ese dibujo.  Observa los recuadros 1 y 2 de la hoja que acabaste de recibir. En el recuadro 3, escribe una ecuación de multiplicación que corresponda al dibujo y a la situación de división de esa hoja. Usa un símbolo para representar la cantidad desconocida.  Observa los recuadros 1, 2 y 3 de la hoja que acabaste de recibir. En el recuadro 4, escribe una ecuación de división que corresponda al dibujo, a la situación de división y a la ecuación de multiplicación. Usa un símbolo para representar la cantidad desconocida.    Estudiantes jugando sentados en una mesa.     Las respuestas pueden variar. Ejemplo de solución:  Recuadro 1: 3 grupos con 4 objetos en cada grupo. Recuadro 2: Lin tiene 12 limones y quiere repartirlos en 3 grupos del mismo tamaño. ¿Cuántos limones puede poner en cada grupo? Recuadro 3: . Recuadro 4:      "
 },
 {
   "id": "lec-relacionarMultiplicacionYDivision-act2",
@@ -862,7 +871,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     Grupos de útiles escolares   En cada situación:  (a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.  (b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.    Kiran tenía32 clips. Le dio 4 clips a cada estudiante. ¿Cuántos estudiantes recibieron clips?    Ecuación:         Hay 28 libros en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?    Ecuación:         Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay?    Ecuación:         Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?    Ecuación:               , , o    8 estudiantes. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 4 hasta llegar a 32, luego conté los grupos. Había 8 grupos, entonces 8 estudiantes recibieron clips de papel.       , , o   7 libros. Ejemplo de razonamiento:   Grupos de puntos.   Comencé con 4 filas ya que los libros estaban en 4 pilas. Sabía que es 28, entonces puse 7 en cada fila.        , , ,    48 borradores. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé 6 círculos para mostrar las cajas y puse 8 puntos en cada círculo. Luego, conté el número total de puntos para obtener 48. Sabía que es 40 y un grupo más de 8 es 48.        , , o    6 cuadernos. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 6 hasta llegar a 36. Pude hacer 6 grupos, así que 6 cuadernos reciben notas adhesivas.          "
+  "body": " Actividad 2  Actividad 2     Grupos de útiles escolares   En cada situación:  (a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.  (b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.  Situaciones:    Kiran tenía 32 clips y los repartió entre varios estudiantes. Le dio 4 clips a cada uno. ¿Cuántos estudiantes recibieron clips?    Hay 28 libros distribuidos en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?    Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay en total?    Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?          , , o    8 estudiantes. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 4 hasta llegar a 32, luego conté los grupos. Había 8 grupos, entonces 8 estudiantes recibieron clips de papel.       , , o   7 libros. Ejemplo de razonamiento:   Grupos de puntos.   Comencé con 4 columnas pues los libros estaban en 4 pilas. Sabía que es 28, entonces puse 7 en cada columna.        , , ,    48 borradores. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé 6 rectángulos para mostrar las cajas y puse 8 puntos en cada círculo. Luego, conté el número total de puntos y obtuve 48. Otra opción: Sabía que es 40 y un grupo más de 8 es 48.        , , o    6 cuadernos. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 6 hasta llegar a 36. Pude hacer 6 grupos, así que 6 cuadernos reciben notas adhesivas.          "
 },
 {
   "id": "act-gruposUtilesEscolares",
@@ -871,7 +880,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "30",
   "title": "Grupos de útiles escolares.",
-  "body": " Grupos de útiles escolares   En cada situación:  (a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.  (b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.    Kiran tenía32 clips. Le dio 4 clips a cada estudiante. ¿Cuántos estudiantes recibieron clips?    Ecuación:         Hay 28 libros en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?    Ecuación:         Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay?    Ecuación:         Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?    Ecuación:               , , o    8 estudiantes. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 4 hasta llegar a 32, luego conté los grupos. Había 8 grupos, entonces 8 estudiantes recibieron clips de papel.       , , o   7 libros. Ejemplo de razonamiento:   Grupos de puntos.   Comencé con 4 filas ya que los libros estaban en 4 pilas. Sabía que es 28, entonces puse 7 en cada fila.        , , ,    48 borradores. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé 6 círculos para mostrar las cajas y puse 8 puntos en cada círculo. Luego, conté el número total de puntos para obtener 48. Sabía que es 40 y un grupo más de 8 es 48.        , , o    6 cuadernos. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 6 hasta llegar a 36. Pude hacer 6 grupos, así que 6 cuadernos reciben notas adhesivas.         "
+  "body": " Grupos de útiles escolares   En cada situación:  (a) Escribe una ecuación que represente la situación. Usa un símbolo para representar la cantidad desconocida.  (b) Resuelve el problema y encuentra el número desconocido de la ecuación. Prepárate para explicar tu razonamiento.  Situaciones:    Kiran tenía 32 clips y los repartió entre varios estudiantes. Le dio 4 clips a cada uno. ¿Cuántos estudiantes recibieron clips?    Hay 28 libros distribuidos en 4 pilas. Si cada pila tiene la misma cantidad de libros, ¿cuántos libros hay en cada pila?    Hay 6 cajas. En cada caja hay 8 borradores. ¿Cuántos borradores hay en total?    Lin tenía 36 notas adhesivas y varios cuadernos. Ella puso 6 notas adhesivas en cada cuaderno. ¿En cuántos cuadernos puso notas adhesivas?          , , o    8 estudiantes. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 4 hasta llegar a 32, luego conté los grupos. Había 8 grupos, entonces 8 estudiantes recibieron clips de papel.       , , o   7 libros. Ejemplo de razonamiento:   Grupos de puntos.   Comencé con 4 columnas pues los libros estaban en 4 pilas. Sabía que es 28, entonces puse 7 en cada columna.        , , ,    48 borradores. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé 6 rectángulos para mostrar las cajas y puse 8 puntos en cada círculo. Luego, conté el número total de puntos y obtuve 48. Otra opción: Sabía que es 40 y un grupo más de 8 es 48.        , , o    6 cuadernos. Ejemplo de razonamiento:   Grupos de puntos.   Dibujé grupos de 6 hasta llegar a 36. Pude hacer 6 grupos, así que 6 cuadernos reciben notas adhesivas.         "
 },
 {
   "id": "lec-relacionarMultiplicacionYDivision-cool",
@@ -880,7 +889,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Rosas para compartir   Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?  Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.    y  Ejemplo de respuesta: Sé que ella tiene 14 rosas y quiere ponerlas en grupos de 2. La pregunta es sobre cuántos grupos habrá, que es cuántos profesores recibirán rosas y está representado por el \"?\".  Nota: Es muy importante que los estudiantes expliquen con precisión que conocen el tamaño de los grupos, pero no el número de grupos. Puede que inviertan los factores en la ecuación de multiplicación.    "
+  "body": " Actividad de cierre  Actividad de cierre     Rosas para compartir   Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?  Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.    y  Ejemplo de respuesta: Sé que ella tiene 14 rosas y quiere ponerlas en grupos de 2. La pregunta es sobre cuántos grupos habrá, que es cuántos profesores recibirán rosas y está representado por el \"?\".  Nota: Es muy importante que los estudiantes expliquen con precisión que conocen el tamaño de los grupos, pero no el número de grupos. Pueden invertir los factores en la ecuación de multiplicación.    "
 },
 {
   "id": "cool-rosasParaCompartir",
@@ -889,7 +898,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "31",
   "title": "Rosas para compartir.",
-  "body": " Rosas para compartir   Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?  Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.    y  Ejemplo de respuesta: Sé que ella tiene 14 rosas y quiere ponerlas en grupos de 2. La pregunta es sobre cuántos grupos habrá, que es cuántos profesores recibirán rosas y está representado por el \"?\".  Nota: Es muy importante que los estudiantes expliquen con precisión que conocen el tamaño de los grupos, pero no el número de grupos. Puede que inviertan los factores en la ecuación de multiplicación.   "
+  "body": " Rosas para compartir   Clare tiene 14 rosas. Quiere darle 2 rosas a cada una de sus profesoras. ¿A cuántas profesoras les puede dar rosas?  Escribe una ecuación de multiplicación y una ecuación de división que representen la situación. Usa símbolos para representar los números desconocidos y explica tu razonamiento.    y  Ejemplo de respuesta: Sé que ella tiene 14 rosas y quiere ponerlas en grupos de 2. La pregunta es sobre cuántos grupos habrá, que es cuántos profesores recibirán rosas y está representado por el \"?\".  Nota: Es muy importante que los estudiantes expliquen con precisión que conocen el tamaño de los grupos, pero no el número de grupos. Pueden invertir los factores en la ecuación de multiplicación.   "
 },
 {
   "id": "lec-relCocientesProductos-warm",
@@ -898,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Conversación numérica: Multiplicación y división   Encuentra mentalmente el valor de cada expresión.           40: Conté de 10 en 10, así: 10, 20, 30, 40. Simplemente lo supe.  10: Dado que sé que , sé que 40 dividido por 4 es 10, porque 10 es el factor desconocido.  4: Esto es igual que , pero falta el otro factor, por lo que el cociente sería 4.  10: Dado que sé que 6 veces 10 es 60, sé que 60 dividido por 6 sería 10, porque 10 es el factor desconocido.       "
+  "body": " Calentamiento  Calentamiento     Conversación numérica: Multiplicación y división   Encuentra mentalmente el valor de cada expresión.           40: Conté de 10 en 10, así: 10, 20, 30, 40. Simplemente lo supe.  10: Dado que sé que , sé que 40 dividido por 4 es 10, porque 10 es el factor desconocido.  4: es lo mismo que . Y como , el cociente es 4. 10: Dado que sé que 6 veces 10 es 60, sé que 60 dividido por 6 sería 10, porque 10 es el factor desconocido.       "
 },
 {
   "id": "warm-numTalk-multiplicacionYDivision",
@@ -907,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "32",
   "title": "Conversación numérica: Multiplicación y división.",
-  "body": " Conversación numérica: Multiplicación y división   Encuentra mentalmente el valor de cada expresión.           40: Conté de 10 en 10, así: 10, 20, 30, 40. Simplemente lo supe.  10: Dado que sé que , sé que 40 dividido por 4 es 10, porque 10 es el factor desconocido.  4: Esto es igual que , pero falta el otro factor, por lo que el cociente sería 4.  10: Dado que sé que 6 veces 10 es 60, sé que 60 dividido por 6 sería 10, porque 10 es el factor desconocido.      "
+  "body": " Conversación numérica: Multiplicación y división   Encuentra mentalmente el valor de cada expresión.           40: Conté de 10 en 10, así: 10, 20, 30, 40. Simplemente lo supe.  10: Dado que sé que , sé que 40 dividido por 4 es 10, porque 10 es el factor desconocido.  4: es lo mismo que . Y como , el cociente es 4. 10: Dado que sé que 6 veces 10 es 60, sé que 60 dividido por 6 sería 10, porque 10 es el factor desconocido.      "
 },
 {
   "id": "lec-relCocientesProductos-act1",
@@ -916,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Clasificación de tarjetas: Multiplicación   Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:   se lo sabe de inmediato  lo puede encontrar rápidamente  todavía no se lo sabe   Anota expresiones de multiplicación que vas a practicar.    Las respuestas pueden variar.      "
+  "body": " Actividad 1  Actividad 1     Clasificación de tarjetas: Multiplicación   Pregúntale a tu compañero hechos de multiplicación. Clasifícalos en una de estas columnas:   tabla con encabezado \"se lo sabe de inmediato\", \"lo puede encontrar rápidamente\", \"todavía no se lo sabe\". Segunda fila vacía.    Materiales en el libro de trabajo o descargar acá:   Tarjetas para imprimir y recortar   Hoja de registro   Anota cinco expresiones de multiplicación que vas a practicar.    Las respuestas pueden variar.      "
 },
 {
   "id": "act-clasificacionDeTarjetas-multiplicacion",
@@ -925,7 +934,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "33",
   "title": "Clasificación de tarjetas: Multiplicación.",
-  "body": " Clasificación de tarjetas: Multiplicación   Hazle preguntas a tu compañero sobre sus hechos de multiplicación. Clasifica los hechos de tu compañero en una de estas columnas:   se lo sabe de inmediato  lo puede encontrar rápidamente  todavía no se lo sabe   Anota expresiones de multiplicación que vas a practicar.    Las respuestas pueden variar.     "
+  "body": " Clasificación de tarjetas: Multiplicación   Pregúntale a tu compañero hechos de multiplicación. Clasifícalos en una de estas columnas:   tabla con encabezado \"se lo sabe de inmediato\", \"lo puede encontrar rápidamente\", \"todavía no se lo sabe\". Segunda fila vacía.    Materiales en el libro de trabajo o descargar acá:   Tarjetas para imprimir y recortar   Hoja de registro   Anota cinco expresiones de multiplicación que vas a practicar.    Las respuestas pueden variar.     "
 },
 {
   "id": "lec-relCocientesProductos-act2",
@@ -934,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     Si sé que , entonces sé que   Si sé que , entonces sé que .   Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.  Por turnos, tomen una tarjeta de hechos de multiplicación.  Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que ”  Después, anoten las ecuaciones de división relacionadas en la columna “Entonces sé que ”    Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías.      Ejemplos de respuestas:   Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías. Dos filas debajo del encabezado con productos y hechos de división: 3*4=12 con divisiones 12÷4=3 y 12÷3=4, y 2*8=16 con divisiones 16÷2=8, 16÷8=2, y equivalencias.        "
+  "body": " Actividad 2  Actividad 2     Si sé que , entonces sé que   Si sé que , entonces sé que .   Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.  Por turnos, tomen una tarjeta de hechos de multiplicación.  Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que ”  Después, en la columna “Entonces sé que ”, anoten las ecuaciones de división relacionadas.    Tabla para rellenar en el libro de trabajo. También se puede descargar .    Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Fila debajo del encabezado vacía.     Ejemplos de respuestas:   Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías. Dos filas debajo del encabezado con productos y hechos de división: 3*4=12 con divisiones 12÷4=3 y 12÷3=4, y 2*8=16 con divisiones 16÷2=8, 16÷8=2, y equivalencias.       "
 },
 {
   "id": "act-siSeQueEntoncesSeQue",
@@ -943,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "34",
   "title": "Si sé que …, entonces sé que ….",
-  "body": " Si sé que , entonces sé que   Si sé que , entonces sé que .   Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.  Por turnos, tomen una tarjeta de hechos de multiplicación.  Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que ”  Después, anoten las ecuaciones de división relacionadas en la columna “Entonces sé que ”    Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías.      Ejemplos de respuestas:   Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías. Dos filas debajo del encabezado con productos y hechos de división: 3*4=12 con divisiones 12÷4=3 y 12÷3=4, y 2*8=16 con divisiones 16÷2=8, 16÷8=2, y equivalencias.       "
+  "body": " Si sé que , entonces sé que   Si sé que , entonces sé que .   Coloquen las tarjetas de hechos de multiplicación en un montón, boca abajo.  Por turnos, tomen una tarjeta de hechos de multiplicación.  Usen el hecho de multiplicación de la tarjeta para escribir una ecuación de multiplicación en la columna “Si sé que ”  Después, en la columna “Entonces sé que ”, anoten las ecuaciones de división relacionadas.    Tabla para rellenar en el libro de trabajo. También se puede descargar .    Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Fila debajo del encabezado vacía.     Ejemplos de respuestas:   Tabla, dos columnas. Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Filas debajo del encabezado vacías. Dos filas debajo del encabezado con productos y hechos de división: 3*4=12 con divisiones 12÷4=3 y 12÷3=4, y 2*8=16 con divisiones 16÷2=8, 16÷8=2, y equivalencias.      "
 },
 {
   "id": "lec-relCocientesProductos-cool",
@@ -952,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Hechos de multiplicación y de división   Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?    Ejemplo de respuestas: Solía saber solo los hechos de 5 y de 10, pero ahora he utilizado esos hechos para aprender más. Al principio del año solo conocía unos pocos hechos numéricos, pero ahora sé muchos más.    "
+  "body": " Actividad de cierre  Actividad de cierre     Hechos de multiplicación y de división   Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?    Ejemplo de respuestas:   Solía saberme solo los hechos de multiplicación que incluían al 5 y al 10, pero he utilizado esos hechos para aprenderme otros.  Al principio del año solo conocía unos pocos hechos de multiplicación, pero ahora sé muchos más.     "
 },
 {
   "id": "cool-hechosMultiplicacionDivision",
@@ -961,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "35",
   "title": "Hechos de multiplicación y de división.",
-  "body": " Hechos de multiplicación y de división   Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?    Ejemplo de respuestas: Solía saber solo los hechos de 5 y de 10, pero ahora he utilizado esos hechos para aprender más. Al principio del año solo conocía unos pocos hechos numéricos, pero ahora sé muchos más.   "
+  "body": " Hechos de multiplicación y de división   Piensa en los hechos de multiplicación que te sabes. ¿Cómo han cambiado desde el comienzo del año?    Ejemplo de respuestas:   Solía saberme solo los hechos de multiplicación que incluían al 5 y al 10, pero he utilizado esos hechos para aprenderme otros.  Al principio del año solo conocía unos pocos hechos de multiplicación, pero ahora sé muchos más.    "
 },
 {
   "id": "lec-patronesTablaMultiplicar-warm",
@@ -970,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Tabla de multiplicar    ¿Qué observas?  ¿Qué te preguntas?    Tabla de multiplicar.     Los estudiantes pueden observar:   Los números en la fila superior y en la columna más a la izquierda son factores.  El producto se alinea con un factor en la parte superior y un factor a la izquierda.  La fila que comienza con 5 cuenta de 5 en 5 a medida que uno se mueve hacia la derecha: 5, 10, 15, etc.  La columna que comienza con 3 cuenta de 3 en 3 a medida que uno se mueve hacia abajo: 3, 6, 9, etc.  Hay muchos patrones en la tabla.  La tabla es similar a algunas tablas que vimos antes, pero esas tablas tenían que ver con la suma.   Los estudiantes se pueden preguntar:   ¿Qué significan los números en la tabla?  ¿Cómo funciona la tabla?  ¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?       "
+  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Tabla de multiplicar    ¿Qué observas?  ¿Qué te preguntas?    Tabla de multiplicar.     Los estudiantes pueden observar:   Los números en la fila superior y en la columna de la izquierda son factores.  El producto está en la fila de un factor y en la columna del otro.  La fila que comienza con 5 cuenta de 5 en 5 a medida que uno se mueve hacia la derecha: 5, 10, 15, etc.  La columna que comienza con 3 cuenta de 3 en 3 a medida que uno se mueve hacia abajo: 3, 6, 9, etc.  Hay muchos patrones en la tabla.  La tabla es similar a algunas tablas que vimos antes, pero esas tablas tenían que ver con la suma.   Los estudiantes se pueden preguntar:   ¿Qué significan los números en la tabla?  ¿Cómo funciona la tabla?  ¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?       "
 },
 {
   "id": "warm-observa-tablaMultiplicar",
@@ -979,7 +988,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "36",
   "title": "Observa y pregúntate: Tabla de multiplicar.",
-  "body": " Observa y pregúntate: Tabla de multiplicar    ¿Qué observas?  ¿Qué te preguntas?    Tabla de multiplicar.     Los estudiantes pueden observar:   Los números en la fila superior y en la columna más a la izquierda son factores.  El producto se alinea con un factor en la parte superior y un factor a la izquierda.  La fila que comienza con 5 cuenta de 5 en 5 a medida que uno se mueve hacia la derecha: 5, 10, 15, etc.  La columna que comienza con 3 cuenta de 3 en 3 a medida que uno se mueve hacia abajo: 3, 6, 9, etc.  Hay muchos patrones en la tabla.  La tabla es similar a algunas tablas que vimos antes, pero esas tablas tenían que ver con la suma.   Los estudiantes se pueden preguntar:   ¿Qué significan los números en la tabla?  ¿Cómo funciona la tabla?  ¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?      "
+  "body": " Observa y pregúntate: Tabla de multiplicar    ¿Qué observas?  ¿Qué te preguntas?    Tabla de multiplicar.     Los estudiantes pueden observar:   Los números en la fila superior y en la columna de la izquierda son factores.  El producto está en la fila de un factor y en la columna del otro.  La fila que comienza con 5 cuenta de 5 en 5 a medida que uno se mueve hacia la derecha: 5, 10, 15, etc.  La columna que comienza con 3 cuenta de 3 en 3 a medida que uno se mueve hacia abajo: 3, 6, 9, etc.  Hay muchos patrones en la tabla.  La tabla es similar a algunas tablas que vimos antes, pero esas tablas tenían que ver con la suma.   Los estudiantes se pueden preguntar:   ¿Qué significan los números en la tabla?  ¿Cómo funciona la tabla?  ¿Por qué los números son más pequeños en la parte superior izquierda de la tabla y luego más grandes en la parte inferior derecha de la tabla?      "
 },
 {
   "id": "lec-patronesTablaMultiplicar-act1",
@@ -988,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Productos en la tabla   Esta es una tabla de multiplicar que no se ha completado totalmente.   Tabla de multiplicar.    Usa los productos de la tabla para ayudarte a encontrar los números que deberían ir en lugar de las letras de la A a la G. Prepárate para explicar tu razonamiento.   Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Usa:   7 como un factor  9 como un factor  10 como un factor   Prepárate para explicar tu razonamiento.        Respuestas:   14  27  24  40  60  60  49  72     Ejemplos de respuestas:             "
+  "body": " Actividad 1  Actividad 1     Productos en la tabla   Esta es una tabla de multiplicar que no se ha terminado de completar.   Tabla de multiplicar.    Usa los productos que ya aparecen en la tabla para ayudarte a encontrar los números que deberían ir en las casillas donde están las letras de la A a la G. Prepárate para explicar tu razonamiento.   Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Encuentra alguno que tenga:   7 como un factor  9 como un factor  10 como un factor   Prepárate para explicar tu razonamiento.        Respuestas:   14  27  24  40  60  49  72     Ejemplos de respuestas:             "
 },
 {
   "id": "act-productosTablaMultiplicar",
@@ -997,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "37",
   "title": "Productos en la tabla.",
-  "body": " Productos en la tabla   Esta es una tabla de multiplicar que no se ha completado totalmente.   Tabla de multiplicar.    Usa los productos de la tabla para ayudarte a encontrar los números que deberían ir en lugar de las letras de la A a la G. Prepárate para explicar tu razonamiento.   Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Usa:   7 como un factor  9 como un factor  10 como un factor   Prepárate para explicar tu razonamiento.        Respuestas:   14  27  24  40  60  60  49  72     Ejemplos de respuestas:            "
+  "body": " Productos en la tabla   Esta es una tabla de multiplicar que no se ha terminado de completar.   Tabla de multiplicar.    Usa los productos que ya aparecen en la tabla para ayudarte a encontrar los números que deberían ir en las casillas donde están las letras de la A a la G. Prepárate para explicar tu razonamiento.   Encuentra los números que deberían ir en otras tres casillas vacías de la tabla. Encuentra alguno que tenga:   7 como un factor  9 como un factor  10 como un factor   Prepárate para explicar tu razonamiento.        Respuestas:   14  27  24  40  60  49  72     Ejemplos de respuestas:            "
 },
 {
   "id": "lec-patronesTablaMultiplicar-act2",
@@ -1006,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     Si sé que , entonces sé que : Multiplicación     En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.   Tabla, dos columnas. Encabezados: Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8.     Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.       Ejemplos de respuestas:   Tabla, dos columnas. Encabezados: Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8. Segunda columna con productos relacionados.     Los estudiantes completan la tabla de la actividad anterior.       "
+  "body": " Actividad 2  Actividad 2     Si sé que , entonces sé que : Multiplicación    Copia de la tabla en el libro de trabajo, o descarga para imprimir     En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.   Tabla, dos columnas. Encabezados: Columna 1 \"Si me sé....\", Columna 2 \"Entonces me sé...\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8.    Si te queda tiempo, completa el resto de la tabla de multiplicar de la actividad anterior. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.       Ejemplos de respuestas:   Tabla, dos columnas. Encabezados: Columna 1 \"Si me sé....\", Columna 2 \"Entonces me sé...\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8. Segunda columna con productos relacionados.     Los estudiantes completan la tabla de la actividad anterior.       "
 },
 {
   "id": "act-siSeQueEntoncesSeQueMult",
@@ -1015,7 +1024,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "38",
   "title": "Si sé que …, entonces sé que …: Multiplicación.",
-  "body": " Si sé que , entonces sé que : Multiplicación     En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.   Tabla, dos columnas. Encabezados: Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8.     Si te queda tiempo, completa el resto de la tabla de multiplicar. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.       Ejemplos de respuestas:   Tabla, dos columnas. Encabezados: Columna 1 \"Si se qué....\", Columna 2 \"Entonces sé qué\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8. Segunda columna con productos relacionados.     Los estudiantes completan la tabla de la actividad anterior.      "
+  "body": " Si sé que , entonces sé que : Multiplicación    Copia de la tabla en el libro de trabajo, o descarga para imprimir     En cada fila, escribe al menos dos hechos de multiplicación que puedes descifrar porque conoces el hecho de multiplicación dado en la columna de la izquierda. Prepárate para compartir tu razonamiento.   Tabla, dos columnas. Encabezados: Columna 1 \"Si me sé....\", Columna 2 \"Entonces me sé...\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8.    Si te queda tiempo, completa el resto de la tabla de multiplicar de la actividad anterior. Usa los hechos de multiplicación que conoces para encontrar aquellos que no conoces.       Ejemplos de respuestas:   Tabla, dos columnas. Encabezados: Columna 1 \"Si me sé....\", Columna 2 \"Entonces me sé...\". Primera columna debajo del encabezado con filas con productos 2 por 24, 3 por 5, 4 por 10, 7 por 2, 5 por 8. Segunda columna con productos relacionados.     Los estudiantes completan la tabla de la actividad anterior.      "
 },
 {
   "id": "lec-patronesTablaMultiplicar-cool",
@@ -1024,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Encuentra el producto desconocido   ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.   Tabla de multiplicar en la que faltan unos productos.     32. Ejemplo de respuestas: La tabla muestra que es 32, y sé que tiene el mismo valor que , por lo que también es 32. Sé que o 4 grupos de 4 es 16. Sumé otro 16 para obtener , y .    "
+  "body": " Actividad de cierre  Actividad de cierre     Encuentra el producto desconocido   ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.   Tabla de multiplicar en la que faltan unos productos.     32. Ejemplo de respuestas:   La tabla muestra que es 32, y sé que tiene el mismo valor que , por lo que también es 32.  Sé que (o 4 grupos de 4) es 16 y como es 8 grupos de 4, sumé otro 16 y obtuve .  La fila que comienza con un 4 aumenta de 4 en 4. Entonces seguí contando hasta la casilla indicada: 16, 20, 24, 28, 32.     "
 },
 {
   "id": "cool-encuentraProductoDesconocido",
@@ -1033,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "39",
   "title": "Encuentra el producto desconocido.",
-  "body": " Encuentra el producto desconocido   ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.   Tabla de multiplicar en la que faltan unos productos.     32. Ejemplo de respuestas: La tabla muestra que es 32, y sé que tiene el mismo valor que , por lo que también es 32. Sé que o 4 grupos de 4 es 16. Sumé otro 16 para obtener , y .   "
+  "body": " Encuentra el producto desconocido   ¿Qué número debería ir en lugar del signo de interrogación? Explica o muestra tu razonamiento.   Tabla de multiplicar en la que faltan unos productos.     32. Ejemplo de respuestas:   La tabla muestra que es 32, y sé que tiene el mismo valor que , por lo que también es 32.  Sé que (o 4 grupos de 4) es 16 y como es 8 grupos de 4, sumé otro 16 y obtuve .  La fila que comienza con un 4 aumenta de 4 en 4. Entonces seguí contando hasta la casilla indicada: 16, 20, 24, 28, 32.    "
 },
 {
   "id": "lec-estrategiasMultConRectangulos-warm",
@@ -1060,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?     Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.  Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.         Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.          "
+  "body": " Actividad 1  Actividad 1     De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.          "
 },
 {
   "id": "act-deDiagramasAExpresiones",
@@ -1069,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "41",
   "title": "De diagramas a expresiones.",
-  "body": " De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?     Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.  Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.         Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.         "
+  "body": " De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.         "
 },
 {
   "id": "lec-estrategiasMultConRectangulos-act2",
@@ -1078,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     De expresiones a diagramas     Noah   Diagrama. Rectángulo dividido en 3 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 3.        Priya   Diagrama de área. Rectángulo dividido en 4 filas de 6 cuadrados del mismo tamaño.        Tyler   Diagrama. Un rectángulo dividido en 8 filas de 8 cuadrados del mismo tamaño.        En cada rectángulo:   Escribe los dos factores que se pueden multiplicar para encontrar su área.  Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.       Noah    o     Diagrama de área.       Priya    o     Diagrama de área.       Tyler        Diagrama de área.           "
+  "body": " Actividad 2  Actividad 2     De expresiones a diagramas     Noah   Diagrama. Rectángulo dividido en 3 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 3.        Priya   Diagrama de área. Rectángulo dividido en 4 filas de 6 cuadrados del mismo tamaño.        Tyler   Diagrama. Un rectángulo dividido en 8 filas de 8 cuadrados del mismo tamaño.        En cada rectángulo:   Copia para colorear en el libro de trabajo o descarga para imprimir    Escribe los dos factores que se pueden multiplicar para encontrar su área.   Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.        Noah    o     Diagrama de área.       Priya    o     Diagrama de área.       Tyler        Diagrama de área.           "
 },
 {
   "id": "act-deExpresionesADiagramas",
@@ -1087,7 +1096,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "42",
   "title": "De expresiones a diagramas.",
-  "body": " De expresiones a diagramas     Noah   Diagrama. Rectángulo dividido en 3 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 3.        Priya   Diagrama de área. Rectángulo dividido en 4 filas de 6 cuadrados del mismo tamaño.        Tyler   Diagrama. Un rectángulo dividido en 8 filas de 8 cuadrados del mismo tamaño.        En cada rectángulo:   Escribe los dos factores que se pueden multiplicar para encontrar su área.  Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.       Noah    o     Diagrama de área.       Priya    o     Diagrama de área.       Tyler        Diagrama de área.          "
+  "body": " De expresiones a diagramas     Noah   Diagrama. Rectángulo dividido en 3 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 3.        Priya   Diagrama de área. Rectángulo dividido en 4 filas de 6 cuadrados del mismo tamaño.        Tyler   Diagrama. Un rectángulo dividido en 8 filas de 8 cuadrados del mismo tamaño.        En cada rectángulo:   Copia para colorear en el libro de trabajo o descarga para imprimir    Escribe los dos factores que se pueden multiplicar para encontrar su área.   Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.        Noah    o     Diagrama de área.       Priya    o     Diagrama de área.       Tyler        Diagrama de área.          "
 },
 {
   "id": "lec-estrategiasMultConRectangulos-cool",
@@ -1096,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Marca o colorea partes para encontrar el área     El área de este rectángulo se puede encontrar hallando .   Marca o colorea el rectángulo para mostrar que podemos escribir o para encontrar su área.  ¿Cuál es el valor de ? Explica o muestra tu razonamiento.     Diagrama. Rectángulo dividido en 6 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 6.         Ejemplos de respuestas:   Diagrama sombreado.    Diagrama sombreado.     42. Sé que es 30 y es 12, y .     "
+  "body": " Actividad de cierre  Actividad de cierre     Marca o colorea partes para encontrar el área   El área de este rectángulo se puede encontrar hallando .   Copia para marcar o colorear descarga para imprimir    Diagrama. Rectángulo dividido en 6 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 6.    Marca o colorea el rectángulo para mostrar que podemos escribir o para encontrar su área.  ¿Cuál es el valor de ? Explica o muestra tu razonamiento.        Ejemplos de respuestas:   Diagrama sombreado.    Diagrama sombreado.     42. Sé que es 30 y es 12, y .     "
 },
 {
   "id": "cool-marcaPartesParaEncontrarArea",
@@ -1105,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "43",
   "title": "Marca o colorea partes para encontrar el área.",
-  "body": " Marca o colorea partes para encontrar el área     El área de este rectángulo se puede encontrar hallando .   Marca o colorea el rectángulo para mostrar que podemos escribir o para encontrar su área.  ¿Cuál es el valor de ? Explica o muestra tu razonamiento.     Diagrama. Rectángulo dividido en 6 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 6.         Ejemplos de respuestas:   Diagrama sombreado.    Diagrama sombreado.     42. Sé que es 30 y es 12, y .    "
+  "body": " Marca o colorea partes para encontrar el área   El área de este rectángulo se puede encontrar hallando .   Copia para marcar o colorear descarga para imprimir    Diagrama. Rectángulo dividido en 6 filas de 7 cuadrados del mismo tamaño. Longitud del rectángulo, 7. Ancho del rectángulo, 6.    Marca o colorea el rectángulo para mostrar que podemos escribir o para encontrar su área.  ¿Cuál es el valor de ? Explica o muestra tu razonamiento.        Ejemplos de respuestas:   Diagrama sombreado.    Diagrama sombreado.     42. Sé que es 30 y es 12, y .    "
 },
 {
   "id": "gra3-uni4-secB-lec11-warm",
@@ -1132,7 +1141,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Marca y después expresa   En cada caso:   Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.  Escribe una o más expresiones que representen cómo encuentras el área.     A   Rectángulo. Lado horizontal 9, lado vertical 5.     B   Rectángulo. Lado horizontal 6, lado vertical 6.     C   Rectángulo. Lado horizontal 8, lado vertical 7.          A   Diagrama     o , que es o 45.     B   Diagrama     o , que es 36.     C   Diagrama     , que es o 56.        "
+  "body": " Actividad 1  Actividad 1     Marca y después expresa   En cada caso:   Copia para colorear en el libro de trabajo o descarga para imprimir    Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.  Escribe una o más expresiones que representen cómo encuentras el área.     A   Rectángulo. Lado horizontal 9, lado vertical 5.     B   Rectángulo. Lado horizontal 6, lado vertical 6.     C   Rectángulo. Lado horizontal 8, lado vertical 7.          A   Diagrama     o , que es o 45.     B   Diagrama     o , que es 36.     C   Diagrama     , que es o 56.        "
 },
 {
   "id": "act-marcaDespuesExpresa",
@@ -1141,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "45",
   "title": "Marca y después expresa.",
-  "body": " Marca y después expresa   En cada caso:   Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.  Escribe una o más expresiones que representen cómo encuentras el área.     A   Rectángulo. Lado horizontal 9, lado vertical 5.     B   Rectángulo. Lado horizontal 6, lado vertical 6.     C   Rectángulo. Lado horizontal 8, lado vertical 7.          A   Diagrama     o , que es o 45.     B   Diagrama     o , que es 36.     C   Diagrama     , que es o 56.       "
+  "body": " Marca y después expresa   En cada caso:   Copia para colorear en el libro de trabajo o descarga para imprimir    Marca o colorea cada rectángulo para mostrar una estrategia que ayude a encontrar su área.  Escribe una o más expresiones que representen cómo encuentras el área.     A   Rectángulo. Lado horizontal 9, lado vertical 5.     B   Rectángulo. Lado horizontal 6, lado vertical 6.     C   Rectángulo. Lado horizontal 8, lado vertical 7.          A   Diagrama     o , que es o 45.     B   Diagrama     o , que es 36.     C   Diagrama     , que es o 56.       "
 },
 {
   "id": "gra3-uni4-secB-lec11-act2",
@@ -1150,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo   Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.  Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.  Si te ayuda, puedes dibujar rectángulos.     Ejemplos de respuestas:   A, C y L (28 unidades cuadradas, 7 unidades por 4 unidades)  B e I (42 unidades cuadradas, 6 unidades por 7 unidades)  D, F y G (24 unidades cuadradas, 8 unidades por 3 unidades)  E y K (48 unidades cuadradas, 6 unidades por 8 unidades)  J y H (36 unidades cuadradas, 9 unidades por 4 unidades)       "
+  "body": " Actividad 2  Actividad 2     Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo   Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.   Tarjetas para recortar en el libro de trabajo o descarga para imprimir   Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.  Si te ayuda, puedes dibujar rectángulos.    Ejemplos de respuestas:   A, C y L (28 unidades cuadradas, 7 unidades por 4 unidades)  B e I (42 unidades cuadradas, 6 unidades por 7 unidades)  D, F y G (24 unidades cuadradas, 8 unidades por 3 unidades)  E y K (48 unidades cuadradas, 6 unidades por 8 unidades)  J y H (36 unidades cuadradas, 9 unidades por 4 unidades)       "
 },
 {
   "id": "act-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos",
@@ -1159,7 +1168,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "46",
   "title": "Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo.",
-  "body": " Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo   Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.  Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.  Si te ayuda, puedes dibujar rectángulos.     Ejemplos de respuestas:   A, C y L (28 unidades cuadradas, 7 unidades por 4 unidades)  B e I (42 unidades cuadradas, 6 unidades por 7 unidades)  D, F y G (24 unidades cuadradas, 8 unidades por 3 unidades)  E y K (48 unidades cuadradas, 6 unidades por 8 unidades)  J y H (36 unidades cuadradas, 9 unidades por 4 unidades)      "
+  "body": " Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo   Tu profesor te dará un grupo de tarjetas con expresiones que representan áreas de rectángulos.   Tarjetas para recortar en el libro de trabajo o descarga para imprimir   Clasifica las expresiones en grupos de manera que las expresiones de cada grupo representen el área del mismo rectángulo. Prepárate para explicar tu razonamiento.  Si te ayuda, puedes dibujar rectángulos.    Ejemplos de respuestas:   A, C y L (28 unidades cuadradas, 7 unidades por 4 unidades)  B e I (42 unidades cuadradas, 6 unidades por 7 unidades)  D, F y G (24 unidades cuadradas, 8 unidades por 3 unidades)  E y K (48 unidades cuadradas, 6 unidades por 8 unidades)  J y H (36 unidades cuadradas, 9 unidades por 4 unidades)      "
 },
 {
   "id": "gra3-uni4-secB-lec11-cool",
@@ -1186,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección B",
-  "body": "  Problemas de práctica de la sección B  Problemas de práctica           Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y una ecuación de división.    Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o . Hay 4 filas de huevos.      Resalta partes del diagrama para mostrar la expresión   Diagrama de área.    Explica cómo podrías usar el diagrama para calcular .      Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.      Lin sabe que . Explica cómo puede usar este hecho para encontrar .   Ejemplo de respuesta: es 8 menos que por lo que es o 32.      Resalta partes del diagrama para mostrar la expresión   Diagrama de área.    Explica cómo podrías usar el diagrama para calcular .      Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.       Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y y luego sumé 40 y 16 para obtener 56.   Diagrama de área.      Exploración  Noah encuentra calculando .   Haz un dibujo que muestre por qué funciona el cálculo de Noah.  Usa el método de Noah para calcular .      Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.     "
+  "body": "  Problemas de práctica de la sección B  Problemas de práctica           Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y una ecuación de división.    Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o . Hay 4 filas de huevos.    En cada caso, escribe un hecho de división que te sepas y que esté relacionado con la ecuación de multiplicación.           Ejemplo de respuesta:    ,    ,      Lin sabe que . Explica cómo puede usar este hecho para encontrar .   Ejemplo de respuesta: es 8 menos que por lo que es o 32.      Resalta partes del diagrama para mostrar la expresión   Diagrama de área.     Explica cómo podrías usar el diagrama para calcular .       Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.       Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y y luego sumé 40 y 16 para obtener 56.   Diagrama de área.      Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.     "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-3",
@@ -1213,7 +1222,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "3",
   "title": "",
-  "body": "   Resalta partes del diagrama para mostrar la expresión   Diagrama de área.    Explica cómo podrías usar el diagrama para calcular .      Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.    "
+  "body": " En cada caso, escribe un hecho de división que te sepas y que esté relacionado con la ecuación de multiplicación.           Ejemplo de respuesta:    ,    ,    "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-6",
@@ -1231,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "5",
   "title": "",
-  "body": "   Resalta partes del diagrama para mostrar la expresión   Diagrama de área.    Explica cómo podrías usar el diagrama para calcular .      Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.    "
+  "body": "   Resalta partes del diagrama para mostrar la expresión   Diagrama de área.     Explica cómo podrías usar el diagrama para calcular .       Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.    "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-8",
@@ -1249,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "Exploración.",
-  "body": "Exploración  Noah encuentra calculando .   Haz un dibujo que muestre por qué funciona el cálculo de Noah.  Usa el método de Noah para calcular .      Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.   "
+  "body": "Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.   "
 },
 {
   "id": "gra3-uni4-secB-resumen",
@@ -1321,7 +1330,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento    Observa y pregúntate: Decenas    ¿Qué observas?  ¿Qué te preguntas?    Bloques en base 10. 12 decenas.     Los estudiantes pueden observar:   Estos son diagramas de bloques en base diez.  Hay 10 cuadrados (o unidades) en cada rectángulo o bloque.  Hay 4 filas y 3 columnas de decenas.  Hay 3 decenas en cada fila.  Hay 30 en cada fila.  Puedo contar de 30 en 30 para encontrar el total.  Hay 12 grupos de diez.   Los estudiantes pueden preguntarse:   ¿Cuántos cuadrados (o unidades) hay en cada sección?  ¿Cuántos cuadrados hay en cada fila?  ¿Cuántos cuadrados hay en total?       "
+  "body": " Calentamiento  Calentamiento    Observa y pregúntate: Decenas    ¿Qué observas?  ¿Qué te preguntas?    Bloques en base 10. 12 decenas.     Los estudiantes pueden observar:   Estos son diagramas de bloques en base diez.  Hay 10 cuadrados (o unidades) en cada rectángulo o bloque.  Las decenas están organizadas en 4 filas y 3 columnas.  En cada fila hay 3 decenas.  En cada fila hay 30.  Puedo contar de 30 en 30 para encontrar el total.  Hay 12 grupos de diez.   Los estudiantes pueden preguntarse:   ¿Cuántos cuadrados (o unidades) hay en cada sección?  ¿Cuántos cuadrados hay en cada fila?  ¿Cuántos cuadrados hay en total?       "
 },
 {
   "id": "warm-observa-decenas",
@@ -1330,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "48",
   "title": "Observa y pregúntate: Decenas.",
-  "body": " Observa y pregúntate: Decenas    ¿Qué observas?  ¿Qué te preguntas?    Bloques en base 10. 12 decenas.     Los estudiantes pueden observar:   Estos son diagramas de bloques en base diez.  Hay 10 cuadrados (o unidades) en cada rectángulo o bloque.  Hay 4 filas y 3 columnas de decenas.  Hay 3 decenas en cada fila.  Hay 30 en cada fila.  Puedo contar de 30 en 30 para encontrar el total.  Hay 12 grupos de diez.   Los estudiantes pueden preguntarse:   ¿Cuántos cuadrados (o unidades) hay en cada sección?  ¿Cuántos cuadrados hay en cada fila?  ¿Cuántos cuadrados hay en total?      "
+  "body": " Observa y pregúntate: Decenas    ¿Qué observas?  ¿Qué te preguntas?    Bloques en base 10. 12 decenas.     Los estudiantes pueden observar:   Estos son diagramas de bloques en base diez.  Hay 10 cuadrados (o unidades) en cada rectángulo o bloque.  Las decenas están organizadas en 4 filas y 3 columnas.  En cada fila hay 3 decenas.  En cada fila hay 30.  Puedo contar de 30 en 30 para encontrar el total.  Hay 12 grupos de diez.   Los estudiantes pueden preguntarse:   ¿Cuántos cuadrados (o unidades) hay en cada sección?  ¿Cuántos cuadrados hay en cada fila?  ¿Cuántos cuadrados hay en total?      "
 },
 {
   "id": "lec-multiplicarMultiplos10-act1",
@@ -1339,7 +1348,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1    Una gran cantidad de dólares   Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de $5, $10, $20, $50 y de $100.    Cada jugador recibió $100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?  Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.   (for accessibility)     En un momento del juego, Noah tuvo que pagarle a Lin $150. Él le dio esa cantidad usando billetes del mismo tipo.    ¿Cuáles y cuántos billetes podría haber usado Noah para completar $150? Nombra todas las posibilidades.    Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.      La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?  Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.   (for accessibility)          (for accessibility)      Tres billetes de , quince billetes de y treinta billetes de .  , y     Hoah ganó el juego.   (for accessibility)         "
+  "body": " Actividad 1  Actividad 1    Una gran cantidad de dólares   Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de $5, $10, $20, $50 y de $100.   Tablas para rellenar en el libro de trabajo. También se pueden descargar .     Cada jugador recibió $100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?  Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.   (for accessibility)     En un momento del juego, Noah tuvo que pagarle a Lin $150. Él le dio esa cantidad usando billetes del mismo tipo.    ¿Cuáles y cuántos billetes podría haber usado Noah para completar $150? Menciona todas las posibilidades.    Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.      La tabla muestra lo que tenían los jugadores al final del juego. Si gana la persona que tenga la mayor cantidad de dinero, ¿quién ganó el juego?  Escribe una expresión que represente los billetes que tiene cada persona y también la cantidad de dólares.   (for accessibility)         Tabla:   (for accessibility)      Tres billetes de , quince billetes de y treinta billetes de .  , y     Noah ganó el juego.   (for accessibility)         "
 },
 {
   "id": "act-granCantidadDolares",
@@ -1348,7 +1357,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "49",
   "title": "Una gran cantidad de dólares.",
-  "body": " Una gran cantidad de dólares   Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de $5, $10, $20, $50 y de $100.    Cada jugador recibió $100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?  Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.   (for accessibility)     En un momento del juego, Noah tuvo que pagarle a Lin $150. Él le dio esa cantidad usando billetes del mismo tipo.    ¿Cuáles y cuántos billetes podría haber usado Noah para completar $150? Nombra todas las posibilidades.    Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.      La tabla muestra lo que tenían los jugadores al final del juego. Gana la persona que tenga la mayor cantidad de dinero. ¿Quién ganó el juego?  Escribe una expresión que represente los billetes que tiene cada persona y escribe la cantidad de dólares.   (for accessibility)          (for accessibility)      Tres billetes de , quince billetes de y treinta billetes de .  , y     Hoah ganó el juego.   (for accessibility)        "
+  "body": " Una gran cantidad de dólares   Seis amigos juegan un juego de mesa en el que se usa dinero de juguete. Hay billetes de papel de $5, $10, $20, $50 y de $100.   Tablas para rellenar en el libro de trabajo. También se pueden descargar .     Cada jugador recibió $100 para empezar. ¿Cuáles de los siguientes podrían ser los billetes que recibió cada jugador?  Escribe una expresión que represente los billetes de juguete y escribe la cantidad de dólares.   (for accessibility)     En un momento del juego, Noah tuvo que pagarle a Lin $150. Él le dio esa cantidad usando billetes del mismo tipo.    ¿Cuáles y cuántos billetes podría haber usado Noah para completar $150? Menciona todas las posibilidades.    Escribe una expresión para cada forma en la que Noah podría haberle pagado a Lin.      La tabla muestra lo que tenían los jugadores al final del juego. Si gana la persona que tenga la mayor cantidad de dinero, ¿quién ganó el juego?  Escribe una expresión que represente los billetes que tiene cada persona y también la cantidad de dólares.   (for accessibility)         Tabla:   (for accessibility)      Tres billetes de , quince billetes de y treinta billetes de .  , y     Noah ganó el juego.   (for accessibility)        "
 },
 {
   "id": "lec-multiplicarMultiplos10-act2",
@@ -1393,7 +1402,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Exploración de estimación: Multipliquemos    Escribe una estimación que sea:       muy baja  razonable  muy alta           Ejemplos de respuestas:   Muy baja: 40  Razonable: 40-79  Muy alta: 80       "
+  "body": " Calentamiento  Calentamiento     Exploración de estimación: Multipliquemos    Escribe una estimación que sea:   Tabla con tres columnas: \"muy baja\", \"razonable\" y \"muy alta\", con filas vacías.      Ejemplos de respuestas:   Muy baja: 40  Razonable: 40-79  Muy alta: 80       "
 },
 {
   "id": "warm-estimacion-multiplicar",
@@ -1402,7 +1411,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "52",
   "title": "Exploración de estimación: Multipliquemos.",
-  "body": " Exploración de estimación: Multipliquemos    Escribe una estimación que sea:       muy baja  razonable  muy alta           Ejemplos de respuestas:   Muy baja: 40  Razonable: 40-79  Muy alta: 80      "
+  "body": " Exploración de estimación: Multipliquemos    Escribe una estimación que sea:   Tabla con tres columnas: \"muy baja\", \"razonable\" y \"muy alta\", con filas vacías.      Ejemplos de respuestas:   Muy baja: 40  Razonable: 40-79  Muy alta: 80      "
 },
 {
   "id": "lec-problemasMult11a19-act1",
@@ -1663,7 +1672,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 3",
-  "body": " Actividad 3  Actividad 3     Juguemos “Cerca de 100, multiplicación” (opcional)    Juega “Cerca de 100, multiplicación” con un compañero.   Estudaintes jugando con cartas.     Pon las tarjetas boca abajo.  Cada jugador toma 4 tarjetas.  Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.  El jugador que esté más cerca de 100, gana esa ronda.  Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.     Partida 1  Partida 2     Ronda 1       Ronda 1         Ronda 2       Ronda 2         Nota:  Espacio para más rondas en el tablero de juego.    No aplica      "
+  "body": " Actividad 3  Actividad 3     Juguemos “Cerca de 100, multiplicación” (opcional)    Juega “Cerca de 100, multiplicación” con un compañero.   Estudiantes jugando con cartas.     Tablero y tarjetas en el libro de trabajo, o descarga acá .   Tu profesor te va a entregar unas tarjetas para recortar y un tablero de juego.   Pon las tarjetas boca abajo.  Cada jugador toma 4 tarjetas.  Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.  El jugador que esté más cerca de 100, gana esa ronda.  Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.     No aplica      "
 },
 {
   "id": "act-juegoCerca100Multiplicacion",
@@ -1672,7 +1681,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "67",
   "title": "Juguemos “Cerca de 100, multiplicación” (opcional).",
-  "body": " Juguemos “Cerca de 100, multiplicación” (opcional)    Juega “Cerca de 100, multiplicación” con un compañero.   Estudaintes jugando con cartas.     Pon las tarjetas boca abajo.  Cada jugador toma 4 tarjetas.  Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.  El jugador que esté más cerca de 100, gana esa ronda.  Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.     Partida 1  Partida 2     Ronda 1       Ronda 1         Ronda 2       Ronda 2         Nota:  Espacio para más rondas en el tablero de juego.    No aplica     "
+  "body": " Juguemos “Cerca de 100, multiplicación” (opcional)    Juega “Cerca de 100, multiplicación” con un compañero.   Estudiantes jugando con cartas.     Tablero y tarjetas en el libro de trabajo, o descarga acá .   Tu profesor te va a entregar unas tarjetas para recortar y un tablero de juego.   Pon las tarjetas boca abajo.  Cada jugador toma 4 tarjetas.  Cada jugador escoge 2 de sus tarjetas para completar la expresión y hacer que el valor esté lo más cerca posible de 100. Escribe los 2 dígitos y el producto.  El jugador que esté más cerca de 100, gana esa ronda.  Juega 5 rondas. El jugador que gane la mayoría de rondas, gana la partida.     No aplica     "
 },
 {
   "id": "lec-multiplicarNumsMayoresA20-cool",
@@ -1753,7 +1762,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Los globos de Andre   Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?   Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra cómo razonaste.         9 globos. Ejemplo de respuesta: Resté para ver cuántos globos colgaron Andre y sus amigos y obtuve 45. Luego, dividí 45 entre 5 para ver cuántos globos colgó cada persona y obtuve 9.     "
+  "body": " Actividad de cierre  Actividad de cierre     Los globos de Andre   Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?    Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo razonaste.          9 globos. Ejemplo de respuesta: Resté para ver cuántos globos colgaron Andre y sus amigos y obtuve 45. Luego, dividí 45 entre 5 para ver cuántos globos colgó cada persona y obtuve 9.     "
 },
 {
   "id": "cool-globosGruposIguales",
@@ -1762,7 +1771,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "72",
   "title": "Los globos de Andre.",
-  "body": " Los globos de Andre   Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?   Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra cómo razonaste.         9 globos. Ejemplo de respuesta: Resté para ver cuántos globos colgaron Andre y sus amigos y obtuve 45. Luego, dividí 45 entre 5 para ver cuántos globos colgó cada persona y obtuve 9.    "
+  "body": " Los globos de Andre   Andre tenía 125 globos. Él y 4 amigos colgaron algunos de esos globos para una fiesta en la escuela y ahora quedan 80 globos. Si cada persona colgó el mismo número de globos, ¿cuántos globos colgó cada uno?    Escribe una ecuación que corresponda a la situación y que tenga una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo razonaste.          9 globos. Ejemplo de respuesta: Resté para ver cuántos globos colgaron Andre y sus amigos y obtuve 45. Luego, dividí 45 entre 5 para ver cuántos globos colgó cada persona y obtuve 9.    "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica",
@@ -1771,7 +1780,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección C",
-  "body": "  Problemas de práctica de la sección C  Problemas de práctica            ¿Cuántas decenas hay en 50?  ¿Cuántas decenas hay en ? Explica cómo razonaste.  ¿Cuál es el valor de ? Explica cómo razonaste.     5  35 porque hay 7 grupos de 5 decenas. Eso es decenas  350 porque las 30 decenas son 3 centenas y luego hay 5 decenas más o 50.     Hay 4 mesas para el almuerzo. Hay 12 estudiantes en cada mesa. ¿Cuántos estudiantes hay en las mesas? Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.   Ejemplo de respuesta: 48   Diagrama de área.       Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 24, con una medida superior de 4. Medida del lado izquierdo 6.    ¿Qué representan el 60 y el 24 del diagrama?  Explica cómo usar el diagrama para calcular      El 60 es el área del rectángulo de 6 por 10, el número de cuadrados unitarios que se necesitan para cubrir esa parte. El 24 es el área del rectángulo de 6 por 4, el número de cuadrados unitarios que se necesitan para cubrir esa parte.  Se necesitan o 84 cuadrados unitarios para cubrir todo el rectángulo.     En el mes hubo 14 días de escuela. Cada día hubo 7 horas de escuela. ¿Cuántas horas de escuela hubo durante el mes?   Ejemplo de respuesta:  98. , ,     Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.       Ejemplos de respuestas:   94. Encontré que es o 94.  75. Sé que es 6 decenas o 60 y también que es 15 más.     Una cuerda tiene 640 pulgadas de longitud. Andre corta 5 pedazos de cuerda, cada uno de 16 pulgadas. ¿Cuánta cuerda queda?   560 pulgadas.  Ejemplo de respuesta: Andre cortó pulgadas de cuerda, que son 80 pulgadas porque . Después restamos que da .    Exploración  Esta es la estrategia de Mai para calcular : “Primero duplico 21 y eso da 42. Luego duplico 42 y eso da 84”.   Explica por qué la estrategia de Mai funciona.  Usa la estrategia de Mai para encontrar .     Como 4 es , multiplicar por 4 es lo mismo que multiplicar por , que es duplicar dos veces. Entonces, duplicar 21 dos veces da cuatro veces 21.  Si duplico 23 obtengo 46. Si duplico 46 obtengo 92, entonces .    Exploración   Tabla de multiplicar.    Haz una lista de los números menores que 20 que no aparecen en la tabla de multiplicar.  ¿Qué tienen en común esos números?  Escoge uno de esos números y cuenta y separa ese número de objetos. ¿Puedes hacer un arreglo con los objetos?    Ejemplo de respuesta:   11, 13, 17, 19  Todos estos números son impares. Todos son mayores que 10.  Puedo hacer una recta con esa cantidad de puntos, pero no puedo hacer un arreglo con más de 1 fila o más de 1 columna.    Exploración  Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:    Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 18, con una medida superior de 3. Medida del lado izquierdo 6.    Bloques en base diez. 6 decenas. 18 unidades.     ¿Qué expresión de multiplicación representan los diagramas?  ¿Puedes mostrar una tercera forma de representar la misma expresión de multiplicación?  ¿Cuál es el valor de la expresión?  Escribe un problema-historia que le corresponda a la expresión.      o    Ejemplo de respuesta:   Diagrama de área.    78  Ejemplo de respuesta: Noah compró 6 bolsas de panes para la fiesta de fin de año de toda su clase. Una bolsa de pantiene 13 panes. ¿Cuántos panes compró Noah?    "
+  "body": "  Problemas de práctica de la sección C  Problemas de práctica            ¿Cuántas decenas hay en 50?   ¿Cuántas decenas hay en ? Explica cómo razonaste.    ¿Cuál es el valor de ? Explica cómo razonaste.      5  35 porque hay 7 grupos de 5 decenas. Eso es decenas  350 porque las 30 decenas son 3 centenas y luego hay 5 decenas más o 50.     Hay 4 mesas para el almuerzo. Hay 12 estudiantes en cada mesa. ¿Cuántos estudiantes hay en las mesas? Muestra cómo pensaste. Usa objetos, un dibujo o un diagrama.   Ejemplo de respuesta: 48   Diagrama de área.       Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 24, con una medida superior de 4. Medida del lado izquierdo 6.     ¿Qué representan el 60 y el 24 del diagrama?    Explica cómo usar el diagrama para calcular       El 60 es el área del rectángulo de 6 por 10, el número de cuadrados unitarios que se necesitan para cubrir esa parte. El 24 es el área del rectángulo de 6 por 4, el número de cuadrados unitarios que se necesitan para cubrir esa parte.  Se necesitan o 84 cuadrados unitarios para cubrir todo el rectángulo.     En el mes hubo 14 días de escuela. Cada día hubo 7 horas de escuela. ¿Cuántas horas de escuela hubo durante el mes?   Ejemplo de respuesta:  98. , ,     Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.               Ejemplos de respuestas:   94. Encontré que es o 94.  75. Sé que es 6 decenas o 60 y también que es 15 más.     Una cuerda tiene 640 pulgadas de longitud. Andre corta 5 pedazos de cuerda, cada uno de 16 pulgadas. ¿Cuánta cuerda queda?   560 pulgadas.  Ejemplo de respuesta: Andre cortó pulgadas de cuerda, que son 80 pulgadas porque . Después restamos que da .    Exploración  Esta es la estrategia de Mai para calcular : “Primero duplico 21 y eso da 42. Luego duplico 42 y eso da 84”.    Explica por qué la estrategia de Mai funciona.    Usa la estrategia de Mai para encontrar .      Como 4 es , multiplicar por 4 es lo mismo que multiplicar por , que es duplicar dos veces. Entonces, duplicar 21 dos veces da cuatro veces 21.  Si duplico 23 obtengo 46. Si duplico 46 obtengo 92, entonces .    Exploración   Tabla de multiplicar.     Haz una lista de los números menores que 20 que no aparecen en la tabla de multiplicar.    ¿Qué tienen en común esos números?    Escoge uno de esos números y cuenta y separa ese número de objetos. ¿Puedes hacer un arreglo con los objetos?     Ejemplo de respuesta:   11, 13, 17, 19  Todos estos números son impares. Todos son mayores que 10.  Puedo hacer una recta con esa cantidad de puntos, pero no puedo hacer un arreglo con más de 1 fila o más de 1 columna.    Exploración  Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:    Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 18, con una medida superior de 3. Medida del lado izquierdo 6.    Bloques en base diez. 6 decenas. 18 unidades.      ¿Qué expresión de multiplicación representan los diagramas?    ¿Puedes mostrar una tercera forma de representar la misma expresión de multiplicación?    ¿Cuál es el valor de la expresión?    Escribe un problema-historia que le corresponda a la expresión.       o    Ejemplo de respuesta:   Diagrama de área.    78  Ejemplo de respuesta: Noah compró 6 bolsas de panes para la fiesta de fin de año de toda su clase. Una bolsa de pantiene 13 panes. ¿Cuántos panes compró Noah?    "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-3",
@@ -1780,7 +1789,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "1",
   "title": "",
-  "body": "  ¿Cuántas decenas hay en 50?  ¿Cuántas decenas hay en ? Explica cómo razonaste.  ¿Cuál es el valor de ? Explica cómo razonaste.     5  35 porque hay 7 grupos de 5 decenas. Eso es decenas  350 porque las 30 decenas son 3 centenas y luego hay 5 decenas más o 50.   "
+  "body": "  ¿Cuántas decenas hay en 50?   ¿Cuántas decenas hay en ? Explica cómo razonaste.    ¿Cuál es el valor de ? Explica cómo razonaste.      5  35 porque hay 7 grupos de 5 decenas. Eso es decenas  350 porque las 30 decenas son 3 centenas y luego hay 5 decenas más o 50.   "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-4",
@@ -1798,7 +1807,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "3",
   "title": "",
-  "body": "   Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 24, con una medida superior de 4. Medida del lado izquierdo 6.    ¿Qué representan el 60 y el 24 del diagrama?  Explica cómo usar el diagrama para calcular      El 60 es el área del rectángulo de 6 por 10, el número de cuadrados unitarios que se necesitan para cubrir esa parte. El 24 es el área del rectángulo de 6 por 4, el número de cuadrados unitarios que se necesitan para cubrir esa parte.  Se necesitan o 84 cuadrados unitarios para cubrir todo el rectángulo.   "
+  "body": "   Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 24, con una medida superior de 4. Medida del lado izquierdo 6.     ¿Qué representan el 60 y el 24 del diagrama?    Explica cómo usar el diagrama para calcular       El 60 es el área del rectángulo de 6 por 10, el número de cuadrados unitarios que se necesitan para cubrir esa parte. El 24 es el área del rectángulo de 6 por 4, el número de cuadrados unitarios que se necesitan para cubrir esa parte.  Se necesitan o 84 cuadrados unitarios para cubrir todo el rectángulo.   "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-6",
@@ -1816,7 +1825,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "5",
   "title": "",
-  "body": " Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.       Ejemplos de respuestas:   94. Encontré que es o 94.  75. Sé que es 6 decenas o 60 y también que es 15 más.   "
+  "body": " Encuentra el valor de cada expresión. Explica o muestra tu razonamiento.               Ejemplos de respuestas:   94. Encontré que es o 94.  75. Sé que es 6 decenas o 60 y también que es 15 más.   "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-8",
@@ -1834,7 +1843,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "Exploración.",
-  "body": "Exploración  Esta es la estrategia de Mai para calcular : “Primero duplico 21 y eso da 42. Luego duplico 42 y eso da 84”.   Explica por qué la estrategia de Mai funciona.  Usa la estrategia de Mai para encontrar .     Como 4 es , multiplicar por 4 es lo mismo que multiplicar por , que es duplicar dos veces. Entonces, duplicar 21 dos veces da cuatro veces 21.  Si duplico 23 obtengo 46. Si duplico 46 obtengo 92, entonces .   "
+  "body": "Exploración  Esta es la estrategia de Mai para calcular : “Primero duplico 21 y eso da 42. Luego duplico 42 y eso da 84”.    Explica por qué la estrategia de Mai funciona.    Usa la estrategia de Mai para encontrar .      Como 4 es , multiplicar por 4 es lo mismo que multiplicar por , que es duplicar dos veces. Entonces, duplicar 21 dos veces da cuatro veces 21.  Si duplico 23 obtengo 46. Si duplico 46 obtengo 92, entonces .   "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-10",
@@ -1843,7 +1852,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "8",
   "title": "Exploración.",
-  "body": "Exploración   Tabla de multiplicar.    Haz una lista de los números menores que 20 que no aparecen en la tabla de multiplicar.  ¿Qué tienen en común esos números?  Escoge uno de esos números y cuenta y separa ese número de objetos. ¿Puedes hacer un arreglo con los objetos?    Ejemplo de respuesta:   11, 13, 17, 19  Todos estos números son impares. Todos son mayores que 10.  Puedo hacer una recta con esa cantidad de puntos, pero no puedo hacer un arreglo con más de 1 fila o más de 1 columna.   "
+  "body": "Exploración   Tabla de multiplicar.     Haz una lista de los números menores que 20 que no aparecen en la tabla de multiplicar.    ¿Qué tienen en común esos números?    Escoge uno de esos números y cuenta y separa ese número de objetos. ¿Puedes hacer un arreglo con los objetos?     Ejemplo de respuesta:   11, 13, 17, 19  Todos estos números son impares. Todos son mayores que 10.  Puedo hacer una recta con esa cantidad de puntos, pero no puedo hacer un arreglo con más de 1 fila o más de 1 columna.   "
 },
 {
   "id": "gra3-uni4-secC-ProblemasPractica-11",
@@ -1852,7 +1861,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "9",
   "title": "Exploración.",
-  "body": "Exploración  Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:    Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 18, con una medida superior de 3. Medida del lado izquierdo 6.    Bloques en base diez. 6 decenas. 18 unidades.     ¿Qué expresión de multiplicación representan los diagramas?  ¿Puedes mostrar una tercera forma de representar la misma expresión de multiplicación?  ¿Cuál es el valor de la expresión?  Escribe un problema-historia que le corresponda a la expresión.      o    Ejemplo de respuesta:   Diagrama de área.    78  Ejemplo de respuesta: Noah compró 6 bolsas de panes para la fiesta de fin de año de toda su clase. Una bolsa de pantiene 13 panes. ¿Cuántos panes compró Noah?   "
+  "body": "Exploración  Mira dos diagramas diferentes que corresponden a la misma expresión de multiplicación:    Diagrama de área. Rectángulo dividido en 2 partes. Una parte marcada con 60 con una medida superior de 10, la otra marcada con 18, con una medida superior de 3. Medida del lado izquierdo 6.    Bloques en base diez. 6 decenas. 18 unidades.      ¿Qué expresión de multiplicación representan los diagramas?    ¿Puedes mostrar una tercera forma de representar la misma expresión de multiplicación?    ¿Cuál es el valor de la expresión?    Escribe un problema-historia que le corresponda a la expresión.       o    Ejemplo de respuesta:   Diagrama de área.    78  Ejemplo de respuesta: Noah compró 6 bolsas de panes para la fiesta de fin de año de toda su clase. Una bolsa de pantiene 13 panes. ¿Cuántos panes compró Noah?   "
 },
 {
   "id": "gra3-uni4-secC-resumen",
@@ -1942,7 +1951,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 2",
-  "body": " Actividad 2  Actividad 2     Grupos en el bus y grupos en el almuerzo   En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar aros. El viernes, Kiran y amigos hicieron más aros. Cada uno de ellos hizo aros más. ¿Cuántos aros hicieron durante toda la semana?  En otra excursión, estudiantes y profesores fueron al museo de ciencias en buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus?  Durante el almuerzo, las personas se sentaron en unas mesas grandes. Había personas en cada mesa. ¿Cuántas mesas usaron?      personas. Ejemplos de respuestas:   Dividí cubos encajables en grupos y vi que hay cubos en cada grupo.  Si ponemos personas en cada autobús, eso son 30 personas. Si ponemos personas más en cada autobús, eso son personas, y hay personas más que aún no están en un autobús. Al poner personas más en cada autobús, ubicamos esas personas. .  Sé que grupos de son y grupos de son , así que grupos de son .    mesas. Ejemplos de respuestas:   Puse cubos en grupos de y hice grupos.  Sé que hay grupos de en , así que las personas en cada autobús ocupan mesas. Esto significa mesas para las personas en autobuses.  Le resté a seis veces hasta que ya no quedaba más para restar.         "
+  "body": " Actividad 2  Actividad 2     Grupos en el bus y grupos en el almuerzo   En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar aros. El viernes, Kiran y amigos hicieron más aros. Cada uno de ellos hizo aros más. ¿Cuántos aros hicieron durante toda la semana?  En otra excursión, estudiantes y profesores fueron al museo de ciencias en buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus?  Durante el almuerzo, las personas se sentaron en unas mesas grandes. Había personas en cada mesa. ¿Cuántas mesas usaron?       personas. Ejemplos de respuestas:   Dividí cubos encajables en grupos y vi que hay cubos en cada grupo.  Si ponemos personas en cada autobús, eso son 30 personas. Si ponemos personas más en cada autobús, eso son personas, y hay personas más que aún no están en un autobús. Al poner personas más en cada autobús, ubicamos esas personas. .  Sé que grupos de son y grupos de son , así que grupos de son .     mesas. Ejemplos de respuestas:   Puse cubos en grupos de y hice grupos.  Sé que hay grupos de en , así que las personas en cada autobús ocupan mesas. Esto significa mesas para las personas en autobuses.  Le resté a seis veces hasta que ya no quedaba más para restar.         "
 },
 {
   "id": "act-gruposEnBusYAlmuerzo",
@@ -1951,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "75",
   "title": "Grupos en el bus y grupos en el almuerzo.",
-  "body": " Grupos en el bus y grupos en el almuerzo   En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar aros. El viernes, Kiran y amigos hicieron más aros. Cada uno de ellos hizo aros más. ¿Cuántos aros hicieron durante toda la semana?  En otra excursión, estudiantes y profesores fueron al museo de ciencias en buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus?  Durante el almuerzo, las personas se sentaron en unas mesas grandes. Había personas en cada mesa. ¿Cuántas mesas usaron?      personas. Ejemplos de respuestas:   Dividí cubos encajables en grupos y vi que hay cubos en cada grupo.  Si ponemos personas en cada autobús, eso son 30 personas. Si ponemos personas más en cada autobús, eso son personas, y hay personas más que aún no están en un autobús. Al poner personas más en cada autobús, ubicamos esas personas. .  Sé que grupos de son y grupos de son , así que grupos de son .    mesas. Ejemplos de respuestas:   Puse cubos en grupos de y hice grupos.  Sé que hay grupos de en , así que las personas en cada autobús ocupan mesas. Esto significa mesas para las personas en autobuses.  Le resté a seis veces hasta que ya no quedaba más para restar.        "
+  "body": " Grupos en el bus y grupos en el almuerzo   En cada pregunta, muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   Kiran está haciendo aros de papel todos los días para decorar una fiesta. Desde el lunes hasta el jueves pudo completar aros. El viernes, Kiran y amigos hicieron más aros. Cada uno de ellos hizo aros más. ¿Cuántos aros hicieron durante toda la semana?  En otra excursión, estudiantes y profesores fueron al museo de ciencias en buses, con el mismo número de personas en cada bus. ¿Cuántas personas viajaron en cada bus?  Durante el almuerzo, las personas se sentaron en unas mesas grandes. Había personas en cada mesa. ¿Cuántas mesas usaron?       personas. Ejemplos de respuestas:   Dividí cubos encajables en grupos y vi que hay cubos en cada grupo.  Si ponemos personas en cada autobús, eso son 30 personas. Si ponemos personas más en cada autobús, eso son personas, y hay personas más que aún no están en un autobús. Al poner personas más en cada autobús, ubicamos esas personas. .  Sé que grupos de son y grupos de son , así que grupos de son .     mesas. Ejemplos de respuestas:   Puse cubos en grupos de y hice grupos.  Sé que hay grupos de en , así que las personas en cada autobús ocupan mesas. Esto significa mesas para las personas en autobuses.  Le resté a seis veces hasta que ya no quedaba más para restar.        "
 },
 {
   "id": "lec-gruposIgualesMasGrandes-cool",
@@ -1963,9 +1972,9 @@ var ptx_lunr_docs = [
   "body": " Actividad de cierre  Actividad de cierre     Equipos en el recreo   En el recreo, estudiantes jugaron un juego. Armaron equipos con el mismo número de estudiantes cada uno. ¿Cuántos estudiantes había en cada equipo?  Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.    . Cualquier estrategia es aceptable en este punto de la unidad. Ejemplos de respuestas:   Los estudiantes dibujan cosas y encierran grupos iguales de tamaño .  Los estudiantes dibujan diagramas en base diez y ponen decena y unidades en cada grupo.  Los estudiantes escriben una serie de ecuaciones de multiplicación con como factor y llegan a .     "
 },
 {
-  "id": "lec-gruposIgualesMasGrandes-cool-3",
+  "id": "cool-equiposRecreo",
   "level": "2",
-  "url": "lec-gruposIgualesMasGrandes-cool.html#lec-gruposIgualesMasGrandes-cool-3",
+  "url": "lec-gruposIgualesMasGrandes-cool.html#cool-equiposRecreo",
   "type": "Actividad de cierre",
   "number": "76",
   "title": "Equipos en el recreo.",
@@ -2068,7 +2077,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Formas de dividir    Lin, Priya y Tyler encontraron el valor de . Este es su trabajo. Dale sentido al trabajo de cada estudiante.  Lin   Bloques en base 10. 7 decenas y 8 unidades. Se dividen en 3 grupos iguales     Priya          Tyler           ¿En qué se parecen los trabajos de los tres estudiantes?  ¿En qué son diferentes?      Las respuestas varían.  Ejemplos de respuestas:   Todos vieron el como el número de grupos y encontraron el tamaño de cada grupo. Todos obtuvieron como resultado.  Podemos ver las decenas y unidades, y el , y , en el trabajo de todos.    Ejemplos de respuestas:   Lin usa diagramas en base diez. Priya y Tyler ambos escribieron ecuaciones.  Lin comenzó con decenas y unidades y las puso en grupos iguales. Para hacer eso, descompuso una de las decenas en unidades.  Priya sabía que y otro es otro , que da . Para llegar a , se necesitan , y es . Cada grupo tiene .  Tyler sabía que grupos de hacen , y que agregando otros grupos de da más para llegar a . Él sumó y .         "
+  "body": " Actividad 1  Actividad 1     Formas de dividir    Lin, Priya y Tyler encontraron el valor de . Este es su trabajo. Dale sentido al trabajo de cada estudiante.  Lin   Bloques en base 10. 7 decenas y 8 unidades. Se dividen en 3 grupos iguales     Priya          Tyler          ¿En qué se parecen los trabajos de los tres estudiantes?  ¿En qué son diferentes?      Las respuestas varían.  Ejemplos de respuestas:   Todos vieron el como el número de grupos y encontraron el tamaño de cada grupo. Todos obtuvieron como resultado.  Podemos ver las decenas y unidades, y el , y , en el trabajo de todos.    Ejemplos de respuestas:   Lin usa diagramas en base diez. Priya y Tyler ambos escribieron ecuaciones.  Lin comenzó con decenas y unidades y las puso en grupos iguales. Para hacer eso, descompuso una de las decenas en unidades.  Priya sabía que y otro es otro , que da . Para llegar a , se necesitan , y es . Cada grupo tiene .  Tyler sabía que grupos de hacen , y que agregando otros grupos de da más para llegar a . Él sumó y .         "
 },
 {
   "id": "act-formasDividir",
@@ -2077,7 +2086,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "82",
   "title": "Formas de dividir.",
-  "body": " Formas de dividir    Lin, Priya y Tyler encontraron el valor de . Este es su trabajo. Dale sentido al trabajo de cada estudiante.  Lin   Bloques en base 10. 7 decenas y 8 unidades. Se dividen en 3 grupos iguales     Priya          Tyler           ¿En qué se parecen los trabajos de los tres estudiantes?  ¿En qué son diferentes?      Las respuestas varían.  Ejemplos de respuestas:   Todos vieron el como el número de grupos y encontraron el tamaño de cada grupo. Todos obtuvieron como resultado.  Podemos ver las decenas y unidades, y el , y , en el trabajo de todos.    Ejemplos de respuestas:   Lin usa diagramas en base diez. Priya y Tyler ambos escribieron ecuaciones.  Lin comenzó con decenas y unidades y las puso en grupos iguales. Para hacer eso, descompuso una de las decenas en unidades.  Priya sabía que y otro es otro , que da . Para llegar a , se necesitan , y es . Cada grupo tiene .  Tyler sabía que grupos de hacen , y que agregando otros grupos de da más para llegar a . Él sumó y .        "
+  "body": " Formas de dividir    Lin, Priya y Tyler encontraron el valor de . Este es su trabajo. Dale sentido al trabajo de cada estudiante.  Lin   Bloques en base 10. 7 decenas y 8 unidades. Se dividen en 3 grupos iguales     Priya          Tyler          ¿En qué se parecen los trabajos de los tres estudiantes?  ¿En qué son diferentes?      Las respuestas varían.  Ejemplos de respuestas:   Todos vieron el como el número de grupos y encontraron el tamaño de cada grupo. Todos obtuvieron como resultado.  Podemos ver las decenas y unidades, y el , y , en el trabajo de todos.    Ejemplos de respuestas:   Lin usa diagramas en base diez. Priya y Tyler ambos escribieron ecuaciones.  Lin comenzó con decenas y unidades y las puso en grupos iguales. Para hacer eso, descompuso una de las decenas en unidades.  Priya sabía que y otro es otro , que da . Para llegar a , se necesitan , y es . Cada grupo tiene .  Tyler sabía que grupos de hacen , y que agregando otros grupos de da más para llegar a . Él sumó y .        "
 },
 {
   "id": "lec-estrategiasDividir-act2",
@@ -2104,7 +2113,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 3",
-  "body": " Actividad 3  Actividad 3     “Compara: Divide hasta 100” [OPCIONAL]   Juega Compara con dos jugadores.   Mezclen las tarjetas y dividan el montón entre los jugadores.  Cada jugador voltea una tarjeta.  Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.  Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.     No se necesita respuesta.      "
+  "body": " Actividad 3  Actividad 3     “Compara: Divide hasta 100” [OPCIONAL]   Juega Compara con dos jugadores.  Instrucciones y tarjetas para recortar en el libro de trabajo, o descargar acá .   Instrucciones:   Mezclen las tarjetas y dividan el montón entre los jugadores.  Cada jugador voltea una tarjeta.  Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.  Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.      No se necesita respuesta.      "
 },
 {
   "id": "act-comparaDivideHasta100",
@@ -2113,7 +2122,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "84",
   "title": "“Compara: Divide hasta 100” [OPCIONAL].",
-  "body": " “Compara: Divide hasta 100” [OPCIONAL]   Juega Compara con dos jugadores.   Mezclen las tarjetas y dividan el montón entre los jugadores.  Cada jugador voltea una tarjeta.  Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.  Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.     No se necesita respuesta.     "
+  "body": " “Compara: Divide hasta 100” [OPCIONAL]   Juega Compara con dos jugadores.  Instrucciones y tarjetas para recortar en el libro de trabajo, o descargar acá .   Instrucciones:   Mezclen las tarjetas y dividan el montón entre los jugadores.  Cada jugador voltea una tarjeta.  Comparen los valores. El jugador que tenga el mayor valor se queda con ambas tarjetas.  Jueguen hasta que se terminen las tarjetas. Gana el jugador que tenga más tarjetas al final del juego.      No se necesita respuesta.     "
 },
 {
   "id": "lec-estrategiasDividir-cool",
@@ -2140,7 +2149,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Calentamiento",
-  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Otra vez manzanas    ¿Qué observas?  ¿Qué te preguntas?   Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.     Los estudiantes pueden observar:   No tenemos suficiente información para responder.  No sabemos cuántas manzanas hay.  No sabemos cuántas cajas se empacaron.  No sabemos cuántas manzanas no están empacadas en cajas.     Los estudiantes pueden preguntarse:   ¿Con cuántas manzanas se empezó?  ¿Cuántas cajas hay?  ¿Cuántas manzanas hay en cada caja?  ¿Cuántas manzanas están por fuera de las cajas?  ¿Todas las cajas son del mismo tamaño?        "
+  "body": " Calentamiento  Calentamiento     Observa y pregúntate: Otra vez manzanas    ¿Qué observas?  ¿Qué te preguntas?    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.      Los estudiantes pueden observar:   No tenemos suficiente información para responder.  No sabemos cuántas manzanas hay.  No sabemos cuántas cajas se empacaron.  No sabemos cuántas manzanas no están empacadas en cajas.     Los estudiantes pueden preguntarse:   ¿Con cuántas manzanas se empezó?  ¿Cuántas cajas hay?  ¿Cuántas manzanas hay en cada caja?  ¿Cuántas manzanas están por fuera de las cajas?  ¿Todas las cajas son del mismo tamaño?        "
 },
 {
   "id": "warm-obs-otraVezManzanas",
@@ -2149,7 +2158,7 @@ var ptx_lunr_docs = [
   "type": "Calentamiento",
   "number": "86",
   "title": "Observa y pregúntate: Otra vez manzanas.",
-  "body": " Observa y pregúntate: Otra vez manzanas    ¿Qué observas?  ¿Qué te preguntas?   Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.     Los estudiantes pueden observar:   No tenemos suficiente información para responder.  No sabemos cuántas manzanas hay.  No sabemos cuántas cajas se empacaron.  No sabemos cuántas manzanas no están empacadas en cajas.     Los estudiantes pueden preguntarse:   ¿Con cuántas manzanas se empezó?  ¿Cuántas cajas hay?  ¿Cuántas manzanas hay en cada caja?  ¿Cuántas manzanas están por fuera de las cajas?  ¿Todas las cajas son del mismo tamaño?       "
+  "body": " Observa y pregúntate: Otra vez manzanas    ¿Qué observas?  ¿Qué te preguntas?    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.      Los estudiantes pueden observar:   No tenemos suficiente información para responder.  No sabemos cuántas manzanas hay.  No sabemos cuántas cajas se empacaron.  No sabemos cuántas manzanas no están empacadas en cajas.     Los estudiantes pueden preguntarse:   ¿Con cuántas manzanas se empezó?  ¿Cuántas cajas hay?  ¿Cuántas manzanas hay en cada caja?  ¿Cuántas manzanas están por fuera de las cajas?  ¿Todas las cajas son del mismo tamaño?       "
 },
 {
   "id": "lec-problemas4Operaciones-act1",
@@ -2158,7 +2167,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     Una aventura con manzanas    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.   Granero    Escoge números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos números.   Lista de números: 400, 300, 240, 12, 350, 290, 230, 10, 340, 280, 170, 5.    Tabla de respuesta     Ejemplos de respuestas:   Tabla con ejemplos de respuestas       "
+  "body": " Actividad 1  Actividad 1     Una aventura con manzanas    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.   Granero    Escoge números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos números.   Tabla para rellenar en el libro de trabajo o descargar acá .    Lista de números: 400, 300, 240, 12, 350, 290, 230, 10, 340, 280, 170, 5.    Tabla de respuesta     Ejemplos de respuestas:   Tabla con ejemplos de respuestas       "
 },
 {
   "id": "act-unaAventuraConManzanas",
@@ -2167,7 +2176,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "87",
   "title": "Una aventura con manzanas.",
-  "body": " Una aventura con manzanas    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.   Granero    Escoge números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos números.   Lista de números: 400, 300, 240, 12, 350, 290, 230, 10, 340, 280, 170, 5.    Tabla de respuesta     Ejemplos de respuestas:   Tabla con ejemplos de respuestas      "
+  "body": " Una aventura con manzanas    Un agricultor recogió algunas manzanas. Algunas de las manzanas están empacadas en cajas y algunas no.   Granero    Escoge números de la lista que describan correctamente la situación. Úsalos para llenar una fila de la tabla. Prepárate para explicar por qué tiene sentido juntar esos números.   Tabla para rellenar en el libro de trabajo o descargar acá .    Lista de números: 400, 300, 240, 12, 350, 290, 230, 10, 340, 280, 170, 5.    Tabla de respuesta     Ejemplos de respuestas:   Tabla con ejemplos de respuestas      "
 },
 {
   "id": "lec-problemas4Operaciones-act2",
@@ -2194,7 +2203,7 @@ var ptx_lunr_docs = [
   "type": "Preguntas de comprensión",
   "number": "",
   "title": "Actividad de cierre",
-  "body": " Actividad de cierre  Actividad de cierre     Las manzanas en el puesto de la huerta   En un puesto de la huerta de manzanas hay manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?   Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra tu razonamiento.      o o .  manzanas. Ejemplo de respuesta: Resté de para encontrar cuántas manzanas hay en las cestas. Eran manzanas. Sé que es , así que habría 10 manzanas en cada cesta.     "
+  "body": " Actividad de cierre  Actividad de cierre     Las manzanas en el puesto de la huerta   En un puesto de la huerta de manzanas hay manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?    Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra tu razonamiento.       o o .  manzanas. Ejemplo de respuesta: Resté de para encontrar cuántas manzanas hay en las cestas. Eran manzanas. Sé que es , así que habría 10 manzanas en cada cesta.     "
 },
 {
   "id": "cool-manzanasEnLaHuerta",
@@ -2203,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Actividad de cierre",
   "number": "89",
   "title": "Las manzanas en el puesto de la huerta.",
-  "body": " Las manzanas en el puesto de la huerta   En un puesto de la huerta de manzanas hay manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?   Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra tu razonamiento.      o o .  manzanas. Ejemplo de respuesta: Resté de para encontrar cuántas manzanas hay en las cestas. Eran manzanas. Sé que es , así que habría 10 manzanas en cada cesta.    "
+  "body": " Las manzanas en el puesto de la huerta   En un puesto de la huerta de manzanas hay manzanas. Hay 165 de esas manzanas que no están en cestas. El resto de las manzanas están en cestas, cada una con el mismo número de manzanas. ¿Cuántas manzanas hay en cada cesta?    Escribe una ecuación que represente esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra tu razonamiento.       o o .  manzanas. Ejemplo de respuesta: Resté de para encontrar cuántas manzanas hay en las cestas. Eran manzanas. Sé que es , así que habría 10 manzanas en cada cesta.    "
 },
 {
   "id": "lec-huertaComunitaria-warm",
@@ -2266,7 +2275,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección D",
-  "body": "  Problemas de práctica de la sección D  Problemas de práctica    En el gimnasio hay sillas. Están organizadas en filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   En cada fila hay sillas. Ejemplo de respuesta:          Encuentra el valor de . Si te ayudan, usa bloques en base diez.  Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.          Encuentra el valor de . Si te ayuda, dibuja un diagrama.  Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.      Encuentra el valor de cada cociente.         . Ejemplo de respuesta:          . Ejemplo de respuesta:            En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?   Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra cómo pensaste.     o .    . Ejemplo de respuesta:          Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .   Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.  ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.   Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.    Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?   Haz una lista.  Escribe una ecuación de multiplicación o de división para cada forma.    Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .    "
+  "body": "  Problemas de práctica de la sección D  Problemas de práctica    En el gimnasio hay sillas. Están organizadas en filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   En cada fila hay sillas. Ejemplo de respuesta:           Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Encuentra el valor de . Si te ayudan, usa bloques en base diez.     Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.           Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.      Encuentra el valor de cada cociente.             . Ejemplo de respuesta:          . Ejemplo de respuesta:            En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:          Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.    Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .    "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-3",
@@ -2284,7 +2293,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "2",
   "title": "",
-  "body": "  Encuentra el valor de . Si te ayudan, usa bloques en base diez.  Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.       "
+  "body": "   Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Encuentra el valor de . Si te ayudan, usa bloques en base diez.     Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.       "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-5",
@@ -2293,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "3",
   "title": "",
-  "body": "  Encuentra el valor de . Si te ayuda, dibuja un diagrama.  Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.    "
+  "body": "   Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.    "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-6",
@@ -2302,7 +2311,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "4",
   "title": "",
-  "body": " Encuentra el valor de cada cociente.         . Ejemplo de respuesta:          . Ejemplo de respuesta:          "
+  "body": " Encuentra el valor de cada cociente.             . Ejemplo de respuesta:          . Ejemplo de respuesta:          "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-7",
@@ -2311,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "5",
   "title": "",
-  "body": " En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?   Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.  Resuelve el problema. Explica o muestra cómo pensaste.     o .    . Ejemplo de respuesta:        "
+  "body": " En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:        "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-8",
@@ -2320,7 +2329,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "6",
   "title": "Exploración.",
-  "body": "Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .   Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.  ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.   Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.   "
+  "body": "Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.   "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-9",
@@ -2329,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "Exploración.",
-  "body": "Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?   Haz una lista.  Escribe una ecuación de multiplicación o de división para cada forma.    Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .   "
+  "body": "Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .   "
 },
 {
   "id": "gra3-uni4-secD-resumen",

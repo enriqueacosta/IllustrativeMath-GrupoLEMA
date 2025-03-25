@@ -87,6 +87,554 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/css/custom-styles.css">
+<style>
+#act-cuantasManzanas-2-2-1 { counter-set: act-cuantasManzanas-2-2-1 0; }
+#act-cuantasManzanas-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas-2-2-1,decimal)"."; }
+#act-cuantasManzanas-2-2-1 > li { counter-increment: act-cuantasManzanas-2-2-1; }
+#act-cuantasManzanas-3-2 { counter-set: act-cuantasManzanas-3-2 0; }
+#act-cuantasManzanas-3-2 > li::marker { content: ""counter(act-cuantasManzanas-3-2,decimal)"."; }
+#act-cuantasManzanas-3-2 > li { counter-increment: act-cuantasManzanas-3-2; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 { counter-set: act-recorridoSalon-manzanasEnCajas-2-1-1 0; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-2-1-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-2-1-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-2-1-1; }
+#act-recorridoSalon-manzanasEnCajas-3-1 { counter-set: act-recorridoSalon-manzanasEnCajas-3-1 0; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li::marker { content: ""counter(act-recorridoSalon-manzanasEnCajas-3-1,decimal)"."; }
+#act-recorridoSalon-manzanasEnCajas-3-1 > li { counter-increment: act-recorridoSalon-manzanasEnCajas-3-1; }
+#act-cuantasManzanas2-2-2-1 { counter-set: act-cuantasManzanas2-2-2-1 0; }
+#act-cuantasManzanas2-2-2-1 > li::marker { content: ""counter(act-cuantasManzanas2-2-2-1,decimal)"."; }
+#act-cuantasManzanas2-2-2-1 > li { counter-increment: act-cuantasManzanas2-2-2-1; }
+#act-cuantasManzanas2-3-1 { counter-set: act-cuantasManzanas2-3-1 0; }
+#act-cuantasManzanas2-3-1 > li::marker { content: ""counter(act-cuantasManzanas2-3-1,decimal)"."; }
+#act-cuantasManzanas2-3-1 > li { counter-increment: act-cuantasManzanas2-3-1; }
+#warm-numTalk-cuantoMasCambien-2-2-1 { counter-set: warm-numTalk-cuantoMasCambien-2-2-1 0; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li::marker { content: ""counter(warm-numTalk-cuantoMasCambien-2-2-1,upper-alpha)"."; }
+#warm-numTalk-cuantoMasCambien-2-2-1 > li { counter-increment: warm-numTalk-cuantoMasCambien-2-2-1; }
+#act-gruposEstudiantes-2-1-1 { counter-set: act-gruposEstudiantes-2-1-1 0; }
+#act-gruposEstudiantes-2-1-1 > li::marker { content: ""counter(act-gruposEstudiantes-2-1-1,decimal)"."; }
+#act-gruposEstudiantes-2-1-1 > li { counter-increment: act-gruposEstudiantes-2-1-1; }
+#act-gruposEstudiantes-3-1 { counter-set: act-gruposEstudiantes-3-1 0; }
+#act-gruposEstudiantes-3-1 > li::marker { content: ""counter(act-gruposEstudiantes-3-1,decimal)"."; }
+#act-gruposEstudiantes-3-1 > li { counter-increment: act-gruposEstudiantes-3-1; }
+#act-cualDibujoCorresponde-2-2-1 { counter-set: act-cualDibujoCorresponde-2-2-1 0; }
+#act-cualDibujoCorresponde-2-2-1 > li::marker { content: ""counter(act-cualDibujoCorresponde-2-2-1,decimal)"."; }
+#act-cualDibujoCorresponde-2-2-1 > li { counter-increment: act-cualDibujoCorresponde-2-2-1; }
+#act-cualDibujoCorresponde-3-2 { counter-set: act-cualDibujoCorresponde-3-2 0; }
+#act-cualDibujoCorresponde-3-2 > li::marker { content: ""counter(act-cualDibujoCorresponde-3-2,decimal)"."; }
+#act-cualDibujoCorresponde-3-2 > li { counter-increment: act-cualDibujoCorresponde-3-2; }
+#act-numTalk-masOMenos-2-2 { counter-set: act-numTalk-masOMenos-2-2 0; }
+#act-numTalk-masOMenos-2-2 > li::marker { content: ""counter(act-numTalk-masOMenos-2-2,upper-alpha)"."; }
+#act-numTalk-masOMenos-2-2 > li { counter-increment: act-numTalk-masOMenos-2-2; }
+#act-numTalk-masOMenos-3-2-1 { counter-set: act-numTalk-masOMenos-3-2-1 0; }
+#act-numTalk-masOMenos-3-2-1 > li::marker { content: ""counter(act-numTalk-masOMenos-3-2-1,upper-alpha)"."; }
+#act-numTalk-masOMenos-3-2-1 > li { counter-increment: act-numTalk-masOMenos-3-2-1; }
+#act-pilasBloques-2-2 { counter-set: act-pilasBloques-2-2 0; }
+#act-pilasBloques-2-2 > li::marker { content: ""counter(act-pilasBloques-2-2,decimal)"."; }
+#act-pilasBloques-2-2 > li { counter-increment: act-pilasBloques-2-2; }
+#act-pilasBloques-3-1-1 { counter-set: act-pilasBloques-3-1-1 0; }
+#act-pilasBloques-3-1-1 > li::marker { content: ""counter(act-pilasBloques-3-1-1,decimal)"."; }
+#act-pilasBloques-3-1-1 > li { counter-increment: act-pilasBloques-3-1-1; }
+#warm-numTalk-enQueSeParecen-2-2-1 { counter-set: warm-numTalk-enQueSeParecen-2-2-1 0; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-2-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-2-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-2-2-1; }
+#warm-numTalk-enQueSeParecen-3-2-1 { counter-set: warm-numTalk-enQueSeParecen-3-2-1 0; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li::marker { content: ""counter(warm-numTalk-enQueSeParecen-3-2-1,upper-alpha)"."; }
+#warm-numTalk-enQueSeParecen-3-2-1 > li { counter-increment: warm-numTalk-enQueSeParecen-3-2-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-2-3 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-2-3,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-2-3 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-2-3; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1,decimal)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li::marker { content: "("counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2,lower-alpha)")"; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-1-2; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 { counter-set: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 0; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li::marker { content: ""counter(act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1,upper-alpha)"."; }
+#act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1 > li { counter-increment: act-clasificacionDeTarjetas-todoSobreBichos-3-1-2-1-1; }
+#act-resolvamosProblemaBichos-3-1-1 { counter-set: act-resolvamosProblemaBichos-3-1-1 0; }
+#act-resolvamosProblemaBichos-3-1-1 > li::marker { content: ""counter(act-resolvamosProblemaBichos-3-1-1,upper-alpha)"."; }
+#act-resolvamosProblemaBichos-3-1-1 > li { counter-increment: act-resolvamosProblemaBichos-3-1-1; }
+#cool-patasHormigas-2-2-1 { counter-set: cool-patasHormigas-2-2-1 0; }
+#cool-patasHormigas-2-2-1 > li::marker { content: "("counter(cool-patasHormigas-2-2-1,lower-alpha)")"; }
+#cool-patasHormigas-2-2-1 > li { counter-increment: cool-patasHormigas-2-2-1; }
+#cool-patasHormigas-3-1-1 { counter-set: cool-patasHormigas-3-1-1 0; }
+#cool-patasHormigas-3-1-1 > li::marker { content: "("counter(cool-patasHormigas-3-1-1,lower-alpha)")"; }
+#cool-patasHormigas-3-1-1 > li { counter-increment: cool-patasHormigas-3-1-1; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-2-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-2-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-2-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-3-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-3-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-3-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-3-3-2; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-4-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-4-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-4-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-4-3-2; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-6-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-6-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-6-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-6-3-1; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 { counter-set: gra3-uni4-secA-ProblemasPractica-7-3-1 0; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-7-3-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-7-3-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-7-3-1; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-8-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-8-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-8-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-8-2-1; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 { counter-set: gra3-uni4-secA-ProblemasPractica-9-1-2 0; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-1-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-1-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-1-2; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-9-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-9-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-9-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-9-2-1; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-1-1-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-1-1-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-1-1-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-1-1-1; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-10-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-10-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-10-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-10-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-11-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-11-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-11-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-11-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-1-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-1-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-1-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-1-2-1; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-12-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-12-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-12-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-12-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 { counter-set: gra3-uni4-secA-ProblemasPractica-13-2-2-1 0; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-2-2-1,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-2-2-1 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-2-2-1; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-13-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li::marker { content: "("counter(gra3-uni4-secA-ProblemasPractica-13-3-2,lower-alpha)")"; }
+#gra3-uni4-secA-ProblemasPractica-13-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-13-3-2; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 { counter-set: gra3-uni4-secA-ProblemasPractica-14-3-2 0; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li::marker { content: ""counter(gra3-uni4-secA-ProblemasPractica-14-3-2,upper-alpha)"."; }
+#gra3-uni4-secA-ProblemasPractica-14-3-2 > li { counter-increment: gra3-uni4-secA-ProblemasPractica-14-3-2; }
+#act-mesaRedondaDeDivision-2-4 { counter-set: act-mesaRedondaDeDivision-2-4 0; }
+#act-mesaRedondaDeDivision-2-4 > li::marker { content: ""counter(act-mesaRedondaDeDivision-2-4,decimal)"."; }
+#act-mesaRedondaDeDivision-2-4 > li { counter-increment: act-mesaRedondaDeDivision-2-4; }
+#act-gruposUtilesEscolares-2-5 { counter-set: act-gruposUtilesEscolares-2-5 0; }
+#act-gruposUtilesEscolares-2-5 > li::marker { content: ""counter(act-gruposUtilesEscolares-2-5,decimal)"."; }
+#act-gruposUtilesEscolares-2-5 > li { counter-increment: act-gruposUtilesEscolares-2-5; }
+#act-gruposUtilesEscolares-3-1 { counter-set: act-gruposUtilesEscolares-3-1 0; }
+#act-gruposUtilesEscolares-3-1 > li::marker { content: ""counter(act-gruposUtilesEscolares-3-1,decimal)"."; }
+#act-gruposUtilesEscolares-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1; }
+#act-gruposUtilesEscolares-3-1-1-1 { counter-set: act-gruposUtilesEscolares-3-1-1-1 0; }
+#act-gruposUtilesEscolares-3-1-1-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-1-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-1-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-1-1; }
+#act-gruposUtilesEscolares-3-1-2-1 { counter-set: act-gruposUtilesEscolares-3-1-2-1 0; }
+#act-gruposUtilesEscolares-3-1-2-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-2-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-2-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-2-1; }
+#act-gruposUtilesEscolares-3-1-3-1 { counter-set: act-gruposUtilesEscolares-3-1-3-1 0; }
+#act-gruposUtilesEscolares-3-1-3-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-3-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-3-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-3-1; }
+#act-gruposUtilesEscolares-3-1-4-1 { counter-set: act-gruposUtilesEscolares-3-1-4-1 0; }
+#act-gruposUtilesEscolares-3-1-4-1 > li::marker { content: "("counter(act-gruposUtilesEscolares-3-1-4-1,lower-alpha)")"; }
+#act-gruposUtilesEscolares-3-1-4-1 > li { counter-increment: act-gruposUtilesEscolares-3-1-4-1; }
+#warm-numTalk-multiplicacionYDivision-2-2 { counter-set: warm-numTalk-multiplicacionYDivision-2-2 0; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-2-2,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-2-2 > li { counter-increment: warm-numTalk-multiplicacionYDivision-2-2; }
+#warm-numTalk-multiplicacionYDivision-3-1 { counter-set: warm-numTalk-multiplicacionYDivision-3-1 0; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li::marker { content: ""counter(warm-numTalk-multiplicacionYDivision-3-1,upper-alpha)"."; }
+#warm-numTalk-multiplicacionYDivision-3-1 > li { counter-increment: warm-numTalk-multiplicacionYDivision-3-1; }
+#act-siSeQueEntoncesSeQue-2-2 { counter-set: act-siSeQueEntoncesSeQue-2-2 0; }
+#act-siSeQueEntoncesSeQue-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQue-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQue-2-2 > li { counter-increment: act-siSeQueEntoncesSeQue-2-2; }
+#act-productosTablaMultiplicar-2-3 { counter-set: act-productosTablaMultiplicar-2-3 0; }
+#act-productosTablaMultiplicar-2-3 > li::marker { content: ""counter(act-productosTablaMultiplicar-2-3,decimal)"."; }
+#act-productosTablaMultiplicar-2-3 > li { counter-increment: act-productosTablaMultiplicar-2-3; }
+#act-productosTablaMultiplicar-2-3-2-2 { counter-set: act-productosTablaMultiplicar-2-3-2-2 0; }
+#act-productosTablaMultiplicar-2-3-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-2-3-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-2-3-2-2 > li { counter-increment: act-productosTablaMultiplicar-2-3-2-2; }
+#act-productosTablaMultiplicar-3-1 { counter-set: act-productosTablaMultiplicar-3-1 0; }
+#act-productosTablaMultiplicar-3-1 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1,decimal)"."; }
+#act-productosTablaMultiplicar-3-1 > li { counter-increment: act-productosTablaMultiplicar-3-1; }
+#act-productosTablaMultiplicar-3-1-1-2 { counter-set: act-productosTablaMultiplicar-3-1-1-2 0; }
+#act-productosTablaMultiplicar-3-1-1-2 > li::marker { content: ""counter(act-productosTablaMultiplicar-3-1-1-2,upper-alpha)"."; }
+#act-productosTablaMultiplicar-3-1-1-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-1-2; }
+#act-productosTablaMultiplicar-3-1-2-2 { counter-set: act-productosTablaMultiplicar-3-1-2-2 0; }
+#act-productosTablaMultiplicar-3-1-2-2 > li::marker { content: "("counter(act-productosTablaMultiplicar-3-1-2-2,lower-alpha)")"; }
+#act-productosTablaMultiplicar-3-1-2-2 > li { counter-increment: act-productosTablaMultiplicar-3-1-2-2; }
+#act-siSeQueEntoncesSeQueMult-2-2 { counter-set: act-siSeQueEntoncesSeQueMult-2-2 0; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-2-2,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-2-2 > li { counter-increment: act-siSeQueEntoncesSeQueMult-2-2; }
+#act-siSeQueEntoncesSeQueMult-3-1 { counter-set: act-siSeQueEntoncesSeQueMult-3-1 0; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li::marker { content: ""counter(act-siSeQueEntoncesSeQueMult-3-1,decimal)"."; }
+#act-siSeQueEntoncesSeQueMult-3-1 > li { counter-increment: act-siSeQueEntoncesSeQueMult-3-1; }
+#act-deDiagramasAExpresiones-2-3 { counter-set: act-deDiagramasAExpresiones-2-3 0; }
+#act-deDiagramasAExpresiones-2-3 > li::marker { content: ""counter(act-deDiagramasAExpresiones-2-3,decimal)"."; }
+#act-deDiagramasAExpresiones-2-3 > li { counter-increment: act-deDiagramasAExpresiones-2-3; }
+#act-deDiagramasAExpresiones-2-3-1-2 { counter-set: act-deDiagramasAExpresiones-2-3-1-2 0; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-1-2 > li { counter-increment: act-deDiagramasAExpresiones-2-3-1-2; }
+#act-deDiagramasAExpresiones-2-3-2-5 { counter-set: act-deDiagramasAExpresiones-2-3-2-5 0; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li::marker { content: "("counter(act-deDiagramasAExpresiones-2-3-2-5,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-2-3-2-5 > li { counter-increment: act-deDiagramasAExpresiones-2-3-2-5; }
+#act-deDiagramasAExpresiones-3-1 { counter-set: act-deDiagramasAExpresiones-3-1 0; }
+#act-deDiagramasAExpresiones-3-1 > li::marker { content: ""counter(act-deDiagramasAExpresiones-3-1,decimal)"."; }
+#act-deDiagramasAExpresiones-3-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1; }
+#act-deDiagramasAExpresiones-3-1-1-2 { counter-set: act-deDiagramasAExpresiones-3-1-1-2 0; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-1-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-1-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-1-2; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-1 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-1,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-1 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-1; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 { counter-set: act-deDiagramasAExpresiones-3-1-2-2-2 0; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li::marker { content: "("counter(act-deDiagramasAExpresiones-3-1-2-2-2,lower-alpha)")"; }
+#act-deDiagramasAExpresiones-3-1-2-2-2 > li { counter-increment: act-deDiagramasAExpresiones-3-1-2-2-2; }
+#act-deExpresionesADiagramas-2-4 { counter-set: act-deExpresionesADiagramas-2-4 0; }
+#act-deExpresionesADiagramas-2-4 > li::marker { content: ""counter(act-deExpresionesADiagramas-2-4,decimal)"."; }
+#act-deExpresionesADiagramas-2-4 > li { counter-increment: act-deExpresionesADiagramas-2-4; }
+#act-deExpresionesADiagramas-3-1-1-2 { counter-set: act-deExpresionesADiagramas-3-1-1-2 0; }
+#act-deExpresionesADiagramas-3-1-1-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-1-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-1-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-1-2; }
+#act-deExpresionesADiagramas-3-1-2-2 { counter-set: act-deExpresionesADiagramas-3-1-2-2 0; }
+#act-deExpresionesADiagramas-3-1-2-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-2-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-2-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-2-2; }
+#act-deExpresionesADiagramas-3-1-3-2 { counter-set: act-deExpresionesADiagramas-3-1-3-2 0; }
+#act-deExpresionesADiagramas-3-1-3-2 > li::marker { content: ""counter(act-deExpresionesADiagramas-3-1-3-2,decimal)"."; }
+#act-deExpresionesADiagramas-3-1-3-2 > li { counter-increment: act-deExpresionesADiagramas-3-1-3-2; }
+#cool-marcaPartesParaEncontrarArea-2-4 { counter-set: cool-marcaPartesParaEncontrarArea-2-4 0; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-2-4,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-2-4 > li { counter-increment: cool-marcaPartesParaEncontrarArea-2-4; }
+#cool-marcaPartesParaEncontrarArea-3-1 { counter-set: cool-marcaPartesParaEncontrarArea-3-1 0; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li::marker { content: "("counter(cool-marcaPartesParaEncontrarArea-3-1,lower-alpha)")"; }
+#cool-marcaPartesParaEncontrarArea-3-1 > li { counter-increment: cool-marcaPartesParaEncontrarArea-3-1; }
+#cool-expresionesParaRectangulo-2-1-1 { counter-set: cool-expresionesParaRectangulo-2-1-1 0; }
+#cool-expresionesParaRectangulo-2-1-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-2-1-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-2-1-1 > li { counter-increment: cool-expresionesParaRectangulo-2-1-1; }
+#cool-expresionesParaRectangulo-3-1 { counter-set: cool-expresionesParaRectangulo-3-1 0; }
+#cool-expresionesParaRectangulo-3-1 > li::marker { content: "("counter(cool-expresionesParaRectangulo-3-1,lower-alpha)")"; }
+#cool-expresionesParaRectangulo-3-1 > li { counter-increment: cool-expresionesParaRectangulo-3-1; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-1-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-1-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-1-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-1-2; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-5-2-2; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-1-1; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 { counter-set: gra3-uni4-secB-ProblemasPractica-7-2-1-1 0; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-7-2-1-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-7-2-1-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-7-2-1-1; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secB-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-2-2; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secB-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secB-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secB-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secB-ProblemasPractica-9-3-1; }
+#act-granCantidadDolares-2-3 { counter-set: act-granCantidadDolares-2-3 0; }
+#act-granCantidadDolares-2-3 > li::marker { content: ""counter(act-granCantidadDolares-2-3,decimal)"."; }
+#act-granCantidadDolares-2-3 > li { counter-increment: act-granCantidadDolares-2-3; }
+#act-granCantidadDolares-2-3-2-2 { counter-set: act-granCantidadDolares-2-3-2-2 0; }
+#act-granCantidadDolares-2-3-2-2 > li::marker { content: "("counter(act-granCantidadDolares-2-3-2-2,lower-alpha)")"; }
+#act-granCantidadDolares-2-3-2-2 > li { counter-increment: act-granCantidadDolares-2-3-2-2; }
+#act-granCantidadDolares-3-1 { counter-set: act-granCantidadDolares-3-1 0; }
+#act-granCantidadDolares-3-1 > li::marker { content: ""counter(act-granCantidadDolares-3-1,decimal)"."; }
+#act-granCantidadDolares-3-1 > li { counter-increment: act-granCantidadDolares-3-1; }
+#act-granCantidadDolares-3-1-2-1 { counter-set: act-granCantidadDolares-3-1-2-1 0; }
+#act-granCantidadDolares-3-1-2-1 > li::marker { content: "("counter(act-granCantidadDolares-3-1-2-1,lower-alpha)")"; }
+#act-granCantidadDolares-3-1-2-1 > li { counter-increment: act-granCantidadDolares-3-1-2-1; }
+#act-dosEstrategias-2-1 { counter-set: act-dosEstrategias-2-1 0; }
+#act-dosEstrategias-2-1 > li::marker { content: ""counter(act-dosEstrategias-2-1,decimal)"."; }
+#act-dosEstrategias-2-1 > li { counter-increment: act-dosEstrategias-2-1; }
+#act-dosEstrategias-2-1-2-2 { counter-set: act-dosEstrategias-2-1-2-2 0; }
+#act-dosEstrategias-2-1-2-2 > li::marker { content: "("counter(act-dosEstrategias-2-1-2-2,lower-alpha)")"; }
+#act-dosEstrategias-2-1-2-2 > li { counter-increment: act-dosEstrategias-2-1-2-2; }
+#act-dosEstrategias-3-1 { counter-set: act-dosEstrategias-3-1 0; }
+#act-dosEstrategias-3-1 > li::marker { content: ""counter(act-dosEstrategias-3-1,decimal)"."; }
+#act-dosEstrategias-3-1 > li { counter-increment: act-dosEstrategias-3-1; }
+#act-dosEstrategias-3-1-2-1 { counter-set: act-dosEstrategias-3-1-2-1 0; }
+#act-dosEstrategias-3-1-2-1 > li::marker { content: "("counter(act-dosEstrategias-3-1-2-1,lower-alpha)")"; }
+#act-dosEstrategias-3-1-2-1 > li { counter-increment: act-dosEstrategias-3-1-2-1; }
+#act-problemasNumerosAdolescentes-2-2 { counter-set: act-problemasNumerosAdolescentes-2-2 0; }
+#act-problemasNumerosAdolescentes-2-2 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-2-2,decimal)"."; }
+#act-problemasNumerosAdolescentes-2-2 > li { counter-increment: act-problemasNumerosAdolescentes-2-2; }
+#act-problemasNumerosAdolescentes-3-1 { counter-set: act-problemasNumerosAdolescentes-3-1 0; }
+#act-problemasNumerosAdolescentes-3-1 > li::marker { content: ""counter(act-problemasNumerosAdolescentes-3-1,decimal)"."; }
+#act-problemasNumerosAdolescentes-3-1 > li { counter-increment: act-problemasNumerosAdolescentes-3-1; }
+#act-factorMayorQue10-2-1 { counter-set: act-factorMayorQue10-2-1 0; }
+#act-factorMayorQue10-2-1 > li::marker { content: ""counter(act-factorMayorQue10-2-1,decimal)"."; }
+#act-factorMayorQue10-2-1 > li { counter-increment: act-factorMayorQue10-2-1; }
+#act-factorMayorQue10-3-1 { counter-set: act-factorMayorQue10-3-1 0; }
+#act-factorMayorQue10-3-1 > li::marker { content: ""counter(act-factorMayorQue10-3-1,decimal)"."; }
+#act-factorMayorQue10-3-1 > li { counter-increment: act-factorMayorQue10-3-1; }
+#act-formasRepresentarMultiplicacion-2-3 { counter-set: act-formasRepresentarMultiplicacion-2-3 0; }
+#act-formasRepresentarMultiplicacion-2-3 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-2-3,decimal)"."; }
+#act-formasRepresentarMultiplicacion-2-3 > li { counter-increment: act-formasRepresentarMultiplicacion-2-3; }
+#act-formasRepresentarMultiplicacion-3-1 { counter-set: act-formasRepresentarMultiplicacion-3-1 0; }
+#act-formasRepresentarMultiplicacion-3-1 > li::marker { content: ""counter(act-formasRepresentarMultiplicacion-3-1,decimal)"."; }
+#act-formasRepresentarMultiplicacion-3-1 > li { counter-increment: act-formasRepresentarMultiplicacion-3-1; }
+#act-problemasMultNums11a19MasGrandes-2-2 { counter-set: act-problemasMultNums11a19MasGrandes-2-2 0; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-2-2,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-2-2 > li { counter-increment: act-problemasMultNums11a19MasGrandes-2-2; }
+#act-problemasMultNums11a19MasGrandes-3-1 { counter-set: act-problemasMultNums11a19MasGrandes-3-1 0; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li::marker { content: ""counter(act-problemasMultNums11a19MasGrandes-3-1,decimal)"."; }
+#act-problemasMultNums11a19MasGrandes-3-1 > li { counter-increment: act-problemasMultNums11a19MasGrandes-3-1; }
+#warm-numTalk-3MultiplicadoPor-2-2 { counter-set: warm-numTalk-3MultiplicadoPor-2-2 0; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li::marker { content: ""counter(warm-numTalk-3MultiplicadoPor-2-2,upper-alpha)"."; }
+#warm-numTalk-3MultiplicadoPor-2-2 > li { counter-increment: warm-numTalk-3MultiplicadoPor-2-2; }
+#act-representar4por23-2-1 { counter-set: act-representar4por23-2-1 0; }
+#act-representar4por23-2-1 > li::marker { content: ""counter(act-representar4por23-2-1,decimal)"."; }
+#act-representar4por23-2-1 > li { counter-increment: act-representar4por23-2-1; }
+#act-representar4por23-2-1-1-3 { counter-set: act-representar4por23-2-1-1-3 0; }
+#act-representar4por23-2-1-1-3 > li::marker { content: "("counter(act-representar4por23-2-1-1-3,lower-alpha)")"; }
+#act-representar4por23-2-1-1-3 > li { counter-increment: act-representar4por23-2-1-1-3; }
+#act-representar4por23-2-1-2-3 { counter-set: act-representar4por23-2-1-2-3 0; }
+#act-representar4por23-2-1-2-3 > li::marker { content: "("counter(act-representar4por23-2-1-2-3,lower-alpha)")"; }
+#act-representar4por23-2-1-2-3 > li { counter-increment: act-representar4por23-2-1-2-3; }
+#act-representar4por23-3-1 { counter-set: act-representar4por23-3-1 0; }
+#act-representar4por23-3-1 > li::marker { content: ""counter(act-representar4por23-3-1,decimal)"."; }
+#act-representar4por23-3-1 > li { counter-increment: act-representar4por23-3-1; }
+#act-representar4por23-3-1-1-2 { counter-set: act-representar4por23-3-1-1-2 0; }
+#act-representar4por23-3-1-1-2 > li::marker { content: "("counter(act-representar4por23-3-1-1-2,lower-alpha)")"; }
+#act-representar4por23-3-1-1-2 > li { counter-increment: act-representar4por23-3-1-1-2; }
+#act-representar4por23-3-1-2-2 { counter-set: act-representar4por23-3-1-2-2 0; }
+#act-representar4por23-3-1-2-2 > li::marker { content: "("counter(act-representar4por23-3-1-2-2,lower-alpha)")"; }
+#act-representar4por23-3-1-2-2 > li { counter-increment: act-representar4por23-3-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-2-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 { counter-set: act-prodsUnDigitoPorMayorA20-2-1-2-2 0; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-2-1-2-2,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-2-1-2-2 > li { counter-increment: act-prodsUnDigitoPorMayorA20-2-1-2-2; }
+#act-prodsUnDigitoPorMayorA20-3-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li::marker { content: ""counter(act-prodsUnDigitoPorMayorA20-3-1,decimal)"."; }
+#act-prodsUnDigitoPorMayorA20-3-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 { counter-set: act-prodsUnDigitoPorMayorA20-3-1-2-1 0; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li::marker { content: "("counter(act-prodsUnDigitoPorMayorA20-3-1-2-1,lower-alpha)")"; }
+#act-prodsUnDigitoPorMayorA20-3-1-2-1 > li { counter-increment: act-prodsUnDigitoPorMayorA20-3-1-2-1; }
+#act-juegoCerca100Multiplicacion-2-4 { counter-set: act-juegoCerca100Multiplicacion-2-4 0; }
+#act-juegoCerca100Multiplicacion-2-4 > li::marker { content: ""counter(act-juegoCerca100Multiplicacion-2-4,decimal)"."; }
+#act-juegoCerca100Multiplicacion-2-4 > li { counter-increment: act-juegoCerca100Multiplicacion-2-4; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 { counter-set: warm-verdaderoFalso-multiplicarPor10-2-2 0; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-multiplicarPor10-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-multiplicarPor10-2-2 > li { counter-increment: warm-verdaderoFalso-multiplicarPor10-2-2; }
+#act-problemasMultiplicativosFiesta-2-3 { counter-set: act-problemasMultiplicativosFiesta-2-3 0; }
+#act-problemasMultiplicativosFiesta-2-3 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-2-3,decimal)"."; }
+#act-problemasMultiplicativosFiesta-2-3 > li { counter-increment: act-problemasMultiplicativosFiesta-2-3; }
+#act-problemasMultiplicativosFiesta-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1 > li::marker { content: ""counter(act-problemasMultiplicativosFiesta-3-1,decimal)"."; }
+#act-problemasMultiplicativosFiesta-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-1-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-1-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-1-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-1-1; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-2-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-2-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-2-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-2-1; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 { counter-set: act-problemasMultiplicativosFiesta-3-1-3-1 0; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li::marker { content: "("counter(act-problemasMultiplicativosFiesta-3-1-3-1,lower-alpha)")"; }
+#act-problemasMultiplicativosFiesta-3-1-3-1 > li { counter-increment: act-problemasMultiplicativosFiesta-3-1-3-1; }
+#cool-globosGruposIguales-2-2 { counter-set: cool-globosGruposIguales-2-2 0; }
+#cool-globosGruposIguales-2-2 > li::marker { content: "("counter(cool-globosGruposIguales-2-2,lower-alpha)")"; }
+#cool-globosGruposIguales-2-2 > li { counter-increment: cool-globosGruposIguales-2-2; }
+#cool-globosGruposIguales-3-1 { counter-set: cool-globosGruposIguales-3-1 0; }
+#cool-globosGruposIguales-3-1 > li::marker { content: "("counter(cool-globosGruposIguales-3-1,lower-alpha)")"; }
+#cool-globosGruposIguales-3-1 > li { counter-increment: cool-globosGruposIguales-3-1; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-1-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-1-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-1-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-1-1; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-3-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-3-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-3-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-3-2-1; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-5-1-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-1-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-1-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-1-1-2; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 { counter-set: gra3-uni4-secC-ProblemasPractica-5-2-1 0; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-5-2-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-5-2-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-5-2-1; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-1-2; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-7-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-7-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-7-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-7-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-2-2; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-9-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-9-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-9-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-9-3-1; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-2-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-2-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-2-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-2-2; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 { counter-set: gra3-uni4-secC-ProblemasPractica-10-3-2 0; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-10-3-2,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-10-3-2 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-10-3-2; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 { counter-set: gra3-uni4-secC-ProblemasPractica-11-2-3 0; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-2-3,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-2-3 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-2-3; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 { counter-set: gra3-uni4-secC-ProblemasPractica-11-3-1 0; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li::marker { content: "("counter(gra3-uni4-secC-ProblemasPractica-11-3-1,lower-alpha)")"; }
+#gra3-uni4-secC-ProblemasPractica-11-3-1 > li { counter-increment: gra3-uni4-secC-ProblemasPractica-11-3-1; }
+#act-gruposEnBusYAlmuerzo-2-2 { counter-set: act-gruposEnBusYAlmuerzo-2-2 0; }
+#act-gruposEnBusYAlmuerzo-2-2 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-2-2,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-2-2 > li { counter-increment: act-gruposEnBusYAlmuerzo-2-2; }
+#act-gruposEnBusYAlmuerzo-3-1 { counter-set: act-gruposEnBusYAlmuerzo-3-1 0; }
+#act-gruposEnBusYAlmuerzo-3-1 > li::marker { content: ""counter(act-gruposEnBusYAlmuerzo-3-1,decimal)"."; }
+#act-gruposEnBusYAlmuerzo-3-1 > li { counter-increment: act-gruposEnBusYAlmuerzo-3-1; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 { counter-set: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 0; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li::marker { content: ""counter(warm-verdaderoFalso-unidadesDecenasVeintenas-2-2,upper-alpha)"."; }
+#warm-verdaderoFalso-unidadesDecenasVeintenas-2-2 > li { counter-increment: warm-verdaderoFalso-unidadesDecenasVeintenas-2-2; }
+#act-dividirConBloquesBase10-2-1-1 { counter-set: act-dividirConBloquesBase10-2-1-1 0; }
+#act-dividirConBloquesBase10-2-1-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-2-1-1,decimal)"."; }
+#act-dividirConBloquesBase10-2-1-1 > li { counter-increment: act-dividirConBloquesBase10-2-1-1; }
+#act-dividirConBloquesBase10-2-1-1-1-2 { counter-set: act-dividirConBloquesBase10-2-1-1-1-2 0; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-1-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-1-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-1-2; }
+#act-dividirConBloquesBase10-2-1-1-2-2 { counter-set: act-dividirConBloquesBase10-2-1-1-2-2 0; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li::marker { content: "("counter(act-dividirConBloquesBase10-2-1-1-2-2,lower-alpha)")"; }
+#act-dividirConBloquesBase10-2-1-1-2-2 > li { counter-increment: act-dividirConBloquesBase10-2-1-1-2-2; }
+#act-dividirConBloquesBase10-3-1 { counter-set: act-dividirConBloquesBase10-3-1 0; }
+#act-dividirConBloquesBase10-3-1 > li::marker { content: ""counter(act-dividirConBloquesBase10-3-1,decimal)"."; }
+#act-dividirConBloquesBase10-3-1 > li { counter-increment: act-dividirConBloquesBase10-3-1; }
+#act-dividirConBloquesBase10-3-1-1-1 { counter-set: act-dividirConBloquesBase10-3-1-1-1 0; }
+#act-dividirConBloquesBase10-3-1-1-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-1-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-1-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-1-1; }
+#act-dividirConBloquesBase10-3-1-2-1 { counter-set: act-dividirConBloquesBase10-3-1-2-1 0; }
+#act-dividirConBloquesBase10-3-1-2-1 > li::marker { content: "("counter(act-dividirConBloquesBase10-3-1-2-1,lower-alpha)")"; }
+#act-dividirConBloquesBase10-3-1-2-1 > li { counter-increment: act-dividirConBloquesBase10-3-1-2-1; }
+#act-formasMostrarDivision-2-6 { counter-set: act-formasMostrarDivision-2-6 0; }
+#act-formasMostrarDivision-2-6 > li::marker { content: ""counter(act-formasMostrarDivision-2-6,decimal)"."; }
+#act-formasMostrarDivision-2-6 > li { counter-increment: act-formasMostrarDivision-2-6; }
+#act-formasMostrarDivision-2-6-1-2 { counter-set: act-formasMostrarDivision-2-6-1-2 0; }
+#act-formasMostrarDivision-2-6-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-1-2 > li { counter-increment: act-formasMostrarDivision-2-6-1-2; }
+#act-formasMostrarDivision-2-6-2-2 { counter-set: act-formasMostrarDivision-2-6-2-2 0; }
+#act-formasMostrarDivision-2-6-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-2-6-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-2-6-2-2 > li { counter-increment: act-formasMostrarDivision-2-6-2-2; }
+#act-formasMostrarDivision-3-1 { counter-set: act-formasMostrarDivision-3-1 0; }
+#act-formasMostrarDivision-3-1 > li::marker { content: ""counter(act-formasMostrarDivision-3-1,decimal)"."; }
+#act-formasMostrarDivision-3-1 > li { counter-increment: act-formasMostrarDivision-3-1; }
+#act-formasMostrarDivision-3-1-1-2 { counter-set: act-formasMostrarDivision-3-1-1-2 0; }
+#act-formasMostrarDivision-3-1-1-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-1-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-1-2 > li { counter-increment: act-formasMostrarDivision-3-1-1-2; }
+#act-formasMostrarDivision-3-1-2-2 { counter-set: act-formasMostrarDivision-3-1-2-2 0; }
+#act-formasMostrarDivision-3-1-2-2 > li::marker { content: "("counter(act-formasMostrarDivision-3-1-2-2,lower-alpha)")"; }
+#act-formasMostrarDivision-3-1-2-2 > li { counter-increment: act-formasMostrarDivision-3-1-2-2; }
+#warm-numTalk-multYDiv-2-2 { counter-set: warm-numTalk-multYDiv-2-2 0; }
+#warm-numTalk-multYDiv-2-2 > li::marker { content: ""counter(warm-numTalk-multYDiv-2-2,upper-alpha)"."; }
+#warm-numTalk-multYDiv-2-2 > li { counter-increment: warm-numTalk-multYDiv-2-2; }
+#act-formasDividir-2-1 { counter-set: act-formasDividir-2-1 0; }
+#act-formasDividir-2-1 > li::marker { content: ""counter(act-formasDividir-2-1,decimal)"."; }
+#act-formasDividir-2-1 > li { counter-increment: act-formasDividir-2-1; }
+#act-formasDividir-3-1 { counter-set: act-formasDividir-3-1 0; }
+#act-formasDividir-3-1 > li::marker { content: ""counter(act-formasDividir-3-1,decimal)"."; }
+#act-formasDividir-3-1 > li { counter-increment: act-formasDividir-3-1; }
+#act-ComoDividirias-2-2 { counter-set: act-ComoDividirias-2-2 0; }
+#act-ComoDividirias-2-2 > li::marker { content: ""counter(act-ComoDividirias-2-2,decimal)"."; }
+#act-ComoDividirias-2-2 > li { counter-increment: act-ComoDividirias-2-2; }
+#act-ComoDividirias-3-1 { counter-set: act-ComoDividirias-3-1 0; }
+#act-ComoDividirias-3-1 > li::marker { content: ""counter(act-ComoDividirias-3-1,decimal)"."; }
+#act-ComoDividirias-3-1 > li { counter-increment: act-ComoDividirias-3-1; }
+#act-comparaDivideHasta100-2-3-2 { counter-set: act-comparaDivideHasta100-2-3-2 0; }
+#act-comparaDivideHasta100-2-3-2 > li::marker { content: ""counter(act-comparaDivideHasta100-2-3-2,decimal)"."; }
+#act-comparaDivideHasta100-2-3-2 > li { counter-increment: act-comparaDivideHasta100-2-3-2; }
+#act-diasDeManzanas-2-2 { counter-set: act-diasDeManzanas-2-2 0; }
+#act-diasDeManzanas-2-2 > li::marker { content: ""counter(act-diasDeManzanas-2-2,decimal)"."; }
+#act-diasDeManzanas-2-2 > li { counter-increment: act-diasDeManzanas-2-2; }
+#act-diasDeManzanas-2-2-1-2 { counter-set: act-diasDeManzanas-2-2-1-2 0; }
+#act-diasDeManzanas-2-2-1-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-1-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-1-2 > li { counter-increment: act-diasDeManzanas-2-2-1-2; }
+#act-diasDeManzanas-2-2-2-2 { counter-set: act-diasDeManzanas-2-2-2-2 0; }
+#act-diasDeManzanas-2-2-2-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-2-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-2-2 > li { counter-increment: act-diasDeManzanas-2-2-2-2; }
+#act-diasDeManzanas-2-2-3-2 { counter-set: act-diasDeManzanas-2-2-3-2 0; }
+#act-diasDeManzanas-2-2-3-2 > li::marker { content: "("counter(act-diasDeManzanas-2-2-3-2,lower-alpha)")"; }
+#act-diasDeManzanas-2-2-3-2 > li { counter-increment: act-diasDeManzanas-2-2-3-2; }
+#act-diasDeManzanas-3-1 { counter-set: act-diasDeManzanas-3-1 0; }
+#act-diasDeManzanas-3-1 > li::marker { content: ""counter(act-diasDeManzanas-3-1,decimal)"."; }
+#act-diasDeManzanas-3-1 > li { counter-increment: act-diasDeManzanas-3-1; }
+#act-diasDeManzanas-3-1-1-1 { counter-set: act-diasDeManzanas-3-1-1-1 0; }
+#act-diasDeManzanas-3-1-1-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-1-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-1-1 > li { counter-increment: act-diasDeManzanas-3-1-1-1; }
+#act-diasDeManzanas-3-1-2-1 { counter-set: act-diasDeManzanas-3-1-2-1 0; }
+#act-diasDeManzanas-3-1-2-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-2-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-2-1 > li { counter-increment: act-diasDeManzanas-3-1-2-1; }
+#act-diasDeManzanas-3-1-3-1 { counter-set: act-diasDeManzanas-3-1-3-1 0; }
+#act-diasDeManzanas-3-1-3-1 > li::marker { content: "("counter(act-diasDeManzanas-3-1-3-1,lower-alpha)")"; }
+#act-diasDeManzanas-3-1-3-1 > li { counter-increment: act-diasDeManzanas-3-1-3-1; }
+#cool-manzanasEnLaHuerta-2-2 { counter-set: cool-manzanasEnLaHuerta-2-2 0; }
+#cool-manzanasEnLaHuerta-2-2 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-2-2,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-2-2 > li { counter-increment: cool-manzanasEnLaHuerta-2-2; }
+#cool-manzanasEnLaHuerta-3-1 { counter-set: cool-manzanasEnLaHuerta-3-1 0; }
+#cool-manzanasEnLaHuerta-3-1 > li::marker { content: "("counter(cool-manzanasEnLaHuerta-3-1,lower-alpha)")"; }
+#cool-manzanasEnLaHuerta-3-1 > li { counter-increment: cool-manzanasEnLaHuerta-3-1; }
+#act-produccionFresas-2-2 { counter-set: act-produccionFresas-2-2 0; }
+#act-produccionFresas-2-2 > li::marker { content: ""counter(act-produccionFresas-2-2,decimal)"."; }
+#act-produccionFresas-2-2 > li { counter-increment: act-produccionFresas-2-2; }
+#act-produccionFresas-2-2-1-2 { counter-set: act-produccionFresas-2-2-1-2 0; }
+#act-produccionFresas-2-2-1-2 > li::marker { content: "("counter(act-produccionFresas-2-2-1-2,lower-alpha)")"; }
+#act-produccionFresas-2-2-1-2 > li { counter-increment: act-produccionFresas-2-2-1-2; }
+#act-produccionFresas-3-1 { counter-set: act-produccionFresas-3-1 0; }
+#act-produccionFresas-3-1 > li::marker { content: ""counter(act-produccionFresas-3-1,decimal)"."; }
+#act-produccionFresas-3-1 > li { counter-increment: act-produccionFresas-3-1; }
+#act-produccionFresas-3-1-1-2 { counter-set: act-produccionFresas-3-1-1-2 0; }
+#act-produccionFresas-3-1-1-2 > li::marker { content: "("counter(act-produccionFresas-3-1-1-2,lower-alpha)")"; }
+#act-produccionFresas-3-1-1-2 > li { counter-increment: act-produccionFresas-3-1-1-2; }
+#act-planeemosLaHuerta-2-1 { counter-set: act-planeemosLaHuerta-2-1 0; }
+#act-planeemosLaHuerta-2-1 > li::marker { content: ""counter(act-planeemosLaHuerta-2-1,decimal)"."; }
+#act-planeemosLaHuerta-2-1 > li { counter-increment: act-planeemosLaHuerta-2-1; }
+#act-planeemosLaHuerta-2-1-1-2 { counter-set: act-planeemosLaHuerta-2-1-1-2 0; }
+#act-planeemosLaHuerta-2-1-1-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-1-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-1-2 > li { counter-increment: act-planeemosLaHuerta-2-1-1-2; }
+#act-planeemosLaHuerta-2-1-2-2 { counter-set: act-planeemosLaHuerta-2-1-2-2 0; }
+#act-planeemosLaHuerta-2-1-2-2 > li::marker { content: "("counter(act-planeemosLaHuerta-2-1-2-2,lower-alpha)")"; }
+#act-planeemosLaHuerta-2-1-2-2 > li { counter-increment: act-planeemosLaHuerta-2-1-2-2; }
+#act-planeemosLaHuerta-3-2 { counter-set: act-planeemosLaHuerta-3-2 0; }
+#act-planeemosLaHuerta-3-2 > li::marker { content: ""counter(act-planeemosLaHuerta-3-2,decimal)"."; }
+#act-planeemosLaHuerta-3-2 > li { counter-increment: act-planeemosLaHuerta-3-2; }
+#act-planeemosLaHuerta-3-2-2-1 { counter-set: act-planeemosLaHuerta-3-2-2-1 0; }
+#act-planeemosLaHuerta-3-2-2-1 > li::marker { content: "("counter(act-planeemosLaHuerta-3-2-2-1,lower-alpha)")"; }
+#act-planeemosLaHuerta-3-2-2-1 > li { counter-increment: act-planeemosLaHuerta-3-2-2-1; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-4-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-1-1; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-4-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-4-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-4-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-4-2-2; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 { counter-set: gra3-uni4-secD-ProblemasPractica-5-1-1 0; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-1-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-1-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-1-1; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-5-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-5-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-5-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-5-2-2; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-6-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-1-2; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-6-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-6-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-6-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-6-2-1; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 { counter-set: gra3-uni4-secD-ProblemasPractica-7-1-2 0; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-1-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-1-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-1-2; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 { counter-set: gra3-uni4-secD-ProblemasPractica-7-2-1 0; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-7-2-1,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-7-2-1 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-7-2-1; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-2-2; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-8-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-8-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-8-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-8-3-2; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-2-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-2-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-2-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-2-2; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 { counter-set: gra3-uni4-secD-ProblemasPractica-9-3-2 0; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li::marker { content: "("counter(gra3-uni4-secD-ProblemasPractica-9-3-2,lower-alpha)")"; }
+#gra3-uni4-secD-ProblemasPractica-9-3-2 > li { counter-increment: gra3-uni4-secD-ProblemasPractica-9-3-2; }
+</style>
 </head>
 <body class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Salta al contenido principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -384,22 +932,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="centros-gra3-uni4.html" class="internal"><span class="title">Centros</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="BLM-gra3-uni4.html" class="internal"><span class="title">Hojas reproducibles</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-todoSobreBichos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Todo sobre bichos)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-mesaRedondaDeDivision.html" class="internal"><span class="title">Hoja de registro (Mesa redonda de división)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-multiplicacion-hojaDeRegistro.html" class="internal"><span class="title">Hoja de registro (Clasificación de tarjetas: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-clasificacionDeTarjetas-expresionesMultiplicacionRectangulos-tarjetas.html" class="internal"><span class="title">Tarjetas (Clasificación de tarjetas: Expresiones diferentes, mismo rectángulo)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-tarjetasDeDigitos.html" class="internal"><span class="title">Tarjetas de dígitos</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-cercaDe100Multiplicacion.html" class="internal"><span class="title">Tablero de juego para “Cerca de 100, multiplicación”</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-comparaDivideHasta100-tarjetas.html" class="internal"><span class="title">Tarjetas (“Compara: Divide hasta 100” [OPCIONAL])</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaAventuraConManzanas-tabla.html" class="internal"><span class="title">Tabla (Una aventura con manzanas)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQue-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-siSeQueEntoncesSeQueMult-tabla.html" class="internal"><span class="title">Tabla (Si sé que …, entonces sé que …: Multiplicación)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-enElMercadoAgricola-tabla.html" class="internal"><span class="title">Tabla (En el mercado agrícola)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-unaGranCantidadDeDolares-tablas.html" class="internal"><span class="title">Tablas (Una gran cantidad de dólares)</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="blm-papelCuadriculadoCentimetro.html" class="internal"><span class="title">Papel cuadriculado de 1 centímetro</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-references"><div class="toc-title-box"><a href="gra3-uni4-11.html" class="internal"><span class="title">Atribuciones de imágenes</span></a></div></li>
 <li class="toc-item toc-solutions"><div class="toc-title-box"><a href="gra3-uni4-12.html" class="internal"><span class="title">Actividades de cierre</span></a></div></li>
@@ -409,10 +942,12 @@ window.MathJax = {
 <span class="type">Subsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Lección 3 - Dibujos de situaciones de división</span>
 </h2>
 <article class="objectives goal-like" id="lec-dibujosSituacionesDivision-4"><h3 class="heading"><span class="type">Objetivos de aprendizaje</span></h3>
-<ul class="disc">
+<ul class="disc" id="lec-dibujosSituacionesDivision-4-1">
 <li id="lec-dibujosSituacionesDivision-4-1-1"><div class="para" id="p-derived-lec-dibujosSituacionesDivision-4-1-1">Interpretar y relacionar dibujos y descripciones de situaciones de división.</div></li>
-<li id="lec-dibujosSituacionesDivision-4-1-2"><div class="para" id="p-derived-lec-dibujosSituacionesDivision-4-1-2">Entender que una situación de división puede involucrar un número de grupos desconocido o un número de objectos en cada grupo desconocido.</div></li>
-</ul></article><section class="introduction" id="lec-dibujosSituacionesDivision-5"> <section class="paragraphs" id="lec-dibujosSituacionesDivision-5-1"><h3 class="heading"><span class="title">Estándares CCSS asociados.</span></h3> <div class="para" id="lec-dibujosSituacionesDivision-5-1-2">3.NBT.A.2, 3.OA.A.2</div></section>  <section class="paragraphs" id="lec-dibujosSituacionesDivision-5-2"><h3 class="heading"><span class="title">Momentos de la lección.</span></h3> <div>
+<li id="lec-dibujosSituacionesDivision-4-1-2"><div class="para" id="p-derived-lec-dibujosSituacionesDivision-4-1-2">Entender que una situación de división puede involucrar un número de grupos desconocido o un número desconocido de objectos en cada grupo.</div></li>
+</ul></article><section class="introduction" id="lec-dibujosSituacionesDivision-5"><section class="paragraphs" id="lec-dibujosSituacionesDivision-5-1"><h3 class="heading"><span class="title">Estándares CCSS asociados.</span></h3>
+<div class="para" id="lec-dibujosSituacionesDivision-5-1-2">3.NBT.A.2, 3.OA.A.2</div></section><section class="paragraphs" id="lec-dibujosSituacionesDivision-5-2"><h3 class="heading"><span class="title">Momentos de la lección.</span></h3>
+<div>
 <a href="lec-dibujosSituacionesDivision.html#lec-dibujosSituacionesDivision-warm" class="internal" title="Subsubsección: Calentamiento (10 mins)">Subsubsección </a> Calentamiento (10 mins)</div>
 <div>
 <a href="lec-dibujosSituacionesDivision.html#lec-dibujosSituacionesDivision-act1" class="internal" title="Subsubsección: Actividad 1 (10 mins)">Subsubsección </a> Actividad 1 (10 mins)</div>
@@ -423,28 +958,37 @@ window.MathJax = {
 <div>
 <a href="lec-dibujosSituacionesDivision.html#lec-dibujosSituacionesDivision-sintesis" class="internal" title="Subsubsección: Síntesis de la lección (5 mins)">Subsubsección </a> Síntesis de la lección (5 mins)</div>
 <div>
-<a href="lec-dibujosSituacionesDivision.html#lec-dibujosSituacionesDivision-cool" class="internal" title="Preguntas de comprensión: Actividad de cierre (5 mins)">Preguntas de comprensión </a> Actividad de cierre (5 mins)</div></section>  <section class="paragraphs" id="lec-dibujosSituacionesDivision-5-3"><h3 class="heading"><span class="title">Propósito de la lección.</span></h3> <div class="para" id="lec-dibujosSituacionesDivision-5-3-2">El propósito de esta lección es que los estudiantes interpreten descripciones o dibujos de situaciones de división y reconozcan si implican encontrar un número desconocido de grupos o encontrar un número desconocido de objetos en cada grupo.</div></section>  <section class="paragraphs" id="lec-dibujosSituacionesDivision-5-4"><h3 class="heading"><span class="title">Narrativa de la lección.</span></h3> <div class="para" id="lec-dibujosSituacionesDivision-5-4-2">Los estudiantes ven los dos tipos de situaciones de división lado a lado en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <span class="process-math">\(\div\text{,}\)</span> se introduce en la síntesis de la lección.</div></section> <section class="paragraphs" id="lec-dibujosSituacionesDivision-5-5"><h3 class="heading"><span class="title">Preguntas de reflexión.</span></h3> <div class="para" id="lec-dibujosSituacionesDivision-5-5-2">¿Cómo están aprovechando los estudiantes los dibujos que utilizaron al multiplicar para resolver problemas de división?</div></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-warm"><h3 class="heading hide-type">
+<a href="lec-dibujosSituacionesDivision.html#lec-dibujosSituacionesDivision-cool" class="internal" title="Preguntas de comprensión: Actividad de cierre (5 mins)">Preguntas de comprensión </a> Actividad de cierre (5 mins)</div></section><section class="paragraphs" id="lec-dibujosSituacionesDivision-5-3"><h3 class="heading"><span class="title">Propósito de la lección.</span></h3>
+<div class="para" id="lec-dibujosSituacionesDivision-5-3-2">El propósito de esta lección es que los estudiantes interpreten descripciones o dibujos de situaciones de división y reconozcan si implican encontrar un número desconocido de grupos o encontrar un número desconocido de objetos en cada grupo.</div></section><section class="paragraphs" id="lec-dibujosSituacionesDivision-5-4"><h3 class="heading"><span class="title">Narrativa de la lección.</span></h3>
+<div class="para" id="lec-dibujosSituacionesDivision-5-4-2">Los estudiantes ven los dos tipos de situaciones de división en esta lección. Comprenden que la división consiste en encontrar el número en cada grupo o el tamaño de cada grupo y pueden relacionar las situaciones de división con dibujos. Los estudiantes aprenden que el mismo dibujo puede corresponder a cualquiera de los dos tipos de situaciones de división. Esto se debe a que los dibujos representan el resultado final después de que se ha realizado la división. A partir del dibujo, no podemos saber si se conocía el número de grupos o el número de objetos en cada grupo. El símbolo de división, <span class="process-math">\(\div\text{,}\)</span> se introduce en la síntesis de la lección.</div></section><section class="paragraphs" id="lec-dibujosSituacionesDivision-5-5"><h3 class="heading"><span class="title">Preguntas de reflexión.</span></h3>
+<div class="para" id="lec-dibujosSituacionesDivision-5-5-2">Los estudiantes utilizaron cierto tipo de dibujos al multiplicar, ¿cómo los están aprovechando ahora para resolver problemas de división?</div></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-warm"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Calentamiento (10 mins)</span>
 </h3>
-<section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="warm-numTalk-cuantoMasCambien-4-1-2">10 minutos</div></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="warm-numTalk-cuantoMasCambien-4-2-2">El propósito de esta conversación numérica es generar estrategias y comprensiones que los estudiantes tienen para hacer sumas hasta de 1,000, especialmente al ajustar los números en una suma para que sea más fácil sumarlos. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para hacer sumas hasta de 1,000.</div> <div class="para" id="warm-numTalk-cuantoMasCambien-4-2-3">Los estudiantes buscan y utilizan la estructura (MP7) cuando se dan cuenta que el valor de la suma no cambia cuando se quita el mismo valor de un sumando y se agrega al otro.</div></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="warm-numTalk-cuantoMasCambien-4-1-2">10 minutos</div></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="warm-numTalk-cuantoMasCambien-4-2-2">El propósito de esta conversación numérica es recordar estrategias y comprensiones que los estudiantes han adquirido para hacer sumas hasta 1,000, especialmente el ajustar los dos números en una suma para que sea más fácil sumarlos. Estas comprensiones ayudan a los estudiantes a desarrollar fluidez para hacer sumas hasta 1,000.</div>
+<div class="para" id="warm-numTalk-cuantoMasCambien-4-2-3">Los estudiantes buscan y utilizan la estructura (MP7) cuando se dan cuenta de que el valor de la suma no cambia cuando se quita el mismo valor de un sumando y se agrega al otro.</div></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="warm-numTalk-cuantoMasCambien-4-3-2">
 <li id="warm-numTalk-cuantoMasCambien-4-3-2-1"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-3-2-1">Muestre una expresión.</div></li>
 <li id="warm-numTalk-cuantoMasCambien-4-3-2-2"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-3-2-2">“Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron.”</div></li>
 <li id="warm-numTalk-cuantoMasCambien-4-3-2-3"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-3-2-3">1 minuto: tiempo de reflexión en silencio</div></li>
-</ul></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="warm-numTalk-cuantoMasCambien-4-4-2">
 <li id="warm-numTalk-cuantoMasCambien-4-4-2-1"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-4-2-1">Registre respuestas y estrategias.</div></li>
 <li id="warm-numTalk-cuantoMasCambien-4-4-2-2"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-4-2-2">Mantenga las expresiones y el trabajo visible.</div></li>
 <li id="warm-numTalk-cuantoMasCambien-4-4-2-3"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-4-4-2-3">Repita con cada expresión.</div></li>
 </ul></section><article class="exploration project-like" id="warm-numTalk-cuantoMasCambien"><h4 class="heading">
 <span class="type">Calentamiento</span><span class="space"> </span><span class="codenumber">10</span><span class="period">.</span><span class="space"> </span><span class="title">Conversación numérica: Cuanto más cambien las cosas....</span>
 </h4>
-<div class="para" id="warm-numTalk-cuantoMasCambien-2-1">Encuentra mentalmente el valor de cada expresión.</div> <div class="para logical" id="warm-numTalk-cuantoMasCambien-2-2"><ol class="upper-alpha">
+<div class="para" id="warm-numTalk-cuantoMasCambien-2-1">Encuentra mentalmente el valor de cada expresión.</div> <div class="para logical" id="warm-numTalk-cuantoMasCambien-2-2"><ol class="upper-alpha" id="warm-numTalk-cuantoMasCambien-2-2-1">
 <li id="warm-numTalk-cuantoMasCambien-2-2-1-1"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-2-2-1-1"><span class="process-math">\(\displaystyle 120 + 120\)</span></div></li>
 <li id="warm-numTalk-cuantoMasCambien-2-2-1-2"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-2-2-1-2"><span class="process-math">\(\displaystyle 121 + 119\)</span></div></li>
 <li id="warm-numTalk-cuantoMasCambien-2-2-1-3"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-2-2-1-3"><span class="process-math">\(\displaystyle 125 + 115\)</span></div></li>
 <li id="warm-numTalk-cuantoMasCambien-2-2-1-4"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-2-2-1-4"><span class="process-math">\(\displaystyle 129 + 111\)</span></div></li>
 </ol></div>
-<div class="solutions"><details id="warm-numTalk-cuantoMasCambien-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like">
-<div class="para" id="warm-numTalk-cuantoMasCambien-3-1">Ejemplos de respuestas</div> <div class="para logical" id="warm-numTalk-cuantoMasCambien-3-2"><ul class="disc">
+<div class="solutions"><details id="warm-numTalk-cuantoMasCambien-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="warm-numTalk-cuantoMasCambien-3-1">Ejemplos de respuestas</div>
+<div class="para logical" id="warm-numTalk-cuantoMasCambien-3-2"><ul class="disc" id="warm-numTalk-cuantoMasCambien-3-2-1">
 <li id="warm-numTalk-cuantoMasCambien-3-2-1-1"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-3-2-1-1">240. Simplemente dupliqué 120.</div></li>
 <li id="warm-numTalk-cuantoMasCambien-3-2-1-2"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-3-2-1-2">240. Me di cuenta de que 121 es 1 más que 120 y 119 es 1 menos que 120, así que el valor es el mismo que el de <span class="process-math">\(120+120\text{.}\)</span>
 </div></li>
@@ -453,11 +997,12 @@ window.MathJax = {
 <li id="warm-numTalk-cuantoMasCambien-3-2-1-4"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-3-2-1-4">240. Le quité 9 a 129 y se lo sumé a 111. Así otra vez tenía <span class="process-math">\(120+120\text{.}\)</span>
 </div></li>
 </ul></div>
-</div></details></div></article><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
-<li id="warm-numTalk-cuantoMasCambien-5-1-2-1"><div class="para" id="warm-numTalk-cuantoMasCambien-5-1-2-1-1">“¿Por qué creen que todas estas expresiones tienen el mismo valor?” (Aunque cada número está cambiando, se está agregando la misma cantidad a un número y se está restando del otro número, por lo que el total es el mismo.)</div></li>
+</div></details></div></article><section class="paragraphs" id="warm-numTalk-cuantoMasCambien-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="warm-numTalk-cuantoMasCambien-5-1-2">
+<li id="warm-numTalk-cuantoMasCambien-5-1-2-1"><div class="para" id="warm-numTalk-cuantoMasCambien-5-1-2-1-1">“¿Por qué creen que todas estas expresiones tienen el mismo valor?” (Aunque los dos números están cambiando, se está agregando a un número exactamente la misma cantidad que se está restando del otro, por lo que el total es el mismo.)</div></li>
 <li id="warm-numTalk-cuantoMasCambien-5-1-2-2"><div class="para logical" id="warm-numTalk-cuantoMasCambien-5-1-2-2-1">
 <div class="para">Considere preguntar:</div>
-<ul class="circle">
+<ul class="circle" id="warm-numTalk-cuantoMasCambien-5-1-2-2-1-1">
 <li id="warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-1"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-1">“¿Alguien puede expresar el razonamiento de <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> de otra forma?”</div></li>
 <li id="warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-2"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-2">“¿Alguien usó la misma estrategia, pero la explicaría de otra forma?”</div></li>
 <li id="warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-3"><div class="para" id="p-derived-warm-numTalk-cuantoMasCambien-5-1-2-2-1-1-3">“¿Alguien pensó en el problema de otra forma?”</div></li>
@@ -467,11 +1012,15 @@ window.MathJax = {
 </ul></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-act1"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad 1 (10 mins)</span>
 </h3>
-<section class="paragraphs" id="act-gruposEstudiantes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="act-gruposEstudiantes-4-1-2">10 minutos</div></section><section class="paragraphs" id="act-gruposEstudiantes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="act-gruposEstudiantes-4-2-2">El propósito de esta actividad es que los estudiantes representen físicamente la diferencia entre hacer 2 grupos y hacer grupos de 2. Diez estudiantes se dividirán en 2 grupos y luego en grupos de 2. El resto de los estudiantes observarán cómo se formaron los grupos para resaltar la diferencia entre los problemas de "¿cuántos grupos?" y los problemas de "¿cuántos en cada grupo?".</div></section><section class="paragraphs" id="act-gruposEstudiantes-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="act-gruposEstudiantes-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="act-gruposEstudiantes-4-1-2">10 minutos</div></section><section class="paragraphs" id="act-gruposEstudiantes-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="act-gruposEstudiantes-4-2-2">El propósito de esta actividad es que los estudiantes representen físicamente la diferencia entre hacer 2 grupos y hacer grupos de 2. Diez estudiantes se ubicarán en 2 grupos y luego en grupos de 2. El resto de los estudiantes observará cómo se formaron los grupos y aclarará la diferencia entre los problemas de "¿cuántos grupos?" y los problemas de "¿cuántos en cada grupo?".</div></section><section class="paragraphs" id="act-gruposEstudiantes-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="act-gruposEstudiantes-4-3-2">
 <li id="act-gruposEstudiantes-4-3-2-1"><div class="para" id="p-derived-act-gruposEstudiantes-4-3-2-1">Grupos de 2</div></li>
 <li id="act-gruposEstudiantes-4-3-2-2"><div class="para" id="p-derived-act-gruposEstudiantes-4-3-2-2">Invite a 10 estudiantes a venir al frente de la clase.</div></li>
 <li id="act-gruposEstudiantes-4-3-2-3"><div class="para" id="p-derived-act-gruposEstudiantes-4-3-2-3">“Estos estudiantes se van a organizar en grupos y lo harán de diferentes maneras. Si están observando, anoten sus observaciones acerca de cómo forman los grupos.”</div></li>
-</ul></section><section class="paragraphs" id="act-gruposEstudiantes-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-gruposEstudiantes-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="act-gruposEstudiantes-4-4-2">
 <li id="act-gruposEstudiantes-4-4-2-1"><div class="para" id="p-derived-act-gruposEstudiantes-4-4-2-1">Pida a los 10 estudiantes que se pongan en grupos de 2.</div></li>
 <li id="act-gruposEstudiantes-4-4-2-2"><div class="para" id="p-derived-act-gruposEstudiantes-4-4-2-2">Dé a los observadores la oportunidad de tomar notas.</div></li>
 <li id="act-gruposEstudiantes-4-4-2-3"><div class="para" id="p-derived-act-gruposEstudiantes-4-4-2-3">Pida a los 10 estudiantes que se pongan en 2 grupos.</div></li>
@@ -482,14 +1031,14 @@ window.MathJax = {
 </ul></section><article class="activity project-like" id="act-gruposEstudiantes"><h4 class="heading">
 <span class="type">Actividad</span><span class="space"> </span><span class="codenumber">11</span><span class="period">.</span><span class="space"> </span><span class="title">Grupos de estudiantes.</span>
 </h4>
-<div class="para logical" id="act-gruposEstudiantes-2-1"><ol class="decimal">
+<div class="para logical" id="act-gruposEstudiantes-2-1"><ol class="decimal" id="act-gruposEstudiantes-2-1-1">
 <li id="act-gruposEstudiantes-2-1-1-1"><div class="para" id="p-derived-act-gruposEstudiantes-2-1-1-1">¿Qué observaste acerca de cómo los estudiantes se organizaron en grupos de 2?</div></li>
 <li id="act-gruposEstudiantes-2-1-1-2"><div class="para" id="p-derived-act-gruposEstudiantes-2-1-1-2">¿Qué observaste acerca de cómo los estudiantes se organizaron en 2 grupos?</div></li>
 </ol></div>
-<div class="solutions"><details id="act-gruposEstudiantes-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like"><ol class="decimal">
+<div class="solutions"><details id="act-gruposEstudiantes-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><ol class="decimal" id="act-gruposEstudiantes-3-1">
 <li id="act-gruposEstudiantes-3-1-1">
 <div class="para" id="act-gruposEstudiantes-3-1-1-1">Ejemplos de respuestas:</div>
-<ul class="disc">
+<ul class="disc" id="act-gruposEstudiantes-3-1-1-2">
 <li id="act-gruposEstudiantes-3-1-1-2-1"><div class="para" id="act-gruposEstudiantes-3-1-1-2-1-1">Simplemente formaron parejas.</div></li>
 <li id="act-gruposEstudiantes-3-1-1-2-2"><div class="para" id="act-gruposEstudiantes-3-1-1-2-2-1">No necesitaban saber cuántos grupos tenían que formar, solo tenían que asegurarse de que hubiera 2 estudiantes en cada grupo.</div></li>
 <li id="act-gruposEstudiantes-3-1-1-2-3"><div class="para" id="act-gruposEstudiantes-3-1-1-2-3-1">Al final, quedaron 5 grupos de 2 estudiantes.</div></li>
@@ -497,24 +1046,31 @@ window.MathJax = {
 </li>
 <li id="act-gruposEstudiantes-3-1-2">
 <div class="para" id="act-gruposEstudiantes-3-1-2-1">Ejemplos de respuestas:</div>
-<ul class="disc">
+<ul class="disc" id="act-gruposEstudiantes-3-1-2-2">
 <li id="act-gruposEstudiantes-3-1-2-2-1"><div class="para" id="act-gruposEstudiantes-3-1-2-2-1-1">Tenían que averiguar cuántos estudiantes había en cada grupo.</div></li>
 <li id="act-gruposEstudiantes-3-1-2-2-2"><div class="para" id="act-gruposEstudiantes-3-1-2-2-2-1">Pusieron a las personas una por una en los grupos.</div></li>
 <li id="act-gruposEstudiantes-3-1-2-2-3"><div class="para" id="act-gruposEstudiantes-3-1-2-2-3-1">Al final, quedaron 2 grupos de 5 estudiantes.</div></li>
 </ul>
 </li>
-</ol></div></details></div></article><section class="paragraphs" id="act-gruposEstudiantes-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+</ol></div></details></div></article><section class="paragraphs" id="act-gruposEstudiantes-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="act-gruposEstudiantes-5-1-2">
 <li id="act-gruposEstudiantes-5-1-2-1"><div class="para" id="p-derived-act-gruposEstudiantes-5-1-2-1">Pida a los estudiantes que observaron que compartan lo que notaron.</div></li>
 <li id="act-gruposEstudiantes-5-1-2-2"><div class="para" id="p-derived-act-gruposEstudiantes-5-1-2-2">Destaque las ideas que ayuden a aclarar las diferencias entre "¿cuántos grupos?" y "¿cuántos en cada grupo?"</div></li>
 </ul></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-act2"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad 2 (15 mins)</span>
 </h3>
-<section class="paragraphs" id="act-lapicesColores-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="act-lapicesColores-4-1-2">10 minutos</div></section><section class="paragraphs" id="act-lapicesColores-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="act-lapicesColores-4-2-2">El propósito de esta actividad es que los estudiantes relacionen una situación de división con un diagrama de grupos iguales. Los estudiantes deben ser capaces de explicar por qué la situación corresponde al diagrama A, que muestra 2 grupos de 6, y por qué no corresponde al diagrama B, que muestra 6 grupos de 2.</div> <div class="para" id="act-lapicesColores-4-2-3">Esta actividad utiliza MLR1: Más fuerte y cada vez más claro.</div> <div class="para" id="act-lapicesColores-4-2-4">Avances: lectura, escritura</div></section><section class="paragraphs" id="act-lapicesColores-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="act-lapicesColores-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="act-lapicesColores-4-1-2">10 minutos</div></section><section class="paragraphs" id="act-lapicesColores-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="act-lapicesColores-4-2-2">El propósito de esta actividad es que los estudiantes relacionen una situación de división con un diagrama de grupos iguales. Los estudiantes deben ser capaces de explicar por qué la situación corresponde al diagrama A, que muestra 2 grupos de 6, y por qué no corresponde al diagrama B, que muestra 6 grupos de 2.</div>
+<div class="para" id="act-lapicesColores-4-2-3">Esta actividad utiliza MLR1: Más fuerte y cada vez más claro.</div>
+<div class="para" id="act-lapicesColores-4-2-4">Avances: lectura, escritura</div></section><section class="paragraphs" id="act-lapicesColores-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="act-lapicesColores-4-3-2">
 <li id="act-lapicesColores-4-3-2-1"><div class="para" id="p-derived-act-lapicesColores-4-3-2-1">Grupos de 2</div></li>
 <li id="act-lapicesColores-4-3-2-2"><div class="para" id="p-derived-act-lapicesColores-4-3-2-2">“Hoy vamos a examinar dibujos que representan situaciones de división. Tómense un minuto para leer esta situación.”</div></li>
 <li id="act-lapicesColores-4-3-2-3"><div class="para" id="p-derived-act-lapicesColores-4-3-2-3">1 minuto: tiempo de trabajo individual</div></li>
-</ul></section><section class="paragraphs" id="act-lapicesColores-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
-<li id="act-lapicesColores-4-4-2-1"><div class="para" id="p-derived-act-lapicesColores-4-4-2-1">“Individualmente, decidan cuál dibujo corresponde a esta situación y luego expliquen su razonamiento.”</div></li>
+</ul></section><section class="paragraphs" id="act-lapicesColores-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="act-lapicesColores-4-4-2">
+<li id="act-lapicesColores-4-4-2-1"><div class="para" id="p-derived-act-lapicesColores-4-4-2-1">“Individualmente, decidan cuál dibujo corresponde a esta situación y luego prepárense para explicar su razonamiento.”</div></li>
 <li id="act-lapicesColores-4-4-2-2"><div class="para" id="p-derived-act-lapicesColores-4-4-2-2">2-3 minutos: tiempo de trabajo individual</div></li>
 </ul></section><article class="activity project-like" id="act-lapicesColores"><h4 class="heading">
 <span class="type">Actividad</span><span class="space"> </span><span class="codenumber">12</span><span class="period">.</span><span class="space"> </span><span class="title">Los lápices de colores de Elena.</span>
@@ -529,9 +1085,12 @@ window.MathJax = {
 <img src="external/tikz-source/tikz-file-149311.svg" role="img" class="contained" alt="6 groups of 2 dots.">
 </div>
 </div></div>
-<div class="solutions"><details id="act-lapicesColores-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like">
-<div class="para" id="act-lapicesColores-3-1">A.</div> <div class="para" id="act-lapicesColores-3-2">El dibujo B no es correcto pues muestra 6 grupos de 2 lápices de colores. Eso sería como si ella tuviera 6 cajas, en vez de 2 cajas.</div>
-</div></details></div></article><section class="paragraphs" id="act-lapicesColores-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <div class="para" id="act-lapicesColores-5-1-2">MLR1 Más fuerte y cada vez más claro</div> <ul class="disc">
+<div class="solutions"><details id="act-lapicesColores-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-lapicesColores-3-1">A.</div>
+<div class="para" id="act-lapicesColores-3-2">El dibujo B no es correcto pues muestra 6 grupos de 2 lápices de colores. Eso sería como si ella tuviera 6 cajas, en vez de 2 cajas.</div>
+</div></details></div></article><section class="paragraphs" id="act-lapicesColores-5-1"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<div class="para" id="act-lapicesColores-5-1-2">MLR1 Más fuerte y cada vez más claro</div>
+<ul class="disc" id="act-lapicesColores-5-1-3">
 <li id="act-lapicesColores-5-1-3-1"><div class="para" id="p-derived-act-lapicesColores-5-1-3-1">“Compartan su respuesta con su compañero. Por turnos, uno habla y el otro escucha. Si es su turno de hablar, compartan sus ideas y lo que han escrito hasta el momento. Si es su turno de escuchar, hagan preguntas y comentarios que ayuden a su compañero a mejorar su trabajo.”</div></li>
 <li id="act-lapicesColores-5-1-3-2"><div class="para" id="p-derived-act-lapicesColores-5-1-3-2">2-3 minutos: discusión estructurada en pareja</div></li>
 <li id="act-lapicesColores-5-1-3-3"><div class="para" id="p-derived-act-lapicesColores-5-1-3-3">Repetir con 2 compañeros diferentes.</div></li>
@@ -540,25 +1099,29 @@ window.MathJax = {
 </ul></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-act3"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad 3 (15 mins)</span>
 </h3>
-<section class="paragraphs" id="act-cualDibujoCorresponde-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5> <div class="para" id="act-cualDibujoCorresponde-4-1-2">15 minutos.</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5> <div class="para" id="act-cualDibujoCorresponde-4-2-2">El propósito de esta actividad es que los estudiantes relacionen situaciones de división y diagramas de grupos iguales (MP2). Cada diagrama dado corresponde a dos situaciones diferentes. Los estudiantes aprenden que el mismo diagrama puede representar tanto un problema de "¿cuántos grupos?" como un problema de "¿cuántos en cada grupo?" porque el diagrama muestra el resultado final, no cómo se hicieron los grupos. Cuando los estudiantes interpretan un diagrama como que representa dos tipos de historias diferentes, indican claramente cómo cada parte del diagrama corresponde a la historia, incluyendo lo que corresponde a lo desconocido en la historia (MP6).</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5> <ul class="disc">
+<section class="paragraphs" id="act-cualDibujoCorresponde-4-1"><h5 class="heading"><span class="title">Tiempo recomendado.</span></h5>
+<div class="para" id="act-cualDibujoCorresponde-4-1-2">15 minutos.</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-2"><h5 class="heading"><span class="title">Narrativa.</span></h5>
+<div class="para" id="act-cualDibujoCorresponde-4-2-2">El propósito de esta actividad es que los estudiantes relacionen situaciones de división y diagramas de grupos iguales (MP2). Cada diagrama dado corresponde a dos situaciones diferentes. Los estudiantes aprenden que el mismo diagrama puede representar tanto un problema de "¿cuántos grupos?" como un problema de "¿cuántos en cada grupo?" porque el diagrama muestra el resultado final, no cómo se formaron los grupos. Cuando los estudiantes interpretan un diagrama como representación de dos tipos de historias diferentes, indican claramente cómo cada parte del diagrama corresponde a la historia, incluyendo lo que corresponde a lo desconocido en la historia (MP6).</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-3"><h5 class="heading"><span class="title">Lanzamiento.</span></h5>
+<ul class="disc" id="act-cualDibujoCorresponde-4-3-2">
 <li id="act-cualDibujoCorresponde-4-3-2-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-3-2-1">Grupos de 2</div></li>
 <li id="act-cualDibujoCorresponde-4-3-2-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-3-2-2">“Vamos a examinar algunas situaciones que incluyen herramientas para escribir o dibujar. ¿Qué cosas usamos para escribir o dibujar?”</div></li>
 <li id="act-cualDibujoCorresponde-4-3-2-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-3-2-3">30 segundos: tiempo de reflexión en silencio</div></li>
 <li id="act-cualDibujoCorresponde-4-3-2-4"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-3-2-4">Compartir y registrar las respuestas.</div></li>
-</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-4-4"><h5 class="heading"><span class="title">Desarrollo de la actividad.</span></h5>
+<ul class="disc" id="act-cualDibujoCorresponde-4-4-2">
 <li id="act-cualDibujoCorresponde-4-4-2-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-4-2-1">“Van a asociar seis situaciones con dibujos que podrían representarlas. Tómense unos minutos para decidir cuál dibujo corresponde a cada situación.”</div></li>
-<li id="act-cualDibujoCorresponde-4-4-2-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-4-2-2">3-5 minutos: tiempo de trabajo independiente</div></li>
+<li id="act-cualDibujoCorresponde-4-4-2-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-4-2-2">3-5 minutos: tiempo de trabajo individual</div></li>
 <li id="act-cualDibujoCorresponde-4-4-2-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-4-2-3">“Compartan sus ideas con su compañero.”</div></li>
 <li id="act-cualDibujoCorresponde-4-4-2-4"><div class="para" id="p-derived-act-cualDibujoCorresponde-4-4-2-4">2-3 minutos: discusión en pareja</div></li>
 </ul></section><article class="activity project-like" id="act-cualDibujoCorresponde"><h4 class="heading">
 <span class="type">Actividad</span><span class="space"> </span><span class="codenumber">13</span><span class="period">.</span><span class="space"> </span><span class="title">¿Cuál dibujo corresponde?</span>
 </h4>
 <div class="para" id="act-cualDibujoCorresponde-2-1">Asocia cada situación con un dibujo. Prepárate para explicar tu razonamiento.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel middle" style="width:55%;"><ol class="decimal">
+<div class="sbspanel middle" style="width:55%;"><ol class="decimal" id="act-cualDibujoCorresponde-2-2-1">
 <li id="act-cualDibujoCorresponde-2-2-1-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-1">Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?</div></li>
 <li id="act-cualDibujoCorresponde-2-2-1-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-2">Kiran tiene 20 bolígrafos y varias mesas. Él pone 2 bolígrafos en cada mesa. ¿En cuántas mesas puede poner bolígrafos?</div></li>
-<li id="act-cualDibujoCorresponde-2-2-1-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-3">Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></li>
-<li id="act-cualDibujoCorresponde-2-2-1-4"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-4">Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿Cuántos pupitres tendrán crayones?</div></li>
+<li id="act-cualDibujoCorresponde-2-2-1-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-3">Lin tiene 8 lápices de colores y 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></li>
+<li id="act-cualDibujoCorresponde-2-2-1-4"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-4">Priya tiene 15 crayones y varios pupitres. Ella pone 5 crayones en cada pupitre. ¿En cuántos pupitres pondrá crayones?</div></li>
 <li id="act-cualDibujoCorresponde-2-2-1-5"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-5">Noah tiene 20 lápices y 10 cajas. Él pone el mismo número de lápices en cada caja. ¿Cuántos lápices habrá en cada caja?</div></li>
 <li id="act-cualDibujoCorresponde-2-2-1-6"><div class="para" id="p-derived-act-cualDibujoCorresponde-2-2-1-6">Jada tiene 15 marcadores y 3 mesas. Ella pone el mismo número de marcadores en cada mesa. ¿Cuántos marcadores habrá en cada mesa?</div></li>
 </ol></div>
@@ -569,8 +1132,9 @@ window.MathJax = {
 <img src="external/svg-source/tikz-file-149315.svg" role="img" class="contained" alt="3 groups of 5 dots.">
 </div>
 </div></div>
-<div class="solutions"><details id="act-cualDibujoCorresponde-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like">
-<div class="para" id="act-cualDibujoCorresponde-3-1">Respuesta del enunciado</div> <ol class="decimal">
+<div class="solutions"><details id="act-cualDibujoCorresponde-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-cualDibujoCorresponde-3-1">Respuesta del enunciado</div>
+<ol class="decimal" id="act-cualDibujoCorresponde-3-2">
 <li id="act-cualDibujoCorresponde-3-2-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-3-2-1">A</div></li>
 <li id="act-cualDibujoCorresponde-3-2-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-3-2-2">B</div></li>
 <li id="act-cualDibujoCorresponde-3-2-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-3-2-3">A</div></li>
@@ -578,21 +1142,29 @@ window.MathJax = {
 <li id="act-cualDibujoCorresponde-3-2-5"><div class="para" id="p-derived-act-cualDibujoCorresponde-3-2-5">B</div></li>
 <li id="act-cualDibujoCorresponde-3-2-6"><div class="para" id="p-derived-act-cualDibujoCorresponde-3-2-6">C</div></li>
 </ol>
-</div></details></div></article><section class="paragraphs" id="act-cualDibujoCorresponde-5-1"><h5 class="heading"><span class="title">Para los estudiantes con dificultades.</span></h5> <div class="para" id="act-cualDibujoCorresponde-5-1-2">Si los estudiantes dicen que el dibujo no puede representar ambas situaciones, considere preguntar:</div> <ul class="disc">
+</div></details></div></article><section class="paragraphs" id="act-cualDibujoCorresponde-5-1"><h5 class="heading"><span class="title">Para los estudiantes con dificultades.</span></h5>
+<div class="para" id="act-cualDibujoCorresponde-5-1-2">Si los estudiantes dicen que el dibujo no puede representar ambas situaciones, considere preguntar:</div>
+<ul class="disc" id="act-cualDibujoCorresponde-5-1-3">
 <li id="act-cualDibujoCorresponde-5-1-3-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-5-1-3-1">“¿Cómo podríamos hacer un dibujo para cada situación?”</div></li>
 <li id="act-cualDibujoCorresponde-5-1-3-2"><div class="para" id="p-derived-act-cualDibujoCorresponde-5-1-3-2">“¿Qué podríamos dibujar primero para representar la primera situación en la que hay 8 objetos? ¿Y para la segunda situación en la que hay 8 objetos?”</div></li>
-</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-2"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5> <ul class="disc">
+</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-2"><h5 class="heading"><span class="title">Síntesis de la actividad.</span></h5>
+<ul class="disc" id="act-cualDibujoCorresponde-5-2-2">
 <li id="act-cualDibujoCorresponde-5-2-2-1"><div class="para" id="p-derived-act-cualDibujoCorresponde-5-2-2-1">Invite a los estudiantes a compartir qué dibujo corresponde a cada situación.</div></li>
 <li id="act-cualDibujoCorresponde-5-2-2-2">
 <div class="para" id="act-cualDibujoCorresponde-5-2-2-2-1">Enfóquese en un dibujo y las dos situaciones que puede representar, como:</div>
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/svg-source/tikz-file-149312.svg" role="img" class="contained" alt="2 groups of 4 dots."></div>
-<ul class="circle">
+<ul class="circle" id="act-cualDibujoCorresponde-5-2-2-2-3">
 <li id="act-cualDibujoCorresponde-5-2-2-2-3-1"><div class="para" id="act-cualDibujoCorresponde-5-2-2-2-3-1-1">Mai tiene 8 marcadores. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas de marcadores hay?</div></li>
-<li id="act-cualDibujoCorresponde-5-2-2-2-3-2"><div class="para" id="act-cualDibujoCorresponde-5-2-2-2-3-2-1">Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. Cada bolsa tiene la misma cantidad de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></li>
+<li id="act-cualDibujoCorresponde-5-2-2-2-3-2"><div class="para" id="act-cualDibujoCorresponde-5-2-2-2-3-2-1">Lin tiene 8 lápices de colores y 2 bolsas. Cada bolsa tiene la misma cantidad de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></li>
 </ul>
 </li>
-<li id="act-cualDibujoCorresponde-5-2-2-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-5-2-2-3">“¿Cómo puede el mismo dibujo representar ambas situaciones?” (No vimos cómo se hicieron los grupos, pero al final se hicieron la misma cantidad y tamaño de grupos en ambas situaciones. El dibujo puede representar poner 8 marcadores en cajas con 4 marcadores en cada caja y encontrar que caben en 2 cajas. También puede representar poner 8 lápices en 2 bolsas con la misma cantidad de lápices en cada bolsa y encontrar que se pueden poner 4 lápices en cada bolsa.)</div></li>
-</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-3"><h5 class="heading"><span class="title">Desarrollo de lenguaje matemático.</span></h5> <div class="para" id="act-cualDibujoCorresponde-5-3-2">Apoyos para la discusión (MLR8). Los estudiantes deben turnarse para encontrar una correspondencia y explicar su razonamiento a su compañero.</div> <div class="para" id="act-cualDibujoCorresponde-5-3-3">Muestre el siguiente esquema de oración para que todos lo vean: "Observé ___, entonces asocié . . ."</div> <div class="para" id="act-cualDibujoCorresponde-5-3-4">Motívelos a desafiarse mutuamente cuando no estén de acuerdo.</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-4"><h5 class="heading"><span class="title">Acceso a estudiantes con discapacidades.</span></h5> <div class="para" id="act-cualDibujoCorresponde-5-4-2">Proporcione acceso al generar interés. Aproveche la elección en torno al desafío percibido. Invite a los estudiantes a seleccionar al menos 3 de los 6 problemas para completar.</div> <div class="para" id="act-cualDibujoCorresponde-5-4-3">Apoya la accesibilidad para: Organización, Atención, Habilidades socioemocionales.</div></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-sintesis"><h3 class="heading hide-type">
+<li id="act-cualDibujoCorresponde-5-2-2-3"><div class="para" id="p-derived-act-cualDibujoCorresponde-5-2-2-3">“¿Cómo puede el mismo dibujo representar ambas situaciones?” (No vimos cómo se formaron los grupos, pero al final se formaron la misma cantidad de grupos y grupos del mismo tamaño en ambas situaciones. El dibujo puede representar la situación de poner 8 marcadores en cajas con 4 marcadores en cada caja y encontrar que se necesitan 2 cajas. También puede representar la situación de poner 8 lápices en 2 bolsas con la misma cantidad de lápices en cada bolsa y encontrar que se pueden poner 4 lápices en cada bolsa.)</div></li>
+</ul></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-3"><h5 class="heading"><span class="title">Desarrollo de lenguaje matemático.</span></h5>
+<div class="para" id="act-cualDibujoCorresponde-5-3-2">Apoyos para la discusión (MLR8). Los estudiantes deben turnarse para encontrar una correspondencia y explicar su razonamiento a su compañero.</div>
+<div class="para" id="act-cualDibujoCorresponde-5-3-3">Muestre el siguiente esquema de oración para que todos lo vean: "Observé ___, entonces asocié . . ."</div>
+<div class="para" id="act-cualDibujoCorresponde-5-3-4">Motívelos a desafiarse mutuamente cuando no estén de acuerdo.</div></section><section class="paragraphs" id="act-cualDibujoCorresponde-5-4"><h5 class="heading"><span class="title">Acceso a estudiantes con discapacidades.</span></h5>
+<div class="para" id="act-cualDibujoCorresponde-5-4-2">Proporcione acceso al generar interés. Aproveche la elección en torno al desafío percibido. Invite a los estudiantes a seleccionar al menos 3 de los 6 problemas para completar.</div>
+<div class="para" id="act-cualDibujoCorresponde-5-4-3">Apoya la accesibilidad para: Organización, Atención, Habilidades socioemocionales.</div></section></section><section class="subsubsection" id="lec-dibujosSituacionesDivision-sintesis"><h3 class="heading hide-type">
 <span class="type">Subsubsección</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Síntesis de la lección (5 mins)</span>
 </h3>
 <div class="para" id="lec-dibujosSituacionesDivision-sintesis-3">Tiempo recomendado: 10 mins.</div>
@@ -601,15 +1173,15 @@ window.MathJax = {
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
 <div class="sbspanel top" style="width:25.4237288135593%;"><img src="external/svg-source/tikz-file-149313.svg" role="img" class="contained" alt="2 groups of 4 dots."></div>
 <div class="sbspanel top" style="width:35.593220338983%;"><div class="para" id="lec-dibujosSituacionesDivision-sintesis-6-2">Mai tiene 8 marcadores y varias cajas. Ella pone 4 marcadores en cada caja. ¿Cuántas cajas con marcadores hay?</div></div>
-<div class="sbspanel top" style="width:35.593220338983%;"><div class="para" id="lec-dibujosSituacionesDivision-sintesis-6-3">Lin tiene 8 lápices de colores. Ella los pone en 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></div>
+<div class="sbspanel top" style="width:35.593220338983%;"><div class="para" id="lec-dibujosSituacionesDivision-sintesis-6-3">Lin tiene 8 lápices de colores y 2 bolsas. En cada bolsa pone el mismo número de lápices de colores. ¿Cuántos lápices de colores habrá en cada bolsa?</div></div>
 </div></div>
-<div class="para" id="lec-dibujosSituacionesDivision-sintesis-7">“¿En qué se parecen y en qué se diferencian estas situaciones de división?” (Ambas situaciones tienen los números 8, 2 y 4 en ellas. Ambas involucran poner objetos en grupos iguales. Los objetos son diferentes, uno se trata de marcadores y el otro de lápices de colores. Una situación nos dice cuántos elementos van en cada contenedor y la otra nos dice cuántos contenedores hay)</div>
+<div class="para" id="lec-dibujosSituacionesDivision-sintesis-7">“¿En qué se parecen y en qué se diferencian estas situaciones de división?” (Ambas situaciones tienen los números 8, 2 y 4 en ellas. Ambas involucran poner objetos en grupos iguales. Los objetos son diferentes, una se trata de marcadores y la otra de lápices de colores. Una situación nos dice cuántos elementos van en cada contenedor y la otra nos dice cuántos contenedores hay)</div>
 <div class="para" id="lec-dibujosSituacionesDivision-sintesis-8">“En la primera situación, debemos averiguar cuántos grupos hay. Sabemos que hay 4 marcadores en cada caja, pero no sabemos cuántas cajas hay. En la segunda situación, debemos averiguar cuántos hay en cada grupo. Sabemos que hay 2 bolsas, pero no sabemos cuántos lápices de colores hay en cada bolsa.”</div>
 <div class="para" id="lec-dibujosSituacionesDivision-sintesis-9">“Ahora que estamos dividiendo, necesitamos un símbolo nuevo para escribir expresiones de división. Si queremos representar "8 dividido en grupos de 4", escribimos: <span class="process-math">\(8\div 4\text{.}\)</span>”</div>
-<div class="para" id="lec-dibujosSituacionesDivision-sintesis-10">“¿Qué expresión podríamos escribir para representar "8 dividido en 2 grupos"?”</div></section><section class="reading-questions" id="lec-dibujosSituacionesDivision-cool"><h3 class="heading hide-type">
+<div class="para" id="lec-dibujosSituacionesDivision-sintesis-10">“¿Qué expresión podríamos escribir para representar "8 dividido en 2 grupos"?” (<span class="process-math">\(8\div2\)</span>)</div></section><section class="reading-questions" id="lec-dibujosSituacionesDivision-cool"><h3 class="heading hide-type">
 <span class="type">Preguntas de comprensión</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Actividad de cierre (5 mins)</span>
 </h3>
-<a class="external" href="external/cools-pdf/cool-regalitosInvitados-standalone.pdf" target="_blank">Descargar pdf para imprimir o proyectar</a><details class="ptx-footnote" aria-live="polite" id="lec-dibujosSituacionesDivision-cool-5"><summary class="ptx-footnote__number" title="Nota a pie de página 25"><sup> 25 </sup></summary><div class="ptx-footnote__contents" id="lec-dibujosSituacionesDivision-cool-5"><code class="code-inline tex2jax_ignore">external/cools-pdf/cool-regalitosInvitados-standalone.pdf</code></div></details><article class="project project-like" id="cool-regalitosInvitados"><h4 class="heading">
+<a class="external" href="external/cool-pdf/cool-regalitosInvitados.pdf" target="_blank">Descargar pdf para imprimir o proyectar</a><details class="ptx-footnote" aria-live="polite" id="lec-dibujosSituacionesDivision-cool-5"><summary class="ptx-footnote__number" title="Nota a pie de página 25"><sup> 25 </sup></summary><div class="ptx-footnote__contents" id="lec-dibujosSituacionesDivision-cool-5"><code class="code-inline tex2jax_ignore">external/cool-pdf/cool-regalitosInvitados.pdf</code></div></details><article class="project project-like" id="cool-regalitosInvitados"><h4 class="heading">
 <span class="type">Actividad de cierre</span><span class="space"> </span><span class="codenumber">14</span><span class="period">.</span><span class="space"> </span><span class="title">Regalitos para invitados.</span>
 </h4>
 <div class="para" id="cool-regalitosInvitados-2-1">Clare tiene 48 marcadores. Ella pone 8 marcadores en cada bolsa de regalitos para su fiesta de cumpleaños. ¿Cuántas bolsas usará?</div> <div class="para" id="cool-regalitosInvitados-2-2">¿Cuál dibujo corresponde a la situación? Explica tu razonamiento.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
@@ -622,7 +1194,9 @@ window.MathJax = {
 <img src="external/svg-source/tikz-file-246307.svg" role="img" class="contained" alt="10 groups of 2 dots.">
 </div>
 </div></div>
-<div class="solutions"><details id="cool-regalitosInvitados-3" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like"><div class="para" id="cool-regalitosInvitados-3-1">Respuesta de ejemplo: El dibujo B corresponde a la situación porque muestra 8 marcadores en cada bolsa. Después de que los 48 marcadores se dividan en grupos de 8, habrá 6 bolsas.</div></div></details></div></article><section class="paragraphs" id="cool-regalitosInvitados-4-1"><h5 class="heading"><span class="title">Posibles errores.</span></h5> <div class="para" id="cool-regalitosInvitados-4-1-2">Los estudiantes eligen el dibujo A, que muestra 8 bolsas en lugar de 8 marcadores en cada bolsa.</div></section><section class="paragraphs" id="cool-regalitosInvitados-4-2"><h5 class="heading"><span class="title">Acciones para apoyar el aprendizaje.</span></h5> <div class="para" id="cool-regalitosInvitados-4-2-2">Durante el lanzamiento de la actividad del día siguiente, haga que los estudiantes discutan por qué el dibujo B corresponde a la situación.</div></section></section></section></div>
+<div class="solutions"><details id="cool-regalitosInvitados-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solución</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="cool-regalitosInvitados-3-1">Respuesta de ejemplo: El dibujo B corresponde a la situación porque muestra 8 marcadores en cada bolsa. Después de que los 48 marcadores se dividan en grupos de 8, habrá 6 bolsas.</div></div></details></div></article><section class="paragraphs" id="cool-regalitosInvitados-4-1"><h5 class="heading"><span class="title">Posibles errores.</span></h5>
+<div class="para" id="cool-regalitosInvitados-4-1-2">Los estudiantes eligen el dibujo A, que muestra 8 bolsas en lugar de 8 marcadores en cada bolsa.</div></section><section class="paragraphs" id="cool-regalitosInvitados-4-2"><h5 class="heading"><span class="title">Acciones para apoyar el aprendizaje.</span></h5>
+<div class="para" id="cool-regalitosInvitados-4-2-2">Durante el lanzamiento de la actividad del día siguiente, haga que los estudiantes discutan por qué el dibujo B corresponde a la situación.</div></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="lec-cuantosEnCadaGrupo.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="lec-interpretarExpresionesDivision.html" title="Siguiente"><span class="name">Siguiente</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de tableros de 5 para asistencia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h2>Generador de tableros de 5 para asistencia</h2>
+    <label for="numberInput">Ingrese el número de estudiantes:</label>
+    <input type="number" id="numberInput" min="1" required>
+    <button onclick="generatePDF()">Generar PDF</button>
+
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            let doc = new jsPDF();
+
+            let num = parseInt(document.getElementById("numberInput").value);
+            if (isNaN(num) || num <= 0) {
+                alert("Please enter a valid positive number.");
+                return;
+            }
+
+            let x = 20, y = 20;
+            let size = 25; // Size of each square
+            let perRow = 5;
+            let rows = Math.floor(num / perRow);
+            let remainder = num % perRow;
+            let remainderSpacing = 5; // Small spacing for remainder squares
+
+            // Draw full 5-frames (with no spacing)
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < perRow; j++) {
+                    doc.rect(x + (j * size), y, size, size);
+                }
+                y += size + 5; // Move to next row with slight spacing
+            }
+
+            // Draw remainder squares (with small spacing)
+            for (let i = 0; i < remainder; i++) {
+                doc.rect(x + (i * (size + remainderSpacing)), y, size, size);
+            }
+    
+            // doc.save("tablerosDe5.pdf");
+
+            // Open the print preview window instead of downloading
+            window.open(doc.output('bloburl'), '_blank');
+        }
+    </script>
+</body>
+</html>
