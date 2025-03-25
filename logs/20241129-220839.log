@@ -1,0 +1,36 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA`.
+WARNING : Using CLI version 2.4.0 but project's `requirements.txt`
+WARNING : is configured to use 2.3.6. Consider either installing
+WARNING : CLI version 2.3.6 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.0.
+WARNING : Destroying directory /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/output/print-latex-est/gra3-uni4 to clean previously built files.
+INFO    : Preparing to build into /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/output/print-latex-est/gra3-uni4.
+INFO    : converting /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/source/gra3-uni4/gra3-uni4.ptx to LaTeX as /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/output/print-latex-est/gra3-uni4/gra3-uni4.tex
+INFO    : XSL conversion of /Users/enriqueacosta/Documents/IllustrativeMath-GrupoLEMA/source/gra3-uni4/gra3-uni4.ptx by /Users/enriqueacosta/.ptx/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing (indented):
+INFO    :     * PTX:WARNING: there appears to be an "xref" by number to an item (of type "subsection") without a number (or there is a bug).  The "xref" is
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     *              The target is
+INFO    :     *              located within: "lec-problemas4Operaciones" (xml:id), "Lección 21 -" (title)
+INFO    :     * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "lec-problemas4Operaciones") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     * PTX:WARNING: there appears to be an "xref" by number to an item (of type "subsection") without a number (or there is a bug).  The "xref" is
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     *              The target is
+INFO    :     *              located within: "lec-problemas4Operaciones" (xml:id), "Lección 21 -" (title)
+INFO    :     * PTX:WARNING: there appears to be an "xref" by number to an item (of type "subsection") without a number (or there is a bug).  The "xref" is
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     *              The target is
+INFO    :     *              located within: "lec-problemas4Operaciones" (xml:id), "Lección 21 -" (title)
+INFO    :     * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "lec-problemas4Operaciones") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     * PTX:WARNING: there appears to be an "xref" by number to an item (of type "subsection") without a number (or there is a bug).  The "xref" is
+INFO    :     *              located within: "lec-problemas4Operaciones-warm" (xml:id), "Calentamiento" (title)
+INFO    :     *              The target is
+INFO    :     *              located within: "lec-problemas4Operaciones" (xml:id), "Lección 21 -" (title)
+INFO    : successful application of /Users/enriqueacosta/.ptx/xsl/pretext-latex.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+

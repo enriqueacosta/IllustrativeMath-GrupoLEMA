@@ -1,0 +1,28 @@
+\documentclass[grado3]{LEMA-Tikz-IM}
+\begin{document}
+\begin{tikzpicture}
+
+
+\matrix[tablaVertical, % ver def en LEMA-Tikz-IM.sty
+        % row 1/.append style={nodes={minimum height=8ex}},
+        column 1/.append style={nodes={text width = 16ex}},
+        column 2/.append style={nodes={text width = 36ex}},
+        row 2/.append style={nodes={minimum height=6ex}},
+        row 3/.append style={nodes={minimum height=6ex}},
+        row 4/.append style={nodes={minimum height=6ex}},
+        row 5/.append style={nodes={minimum height=6ex}},
+        row 6/.append style={nodes={minimum height=6ex}},
+    ] (myTable) {
+        % Header Row 
+        \input{../../tikz-source/siSeQueEntoncesSeQue-tab-header.tex}
+        % 
+        &  \\ 
+        &  \\ 
+        &  \\
+        &  \\
+        &  \\
+};
+
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[grado3]{LEMA-Tikz-IM}
+
+\usepackage{graphicx}  % Needed to include graphics
+\usepackage{pifont} % For the scissors symbol
+\usepackage{multicol}
+
+\begin{document}
+\begin{tikzpicture}
+% \pgfplotsset{compat=1.18}
+
+% page canvas letter size
+\path (0,0) rectangle (8.5in,11in);
+
+\def\myMargin{1in}
+
+\coordinate (botLeft) at (\myMargin,\myMargin);
+\coordinate (botRight) at (8.5in-\myMargin,\myMargin);
+\coordinate (topRight) at (8.5in-\myMargin,11in-\myMargin);
+\coordinate (topLeft) at (\myMargin,11in-\myMargin);
+
+% clip outside the margin 
+% \draw (botLeft) rectangle (topRight);
+
+
+% find center of printable page
+\coordinate (centerTop) at ($ (topLeft)!0.5!(topRight) $);
+
+% add content
+\node[anchor=north, text width=6.0in] (table) at ([yshift=-1in]centerTop) {%
+    \setlength{\columnsep}{0.5cm}
+    \begin{multicols}{3}
+ 
+    Noah
+    \par
+    \begin{centering}
+    \includegraphics[scale=1]{../../svg-source/tikz-file-153051.pdf}
+    \vspace{-1.5cm}
+    $$(5\times 3)+(2 \times 3)$$
+    \end{centering}
+    
+    \columnbreak
+    
+    Priya
+    \par
+    \begin{centering}
+    \includegraphics[scale=1]{../../svg-source/tikz-file-153053.pdf}
+    \vspace{-1cm}
+    $$2 \times (2 \times 6)$$
+    \end{centering}
+    
+
+    \columnbreak
+    
+    Tyler
+    \par
+    \begin{centering}
+    \includegraphics[scale=1]{../../svg-source/tikz-file-153054.pdf}
+    $$(5 \times 8) + (3 \times 8)$$
+    \end{centering}
+
+    \end{multicols}
+
+    En cada rectángulo:
+    \begin{enumerate}
+        \item Escribe los dos factores que se pueden multiplicar para encontrar su área.
+        \item Marca o colorea cada rectángulo para mostrar la manera en la que cada estudiante vio el área. Prepárate para explicar tu razonamiento.
+    \end{enumerate}
+};
+
+
+% Add BLM heading to top and bottom
+\node[below right, font=\bf\LARGE] (titulo) at (topLeft) {De expresiones a diagramas};
+\node[font=\bf\large, below = 0.2ex of titulo.south west, anchor=north west] (subtitulo) {};
+
+
+% Espacio de nombre
+% \node[below left] at ([yshift=-6ex]topRight) {Nombre: \underline{\hspace{6cm}}};
+
+
+
+
+\end{tikzpicture}
+\end{document}

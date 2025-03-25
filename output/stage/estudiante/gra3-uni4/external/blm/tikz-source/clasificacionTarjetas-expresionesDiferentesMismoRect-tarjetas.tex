@@ -1,0 +1,65 @@
+\documentclass[grado3]{LEMA-Tikz-IM}
+\begin{document}
+\begin{tikzpicture}
+% \usetikzlibrary{positioning} % for relative note placement (right = of)
+
+\tikzset{%
+  node distance=0cm   % 0 distance between nodes so that edges coincide
+}
+
+% Style of "tarjeta" node
+\tikzstyle{tarjeta}=[%
+    , draw                 % draw rectangle edges     
+    , text width = 1.4in     % min width     
+    , minimum height = 2.1in % min height
+    , align = center       % alignment
+    , outer sep = 0cm      % 0 "personal space" for nodes
+    , inner sep = 2ex      % 0 "personal space" for nodes
+    , execute at begin node={\centering\let\raggedright\relax} % Prevent hyphenation and center
+    % , text height=0.5cm    % vertical placement of text inside node
+    % , text depth=0.0cm,    % vertical placement of text inside node (modes opposite dir)
+]
+
+
+\def\textoTarjetaA{$(7\times 2)\times 2$}
+\def\textoTarjetaB{$6\times 7$}
+\def\textoTarjetaC{$7\times 4$}
+\def\textoTarjetaD{$8\times 3$}
+\def\textoTarjetaE{$3\times 6 + 5\times 6$}
+\def\textoTarjetaF{$(4\times 3)\times 2$}
+\def\textoTarjetaG{$4\times (2\times 3)$}
+\def\textoTarjetaH{$4\times 9$}
+\def\textoTarjetaI{$(5\times 6)+(2\times 6)$}
+\def\textoTarjetaJ{$2\times(2\times 9)$}
+\def\textoTarjetaK{$8\times 6$}
+\def\textoTarjetaL{$(5\times 4)+(2\times 4)$}
+
+
+\node[tarjeta] (tarjetaA) {\textoTarjetaA};
+\node[tarjeta, right = of tarjetaA] (tarjetaB) {\textoTarjetaB};
+\node[tarjeta, right = of tarjetaB] (tarjetaC) {\textoTarjetaC};
+
+
+\node[tarjeta, below = of tarjetaA] (tarjetaD) {\textoTarjetaD};
+\node[tarjeta, right = of tarjetaD] (tarjetaE) {\textoTarjetaE};
+\node[tarjeta, right = of tarjetaE] (tarjetaF) {\textoTarjetaF};
+
+
+\node[tarjeta, below = of tarjetaD] (tarjetaG) {\textoTarjetaG};
+\node[tarjeta, right = of tarjetaG] (tarjetaH) {\textoTarjetaH};
+\node[tarjeta, right = of tarjetaH] (tarjetaI) {\textoTarjetaI};
+
+
+\node[tarjeta, below = of tarjetaG] (tarjetaJ) {\textoTarjetaJ};
+\node[tarjeta, right = of tarjetaJ] (tarjetaK) {\textoTarjetaK};
+\node[tarjeta, right = of tarjetaK] (tarjetaL) {\textoTarjetaL};
+
+
+\foreach \tarj in {A,...,L}{
+  \node[above right, font=\scriptsize, align=left] at (tarjeta\tarj.south west){Expresiones diferentes,\\mismo rectángulo};
+  \node[below right] at (tarjeta\tarj.north west) {\tarj};
+}
+
+
+\end{tikzpicture}
+\end{document}

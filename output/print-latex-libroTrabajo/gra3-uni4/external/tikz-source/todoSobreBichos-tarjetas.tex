@@ -1,0 +1,58 @@
+\documentclass[grado3]{LEMA-Tikz-IM}
+\begin{document}
+\begin{tikzpicture}
+% \usetikzlibrary{positioning} % for relative note placement (right = of)
+
+\tikzset{%
+  node distance=0cm   % 0 distance between nodes so that edges coincide
+}
+
+% Style of "tarjeta" node
+\tikzstyle{tarjeta}=[%
+    , draw                 % draw rectangle edges     
+    , text width = 2.7in     % min width     
+    , minimum height = 2.6in % min height
+    , align = center       % alignment
+    , outer sep = 0cm      % 0 "personal space" for nodes
+    , inner sep = 2ex      % 0 "personal space" for nodes
+    , execute at begin node={\centering\let\raggedright\relax} % Prevent hyphenation and center
+    % , text height=0.5cm    % vertical placement of text inside node
+    % , text depth=0.0cm,    % vertical placement of text inside node (modes opposite dir)
+]
+
+
+\def\textoTarejetaA{El grillo topo tiene varias patas. Algunas de ellas son especiales para cavar. En un grupo de 5 grillos topo se contaron diez patas especiales para cavar. ¿Cuántas patas especiales tiene cada grillo?}
+\def\textoTarejetaB{Un escarabajo tiene un par de antenas para detectar el calor, tocar, oler y otras cosas más. Si hay 8 antenas, ¿cuántos escarabajos hay?}
+\def\textoTarejetaC{En un grupo de abejas alguien contó catorce antenas. Si cada abeja tiene 2 antenas, ¿cuántas abejas hay?}
+\def\textoTarejetaD{En un grupo de libélulas hay 12 alas. Si cada libélula tiene 4 alas, ¿cuántas libélulas hay?}
+\def\textoTarejetaE{Alguien contó treinta patas en un grupo de 5 hormigas. Si todas las hormigas tienen el mismo número de patas, ¿cuántas patas tiene cada hormiga?}
+\def\textoTarejetaF{En total hay 50 manchas en 5 mariposas. Si todas las mariposas tienen el mismo número de manchas, ¿cuántas manchas tiene cada mariposa?}
+
+
+\node[tarjeta] (tarjetaA) {\textoTarejetaA};
+\node[below right] at (tarjetaA.north west) {A};
+
+\node[tarjeta, below = of tarjetaA] (tarjetaB) {\textoTarejetaB};
+\node[below right] at (tarjetaB.north west) {B};
+
+\node[tarjeta, below = of tarjetaB] (tarjetaC) {\textoTarejetaC};
+\node[below right] at (tarjetaC.north west) {C};
+
+
+\node[tarjeta, right = of tarjetaA] (tarjetaD) {\textoTarejetaD};
+\node[below right] at (tarjetaD.north west) {D};
+
+\node[tarjeta, below = of tarjetaD] (tarjetaE) {\textoTarejetaE};
+\node[below right] at (tarjetaE.north west) {E};
+
+\node[tarjeta, below = of tarjetaE] (tarjetaF) {\textoTarejetaF};
+\node[below right] at (tarjetaF.north west) {F};
+
+
+\foreach \tarj in {A,...,F}{
+  \node[below left, font=\scriptsize] at (tarjeta\tarj.north east){Todo sobre bichos};
+}
+
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[grado3]{LEMA-Tikz-IM}
+\begin{document}
+% \usetikzlibrary{positioning} % for relative note placement (right = of)
+
+
+\input{act-comparaDivideHasta100-tarjetas-estilo.tex}
+
+\def\textoTarjetaA{$78\div 6$}
+\def\textoTarjetaB{$84\div 7$}
+\def\textoTarjetaC{$68\div 4$}
+\def\textoTarjetaD{$65\div 5$}
+\def\textoTarjetaE{$90\div 6$}
+\def\textoTarjetaF{$45\div 15$}
+\def\textoTarjetaG{$57\div 19$}
+\def\textoTarjetaH{$72\div 18$}
+\def\textoTarjetaI{$52\div 13$}
+\def\textoTarjetaJ{$84\div 12$}
+
+
+\begin{tikzpicture}
+\node[tarjeta] (tarjetaA) {\textoTarjetaA};
+\node[tarjeta, right = of tarjetaA] (tarjetaB) {\textoTarjetaB};
+
+\node[tarjeta, below = of tarjetaA] (tarjetaC) {\textoTarjetaC};
+\node[tarjeta, right = of tarjetaC] (tarjetaD) {\textoTarjetaD};
+
+
+\node[tarjeta, below = of tarjetaC] (tarjetaE) {\textoTarjetaE};
+\node[tarjeta, right = of tarjetaE] (tarjetaF) {\textoTarjetaF};
+
+\node[tarjeta, below = of tarjetaE] (tarjetaG) {\textoTarjetaG};
+\node[tarjeta, right = of tarjetaG] (tarjetaH) {\textoTarjetaH};
+
+\node[tarjeta, below = of tarjetaG] (tarjetaI) {\textoTarjetaI};
+\node[tarjeta, right = of tarjetaI] (tarjetaJ) {\textoTarjetaJ};
+
+\foreach \tarj in {A,...,J}{
+  \node[below right, font=\scriptsize, align=left] at (tarjeta\tarj.north west){Compara: Divide hasta 100};
+  % \node[below right] at (tarjeta\tarj.north west) {\tarj};
+}
+\end{tikzpicture}
+
+\end{document}

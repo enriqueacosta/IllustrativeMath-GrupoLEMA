@@ -1,0 +1,121 @@
+\usepackage[utf8]{inputenc} % Handles UTF-8 encoding
+\usepackage[T1]{fontenc}    % Properly outputs accented characters
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbuselibrary{raster}
+\newtcolorbox[auto counter]{project-distinct}{}
+\setlength{\parindent}{0pt}    % No indentation for new paragraphs
+\setlength{\parskip}{1ex}     % Small space between paragraphs 
+\tcbuselibrary{xparse}
+\usetikzlibrary{calc}
+\tcbuselibrary{hooks}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amssymb}
+%% Fancy Verbatim for consoles, preformatted, code display, literate programming
+\usepackage{fancyvrb}
+%% Pre-formatted text, a peer of paragraphs
+\DefineVerbatimEnvironment{preformatted}{Verbatim}{}
+%% Fuente sans-serif
+% \renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[sfdefault]{roboto} 
+% Sans serif font for math
+% \RequirePackage{sansmath}
+\RequirePackage{sfmath}
+% \RequirePackage{mathastext}
+%% Automatic Font Control
+%% Portions of a document, are, or may, be affected by defined commands
+%% These are perhaps more flexible when using  xelatex  rather than  pdflatex
+%% The following definitions are meant to be re-defined in a style, using \renewcommand
+%% They are scoped when employed (in a TeX group), and so should not be defined with an argument
+\newcommand{\divisionfont}{\relax}
+\newcommand{\blocktitlefont}{\relax}
+\newcommand{\contentsfont}{\relax}
+\newcommand{\pagefont}{\relax}
+\newcommand{\tabularfont}{\relax}
+\newcommand{\xreffont}{\relax}
+\newcommand{\titlepagefont}{\relax}
+%% Used for fillin answer blank in text
+%% Relies on calc package, loaded via tcolorbox
+%% Argument is intended number of characters of blank
+%% Length may compress for output to fit in one line
+\newlength{\fillinmaxwidth}
+\newlength{\fillincontract}
+\newlength{\charmaxwidth}\setlength{\charmaxwidth}{0.5em}
+\newlength{\charminwidth}\setlength{\charminwidth}{0.1em}
+\newlength{\fillinheight}
+\newcommand{\fillintext}[1]{%
+\setlength{\fillinmaxwidth}{#1\charmaxwidth}%
+\setlength{\fillincontract}{#1\charminwidth}%
+\setlength{\fillinheight}{\baselineskip}\addtolength{\fillinheight}{1.2pt}%
+\strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
+}
+\tcbset{ imagestyle/.style={enhanced, blanker} }
+\NewTColorBox{tcbimage}{mmm}{imagestyle,left=0pt, top=0ex, width=#2\linewidth}
+\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~\par}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{xstring} % For string manipulation
+\newcommand{\removeFinalPeriodIfPresent}[1]{\IfEndWith{#1}{.}{\StrBefore{#1}{.}}{#1}}
+\tcbset{ bwminimalstyle/.style={enhanced, frame empty, extras broken={
+          frame empty}, fonttitle=\bfseries\LARGE, colback=white, before upper = {\setlength{\parskip}{\medskipamount}\vspace{0.1cm} }} }
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper}, coltitle=black }
+\tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
+\tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
+\tcbset{ projectstyle/.style={blockspacingstyle, after title={\space},  } }
+\newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
+%% activity: fairly simple numbered block/structure
+\tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
+\newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
+\tcbset{ exploration/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
+\newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, exploration, }
+\NewDocumentEnvironment{paragraphs}{mm}
+{\subparagraph*{\removeFinalPeriodIfPresent{#1}}}{}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{positioning,matrix,arrows}
+\usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+\usetikzlibrary{decorations.markings}
+\tcbset{ sbsstyle/.style={raster before skip=2.0ex, raster after skip=2.0ex, raster equal height=rows, raster force size=false} }
+\tcbset{ sbspanelstyle/.style={blanker, fonttitle=\blocktitlefont} }
+\NewDocumentEnvironment{sidebyside}{mmmm}
+  {\begin{tcbraster}
+    [sbsstyle,raster columns=#1,
+    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth]}
+  {\end{tcbraster}}
+\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}
+\newcommand{\alert}[1]{\textbf{\textit{#1}}}
+\usepackage[export]{adjustbox}% [export] allows adjustbox keys in \includegraphics
+%% Indentación párrafos 
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+%% Márgenes 
+\usepackage{geometry}
+\geometry{verbose,top=2.5cm,bottom=2cm,lmargin=2.3cm,rmargin=2.3cm,headheight=3cm,headsep=0.4cm,footskip=1cm}
+% Quitar justificación (lineas igual de anchas)
+\usepackage[document]{ragged2e}
+%% quitar hyphenation
+\usepackage[none]{hyphenat}
+%% Headings y footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{} %Remove default Latex numbering
+\fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{external/png-source/barra-colorGrupoLEMA.pdf}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
+\fancyfoot[L]{{\scriptsize Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\tiny Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022,\\[-0.35cm] openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
+\fancyhead[L]{\hfill Nombre: \underline{\hspace{8cm}}}
+\fancyhead[R]{}
+\fancyfoot[R]{}
+\fancyfootoffset{0cm}
+\fancypagestyle{plain}{}  % Redefine the plain page style (style used in title pages)
+\renewcommand{\footrulewidth}{1pt}  % Agregar linea all footer
+\renewcommand{\headrulewidth}{0pt}  % Quitar linea del header
+%% Colores y estilo de los headings
+\usepackage{graphicx}
+\usepackage{xcolor}
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,table}{xcolor}
+\definecolor{plotblue}{HTML}{2e70b3}
+% \usepackage{sectsty}
+% \sectionfont{\color{plotblue}}  %% This line sets the color of the section titles
+\title{Matemáticas Ilustrativas + LEMA}
+\date{}
