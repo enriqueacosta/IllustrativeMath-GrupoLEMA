@@ -40,6 +40,10 @@ Por ejemplo:
 
 *  `libroTrabajo`: cosas que SOLO deben aparecer en el libro de trabajo. Solo los libros de trabajo deben incluir este componente.
 
+*  `acts-no-rayable`: actividades no rayables.  
+  
+*  `acts-rayable`: actividades rayables.
+
 *  `web`: cosas que SOLO deben aparecer en las versiones web (tanto para profesores como para estudiantes).
 
 *  `est-goal`: solo para los student goals (las frases "resumen" al inicio de cada lección de estilo [Representemos situaciones de división con dibujos]). Cada tipo de documento puede incluir o no los cools de acuerdo a si se incluye este componente o no.
