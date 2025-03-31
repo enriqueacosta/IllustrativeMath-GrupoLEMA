@@ -17,11 +17,50 @@
     <shortdescription></shortdescription>
   </image>
   <p component="libroTrabajo">
-    Más imágenes al final del libro.
-  </p>
-  <p component="libroTrabajo">
     @@@@@@@ Nota para el diagramador @@@@@@@: 
-    Incluir las tarjetas, no es necesario que tengan hojas en blanco atrás.
+    Incluir las tarjetas al final para recortar. Código de ejemplo:
+    <pre>
+    \begin{cutoutpage}
+
+    \includegraphics[page=1, trim=60 250 35 80,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \vfill
+    \noindent\rule{\linewidth}{0.4pt}
+    \vfill
+    \includegraphics[page=2, trim=60 250 35 60,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+
+    \cleardoublepage
+
+    \includegraphics[page=3, trim=60 250 35 80,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \vfill
+    \noindent\rule{\linewidth}{0.4pt}
+    \vfill
+    \includegraphics[page=4, trim=60 250 35 60,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+
+    \cleardoublepage
+
+    \includegraphics[page=5, trim=60 250 35 80,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \vfill
+    \noindent\rule{\linewidth}{0.4pt}
+    \vfill
+    \includegraphics[page=6, trim=60 250 35 60,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+
+    \cleardoublepage
+
+    \includegraphics[page=7, trim=60 250 35 80,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \vfill
+    \noindent\rule{\linewidth}{0.4pt}
+    \vfill
+    \includegraphics[page=8, trim=60 250 35 60,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+
+    \cleardoublepage
+
+    \includegraphics[page=9, trim=60 250 35 90,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \vfill
+    \noindent\rule{\linewidth}{0.4pt}
+    \vfill
+    \includegraphics[page=10, trim=60 250 35 60,clip, width=0.7\linewidth, center]{external/blm/pdf-source/bloques-solidos-geometricos-tarjetas.pdf}
+    \end{cutoutpage}
+    </pre>
   </p>
 </statement>
 
