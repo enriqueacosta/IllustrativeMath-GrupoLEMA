@@ -13,7 +13,12 @@
   </aside>
   <p component="libroTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir la hoja de conteo de caja e huevos en el libro de trabajo en la actividad.
+    Incluir la hoja de conteo de caja e huevos en el libro de trabajo en la actividad. Ejemplo de código:
+    <pre>
+    \begin{cutoutpage}[alternativa de caja de huevos para contar]
+    \includegraphics[trim=180 30 50 50, clip, center]{external/blm/pdf-source/contemos-cajasDeHuevos.pdf}
+    \end{cutoutpage}  
+    </pre>
   </p>
 </statement>
 

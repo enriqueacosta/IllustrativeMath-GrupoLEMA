@@ -9,6 +9,16 @@
   <image source="svg-source/tikz-file-148144">
     <shortdescription></shortdescription>
   </image>
+  <p component="libroTrabajo">
+    @@@@@@@@@ NOTA PARA DIAGRAMADOR @@@@@@@@@
+    Incluir el tablero de 5 con hoja en blanco por detrás para que los estudiantes lo recorten y usen. Ejemplo de código (que pone dos tableros en una sola hoja):
+    <pre>
+    \begin{cutoutpage}[tableros de 5 (recortar y laminar)]
+    \includegraphics[trim=250 50 100 0, clip, width=0.45\linewidth]{external/blm/pdf-source/tablero-de-5.pdf}
+    \includegraphics[trim=250 50 100 0, clip, width=0.45\linewidth]{external/blm/pdf-source/tablero-de-5.pdf}
+    \end{cutoutpage}
+    </pre>
+  </p>
 </statement>
 
 <solution>

@@ -17,7 +17,16 @@
   </p>
   <p component="libroTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir las tarjetas en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen.
+    Incluir las tarjetas en el libro de trabajo. Se deben dejar hojas en blanco atrás para que los estudiantes puedan recortar y usar.
+    Código de ejemplo:
+    <pre>
+    \begin{cutoutpage}[Tarjetas para "Grupos diferentes, misma cantidad" (recortar)]
+    \includegraphics[page=1, trim=55 35 35 0, clip, width=\linewidth, center]{external/blm/pdf-source/gruposDiferentesMismaCantidad.pdf}
+    \cleardoublepage
+    \includegraphics[page=2, trim=55 35 35 0, clip, width=\linewidth, center]{external/blm/pdf-source/gruposDiferentesMismaCantidad.pdf}
+    \cleardoublepage
+    \end{cutoutpage}
+    </pre>
   </p>
 </statement>
 

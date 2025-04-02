@@ -18,7 +18,30 @@
   </image>
   <p component="libroTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir la hoja para contar cubos encajables en el libro de trabajo en la actividad.
+    Incluir la hoja para contar cubos encajables en el libro de trabajo en la actividad. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen. Ejemplo de código:
+    <pre>
+    \begin{cutoutpage}[hojas para “Cubos encajables: Consigue y construye” (laminar)]
+    \includegraphics[page=1, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=2, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=3, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=4, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=5, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=6, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=7, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=8, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=9, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \clearpage
+    \includegraphics[page=10, trim=30 60 30 35, clip, center]{external/blm/pdf-source/centro-cubosEncajables-consigueYConstruye.pdf}
+    \end{cutoutpage}  
+    </pre>
   </p>
 </statement>
 

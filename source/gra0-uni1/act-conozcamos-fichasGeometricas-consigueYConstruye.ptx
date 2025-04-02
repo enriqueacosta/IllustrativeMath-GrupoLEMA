@@ -16,7 +16,31 @@
   </image>
   <p component="libroDeTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir las instrucciones para el centro ‘Fichas geométricas: Consigue y construye’ en el libro de trabajo.
+    Incluir las instrucciones para el centro ‘Fichas geométricas: Consigue y construye’ en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen. Es importante que en la versión impresa los lados de las fichas midan exactamente 1 pulgada. Ejemplo de código (pero está pendiente lo de 1 pulgada aunque puede que funcione porque no hay comandos que ajusten la escala del original):
+    <pre>
+    \begin{cutoutpage}[Tarjetas para Fichas geométricas: “Fichas geométricas: Consigue y construye” (laminar)]
+    \includegraphics[page=1, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=2, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=3, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=4, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=5, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=6, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=7, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=8, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=9, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \includegraphics[page=10, trim=10 30 50 50, clip, center]{external/blm/pdf-source/centro-fichasGeometricas-etapa3.pdf}
+    \clearpage
+    \end{cutoutpage}
+    </pre>
   </p>
 </statement>
 
@@ -115,7 +139,6 @@
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[+++++++++++++++++]</p>
     <ul>
       <li><q>¿Cómo descubrieron cuántas fichas geométricas necesitaban?</q></li>
     </ul>

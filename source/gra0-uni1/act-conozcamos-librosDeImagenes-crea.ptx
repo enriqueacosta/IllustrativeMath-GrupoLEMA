@@ -23,7 +23,18 @@
   </sidebyside>
   <p component="libroTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir las hojas de la actividad. No es necesario que tengan hojas en blanco por atrás porque los estudiantes no recortan las hojas.
+    Incluir las hojas de la actividad. No es necesario que tengan hojas en blanco por atrás porque los estudiantes no recortan las hojas. Ejemplo de código (se ponen dós hojas por página para ahorrar papel):
+    <pre>
+    \end{activity}%
+    \clearpage
+    \includegraphics[page=2, rotate=90, trim=110 35 35 35, clip, width=\linewidth, center]{external/blm/pdf-source/center-picture-books-k-5-stage-2-create-picture-books-stage-2-recording-sheet.pdf}
+    \hrule
+    \includegraphics[page=1, rotate=90, trim=100 35 35 35, clip, width=\linewidth, center]{external/blm/pdf-source/center-picture-books-k-5-stage-2-create-picture-books-stage-2-recording-sheet.pdf}
+    \clearpage
+    \includegraphics[page=4, rotate=90, trim=100 35 35 35, clip, width=\linewidth, center]{external/blm/pdf-source/center-picture-books-k-5-stage-2-create-picture-books-stage-2-recording-sheet.pdf}
+    \hrule
+    \includegraphics[page=3, rotate=90, trim=100 35 35 35, clip, width=\linewidth, center]{external/blm/pdf-source/center-picture-books-k-5-stage-2-create-picture-books-stage-2-recording-sheet.pdf}
+    </pre>
   </p>
 </statement>
 

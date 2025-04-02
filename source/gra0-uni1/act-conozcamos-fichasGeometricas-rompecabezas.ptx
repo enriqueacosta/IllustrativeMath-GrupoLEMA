@@ -15,7 +15,30 @@
   </image>
   <p component="libroTrabajo">
     @@@@@ NOTA PARA DIAGRAMADOR @@@@@@: 
-    Incluir los rompecabezas en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen.
+    Incluir los rompecabezas en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen. Importante: los lados de las figuras deben medir exactamente 1 pulgada en las páginas impresas, Ejemplo de código (pero falta asegurarse lo de 1 pulgada):
+    <pre>
+    \begin{cutoutpage}[Tarjetas para “Fichas geométricas: Rompecabezas” (laminar por ambos lados)]
+    \includegraphics[page=1, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=2, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=3, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=4, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=5, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=6, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=7, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=8, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=9, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \clearpage
+    \includegraphics[page=10, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \end{cutoutpage}
+    </pre>
   </p>
 </statement>
 
