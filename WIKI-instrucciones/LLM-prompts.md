@@ -151,6 +151,7 @@ sentence frame > esquema de oración
 partner discussion > discusión en pareja
 classroom > salón de clase
 revisit > retome
+give access to > asegúrese de que los estudiantes tengan a la mano
 ```
 
 Objetos:
