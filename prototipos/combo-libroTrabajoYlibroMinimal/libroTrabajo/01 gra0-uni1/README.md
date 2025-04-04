@@ -1,0 +1,1 @@
+Este prototipo muestra que no sirve mucho poner los BLM al final. Alargan mucho innecesariamente porque los BLM se usan entre varios estudiantes.
