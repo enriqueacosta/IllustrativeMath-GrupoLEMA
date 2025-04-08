@@ -1,22 +1,46 @@
 <?xml version='1.0' encoding='utf-8'?>
 <subsection xml:id="blm-cubosEncajables-tarjetas" xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-
-<!-- =============================================================== 
-  NOTA: la ref="act-conozcamos-construyeLoQueVes" en varios xref acá hace referencia 
-  al xml:id="act-conozcamos-construyeLoQueVes" de la <activity> correspondiente. 
-====================================================================  -->
-
 <shorttitle>
-  Tarjetas (<xref ref="centro-cubosEncajables-etapa2" text="title"/>)
+  Tarjetas con figuras de cubos encajables (<xref ref="centro-cubosEncajables" text="title"/>)
 </shorttitle>
 <title>
-  Hojas reproducibles: tarjetas para <xref ref="centro-cubosEncajables-etapa2" text="title"/>
+  Tarjetas con figuras de cubos encajables
 </title>
 
+<!-- centro y etapa correspondiente -->
+<introduction>
+  <p>
+    <line><xref ref="centro-cubosEncajables" text="title"/></line>
+    <line><xref ref="centro-cubosEncajables-etapa2" text="title"/></line>
+  </p>
+</introduction>
+
 <paragraphs>
-  <title>Actividad</title>
-  <p><xref ref="act-conozcamos-construyeLoQueVes" text="title"/></p>
+  <title>Muestra de páginas</title>  
+  <sidebyside>
+  <image source="blm/tikz-source/cubos-encajables-tarjetas-0.png">
+    <shortdescription></shortdescription>
+  </image>
+  <image source="blm/tikz-source/cubos-encajables-tarjetas-1.png">
+    <shortdescription></shortdescription>
+  </image>
+  <image source="blm/tikz-source/cubos-encajables-tarjetas-2.png">
+    <shortdescription></shortdescription>
+  </image>
+  </sidebyside>
+</paragraphs>
+
+<paragraphs>
+  <title>Actividades en las que se usa</title>
+  <ul>
+    <li><p><xref ref="act-conozcamos-construyeLoQueVes" text="title"/></p></li>
+    <li>
+      <p>
+        Actividades de momento de escoger centros.
+      </p>
+    </li>
+  </ul>
 </paragraphs>
 
 <paragraphs>
@@ -26,17 +50,5 @@
   </p>
 </paragraphs>
 
-<!-- <paragraphs>
-  <title>Cantidad de copias necesarias</title>
-  <p>[@@@@@@@@@@@@@@@@@@]</p>
-</paragraphs> -->
-
-
-<paragraphs component="web">
-  <title>Muestra de páginas</title>  
-  <image source="blm/tikz-source/cubos-encajables-tarjetas-0.png" width="50%">
-    <shortdescription>Ejemplo de tarjetas para armar con cubos encajables.</shortdescription>
-  </image>
-</paragraphs>
 
 </subsection>
