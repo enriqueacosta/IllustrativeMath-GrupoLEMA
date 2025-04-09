@@ -185,7 +185,7 @@ def process_content(content, include_raw_html, strip_qtags):
     # remove tabs
     extracted_content = extracted_content.replace("\t", "")
 
-    # If a <li> has tags inside, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
+    # If a <li> has <ul> tags inside, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
     # extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
     extracted_content = re.sub(r'(<li[^>]*>)([^<]+)\n(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
 
@@ -229,6 +229,9 @@ def process_content(content, include_raw_html, strip_qtags):
 
     # Drop <span> tags but keep the content inside them
     extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
+
+    # If a <li> has a "<p>[@@@@@@@@] WARNING: " fig warning, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
+    extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<p>\[@@@@@@@@\] WARNING:)', r'\1<p>\2</p>\3', extracted_content)
 
 
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
