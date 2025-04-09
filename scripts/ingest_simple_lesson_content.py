@@ -320,6 +320,7 @@ def create_replacement_xml(subsection):
         
         return (
             f'<solution>\n'
+            f'    <p>[+++++++++++++++]</p>\n'
             f'    {inner}\n'
             f'  </solution>'
         )
@@ -494,7 +495,7 @@ def update_time_values(lesson_plan_file, html_sections):
                 pattern = (r'<subsubsection xml:id="' + re.escape(lesson_id) +
                            r'-warm".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>')
                 replacement = (
-                    f'<subsubsection xml:id="{lesson_id}-warm" component="no-libroTrabajo">\n'
+                    f'<subsubsection xml:id="{lesson_id}-warm" component="warms">\n'
                     f'  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>\n'
                     f'  <title><custom ref="warm-up-leccion-titulo"/></title>\n'
                     f'  <!-- Tiempo en el título que solo ve el profesor -->\n'
@@ -508,7 +509,7 @@ def update_time_values(lesson_plan_file, html_sections):
                     pattern = (r'<subsubsection xml:id="' + re.escape(lesson_id) +
                                r'-act' + num + r'".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>')
                     replacement = (
-                        f'<subsubsection xml:id="{lesson_id}-act{num}" component="no-libroTrabajo">\n'
+                        f'<subsubsection xml:id="{lesson_id}-act{num}" component="acts-no-rayable">\n'
                         f'  <shorttitle>Actividad {num}</shorttitle>\n'
                         f'  <title>Actividad {num}</title>\n'
                         f'  <!-- Tiempo en el título que solo ve el profesor -->\n'
