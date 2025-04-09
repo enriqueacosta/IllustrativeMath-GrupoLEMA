@@ -98,11 +98,14 @@ def extract_html_sections(html_file):
                 if time_match:
                     synthesis_section['time'] = time_match.group(1)
                 sections.append(synthesis_section)
-                break  # Only process the first matching synthesis section
+                continue  # allow more <h2> sections to be parsed
 
     # Extract regular activity sections based on h2/h3 structure in the HTML body
     current_section = None
     for element in soup.body.children:
+    # for element in soup.body.find_all(recursive=False):
+    # for element in soup.body.find_all(['h2', 'h3'], recursive=False):
+        # print(f"  Found: {repr(element)}")  # debugging: to show text vs tags 
         if element.name == 'h2':
             # When encountering an h2, finish the current section and start a new one.
             if current_section:
@@ -424,6 +427,9 @@ def update_file(xml_file, html_sections, file_label):
             print("  Found match as warm-up!")
     elif file_label.startswith("activity-"):
         act_num = file_label.split("-")[1]
+        print(f"  Looking for Activity {act_num} ...")
+        for sec in html_sections:
+            print(f"  HTML title: '{sec['title']}'")
         matching_section = next((sec for sec in html_sections if sec['title'].startswith(f"Activity {act_num}:")), None)
         if matching_section:
             print(f"  Found match as Activity {act_num}!")
