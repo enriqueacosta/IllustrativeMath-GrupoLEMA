@@ -276,7 +276,7 @@ def indent_html_content(html_content):
         for child in li.contents:
             # For <q> tags, output on a new line with extra indentation.
             if getattr(child, "name", None) == "q":
-                parts.append("\n" + indent_child + str(child).strip())
+                parts.append("\n" + indent_child + str(child).strip() + " ")
             elif isinstance(child, NavigableString):
                 text = child.strip()
                 if text:
