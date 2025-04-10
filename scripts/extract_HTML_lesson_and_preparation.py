@@ -234,6 +234,13 @@ def process_content(content, include_raw_html, strip_qtags):
     extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<p>\[@@@@@@@@\] WARNING:)', r'\1<p>\2</p>\3', extracted_content)
 
 
+    # if a line starts with no tags and its parent is <body>, add <p> tags
+    body = content.find_parent("body")
+    if body:
+        for line in extracted_content.splitlines():
+            if line.strip() and not re.search(r'<[^>]+>', line):
+                extracted_content = extracted_content.replace(line, f"<p>{line.strip()}</p>")
+
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
     raw_html = f"<pre><code>{formatted_raw_html.replace('<', '&lt;').replace('>', '&gt;')}</code></pre>" if include_raw_html else ""
 
