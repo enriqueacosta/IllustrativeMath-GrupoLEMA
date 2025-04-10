@@ -105,7 +105,7 @@ def extract_html_sections(html_file):
     for element in soup.body.children:
     # for element in soup.body.find_all(recursive=False):
     # for element in soup.body.find_all(['h2', 'h3'], recursive=False):
-        # print(f"  Found: {repr(element)}")  # debugging: to found tags (if issue, it will be close to the end of this output) 
+        print(f"  Found: {repr(element)}")  # debugging: to found tags (if issue, it will be close to the end of this output) 
         if element.name == 'h2':
             # When encountering an h2, finish the current section and start a new one.
             if current_section:
