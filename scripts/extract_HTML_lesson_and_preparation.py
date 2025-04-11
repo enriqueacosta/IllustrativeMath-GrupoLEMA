@@ -177,6 +177,13 @@ def process_content(content, include_raw_html, strip_qtags):
         # Remove the entire figure
         figure.decompose()
 
+    # warn about any <table> tags
+    table_tags = content.find_all("table")
+    for table in table_tags:   
+        warning_html = BeautifulSoup("\n<p>[@@@@@@@@] WARNING: Table present.</p>\n", "html.parser")
+        table.insert_before(warning_html)
+        # table.decompose()  # Restore the decompose line to remove the table
+
     # print(content)
 
     # Convert extracted content to string and remove the outer <div> tag
