@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-contemosYOrganicemos" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 2 </shorttitle>
+<title>Lección 2 -<nbsp/></title>
+<title>Contemos y organicemos</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>Descubramos cuántos objetos tenemos.</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[+++++++++++++++]</li>
+    <li>Count groups of up to 10 objects.</li>
+    <li>Understand that the arrangement of objects does not change the number of objects.</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="csss-leccion-titulo"/></title> 
+    <p>K.CC, K.CC.A.1, K.CC.B.4, K.CC.B.4.b, K.CC.B.5</p>
+  </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to count objects and notice that the arrangement of a group of objects does not change the number of objects.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-RRRRRRRR-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-SSSSSSSS-mat.ptx"/>
+      </li>
+    </ul>  -->
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Students count the same group of objects in different arrangements several times throughout the lesson. It is important that students repeatedly experience counting the same group of objects in different arrangements to learn that the arrangement does not change the quantity. This understanding develops over time and it is not necessary for all students to articulate at the end of this lesson. Students may continue to recount the same group of objects that has been rearranged until they are confident that the quantity remains the same. This concept will be revisited in future lessons and units.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>What was the best question you asked students today? Why would you consider it the best based on what students said or did?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-contemosYOrganicemos-warm" component="warms">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-conteoGrupal-dedosYNumeros.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-contemosYOrganicemos-act1" component="acts-no-rayable">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-contemosOrganicemosContemos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-contemosOrganicemosContemos-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-contemosYOrganicemos-act2" component="acts-no-rayable">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-conozcamos-revuelveYSaca-cuenta.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-SSSSSSSSS-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+<subsubsection xml:id="lec-contemosYOrganicemos-act3" component="acts-no-rayable">
+  <shorttitle>Actividad 3</shorttitle>
+  <title>Actividad 3</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(25 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-centros-escoger11.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-TTTTTTTT-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-contemosYOrganicemos-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
+
+  <p>[+++++++++++++++]</p>
+  <p>Display 7 objects in a line.</p>
+<p><q>¿Cuántos objetos hay?</q></p>
+<p>Invite a student to count the objects or point to each object as the class counts.</p>
+<p>Arrange the same 7 objects on a 5-frame, with the 2 additional objects arranged under the 5-frame, as show in this image:</p>
+<image source="svg-source/tikz-file-147671">
+  <shortdescription>tablero de 5 con 7 fichas</shortdescription>
+</image>
+<p><q>¿Cómo podemos saber cuántos objetos hay?</q> (There are still 7 because they are the same objects. We can count them.)</p>
+<p>Invite a student to count the objects or point to each object as the class counts.</p>
+<p><q>Todavía hay 7 objetos. Reorganizamos los objetos, pero todavía hay 7</q></p>
+
+</subsubsection>
+
+
+
+
+</subsection>

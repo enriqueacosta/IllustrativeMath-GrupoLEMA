@@ -177,6 +177,13 @@ def process_content(content, include_raw_html, strip_qtags):
         # Remove the entire figure
         figure.decompose()
 
+    # warn about any <table> tags
+    table_tags = content.find_all("table")
+    for table in table_tags:   
+        warning_html = BeautifulSoup("\n<p>[@@@@@@@@] WARNING: Table present.</p>\n", "html.parser")
+        table.insert_before(warning_html)
+        # table.decompose()  # uncomment to remove the table from the output
+
     # print(content)
 
     # Convert extracted content to string and remove the outer <div> tag
@@ -185,7 +192,7 @@ def process_content(content, include_raw_html, strip_qtags):
     # remove tabs
     extracted_content = extracted_content.replace("\t", "")
 
-    # If a <li> has tags inside, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
+    # If a <li> has <ul> tags inside, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
     # extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
     extracted_content = re.sub(r'(<li[^>]*>)([^<]+)\n(\s*<ul>)', r'\1<p>\2</p>\n\3', extracted_content)
 
@@ -230,6 +237,16 @@ def process_content(content, include_raw_html, strip_qtags):
     # Drop <span> tags but keep the content inside them
     extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
 
+    # If a <li> has a "<p>[@@@@@@@@] WARNING: " fig warning, make sure to add <p> tags to any parts that don't have tags but don't absorb the \n if the text that gets wrapped
+    extracted_content = re.sub(r'(<li[^>]*>)([^<]+)(\s*<p>\[@@@@@@@@\] WARNING:)', r'\1<p>\2</p>\3', extracted_content)
+
+
+    # if a line starts with no tags and its parent is <body>, add <p> tags
+    body = content.find_parent("body")
+    if body:
+        for line in extracted_content.splitlines():
+            if line.strip() and not re.search(r'<[^>]+>', line):
+                extracted_content = extracted_content.replace(line, f"<p>{line.strip()}</p>")
 
     formatted_raw_html = format_raw_html(extracted_content) if include_raw_html else ""
     raw_html = f"<pre><code>{formatted_raw_html.replace('<', '&lt;').replace('>', '&gt;')}</code></pre>" if include_raw_html else ""

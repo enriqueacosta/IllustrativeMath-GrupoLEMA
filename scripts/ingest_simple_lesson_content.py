@@ -98,11 +98,14 @@ def extract_html_sections(html_file):
                 if time_match:
                     synthesis_section['time'] = time_match.group(1)
                 sections.append(synthesis_section)
-                break  # Only process the first matching synthesis section
+                continue  # allow more <h2> sections to be parsed
 
     # Extract regular activity sections based on h2/h3 structure in the HTML body
     current_section = None
     for element in soup.body.children:
+    # for element in soup.body.find_all(recursive=False):
+    # for element in soup.body.find_all(['h2', 'h3'], recursive=False):
+        print(f"  Found: {repr(element)}")  # debugging: to found tags (if issue, it will be close to the end of this output) 
         if element.name == 'h2':
             # When encountering an h2, finish the current section and start a new one.
             if current_section:
@@ -276,7 +279,7 @@ def indent_html_content(html_content):
         for child in li.contents:
             # For <q> tags, output on a new line with extra indentation.
             if getattr(child, "name", None) == "q":
-                parts.append("\n" + indent_child + str(child).strip())
+                parts.append("\n" + indent_child + str(child).strip() + " ")
             elif isinstance(child, NavigableString):
                 text = child.strip()
                 if text:
@@ -320,6 +323,7 @@ def create_replacement_xml(subsection):
         
         return (
             f'<solution>\n'
+            f'    <p>[+++++++++++++++]</p>\n'
             f'    {inner}\n'
             f'  </solution>'
         )
@@ -423,6 +427,9 @@ def update_file(xml_file, html_sections, file_label):
             print("  Found match as warm-up!")
     elif file_label.startswith("activity-"):
         act_num = file_label.split("-")[1]
+        print(f"  Looking for Activity {act_num} ...")
+        for sec in html_sections:
+            print(f"  HTML title: '{sec['title']}'")
         matching_section = next((sec for sec in html_sections if sec['title'].startswith(f"Activity {act_num}:")), None)
         if matching_section:
             print(f"  Found match as Activity {act_num}!")
@@ -494,7 +501,7 @@ def update_time_values(lesson_plan_file, html_sections):
                 pattern = (r'<subsubsection xml:id="' + re.escape(lesson_id) +
                            r'-warm".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>')
                 replacement = (
-                    f'<subsubsection xml:id="{lesson_id}-warm" component="no-libroTrabajo">\n'
+                    f'<subsubsection xml:id="{lesson_id}-warm" component="warms">\n'
                     f'  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>\n'
                     f'  <title><custom ref="warm-up-leccion-titulo"/></title>\n'
                     f'  <!-- Tiempo en el título que solo ve el profesor -->\n'
@@ -508,7 +515,7 @@ def update_time_values(lesson_plan_file, html_sections):
                     pattern = (r'<subsubsection xml:id="' + re.escape(lesson_id) +
                                r'-act' + num + r'".*?<title component="profesor"><nbsp/>\(.*?mins\)</title>')
                     replacement = (
-                        f'<subsubsection xml:id="{lesson_id}-act{num}" component="no-libroTrabajo">\n'
+                        f'<subsubsection xml:id="{lesson_id}-act{num}" component="acts-no-rayable">\n'
                         f'  <shorttitle>Actividad {num}</shorttitle>\n'
                         f'  <title>Actividad {num}</title>\n'
                         f'  <!-- Tiempo en el título que solo ve el profesor -->\n'

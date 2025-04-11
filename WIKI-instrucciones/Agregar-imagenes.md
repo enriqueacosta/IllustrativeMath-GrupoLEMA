@@ -14,12 +14,13 @@
        | .png  | source/assets/png-source  |
        | .jpg  | source/assets/jpg-source  |
 
-   *  si está usando VSCode en su computador (no está en el navegador web):
+   *  si está usando VSCode en su computador sin codespace (usando github desktop)
+      -  simplemente mueva el archivo en su computador a la carpeta correspondiente en el repositorio.
+            
+   *  si está usando VSCode en su computador con un codespace (no está en el navegador web):
        - para subir (agregar) la imagen al repositorio, debe arrastrar (drag-and-drop) el archivo a la carpeta correspondiente  
          
          <img width="500" alt="Screenshot 2024-09-07 at 12 32 32 PM" src="imagenes/258256026-94049dd2-ebaa-495c-961e-b9b25e117dfd.png">
-
-        
 
    *  si está usando el codespace en el navegador web:
       -  para subir (agregar) la imagen al repositorio, debe hacer click derecho en la carpeta correspondiente y seleccionar `upload`. Después seleccionar el archivo que quiere agregrar. Asegúsere de que el nombre del archivo no esté siendo usado ya.
