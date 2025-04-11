@@ -180,8 +180,8 @@
     <section xml:id="centros-gra0-uni1" component="profesor">
       <title>Centros</title>
       <xi:include href="../centros/centro-bloquesSolidosGeometricos.ptx"/>
-      <xi:include href="../centros/centro-librosDeImagenes.ptx"/>
       <xi:include href="../centros/centro-cubosEncajables.ptx"/>
+      <xi:include href="../centros/centro-librosDeImagenes.ptx"/>
       <xi:include href="../centros/centro-fichasGeometricas.ptx"/>
       <!-- <xi:include href="../centros/centro-tablerosDe5.ptx"/> -->
     </section>
@@ -189,10 +189,202 @@
     <!-- Hojas Reproducibles (BLM) -->
     <section xml:id="BLM-gra0-uni1" component="profesor">
       <title>Hojas reproducibles</title>
+      <introduction>
+        <p>
+          En esta sección se encuentran las hojas reproducibles que acompañan a las actividades de la unidad. 
+          Estas hojas pueden ser impresas y distribuidas a los estudiantes.
+        </p>
+        <!-- <table> -->
+          <!-- <title>Hojas Reproducibles de la Unidad 1</title> -->
+          <tabular halign="center">
+            <col width="25%"/>
+            <col width="20%"/>
+            <col width="10%"/>
+            <col width="5%"/>
+            <col width="5%"/>
+            <col width="5%"/>
+            <col width="5%"/>
+            <row header="yes" bottom="major">
+              <cell>Nombre</cell>
+              <cell>Centro</cell>
+              <cell>Estudiantes por copia</cell>
+              <cell>Rayable</cell>
+              <cell>Hay que recortar</cell>
+              <cell>Papel grueso</cell>
+              <cell>Color</cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-bloquesSolidosGeometricos-tarjetasBloques">Tarjetas con figuras para armar con bloques</xref></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-bloquesSolidosGeometricos" text="title"/> - 
+                  <xref ref="centro-bloquesSolidosGeometricos-etapa2" text="title"/>
+                </p>
+              </cell>
+              <cell>8</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><xref ref="blm-cubosEncajables-tarjetas">Tarjetas de bloques con figuras para armar</xref></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-cubosEncajables" text="title"/> - 
+                  <xref ref="centro-cubosEncajables-etapa2" text="title"/>
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>No</cell>
+              <cell>Si</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+            
+            <row bottom="minor">
+              <cell><p><xref ref="blm-tableroConteo" text="title"/></p></cell>
+              <cell>
+                <p>
+                  No
+                </p>
+              </cell>
+              <cell>1</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>Si</cell>
+              <cell>No</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><p><xref ref="blm-alternativaCajaHuevosConteo" text="title"/></p></cell>
+              <cell>
+                <p>
+                  No
+                </p>
+              </cell>
+              <cell>1</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-cubosEncajables-etapa3-instrucciones" text="title"/></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-cubosEncajables" text="title"/> - <xref ref="centro-cubosEncajables-etapa3" text="title"/>
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><p><xref ref="blm-tableroDe5" text="title"/></p></cell>
+              <cell>
+                <p>
+                  No
+                </p>
+              </cell>
+              <cell>1</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>Sí</cell>
+              <cell>No</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><p><xref ref="blm-preguntasNosotros-tablerosDe5" text="title"/></p></cell>
+              <cell>
+                <p>
+                  No
+                </p>
+              </cell>
+              <cell>Toda la clase</cell>
+              <cell>Sí</cell>
+              <cell>No</cell>
+              <cell>Sí</cell>
+              <cell>No</cell>
+            </row>
+            
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-fichasGeometricas-etapa2" text="title"/></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-fichasGeometricas" text="title"/> - <xref ref="centro-fichasGeometricas-etapa2" text="title"/>
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+            
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-fichasGeometricas-etapa3" text="title"/></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-fichasGeometricas" text="title"/> - <xref ref="centro-fichasGeometricas-etapa3" text="title"/>
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><p><xref ref="blm-gruposDiferentesMismaCantidad" text="title"/></p></cell>
+              <cell>
+                <p>
+                  No
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>Sí</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+            
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-librosDeImagenes-paginasBlancoLibroImagenes" text="title"/></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-librosDeImagenes" text="title"/> - <xref ref="centro-librosDeImagenes-etapa2" text="title"/>
+                </p>
+              </cell>
+              <cell>1</cell>
+              <cell>Sí</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+
+          </tabular>
+        <!-- </table> -->
+      </introduction>
+
       <xi:include href="../blm/blm-centro-bloquesSolidosGeometricos-tarjetasBloques.ptx"/>
-      <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/>
+      <xi:include href="../blm/blm-centro-cubosEncajables-tarjetas.ptx"/>
+      <xi:include href="../blm/blm-tableroConteo.ptx"/>
+      <xi:include href="../blm/blm-alternativaCajaHuevosConteo.ptx"/>
+      <xi:include href="../blm/blm-centro-cubosEncajables-etapa3-instrucciones.ptx"/>
+      <xi:include href="../blm/blm-tableroDe5.ptx"/>
+      <xi:include href="../blm/blm-preguntasNosotros-tablerosDe5.ptx"/>
+      <xi:include href="../blm/blm-centro-fichasGeometricas-rompecabezas.ptx"/>
+      <xi:include href="../blm/blm-centro-fichasGeometricas-etapa3.ptx"/>
+      <xi:include href="../blm/blm-gruposDiferentesMismaCantidad.ptx"/>
       <xi:include href="../blm/blm-centro-librosDeImagenes-paginasBlancoLibroImagenes.ptx"/>
-      <!-- <xi:include href="../blm/blm-centro-tablerosDe5-tableroDe5.ptx"/> -->
+
+      <!-- <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/> -->
       <!-- <xi:include href="../blm/blm-centro-tablerosDe5-hojaRegistro.ptx"/> -->
       <!-- <xi:include href="../blm/blm-centro-tablerosDe5-tableroDeNumeros.ptx"/> -->
     </section>
