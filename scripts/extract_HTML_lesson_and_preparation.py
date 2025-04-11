@@ -182,7 +182,7 @@ def process_content(content, include_raw_html, strip_qtags):
     for table in table_tags:   
         warning_html = BeautifulSoup("\n<p>[@@@@@@@@] WARNING: Table present.</p>\n", "html.parser")
         table.insert_before(warning_html)
-        # table.decompose()  # Restore the decompose line to remove the table
+        # table.decompose()  # uncomment to remove the table from the output
 
     # print(content)
 
