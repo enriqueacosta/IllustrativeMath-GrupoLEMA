@@ -204,7 +204,7 @@
             <col width="5%"/>
             <col width="5%"/>
             <col width="5%"/>
-            <row header="yes" bottom="minor">
+            <row header="yes" bottom="major">
               <cell>Nombre</cell>
               <cell>Centro</cell>
               <cell>Estudiantes por copia</cell>
@@ -213,7 +213,7 @@
               <cell>Papel grueso</cell>
               <cell>Color</cell>
             </row>
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-centro-bloquesSolidosGeometricos-tarjetasBloques">Tarjetas con figuras para armar con bloques</xref></p></cell>
               <cell>
                 <p>
@@ -227,7 +227,7 @@
               <cell>No</cell>
               <cell>No</cell>
             </row>
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-cubosEncajables-tarjetas">Tarjetas de bloques con figuras para armar</xref></p></cell>
               <cell>
                 <p>
@@ -242,7 +242,7 @@
               <cell>No</cell>
             </row>
             
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-tableroConteo" text="title"/></p></cell>
               <cell>
                 <p>
@@ -256,7 +256,7 @@
               <cell>No</cell>
             </row>
 
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-alternativaCajaHuevosConteo" text="title"/></p></cell>
               <cell>
                 <p>
@@ -270,7 +270,7 @@
               <cell>No</cell>
             </row>
 
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-centro-cubosEncajables-etapa3-instrucciones" text="title"/></p></cell>
               <cell>
                 <p>
@@ -284,7 +284,7 @@
               <cell>No</cell>
             </row>
 
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-tableroDe5" text="title"/></p></cell>
               <cell>
                 <p>
@@ -298,7 +298,7 @@
               <cell>No</cell>
             </row>
 
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-preguntasNosotros-tablerosDe5" text="title"/></p></cell>
               <cell>
                 <p>
@@ -312,11 +312,25 @@
               <cell>No</cell>
             </row>
             
-            <row>
+            <row bottom="minor">
               <cell><p><xref ref="blm-centro-fichasGeometricas-etapa2" text="title"/></p></cell>
               <cell>
                 <p>
                   <xref ref="centro-fichasGeometricas" text="title"/> - <xref ref="centro-fichasGeometricas-etapa2" text="title"/>
+                </p>
+              </cell>
+              <cell>2</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+              <cell>No</cell>
+            </row>
+            
+            <row bottom="minor">
+              <cell><p><xref ref="blm-centro-fichasGeometricas-etapa3" text="title"/></p></cell>
+              <cell>
+                <p>
+                  <xref ref="centro-fichasGeometricas" text="title"/> - <xref ref="centro-fichasGeometricas-etapa3" text="title"/>
                 </p>
               </cell>
               <cell>2</cell>
@@ -338,6 +352,7 @@
       <xi:include href="../blm/blm-tableroDe5.ptx"/>
       <xi:include href="../blm/blm-preguntasNosotros-tablerosDe5.ptx"/>
       <xi:include href="../blm/blm-centro-fichasGeometricas-rompecabezas.ptx"/>
+      <xi:include href="../blm/blm-centro-fichasGeometricas-etapa3.ptx"/>
 
       <!-- <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/> -->
       <!-- <xi:include href="../blm/blm-centro-librosDeImagenes-paginasBlancoLibroImagenes.ptx"/> -->
