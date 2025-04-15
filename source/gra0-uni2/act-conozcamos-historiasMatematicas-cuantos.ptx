@@ -2,15 +2,27 @@
 
 <activity xml:id="act-conozcamos-historiasMatematicas-cuantos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Conozcamos “Historias matemáticas: ¿Cuántos?”</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Escoge un centro.</p>
+  <p>Historias matemáticas</p>
+  <image source="png-source/MathStories (1).png" width="50%">
+    <shortdescription>Centro historias matemáticas</shortdescription>
+ </image>
+  <p>Cubos encajables</p>
+  <image source="svg-source/tikz-file-128850">
+    <shortdescription>Centro cubos encajables</shortdescription>
+ </image>
+  <p>Carreras con números</p>
+  <image source="png-source/Number race.png" width="50%">
+    <shortdescription>Centro carreras con números</shortdescription>
+ </image>
 </statement>
 
-<solution>
+<!--<solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution>-->
 
 
 <!-- ============================================================== 
@@ -92,12 +104,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -105,7 +117,11 @@
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li><p>Display image from the Math Stories blackline master.</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Playground." class="h-max-height--5-lines" role="image" src="../../../../../../figures/count-playground.png"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Playground." role="image" src="../../../../../../figures/count-playground.png" width="80%"/></li>
+      <li>Display image from the Math Stories blackline master.
+        <image source="png-source/count-playground.png">
+          <shortdescription>Patio de juegos</shortdescription>
+       </image>
+       </li>
       <li>
         <q>¿Cuántos pájaros hay en la imagen? Cuéntenle a su compañero cómo lo descifraron</q>
       </li>
@@ -113,18 +129,18 @@
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 
