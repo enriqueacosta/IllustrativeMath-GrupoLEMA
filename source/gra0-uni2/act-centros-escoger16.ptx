@@ -2,15 +2,45 @@
 
 <activity xml:id="act-centros-escoger16" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Centros: Momento de escoger</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Escoge un centro</p>
+  <sbsgroup widths="30% 50%" margins="0% 0%">
+    <sidebyside>
+      <p>Menos, lo mismo, más</p>
+      <p>Bingo</p>   
+    </sidebyside>
+    <sidebyside widths="30% 30%" margins="0% 20%">
+      <image source="svg-source/tikz-file-170981">
+        <shortdescription>Centro menos, lo mismo, más.</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-148291">
+        <shortdescription>Centro Bingo.</shortdescription>
+      </image>   
+    </sidebyside>
+    <sidebyside>
+      <p>Historias matemáticas</p>
+      <p>Cubos encajables</p> 
+    </sidebyside>
+    <sidebyside widths="25% 30%" margins="0% 20%">
+      <image source="png-source/MathStories (1).png" width="50%">
+        <shortdescription>Centro historias matemáticas</shortdescription>
+      </image>  
+      <image source="svg-source/tikz-file-128850">
+        <shortdescription>Centro cubos encajables</shortdescription>
+     </image>    
+    </sidebyside> 
+  </sbsgroup>
+  <p>Carrera con números</p>
+  <image source="png-source/Number Race.png" margins="0% 70%">
+    <shortdescription>Centro carrera con números.</shortdescription>
+  </image> 
 </statement>
 
-<solution>
+<!--<solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution>-->
 
 
 <!-- ============================================================== 
@@ -72,8 +102,8 @@
     <ul>
       <li>Invite students to work at the center of their choice.</li>
       <li>8 minutes: center work time</li>
-      <li>"Escojan qué quieren hacer ahora" //
-        <q>Choose what you would like to do next.</q>
+      <li>
+        <q>Escojan qué quieren hacer ahora</q>
       </li>
       <li>8 minutes: center work time</li>
     </ul>
@@ -87,12 +117,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -107,18 +137,18 @@
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 
