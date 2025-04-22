@@ -2,10 +2,10 @@
 
 <activity xml:id="act-compararTarjetasTableros5" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Comparemos tarjetas de tableros de 5</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál tarjeta tiene más puntos?</p>
 </statement>
 
 <solution>
@@ -48,7 +48,14 @@
     <ul>
       <li>Groups of 2</li>
       <li>Give each student a set of cards.</li>
-      <li><p>Display two cards:  </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, 4 counters." role="image" src="https://figures/tikz-file-147869.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, 4 counters." role="image" src="https://figures/tikz-file-147869.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled. Below, 1 counter." role="image" src="https://figures/tikz-file-147369.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled. Below, 1 counter." role="image" src="https://figures/tikz-file-147369.svg" width="80%"/></li>
+      <li><p>Display two cards:</p>  
+        <image source="svg-source/tikz-file-147869">
+          <shortdescription>4 puntos</shortdescription>
+        </image> 
+        <image source="svg-source/tikz-file-147369">
+          <shortdescription>6 puntos</shortdescription>
+        </image>
+      </li>
       <li>
         <q>¿Qué observan? ¿Qué se preguntan?</q>
       </li>
@@ -66,7 +73,14 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li><p>Display two cards: </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled. Below, 1 counter." role="image" src="../../../../../../figures/tikz-file-147369.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled. Below, 1 counter." role="image" src="../../../../../../figures/tikz-file-147369.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Dot 5 frame card." role="image" src="../../../../../../figures/tikz-file-147815.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Dot 5 frame card." role="image" src="../../../../../../figures/tikz-file-147815.svg" width="80%"/></li>
+      <li><p>Display two cards:</p> 
+        <image source="svg-source/tikz-file-147369">
+          <shortdescription>6 puntos</shortdescription>
+        </image>
+        <image source="svg-source/tikz-file-147815">
+          <shortdescription>8 puntos</shortdescription>
+        </image> 
+      </li>
       <li>
         <q>¿Cual tarjeta tiene más puntos?</q>
       </li>
@@ -91,12 +105,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -104,7 +118,14 @@
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li><p>Display two cards: </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Group of dots." role="image" src="../../../../../../figures/tikz-file-147840.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Group of dots." role="image" src="../../../../../../figures/tikz-file-147840.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled." role="image" src="../../../../../../figures/tikz-file-148286.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="5 frame, filled." role="image" src="../../../../../../figures/tikz-file-148286.svg" width="80%"/></li>
+      <li><p>Display two cards:</p>
+        <image source="svg-source/tikz-file-147840">
+          <shortdescription>7 puntos</shortdescription>
+        </image>
+        <image source="svg-source/tikz-file-148286">
+          <shortdescription>5 puntos</shortdescription>
+        </image>
+      </li>
       <li>
         <q>¿Cuál tarjeta tiene más puntos? ¿Cómo lo saben?</q> (This card has more dots because they both have a full 5-frame, but this one has extra dots underneath.)
       </li>
@@ -123,15 +144,17 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>MLR8 Discussion Supports. Make sure students can explain how they know which card has more. Invite groups to rehearse what they will say when they share with the whole class.</p>
+    <p>Advances: Speaking, Conversing</p>
   </paragraphs>
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 
