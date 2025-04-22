@@ -2,15 +2,23 @@
 
 <activity xml:id="act-estacionesDeConteo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Estaciones de conteo</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <image component="estudiante" source="tikz-source/act-estacionesDeConteo-tab">
+      <shortdescription>Tabla</shortdescription>
+  </image>
+  <image component="profesor" source="tikz-source/act-estacionesDeConteo-tab-profe">
+      <shortdescription>Tabla</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Students write the letter from each station under the number that shows how many objects are in the collection.</p>
+    <image source="tikz-source/act-estacionesDeConteo-sol-tab">
+      <shortdescription>Tabla</shortdescription>
+    </image>
   </solution>
 
 
@@ -87,12 +95,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -108,17 +116,19 @@
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs> -->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Action and Expression: Develop Expression and Communication. Students might need support counting the collection of objects that are greater than 5. Give students access to 5-frames so that they can use them to help count the collections.</p>
+    <p>Supports accessibility for: Conceptual Processing, Organization, Visual-Spatial Processing</p>
   </paragraphs>
 
 </postlude>
