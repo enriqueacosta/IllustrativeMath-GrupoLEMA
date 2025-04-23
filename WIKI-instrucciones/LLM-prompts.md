@@ -216,3 +216,5 @@ Ejemplo para traducir `source/assets/png-source/group grid.png`:
 Use python to change the text in this png to be "mi grupo" and "grupo de mi compañero". Keep the transparency and all the rest of the image intact. Only change the texts. Make sure you remove the old texts.
 ```
 El script de python que escribió el LLM (con ajustes) está en `source/assets/png-source/group grid esp.py`
+
+También hay un script general ahora en `scripts/ocr_png_text_replace.py` que hace esto usando OCR. Solo hay que configurar el script para darle los nombres de los archivos y los textos que se quieren remplazar.
