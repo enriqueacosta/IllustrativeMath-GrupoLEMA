@@ -208,3 +208,11 @@ Examples:
 *   <m>1200.532 \unit{mg}</m> ---> <m>\num{1200.532} \unit{mg}</m>
 *  x+ \frac{45.321}{0.1}  ---> x+ \frac{\num{45.321}}{\num{0.1}}
 ```
+
+
+## Traducir imágenes
+Ejemplo para traducir `source/assets/png-source/group grid.png`:
+```
+Use python to change the text in this png to be "mi grupo" and "grupo de mi compañero". Keep the transparency and all the rest of the image intact. Only change the texts. Make sure you remove the old texts.
+```
+El script de python que escribió el LLM (con ajustes) está en `source/assets/png-source/group grid esp.py`
