@@ -259,6 +259,38 @@ def print_lesson_structure(lessons: List[Lesson]):
             if lesson.cooldown.title:
                 print(f"  - title: {lesson.cooldown.title}")
 
+def print_tab_separated(lessons: List[Lesson]):
+    """Print the lesson structure in tab separated format."""
+    for lesson in lessons:
+        # print(f"\nLección {lesson.lesson_number}:")
+        
+        parts = [str(lesson.lesson_number), lesson.xml_id]
+        
+        # Warm-up
+        if lesson.warmup:
+            parts.append(lesson.warmup.xml_id)
+        else:
+            parts.append('')  # empty for missing warmup
+
+        # Activities
+        activities = lesson.activities
+        for i in range(2):  # Expecting 2 main activities
+            if i < len(activities):
+                parts.append(activities[i].xml_id)
+            else:
+                parts.append('')  # empty if not enough activities
+
+        # Cooldown
+        if lesson.cooldown:
+            parts.append(lesson.cooldown.xml_id)
+        else:
+            parts.append('')  # empty for missing cooldown
+
+        # Now join with tabs
+        lesson_tab_info = '\t'.join(parts)
+        print(lesson_tab_info)
+
+
 def main():
     import sys
     if len(sys.argv) != 2:
@@ -267,6 +299,7 @@ def main():
         
     unit_folder = sys.argv[1]
     lessons = process_unit_folder(unit_folder)
+    print_tab_separated(lessons)
     print_lesson_structure(lessons)
 
 if __name__ == "__main__":
