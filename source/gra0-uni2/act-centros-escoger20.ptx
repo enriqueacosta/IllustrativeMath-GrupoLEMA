@@ -1,16 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-conozcamos-bingo-imagenesNumeros" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-centros-escoger20" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>Conozcamos “Bingo: Imágenes y números”</title>
+<title>Centros: Momento de escoger</title>
 
 <statement>
   <p>Escoge un centro.</p>
   <sidebyside>
+    <p>Historias matemáticas</p>
+    <p>Mi mate-libreta</p>
+  </sidebyside>
+  <sidebyside widths="25% 28%" margins="0% 20%">
+    <image source="png-source/MathStories (1).png">
+      <shortdescription>Centro Historias matemáticas.</shortdescription>
+    </image>
+    <image source="png-source/city-full-update shortened.png">
+      <shortdescription>Centro mi Mate-libreta.</shortdescription>
+    </image>
+  </sidebyside>
+  <sidebyside>
     <p>Bingo</p>
     <p>Carrera con números</p>
   </sidebyside>
-  <sidebyside widths="25% 25%" margins="0% 25%">
+  <sidebyside widths="22% 25%" margins="0% 25%">
     <image source="svg-source/tikz-file-148291">
       <shortdescription>Centro Bingo.</shortdescription>
     </image>
@@ -52,9 +64,12 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to learn stage 2 in the Bingo center. Students recognize numbers and identify groups that have the given number of images. The images are presented in a variety of arrangements, such as on fingers, in 5-frames, in lines, or in dot cube arrangements. Students may recognize the number of images or may count the images. </p>
-<p>After they participate in the center, students choose from any stage of previously introduced centers.</p>
+    <p>The purpose of this activity is for students to choose from activities that offer practice composing, decomposing, and comparing numbers.</p>
+<p>Students choose from any stage of previously introduced centers.</p>
 <ul>
+      <li>Math Stories</li>
+      <li>Math Libs</li>
+      <li>Bingo</li>
       <li>Number Race</li>
       <li>Geoblocks</li>
       <li>Math Fingers</li>
@@ -67,7 +82,7 @@
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./act-conozcamos-bingo-imagenesNumeros-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-centros-escoger20-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -75,11 +90,14 @@
     <title><custom ref="launch-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Groups of 4</li>
-      <li>Give each student a game board. Give each group of students counters and a set of cards.</li>
       <li>
-        <q>Vamos a aprender una nueva forma de jugar ‘Bingo’. Hay tarjetas nuevas que tienen números. ¿Qué hacen en cada turno cuando juegan ‘Bingo’ con su grupo?</q>
+        <q>Hoy vamos a escoger centros de los que ya conocemos</q>
       </li>
+      <li>Display the center choices in the student book.</li>
+      <li>
+        <q>Piensen qué les gustaría hacer primero</q>
+      </li>
+      <li>30 seconds: quiet think time</li>
     </ul>
   </paragraphs>
 
@@ -89,17 +107,12 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>If needed, say:<q>Volteen una tarjeta y pónganla en la mitad donde todos puedan verla. Pongan una ficha en cada casilla que tenga el mismo número de cosas. Tomen turnos para voltear las tarjetas del montón. El juego termina cuando alguien tenga 4 fichas en línea</q></li>
-      <li>
-        7 minutes: small-group work time
-      </li>
-      <li>
-          <q>Ahora pueden escoger otro centro. También pueden seguir jugando ‘Bingo’</q>
-      </li>
-      <li>Display the center choices in the student book.</li>
       <li>Invite students to work at the center of their choice.</li>
       <li>8 minutes: center work time</li>
-      <li>If time, invite students to choose another center.</li>
+      <li>
+        <q>Escojan qué quieren hacer ahora</q>
+      </li>
+      <li>8 minutes: center work time</li>
     </ul>
   </paragraphs>
 
@@ -114,17 +127,18 @@
   <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
   </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
     <ul>
-      <li>Display the Bingo gameboards with counters on all of the groups of 5.</li>
-      <li><q>¿Cuál tarjeta piensan que este grupo volteó? ¿Cómo lo saben?</q> (They flipped over the card with the number 5. They covered up the groups with 5 things.)</li>
+      <li>
+        <q>Digan una pregunta matemática que les hizo su compañero hoy durante el tiempo de centros</q>
+      </li>
     </ul>
   </paragraphs>
 

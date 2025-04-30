@@ -1,16 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-escoger20" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-centros-escoger24" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Centros: Momento de escoger</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Escoge un centro.</p>
+  <sbsgroup margins="0% 70%">
+    <sidebyside>
+      <p>Menos, lo mismo, más</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-170981">
+        <shortdescription>Centro menos, lo mismo y más.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>Mi mate-libreta</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/city-full-update shortened.png">
+        <shortdescription>Centro mi Mate-libreta.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>Carrera con números</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/Number Race.png">
+        <shortdescription>Centro carrera con números.</shortdescription>
+      </image>  
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
-<solution>
+<!--<solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution>-->
 
 
 <!-- ============================================================== 
@@ -28,15 +54,11 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to choose from activities that offer practice composing, decomposing, and comparing numbers.</p>
-<p>Students choose from any stage of previously introduced centers.</p>
+    <p>The purpose of this activity is for students to choose activities that offer practice with number and counting concepts</p>
 <ul>
-      <li>Math Stories</li>
+      <li>Less, Same, More</li>
       <li>Math Libs</li>
-      <li>Bingo</li>
       <li>Number Race</li>
-      <li>Geoblocks</li>
-      <li>Math Fingers</li>
     </ul>
   </paragraphs>
 
@@ -46,7 +68,7 @@
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./act-escoger20-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-escoger24-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -74,7 +96,7 @@
       <li>Invite students to work at the center of their choice.</li>
       <li>8 minutes: center work time</li>
       <li>
-        <q>Escojan qué quieren hacer ahora</q>
+        <q>Escojan qué les gustaría hacer ahora</q>
       </li>
       <li>8 minutes: center work time</li>
     </ul>
@@ -88,12 +110,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -102,24 +124,24 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>Digan una pregunta matemática que les hizo su compañero hoy durante el tiempo de centros</q>
+        <q>Piensen en un momento en el que se frustraron mientras trabajaban en los centros. ¿Qué hicieron? ¿Les sirvió?</q>
       </li>
     </ul>
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

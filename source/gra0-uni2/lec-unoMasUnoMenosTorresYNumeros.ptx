@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<subsection xml:id="lec-contarObjetosSeparando" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="lec-unoMasUnoMenosTorresYNumeros" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<shorttitle>Lección 14 </shorttitle>
-<title>Lección 14 -<nbsp/></title>
-<title>Contemos objetos separando</title>
+<shorttitle>Lección 18 </shorttitle>
+<title>Lección 18 -<nbsp/></title>
+<title>1 más o 1 menos con torres y números</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>Descubramos cuántos ingredientes necesitamos poner en nuestra pizza.</p>
+  <p>Encontremos 1 más o 1 menos que un número.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,8 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
+    <li>Identify one more and one less than a given number.</li>
     <li>[+++++++++++++++]</li>
-    <li>Given a written number, count out a group of objects.</li>
   </ul>
 </objectives>
 
@@ -39,7 +39,7 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>K.CC, K.CC.B.5, K.CC.C.6</p>
+    <p>K.CC.B.4, K.CC.B.4.c, K.CC.C.6</p>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -52,7 +52,7 @@
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this lesson is for students to count out a given number of objects.</p>
+    <p>The purpose of this lesson is for students to identify 1 more or 1 less than a given number.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -62,11 +62,11 @@
     <!-- <ul>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./act-RRRRRRRR-mat.ptx"/>
+        <xi:include href="./act-queFalta-mat.ptx"/>
       </li>
       <li>
         <p>Actividad 2</p>
-        <xi:include href="./act-SSSSSSSS-mat.ptx"/>
+        <xi:include href="./act-unoMasUnoMenos-mat.ptx"/>
       </li>
     </ul>  -->
   </paragraphs>
@@ -75,14 +75,15 @@
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>Counting out objects requires students to remember which number they need to stop at while also matching each object with one number. In this lesson, students create multiple groups with the same number of objects that match written numbers.</p>
+    <p>Students use the cube towers from the previous lesson. They may notice that the tower and number just before the given number shows one less and the tower and number just after the given number shows one more. Students also discuss how to use the count sequence to identify one less and one more than a given number.</p>
+<p>In the lesson synthesis, students practice saying the verbal count sequence to 20. Add variety to the counting by adding movement. For example, students can count as they clap, stomp their feet, or jump.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>In the next lesson, students draw groups of images to represent numbers. What did you learn about each student in today’s activities that is helpful in planning for the counting activity tomorrow?</p>
+    <p>In future lessons, students will compare written numbers 1-10. How does the work with one more and one less help prepare students for this work?</p>
   </paragraphs>
 </introduction>
 
@@ -90,82 +91,83 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-contarObjetosSeparando-warm" component="warms">
+<subsubsection xml:id="lec-unoMasUnoMenosTorresYNumeros-warm" component="warms">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./warm-cuantosVes-tablerosDe5YDedos.ptx"/> 
+  <xi:include href="./warm-actuemoslo-tenedoresCena.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-contarObjetosSeparando-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-unoMasUnoMenosTorresYNumeros-act1" component="acts-no-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-ingredientesPizza.ptx"/> 
+  <xi:include href="./act-queFalta.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-RRRRRRRRR-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-queFalta-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-contarObjetosSeparando-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-unoMasUnoMenosTorresYNumeros-act2" component="acts-no-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-posteresNumerosObjetos.ptx"/> 
+  <xi:include href="./act-unoMasUnoMenos.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-posteresNumerosObjetos-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-unoMasUnoMenos-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 3
 =================================================  -->
-<subsubsection xml:id="lec-contarObjetosSeparando-act3" component="acts-no-rayable">
+<subsubsection xml:id="lec-unoMasUnoMenosTorresYNumeros-act3" component="acts-no-rayable">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-conozcamos-bingo-imagenesNumeros.ptx"/> 
+  <xi:include href="./act-centros-escoger22.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-conozcamos-bingo-imagenesNumeros-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-centros-escoger22-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
-<subsubsection xml:id="lec-contarObjetosSeparando-sintesis" component="profesor">
+<subsubsection xml:id="lec-unoMasUnoMenosTorresYNumeros-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(5 mins)</title>
 
   <p>[+++++++++++++++]</p>
-  <p><q>Hoy contamos objetos mientras los separábamos del grupo para mostrar números. ¿Qué otras cosas podríamos hacer para mostrar el número 9?</q> (We could show 9 fingers. We could draw a picture with 9 things.)</p>
+  <p><q>Hoy encontramos 1 menos y 1 más que un número dado. Díganle a su pareja cómo pueden averiguar cuál número es 1 menos que 9</q> (I can count and figure out what number I say right before 9. I can use cube towers and look for the tower before 9.)</p>
 <p><q>Practiquemos cómo contar hasta 20</q></p>
-<p>Demonstrate counting to 20. Count to 20 as a class 1-2 times.</p>
+<p>Demonstrate counting to 20. Count to 20 as a class 1–2 times.</p>
 
 </subsubsection>
+
 
 
 </subsection>

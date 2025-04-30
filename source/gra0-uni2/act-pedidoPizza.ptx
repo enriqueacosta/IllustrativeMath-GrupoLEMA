@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-pedidoPizza" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Students draw toppings (in a way that makes sense to them) that match the class order.</p>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to write numbers and draw images to represent each written number. In this activity the teacher walks students through taking a class order. Students draw the toppings on the pizza and then make comparisons in the synthesis.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./act-pedidoPizza-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give students access to colored pencils or crayons.</li>
+      <li>
+        <q>Cuando llaman a una pizzería para pedir una pizza, en general hay muchos ingredientes para escoger de su menú. La persona que contesta el teléfono debe decirle al cocinero exactamente qué tipos de ingredientes poner en la pizza y cuántos de cada uno</q>
+      </li>
+      <li>
+        <q>Vamos a pedir una pizza para la clase. Nuestras opciones de ingredientes son pepperoni, salchicha, aceituna, pimiento y piña. Podemos poner hasta 10 de cada ingrediente</q>
+      </li>
+      <li>Invite 5 different students to share the number of toppings for each option.</li>
+      <li><p>Consider role-playing as you take the order.</p><ul>
+<li>
+<q>¿Qué ingredientes les gustarían?</q></li>
+<li>For each topping, ask <q>¿Cuántos <fillin/> quieren?</q></li>
+</ul>
+      </li>
+      <li>Students record the number for each topping.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Dibujen los ingredientes en la pizza según nuestro pedido en clase</q>
+      </li>
+      <li>1 minute: independent work time</li>
+      <li>4 minutes: partner work time</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li><p>For a few of the toppings, ask:</p><ul>
+<li>
+<q>¿Hay más <fillin/> o <fillin/>?</q></li>
+<li>
+<q>¿Hay menos <fillin/> o <fillin/>?</q></li>
+</ul>
+      </li>
+      <li>30 seconds: quiet think time</li>
+      <li>Share responses.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

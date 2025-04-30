@@ -1,37 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<!-- ====================================================================== 
-   El calentamiento es un <exploration> (distinto a las otras actividades)
-   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
-   RRRRRR=observa con los "Observa y Pregúntate"
-===========================================================================  -->
-<exploration xml:id="warm-cuantosVes-tablerosDe5YDedos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-centros-escoger23" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>Cuántos ves: Tableros de 5 y dedos</title>
+<title>Centros: Momento de escoger</title>
 
 <statement>
-  <line>¿Cuántos ves?</line>
-  <line>¿Cómo lo sabes?, ¿qué ves?</line>
-  <image source="svg-source/tikz-file-141786">
-    <shortdescription>5 puntos.</shortdescription>
-  </image>
-  <image source="svg-source/tikz-file-141787">
-    <shortdescription>6 puntos.</shortdescription>
-  </image>
-  <image source="png-source/hand 6b.png" width="25%">
-    <shortdescription>6 dedos.</shortdescription>
-  </image>
+  <p>Escoge un centro.</p>
+  <sbsgroup margins="0% 70%">
+    <sidebyside>
+      <p>Menos, lo mismo, más</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-170981">
+        <shortdescription>Centro menos, lo mismo y más.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>Mi mate-libreta</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/city-full-update shortened.png">
+        <shortdescription>Centro mi Mate-libreta.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>Carrera con números</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/Number Race.png">
+        <shortdescription>Centro carrera con números.</shortdescription>
+      </image>  
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
-<solution>
-    <p>[+++++++++++++++]</p>
-    <p>Sample responses:</p>
-<ul>
-      <li>5: The 5-frame is full so there are 5.</li>
-      <li>6: There is 1 more than the last time.</li>
-      <li>6: There are 6 fingers.</li>
-    </ul>
-  </solution>
+<!--<solution>
+  <p>[@@@@@@@@@]</p>
+</solution>-->
 
 
 <!-- ============================================================== 
@@ -42,21 +47,28 @@
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
-    <p>10 minutos</p>
+    <p>20 minutos</p>
   </paragraphs>
 
-  <!-- Introducción de la actividad -->  
+  <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this How Many Do You See is for students to subitize or use grouping strategies to describe the images they see. When students use the structure of fingers and 5-frames to recognize and describe quantities they look for and make use of structure (MP7).</p>
+    <p>The purpose of this activity is for students to choose activities that offer practice with number and counting concepts</p>
+<ul>
+      <li>Less, Same, More</li>
+      <li>Math Libs</li>
+      <li>Number Race</li>
+    </ul>
   </paragraphs>
+
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <xi:include href="./warm-RRRRRR-SSSSSS-mat.ptx"/>  -->
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./act-centros-escoger23-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -64,27 +76,29 @@
     <title><custom ref="launch-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Groups of 2</li>
       <li>
-        <q>¿Cuántos ven? ¿Cómo lo saben?, ¿qué ven?</q>
+        <q>Hoy vamos a escoger centros de los que ya conocemos. Una opción es seguir jugando ‘Menos, lo mismo, más’</q>
       </li>
-      <li>Flash image.</li>
+      <li>Display the center choices in the student book.</li>
+      <li>
+        <q>Piensen qué les gustaría hacer primero</q>
+      </li>
       <li>30 seconds: quiet think time</li>
     </ul>
   </paragraphs>
+
 
   <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Display image.</li>
+      <li>Invite students to work at the center of their choice.</li>
+      <li>8 minutes: center work time</li>
       <li>
-        <q>Discutan con su pareja cómo pensaron</q>
+        <q>Escojan qué quieren hacer ahora</q>
       </li>
-      <li>1 minute: partner discussion</li>
-      <li>Record responses.</li>
-      <li>Repeat for each image.</li>
+      <li>8 minutes: center work time</li>
     </ul>
   </paragraphs>
 
@@ -103,14 +117,14 @@
     <p>=== NOT PRESENT ===</p>
   </paragraphs>-->
 
+
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Display the images of 6 dots in a 5-frame and 6 fingers.</li>
       <li>
-        <q>¿En qué se parecen? ¿En qué son diferentes?</q> (They both show 6. They both have a group of 5. One uses dots and one uses fingers.)
+        <q>¿Qué materiales necesitan si quieren jugar ‘Menos, lo mismo, más’? ¿Dónde están estos materiales en nuestro salón de clase?</q>
       </li>
     </ul>
   </paragraphs>
@@ -122,6 +136,7 @@
     <p>[@@@@@@@@@]</p>
   </paragraphs>-->
 
+
   <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
@@ -130,4 +145,4 @@
 
 </postlude>
 
-</exploration>
+</activity>

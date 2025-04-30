@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-torresCubos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Torres de cubos</title>
+
+<statement>
+  <p>Armen torres con un número de cubos.</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Students build a tower to represent each number from 1–10.</p>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to make cube towers with a given number of cubes in each tower. Students practice counting out a given number of objects and connecting numbers and quantities. The cube towers will be used again in the next activity and in the next lesson.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
+    <!-- <xi:include href="./act-torresCubos-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give each group a set of number cards and access to connecting cubes.</li>
+      <li>
+        <q>Vamos a hacer torres de cubos. Primero escojan una tarjeta de números. Después, armen una torre de cubos con ese número de cubos. Cuando ambos compañeros estén de acuerdo en que la torre tiene el número correcto de cubos, escojan otra tarjeta de números y armen la siguiente torre</q> 
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>10 minutes: partner work time</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>-->
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display the number 6 and three different cube towers (2, 6, 10).</li>
+      <li>
+        <q>¿Cuál torre corresponde a este número? ¿Cómo lo saben?</q> (6. I counted and there were 6 cubes. I can tell by looking that this one only has 2 cubes and the big one has too many cubes to be 6.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático 
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>-->
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Representation: Develop Language and Symbols. Synthesis: Students might need support verifying that the cube tower with 10 cubes does not have 6 cubes. Make connections to the cube tower and the number cards by counting the total number of cubes in the 6 cube tower to verify that there are 6 cubes.</p>
+    <p>Supports accessibility for: Conceptual Processing, Language</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

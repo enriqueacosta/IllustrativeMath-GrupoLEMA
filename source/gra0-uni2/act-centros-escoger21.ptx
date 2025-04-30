@@ -1,50 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-escoger19" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-centros-escoger21" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Centros: Momento de escoger</title>
 
 <statement>
   <p>Escoge un centro.</p>
-  <sbsgroup widths="30% 30%" margins="0% 20%">
+  <sbsgroup margins="0% 70%">
     <sidebyside>
-      <stack>
-        <p>Mi mate-libreta</p>
-        <image source="png-source/city-full-update shortened.png">
-          <shortdescription>Centro mi mate-libreta.</shortdescription>
-        </image>
-      </stack>
-      <stack>
-        <p>Bingo</p>
-        <image source="svg-source/tikz-file-148291">
-          <shortdescription>Centro Bingo.</shortdescription>
-        </image>
-        </stack>
-     </sidebyside>
+      <p>Historias matemáticas</p>
+    </sidebyside>
     <sidebyside>
-      <stack>
-        <p>Carrera con números</p>
-        <image source="png-source/Number Race.png">
-          <shortdescription>Centro carrera con números.</shortdescription>
-        </image>
-      </stack>
-      <stack>
-        <p>Bloques sólidos geométricos</p>
-        <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png" >
-          <shortdescription>Centro carrera con números.</shortdescription>
-        </image>
-      </stack>
-     </sidebyside>
+      <image source="png-source/MathStories (1).png">
+        <shortdescription>Centro Historias matemáticas.</shortdescription>
+      </image>  
+    </sidebyside>
     <sidebyside>
-      <stack>
-        <p>Dedos matemáticos</p> 
-        <image source="png-source/hand 8b.png">
-          <shortdescription>Dos manos contando con dedos.</shortdescription>
-        </image>
-      </stack>
+      <p>Mi mate-libreta</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/city-full-update shortened.png">
+        <shortdescription>Centro mi Mate-libreta.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>Carrera con números</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="png-source/Number Race.png">
+        <shortdescription>Centro carrera con números.</shortdescription>
+      </image>  
     </sidebyside>
   </sbsgroup>
-  
+    
 </statement>
 
 <!--<solution>
@@ -67,15 +55,13 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to choose from activities that offer practice composing, decomposing, and comparing numbers.</p>
-<p>Students choose from any stage of previously introduced centers.</p>
+    <p>The purpose of this activity is for students to choose activities that offer practice with number and counting concepts</p>
 <ul>
+      <li>Math Stories</li>
       <li>Math Libs</li>
-      <li>Bingo</li>
       <li>Number Race</li>
-      <li>Geoblocks</li>
-      <li>Math Fingers</li>
     </ul>
+<p>Students will choose from these centers throughout the section. Keep materials from these centers organized to use each day.</p>
   </paragraphs>
 
 
@@ -84,7 +70,7 @@
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./act-escoger19-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-centros-escoger21-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -139,9 +125,8 @@
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Invite students to display their completed Math Libs page.</li>
       <li>
-        <q>¿Cuántos <fillin/> dibujaron ellos? ¿Cómo lo saben?</q> (I counted them. They wrote the number<fillin/>next to it.)
+        <q>Digan una cosa que hicieron bien hoy en los centros. Digan una cosa que quisieran mejorar la próxima vez que trabajen en los centros</q>
       </li>
     </ul>
   </paragraphs>
