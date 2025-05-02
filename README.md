@@ -143,7 +143,7 @@ Ver ejemplos de los archivos `.tex` de imagenes en la carpeta `souce/assets/tikz
 
 Para estas imágenes se debe generar el formato `.pdf` con pdfLaTeX, y el formato `.svg` para la web a partir del pdf que produce pdfLaTeX. Esto se puede hacer de manera automática con el script `scripts/convertAllPDFtoSVGinFolder` que se escribió para este fin.
 
-## Producir versiones pdf de los problemas de cierre `-cool.ptx`
+## Producir versiones pdf de los problemas de cierre `cool-*.ptx`
 (desactualizado) Los problemas de cierre todos están en archivos `*-cool.ptx`. Para generar las versiones pdf imprimibles de estos archivos (para los estudiantes) se usa el script `/scripts/createStandaloneCools`. Este script toma todos los `-cool.ptx` de una carpeta y genera los pdf en `../assets/cools-pdf` (o donde especifique la variable `$outFolder` en el script). Para correrlo, se debe copiar el archivo del script a la carpeta con los `-cool.ptx` que se quiere procesar y correr en la terminal con `./createStandaloneCools`. 
 
 (desactualizado) El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 

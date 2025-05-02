@@ -2,15 +2,54 @@
 
 <activity xml:id="act-centros-escoger19" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Centros: Momento de escoger</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Escoge un centro.</p>
+  <sbsgroup widths="30% 30%" margins="0% 20%">
+    <sidebyside>
+      <stack>
+        <p>Mi mate-libreta</p>
+        <image source="png-source/city-full-update shortened.png">
+          <shortdescription>Centro mi mate-libreta.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>Bingo</p>
+        <image source="svg-source/tikz-file-148291">
+          <shortdescription>Centro Bingo.</shortdescription>
+        </image>
+        </stack>
+     </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>Carrera con números</p>
+        <image source="png-source/Number Race.png">
+          <shortdescription>Centro carrera con números.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>Bloques sólidos geométricos</p>
+        <image source="png-source/K.1.A Beta Student Workbook.Geoblocks.png" >
+          <shortdescription>Centro carrera con números.</shortdescription>
+        </image>
+      </stack>
+     </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>Dedos matemáticos</p> 
+        <image source="png-source/hand 8b.png">
+          <shortdescription>Dos manos contando con dedos.</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
+  
 </statement>
 
-<solution>
+<!--<solution>
   <p>[@@@@@@@@@]</p>
-</solution>
+</solution>-->
 
 
 <!-- ============================================================== 
@@ -87,12 +126,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <!-- Estrategias de apoyo para estudiantes con dificultades 
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -108,18 +147,18 @@
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <!-- Descripción del desarrollo de lenguaje matemático 
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <!-- Estrategias de acceso para estudiantes con discapacidades 
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 
