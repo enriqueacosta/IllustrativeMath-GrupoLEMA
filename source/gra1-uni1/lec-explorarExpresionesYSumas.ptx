@@ -150,6 +150,20 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
+<reading-questions xml:id="lec-explorarExpresionesYSumas-cool" component="cools"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible. cool-expresionesYSumas debe coincidir con el xml:id adentro del archivo cool-expresionesYSumas.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-expresionesYSumas.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-expresionesYSumas.ptx"/>
+</reading-questions>
 
 
 
