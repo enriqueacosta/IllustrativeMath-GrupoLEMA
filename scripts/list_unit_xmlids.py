@@ -274,7 +274,7 @@ def print_tab_separated(lessons: List[Lesson]):
 
         # Activities
         activities = lesson.activities
-        for i in range(2):  # Expecting 2 main activities
+        for i in range(3):  # Expecting 3 main activities (some may not exist)
             if i < len(activities):
                 parts.append(activities[i].xml_id)
             else:
