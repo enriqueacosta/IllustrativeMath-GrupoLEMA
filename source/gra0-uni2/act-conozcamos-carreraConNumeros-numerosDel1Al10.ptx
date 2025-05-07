@@ -6,6 +6,10 @@
 
 <statement>
   <p>Escoge un centro</p>
+  <aside component="web">
+    <p>Tablero de números para el centro <em>Carrera con números</em> disponible en el libro de trabajo, o <url href="external/blm/pdf-source/centro-carreraConNumeros-numerosDel1Al10-tableroDeNumeros.pdf">descargar acá</url>.</p>
+    <p>Hoja de registro para el centro <em>Carrera con números</em> disponible en el libro de trabajo, o <url href="external/blm/pdf-source/centro-carreraConNumeros-numerosDel1Al10-hojaRegistro.pdf">descargar acá</url>.</p>
+  </aside>
   <sbsgroup widths="30% 30%" margins="0% 10%">
     <sidebyside>
       <p>Carrera con números</p>
@@ -72,9 +76,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./act-conozcamos-carreraConNumeros-numerosDel1Al10-mat.ptx"/>  -->
+    <xi:include href="./act-conozcamos-carreraConNumeros-numerosDel1Al10-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
@@ -96,7 +99,7 @@
         <q>Ahora encuentro ese número en la hoja de registro y trazo el número en la parte de abajo</q>
       </li>
       <li>Demonstrate tracing the number the cube landed on.</li>
-      <li><em><q></q></em>Jueguen por turnos con su compañero. En cada turno, lancen el cubo y tracen el número en la hoja de registro. Sigan jugando hasta que tracen todos los números de un mismo número. Ese número es el ganador</li>
+      <li><q>Jueguen por turnos con su compañero. En cada turno, lancen el cubo y tracen el número en la hoja de registro. Sigan jugando hasta que tracen todos los números de un mismo número. Ese número es el ganador</q></li>
     </ul>
   </paragraphs>
 
