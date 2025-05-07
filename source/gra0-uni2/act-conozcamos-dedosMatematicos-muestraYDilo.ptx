@@ -6,7 +6,9 @@
 
 <statement>
   <p>Escoge un centro.</p>
-  
+  <aside component="web">
+    <p>Tarjetas de manos contando con dedos disponibles en el libro de trabajo o <url href="external/blm/pdf-source/centro-dedosMatematicos-manosDedos.pdf">descargue acá</url>.</p>
+  </aside>
   <p>Dedos matemáticos</p>
   <image source="png-source/hand 8b.png" width="35%">
     <shortdescription>Dos manos contando con dedos.</shortdescription>
@@ -54,9 +56,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@]</p>
     <!-- si hay materiales, crear el siguiente archivo -mat.ptx y ponerlos ahí (y agregar también el archivo en la lista de materiales de la lección)-->
-    <!-- <xi:include href="./act-conozcamos-dedosMatematicos-muestraYDilo-mat.ptx"/>  -->
+    <xi:include href="./act-conozcamos-dedosMatematicos-muestraYDilo-mat.ptx"/> 
   </paragraphs>
 
   <!-- Launch -->
