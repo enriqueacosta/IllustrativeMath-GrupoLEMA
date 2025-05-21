@@ -19,25 +19,13 @@ Arguments:
 import sys
 import glob
 import os
-import re
 
 def main():
     if len(sys.argv) != 2:
         print("Usage: python searchCentroEnMatCentros.py centro-name")
         sys.exit(1)
 
-
     centro = sys.argv[1]
-    # # Pattern: find <xref ref="centro" .../> and capture the text after it up to </li>
-    # pattern = re.compile(r'<xref\s+ref=["\']{}["\'][^>]*/>([^<]*)</li>'.format(re.escape(centro)))
-    # # Fix: correct regex for whitespace and not double-escaping
-    # pattern = re.compile(r'<xref\s+ref=["\']{}["\'][^>]*/>([^<]*)</li>'.format(re.escape(centro)))
-    # # Actually, use a more robust regex for XML lines (allow for whitespace and attributes)
-    # pattern = re.compile(r'<xref\s+ref=["\']{}["\'][^>]*/>([^<]*)</li>'.format(re.escape(centro)))
-    # # But Python raw string, so:
-    # pattern = re.compile(r'<xref\s+ref=["\']{}["\'][^>]*/>([^<]*)</li>'.format(re.escape(centro)))
-    # # Actually, best to just match the line and parse after
-
     base_dir = "source"
     matches = []
 
