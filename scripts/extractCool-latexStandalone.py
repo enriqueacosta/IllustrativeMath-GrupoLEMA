@@ -9,15 +9,29 @@ El preámbulo con el estilo está aparte, en archivo assets/defs-ptxLEMA-latex-s
 Sirve para hacer cools standalone del tex del libroTrabajo con whitespacing.
 
 Uso: python extractCool-latexStandalone.py <ruta-archivo> <id-actividad> <tamaño-fuente>
+     python extractCool-latexStandalone.py <ruta-archivo> cool-pesoCirculo 14pt
 """
 
 import sys
 import re
 import subprocess
+import os
 
 def extract_activity(file_path, xml_id, font_size):
+    # Get the absolute path to the input file and its containing folder
+    abs_file_path = os.path.abspath(file_path)
+    work_dir = os.path.dirname(abs_file_path)
+    file_name = os.path.basename(abs_file_path)
+
+    # Save the current working directory
+    orig_dir = os.getcwd()
+
     try:
-        with open(file_path, 'r') as file:
+        # Change to the directory with the LaTeX file
+        os.chdir(work_dir)
+
+        # Read the content of the LaTeX input file
+        with open(file_name, 'r') as file:
             content = file.read()
 
         # Regular expression to match the \begin{project} block with the specific id-string
@@ -28,7 +42,7 @@ def extract_activity(file_path, xml_id, font_size):
 
         match = pattern.search(content)
         if match:
-            # store full match (group(1) gives the inner match, without the \begin{warm}...\end{activity} lines)
+            # store full match (group(0) gives the inner match, without the \begin{project}...\end{project} lines)
             texto_actividad = match.group(0).strip()
             # Save the output to a file named based on the xml_id
             output_file_name = f"{xml_id}.tex"
@@ -60,17 +74,20 @@ def extract_activity(file_path, xml_id, font_size):
                 print(f"Error running pdflatex: {e}")
                 return
             
-            print(f"Output saved to '{output_file_name}'")
+            print(f"Output saved to '{os.path.abspath(output_file_name)}'")
         else:
-            print(f"No activity found with id '{xml_id}'")
+            print(f"No project found with id '{xml_id}'")
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
     except Exception as e:
         print(f"An error occurred: {e}")
+    finally:
+        # Always return to the original directory
+        os.chdir(orig_dir)
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python crearActividad.py <file-path> <id-string> <font-size>")
+        print("Usage: python extractCool-latexStandalone.py <file-path> <id-string> <font-size>")
     else:
         file_path = sys.argv[1]
         xml_id = sys.argv[2]
