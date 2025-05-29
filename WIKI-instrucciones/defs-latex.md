@@ -6,8 +6,8 @@
 ```
 
 
-## Ajustar bien los espacios arriba y abajo de las imagenes
-Ajustar las defs de {tcbimage} e {image} así:
+## Tener control sobre los espacios arriba y abajo de las imagenes
+Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\parskip, after skip=\parskip`. Lo de `\par\vspace{\parskip}%` es para que la imagen siempre empiece con `\par`. Latex se encarga de no agregar dos `\parskip` por la forma en la que combina unidades de glue.
 ```latex
 \tcbset{ imagestyle/.style={enhanced, blanker} }
 \NewTColorBox{tcbimage}{mmm}{
