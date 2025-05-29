@@ -19,7 +19,9 @@
 \DefineVerbatimEnvironment{preformatted}{Verbatim}{}
 %% Fuente sans-serif
 % \renewcommand{\familydefault}{\sfdefault}
-\RequirePackage[sfdefault]{roboto} 
+\RequirePackage[sfdefault]{roboto}
+% to disable ligatures (roboto removes the dot of the i in fi)
+% \usepackage{microtype}\DisableLigatures{encoding = *, family = *}
 % Sans serif font for math
 % \RequirePackage{sansmath}
 \RequirePackage{sfmath}
@@ -59,7 +61,12 @@
   boxsep=0pt,
   before skip=\parskip, after skip=\parskip
 }
-\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~\par}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}}
+\NewDocumentEnvironment{image}{mmmm}{%
+  \par\vspace{\parskip}%  % Always end the current paragraph and add one parskip
+  \begin{tcbimage}{#1}{#2}{#3}
+}{%
+  \end{tcbimage}
+}
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{longtable}
