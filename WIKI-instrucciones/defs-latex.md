@@ -7,7 +7,7 @@
 
 
 ## Tener control sobre los espacios arriba y abajo de las imagenes
-Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\parskip, after skip=\parskip`. Lo de `\par\vspace{\parskip}%` es para que la imagen siempre empiece con `\par`. Latex se encarga de no agregar dos `\parskip` por la forma en la que combina unidades de glue.
+Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\parskip, after skip=\parskip`.
 ```latex
 \tcbset{ imagestyle/.style={enhanced, blanker} }
 \NewTColorBox{tcbimage}{mmm}{
@@ -24,3 +24,4 @@ Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\par
   \end{tcbimage}
 }
 ```
+Note que parecería por el  `\par\vspace{\parskip}%` es para que {image} siempre empiece con `\par` (un párrafo nuevo) y simepre aregue el espacion (por si no está en vertical mode). Latex se encarga de no agregar dos `\parskip` por la forma en la que combina unidades de glue.
