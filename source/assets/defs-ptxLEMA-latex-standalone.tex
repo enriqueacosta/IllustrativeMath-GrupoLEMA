@@ -102,7 +102,14 @@
 \pagestyle{fancy}
 \fancyfoot[C]{} %Remove default Latex numbering
 \fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{external/png-source/barra-colorGrupoLEMA.pdf}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
-\fancyfoot[L]{{\scriptsize Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\tiny Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022,\\[-0.35cm] openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
+\fancyfoot[L]{%
+  \parbox{1.05\textwidth}{%
+    \fontsize{9pt}{11pt}\selectfont
+    Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.\\
+    \fontsize{7pt}{8.4pt}\selectfont
+    Adaptado de IM K--5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. \\Detalles: https://creativecommons.org/licenses/by/4.0/deed.es
+  }
+}
 \fancyhead[L]{\hfill Nombre: \underline{\hspace{8cm}}}
 \fancyhead[R]{}
 \fancyfoot[R]{}
