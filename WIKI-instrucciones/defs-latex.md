@@ -1,4 +1,4 @@
-## Apagar las ligarutas (Roboto le quita el punto a la i en "fi")
+## Apagar las ligaduras (Roboto le quita el punto a la i en "fi")
 ```latex
 \RequirePackage[sfdefault]{roboto}
 % to disable ligatures (roboto removes the dot of the i in fi)
