@@ -21,7 +21,7 @@
 /* EAJ: FIN de ajuste de footer */
 
 
-/* EAJ - para que las imagenes no necesiten width= 
+/* EAJ - para que las imágenes no necesiten width= 
    Importante para que los objetos de las figuras tikz (svg) tengan tamaños uniformes
    (por ejemplo, que todos los puntos de todos los dados tenga el mismo tamaño)
 */
@@ -31,12 +31,21 @@
     width: unset;
     max-width: 100%;
     height: auto;
-    padding-block: 2ex;
 }
 .ptx-content .image-box {
    text-align: center;
 }
 
+/* EAJ - padding top y bottom para las imágenes (distinto en los sbspanel porque
+   los sbsrow ya tienen padding.
+)*/
+.ptx-content img.contained,  
+.ptx-content .sbspanel img {
+    padding-block: 1ex;
+}
+.ptx-content .image-box img {
+    padding-block: 2ex;
+}
 
 
 /* EAJ - quitar los números a remark-like */
