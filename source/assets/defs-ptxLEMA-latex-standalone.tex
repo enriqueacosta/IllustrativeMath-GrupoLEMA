@@ -52,7 +52,13 @@
 \strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
 }
 \tcbset{ imagestyle/.style={enhanced, blanker} }
-\NewTColorBox{tcbimage}{mmm}{imagestyle,left=0pt, top=0ex, width=#2\linewidth}
+\NewTColorBox{tcbimage}{mmm}{
+  imagestyle,
+  left=0pt, right=0pt, top=0ex, bottom=0ex,
+  width=#2\linewidth,
+  boxsep=0pt,
+  before skip=\parskip, after skip=\parskip
+}
 \NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~\par}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}}
 \usepackage{multicol}
 \usepackage{enumitem}
