@@ -18,7 +18,8 @@ Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\par
   before skip=\parskip, after skip=\parskip
 }
 \NewDocumentEnvironment{image}{mmmm}{%
-  \par\vspace{\parskip}%  % Always end the current paragraph and add one parskip
+  \notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~%
+  \par\vspace{\parskip}}%  % Always end the current paragraph and add one parskip
   \begin{tcbimage}{#1}{#2}{#3}
 }{%
   \end{tcbimage}
