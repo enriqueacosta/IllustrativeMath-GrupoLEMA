@@ -29,7 +29,7 @@ Note que parecería por el  `\par\vspace{\parskip}%` es para que {image} siempre
 
 
 ## footer con fancyheader con distintos tamaños de fuente sin que se cree un caos en el tamaño del salto de línea
-El paquete fancyheader no se compoerte muy bien con los ajustes de tamaño de fuente. El \baselineskip no se actualiza bien.
+El paquete fancyheader no se comporta muy bien con los ajustes de tamaño de fuente. El \baselineskip no se actualiza bien.
 
 Arreglo, usar un \parbox:
 
