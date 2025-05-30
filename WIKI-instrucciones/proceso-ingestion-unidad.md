@@ -13,8 +13,10 @@ Enrique Acosta, 2025
    + los campos ingestados quedan en Spanglish, con marca `[+++++++++++++]` para indicar que se ingestaron pero falta traducción. Todos los otros campos no ingestados quedan con `[@@@@@@@@@]` (así vienen los archivos).
 3. Finalizacción de ingestión (salvo materiales) y revisión de la ingestión automatizada
    + Los campos que faltan se hacen a mano (todos los `[@@@@@@@@@]`).
-   + Por lo general, involucran imágenes (que hay que guardar en lugares particulares e insertar con los tags de <image> apropiados) y trabajo "de diagramación" con formatos de varias columnas, combinaciones de imágenes y textos, ajustes de imágenes, creaciones de tablas, textos de matemáticas, etc.
-   + Se debe revisar todo lo que quedó ingestado automático del paso anterior, y arreglar.
+   + Hay varios en las lecciones (statements, sobre todo)
+   + Tambien PPs y lesson summaries. Para los PPs hay que hacer los archivos a partir de los templates.
+   + Por lo general, todos estos involucran imágenes (que hay que guardar en lugares particulares e insertar con los tags de <image> apropiados) y trabajo "de diagramación" con formatos de varias columnas, combinaciones de imágenes y textos, ajustes de imágenes, creaciones de tablas, textos de matemáticas, etc.
+   + Se debe revisar todo lo que quedó ingestado automático de las lecciones del paso anterior, y arreglar.
    + Después de este paso, los únicos `[@@@@@@@@@]` que deberían quedar son los de materiales requeridos.
 4. Ingestíon de materiales. Para cada lección
    + Creación de archivos `-mat.ptx` y `-matCentros.ptx` para todas las actividades que los necesitan.
