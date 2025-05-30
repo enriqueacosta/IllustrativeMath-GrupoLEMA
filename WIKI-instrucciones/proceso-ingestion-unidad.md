@@ -32,9 +32,9 @@ Enrique Acosta, 2025
    +  Se deben ajustar las partes del enunciado que deberían aparecer en las componentes `libroTrabajo` y `no-libroTrabajo` y con un `aside`, se crea un link al pdf que se va a crear (en `assets/act-pdf`).
    +  Se genera el output libro de trabajo de latex y se usa el script que genera el pdf de la actividad `extractActivity-latexStandalone.py`
    +  Se ajusta de ser necesario el pdf de la actividad (con el latex standalone que se creo)
+8. Generación de versiones pdf de los cools para la web (para imprimir).
+   +  Con el script correspondiente. Se deben guardar en `assets/cool-pdf`
 6. Traducción de las lecciónes
    +  todos los textos en ENG de los archivos `.ptx` de la lección
    +  Arreglar BLMs que tiene textos en ENG
    +  cración de imagenes en ENG si no están disponibles (por ejemplo, por ser soluciones)
-8. Generación de versiones pdf de los cools.
-   +  Con el script correspondiente. Se deben guardar en `assets/cool-pdf`
