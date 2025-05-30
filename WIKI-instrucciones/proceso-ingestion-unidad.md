@@ -39,6 +39,8 @@ Enrique Acosta, 2025
    +  Se ajusta de ser necesario el pdf de la actividad (con el latex standalone que se creo)
 6. Generación de versiones pdf de los cools para la web (para imprimir).
    +  Con el script correspondiente. Se deben guardar en `assets/cool-pdf`
+   +  
+7. Revisión de la ingestión completa. Revisar que no falte nada, que los links hayan quedado bien, que no hagan falta blm, o versiones improbimbres de actividades.
 
 # fase de traducción
 7. Traducción de las lecciónes
