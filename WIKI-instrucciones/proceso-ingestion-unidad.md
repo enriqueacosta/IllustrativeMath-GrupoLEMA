@@ -37,6 +37,8 @@ Enrique Acosta, 2025
    +  Se ajusta de ser necesario el pdf de la actividad (con el latex standalone que se creo)
 8. Generación de versiones pdf de los cools para la web (para imprimir).
    +  Con el script correspondiente. Se deben guardar en `assets/cool-pdf`
+
+# fase de traducción
 6. Traducción de las lecciónes
    +  todos los textos en ENG de los archivos `.ptx` de la lección
    +  Arreglar BLMs que tiene textos en ENG
