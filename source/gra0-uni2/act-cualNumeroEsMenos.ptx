@@ -9,7 +9,23 @@
     <line>Escribe los números que obtuvieron.</line>
     <line>Marca el número que es menos.</line>
   </p>
-  <sbsgroup widths="30% 30%" margins="0% 20%">
+  <aside component="web">
+    <p>Versión completa para rellenar en el libro de trabajo, o <url href="external/act-pdf/act-cualNumeroEsMenos.pdf">descarga para imprimir</url></p>
+  </aside>
+
+  <!-- Versión no-libro de trabajo -->
+  <sidebyside component="no-libroTrabajo" width="15%">
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>líneas para llenar.</shortdescription>
+        </image>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>líneas para llenar.</shortdescription>
+        </image>
+  </sidebyside>
+  
+
+  <!-- Contenido del libro de trabajo -->
+  <sbsgroup component="libroTrabajo" widths="30% 30%">
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>
@@ -18,6 +34,7 @@
           <shortdescription>líneas para llenar.</shortdescription>
         </image>
     </sidebyside>
+
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>
@@ -26,6 +43,7 @@
           <shortdescription>líneas para llenar.</shortdescription>
         </image>
     </sidebyside>
+
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>
@@ -35,11 +53,11 @@
         </image>
     </sidebyside>
   </sbsgroup>
-  <p>
+  <p component="libroTrabajo">
     <line>Escribe los números que obtuvieron.</line>
     <line>Marca el número que es menos.</line>
   </p>
-  <sbsgroup widths="30% 30%" margins="0% 20%">
+  <sbsgroup component="libroTrabajo" widths="30% 30%">
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>
@@ -48,6 +66,7 @@
           <shortdescription>líneas para llenar.</shortdescription>
         </image>
     </sidebyside>
+
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>
@@ -56,6 +75,7 @@
           <shortdescription>líneas para llenar.</shortdescription>
         </image>
     </sidebyside>
+
     <sidebyside>
         <image source="svg-source/tikz-file-148545">
           <shortdescription>líneas para llenar.</shortdescription>

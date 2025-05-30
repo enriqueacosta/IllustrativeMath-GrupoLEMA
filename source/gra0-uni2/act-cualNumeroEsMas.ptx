@@ -6,8 +6,13 @@
 
 <statement>
   <p>Marca el número que es más.</p>
-  <p>1.</p>
-  <sidebyside>
+  <aside component="web">
+    <p>Versión completa para rayar en el libro de trabajo, o <url href="external/act-pdf/act-cualNumeroEsMas.pdf">descarga para imprimir</url>
+    </p>
+  </aside>
+
+  <!-- Versión no-libro de trabajo -->
+  <sidebyside component="no-libroTrabajo" width="15%">
     <image source="svg-source/tikz-file-148546">
       <shortdescription>Número 5.</shortdescription>
     </image>
@@ -15,8 +20,26 @@
       <shortdescription>Número 8.</shortdescription>
     </image>
   </sidebyside>
-  <p>2.</p>
-  <sidebyside>
+
+  <!-- Contenido del libro de trabajo -->
+  <p component="libroTrabajo">
+    1.
+  </p>
+  <sidebyside component="libroTrabajo">
+    <image source="svg-source/tikz-file-148546">
+      <shortdescription>Número 5.</shortdescription>
+    </image>
+    <image source="svg-source/tikz-file-148547">
+      <shortdescription>Número 8.</shortdescription>
+    </image>
+  </sidebyside>
+       
+  <xi:include href="../whitespace/5cm.ptx" />
+
+  <p component="libroTrabajo">
+    2.
+  </p>
+  <sidebyside component="libroTrabajo">
     <image source="svg-source/tikz-file-148548">
       <shortdescription>Número 9.</shortdescription>
     </image>

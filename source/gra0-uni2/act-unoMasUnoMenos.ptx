@@ -5,54 +5,84 @@
 <title>Uno menos, uno más </title>
 
 <statement>
-  <sbsgroup widths="26% 26%" margins="0% 20%">
-    <sidebyside>
+  <aside component="web">
+    <p>Versión completa para rellenar en el libro de trabajo, o <url href="external/act-pdf/act-unoMasUnoMenos.pdf">descarga para imprimir</url></p>
+  </aside>
+  
+  <!-- versión no-libro de trabajo, solo muestra una fila -->
+  <sidebyside  component="no-libroTrabajo" width="30%" margins="10% 10%">
+    <stack>
       <p>mi torre</p>
-      <p>la torre de mi pareja</p>
-    </sidebyside>
-    <sidebyside>
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>  
       <image source="svg-source/tikz-file-148545">
         <shortdescription>Líneas para llenar.</shortdescription>
       </image>
-    </sidebyside>
-    <sidebyside>
-      <p>mi torre</p>
+    </stack>
+    <stack>
       <p>la torre de mi pareja</p>
-    </sidebyside>
-    <sidebyside>
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>  
       <image source="svg-source/tikz-file-148545">
         <shortdescription>Líneas para llenar.</shortdescription>
       </image>
+    </stack>
+  </sidebyside>
+  
+  
+  <!-- versión libro de trabajo, tiene varias filas-->
+  <sbsgroup component="libroTrabajo"  widths="26% 26%" margins="0% 20%">
+    <sidebyside>
+      <stack>
+        <p>mi torre</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>la torre de mi pareja</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
     </sidebyside>
     <sidebyside>
-      <p>mi torre</p>
-      <p>la torre de mi pareja</p>
+      <stack>
+        <p>mi torre</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>la torre de mi pareja</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
     </sidebyside>
     <sidebyside>
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>  
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>
+      <stack>
+        <p>mi torre</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>la torre de mi pareja</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
     </sidebyside>
     <sidebyside>
-      <p>mi torre</p>
-      <p>la torre de mi pareja</p>
-    </sidebyside>
-    <sidebyside>
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>  
-      <image source="svg-source/tikz-file-148545">
-        <shortdescription>Líneas para llenar.</shortdescription>
-      </image>
+      <stack>
+        <p>mi torre</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>la torre de mi pareja</p>
+        <image source="svg-source/tikz-file-148545">
+          <shortdescription>Líneas para llenar.</shortdescription>
+        </image>
+      </stack>
     </sidebyside>
   </sbsgroup>
 </statement>
