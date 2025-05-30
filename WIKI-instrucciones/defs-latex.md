@@ -1,4 +1,4 @@
-## Apagar las ligaduras (Roboto le quita el punto a la i en "fi")
+## Apagar las ligaduras (la fuente Roboto le quita el punto a la i en "fi")
 ```latex
 \RequirePackage[sfdefault]{roboto}
 % to disable ligatures (roboto removes the dot of the i in fi)
@@ -25,4 +25,4 @@ Ajustar las defs de {tcbimage} e {image} así. La clave es el ` before skip=\par
   \end{tcbimage}
 }
 ```
-Note que parecería por el  `\par\vspace{\parskip}%` es para que {image} siempre empiece con `\par` (un párrafo nuevo) y simepre aregue el espacion (por si no está en vertical mode). Latex se encarga de no agregar dos `\parskip` por la forma en la que combina unidades de glue.
+Note que parecería por el  `\par\vspace{\parskip}%` es para que {image} siempre empiece con `\par` (un párrafo nuevo) y simepre aregue el espacio (por si no está en vertical mode). Latex se encarga de no agregar dos `\parskip` por la forma en la que combina unidades de glue.
