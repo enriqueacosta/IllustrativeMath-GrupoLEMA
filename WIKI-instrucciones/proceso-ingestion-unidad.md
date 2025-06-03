@@ -44,6 +44,7 @@ Enrique Acosta, 2025
 
 # fase de traducción
 7. Traducción de las lecciónes
-   +  todos los textos en ENG de los archivos `.ptx` de la lección
+   +  todos los textos en ENG de los archivos `.ptx` de la lección y actividades.
    +  Arreglar BLMs que tiene textos en ENG
    +  cración de imagenes en ENG si no están disponibles (por ejemplo, por ser soluciones)
+8.  Traducción de las sols de los PPs  
