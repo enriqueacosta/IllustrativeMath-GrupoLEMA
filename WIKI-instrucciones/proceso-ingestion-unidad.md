@@ -14,7 +14,10 @@ Enrique Acosta, 2025
 3. Finalizacción de ingestión (salvo materiales) y revisión de la ingestión automatizada
    + Los campos que faltan se hacen a mano (todos los `[@@@@@@@@@]`).
    + Hay varios en las lecciones (statements, sobre todo)
-   + Tambien PPs y lesson summaries. Para los PPs hay que hacer los archivos a partir de los templates.
+   + Tambien (hay que crear los archivos a partoir de los templates)
+      -  PPs
+      -  unit summaries (K-5)
+      -  glossary
    + Por lo general, todos estos involucran imágenes (que hay que guardar en lugares particulares e insertar con los tags de <image> apropiados) y trabajo "de diagramación" con formatos de varias columnas, combinaciones de imágenes y textos, ajustes de imágenes, creaciones de tablas, textos de matemáticas, etc.
    + Se debe revisar todo lo que quedó ingestado automático de las lecciones del paso anterior, y arreglar.
    + Después de este paso, los únicos `[@@@@@@@@@]` que deberían quedar son los de materiales requeridos.
