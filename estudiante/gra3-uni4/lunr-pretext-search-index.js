@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Introducción a la unidad",
   "number": "",
   "title": "Introducción a la unidad",
-  "body": "    Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )    Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane    Revisiones   Miguel Bernal Escobar  Verónica Mariño Salazar    Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
+  "body": "    Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )    Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Miguel Bernal Escobar  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane    Revisiones   Miguel Bernal Escobar  Verónica Mariño Salazar    Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
 },
 {
   "id": "meta-source-2",
@@ -1069,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Subsubsección",
   "number": "",
   "title": "Actividad 1",
-  "body": " Actividad 1  Actividad 1     De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.          "
+  "body": " Actividad 1  Actividad 1     De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplos de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo que se descompuso en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplos de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.          "
 },
 {
   "id": "act-deDiagramasAExpresiones",
@@ -1078,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Actividad",
   "number": "41",
   "title": "De diagramas a expresiones.",
-  "body": " De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplo de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo descompuesto en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplo de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.         "
+  "body": " De diagramas a expresiones    Andre y Elena están hallando el área de este rectángulo.   Diagrama. Rectángulo dividido en 3 filas de 6 cuadrados del mismo tamaño. Longitud del rectángulo, 6. Ancho del rectángulo, 3.      Andre escribe .   Él marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Andre escribe:         Elena escribe .   Ella marca el rectángulo así:   Diagrama de área. Rectángulo dividido en dos partes.     Después, Elena escribe:             Discute con un compañero:   ¿En qué se parecen las estrategias de Andre y Elena? ¿En qué son diferentes?  ¿Cómo se relacionan los números de las expresiones de Andre con su diagrama?  ¿Cómo se relacionan los números de las expresiones de Elena con su diagrama?      Copia para colorear en el libro de trabajo o descarga para imprimir   Este es otro rectángulo.   Diagrama. Rectángulo dividido en 4 filas de 9 cuadrados del mismo tamaño. Longitud del rectángulo, 9. Ancho del rectángulo, 4.   Podemos encontrar su área hallando .   Marca o colorea el rectángulo de una manera que te ayude a encontrar su área.   Escribe una o más expresiones que representen lo que hiciste en el diagrama y muestra cómo encontraste el área.          Ejemplos de respuestas:    Se parecen: Ambos descompusieron sus diagramas y escribieron nuevas expresiones.  Son diferentes: Escribieron expresiones diferentes al inicio. Andre descompuso su diagrama en dos cuadrados iguales. Escribió nuevas expresiones solo con multiplicación. Elena descompuso su rectángulo en dos rectángulos de diferentes tamaños. Escribió nuevas expresiones con suma y multiplicación.   Andre: Los números en se refieren a los 2 cuadrados grandes de tamaño 3 por 3. Los números en se refieren a los 2 cuadrados grandes compuestos de 9 cuadrados unitarios cada uno.  Elena: El 3 en se refiere al lado más corto de 3 unidades y el se refiere al lado más largo que se descompuso en 5 unidades y 1 unidad. El y se refieren al área de los rectángulos más pequeños que creó.     Ejemplos de respuestas:      Diagrama de área.    o , que es o 36      Diagrama de área.    o , que es o 36.         "
 },
 {
   "id": "lec-estrategiasMultConRectangulos-act2",
@@ -1195,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección B",
-  "body": "  Problemas de práctica de la sección B  Problemas de práctica           Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y una ecuación de división.    Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o . Hay 4 filas de huevos.    En cada caso, escribe un hecho de división que te sepas y que esté relacionado con la ecuación de multiplicación.           Ejemplo de respuesta:    ,    ,      Lin sabe que . Explica cómo puede usar este hecho para encontrar .   Ejemplo de respuesta: es 8 menos que por lo que es o 32.      Resalta partes del diagrama para mostrar la expresión   Diagrama de área.     Explica cómo podrías usar el diagrama para calcular .       Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.       Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y y luego sumé 40 y 16 para obtener 56.   Diagrama de área.      Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.     "
+  "body": "  Problemas de práctica de la sección B  Problemas de práctica           Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y en una ecuación de división.    Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o Hay 4 filas de huevos.    En cada caso, escribe un hecho de división que te sepas y que esté relacionado con la ecuación de multiplicación.           Ejemplo de respuesta:    ,    ,      Lin sabe que . Explica cómo puede usar este hecho para encontrar .   Ejemplo de respuesta: es 8 menos que por lo que es o 32.      Resalta partes del diagrama para mostrar la expresión   Diagrama de área.     Explica cómo podrías usar el diagrama para calcular .       Ver diagrama.  El diagrama muestra que es lo mismo que por lo que es o .    Diagrama de área.       Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y . Luego sumé 40 y 16 para obtener 56.   Diagrama de área.      Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.     "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-3",
@@ -1204,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "1",
   "title": "",
-  "body": " Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y una ecuación de división.  "
+  "body": " Hay 35 libros en la estantería. Hay 7 libros en cada estante. ¿Cuántos estantes hay? Explica de qué manera las ecuaciones y representan la situación.   Ejemplo de respuesta:  El 35 representa todos los libros, 7 el número de libros en cada estante, y el número de estantes es el ? en las ecuaciones. El ?, que representa el número de estantes, simplemente va en diferentes lugares en una ecuación de multiplicación y en una ecuación de división.  "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-4",
@@ -1213,7 +1213,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "2",
   "title": "",
-  "body": " Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o . Hay 4 filas de huevos.  "
+  "body": " Hay 24 huevos en la caja. Hay 6 en cada fila. ¿Cuántas filas de huevos hay?  Escribe una ecuación que represente la situación. Usa un símbolo para representar el número desconocido. Después, contesta la pregunta.   Ejemplo de respuesta: o , o Hay 4 filas de huevos.  "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-5",
@@ -1249,7 +1249,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "6",
   "title": "",
-  "body": "  Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y y luego sumé 40 y 16 para obtener 56.   Diagrama de área.    "
+  "body": "  Marca o colorea el rectángulo para mostrar una estrategia que te permita encontrar su área. Después, explica cómo usar el diagrama para encontrar el área.   Rectángulo. 7 de altura y 8 de ancho      56. Ejemplo de respuesta: Sé que y . Luego sumé 40 y 16 para obtener 56.   Diagrama de área.    "
 },
 {
   "id": "gra3-uni4-secB-ProblemasPractica-9",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "Exploración.",
-  "body": "Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y luego se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.   "
+  "body": "Exploración  Noah encuentra calculando .    Haz un dibujo que muestre por qué funciona el cálculo de Noah.    Usa el método de Noah para calcular .       Ejemplo de respuesta:   Diagrama de área.    Hay 80 cuadrados en el rectángulo de 10 por 8 y se quitan 8 para obtener el rectángulo de 9 por 8. Eso deja o 72 cuadrados.   "
 },
 {
   "id": "gra3-uni4-secB-resumen",
@@ -1423,9 +1423,9 @@ var ptx_lunr_docs = [
   "body": " Actividad 1  Actividad 1     Problemas con números del 11 al 19    Resuelve cada problema. Muestra cómo pensaste. Usa objetos, dibujos o un diagrama.   Caja de huevos.      Un vendedor de un mercado agrícola tiene 7 docenas de huevos al finalizar el día. ¿Cuántos huevos tiene el vendedor?  En el mercado agrícola hay un espacio para que los artistas toquen su música. El sitio tiene algunas sillas para que las personas se sienten a escucharlos. Hay 5 filas de sillas y cada fila tiene 15 sillas. ¿Cuántas sillas hay?  En un puesto de un mercado agrícola hay una mesa. Los lados de la parte de arriba de la mesa miden 4 pies y 6 pies. ¿Cuál es el área de la parte de arriba de la mesa?      84 huevos. Ejemplos de respuestas: El estudiante dibuja 7 grupos con 12 puntos en cada grupo. El estudiante crea grupos de 12 usando bloques en base diez.  75 sillas. Ejemplos de respuestas: El estudiante dibuja 5 grupos con 15 puntos en cada grupo. El estudiante crea 5 grupos de 15 usando bloques en base diez. El estudiante usa el papel cuadriculado para hacer un rectángulo con 5 filas con 15 cuadrados en cada fila.  64 pies cuadrados. Ejemplo de respuesta: El estudiante usa el papel cuadriculado para hacer un rectángulo de 4 por 16.       "
 },
 {
-  "id": "act-problemasNumerosAdolescentes",
+  "id": "act-multiplicarNums11a19",
   "level": "2",
-  "url": "lec-problemasMult11a19-act1.html#act-problemasNumerosAdolescentes",
+  "url": "lec-problemasMult11a19-act1.html#act-multiplicarNums11a19",
   "type": "Actividad",
   "number": "53",
   "title": "Problemas con números del 11 al 19.",
@@ -2275,7 +2275,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicios",
   "number": "",
   "title": "Problemas de práctica de la sección D",
-  "body": "  Problemas de práctica de la sección D  Problemas de práctica    En el gimnasio hay sillas. Están organizadas en filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   En cada fila hay sillas. Ejemplo de respuesta:           Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Encuentra el valor de . Si te ayudan, usa bloques en base diez.     Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.           Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.      Encuentra el valor de cada cociente.             . Ejemplo de respuesta:          . Ejemplo de respuesta:            En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:          Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.    Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .    "
+  "body": "  Problemas de práctica de la sección D  Problemas de práctica    En el gimnasio hay sillas. Están organizadas en filas, cada una con el mismo número de sillas. ¿Cuántas sillas hay en cada fila? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.   En cada fila hay sillas. Ejemplo de respuesta:           Encuentra el valor de . Si te ayudan, usa bloques en base diez.    Encuentra el valor de . Si te ayudan, usa bloques en base diez.     Ejemplo de respuesta:      . Primero puse 1 decena en cada uno de los 6 grupos iguales y sobraron 36, entonces puse 6 más en cada uno de los grupos.   Bloques en base diez.         . Hay 4 grupos y hay 13 en cada grupo.   Bloques en base diez.           Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 dan 42.      Encuentra el valor de cada cociente.             . Ejemplo de respuesta:          . Ejemplo de respuesta:            En el parque hay 240 personas que vinieron a los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:          Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.    Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista de las formas.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .    "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-3",
@@ -2302,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "3",
   "title": "",
-  "body": "   Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 más dan 42.    "
+  "body": "   Encuentra el valor de . Si te ayuda, dibuja un diagrama.    Encuentra el valor de . Si te ayuda, dibuja un diagrama.     Ejemplo de respuesta:    . Sabía que cabían diez porque eso da . Luego, tres más me dieron . Entonces hay trece en y .   Bloques en base diez.     . Sé que 3 grupos de 10 son 30 y 3 grupos de 4 son 12, así que 3 grupos de 10 y 4 dan 42.    "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-6",
@@ -2320,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "5",
   "title": "",
-  "body": " En el parque hay 240 personas que vinieron por los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:        "
+  "body": " En el parque hay 240 personas que vinieron a los partidos de fútbol. Hay espectadores. El resto de las personas están en equipos de fútbol que tienen el mismo número de jugadores. ¿Cuántos jugadores hay en cada equipo de fútbol?    Escribe una ecuación que corresponda a esta situación. Usa una letra para representar la cantidad desconocida.    Resuelve el problema. Explica o muestra cómo pensaste.      o .    . Ejemplo de respuesta:        "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-8",
@@ -2329,7 +2329,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "6",
   "title": "Exploración.",
-  "body": "Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o , en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.   "
+  "body": "Exploración  Para encontrar el valor de , Diego divide entre y entre , y dice que la respuesta es .    Explica por qué el método de Diego es correcto. Usa ecuaciones o dibujos para apoyar tu razonamiento.    ¿El método de Diego funciona para encontrar el valor de ? Explica cómo pensaste.     Ejemplo de respuesta:   es decenas y estas se pueden dividir en grupos de decenas. Las unidades se pueden dividir en grupos de unidades. Entonces son grupos iguales con decenas y unidades, o en cada grupo.  No, no puedo dividir decenas en grupos iguales. Puedo tomar de las decenas y dividirlas en grupos iguales de . Luego queda decena y unidades que se pueden dividir en grupos iguales de . Entonces, el valor de es , decenas y unidades.   "
 },
 {
   "id": "gra3-uni4-secD-ProblemasPractica-9",
@@ -2338,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Ejercicio",
   "number": "7",
   "title": "Exploración.",
-  "body": "Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .   "
+  "body": "Exploración  ¿De qué formas diferentes puedes dividir 48 objetos en grupos iguales?    Haz una lista de las formas.     Escribe una ecuación de multiplicación o de división para cada forma.     Ejemplo de respuesta:   grupo de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de , grupos de .  , , , , , , , , , .   "
 },
 {
   "id": "gra3-uni4-secD-resumen",
@@ -2404,216 +2404,216 @@ var ptx_lunr_docs = [
   "body": "Al final de la sección, usamos las cuatro operaciones para resolver problemas. "
 },
 {
-  "id": "gra3-uni4-glo",
+  "id": "gra3-uni4-glosario",
   "level": "1",
-  "url": "gra3-uni4-glo.html",
+  "url": "gra3-uni4-glosario.html",
   "type": "Subsección",
   "number": "",
   "title": "Glosario unidad 3-4",
   "body": " Glosario unidad 3-4     algoritmo  Una serie de pasos que, si se siguen correctamente, siempre funciona para obtener un resultado.    área  El número de unidades cuadradas que cubren una figura plana sin dejar espacios ni superponerse.    arreglo  Una organización de objetos en filas y columnas. Cada columna debe tener el mismo número de objetos que las otras columnas y cada fila debe tener el mismo número de objetos que las otras filas.    centímetro cuadrado  Un cuadrado con lados que miden centímetro.    cociente  El resultado de una expresión de división.    división  La operación que nos dice el número de grupos o el tamaño de cada grupo cuando se reparten objetos en grupos del mismo tamaño.    divisor  El número que se usa para dividir una cantidad. Puede representar el tamaño de los grupos o el número de grupos.    ecuación  Una afirmación que incluye un signo igual ( ). Nos dice que lo que está a un lado del signo es igual a lo que está al otro lado.    expresión  Una expresión tiene al menos números y al menos una operación matemática (como suma, resta, multiplicación y división).    factor  Cuando multiplicamos dos números enteros para obtener un producto, cada uno de esos números es un factor del producto.    forma desarrollada  Una forma específica de escribir un número como una suma de centenas, decenas y unidades.  En la forma desarrollada el número se escribe como la suma de los valores de cada dígito. Por ejemplo: la forma desarrollada de es .    gráfica de barras con escala  Una gráfica de barras con marcada con múltiplos de algún número distinto de .    gráfica de dibujos  Una forma de mostrar cuántos hay en cada grupo o categoría usando dibujos de objetos o símbolos.    gráfica de dibujos con escala  Una gráfica de dibujos en la cual cada dibujo representa una cantidad distinta a .    leyenda  La parte de una gráfica de dibujos que muestra lo que cada dibujo representa.    metro cuadrado  Un cuadrado con lados que miden metro.    multiplicación  La operación que nos dice el número total de objetos cuando se tiene cierta cantidad de grupos con la misma cantidad de objetos cada uno.    paréntesis  Símbolos para agrupar que se pueden usar en expresiones o ecuaciones, como:    pie cuadrado  Un cuadrado con lados que miden pie.    producto  El resultado de multiplicar unos números.    pulgada cuadrada  Un cuadrado con lados que miden pulgada.    redondear  Una forma de decir de qué número de cierto tipo está más cerca un número dado. Por ejemplo, para , el múltiplo de diez más cercano es y el múltiplo de cien más cercano es . Redondeamos a (si redondeamos a la decena más cercana) o a (si redondeamos a la centena más cercana).     "
 },
 {
-  "id": "gra3-uni4-glo-2-1-2",
+  "id": "gra3-uni4-glosario-2-1-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-1-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-1-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una serie de pasos que, si se siguen correctamente, siempre funciona para obtener un resultado. "
 },
 {
-  "id": "gra3-uni4-glo-2-2-2",
+  "id": "gra3-uni4-glosario-2-2-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-2-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-2-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "El número de unidades cuadradas que cubren una figura plana sin dejar espacios ni superponerse. "
 },
 {
-  "id": "gra3-uni4-glo-2-3-2",
+  "id": "gra3-uni4-glosario-2-3-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-3-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-3-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una organización de objetos en filas y columnas. Cada columna debe tener el mismo número de objetos que las otras columnas y cada fila debe tener el mismo número de objetos que las otras filas. "
 },
 {
-  "id": "gra3-uni4-glo-2-4-2",
+  "id": "gra3-uni4-glosario-2-4-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-4-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-4-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Un cuadrado con lados que miden centímetro. "
 },
 {
-  "id": "gra3-uni4-glo-2-5-2",
+  "id": "gra3-uni4-glosario-2-5-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-5-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-5-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "El resultado de una expresión de división. "
 },
 {
-  "id": "gra3-uni4-glo-2-6-2",
+  "id": "gra3-uni4-glosario-2-6-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-6-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-6-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "La operación que nos dice el número de grupos o el tamaño de cada grupo cuando se reparten objetos en grupos del mismo tamaño. "
 },
 {
-  "id": "gra3-uni4-glo-2-7-2",
+  "id": "gra3-uni4-glosario-2-7-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-7-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-7-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "El número que se usa para dividir una cantidad. Puede representar el tamaño de los grupos o el número de grupos. "
 },
 {
-  "id": "gra3-uni4-glo-2-8-2",
+  "id": "gra3-uni4-glosario-2-8-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-8-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-8-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una afirmación que incluye un signo igual ( ). Nos dice que lo que está a un lado del signo es igual a lo que está al otro lado. "
 },
 {
-  "id": "gra3-uni4-glo-2-9-2",
+  "id": "gra3-uni4-glosario-2-9-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-9-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-9-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una expresión tiene al menos números y al menos una operación matemática (como suma, resta, multiplicación y división). "
 },
 {
-  "id": "gra3-uni4-glo-2-10-2",
+  "id": "gra3-uni4-glosario-2-10-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-10-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-10-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Cuando multiplicamos dos números enteros para obtener un producto, cada uno de esos números es un factor del producto. "
 },
 {
-  "id": "gra3-uni4-glo-2-11-2",
+  "id": "gra3-uni4-glosario-2-11-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-11-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-11-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una forma específica de escribir un número como una suma de centenas, decenas y unidades. "
 },
 {
-  "id": "gra3-uni4-glo-2-11-3",
+  "id": "gra3-uni4-glosario-2-11-3",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-11-3",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-11-3",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "En la forma desarrollada el número se escribe como la suma de los valores de cada dígito. Por ejemplo: la forma desarrollada de es . "
 },
 {
-  "id": "gra3-uni4-glo-2-12-2",
+  "id": "gra3-uni4-glosario-2-12-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-12-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-12-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una gráfica de barras con marcada con múltiplos de algún número distinto de . "
 },
 {
-  "id": "gra3-uni4-glo-2-13-2",
+  "id": "gra3-uni4-glosario-2-13-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-13-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-13-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una forma de mostrar cuántos hay en cada grupo o categoría usando dibujos de objetos o símbolos. "
 },
 {
-  "id": "gra3-uni4-glo-2-14-2",
+  "id": "gra3-uni4-glosario-2-14-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-14-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-14-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Una gráfica de dibujos en la cual cada dibujo representa una cantidad distinta a . "
 },
 {
-  "id": "gra3-uni4-glo-2-15-2",
+  "id": "gra3-uni4-glosario-2-15-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-15-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-15-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "La parte de una gráfica de dibujos que muestra lo que cada dibujo representa. "
 },
 {
-  "id": "gra3-uni4-glo-2-16-2",
+  "id": "gra3-uni4-glosario-2-16-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-16-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-16-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Un cuadrado con lados que miden metro. "
 },
 {
-  "id": "gra3-uni4-glo-2-17-2",
+  "id": "gra3-uni4-glosario-2-17-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-17-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-17-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "La operación que nos dice el número total de objetos cuando se tiene cierta cantidad de grupos con la misma cantidad de objetos cada uno. "
 },
 {
-  "id": "gra3-uni4-glo-2-18-2",
+  "id": "gra3-uni4-glosario-2-18-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-18-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-18-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Símbolos para agrupar que se pueden usar en expresiones o ecuaciones, como: "
 },
 {
-  "id": "gra3-uni4-glo-2-19-2",
+  "id": "gra3-uni4-glosario-2-19-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-19-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-19-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Un cuadrado con lados que miden pie. "
 },
 {
-  "id": "gra3-uni4-glo-2-20-2",
+  "id": "gra3-uni4-glosario-2-20-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-20-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-20-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "El resultado de multiplicar unos números. "
 },
 {
-  "id": "gra3-uni4-glo-2-21-2",
+  "id": "gra3-uni4-glosario-2-21-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-21-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-21-2",
   "type": "Párrafo",
   "number": "",
   "title": "",
   "body": "Un cuadrado con lados que miden pulgada. "
 },
 {
-  "id": "gra3-uni4-glo-2-22-2",
+  "id": "gra3-uni4-glosario-2-22-2",
   "level": "2",
-  "url": "gra3-uni4-glo.html#gra3-uni4-glo-2-22-2",
+  "url": "gra3-uni4-glosario.html#gra3-uni4-glosario-2-22-2",
   "type": "Párrafo",
   "number": "",
   "title": "",

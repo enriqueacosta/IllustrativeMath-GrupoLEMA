@@ -1,0 +1,28 @@
+\documentclass[profe]{LEMA-Tikz-IM}
+\begin{document}
+
+\begin{tikzpicture}
+\matrix[tablaVertical, % ver def en LEMA-Tikz-IM.sty
+        % row 1/.append style={nodes={minimum height=9ex}},
+        column 1/.append style={nodes={text width = 18ex}},
+        column 2/.append style={nodes={text width = 18ex}},
+    ] (myTable) {
+        % Header Row 
+        {número de objetos} & {nombre de la bolsa} \\
+        % 
+        1  & H \\ 
+        2  & B \\ 
+        3  & G \\
+        4  & C \\
+        5  & F \\
+        6  & J \\
+        7  & A \\
+        8  & E \\
+        9  & D \\
+        10 & I \\
+  };
+
+\end{tikzpicture}
+
+
+\end{document}

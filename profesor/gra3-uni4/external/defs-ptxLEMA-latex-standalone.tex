@@ -19,7 +19,10 @@
 \DefineVerbatimEnvironment{preformatted}{Verbatim}{}
 %% Fuente sans-serif
 % \renewcommand{\familydefault}{\sfdefault}
-\RequirePackage[sfdefault]{roboto} 
+\RequirePackage[sfdefault]{roboto}
+% to disable ligatures (roboto removes the dot of the i in fi)
+% WARNING: maybe this should not be for higher grades
+\usepackage{microtype}\DisableLigatures{encoding = *, family = *}
 % Sans serif font for math
 % \RequirePackage{sansmath}
 \RequirePackage{sfmath}
@@ -52,8 +55,20 @@
 \strut\nobreak\leaders\vbox{\hrule width 0.3pt height 0.3pt \vskip -1.2pt}\hskip 1\fillinmaxwidth minus \fillincontract\nobreak\strut%
 }
 \tcbset{ imagestyle/.style={enhanced, blanker} }
-\NewTColorBox{tcbimage}{mmm}{imagestyle,left=0pt, top=0ex, width=#2\linewidth}
-\NewDocumentEnvironment{image}{mmmm}{\notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~\par}\begin{tcbimage}{#1}{#2}{#3}}{\end{tcbimage}}
+\NewTColorBox{tcbimage}{mmm}{
+  imagestyle,
+  left=0pt, right=0pt, top=0ex, bottom=0ex,
+  width=#2\linewidth,
+  boxsep=0pt,
+  before skip=\parskip, after skip=\parskip
+}
+\NewDocumentEnvironment{image}{mmmm}{%
+  \notblank{#4}{\leavevmode\nopagebreak\vspace{#4}}{~%
+  \par\vspace{\parskip}}%  % Always end the current paragraph and add one parskip
+  \begin{tcbimage}{#1}{#2}{#3}
+}{%
+  \end{tcbimage}
+}
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{longtable}
@@ -102,7 +117,14 @@
 \pagestyle{fancy}
 \fancyfoot[C]{} %Remove default Latex numbering
 \fancyhead[C]{\begin{tikzpicture}[remember picture,overlay] \node[yshift=-0.5cm] at (current page.north west) {\begin{tikzpicture}[remember picture, overlay] \includegraphics[width=\paperwidth]{external/png-source/barra-colorGrupoLEMA.pdf}\end{tikzpicture}};\end{tikzpicture}} % Paper-Wide header
-\fancyfoot[L]{{\scriptsize Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.}\\{\tiny Adaptado de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022,\\[-0.35cm] openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. Detalles: https://creativecommons.org/licenses/by/4.0/deed.es}}
+\fancyfoot[L]{%
+  \parbox{1.05\textwidth}{%
+    \fontsize{9pt}{11pt}\selectfont
+    Grupo LEMA (www.grupolema.org), \the\year{}. Licencia de uso CC-BY-NC Internacional 4.0.\\
+    \fontsize{7pt}{8.4pt}\selectfont
+    Adaptado de IM K--5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com y de Open Up Resources © 2022, openupresources.org, publicadas bajo una licencia Creative Commons CC BY 4.0. \\Detalles: https://creativecommons.org/licenses/by/4.0/deed.es
+  }
+}
 \fancyhead[L]{\hfill Nombre: \underline{\hspace{8cm}}}
 \fancyhead[R]{}
 \fancyfoot[R]{}

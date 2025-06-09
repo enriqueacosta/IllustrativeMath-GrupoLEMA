@@ -8,7 +8,7 @@
 %  - rsvg-convert (brew install librsvg) 
 %  - imageMagick (brew install imagemagick)
 %  - pdf2svg (brew install pdf2svg)
-\LoadClass[border=2pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.75 --format svg --output "\jobname.svg" "\jobname.svg" && convert -density 300 \infile\space "\jobname.png"}}}]{standalone}
+\LoadClass[border=2pt, tikz, convert={command=\unexpanded{{pdf2svg \infile\space "\jobname.svg" && rsvg-convert --zoom 1.2 --format svg --output "\jobname.svg" "\jobname.svg" && convert -density 300 \infile\space "\jobname.png"}}}]{standalone}
 
 
 \RequirePackage{pgf}       % for floating point arithmetic arithmetic

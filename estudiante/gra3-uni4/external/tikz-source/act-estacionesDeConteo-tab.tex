@@ -1,0 +1,29 @@
+\documentclass[grado0]{LEMA-Tikz-IM}
+\begin{document}
+
+\begin{tikzpicture}
+\def\minTableRowHeight{4ex} %override default \minTableRowHeight for tablaVertical
+\matrix[tablaVertical, % ver def en LEMA-Tikz-IM.sty
+        % row 1/.append style={nodes={minimum height=9ex}},
+        column 1/.append style={nodes={text width = 18ex}},
+        column 2/.append style={nodes={text width = 18ex}},
+    ] (myTable) {
+        % Header Row 
+        {número de objetos} & {nombre de la bolsa} \\
+        % 
+        1  &  \\ 
+        2  &  \\ 
+        3  &  \\
+        4  &  \\
+        5  &  \\
+        6  &  \\
+        7  &  \\
+        8  &  \\
+        9  &  \\
+        10 &  \\
+  };
+
+\end{tikzpicture}
+
+
+\end{document}
