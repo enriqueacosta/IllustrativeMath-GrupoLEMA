@@ -45,7 +45,7 @@ Enrique Acosta, 2025
    +  
 7. Revisión de la ingestión completa. Revisar que no falte nada, que los links hayan quedado bien, que no hagan falta blm, o versiones improbimbres de actividades.
 
-# fase de traducción
+# Fase de traducción
 7. Traducción de las lecciónes
    +  todos los textos en ENG de los archivos `.ptx` de la lección y actividades.
    +  Arreglar BLMs que tiene textos en ENG
