@@ -39,10 +39,10 @@ Command-line flags
 
 Usage
 ─────
-    python createActivitiyPandocMD.py activity.ptx activity.md
-    python createActivitiyPandocMD.py activity.ptx activity.md --prelude-first
-    python createActivitiyPandocMD.py activity.ptx activity.md --no-solution
-    python createActivitiyPandocMD.py activity.ptx activity.md --minimal
+    python pandocMarkdownActivitiy.py activity.ptx activity.md
+    python pandocMarkdownActivitiy.py activity.ptx activity.md --prelude-first
+    python pandocMarkdownActivitiy.py activity.ptx activity.md --no-solution
+    python pandocMarkdownActivitiy.py activity.ptx activity.md --minimal
 
 Typical Pandoc step afterwards
 ──────────────────────────────
