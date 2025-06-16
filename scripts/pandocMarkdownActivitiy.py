@@ -39,10 +39,10 @@ Command-line flags
 
 Usage
 ─────
-    python pandocMarkdownActivitiy.py activity.ptx activity.md
-    python pandocMarkdownActivitiy.py activity.ptx activity.md --prelude-first
-    python pandocMarkdownActivitiy.py activity.ptx activity.md --no-solution
-    python pandocMarkdownActivitiy.py activity.ptx activity.md --minimal
+    python pandocMarkdownActivitiy.py activity.ptx
+    python pandocMarkdownActivitiy.py activity.ptx --prelude-first
+    python pandocMarkdownActivitiy.py activity.ptx --no-solution
+    python pandocMarkdownActivitiy.py activity.ptx --minimal
 
 Typical Pandoc step afterwards
 ──────────────────────────────
@@ -247,7 +247,7 @@ def slide(title: str, body: list[str]) -> list[str]:
 # ───────── main ────────────────────────────────────────────────────────
 def main() -> None:
     ap = argparse.ArgumentParser(description="Convert PTX to Pandoc Markdown slides.")
-    ap.add_argument("input"); ap.add_argument("output")
+    ap.add_argument("input", help="input .ptx file")
     ap.add_argument("--prelude-first", action="store_true",
                     help="render prelude slides before statement slide")
     ap.add_argument("--no-solution", action="store_true",
@@ -256,7 +256,9 @@ def main() -> None:
                     help="within <paragraphs> keep only <p>/<li> containing <q>")
     args = ap.parse_args()
 
-    in_f, out_f = Path(args.input), Path(args.output)
+    in_f = Path(args.input)
+    out_f = in_f.with_suffix(".md")
+
     CONST = load_constants(in_f)
 
     root = ET.parse(in_f).getroot()
