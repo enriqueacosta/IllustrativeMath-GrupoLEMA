@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
 Enrique Acosta, 2025
-Convert an act-*.ptx files into a single Pandoc-Markdown* file that renders neatly 
-as  Word, but it may also partially work for Reveal.js slides, PDF (Beamer), or PowerPoint.
+Convert an act-*.ptx, warm-*.ptx, cool-*.ptx, files into a single Pandoc-Markdown 
+file that renders neatl  as docx Word, but it may also partially work for Reveal.js 
+slides, PDF (Beamer), or PowerPoint.
 
 ╭─────────────────────────────  What the script does  ───────────────────────────╮
-│ 1. Reads a *.ptx* file that contains one `<activity>` element.                 │
+│ 1. Reads a *.ptx* file that contains one `<activity>` element (or corresponding│
+│    warm and cool tags).                                                        │
 │ 2. Resolves all `<custom ref="…"/>` placeholders using                         │
 │       ../meta/customizations/textos-constantes-v1.ptx                          │
 │    so, for example, `<custom ref="recommended-time-titulo"/>` becomes          │
@@ -20,14 +22,14 @@ as  Word, but it may also partially work for Reveal.js slides, PDF (Beamer), or 
 │       <m> … </m>        →  $…$   (inline LaTeX)                                │
 │       <me> … </me>      →  $$ … $$ (display math)                              │
 │       <image source="foo" width="60%">                                         │
-│                         →  `<img src="../assets/foo.png" width="60%">`         │
+│                         →  `![](../assets/foo.png){width=60%}`                 │
 │       <q> … </q>        →  « … »                                               │
 │ 6. `<sidebyside>` is **flattened**: the first “column” is emitted, a blank     │
 │    line is inserted, then the second column, etc. `<stack>` wrappers are       │
 │    ignored; only their children appear.                                        │
 │ 7. Lists keep proper numbering: 1. → a. → 1. for nesting levels 0/1/2+.        │
 │ 8. The resulting Markdown is written to the output file.                       │
-╰─────────────────────────────────────────────────────────────────────────────────╯
+╰────────────────────────────────────────────────────────────────────────────────╯
 
 Command-line flags
 ──────────────────
@@ -39,10 +41,10 @@ Command-line flags
 
 Usage
 ─────
-    python pandocMarkdownActivitiy.py activity.ptx
-    python pandocMarkdownActivitiy.py activity.ptx --prelude-first
-    python pandocMarkdownActivitiy.py activity.ptx --no-solution
-    python pandocMarkdownActivitiy.py activity.ptx --minimal
+    python pandocMarkdownActivitiy.py <path to activity.ptx>
+    python pandocMarkdownActivitiy.py <path to activity.ptx> --prelude-first
+    python pandocMarkdownActivitiy.py <path to activity.ptx> --no-solution
+    python pandocMarkdownActivitiy.py <path to activity.ptx> --minimal
 
 Typical Pandoc step afterwards
 ──────────────────────────────
