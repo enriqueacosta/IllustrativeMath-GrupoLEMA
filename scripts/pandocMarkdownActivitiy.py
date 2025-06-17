@@ -2,7 +2,7 @@
 """
 Enrique Acosta, 2025
 Convert an act-*.ptx, warm-*.ptx, cool-*.ptx, files into a single Pandoc-Markdown 
-file that renders neatl  as docx Word, but it may also partially work for Reveal.js 
+file that renders neatly as docx Word, but it may also partially work for Reveal.js 
 slides, PDF (Beamer), or PowerPoint.
 
 ╭─────────────────────────────  What the script does  ───────────────────────────╮
@@ -12,23 +12,25 @@ slides, PDF (Beamer), or PowerPoint.
 │       ../meta/customizations/textos-constantes-v1.ptx                          │
 │    so, for example, `<custom ref="recommended-time-titulo"/>` becomes          │
 │    “Tiempo recomendado”.                                                       │
-│ 3. Builds slides in this order (unless flags change it):                       │
+│ 3. Resolves all `<xi:include href="…"/>` directives using XInclude.            │
+│    The script uses `lxml.etree` to expand includes before processing content.  │
+│ 4. Builds slides in this order (unless flags change it):                       │
 │       • Statement  (title “Enunciado”)                                         │
 │       • Solution   (title “Solución”)                                          │
 │       • All <paragraphs> in <prelude>                                          │
 │       • All <paragraphs> in <postlude>                                         │
-│ 4. Each `<paragraphs>` block becomes one ## markdown section.                  │
-│ 5. Supported inline conversions                                                │
+│ 5. Each `<paragraphs>` block becomes one ## markdown section.                  │
+│ 6. Supported inline conversions                                                │
 │       <m> … </m>        →  $…$   (inline LaTeX)                                │
 │       <me> … </me>      →  $$ … $$ (display math)                              │
 │       <image source="foo" width="60%">                                         │
 │                         →  `![](../assets/foo.png){width=60%}`                 │
 │       <q> … </q>        →  « … »                                               │
-│ 6. `<sidebyside>` is **flattened**: the first “column” is emitted, a blank     │
+│ 7. `<sidebyside>` is **flattened**: the first “column” is emitted, a blank     │
 │    line is inserted, then the second column, etc. `<stack>` wrappers are       │
 │    ignored; only their children appear.                                        │
-│ 7. Lists keep proper numbering: 1. → a. → 1. for nesting levels 0/1/2+.        │
-│ 8. The resulting Markdown is written to the output file.                       │
+│ 8. Lists keep proper numbering: 1. → a. → 1. for nesting levels 0/1/2+.        │
+│ 9. The resulting Markdown is written to the output file.                       │
 ╰────────────────────────────────────────────────────────────────────────────────╯
 
 Command-line flags
@@ -66,7 +68,12 @@ Limitations
 from __future__ import annotations
 import sys, argparse, textwrap, string, re, copy
 from pathlib import Path
-from xml.etree import ElementTree as ET
+
+# OLD:
+# from xml.etree import ElementTree as ET
+
+# NEW: Use lxml.etree instead of xml.etree for XInclude support
+from lxml import etree as ET
 
 INDENT = "    "
 
@@ -263,7 +270,16 @@ def main() -> None:
 
     CONST = load_constants(in_f)
 
-    root = ET.parse(in_f).getroot()
+    # OLD:
+    # root = ET.parse(in_f).getroot()
+
+    # NEW: Parse the XML and expand any <xi:include href="..."/> directives
+    parser = ET.XMLParser(load_dtd=True, recover=True)  # Allow recovery and DTD loading
+    tree = ET.parse(str(in_f), parser)                  # Parse the input file using lxml
+    tree.xinclude()                                     # xinclude expanded and flattened into the main XML tree
+    root = tree.getroot()                               # Get the root after includes are merged
+
+
     title = root.findtext("./title", "(sin título)").replace('"', r"\"")
 
     md = [
