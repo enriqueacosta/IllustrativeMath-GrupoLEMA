@@ -43,17 +43,17 @@ Command-line flags
 
 Usage
 ─────
-    python pandocMarkdownActivitiy.py <path to activity.ptx>
-    python pandocMarkdownActivitiy.py <path to activity.ptx> --prelude-first
-    python pandocMarkdownActivitiy.py <path to activity.ptx> --no-solution
-    python pandocMarkdownActivitiy.py <path to activity.ptx> --minimal
+  python pandocMarkdownActivitiy.py <path to activity.ptx>
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --prelude-first
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --no-solution
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --minimal
 
 Typical Pandoc step afterwards
 ──────────────────────────────
-    pandoc activity.md -o activity.docx                          # Word
-    pandoc activity.md -t revealjs -s -o activity.html           # slides
-    pandoc activity.md -o activity.pdf --pdf-engine=xelatex      # Beamer PDF
-    pandoc activity.md -o activity.pptx                          # PowerPoint
+  pandoc activity.md -o activity.docx                                 # Word
+  pandoc activity.md -t revealjs -s -o activity.html                  # slides
+  pandoc activity.md -o activity.pdf --pdf-engine=xelatex             # Beamer PDF
+  pandoc activity.md -o activity.pptx --reference-doc template5.pptx  # PowerPoint
 
 Limitations
 ───────────
