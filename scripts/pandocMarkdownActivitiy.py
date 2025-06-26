@@ -79,7 +79,9 @@ INDENT = "    "
 
 
 # ───────── helpers (unchanged) ─────────────────────────────────────────
-def strip_ns(tag: str) -> str:
+def strip_ns(tag) -> str:
+    if not isinstance(tag, str):
+        return ""
     return tag.split("}", 1)[-1]
 
 def xml_str(el: ET.Element) -> str:
@@ -149,22 +151,46 @@ def inline_md(el: ET.Element, const: dict[str, str]) -> str:
     if tag == "me":
         return f"\n$${el.text}$$\n"
     if tag == "image":
-        src   = el.get("source", "").strip()
-        width = (el.get("width") or "").strip()
+        src = el.get("source", "").strip()
+        width = el.get("width", "").strip()
 
-        # 1 ── normalise: add .png if no ext, prepend ../assets/, URL-encode spaces
+        # 1 ── Normalize path
         if not src.lower().endswith((".svg", ".png", ".jpg", ".jpeg", ".gif")):
             src += ".png"
         if not src.startswith("../assets/"):
             src = "../assets/" + src
-        src = src.replace(" ", "%20")                     # ← NEW (encode spaces)
+        src = src.replace(" ", "%20")
 
-        # 2 & 3 ── always output Markdown-figure syntax so DOCX keeps the image
-        if width:
-            if not width.endswith("%"):
-                width += "%"
-            return f"![]({src}){{width=\"{width}\"}}"     # ← CHANGED
-        return f"![]({src})"                              # ← (unchanged path)
+        # 2 ── If width is not set, try to inherit from <sidebyside> or <sbsgroup>
+        if not width:
+            parent = el.getparent()
+            while parent is not None:
+                if strip_ns(parent.tag) == "sidebyside":
+                    grandparent = parent.getparent()
+                    if grandparent is not None and "widths" in grandparent.attrib:
+                        widths = grandparent.attrib["widths"].split()
+
+                        # Climb to immediate child of <sidebyside> (usually <stack>)
+                        stack = el
+                        while stack.getparent() is not None and stack.getparent() != parent:
+                            stack = stack.getparent()
+
+                        siblings = [s for s in parent if strip_ns(s.tag) in {"stack", "col", "div"}]
+                        try:
+                            idx = siblings.index(stack)
+                            width = widths[idx] if idx < len(widths) else ""
+                        except ValueError:
+                            pass
+                    break  # Found a sidebyside → done
+                parent = parent.getparent()
+
+        # 3 ── Final fallback to absolute width
+        if not width:
+            width = "4in"
+        elif not width.endswith("%") and not width.endswith("in") and not width.endswith("cm"):
+            width += "%"
+
+        return f"![]({src}){{width=\"{width}\"}}"                            # ← (unchanged path)
     if tag == "custom":
         ref = el.get("ref")
         if ref and ref in const:
@@ -305,7 +331,7 @@ def main() -> None:
 
             h_el = work_para.find("./title")
             heading = inline_md(h_el, CONST) if h_el is not None else "(sin título)"
-            body = [ln for ch in work_para if strip_ns(ch.tag) != "title"
+            body = [ln for ch in work_para if hasattr(ch, "tag") and strip_ns(ch.tag) != "title"
                     for ln in block_md(ch, CONST)]
             slides.append(slide(heading, body))
         return slides
