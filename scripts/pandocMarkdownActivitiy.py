@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Enrique Acosta, 2025
-Convert an act-*.ptx, warm-*.ptx, cool-*.ptx, files into a single Pandoc-Markdown 
-file that renders neatly as docx Word, but it may also partially work for Reveal.js 
+Enrique Acosta, 2025  
+Convert an act-*.ptx, warm-*.ptx, cool-*.ptx, files into a single Pandoc-Markdown  
+file that renders neatly as docx Word, but it may also partially work for Reveal.js  
 slides, PDF (Beamer), or PowerPoint.
 
 ╭─────────────────────────────  What the script does  ───────────────────────────╮
@@ -20,11 +20,13 @@ slides, PDF (Beamer), or PowerPoint.
 │       • All <paragraphs> in <prelude>                                          │
 │       • All <paragraphs> in <postlude>                                         │
 │ 5. Each `<paragraphs>` block becomes one ## markdown section.                  │
-│ 6. Supported inline conversions                                                │
+│ 6. Supported inline conversions:                                               │
 │       <m> … </m>        →  $…$   (inline LaTeX)                                │
 │       <me> … </me>      →  $$ … $$ (display math)                              │
-│       <image source="foo" width="60%">                                         │
-│                         →  `![](../assets/foo.png){width=60%}`                 │
+│       <image>           →  `![](../assets/foo.png){width=…}`                   │
+│                          Width is taken from:                                  │
+│                             · `@width=…` on the <image>                        │
+│                             · or inherited from enclosing <sidebyside widths>  │
 │       <q> … </q>        →  « … »                                               │
 │ 7. `<sidebyside>` is **flattened**: the first “column” is emitted, a blank     │
 │    line is inserted, then the second column, etc. `<stack>` wrappers are       │
@@ -35,33 +37,35 @@ slides, PDF (Beamer), or PowerPoint.
 
 Command-line flags
 ──────────────────
---prelude-first      Place all <prelude> slides **before** the statement slide
---no-solution        Do not include the <solution> slide
---minimal            Within every <paragraphs> slide:
-                       · keep **only** <p> or <li> elements that contain a <q>
-                       · drop the entire slide if nothing remains after pruning
+--prelude-first      Place all <prelude> slides **before** the statement slide  
+--no-solution        Do not include the <solution> slide  
+--minimal            Within every <paragraphs> slide:  
+                       · keep **only** <p> or <li> elements that contain a <q>  
+                       · drop the entire slide if nothing remains after pruning  
 
 Usage
 ─────
-  python pandocMarkdownActivitiy.py <path to activity.ptx>
-  python pandocMarkdownActivitiy.py <path to activity.ptx> --prelude-first
-  python pandocMarkdownActivitiy.py <path to activity.ptx> --no-solution
-  python pandocMarkdownActivitiy.py <path to activity.ptx> --minimal
+  python pandocMarkdownActivitiy.py <path to activity.ptx>  
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --prelude-first  
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --no-solution  
+  python pandocMarkdownActivitiy.py <path to activity.ptx> --minimal  
 
 Typical Pandoc step afterwards
 ──────────────────────────────
-  pandoc activity.md -o activity.docx                                 # Word
-  pandoc activity.md -t revealjs -s -o activity.html                  # slides
-  pandoc activity.md -o activity.pdf --pdf-engine=xelatex             # Beamer PDF
-  pandoc activity.md -o activity.pptx --reference-doc template5.pptx  # PowerPoint
+  pandoc activity.md -o activity.docx                                 # Word  
+  pandoc activity.md -t revealjs -s -o activity.html                  # slides  
+  pandoc activity.md -o activity.pdf --pdf-engine=xelatex             # Beamer PDF  
+  pandoc activity.md -o activity.pptx --reference-doc template5.pptx  # PowerPoint  
 
 Limitations
 ───────────
-* Images are **not automatically centred** in DOCX/PPTX due to a Pandoc
-  limitation; centre manually or via template if needed.
-* Column widths and multi-column layouts in DOCX are not preserved; the
-  script flattens side-by-side content vertically instead.
-* Only the subset of PTX tags listed above is handled. Unknown tags fall
+* Images are **not automatically centred** in DOCX/PPTX due to a Pandoc  
+  limitation; centre manually or via template if needed.  
+* Column widths and multi-column layouts in DOCX are not preserved; the  
+  script flattens side-by-side content vertically instead.  
+* Image width is inherited from the enclosing <sidebyside> widths attribute  
+  if not explicitly set, but layout remains vertical.  
+* Only the subset of PTX tags listed above is handled. Unknown tags fall  
   through as plain text.
 """
 
