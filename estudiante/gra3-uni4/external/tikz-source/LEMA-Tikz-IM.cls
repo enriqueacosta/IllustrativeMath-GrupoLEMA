@@ -387,7 +387,7 @@
 
     % draw ticks as nodes (top-mark-n). 1st mark is (top-mark-1).
     \foreach \x in {1,...,#2}{%
-        \node[numLineTick] (top-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
+        \node[numLineTick] (top-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(#2-1)},0) {};
     }
 
     % add mark labels
@@ -408,7 +408,7 @@
 
     % draw ticks as nodes (bot-mark-n). 1st mark is (bot-mark-1).
     \foreach \x in {1,...,#2}{%
-        \node[numLineTick] (bot-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(\numMarks-1)},0) {};
+        \node[numLineTick] (bot-mark-\x) at ({\numLineExtra+(\x-1)*(#1-2.5*\numLineExtra)/(#2-1)},0) {};
     }
 
     % add mark labels

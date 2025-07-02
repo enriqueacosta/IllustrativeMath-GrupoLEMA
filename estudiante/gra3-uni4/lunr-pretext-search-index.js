@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Introducción a la unidad",
   "number": "",
   "title": "Introducción a la unidad",
-  "body": "    Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )    Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Miguel Bernal Escobar  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane    Revisiones   Miguel Bernal Escobar  Verónica Mariño Salazar    Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
+  "body": "    Adaptación del Grupo LEMA ( )        Presentación de la unidad          Código fuente  Este documento (HTML, pdf, latex o epub) se generó con PreTeXt . El código fuente con el contenido para generarlo se encuentra en .     Licencia          2024   Versión PreTeXt, traducciones completas de las guías y adaptaciones © Enrique Acosta ( ). Iniciativa del Grupo LEMA ( )       IM® es una marca registrada de Illustrative Mathematics®. Se usa con su autorización.  Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0).  En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales .  Ver detalles de la licencia en creativecommons.org .  Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa.  Grados K-5 adaptados de IM®K–5 Math v.I, © 2021 Illustrative Mathematics® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .  Grados 6-8 adaptados de IM®6–8 v3.1415, © 2019 Illustrative Mathematics® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org .    Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io    Este material incluye imágenes con licencias abiertas que tiene copyright de sus respectivos autores. Estas imágenes mantienen los términos de sus propias licencias de uso. Ver detalles en la sección de atribuciones de imágenes.     Colaboradores  Las siguientes personas aportaron en el desarrollo de esta versión de Matemáticas Ilustrativas.   Traducción y procesamiento de contenido   Enrique Acosta Jaramillo  Miguel Bernal Escobar  Andrés Forero Cuervo  Nathaly Otero Paternina  Jonathan Defelipe Payane    Revisiones   Miguel Bernal Escobar  Verónica Mariño Salazar    Ingeniería y desarrollo   Enrique Acosta Jaramillo     Autores (en inglés)    Illustrative Mathematics. Ver detalles en los siguientes enlaces.   K-5: https:\/\/im.kendallhunt.com\/k5\/  6-8: https:\/\/im.kendallhunt.com\/MS\/         Atribuciones de Software  Los distintos formatos de este documento (PDF, LaTeX, EPUB) se generaron utilizando software de licencia abierta desarrollado gracias al esfuerzo de muchas personas. Entre estos destacamos:    Pretext : Sistema para crear y publicar libros de texto, artículos de investigación y monografías, especialmente en disciplinas STEM.   MathJax : Biblioteca JavaScript para mostrar fórmulas matemáticas en cualquier navegador web.   LaTeX y TeX : Sistema de preparación de documentos para impresión, ampliamente usado para documentos profesionales.   TikZ : Paquete de LaTeX para crear gráficos vectoriales de alta calidad, desde diagramas matemáticos hasta ilustraciones técnicas y científicas.  FontAwesome : Iconos vectoriales y herramientas de diseño para LaTeX.    "
 },
 {
   "id": "meta-source-2",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0). "
+  "body": "IM® es una marca registrada de Illustrative Mathematics®. Se usa con su autorización. "
 },
 {
   "id": "meta-copyright-5",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales . "
+  "body": "Publicado bajo una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY SA NC 4.0). "
 },
 {
   "id": "meta-copyright-6",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Ver detalles de la licencia en creativecommons.org . "
+  "body": "En breve e incompleto (los detalles están en las licencias), tiene toda libertad para adaptar, copiar y distribuir este material siempre y cuando le mantenga la misma licencia, incluya la atribución correspondiente (mencione a Enrique Acosta, al Grupo LEMA, a Illustrative Mathematics y a OpenUp Resources en la forma que se describe a continuación) y lo use para fines no comerciales . "
 },
 {
   "id": "meta-copyright-7",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa. "
+  "body": "Ver detalles de la licencia en creativecommons.org . "
 },
 {
   "id": "meta-copyright-8",
@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Grados K-5 adaptados de IM K–5 Math v.I, © 2021 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org . "
+  "body": "Además, se permite la impresión y distribución a costo para uso educativo o personal. La reventa comercial o actividades con fines de lucro no están permitidas sin autorización previa. "
 },
 {
   "id": "meta-copyright-9",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": "Grados 6-8 adaptados de IM 6–8 v3.1415, © 2019 Illustrative Mathematics ® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org . "
+  "body": "Grados K-5 adaptados de IM®K–5 Math v.I, © 2021 Illustrative Mathematics® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org . "
 },
 {
   "id": "meta-copyright-10",
@@ -79,12 +79,21 @@ var ptx_lunr_docs = [
   "type": "Párrafo",
   "number": "",
   "title": "",
-  "body": " Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io   "
+  "body": "Grados 6-8 adaptados de IM®6–8 v3.1415, © 2019 Illustrative Mathematics® illustrativemathematics.org en su versión en español en im.kendallhunt.com , distribuido con una licencia Creative Commons Attribution 4.0 International License (CC BY 4.0), a su vez © 2017-2019 Open Up Resources 6–8 Math v2, disponibles en openupresources.org , con la misma licencia (CC BY 4.0). Ver detalles de esta licencia en creativecommons.org . "
 },
 {
   "id": "meta-copyright-11",
   "level": "2",
   "url": "gra3-uni4-prefacio.html#meta-copyright-11",
+  "type": "Párrafo",
+  "number": "",
+  "title": "",
+  "body": " Nota: Las traducciones anteriormente mencionadas fueron lideradas y coordinadas por miembros del Grupo LEMA. Ver detalles en:  K-5: illustrativemathematics.org  6-8: illustrativemathematics.org  enriqueacosta.github.io   "
+},
+{
+  "id": "meta-copyright-12",
+  "level": "2",
+  "url": "gra3-uni4-prefacio.html#meta-copyright-12",
   "type": "Párrafo",
   "number": "",
   "title": "",
