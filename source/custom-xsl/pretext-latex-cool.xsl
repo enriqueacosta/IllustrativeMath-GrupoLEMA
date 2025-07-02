@@ -160,7 +160,7 @@ xsltproc <path to this xsl file>.xsl gra3-uni4-secB-lec10-cool.ptx > output.tex
     <xsl:text>%% quitar hyphenation&#xa;</xsl:text>
     <xsl:text>\usepackage[none]{hyphenat}&#xa;</xsl:text>
     <!-- Título genérico -->
-    <xsl:text>\title{Problema de Cierre\\Matemáticas Ilustrativas + LEMA}&#xa;</xsl:text>
+    <xsl:text>\title{Problema de Cierre\\Matemáticas IM\textsuperscript{\textregistered} + LEMA}&#xa;</xsl:text>
     <xsl:text>\date{}&#xa;</xsl:text>
 </xsl:template>
 

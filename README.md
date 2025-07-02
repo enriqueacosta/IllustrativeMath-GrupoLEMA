@@ -1,6 +1,6 @@
 # IllustrativeMath-GrupoLEMA
 
-Prototipo del material de [Matemáticas Ilustrativas](https://curriculum.illustrativemathematics.org) en versión [Pretext](https://pretextbook.org).
+Prototipo [Pretext](https://pretextbook.org) del material de matemáticas de [Illustrative Mathematics®](https://curriculum.illustrativemathematics.org), adaptado y completo en español.
 
 ## Para generar versiones web(html), pdf, latex
 
