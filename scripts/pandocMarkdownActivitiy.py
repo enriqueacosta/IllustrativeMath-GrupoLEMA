@@ -149,7 +149,7 @@ def prune_for_minimal(paragraphs: ET.Element) -> ET.Element | None:
     keep = any(strip_ns(c.tag) != "title" for c in new_para)
     return new_para if keep else None
 
-# ───────── inline conversion (SIMPLIFIED) ──────────────────────────────
+# ───────── inline conversion (MODIFIED) ──────────────────────────────
 def inline_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: bool) -> str:
     tag = strip_ns(el.tag)
     if tag == "m":
@@ -217,9 +217,20 @@ def inline_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: boo
     if tag == "q":
         inner = "".join(inline_md(c, const, keep_percentage_widths) for c in el)
         return f"«{(el.text or '')}{inner}»"
+
+    # Process the element's text and children.
+    # This is the core logic that handles mixed inline/block content.
     parts = [el.text or ""]
     for c in el:
-        parts.append(inline_md(c, const, keep_percentage_widths))
+        child_tag = strip_ns(c.tag)
+        # If a child is a block-level element, delegate it to the block processor.
+        # This correctly handles cases like a <sidebyside> or <ul> inside a <p>.
+        if child_tag in ("sidebyside", "ol", "ul"):
+             parts.append("\n\n" + "\n".join(block_md(c, const, keep_percentage_widths, lvl=0)).strip() + "\n\n")
+        else:
+             # Otherwise, process it as regular inline content.
+             parts.append(inline_md(c, const, keep_percentage_widths))
+        
         if c.tail:
             parts.append(c.tail)
     return "".join(parts)
@@ -231,10 +242,12 @@ def sidebyside_md(node: ET.Element, const: dict[str, str], keep_percentage_width
         if not first:
             out.append("")
         first = False
-        if strip_ns(col.tag) == "stack":
+        # Handle column wrappers like <stack>, <div>, or <col> by processing their children.
+        if strip_ns(col.tag) in ("stack", "div", "col"):
             for inner in col:
                 out += block_md(inner, const, keep_percentage_widths, lvl)
         else:
+            # If no wrapper, process the element directly.
             out += block_md(col, const, keep_percentage_widths, lvl)
     return out
 
@@ -243,7 +256,12 @@ def block_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: bool
     tag = strip_ns(el.tag)
     o: list[str] = []
     if tag == "p":
-        o += [inline_md(el, const, keep_percentage_widths).strip(), ""]
+        # Process paragraph content using inline_md, which can now handle nested blocks.
+        # The result might be a multi-line string.
+        content = inline_md(el, const, keep_percentage_widths).strip()
+        if content:
+            o.extend(content.splitlines())
+            o.append("") # Add a blank line after the paragraph.
     elif tag == "line":
         o.append(inline_md(el, const, keep_percentage_widths).rstrip())
         if el.tail and el.tail.strip():
@@ -257,40 +275,34 @@ def block_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: bool
     elif tag == "xi:include":
         o += ["```xml", xml_str(el), "```", ""]
     else:
-        o += [inline_md(el, const, keep_percentage_widths).strip(), ""]
+        # Fallback for other elements treated as blocks (e.g., a standalone image).
+        content = inline_md(el, const, keep_percentage_widths).strip()
+        if content:
+             o += [content, ""]
     return o
 
 def block_md_li(li: ET.Element, const: dict[str, str], keep_percentage_widths: bool, lvl: int, num: int | None) -> list[str]:
-    bullet = bullet_label(num, lvl) if num is not None else "-"
+    # Use '*' for unordered lists to match desired output.
+    bullet = bullet_label(num, lvl) if num is not None else "*"
     prefix = INDENT * lvl + bullet + " "
-    out: list[str] = []
+    
+    # Process the entire content of the <li> with the new, smarter inline_md.
+    # This correctly handles mixed text, formatting, and even nested block elements.
+    content = inline_md(li, const, keep_percentage_widths).strip()
+    
+    lines = content.split('\n')
+    if not lines or not lines[0].strip():
+        return []
 
-    if not (li.text or "").strip() and len(li) and strip_ns(li[0].tag) == "p":
-        first = li[0]
-        p_lines = block_md(first, const, keep_percentage_widths, lvl)
-        out.append(prefix + p_lines.pop(0).strip())
-        for ln in p_lines:
-            out.append(textwrap.indent(ln, INDENT * (lvl + 1)))
-        li.remove(first)
-    else:
-        head = []
-        if li.text and li.text.strip():
-            head.append(li.text.strip())
-        inline_k, block_k = [], []
-        for c in li:
-            (inline_k if strip_ns(c.tag) not in ("ol", "ul", "p") else block_k).append(c)
-        for c in inline_k:
-            head.append(inline_md(c, const, keep_percentage_widths).strip())
-            if c.tail and c.tail.strip():
-                head.append(c.tail.strip())
-        out.append(prefix + (" ".join(head) or " "))
-    for c in li:
-        t = strip_ns(c.tag)
-        if t in ("ol", "ul"):
-            out += block_md(c, const, keep_percentage_widths, lvl + 1)
-        elif t == "p":
-            para = textwrap.indent("\n".join(block_md(c, const, keep_percentage_widths, lvl + 1)), INDENT * (lvl + 1))
-            out.append(para)
+    # Format the list item with the bullet and proper indentation for subsequent lines.
+    out = [prefix + lines[0].lstrip()]
+    indent_prefix = ' ' * len(prefix) # Align subsequent lines with the text of the first line.
+    for line in lines[1:]:
+        if line.strip():
+            out.append(indent_prefix + line)
+        else:
+            out.append("") # Preserve blank lines within a list item
+            
     return out
 
 # ───────── slide helper (unchanged) ────────────────────────────────────
@@ -299,7 +311,10 @@ def slide(title: str, body: list[str]) -> list[str]:
 
 # ───────── main (MODIFIED) ─────────────────────────────────────────────
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Convert PTX to Pandoc Markdown slides.")
+    ap = argparse.ArgumentParser(
+        description="Convert PTX to Pandoc Markdown slides.",
+        formatter_class=argparse.RawTextHelpFormatter # Preserve formatting in help text
+    )
     ap.add_argument("input", help="input .ptx file")
     ap.add_argument("--prelude-first", action="store_true",
                     help="render prelude slides before statement slide")
