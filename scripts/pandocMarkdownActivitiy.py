@@ -24,9 +24,10 @@ slides, PDF (Beamer), or PowerPoint.
 │       <m> … </m>        →  $…$   (inline LaTeX)                                │
 │       <me> … </me>      →  $$ … $$ (display math)                              │
 │       <image>           →  `![](../assets/foo.png){width=…}`                   │
-│                          Width is taken from:                                  │
-│                             · `@width=…` on the <image>                        │
-│                             · or inherited from enclosing <sidebyside widths>  │
+│                          Width is taken from @width (e.g., "45%") on the image,│
+│                          or inherited from an enclosing <sidebyside>. It is    │
+│                          converted to inches unless --keep-percentage-widths   │
+│                          is used.                                              │
 │       <q> … </q>        →  « … »                                               │
 │ 7. `<sidebyside>` is **flattened**: the first “column” is emitted, a blank     │
 │    line is inserted, then the second column, etc. `<stack>` wrappers are       │
@@ -42,6 +43,8 @@ Command-line flags
 --minimal            Within every <paragraphs> slide:  
                        · keep **only** <p> or <li> elements that contain a <q>  
                        · drop the entire slide if nothing remains after pruning  
+--keep-percentage-widths  Keep image widths as percentages (e.g., 45%) instead of
+                          converting them to absolute inches.
 
 Usage
 ─────
@@ -73,13 +76,12 @@ from __future__ import annotations
 import sys, argparse, textwrap, string, re, copy
 from pathlib import Path
 
-# OLD:
-# from xml.etree import ElementTree as ET
-
-# NEW: Use lxml.etree instead of xml.etree for XInclude support
+# Use lxml.etree instead of xml.etree for XInclude support
 from lxml import etree as ET
 
 INDENT = "    "
+# Assumed text width for a standard document (e.g., 8.5" paper with 1" margins)
+DEFAULT_DOC_WIDTH_INCHES = 6.5
 
 
 # ───────── helpers (unchanged) ─────────────────────────────────────────
@@ -111,7 +113,7 @@ def load_constants(base: Path) -> dict[str, str]:
         pass
     return d
 
-# ───────── minimal-mode utilities ──────────────────────────────────────
+# ───────── minimal-mode utilities (unchanged) ──────────────────────────
 def has_q(elem: ET.Element) -> bool:
     """Return True if element has any <q> descendant."""
     if strip_ns(elem.tag) == "q":
@@ -147,8 +149,8 @@ def prune_for_minimal(paragraphs: ET.Element) -> ET.Element | None:
     keep = any(strip_ns(c.tag) != "title" for c in new_para)
     return new_para if keep else None
 
-# ───────── inline conversion (unchanged) ───────────────────────────────
-def inline_md(el: ET.Element, const: dict[str, str]) -> str:
+# ───────── inline conversion (SIMPLIFIED) ──────────────────────────────
+def inline_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: bool) -> str:
     tag = strip_ns(el.tag)
     if tag == "m":
         return f"${el.text}$"
@@ -165,53 +167,65 @@ def inline_md(el: ET.Element, const: dict[str, str]) -> str:
             src = "../assets/" + src
         src = src.replace(" ", "%20")
 
-        # 2 ── If width is not set, try to inherit from <sidebyside> or <sbsgroup>
+        # 2 ── If width is not set, try to inherit from <sidebyside> or its container
         if not width:
             parent = el.getparent()
             while parent is not None:
                 if strip_ns(parent.tag) == "sidebyside":
-                    grandparent = parent.getparent()
-                    if grandparent is not None and "widths" in grandparent.attrib:
-                        widths = grandparent.attrib["widths"].split()
+                    widths_attr = parent.get("widths")
+                    if not widths_attr:
+                        container = parent.getparent()
+                        if container is not None:
+                            widths_attr = container.get("widths")
 
-                        # Climb to immediate child of <sidebyside> (usually <stack>)
-                        stack = el
-                        while stack.getparent() is not None and stack.getparent() != parent:
-                            stack = stack.getparent()
-
-                        siblings = [s for s in parent if strip_ns(s.tag) in {"stack", "col", "div"}]
+                    if widths_attr:
+                        widths = widths_attr.split()
+                        column_el = el
+                        while column_el.getparent() is not None and column_el.getparent() != parent:
+                            column_el = column_el.getparent()
+                        siblings = [s for s in parent if isinstance(s.tag, str)]
                         try:
-                            idx = siblings.index(stack)
-                            width = widths[idx] if idx < len(widths) else ""
+                            idx = siblings.index(column_el)
+                            if idx < len(widths):
+                                width = widths[idx].strip()
                         except ValueError:
                             pass
-                    break  # Found a sidebyside → done
+                    break
                 parent = parent.getparent()
 
-        # 3 ── Final fallback to absolute width
+        # 3 ── Process width, knowing it's always a percentage string like "45%"
+        final_width = ""
         if not width:
-            width = "4in"
-        elif not width.endswith("%") and not width.endswith("in") and not width.endswith("cm"):
-            width += "%"
+            final_width = "4in"  # Fallback for no width
+        elif keep_percentage_widths:
+            final_width = width  # Use the "45%" string directly
+        else:
+            # Convert percentage to absolute inches
+            try:
+                percentage_val = float(width.strip('%'))
+                absolute_width = (percentage_val / 100.0) * DEFAULT_DOC_WIDTH_INCHES
+                final_width = f"{absolute_width:.2f}in"
+            except (ValueError, TypeError):
+                final_width = "4in" # Fallback on conversion error
 
-        return f"![]({src}){{width=\"{width}\"}}"                            # ← (unchanged path)
+        return f"![]({src}){{width=\"{final_width}\"}}"
     if tag == "custom":
         ref = el.get("ref")
         if ref and ref in const:
             return const[ref]
         return el.text.strip() if el.text else xml_str(el)
     if tag == "q":
-        inner = "".join(inline_md(c, const) for c in el)
+        inner = "".join(inline_md(c, const, keep_percentage_widths) for c in el)
         return f"«{(el.text or '')}{inner}»"
     parts = [el.text or ""]
     for c in el:
-        parts.append(inline_md(c, const))
+        parts.append(inline_md(c, const, keep_percentage_widths))
         if c.tail:
             parts.append(c.tail)
     return "".join(parts)
 
-# ───────── side-by-side flattening (unchanged) ─────────────────────────
-def sidebyside_md(node: ET.Element, const: dict[str, str], lvl: int) -> list[str]:
+# ───────── side-by-side flattening (MODIFIED) ──────────────────────────
+def sidebyside_md(node: ET.Element, const: dict[str, str], keep_percentage_widths: bool, lvl: int) -> list[str]:
     out, first = [], True
     for col in node:
         if not first:
@@ -219,41 +233,41 @@ def sidebyside_md(node: ET.Element, const: dict[str, str], lvl: int) -> list[str
         first = False
         if strip_ns(col.tag) == "stack":
             for inner in col:
-                out += block_md(inner, const, lvl)
+                out += block_md(inner, const, keep_percentage_widths, lvl)
         else:
-            out += block_md(col, const, lvl)
+            out += block_md(col, const, keep_percentage_widths, lvl)
     return out
 
-# ───────── block-level conversion (unchanged) ──────────────────────────
-def block_md(el: ET.Element, const: dict[str, str], lvl: int = 0) -> list[str]:
+# ───────── block-level conversion (MODIFIED) ───────────────────────────
+def block_md(el: ET.Element, const: dict[str, str], keep_percentage_widths: bool, lvl: int = 0) -> list[str]:
     tag = strip_ns(el.tag)
     o: list[str] = []
     if tag == "p":
-        o += [inline_md(el, const).strip(), ""]
+        o += [inline_md(el, const, keep_percentage_widths).strip(), ""]
     elif tag == "line":
-        o.append(inline_md(el, const).rstrip())
+        o.append(inline_md(el, const, keep_percentage_widths).rstrip())
         if el.tail and el.tail.strip():
             o.append(el.tail.strip())
     elif tag in ("ol", "ul"):
         for i, li in enumerate(el.findall("./li"), start=1):
-            o += block_md_li(li, const, lvl, i if tag == "ol" else None)
+            o += block_md_li(li, const, keep_percentage_widths, lvl, i if tag == "ol" else None)
         o.append("")
     elif tag == "sidebyside":
-        o += sidebyside_md(el, const, lvl)
+        o += sidebyside_md(el, const, keep_percentage_widths, lvl)
     elif tag == "xi:include":
         o += ["```xml", xml_str(el), "```", ""]
     else:
-        o += [inline_md(el, const).strip(), ""]
+        o += [inline_md(el, const, keep_percentage_widths).strip(), ""]
     return o
 
-def block_md_li(li: ET.Element, const: dict[str, str], lvl: int, num: int | None) -> list[str]:
+def block_md_li(li: ET.Element, const: dict[str, str], keep_percentage_widths: bool, lvl: int, num: int | None) -> list[str]:
     bullet = bullet_label(num, lvl) if num is not None else "-"
     prefix = INDENT * lvl + bullet + " "
     out: list[str] = []
 
     if not (li.text or "").strip() and len(li) and strip_ns(li[0].tag) == "p":
         first = li[0]
-        p_lines = block_md(first, const, lvl)
+        p_lines = block_md(first, const, keep_percentage_widths, lvl)
         out.append(prefix + p_lines.pop(0).strip())
         for ln in p_lines:
             out.append(textwrap.indent(ln, INDENT * (lvl + 1)))
@@ -266,24 +280,24 @@ def block_md_li(li: ET.Element, const: dict[str, str], lvl: int, num: int | None
         for c in li:
             (inline_k if strip_ns(c.tag) not in ("ol", "ul", "p") else block_k).append(c)
         for c in inline_k:
-            head.append(inline_md(c, const).strip())
+            head.append(inline_md(c, const, keep_percentage_widths).strip())
             if c.tail and c.tail.strip():
                 head.append(c.tail.strip())
         out.append(prefix + (" ".join(head) or " "))
     for c in li:
         t = strip_ns(c.tag)
         if t in ("ol", "ul"):
-            out += block_md(c, const, lvl + 1)
+            out += block_md(c, const, keep_percentage_widths, lvl + 1)
         elif t == "p":
-            para = textwrap.indent("\n".join(block_md(c, const, lvl + 1)), INDENT * (lvl + 1))
+            para = textwrap.indent("\n".join(block_md(c, const, keep_percentage_widths, lvl + 1)), INDENT * (lvl + 1))
             out.append(para)
     return out
 
-# ───────── slide helper ────────────────────────────────────────────────
+# ───────── slide helper (unchanged) ────────────────────────────────────
 def slide(title: str, body: list[str]) -> list[str]:
     return [f"## {title}", ""] + body
 
-# ───────── main ────────────────────────────────────────────────────────
+# ───────── main (MODIFIED) ─────────────────────────────────────────────
 def main() -> None:
     ap = argparse.ArgumentParser(description="Convert PTX to Pandoc Markdown slides.")
     ap.add_argument("input", help="input .ptx file")
@@ -293,6 +307,8 @@ def main() -> None:
                     help="omit the solution slide")
     ap.add_argument("--minimal", action="store_true",
                     help="within <paragraphs> keep only <p>/<li> containing <q>")
+    ap.add_argument("--keep-percentage-widths", action="store_true",
+                    help="keep image widths as percentages instead of converting to inches")
     args = ap.parse_args()
 
     in_f = Path(args.input)
@@ -300,15 +316,11 @@ def main() -> None:
 
     CONST = load_constants(in_f)
 
-    # OLD:
-    # root = ET.parse(in_f).getroot()
-
-    # NEW: Parse the XML and expand any <xi:include href="..."/> directives
+    # Parse the XML and expand any <xi:include href="..."/> directives
     parser = ET.XMLParser(load_dtd=True, recover=True)  # Allow recovery and DTD loading
-    tree = ET.parse(str(in_f), parser)                  # Parse the input file using lxml
-    tree.xinclude()                                     # xinclude expanded and flattened into the main XML tree
-    root = tree.getroot()                               # Get the root after includes are merged
-
+    tree = ET.parse(str(in_f), parser)
+    tree.xinclude()
+    root = tree.getroot()
 
     title = root.findtext("./title", "(sin título)").replace('"', r"\"")
 
@@ -334,9 +346,9 @@ def main() -> None:
                 work_para = pruned
 
             h_el = work_para.find("./title")
-            heading = inline_md(h_el, CONST) if h_el is not None else "(sin título)"
+            heading = inline_md(h_el, CONST, args.keep_percentage_widths) if h_el is not None else "(sin título)"
             body = [ln for ch in work_para if hasattr(ch, "tag") and strip_ns(ch.tag) != "title"
-                    for ln in block_md(ch, CONST)]
+                    for ln in block_md(ch, CONST, args.keep_percentage_widths)]
             slides.append(slide(heading, body))
         return slides
 
@@ -347,13 +359,13 @@ def main() -> None:
     # statement slide
     stmt = root.find("./statement")
     if stmt is not None:
-        md += slide("Enunciado", [ln for ch in stmt for ln in block_md(ch, CONST)])
+        md += slide("Enunciado", [ln for ch in stmt for ln in block_md(ch, CONST, args.keep_percentage_widths)])
 
     # solution slide (unless suppressed)
     if not args.no_solution:
         sol = root.find("./solution")
         if sol is not None:
-            md += slide("Solución", [ln for ch in sol for ln in block_md(ch, CONST)])
+            md += slide("Solución", [ln for ch in sol for ln in block_md(ch, CONST, args.keep_percentage_widths)])
 
     # prelude after, if not first
     if not args.prelude_first:
