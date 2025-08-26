@@ -299,7 +299,14 @@ def main():
         
     unit_folder = sys.argv[1]
     lessons = process_unit_folder(unit_folder)
+    print("*************************************************************")
+    print(" Tab separated lessons")
+    print("*************************************************************")
     print_tab_separated(lessons)
+
+    print("*************************************************************")
+    print(" Details per lesson")
+    print("*************************************************************")
     print_lesson_structure(lessons)
 
 if __name__ == "__main__":
