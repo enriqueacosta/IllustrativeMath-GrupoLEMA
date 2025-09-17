@@ -17,7 +17,7 @@ La idea es siempre es seguir el formato de los nombres de los archivos en los te
 * Calentamientos: `warm-RRRRRR-SSSSSS.ptx`  en donde `RRRRRR` es opcional y corresponde a alguna rutina recurrente y `SSSSSS` es un nombre descriptivo usando [camel case](https://en.wikipedia.org/wiki/Camel_case). Ejemplos:
     *  `warm-observa-cubosEncajables.ptx`, donde [observa] es la rutina [observa y preguntate]
     *  `warm-verdaderoFalso-multiplicarPor10.ptx`, donde [verdaderoFalso] es la rutina [verdadero o falso]
-    *  `warm-numTalk-enQueSeParecen.ptx`, donde [numTalk] es la rutina [Conversación numérica]
+    *  `warm-converNum-enQueSeParecen.ptx`, donde [converNum] es la rutina [Conversación numérica]
     *  `warm-estimacion-multiplicar.ptx`, donde [estimacion] es la rutina [Estmación numérica]
     *  `warm-cuantosVes-Manzanas.ptx`, donde [cuantosVes] es la rutina [¿Cuántos ves?]
     *  `warm-cualDiferente-rectangulos.ptx`, donde [cualDiferente] es la rutina [¿Cuál es diferente?]
