@@ -9,7 +9,7 @@ La idea es siempre es seguir el formato de los nombres de los archivos en los te
     *  `lec-relacionarMultiplicacionYDivision.ptx` 
 
 * Actividades: `act-RRRRRR-SSSSSS.ptx` en donde `RRRRRR` es opcional y corresponde a alguna rutina recurrente y `SSSSSS` es un nombre descriptivo usando [camel case](https://en.wikipedia.org/wiki/Camel_case). Ejemplos:
-   *  `act-planeemosLaHuerta.ptx`
+   *  `act-planearLaHuerta.ptx`
    *  `act-queSabesDivision.ptx`
    *  `act-cuantosVes-imagenes.ptx` ( [¿cuántos ves?] es una rutina)
    *  `act-conozcamos-bloquesSolidosGeom-construyeVes.ptx` ( [conozcamos] es una actividad de intro al centro, [bloquesSolidosGeom] es el centro, [construyeVes] es el nombre descriptivo que es el nombre de la etapa).

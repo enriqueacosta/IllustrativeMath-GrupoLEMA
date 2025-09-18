@@ -9,7 +9,7 @@ El preámbulo con el estilo está aparte, en archivo assets/defs-ptxLEMA-latex-s
 Sirve para hacer actividades standalone del tex del libroTrabajo con whitespacing.
 
 Uso: python extractActivity-latexStandalone.py <ruta-archivo> <id-actividad> <tamaño-fuente>
-     python extractActivity-latexStandalone.py <ruta-archivo> act-contemosImagenes 14pt
+     python extractActivity-latexStandalone.py <ruta-archivo> act-contarImagenes 14pt
 """
 
 import sys
