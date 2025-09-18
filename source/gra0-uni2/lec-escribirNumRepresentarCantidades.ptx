@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<subsection xml:id="lec-representarYCompararNumeros" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="lec-escribirNumRepresentarCantidades" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<shorttitle>Lección 20 </shorttitle>
-<title>Lección 20 -<nbsp/></title>
-<title>Representemos y comparemos números</title>
+<shorttitle>Lección 16 </shorttitle>
+<title>Lección 16 -<nbsp/></title>
+<title>Escribamos números para representar cantidades</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>Mostremos números de maneras diferentes y hagamos afirmaciones de comparación.</p>
+  <p>Escribamos números para mostrar cuántos hay.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -26,7 +26,7 @@
 <objectives component="profesor">
   <ul>
     <li>[+++++++++++++++]</li>
-    <li>Represent and compare numbers 1–10.</li>
+    <li>Write numbers 1-10 to represent a quantity.</li>
   </ul>
 </objectives>
 
@@ -39,7 +39,7 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="csss-leccion-titulo"/></title> 
-    <p>K.CC.A.3, K.CC.B.5, K.CC.C.6, K.CC.C.7</p>
+    <p>K.CC, K.CC.A.3, K.CC.B.5</p>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
@@ -52,7 +52,7 @@
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this lesson is for students to represent and compare quantities and numbers to 10.</p>
+    <p>The purpose of this lesson is for students to write numbers to represent quantities.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -61,11 +61,15 @@
     <ul>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./act-representarNum-mat.ptx"/>
+        <xi:include href="./act-retomemos-historiasMate-cuantos-mat.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-marcarBolsasMisteriosas-mat.ptx"/>
       </li>
       <li>
         <p>Actividad 3</p>
-        <xi:include href="./act-escoger24-matCentros.ptx"/>
+        <xi:include href="./act-centros-escoger20-matCentros.ptx"/>
       </li>
     </ul> 
   </paragraphs>
@@ -74,14 +78,14 @@
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>Students choose a number to represent in different ways using objects, images, and written numbers. Students use their classmate’s representations to compare numbers and make comparison statements using the words "more", <q>less</q>, and <q>the same number</q>.</p>
+    <p>Students count groups of objects and images and write numbers to show how many in each group. Writing numbers backwards (<q>reversals</q>) and incorrectly forming numbers is expected in kindergarten. The emphasis is on students writing a number that is recognizable to others with practice.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>In this lesson, students represented numbers in different ways. What connections did students make between the different representations?</p>
+    <p>The CCSS require students to compare two numbers between 1 and 10 presented as written numerals. How has the work of this section helped students prepare to meet this standard?</p>
   </paragraphs>
 </introduction>
 
@@ -89,79 +93,79 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-representarYCompararNumeros-warm" component="warms">
+<subsubsection xml:id="lec-escribirNumRepresentarCantidades-warm" component="warms">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./warm-actuemoslo-platosYVasosCena.ptx"/> 
+  <xi:include href="./warm-cuantosVes-unoMasConTableroDe5.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-representarYCompararNumeros-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-escribirNumRepresentarCantidades-act1" component="acts-no-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-representarNum.ptx"/> 
+  <xi:include href="./act-retomemos-historiasMate-cuantos.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-representarNum-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-retomemos-historiasMate-cuantos-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-representarYCompararNumeros-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-escribirNumRepresentarCantidades-act2" component="acts-no-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-recorridoSalon-distintasRepresentaciones.ptx"/> 
+  <xi:include href="./act-marcarBolsasMisteriosas.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-recorridoSalon-distintasRepresentaciones-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-marcarBolsasMisteriosas-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 3
 =================================================  -->
-<subsubsection xml:id="lec-representarYCompararNumeros-act3" component="acts-no-rayable">
+<subsubsection xml:id="lec-escribirNumRepresentarCantidades-act3" component="acts-no-rayable">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-centros-escoger24.ptx"/> 
+  <xi:include href="./act-centros-escoger20.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-centros-escoger24-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-centros-escoger20-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
-<subsubsection xml:id="lec-representarYCompararNumeros-sintesis" component="profesor">
+<subsubsection xml:id="lec-escribirNumRepresentarCantidades-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>(5 mins)</title>
 
   <p>[+++++++++++++++]</p>
-  <p><q>Hoy mostramos números de muchas maneras. También comparamos números</q></p>
-<p><q>Durante el recorrido por el salón, ¿cómo descubrieron cuál número era más? De las cosas que otros estudiantes incluyeron en los pósteres, ¿cuáles les ayudaron a comparar los números?</q></p>
+  <p><q>¿Por qué los números son útiles?</q> (They tell us how many. It is quicker to write a number than to draw a picture or take out objects.)</p>
+<p>If needed, say: <q>Podemos escribir números para decir cuántos hay. Los números nos ayudan a comunicar 'cuántos' fácilmente</q></p>
 <p><q>Practiquemos cómo contar hasta 20</q></p>
 <p>Demonstrate counting to 20. Count to 20 as a class 1–2 times.</p>
 
