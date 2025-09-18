@@ -34,7 +34,7 @@ Enrique Acosta, 2025
    + Creación de archivos `centro` para cada centro que se usa en la unidad con los templates apropiados. Son varios pasos, que involucran:
       -  identificar la etapa que se va ha hacer y crear las líneas correspondientes en el archivo
       -  hacer todas las referencias apropiadas (e todas las direcciones)
-      -  buscar en los textos `[++++++++]` las menciones de que los estudiantes van a concocer o retomar un centro y crear referencias apropiadas. Ejemplo ver act-conozcamos-historiasMatematicas-cuantos.ptx
+      -  buscar en los textos `[++++++++]` las menciones de que los estudiantes van a concocer o retomar un centro y crear referencias apropiadas. Ejemplo ver act-conozcamos-historiasMate-cuantos.ptx
 5. Identificar actividades que no funcionan solo web (porque necesitan ser rayables) y crear versiones pdf de las acrivades para que se puedan descargar e imprmir.
    +  Se debe cambiar el componente de la actividad en el archivo lección a `acts-rayable`. Eso hace que aparezca en el output de libro de trabajo.
    +  Se deben ajustar las partes del enunciado que deberían aparecer en las componentes `libroTrabajo` y `no-libroTrabajo` y con un `aside`, se crea un link al pdf que se va a crear (en `assets/act-pdf`).
