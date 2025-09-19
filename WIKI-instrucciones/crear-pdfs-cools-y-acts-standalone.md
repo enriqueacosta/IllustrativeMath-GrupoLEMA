@@ -82,7 +82,7 @@ Si desea ofrecer un enlace para que los profesores o estudiantes puedan imprimir
     cool-hechosMultiplicacionDivision
     cool-encuentraProductoDesconocido
     cool-marcaPartesParaEncontrarArea
-    cool-expresionesParaRectangulo
+    cool-expresionesRectangulo
     cool-cualEsElValor
     cool-bolsasFrutasGruposIguales
     cool-multiplicaYExplica
@@ -122,7 +122,7 @@ Está pendiente ajustar el script `extractCool-latexStandalone.py` para poder ag
 3-4-lec8-cool-hechosMultiplicacionDivision.pdf
 3-4-lec9-cool-encuentraProductoDesconocido.pdf
 3-4-lec10-cool-marcaPartesParaEncontrarArea.pdf
-3-4-lec11-cool-expresionesParaRectangulo.pdf
+3-4-lec11-cool-expresionesRectangulo.pdf
 ....
 ```
 
