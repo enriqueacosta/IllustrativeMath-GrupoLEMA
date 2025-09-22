@@ -11,8 +11,10 @@ import uuid
 
 def main() -> None:
     """Print a new PP code with the agreed 16-hex suffix."""
-    code = f"PP-{uuid.uuid4().hex[:16]}"
+    code = uuid.uuid4().hex[:16]
     print(code)
+    filename = f"Filename is: PP-{code}.ptx"
+    print(filename)
 
 if __name__ == "__main__":
     main()
