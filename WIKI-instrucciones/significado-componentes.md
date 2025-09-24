@@ -47,3 +47,5 @@ Por ejemplo:
 *  `web`: cosas que SOLO deben aparecer en las versiones web (tanto para profesores como para estudiantes).
 
 *  `est-goal`: solo para los student goals (las frases "resumen" al inicio de cada lección de estilo [Representemos situaciones de división con dibujos]). Cada tipo de documento puede incluir o no los cools de acuerdo a si se incluye este componente o no.
+
+*  `metadata`: por ahora se usa solo para PPs para indicar su alineación con una lección o sección. Ningun formato de export incluye este componente por ahora, solo se usa para organizaciópn interna del árbol PreTeXr de contenido.
