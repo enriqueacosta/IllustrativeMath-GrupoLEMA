@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-conozcamos-fichasGeometricas-rompecabezas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-conozcamos-fichasGeom-rompecabezas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>Conozcamos “Fichas geométricas: Rompecabezas”</title>
 
 <statement>
   <aside component="web">
     <p>
-      Rompecabezas de fichas geométricas disponibles en el libro de trabajo o <url component="web" href="external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf">descargar acá para imprimir</url>
+      Rompecabezas de fichas geométricas disponibles en el libro de trabajo o <url component="web" href="external/blm/pdf-source/fichasGeom-rompecabezas.pdf">descargar acá para imprimir</url>
     </p>
   </aside>
   <image source="svg-source/tikz-file-148147">
@@ -18,25 +18,25 @@
     Incluir los rompecabezas en el libro de trabajo. No hace falta dejar hojas en blanco para que los estudiantes recorten y usen. Importante: los lados de las figuras deben medir exactamente 1 pulgada en las páginas impresas, Ejemplo de código (pero falta asegurarse lo de 1 pulgada):
     <pre>
     \begin{cutoutpage}[Tarjetas para “Fichas geométricas: Rompecabezas” (laminar por ambos lados)]
-    \includegraphics[page=1, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=1, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=2, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=2, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=3, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=3, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=4, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=4, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=5, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=5, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=6, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=6, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=7, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=7, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=8, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=8, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=9, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=9, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \clearpage
-    \includegraphics[page=10, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeometricas-rompecabezas.pdf}
+    \includegraphics[page=10, trim=0 0 0 40, clip, width=\linewidth, center]{external/blm/pdf-source/fichasGeom-rompecabezas.pdf}
     \end{cutoutpage}
     </pre>
   </p>
@@ -63,7 +63,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
 
     <p>
-      El propósito de esta actividad es que los estudiantes conozcan la <xref ref="centro-fichasGeometricas-etapa2" text="title"/> del <xref ref="centro-fichasGeometricas" text="title"/>.
+      El propósito de esta actividad es que los estudiantes conozcan la <xref ref="centro-fichasGeom-etapa2" text="title"/> del <xref ref="centro-fichasGeom" text="title"/>.
       Los estudiantes usan fichas geométricas para completar rompecabezas sencillos.
       <!-- The purpose of this activity is for students to learn stage 2 of the Pattern Blocks center. -->
       <!-- Students use pattern blocks to fill in simple puzzles. -->
@@ -73,7 +73,7 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <xi:include href="./act-conozcamos-fichasGeometricas-rompecabezas-mat.ptx" /> 
+    <xi:include href="./act-conozcamos-fichasGeom-rompecabezas-mat.ptx" /> 
   </paragraphs>
 
   <!-- Launch -->
