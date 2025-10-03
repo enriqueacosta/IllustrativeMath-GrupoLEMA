@@ -8,7 +8,7 @@ Usage:
     python ingest_simple_lesson_content.py <lesson_plan_file> <html_content_file>
 
 Example:
-    python ingest_simple_lesson_content.py source/gra0-uni1/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
+    python ingest_simple_lesson_content.py source/content/lec-explicarConteo.ptx lesson_extracted_launch_activity_synthesis.html
 """
 
 import sys

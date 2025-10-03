@@ -4,4 +4,4 @@ Si una actividad tiene un problema "reto" de extensión, llamado "Are you ready 
 Se debe hacer el xinclude de ese archivo que se crea a nivel del `.ptx` de la lección, justo después de inclir el `.ptx` de la actividad correspondiente.
 
 Ejemplo: 
-Ver `source/gra6-uni6/gra6-uni6-secA-lec1-act2.ptx` y `source/gra6-uni6/gra6-uni6-secA-lec1-act2-reto.ptx`
+Ver `source/content/act-conectarDiagramasEcuacionesSols.ptx` y `source/content/act-conectarDiagramasEcuacionesSols-reto.ptx`

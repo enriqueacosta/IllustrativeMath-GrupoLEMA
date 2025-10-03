@@ -7,7 +7,7 @@ Usage:
     python create_lesson_files.py <unit> <number> <lec-xml:id> [<warm-xml:id>] [<act-xml:id> ...] [<cool-xml:id>]
 
 Arguments:
-    <unit>           The unit folder inside source/, e.g., gra0-uni2
+    <unit>           Unit identifier (e.g., gra0-uni2); files live directly in source/content
     <number>         The lesson number (used for replacement in template)
     <lec-xml:id>     The main lesson file ID (must start with lec-)
     <warm-xml:id>    (optional) ID for the warm-up file (must start with warm-)
@@ -49,7 +49,7 @@ def print_usage():
     print("Usage:")
     print("  python create_lesson_files.py <unit> <number> <lec-xml:id> [<warm-xml:id>] [<act-xml:id> ...] [<cool-xml:id>]")
     print("Notes:")
-    print("  - <unit> is the unit folder inside source/, e.g., gra0-uni2")
+    print("  - <unit> is the unit identifier (e.g., gra0-uni2); files live in source/content")
     print("  - lec-xml:id is required and must start with 'lec-'")
     print("  - 0 or 1 warm-xml:id allowed and must start with 'warm-'")
     print("  - Up to 3 act-xml:id allowed and must start with 'act-'")
@@ -74,7 +74,7 @@ def validate_args(unit, number, lec_id, warm_id, act_ids, cool_id):
     if cool_id and not cool_id.startswith("cool-"):
         errors.append(f"❌ ERROR: <cool-xml:id> must start with 'cool-'. Got '{cool_id}'")
 
-    base_dir = os.path.join("..", "source", unit)
+    base_dir = os.path.join("..", "source", "content")
 
     all_ids = [(lec_id, "lec-VVVVVV.ptx")] + \
               ([(warm_id, "warm-RRRRRR-SSSSSS.ptx")] if warm_id else []) + \
@@ -149,7 +149,7 @@ def main():
         write_from_template(template_path, target_path, replacements)
 
     # Post-processing: patch lesson file to insert warm/cool/act references and possibly remove unused sections
-    lec_path = os.path.join("..", "source", unit, f"{lec_id}.ptx")
+    lec_path = os.path.join("..", "source", "content", f"{lec_id}.ptx")
     try:
         with open(lec_path, "r", encoding="utf-8") as f:
             content = f.read()

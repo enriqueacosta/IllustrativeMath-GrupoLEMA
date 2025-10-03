@@ -31,7 +31,7 @@ La idea es siempre es seguir el formato de los nombres de los archivos en los te
 Los archivos a nivel de unidad siguen el formato  `graVV-uniXX.ptx`, graVV-uniXX-glosario.ptx`, etc. `graVV-uniXX-secYY` por ser muy fijos.
 
 
-Note que la única referencia al número de una lección es en su título, entonces agregar lecciones corresponde a cambios muy simples en los archivos. Por ejemplo, `lec-problemasMult11a19.ptx` es la lección 13 de la unidad 3-4, y esto lo vemos porque está en la carpeta `gra3-uni4` y porque en el encabezado del archivo vemos:
+Note que la única referencia al número de una lección es su título, de modo que agregar una lección implica cambios mínimos. Por ejemplo, el archivo `source/content/lec-problemasMult11a19.ptx` corresponde a la lección 13 de la unidad 3-4 y en su encabezado vemos:
 ```xml
 <subsection xml:id="lec-problemasMult11a19" xmlns:xi="http://www.w3.org/2001/XInclude">
 
