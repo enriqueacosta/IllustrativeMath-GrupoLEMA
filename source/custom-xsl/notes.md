@@ -12,8 +12,8 @@ Lo que hace:
 
 
 
-pretext-common-refsActConLecYAct.xsl
-====================================
+DEPRECATE - pretext-latex-cool.xsl
+===================================
 Es un xsl que funciona ENCIMA de pretext-latex.xsl y que se invoca solo con xsltproc (no con pretext) para generat un archivo .tex standalone de los cools. 
 
 Detalles en el encabezado del archivo mismo.
