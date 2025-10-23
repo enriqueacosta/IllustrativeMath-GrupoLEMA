@@ -3,7 +3,7 @@
 """
 Lista todos los xml:ids de una unidad (lec, warm, act, cool) ordenados por número de lección.
 
-Usage: python list_unit_xmlids.py <unit-folder (full path)>
+Usage: python list_unit_xmlids.py <unit-file (full path)>
 
 Creado con la ayuda de Claude 3.5 Sonnet
 Enrique Acosta, Abril 2025
@@ -148,18 +148,42 @@ def find_included_files(lesson_file: str) -> tuple[Optional[str], List[str], Opt
         print(f"Error processing {lesson_file}: {e}")
         return None, [], None
 
-def process_unit_folder(unit_folder: str) -> List[Lesson]:
-    """Process all lessons in a unit folder and return structured data."""
-    lessons = []
+def find_lessons_in_unit_file(unit_file: str) -> List[str]:
+    """Return a list of lesson files included within a unit .ptx file."""
+    lesson_files: List[str] = []
+    base_dir = os.path.dirname(unit_file)
     
-    # Get absolute path
-    unit_path = os.path.abspath(unit_folder)
+    try:
+        with open(unit_file, "r", encoding="utf-8") as f:
+            content = f.read()
+            soup = BeautifulSoup(content, "xml")
+    except Exception as exc:
+        print(f"Error reading {unit_file}: {exc}")
+        return lesson_files
     
-    # Find all lesson files
-    lesson_files = []
-    for f in os.listdir(unit_path):
-        if f.startswith("lec-") and f.endswith(".ptx"):
-            lesson_files.append(os.path.join(unit_path, f))
+    for include in soup.find_all("xi:include"):
+        href = include.get("href")
+        if not href:
+            continue
+        href = href.strip()
+        candidate = os.path.normpath(os.path.join(base_dir, href))
+        if not candidate.endswith(".ptx") and os.path.exists(candidate + ".ptx"):
+            candidate = candidate + ".ptx"
+        if os.path.basename(candidate).startswith("lec-") and os.path.exists(candidate):
+            lesson_files.append(candidate)
+    
+    return lesson_files
+
+def process_unit_file(unit_file: str) -> List[Lesson]:
+    """Process all lessons referenced in a unit .ptx file and return structured data."""
+    lessons: List[Lesson] = []
+    abs_unit_file = os.path.abspath(unit_file)
+    
+    if not os.path.isfile(abs_unit_file):
+        print(f"No se encontró el archivo de unidad: {unit_file}")
+        return lessons
+    
+    lesson_files = find_lessons_in_unit_file(abs_unit_file)
     
     # Process each lesson file
     for lesson_file in sorted(lesson_files):
@@ -174,7 +198,7 @@ def process_unit_folder(unit_folder: str) -> List[Lesson]:
         # Create lesson activities
         activities = []
         if warmup_file:
-            warmup_path = os.path.join(unit_path, warmup_file)
+            warmup_path = os.path.join(os.path.dirname(lesson_file), warmup_file)
             if os.path.exists(warmup_path):
                 warmup = Activity(
                     file_name=warmup_file,
@@ -188,7 +212,7 @@ def process_unit_folder(unit_folder: str) -> List[Lesson]:
             warmup = None
             
         for i, act_file in enumerate(activity_files, 1):
-            act_path = os.path.join(unit_path, act_file)
+            act_path = os.path.join(os.path.dirname(lesson_file), act_file)
             if os.path.exists(act_path):
                 activity = Activity(
                     file_name=act_file,
@@ -198,9 +222,9 @@ def process_unit_folder(unit_folder: str) -> List[Lesson]:
                     activity_number=i
                 )
                 activities.append(activity)
-            
+        
         if cooldown_file:
-            cooldown_path = os.path.join(unit_path, cooldown_file)
+            cooldown_path = os.path.join(os.path.dirname(lesson_file), cooldown_file)
             if os.path.exists(cooldown_path):
                 cooldown = Activity(
                     file_name=cooldown_file,
@@ -294,11 +318,11 @@ def print_tab_separated(lessons: List[Lesson]):
 def main():
     import sys
     if len(sys.argv) != 2:
-        print("Usage: python list_unit_xmlids.py <unit-folder>")
+        print("Usage: python list_unit_xmlids.py <unit-file>")
         sys.exit(1)
         
-    unit_folder = sys.argv[1]
-    lessons = process_unit_folder(unit_folder)
+    unit_file = sys.argv[1]
+    lessons = process_unit_file(unit_file)
     print("*************************************************************")
     print(" Tab separated lessons")
     print("*************************************************************")
