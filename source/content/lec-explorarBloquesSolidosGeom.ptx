@@ -36,15 +36,22 @@
 =================================================  -->
 <introduction component="profesor">
 
-  <!-- Estándares CCSS asociados -->
+    <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="ccss-leccion-titulo"/></title> 
-    <p>
-      <xref ref="ccss-K-CC-B" text="custom">K.CC.B</xref>, 
-      <xref ref="ccss-K-G" text="custom">K.G</xref>, 
-      <xref ref="ccss-K-MD" text="custom">K.MD</xref>, 
-      <xref ref="ccss-K-MD-B-3" text="custom">K.MD.B.3</xref>
-    </p>
+    <ul>
+      <li>
+        <custom ref="ccss-addressing"/>
+        <xref ref="ccss-K-G" text="custom">K.G</xref>
+      </li>
+      <li>
+        <custom ref="ccss-building"/>
+        <xref ref="ccss-K-CC-B" text="custom">K.CC.B</xref>,
+        <xref ref="ccss-K-G" text="custom">K.G</xref>,
+        <xref ref="ccss-K-MD" text="custom">K.MD</xref>,
+        <xref ref="ccss-K-MD-B-3" text="custom">K.MD.B.3</xref>
+      </li>
+    </ul>
   </paragraphs>
 
   <!-- índice de la lección (automático) -->
