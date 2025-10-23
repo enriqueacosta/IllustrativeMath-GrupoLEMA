@@ -63,8 +63,13 @@
 <!-- ============================================================== 
    Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
 ===================================================================  -->
-<prelude component="profesor"> 
-
+<prelude component="profesor">
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+    </ul>
+  </paragraphs>
   <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
