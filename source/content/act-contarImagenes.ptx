@@ -30,7 +30,18 @@
 ===================================================================  -->
 <prelude component="profesor"> 
 
-  <!-- Tiempo recomendado -->
+  
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li>
+        <custom ref="ccss-addressing"/>
+        <xref ref="ccss-K-CC-B-5" text="custom">K.CC.B.5</xref>
+      </li>
+    </ul>
+  </paragraphs>
+<!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>10 minutos</p>

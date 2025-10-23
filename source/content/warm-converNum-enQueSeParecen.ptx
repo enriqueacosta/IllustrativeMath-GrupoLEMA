@@ -35,7 +35,17 @@
 <!-- ============================================================== 
    Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
 ===================================================================  -->
-<prelude component="profesor"> 
+<prelude component="profesor">
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li>
+        <custom ref="ccss-addressing"/>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>
+    </ul>
+  </paragraphs> 
 
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
