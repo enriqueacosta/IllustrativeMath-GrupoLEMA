@@ -17,7 +17,33 @@
 </solution>
 
 
-<postlude component="profesor"> <!-- Notas para el profesor -->
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor">
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li>
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@@]
+        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-building"/>
+        [@@@@@@@@@@]
+        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor"> 
 
   <!-- Posibles errores -->
   <paragraphs>
