@@ -76,6 +76,7 @@
     <!-- <navigation logic="tree"/> -->
     <!-- Enabling a focused TOC makes the TOC expandable/collapsible and initialliy hides TOC items not on the path to the active webpage. -->
     <!-- <tableofcontents focused="yes" preexpanded-levels="2"/> -->
+    <tableofcontents preexpanded-levels="2"/>
     <!-- @xml:id of a page to be target of index.html redirect -->
     <!-- This is the @xml:id of the "frontmatter", so this is  -->
     <!-- default behavior.                                     -->
@@ -92,8 +93,9 @@
     <!-- alternative styles exist yet for those.               -->
     <!-- <css style="default" colors="blue_red"/> -->
     <!-- <css style="default" colors="orange_navy"/> -->
-    <css style="oscarlevin" colors="orange_navy" toc="wide" banner="wide" navbar="wide" shell="wide"/>
+    <!-- <css style="oscarlevin" colors="orange_navy" toc="wide" banner="wide" navbar="wide" shell="wide"/> -->
     <!-- <css style="oscarlevin" colors="orange_navy" toc="crc" banner="crc" navbar="crc" shell="crc"/> -->
+    <css theme="salem" palette="primaries"/>
     <!-- Magic IDs identify HTML pages to analytics services   -->
     <!-- Presence implies relevant Javascript will be added    -->
     <!-- StatCounter requires both values to be set            -->
