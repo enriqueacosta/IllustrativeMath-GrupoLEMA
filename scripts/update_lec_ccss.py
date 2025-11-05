@@ -40,8 +40,12 @@ INCLUDE_PATTERN = re.compile(r'<xi:include href="\./([^"]+)"')
 ADDRESSING_PATTERN = re.compile(
     r'<li>\s*<custom ref="ccss-addressing"\s*/>(.*?)</li>', re.S
 )
-BUILDING_PATTERN = re.compile(
-    r'<li>\s*<custom ref="ccss-building"\s*/>(.*?)</li>', re.S
+# ``Building On`` and ``Building Towards`` categories.
+BUILDING_ON_PATTERN = re.compile(
+    r'<li>\s*<custom ref="ccss-buildingOn"\s*/>(.*?)</li>', re.S
+)
+BUILDING_TOWARDS_PATTERN = re.compile(
+    r'<li>\s*<custom ref="ccss-buildingTowards"\s*/>(.*?)</li>', re.S
 )
 
 # ``<xref ...>K.CC.B.4</xref>`` tags from which we extract the actual codes.
@@ -119,13 +123,14 @@ def collect_included_files(lesson_text: str) -> list[str]:
 
 def collect_codes_from_includes(
     base_dir: Path, filenames: Sequence[str]
-) -> tuple[list[str], list[str]]:
+) -> tuple[list[str], list[str], list[str]]:
     """
     Read each include in *filenames* (relative to *base_dir*) and collect the
-    Addressing and Building codes present in their CCSS blocks.
+    Addressing, Building On, and Building Towards codes present in their CCSS blocks.
     """
     addressing: list[str] = []
-    building: list[str] = []
+    building_on: list[str] = []
+    building_towards: list[str] = []
 
     for fname in filenames:
         include_path = base_dir / fname
@@ -135,12 +140,15 @@ def collect_codes_from_includes(
 
         text = include_path.read_text(encoding="utf-8")
         addressing.extend(gather_codes(text, ADDRESSING_PATTERN))
-        building.extend(gather_codes(text, BUILDING_PATTERN))
+        building_on.extend(gather_codes(text, BUILDING_ON_PATTERN))
+        building_towards.extend(gather_codes(text, BUILDING_TOWARDS_PATTERN))
 
-    return unique(addressing), unique(building)
+    return unique(addressing), unique(building_on), unique(building_towards)
 
 
-def build_ccss_block(addressing: list[str], building: list[str]) -> str:
+def build_ccss_block(
+    addressing: list[str], building_on: list[str], building_towards: list[str]
+) -> str:
     """
     Construct the new CCSS paragraph block using the aggregated Addressing and
     Building lists.
@@ -166,15 +174,29 @@ def build_ccss_block(addressing: list[str], building: list[str]) -> str:
             ]
         )
 
-    if building:
+    if building_on:
         joined = ", ".join(
             f'<xref ref="{code_to_ref(code)}" text="custom">{code}</xref>'
-            for code in building
+            for code in building_on
         )
         lines.extend(
             [
                 "      <li>",
-                '        <custom ref="ccss-building"/>',
+                '        <custom ref="ccss-buildingOn"/>',
+                f"        {joined}",
+                "      </li>",
+            ]
+        )
+
+    if building_towards:
+        joined = ", ".join(
+            f'<xref ref="{code_to_ref(code)}" text="custom">{code}</xref>'
+            for code in building_towards
+        )
+        lines.extend(
+            [
+                "      <li>",
+                '        <custom ref="ccss-buildingTowards"/>',
                 f"        {joined}",
                 "      </li>",
             ]
@@ -193,13 +215,15 @@ def update_lesson_ccss(lesson_path: Path) -> None:
     base_dir = lesson_path.parent
 
     include_files = collect_included_files(lesson_text)
-    addressing, building = collect_codes_from_includes(base_dir, include_files)
+    addressing, building_on, building_towards = collect_codes_from_includes(
+        base_dir, include_files
+    )
 
-    if not addressing and not building:
+    if not (addressing or building_on or building_towards):
         print("No CCSS codes found in included files; nothing to update.")
         return
 
-    new_block = build_ccss_block(addressing, building)
+    new_block = build_ccss_block(addressing, building_on, building_towards)
 
     updated_text, count = CCSS_BLOCK_PATTERN.subn(new_block, lesson_text)
     if count == 0:
@@ -218,8 +242,10 @@ def update_lesson_ccss(lesson_path: Path) -> None:
     print(f"Updated CCSS block in {lesson_path}")
     if addressing:
         print("  Addressing:", ", ".join(addressing))
-    if building:
-        print("  Building:", ", ".join(building))
+    if building_on:
+        print("  Building On:", ", ".join(building_on))
+    if building_towards:
+        print("  Building Towards:", ", ".join(building_towards))
 
 
 def main() -> None:
