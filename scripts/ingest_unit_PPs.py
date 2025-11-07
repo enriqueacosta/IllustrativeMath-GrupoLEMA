@@ -8,14 +8,14 @@ gra0-uni2:
   * Extract each “Problem/Solution” pair beneath a given section header.
   * Copy every referenced figure into the local `source/assets` tree.
   * Emit brand-new `PP-*.ptx` files containing the statement/solution content,
-    flagging every solution with `[++++++++++++++++++++]` at the top.
+    flagging every solution with `[++++++++++++++]` at the top.
   * Refresh the list of `<xi:include>` entries inside the section-level
     `gra0-uni2-secX-ProblemasPractica.ptx` wrappers so they include the
     newly-generated problems.
 
 Usage
 =====
-    python3 scripts/import_practice_problems.py \
+    python3 scripts/ingest_unit_PPs.py \
         --html /path/to/practice.html \
         --sections B,C,D
 
@@ -31,12 +31,16 @@ Assumptions / Limitations
     rows, with content inside `div.im-c-content`.
   * All figures referenced in the HTML point into the downloaded `figures/`
     directory tree (either SVG or PNG/JPG). The script copies those files
-    verbatim into `source/assets/{svg,png,jpg}-source/`.
+    verbatim into `source/assets/{svg,png,jpg}-source/` and refuses to run if
+    an asset with the same filename already exists (to avoid clobbering art).
   * The script always creates NEW PreTeXt files with fresh UUID-derived IDs.
     It does not attempt to reuse or update existing PP files.
-  * Solutions always get a `[++++++++++++++++++++]` flag inserted as the first
+  * Solutions always get a `[++++++++++++++]` flag inserted as the first
     paragraph, regardless of language. Adjust here if you need a different
     marker.
+  * Section wrappers must still contain the placeholder comments (i.e. no
+    existing `<xi:include>` entries). The script bails out rather than
+    overwriting hand-curated lists.
   * All extracted text is wrapped in `<p>` tags; list items become
     `<li><p>…</p></li>`. Tweak `_render_element` if more control is needed.
 """
@@ -52,6 +56,8 @@ from pathlib import Path
 from typing import Iterable, List, Sequence
 
 from bs4 import BeautifulSoup, NavigableString, Tag
+
+SOLUTION_FLAG = "[++++++++++++++++++++]"
 
 ASSET_DIR_MAP = {
     ".svg": "svg-source",
@@ -166,10 +172,10 @@ class PracticeImporter:
         xml_id = f"PP-{code}"
         statement_lines = self._render_children(block.statement, indent="  ")
         solution_lines = self._render_children(block.solution, indent="  ")
-        solution_lines.insert(0, '  <p>[++++++++++++++++++++]</p>')
+        solution_lines.insert(0, f"  <p>{SOLUTION_FLAG}</p>")
 
         statement_body = "\n".join(statement_lines) if statement_lines else "  <p></p>"
-        solution_body = "\n".join(solution_lines) if solution_lines else "  <p>[++++++++++++++++++++]</p>"
+        solution_body = "\n".join(solution_lines) if solution_lines else f"  <p>{SOLUTION_FLAG}</p>"
 
         content = (
             "<?xml version='1.0' encoding='utf-8'?>\n"
@@ -317,8 +323,12 @@ class PracticeImporter:
         dest_dir = self.project_root / "source" / "assets" / subdir
         dest_dir.mkdir(parents=True, exist_ok=True)
         dest_path = dest_dir / source_path.name
-        if not dest_path.exists():
-            shutil.copy2(source_path, dest_path)
+        if dest_path.exists():
+            raise FileExistsError(
+                f"Asset already exists: {dest_path}\n"
+                "Refusing to overwrite. Delete or move the existing file, then rerun."
+            )
+        shutil.copy2(source_path, dest_path)
         rel_path = f"{subdir}/{dest_path.name}"
         self.asset_cache[src] = rel_path
         return rel_path
@@ -337,6 +347,13 @@ class PracticeImporter:
         match = pattern.search(text)
         if not match:
             raise RuntimeError(f"Unable to locate practice block in {section_path}")
+
+        existing_block = match.group(2)
+        if "<xi:include" in existing_block:
+            raise RuntimeError(
+                f"{section_path} already contains practice problem includes. "
+                "Remove them (or explicitly curate the section) before rerunning the importer."
+            )
 
         include_block = "\n".join(
             f"  <xi:include href=\"../content/{xml_id}.ptx\"/>" for xml_id in include_ids
@@ -373,7 +390,11 @@ def main() -> None:
     args = parse_args()
     sections = [sect.strip().upper() for sect in args.sections.split(",") if sect.strip()]
     importer = PracticeImporter(args.html, args.project_root.resolve(), sections)
-    importer.run()
+    try:
+        importer.run()
+    except Exception as exc:
+        print(f"ERROR: {exc}")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
