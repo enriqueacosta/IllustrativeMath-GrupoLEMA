@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import practice problems for a K-5 unit practice.html into PreTeXt.
 
-This script automates the steps  performed manually for sections B–D of
+This script automates the steps  performed manually for sections A–D of
 gra0-uni2:
 
   * Parse the archived `practice.html` file.
@@ -11,13 +11,13 @@ gra0-uni2:
     flagging every solution with `[++++++++++++++]` at the top.
   * Refresh the list of `<xi:include>` entries inside the section-level
     `gra0-uni2-secX-ProblemasPractica.ptx` wrappers so they include the
-    newly-generated problems.
+    newly-generated problems (when the wrapper exists and is empty).
 
 Usage
 =====
     python3 scripts/ingest_unit_PPs.py \
         --html /path/to/practice.html \
-        --sections B,C,D
+        --sections A,B,C,D
 
 Arguments:
   --html          Absolute path to the archived practice.html file.
@@ -40,7 +40,8 @@ Assumptions / Limitations
     marker.
   * Section wrappers must still contain the placeholder comments (i.e. no
     existing `<xi:include>` entries). The script bails out rather than
-    overwriting hand-curated lists.
+    overwriting hand-curated lists. If a wrapper file is missing (common for
+    Section A in early units), the script simply skips that section.
   * All extracted text is wrapped in `<p>` tags; list items become
     `<li><p>…</p></li>`. Tweak `_render_element` if more control is needed.
 """
@@ -68,6 +69,7 @@ ASSET_DIR_MAP = {
 """Mapping from file extension to destination assets subdirectory."""
 
 SECTION_FILES = {
+    "A": "source/v00/gra0-uni2-secA-ProblemasPractica.ptx",
     "B": "source/v00/gra0-uni2-secB-ProblemasPractica.ptx",
     "C": "source/v00/gra0-uni2-secC-ProblemasPractica.ptx",
     "D": "source/v00/gra0-uni2-secD-ProblemasPractica.ptx",
@@ -107,8 +109,10 @@ class PracticeImporter:
                 include_ids.append(xml_id)
                 print(f"    Wrote {xml_id}.ptx")
 
-            self._update_section_file(section, include_ids)
-            print(f"  Updated section file with {len(include_ids)} includes.")
+            if self._update_section_file(section, include_ids):
+                print(f"  Updated section file with {len(include_ids)} includes.")
+            else:
+                print("  Skipped section wrapper update (see warning above).")
 
     # ------------------------------------------------------------------
     # Extraction helpers
@@ -333,11 +337,15 @@ class PracticeImporter:
         self.asset_cache[src] = rel_path
         return rel_path
 
-    def _update_section_file(self, section: str, include_ids: Sequence[str]) -> None:
+    def _update_section_file(self, section: str, include_ids: Sequence[str]) -> bool:
         section_rel = SECTION_FILES.get(section)
         if not section_rel:
-            raise ValueError(f"Unknown section {section}")
+            print(f"  !! No wrapper configured for Section {section}.")
+            return False
         section_path = self.project_root / section_rel
+        if not section_path.exists():
+            print(f"  !! Wrapper file missing: {section_path}.")
+            return False
         text = section_path.read_text()
 
         pattern = re.compile(
@@ -362,6 +370,7 @@ class PracticeImporter:
         start, end = match.start(2), match.end(2)
         new_text = text[:start] + "\n" + include_block + "\n\n" + text[end:]
         section_path.write_text(new_text)
+        return True
 
 
 def parse_args() -> argparse.Namespace:
@@ -380,8 +389,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--sections",
-        default="B,C,D",
-        help="Comma-separated section letters to import (default: B,C,D).",
+        default="A,B,C,D",
+        help="Comma-separated section letters to import (default: A,B,C,D).",
     )
     return parser.parse_args()
 
