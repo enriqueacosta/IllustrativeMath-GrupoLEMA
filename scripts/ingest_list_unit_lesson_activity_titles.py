@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Extract lesson and section titles for a unit.
+Enrique, 2025
+
+For ingestion: Print lesson, and activity titles for a unit (including warm and cool).
 
 For each lesson HTML file inside a unit directory, this script prints a
 tab-delimited summary suitable for spreadsheet import:
