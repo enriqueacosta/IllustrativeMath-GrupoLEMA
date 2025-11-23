@@ -36,7 +36,8 @@ def extract_lessons(unit_dir: Path) -> List[List[Tuple[str, str]]]:
     Return a list of lessons, where each lesson is a list of (col1, col2) rows.
     """
     lessons: List[List[Tuple[str, str]]] = []
-    for lesson_dir in sorted(unit_dir.glob("lesson-*")):
+    lesson_dirs = sorted(unit_dir.glob("lesson-*"), key=_lesson_sort_key)
+    for lesson_dir in lesson_dirs:
         lesson_file = lesson_dir / "lesson.html"
         if not lesson_file.exists():
             continue
@@ -44,6 +45,15 @@ def extract_lessons(unit_dir: Path) -> List[List[Tuple[str, str]]]:
         if lesson_rows:
             lessons.append(lesson_rows)
     return lessons
+
+
+def _lesson_sort_key(path: Path) -> Tuple[int, str]:
+    """Sort lesson directories numerically by suffix (lesson-2 before lesson-10)."""
+    try:
+        suffix = int(path.name.split("-", 1)[1])
+    except (IndexError, ValueError):
+        suffix = 10**9  # fallback for unexpected folder names
+    return suffix, path.name
 
 
 def parse_lesson(html_path: Path) -> List[Tuple[str, str]]:
