@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template article provided -->
+<!-- by the `pretext new article` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your article         -->
+  <article xml:id="gra3-uni1">
+    <!-- The article needs a title and can have a subtitle  -->
+    <title><custom ref="nombreOficial-conMathjax"/></title>
+    <subtitle>Grado VV - Unidad XX</subtitle>
+
+    <frontmatter>
+
+      <!-- contenido de <bibinfo> que es igual para todas las unidades-->
+      <xi:include href="../meta/meta_bibinfo.ptx" />
+
+      <abstract xml:id="gra3-uni1-intro">
+        <title>Presentación de la unidad</title>
+        
+        <!--
+        <p>
+          Secciones:
+          <ul>
+            <li><xref ref="gra3-uni1-secA" text="title"></xref></li>
+            <li><xref ref="gra3-uni1-secB" text="title"></xref></li>
+            <li><xref ref="gra3-uni1-secC" text="title"></xref></li>
+            <li><xref ref="gra3-uni1-secD" text="title"></xref></li>
+          </ul>
+        </p>
+        -->
+
+        <!-- 
+        <p>
+          <list-of elements="chapter"/>
+          <list-of elements="theorem lemma" divisions="chapter" empty="yes"/>
+        </p> 
+        -->  
+        <introduction component="profesor">
+          <p>
+            En esta unidad los estudiantes aprenden [@@@@@@@@@]
+          </p>
+        </introduction>
+      </abstract>
+
+
+      <!-- Acá va todo lo de el código fuente -->
+      <xi:include href="../meta/meta_source.ptx" />      
+
+      <!-- Acá va todo lo de copyright -->
+      <xi:include href="../meta/meta_colophon.ptx" />
+
+      <!-- Acá van nombres -->
+      <xi:include href="../meta/meta_nombres.ptx" />
+
+      <!-- Acá van atribuciones de software -->
+      <xi:include href="../meta/meta_atribucionesOpenSource.ptx" />
+
+    </frontmatter>
+
+
+    <section xml:id="gra3-uni1-secA">
+      <title>Sección A -<nbsp/></title>
+      <title>[@@@@@@@@@@@@@@@@@]</title>
+      
+      <!-- Intro y objetivos de la sección-->
+      <xi:include href="./gra3-uni1-secA-intro.ptx" />
+      
+      <!-- Lecciones de la sección -->
+      <!-- <xi:include href="../content/lec-VVVVVV.ptx"/> -->
+      <!-- <xi:include href="../content/lec-RRRRRRR.ptx"/> -->
+      <!-- <xi:include href="../content/lec-SSSSSSS.ptx"/> -->
+ 
+      <!-- Problemas de práctica de la sección -->
+      <!-- <xi:include href="./gra3-uni1-secA-ProblemasPractica.ptx"/> -->
+      
+      <!-- Resumen de la sección -->
+      <xi:include href="./gra3-uni1-secA-resumen.ptx"/>
+    </section>
+
+    <!-- Más secciones -->
+
+    <!-- GLOSARIO -->
+    <section xml:id="gra3-uni1-glo-acum" component="no-libroTrabajo">      
+      <title>Glosario</title>
+      <xi:include href="./gra3-uni1-Glosario.ptx"/>
+    </section>
+
+
+    <!-- Centros -->
+    <section xml:id="centros-gra3-uni1" component="profesor">
+      <title>Centros</title>
+      <!-- <xi:include href="../centros/centro-bloquesSolidosGeom.ptx"/> -->
+      <!-- <xi:include href="../centros/centro-librosDeImagenes.ptx"/> -->
+    </section>
+
+    <!-- Hojas Reproducibles (BLM) -->
+    <section xml:id="BLM-gra3-uni1" component="profesor">
+      <title>Hojas reproducibles</title>
+      <!-- <xi:include href="../blm/blm-centro-bloquesSolidosGeom-tarjetasBloques.ptx"/> -->
+      <!-- <xi:include href="../blm/blm-centro-librosDeImagenes-hojaRegistro.ptx"/> -->
+    </section>
+
+    <!-- atribuciones de imágenes -->
+    <xi:include href="./gra3-uni1-atribuciones.ptx" />
+
+    <!-- Estándares CCSS -->
+    <xi:include href="../ccss/ccss.ptx" />
+
+    <!-- Dos versiones de compilaciones de actividades de cierre -->
+    <solutions project="statement">
+      <title>Actividades de cierre</title>
+    </solutions>
+
+    <section>        
+      <title>Actividades de cierre</title>
+        <list-of elements="project" divisions="section" empty="yes" solutions="no"/>
+    </section>
+
+    <!-- Finaly we place the backmatter in its own file and inlcude-->
+    <!-- <xi:include href="./meta_backmatter.ptx" /> -->
+    
+  </article>
+</pretext>
