@@ -96,18 +96,18 @@
       output-dir="web-prof/gra0-uni2">
       <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
     </target>
-    <target name="gra0-uni1-print-prof" 
+    <target name="gra0-uni2-print-prof" 
       format="pdf" 
       latex-engine="pdflatex" 
-      source="v00/gra0-uni1.ptx"
+      source="v00/gra0-uni2.ptx"
       publication="publication-prof-print.ptx"
-      output-dir="print-prof/gra0-uni1">
+      output-dir="print-prof/gra0-uni2">
     </target>
-    <target name="gra0-uni1-print-latex-prof" 
+    <target name="gra0-uni2-print-latex-prof" 
       format="latex" 
-      source="v00/gra0-uni1.ptx"
+      source="v00/gra0-uni2.ptx"
       publication="publication-prof-print.ptx"
-      output-dir="print-latex-prof/gra0-uni1">
+      output-dir="print-latex-prof/gra0-uni2">
     </target>
 
 
@@ -153,6 +153,57 @@
       source="v00/gra1-uni1.ptx"
       publication="publication-prof-print.ptx"
       output-dir="print-latex-prof/gra1-uni1">
+    </target>
+
+     <!-- ============================================ 
+      grado3-unidad1
+    =================================================  -->
+    <target name="gra3-uni1-web-est" 
+      format="html" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-est-web.ptx"
+      output-dir="web-est/gra3-uni1">
+      <!-- <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/> -->
+      <stringparams author.tools="yes" html.css.extra="external/css/grado0-est.css"/>
+    </target>
+    <target name="gra3-uni1-print-est" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-est/gra3-uni1">
+    </target>
+    <target name="gra3-uni1-print-latex-est" 
+      format="latex" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-est-print.ptx"
+      output-dir="print-latex-est/gra3-uni1">
+    </target>
+    <target name="gra3-uni1-libroTrabajo" 
+      format="latex" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-libroTrabajo.ptx"
+      output-dir="print-latex-libroTrabajo/gra3-uni1">
+    </target>
+    <target name="gra3-uni1-web-prof" 
+      format="html" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-prof-web.ptx"
+      output-dir="web-prof/gra3-uni1">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles.css"/>
+    </target>
+    <target name="gra3-uni1-print-prof" 
+      format="pdf" 
+      latex-engine="pdflatex" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-prof/gra3-uni1">
+    </target>
+    <target name="gra3-uni1-print-latex-prof" 
+      format="latex" 
+      source="v00/gra3-uni1.ptx"
+      publication="publication-prof-print.ptx"
+      output-dir="print-latex-prof/gra3-uni1">
     </target>
 
     <!-- ============================================ 
