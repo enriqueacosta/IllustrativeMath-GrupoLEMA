@@ -103,7 +103,7 @@ def write_from_template(template_path, target_path, replacements):
     print(f"✅ Created file: {target_path}")
 
 def main():
-    if len(sys.argv) < 4 or len(sys.argv) > 8:
+    if len(sys.argv) < 4 or len(sys.argv) > 9:
         print("❌ ERROR: Incorrect number of arguments.\n")
         print_usage()
         sys.exit(1)
