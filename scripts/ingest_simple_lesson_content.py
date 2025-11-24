@@ -374,13 +374,23 @@ def update_xml_content(content, subsection):
         # Look for a solution tag in the content
         pattern = r'<solution>.*?</solution>'
         replacement = create_replacement_xml(subsection)
-        new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+        new_content, count = re.subn(
+            pattern,
+            lambda match, repl=replacement: repl,
+            content,
+            flags=re.DOTALL
+        )
         return new_content, count
     
     # Regular paragraphs handling
     pattern = r'<paragraphs>\s*<title><custom ref="' + re.escape(ref) + r'"/></title>.*?</paragraphs>'
     replacement = create_replacement_xml(subsection)
-    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    new_content, count = re.subn(
+        pattern,
+        lambda match, repl=replacement: repl,
+        content,
+        flags=re.DOTALL
+    )
     return new_content, count
 
 # -------------------------------
@@ -401,7 +411,12 @@ def update_recommended_time(xml_file, time_value):
         f'    <p>{time_value} minutos</p>\n'
         f'  </paragraphs>'
     )
-    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    new_content, count = re.subn(
+        pattern,
+        lambda match, repl=replacement: repl,
+        content,
+        flags=re.DOTALL
+    )
     if count:
         write_file(xml_file, new_content)
         return True
@@ -561,7 +576,12 @@ def update_synthesis_section(lesson_plan_file, html_sections):
         f'  {synthesis_content}\n\n'
         f'</subsubsection>'
     )
-    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    new_content, count = re.subn(
+        pattern,
+        lambda match, repl=replacement: repl,
+        content,
+        flags=re.DOTALL
+    )
     if count:
         write_file(lesson_plan_file, new_content)
         print(f"Updated Lesson Synthesis section in {lesson_plan_file}")
