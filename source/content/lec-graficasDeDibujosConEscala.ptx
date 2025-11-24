@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to read and answer questions about scaled picture graphs.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,17 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In previous lessons, students reviewed how to create and interpret single-unit scale picture graphs. In this lesson, students learn that a <strong>scaled picture graph</strong> is a picture graph where each picture represents an amount other than 1. They read, interpret, and answer questions about scaled picture graphs with a scale of 2 and 5, and generate questions that can be answered by these graphs.</p>
+<p><strong>Math Community</strong></p>
+<p>Tell students that, at the end of the lesson, they will be asked to identify specific actions from their <q>Doing Math</q> list (both teacher and student sections) they personally experienced.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In this lesson, students make sense of scaling a picture graph by a number other than 1. How does this support the work that students will do with multiplication later in this unit?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +116,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-suma.ptx"/> 
@@ -125,7 +130,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-tantasRespuestas.ptx"/> 
@@ -142,7 +147,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-preguntasSobreGraficasDeDibujosConEscala.ptx"/> 
@@ -166,7 +171,13 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display the images of the two <q>Favorite Sports</q> graphs.</p>
+<p><q>Hoy aprendimos sobre las gráficas de dibujos con escala. ¿Por qué razones haríamos una gráfica de dibujos con escala?</q> (When there is a lot of data to represent, it is faster to use a scale.)</p>
+<p><q>¿En qué es diferente leer gráficas de dibujos con escala a leer gráficas que tienen una escala de 1?</q> (Each picture doesn’t represent 1 thing so you need to look at the scale. In a scaled picture graph you can count by the scale to find the total in each category instead of counting by 1.)</p>
+<p><strong>Math Community</strong></p>
+<p>After the cool-down, ask students to individually reflect on the question <q>¿Cuál acción de 'Hacer matemáticas' sintieron que fue la más importante al trabajar hoy? ¿Por qué?</q> Have students write their responses on the bottom of their cool-down paper, on a separate sheet of paper, or in a math journal.</p>
+<p>Collect and read their responses after class. These responses will offer insight into how students feel about their own mathematical work and help you make personal connections to the norms they will be creating during days 4–6.</p>
 
 </subsubsection>
 
@@ -192,27 +203,5 @@
 </reading-questions>
 
 
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-graficasDeDibujosConEscala-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-graficasDeDibujosConEscala-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
