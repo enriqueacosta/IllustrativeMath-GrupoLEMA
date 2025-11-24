@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to solve one- and two-step <q>how many more</q> and <q>how many fewer</q> problems, based on data presented in a scaled bar graph.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,15 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>This lesson introduces Three Reads (MLR 6) to support students in making sense of and solving situations. In this lesson students continue to interpret graphs that represent quantities that are not exact multiples of the scale and require students to estimate values. As a result, answers may vary slightly. Accept all answers that align to reasonable estimates.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Who got to do math today in class and how do you know? Identify the norms or routines that allowed those students to engage in mathematics. How can you adjust these norms and routines so all students do math tomorrow?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +114,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-sumasRepetidas.ptx"/> 
@@ -125,7 +128,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-nuevoAnyoEscolar.ptx"/> 
@@ -142,7 +145,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-usarGraficasDeBarrasResolverProblemas.ptx"/> 
@@ -166,7 +169,10 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display equations from the first problem in the last activity.</p>
+<p><q>¿Como usaron lo que saben sobre decenas y unidades para resolver los problemas?</q> (Some questions I saw I could just count by 10 on the graph because the scale was 10. We didn’t subtract all at once. We subtracted the tens, then the ones. We were thinking about how to get to the next ten to make adding the tens easier.)</p>
+<p><q>En el futuro, ¿cómo podrían usar la estrategia ‘Tres lecturas’ solos, sin ayuda de un compañero?</q> (We could use it any time by thinking what the problem is about. We can read the problem to look for what can be measured or counted in the problem. We can read it to think about strategies we could use to solve the problem.)</p>
 
 </subsubsection>
 
@@ -190,29 +196,5 @@
   <!-- Archivo con el contenido -->
   <xi:include href="./cool-momentoLeer.ptx"/>
 </reading-questions>
-
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-masPreguntasGraficasDeBarrasConEscala-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-masPreguntasGraficasDeBarrasConEscala-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
