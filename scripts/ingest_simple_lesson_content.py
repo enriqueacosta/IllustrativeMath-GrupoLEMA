@@ -57,7 +57,7 @@ def extract_html_sections(html_file):
             content_elements = []
             current = h3.next_sibling
             while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
-                if getattr(current, 'name', None) in ['p', 'ul']:
+                if getattr(current, 'name', None) in ['p', 'ul', 'ol']:
                     content_elements.append(str(current))
                 current = current.next_sibling
                 
@@ -79,7 +79,7 @@ def extract_html_sections(html_file):
             current = h2.next_sibling
             # Collect all content elements until the next h2 is encountered
             while current and (not getattr(current, 'name', None) == 'h2'):
-                if getattr(current, 'name', None) in ['p', 'ul']:
+                if getattr(current, 'name', None) in ['p', 'ul', 'ol']:
                     content_elements.append(str(current))
                 current = current.next_sibling
             if content_elements:
@@ -127,7 +127,7 @@ def extract_html_sections(html_file):
                 
                 # Collect all content elements until the next header
                 while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
-                    if getattr(current, 'name', None) in ['p', 'ul']:
+                    if getattr(current, 'name', None) in ['p', 'ul', 'ol']:
                         content_elements.append(str(current))
                     current = current.next_sibling
                 
@@ -169,7 +169,7 @@ def extract_html_sections(html_file):
                 
             # Collect all content elements until the next header
             while current and not (getattr(current, 'name', None) in ['h2', 'h3']):
-                if getattr(current, 'name', None) in ['p', 'ul']:
+                if getattr(current, 'name', None) in ['p', 'ul', 'ol']:
                     content_elements.append(str(current))
                 current = current.next_sibling
                 
@@ -264,25 +264,27 @@ def indent_html_content(html_content):
     """
     from bs4 import BeautifulSoup, NavigableString
     soup = BeautifulSoup(html_content, 'html.parser')
-    ul = soup.find('ul')
-    if not ul:
+    list_tag = soup.find(['ul', 'ol'])
+    if not list_tag:
         return html_content
+    tag_name = list_tag.name
 
     # Define indentation levels
     indent_ul = ""            # No indent for the <ul> tag line
     indent_li = "      "      # 6 spaces for <li> items
     indent_child = indent_li + "  "  # 8 spaces for child elements inside <li>
 
-    lines = [indent_ul + "<ul>"]
-    for li in ul.find_all('li', recursive=False):
+    lines = [indent_ul + f"<{tag_name}>"]
+    for li in list_tag.find_all('li', recursive=False):
         parts = []
         for child in li.contents:
             # For <q> tags, output on a new line with extra indentation.
             if getattr(child, "name", None) == "q":
                 parts.append("\n" + indent_child + str(child).strip() + " ")
             elif isinstance(child, NavigableString):
-                text = child.strip()
-                if text:
+                raw = str(child)
+                if raw.strip():
+                    text = raw.replace("\n", " ").replace("\t", " ").replace("\r", " ")
                     parts.append(text)
             else:
                 parts.append(str(child))
@@ -291,7 +293,7 @@ def indent_html_content(html_content):
         if "\n" in li_content:
             li_content = li_content.rstrip() + "\n" + indent_li
         lines.append(indent_li + "<li>" + li_content + "</li>")
-    lines.append("    " + "</ul>")
+    lines.append("    " + f"</{tag_name}>")
     result = "\n".join(lines)
     # Convert any <fillin></fillin> tags to self-closing <fillin/>
     result = result.replace("<fillin></fillin>", "<fillin/>")
@@ -309,11 +311,11 @@ def create_replacement_xml(subsection):
     if content_type == 'solution':
         # Format the content for solution tags
         soup = BeautifulSoup(subsection['content'], 'html.parser')
-        if soup.find('ul'):
+        if soup.find(['ul', 'ol']):
             # Process each element separately to maintain proper indentation
             elements = []
-            for element in soup.find_all(['p', 'ul'], recursive=False):
-                if element.name == 'ul':
+            for element in soup.find_all(['p', 'ul', 'ol'], recursive=False):
+                if element.name in ['ul', 'ol']:
                     elements.append(indent_html_content(str(element)))
                 else:
                     elements.append(str(element))
@@ -332,11 +334,11 @@ def create_replacement_xml(subsection):
     if content_type == 'content':
         # For general content, check if it contains a list that needs indentation
         soup = BeautifulSoup(subsection['content'], 'html.parser')
-        if soup.find('ul'):
+        if soup.find(['ul', 'ol']):
             # Process each element separately to maintain proper indentation
             elements = []
-            for element in soup.find_all(['p', 'ul'], recursive=False):
-                if element.name == 'ul':
+            for element in soup.find_all(['p', 'ul', 'ol'], recursive=False):
+                if element.name in ['ul', 'ol']:
                     elements.append(indent_html_content(str(element)))
                 else:
                     elements.append(str(element))
@@ -421,6 +423,8 @@ def update_file(xml_file, html_sections, file_label):
 
     # Determine which HTML section matches based on the file label
     matching_section = None
+    base_name = os.path.basename(xml_file).lower()
+
     if file_label == "warm-up":
         matching_section = next((sec for sec in html_sections if sec['title'].startswith("Warm-up:")), None)
         if matching_section:
@@ -434,11 +438,16 @@ def update_file(xml_file, html_sections, file_label):
         if matching_section:
             print(f"  Found match as Activity {act_num}!")
     else:
-        norm_xml_title = normalize_title(xml_title)
+        norm_xml_title = normalize_title(xml_title) if xml_title else ''
         print(f"Looking for match for '{xml_file}' with title '{xml_title}' (normalized: '{norm_xml_title}')")
-        matching_section = next((sec for sec in html_sections if norm_xml_title in normalize_title(sec['title'])), None)
-        if matching_section:
-            print("  Found match by normalized title!")
+        if 'cool' in base_name:
+            matching_section = next((sec for sec in html_sections if sec['title'].lower().startswith("cool-down")), None)
+            if matching_section:
+                print("  Found match as cool-down!")
+        if not matching_section and norm_xml_title:
+            matching_section = next((sec for sec in html_sections if norm_xml_title in normalize_title(sec['title'])), None)
+            if matching_section:
+                print("  Found match by normalized title!")
     if not matching_section:
         print(f"Warning: No matching HTML section found for {xml_file} with title '{xml_title}'. Skipping.")
         return
