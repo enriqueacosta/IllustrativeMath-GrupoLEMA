@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to solve one- and two-step problems about data represented in bar graphs.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,17 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Students solved one-step problems about data in grade 2. In this lesson, students first create a picture graph and bar graph that represent how they get home from school. Then, they solve one- and two- step <q>how many more</q> and <q>how many fewer</q> problems using data presented in a bar graph. Consider launching the lesson with a read-a-loud of <em>Last Stop on Market Street</em> by Matt de la Peña and Christian Robinson.</p>
+<p><strong>Math Community</strong></p>
+<p>Tell students they will have a chance to revise their math community ideas at the end of this lesson. As they work today they should think about actions that may be missing from the current list.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Think about who participated in math class today. What assumptions are you making about those who did not participate? How can you leverage each of your students’ ideas to support them in being seen and heard in tomorrow’s math class?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +116,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-cuantosVes-puntosEnGrupos.ptx"/> 
@@ -125,7 +130,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-comoVamosACasa.ptx"/> 
@@ -142,7 +147,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-preguntasSobreUnaGraficaDeBarras.ptx"/> 
@@ -166,7 +171,20 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display a student-created bar graph.</p>
+<p>Generate a few questions for students to answer about how they get home using the bar graph. For example, you might ask:</p>
+<ul>
+<li>
+<q>¿Cuántos estudiantes más <fillin></fillin> que <fillin></fillin>?</q></li>
+<li>
+<q>¿Cuántos estudiantes menos <fillin></fillin> que <fillin></fillin>?</q></li>
+<li>
+<q>¿Cuántos estudiantes más <fillin></fillin> o <fillin></fillin> que <fillin></fillin>?</q></li>
+</ul>
+<p>Have students answer the questions and share their reasoning.</p>
+<p><strong>Math Community</strong></p>
+<p>After the Cool-down, give students 2–3 minutes to discuss any revisions to the <q>Doing Math</q> actions in small groups. Share ideas as a whole group and record any revisions.</p>
 
 </subsubsection>
 
@@ -194,25 +212,5 @@
 
 
 
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-representarDatosYResolverProblemas-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-representarDatosYResolverProblemas-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
