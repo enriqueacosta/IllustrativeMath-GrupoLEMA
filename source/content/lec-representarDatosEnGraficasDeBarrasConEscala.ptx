@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to create a scaled bar graph.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,17 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In a previous lesson, students collected categorical class data and learned how to create a scaled picture graph. Students now make connections between scaled picture graphs and scaled bar graphs, and expand the idea of a scale that is more than one to bar graphs. In this lesson students choose a scale of 2 or 5 for their bar graph.</p>
+<p><strong>Math Community</strong></p>
+<p>Tell students that, at the end of the lesson, they will be asked to identify specific examples of norms they experienced as they did math.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Based on students’ prior work with scaled picture graphs, what strategy did you anticipate today? What strategy did you not anticipate?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +116,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-deADosYDeACinco.ptx"/> 
@@ -125,7 +130,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-compararGraficasDeBarras.ptx"/> 
@@ -142,7 +147,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(25 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-hacerUnaGraficaDeBarrasConEscala.ptx"/> 
@@ -166,7 +171,12 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display a scaled bar graph from the lesson.</p>
+<p><q>Hemos estado aprendiendo a hacer gráficas de barras con escala. Si fueran a ayudar a un amigo a hacer una gráfica de barras con escala, ¿qué consejos le darían?</q> (I would tell them that means that the scale goes up by numbers other than 1. They should look at the number of people in each category and think about whether those numbers are easy to count by 2 or 5 or some other number.)</p>
+<p>Be sure to highlight ideas about using scales of 2 or 5.</p>
+<p><strong>Math Community</strong></p>
+<p>After the cool-down, give students 2–3 minutes to discuss in small groups any revisions to the <q>Norms</q> section. Collect and record any revisions.</p>
 
 </subsubsection>
 
@@ -190,29 +200,5 @@
   <!-- Archivo con el contenido -->
   <xi:include href="./cool-completaUnaGraficaDeBarrasConEscala.ptx"/>
 </reading-questions>
-
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-representarDatosEnGraficasDeBarrasConEscala-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-representarDatosEnGraficasDeBarrasConEscala-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
