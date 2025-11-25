@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to relate equations to and write equations for multiplication situations and diagrams using a symbol for the unknown number.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,15 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Students have worked with addition and subtraction equations with a symbol to represent the unknown number in grades 1 and 2. Students build on that work and the work with multiplication equations in the previous lesson as they encounter multiplication equations that have a symbol for the unknown number for the first time.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>How do tape diagrams help students make sense of equations in which the unknown number is in different positions?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +114,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-cincos.ptx"/> 
@@ -125,7 +128,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-clasificacionDeTarjetas-numsDesconocidos.ptx"/> 
@@ -142,7 +145,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-escribirEcuacionesQueTenganUnNumDesconocido.ptx"/> 
@@ -166,7 +169,11 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display:</p>
+<p style="text-align:center"><m>6\times5={?}</m> <m>6\times{?}=30</m> <m>{?}\times5=30</m></p>
+<p><q>Hoy encontramos el número desconocido en ecuaciones de multiplicación</q></p>
+<p><q>¿En qué fue diferente encontrar un factor desconocido de encontrar un producto desconocido?</q> (If we didn’t know the product, we could skip-count by the number the right number of times, like 5, 10, 15, 20, 25, 30. If we didn’t know one of the factors, we might have to skip-count by the number enough times to get to the product. If we didn’t know one of the factors, we might not know what to skip-count by, just the number of counts.)</p>
 
 </subsubsection>
 
@@ -191,28 +198,5 @@
   <xi:include href="./cool-deNumDesconocidoAConocido.ptx"/>
 </reading-questions>
 
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-escribirYResolverEcuacionesConNumDesconocidos-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-escribirYResolverEcuacionesConNumDesconocidos-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
