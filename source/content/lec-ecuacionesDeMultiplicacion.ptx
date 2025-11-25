@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to relate multiplication equations to situations and diagrams and write equations.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,16 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In previous lessons students represented situations and diagrams with multiplication expressions. In this lesson, students learn the meaning of <term>factor</term>and <term>product</term>. Students do not have to use the vocabulary in this lesson as they will continue to have opportunities to do so throughout the year. In future lessons, students will represent situations and diagrams with equations that use a symbol for the unknown number, which may be either a factor or the product.</p>
+<p>Consider continuing to use the convention of groups as the first factor and the size of the groups as the second factor when writing equations. However, it is not necessary for students to write the factors in this order. It is important that students connect their equations to the corresponding situations and representations (MP2). They should be able to correctly explain what each factor represents in their equations. If students ask questions about the idea of commutativity, consider recording the questions publicly for future investigation.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>How were the terms factor and product helpful as students began working with multiplication equations?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +115,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-cualDiferente-representaciones.ptx"/> 
@@ -125,7 +129,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-aCualEcuacionDeMultiplicacionCorresponde.ptx"/> 
@@ -142,7 +146,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-escribirEcuacionesDeMultiplicacion.ptx"/> 
@@ -166,7 +170,13 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display:</p>
+<p>Expression: <m>3\times5</m> Equation: <m>3\times5 = 15</m></p>
+<p><q>Hoy aprendimos sobre ecuaciones y sobre cómo podemos usarlas para representar una multiplicación. En esta ecuación, los factores son 3 y 5, y el producto es 15</q></p>
+<p><q>¿En qué se parecen las expresiones de multiplicación y las ecuaciones de multiplicación?</q> (They both use the multiplication symbol. They both have factors.)</p>
+<p><q>¿En qué son diferentes las expresiones de multiplicación y las ecuaciones de multiplicación?</q> (Equations have an equal sign. Multiplication equations have numbers on both sides of the equal sign.)</p>
+<p><q>¿En qué casos puede servir cada una?</q> (Expressions are helpful when you want to describe a situation. Equations are helpful if you are trying to find the product.)</p>
 
 </subsubsection>
 
@@ -191,28 +201,5 @@
   <xi:include href="./cool-cualesCorrespondenALaEcuacion.ptx"/>
 </reading-questions>
 
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-ecuacionesDeMultiplicacion-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-ecuacionesDeMultiplicacion-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
