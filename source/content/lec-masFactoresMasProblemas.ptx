@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to solve multiplication problems.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,15 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Students write equations with a symbol for the unknown to represent multiplication problems and then solve the problems. As in the previous lesson, some problems are unknown factor problems which students do not relate to division until a future unit. Students put together what they have learned about drawings, diagrams, expressions, and equations to solve multiplication problems.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>As students worked in their small-groups today, whose ideas were heard, valued, and accepted? How can you adjust the group structure tomorrow to ensure each student’s ideas are a part of the collective learning?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +114,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-decenas.ptx"/> 
@@ -125,7 +128,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-representarSituacionesConEcuaciones.ptx"/> 
@@ -142,7 +145,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-salpiconDeMultiplicacion.ptx"/> 
@@ -166,7 +169,10 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p><q>Hoy resolvimos problemas de multiplicación usando la estrategia o representación que quisimos</q></p>
+<p><q>¿Qué estrategia o representación les parece que ayuda más a resolver estos tipos de problemas? ¿Por qué?</q> (I like to draw equal groups so I can see how many groups there are and how many are in each group. I think a diagram is nice to draw because I don’t have to draw all the things, but I can still see the groups. I like to use an equation so I can see where the unknown number is.)</p>
+<p><q>Mencionen algunas cosas que sea importante recordar cuando están resolviendo problemas de multiplicación</q> (There are always groups that are the same size. You could be looking for the number of groups, how many things are in each group, or the total number of things in all the groups.)</p>
 
 </subsubsection>
 
@@ -190,29 +196,5 @@
   <!-- Archivo con el contenido -->
   <xi:include href="./cool-resuelveElProblema.ptx"/>
 </reading-questions>
-
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-masFactoresMasProblemas-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-masFactoresMasProblemas-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
