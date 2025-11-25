@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to describe the commutative property of multiplication using arrays.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,16 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In previous lessons, students used drawings of equal groups and arrays to represent multiplication situations. They also connected multiplication expressions and equations to these representations. In this lesson, students are introduced to the commutative property. Students will notice that the same product can be represented by different situations, arrays, or equations. Re-organizing the arrays or reversing the order of the factors in a multiplication expression does not change the total number of objects. It is important that students connect their equations to the corresponding situations and representations. They should be able to correctly explain what each factor and the product represents in their equations.</p>
+<p>Note that students are not expected to use the name of the property. They should, however, be able to rely on their conceptual understanding of multiplication to explain why the product does not change when the order of the factors changes.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>What part of the lesson went really well today in terms of students learning? What did you do that made that part go well?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +115,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-restaHasta100.ptx"/> 
@@ -125,7 +129,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-aprenderMasSobreLaMultiplicacion.ptx"/> 
@@ -142,7 +146,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-retomemarLosArreglos.ptx"/> 
@@ -166,7 +170,11 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display a 3 by 4 array and the equations <m>3\times4=12</m> and <m>4\times3=12</m>.</p>
+<p><q>¿Qué aprendimos hoy cuando pensamos en arreglos y vimos parejas de ecuaciones como esta?</q> (The order of the factors does not change the product or the total number of objects in the array or situation. Connecting the numbers in your equations to arrays and situations helps clarify what each number means.)</p>
+<p>Display <m>3\times4=4\times3</m>.</p>
+<p><q>Como <m>3\times4=12</m> y <m>4\times3=12</m>, podemos escribir <m>3\times4=4\times3</m></q> </p>
 
 </subsubsection>
 
@@ -192,27 +200,5 @@
 </reading-questions>
 
 
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-laPropiedadConmutativa-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-laPropiedadConmutativa-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
