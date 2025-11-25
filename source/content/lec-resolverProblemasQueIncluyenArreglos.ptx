@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to represent an array situation using an equation with a symbol for the unknown number and solve.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,16 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In previous lessons, students represented multiplication situations using arrays and multiplication expressions with an emphasis on equal groups. Equal groups continue to be emphasized in this lesson as students learn that finding the product in a multiplication equation gives the total number of objects in the related array.</p>
+<p>As students connect arrays to equations, they may write <m>3\times5=15 </m> or <m>5\times3=15 </m> to represent 3 rows of 5 chairs. This is fine as long as students can correctly describe where the <q>3 rows of 5 chairs</q> are in their array or equation. Keep collecting ideas that arise about commutativity.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Who has been sharing their ideas in class lately? Make a note of students whose ideas have not been shared and look for an opportunity for them to share their thinking in tomorrow’s lesson.</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +115,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-converNum-unGrupoMenos.ptx"/> 
@@ -125,7 +129,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(25 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-arregloDeColores.ptx"/> 
@@ -142,7 +146,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-lasPalmerasDeTyler.ptx"/> 
@@ -166,7 +170,10 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display the information from the first problem in Activity 2.</p>
+<p><q>¿Cómo representan estas ecuaciones la situación que incluye un arreglo?</q> (The equation with the symbol represents the 5 rows of trees and the 9 trees in each row in the situation before we knew there were 45 trees. The equation with the 45 includes the solution to the problem because there were 45 trees.)</p>
+<p>Consider asking: <q>En la primera ecuación, ¿qué representa el signo de interrogación? En la segunda ecuación, ¿qué representa el 45 en la situación?</q></p>
 
 </subsubsection>
 
@@ -191,28 +198,5 @@
   <xi:include href="./cool-lasTarjetasDeClare.ptx"/>
 </reading-questions>
 
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-resolverProblemasQueIncluyenArreglos-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-resolverProblemasQueIncluyenArreglos-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
