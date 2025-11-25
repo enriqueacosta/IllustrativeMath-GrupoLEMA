@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to represent multiplication situations with arrays and multiplication expressions.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,16 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In a previous lesson, students arranged objects into arrays and described the arrays in terms of equal groups. In this lesson, students write expressions to represent arrays to further connect arrays and multiplication (MP2).</p>
+<p>As students connect arrays to expressions, they may write <m>3\times5</m> or <m>5\times3</m> to represent 3 rows of 5 chairs. This is fine as long as students can correctly describe where the <q>3 rows of 5 chairs</q> are in their array or expression. Keep collecting ideas that arise about commutativity.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>In an upcoming lesson, students will learn about the commutative property of multiplication. What do you notice in their work from today’s lesson that you might leverage in that future lesson?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +115,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-cuantosVes-unArregloDeFig.ptx"/> 
@@ -125,7 +129,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-representarSituacionesConArreglos.ptx"/> 
@@ -142,7 +146,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-conectarArreglosConExpresiones.ptx"/> 
@@ -166,7 +170,10 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p>Display a situation from the first activity, and an array and an expression that represents the situation.</p>
+<p><q>Aprendimos que la multiplicación es la manera en la que expresamos el número total de objetos que hay en grupos iguales</q></p>
+<p><q>¿Cómo les ayudaron sus conocimientos sobre grupos iguales a escribir expresiones para las situaciones de multiplicación?</q> (I thought about how many groups there were and drew the groups as each row [or column]. Then the number of groups tells me how many rows [or columns] there are. The array and the expression represent the total number of objects in the problem.)</p>
 
 </subsubsection>
 
@@ -190,29 +197,5 @@
   <!-- Archivo con el contenido -->
   <xi:include href="./cool-situacionConUnArreglo.ptx"/>
 </reading-questions>
-
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-representarArreglosConExpresiones-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-representarArreglosConExpresiones-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
 
 </subsection>
