@@ -10,7 +10,7 @@
 
 
 ## Cultura General
-1. [PreTexT](https://pretextbook.org)
-2. [Git](https://en.wikipedia.org/wiki/Git)
-3. [LaTeX](https://en.wikipedia.org/wiki/LaTeX), sucesor de [TeX](https://en.wikipedia.org/wiki/TeX)
-4. 
+1. [PreTexT](https://pretextbook.org) y repositorio de [github](https://github.com/PreTeXtBook/pretext)
+2. [Git](https://en.wikipedia.org/wiki/Git) y repositorio de [github](https://github.com/git/git)
+3. [LaTeX](https://en.wikipedia.org/wiki/LaTeX), sucesor de [TeX](https://en.wikipedia.org/wiki/TeX). Repositorio de [github](https://github.com/latex3/latex2e)
+4. [MathJaX](https://www.mathjax.org) para mostrar formulas de LaTeX en la web. Repositorio de [github](https://github.com/mathjax/MathJax)
