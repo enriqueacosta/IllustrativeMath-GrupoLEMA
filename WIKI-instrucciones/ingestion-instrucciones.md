@@ -14,3 +14,9 @@
 2. [Git](https://en.wikipedia.org/wiki/Git) y repositorio de [github](https://github.com/git/git)
 3. [LaTeX](https://en.wikipedia.org/wiki/LaTeX), sucesor de [TeX](https://en.wikipedia.org/wiki/TeX). Repositorio de [github](https://github.com/latex3/latex2e)
 4. [MathJaX](https://www.mathjax.org) para mostrar formulas de LaTeX en la web. Repositorio de [github](https://github.com/mathjax/MathJax)
+
+
+## (para el segundo encuentro) Configuración PreTeXt
+1. En VSCode, instalar la extensión de PreTeXt.
+2. Reiniciar VSCode
+3. En la terminal de VSCode, instalar el PreTeXt CLI: `pip3 install pretext`
