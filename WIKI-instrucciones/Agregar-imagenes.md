@@ -2,11 +2,11 @@
 
 1. Guardar una copia de la imagen que se quiere agregar en el computador propio. Por ejemplo, hacer clic derecho en la imagen y `save image as`.
     
-    <img width="399" alt="Screenshot 2023-08-03 at 5 52 21 PM" src="imagenes/258254141-d18a6218-ec7d-4a4b-bc96-3ce6e93a6ab3.png">
+    <img width="300" alt="Screenshot 2023-08-03 at 5 52 21 PM" src="imagenes/258254141-d18a6218-ec7d-4a4b-bc96-3ce6e93a6ab3.png">
 
 
-2. Subir (agregar) la imagen al repositorio (en un vscode codespace) para poder incluirla:
-   *   la carpeta en la que se pone la imagen depende del formato: 
+2. Agregar la imagen al repositorio:
+   *   copie el archivo de la imagen a la carpeta correspondiente en el repositorio. La carpeta en la que se pone la imagen depende del formato: 
 
        | Formato imagen | se sube a la carpeta  |
        | ------------- | ------------- |
@@ -14,8 +14,8 @@
        | .png  | source/assets/png-source  |
        | .jpg  | source/assets/jpg-source  |
 
-   *  si está usando VSCode en su computador sin codespace (usando github desktop)
-      -  simplemente mueva el archivo en su computador a la carpeta correspondiente en el repositorio.
+<!--   *  si está usando VSCode en su computador sin codespace (usando github desktop)
+      -  simplemente
             
    *  si está usando VSCode en su computador con un codespace (no está en el navegador web):
        - para subir (agregar) la imagen al repositorio, debe arrastrar (drag-and-drop) el archivo a la carpeta correspondiente  
@@ -26,6 +26,7 @@
       -  para subir (agregar) la imagen al repositorio, debe hacer click derecho en la carpeta correspondiente y seleccionar `upload`. Después seleccionar el archivo que quiere agregrar. Asegúsere de que el nombre del archivo no esté siendo usado ya.
 
         <img width="600" alt="Screenshot 2023-08-03 at 6 08 43 PM" src="imagenes/365388439-fa25b803-40a1-4db5-8044-085f70dbd7cb.png">
+-->
 
 
 3. Para incluir la imagen en el código fuente `.ptx`, se usa un código como este:
