@@ -18,5 +18,5 @@
 
 ## (para el segundo encuentro) Configuración PreTeXt
 1. En VSCode, instalar la extensión de PreTeXt.
-2. Reiniciar VSCode
+2. Reiniciar VSCode.
 3. En la terminal de VSCode, instalar el PreTeXt CLI: `pip3 install pretext`
