@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-emparejarExpresionesConAreas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Sample responses:</p>
+<ol>
+      <li>F: There are 9 groups of 5 squares.</li>
+      <li>C: There are 8 rows with 2 squares in each row.</li>
+      <li>E: There are 7 rows with 10 squares in each row.</li>
+      <li>D: There are 9 squares and 3 times 3 is 9.</li>
+      <li>A: There are 6 rows and each row has 2 squares.</li>
+      <li>G: The length of the short side is 4 and the length of the long side is 8.</li>
+      <li>B: There are 35 squares in the rectangle and 5 times 7 equals 35.</li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to directly connect multiplication expressions to equal groups they see within rectangular areas. Students may decompose the rectangular areas in various ways to see equal groups, but they should relate the rows and columns to the factors of a multiplication expression. This will be helpful in future activities when students multiply side lengths to find the area.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-emparejarExpresionesConAreas-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-emparejarExpresionesConAreas-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 3–4</li>
+      <li><p>Sketch a 5-by-3 gridded rectangle, as shown.</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A 5 by 3 gridded area." role="image" src="../../../../../../figures/tikz-file-148621.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A 5 by 3 gridded area." role="image" src="../../../../../../figures/tikz-file-148621.svg" width="80%"/></li>
+      <li>
+        <q>¿De qué manera podrían describir este rectángulo?</q>  (It has 3 rows of 5 squares. There are 5 groups of 3. Its area is 15 square units. There are 15 squares.)
+      </li>
+      <li>Share and record responses. Save responses for discussion after the next activity.</li>
+      <li>Display rectangles from the blackline master around the room.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Emparejen cada expresión con uno de los rectángulos que están colgados alrededor del salón. Prepárense para explicar su razonamiento</q>
+      </li>
+      <li>5–7 minutes: group work time</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>If students don’t mention the groups in the rows and columns of squares, consider asking:</p>
+<ul>
+      <li>
+        <q>¿Cómo decidiste cuál rectángulo le correspondía a cada expresión?</q>
+      </li>
+      <li>
+        <q>¿Dónde vemos grupos iguales en los rectángulos?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Cómo ven cada factor en el rectángulo?</q>  (I can see one factor in the number of squares in a row. I can see the other factor as the number of rows. I see one factor as the number of squares in a column. The other factor is the number of columns. It’s like I see the factors in an array, only it’s squares, not dots.)
+      </li>
+      <li>
+        <q>¿Cómo ven el producto en los rectángulos?</q>  (If we count the squares in each rectangle, it gives us the same number as the product of the factors. The product is the same as the total number of squares in each rectangle.)
+      </li>
+      <li>
+        <q>¿Por qué al multiplicar obtenemos el mismo número que al contar uno por uno?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

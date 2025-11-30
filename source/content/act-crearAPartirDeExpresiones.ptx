@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-crearAPartirDeExpresiones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ol>
+      <li>Sample responses: <ol>
+<li>3 by 4 rectangle</li>
+<li>4 by 6 rectangle</li>
+<li>6 by 3 rectangle</li>
+<li>7 by 4 rectangle</li>
+<li>3 by 2 rectangle</li>
+</ol>
+      </li>
+      <li>Sample response: You can think about the rows as groups and the number of rows as the number of groups. When you multiply these numbers, it gives you the total number of squares.</li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>20 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to represent multiplication expressions as rectangular areas. Students use a grid to draw the rectangular area that represents a multiplication expression. In the synthesis, students explain how they interpret the multiplication expression, specifically how they see the equal groups in the rows and columns of the rectangular area. Give students access to square tiles if needed. When students draw and relate area diagrams to multiplication expressions they are reasoning abstractly and quantitatively (MP2).</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-crearAPartirDeExpresiones-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-crearAPartirDeExpresiones-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give students access to inch tiles. </li>
+      <li>
+        <q>Ahora van a dibujar rectángulos que correspondan a algunas expresiones de multiplicación</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>7–10 minutes: partner work time</li>
+      <li>Monitor for a rectangle that two students oriented differently.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Have 2–3 students share a rectangle for each expression.</li>
+      <li><p>For each student sample ask:</p><ul>
+<li>
+<q>¿Cómo corresponde el área de este rectángulo a la expresión?</q> (I see 4 equal groups of 6 because each row has 6 squares. I see 4 equal groups because each column has 6 squares.)</li>
+</ul>
+      </li>
+      <li><p>Consider asking:</p><ul>
+<li>
+<q>¿Alguien dibujó un rectángulo diferente para esta expresión?</q></li>
+</ul>
+      </li>
+      <li>Display a rectangle that two students oriented differently.</li>
+      <li>
+        <q>¿Cómo pueden corresponder estos dos rectángulos a la misma expresión?</q>  (They have the same number of squares. They have the same side lengths, just switched. I see the groups in the rows in the first rectangle and in the columns in the second rectangle.)
+      </li>
+      <li>Display the 3-by-5 rectangle and descriptions from the launch in the first activity.</li>
+      <li>
+        <q>¿Cuál de las maneras de describir un rectángulo fue la que más les ayudó a dibujar rectángulos en esta actividad?</q>  (It was helpful to describe how many rows were in the rectangle and how many squares were in each row. It was helpful to think about one factor as the number of columns and the other factor as the number of squares in each column.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>
