@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 14 </shorttitle>
+<title>Lección 14 -<nbsp/></title>
+<title>[@@@@@@@@@]</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>[@@@@@@@@@]</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[@@@@@@@@@]</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-leccion-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+    </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to calculate the area of ungridded figures made of rectangles, including figures with missing side lengths.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-elLadoDesconocido-mat.ptx"/>
+        <xi:include href="./act-elLadoDesconocido-matCentros.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-practicarConLadosDesconocidos-mat.ptx"/>
+        <xi:include href="./act-practicarConLadosDesconocidos-matCentros.ptx"/>
+      </li>
+    </ul>  -->
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>In previous lessons, students found the area of figures that were fully gridded with squares and moved toward figures without a grid but had all their side lengths labeled. In this lesson, students use the strategies they have learned to decompose the figures into non-overlapping rectangles. They realize that not all measurements need to be given, and that some lengths can be determined given the rectangular structure of these figures.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Reflect on which students have not shared their strategies in class lately. How can their insight or ways of thinking be highlighted in or tied to upcoming lessons?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos-warm" component="warms">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-observa-ladosDesconocidos.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos-act1" component="acts-no-rayable">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-elLadoDesconocido.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-elLadoDesconocido-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos-act2" component="acts-no-rayable">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(25 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-practicarConLadosDesconocidos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-practicarConLadosDesconocidos-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <p>[+++++++++++++++]</p>
+  <p>Display the figure from the warm-up.</p>
+<p><q>Hoy aprendimos que podemos encontrar longitudes de los lados desconocidos de algunas figuras. ¿Qué cosa de la estructura de las figuras que vimos en la lección les ayuda a encontrar las longitudes de los lados desconocidos?</q> (They are made up of rectangles, so if we break them into rectangles, we can think about how the lengths of opposite sides need to match.)</p>
+<p><q>¿Cómo les gustaría encontrar el área de estas figuras después de saber cuáles son las longitudes de los lados?</q> (I break the shape into rectangles I see and find their area. Then I add the area of those rectangles together.)</p>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="lec-encontrarElAreaDeFigConLadosDesconocidos-cool" component="cools"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible. cool-areaConUnLadoDesconocido debe coincidir con el xml:id adentro del archivo cool-areaConUnLadoDesconocido.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-areaConUnLadoDesconocido.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-areaConUnLadoDesconocido.ptx"/>
+</reading-questions>
+
+</subsection>

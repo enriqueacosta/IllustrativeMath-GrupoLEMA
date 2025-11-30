@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-practicarConLadosDesconocidos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ol>
+      <li><p>The missing side length is 6 m. Sample response: Adding 6 m to the given 6 m equals 12 m.</p><p>The area is 72 sq m. Sample response:</p><ul>
+<li>I saw a larger rectangle at the top and a smaller one at the bottom. <m>(6 \times 8) + (4 \times 6) = 72</m>
+</li>
+<li>I saw a short rectangle on the left and its area is <m>6 \times 4</m>, which is 24 sq m. I saw a tall rectangle on the right and its area is <m>12 \times 4</m> or 48 sq m. <m>24 + 48 = 72</m>
+</li>
+</ul>
+      </li>
+      <li><p>The missing vertical side is 4 ft. Sample response: I pictured the bottom section as a rectangle with 4 ft for the vertical side length.</p><p>The missing horizontal side is 2 ft. Sample response: The top side is 7 ft and I would take away 3 ft and 2 ft, leaving 2 ft.</p><p>The area is 22 sq ft. Sample response: I saw a rectangle that is 2 ft by 7 ft on the top and a rectangle that is 4 ft by 2 ft on the bottom. I wrote: <m>(2 \times7) + (4 \times 2) = 14 + 8 = 22</m></p></li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>25 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to find the area of a figure composed of rectangles with missing sides by decomposing it into two non-overlapping rectangles. There are several ways to approach these problems and students are given freedom to choose their own strategy to find the area. They share their reasoning with a student who has used a different method and prepare to share this new method during the class discussion (MP3). The synthesis should focus on ways to find missing side lengths and emphasize different ways to find the area of the figure.</p>
+<p>At this point, students should be comfortable multiplying side lengths of rectangles to find the area. Discussion should focus on how students decompose the figures and how they find the missing side lengths.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-practicarConLadosDesconocidos-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-practicarConLadosDesconocidos-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Ya discutimos cómo encontraríamos la longitud del lado desconocido de esta figura. Ahora, encuentren el área de la figura</q>
+      </li>
+      <li>3–5 minutes: independent work time</li>
+      <li>Monitor for a variety of strategies to group students for discussion.</li>
+      <li>
+        <q>Busquen a alguien que haya usado la misma estrategia que ustedes para encontrar el área de la figura. Discutan por qué su estrategia tiene sentido</q>
+      </li>
+      <li>2 minutes: partner discussion</li>
+      <li>
+        <q>Ahora, busquen a alguien que haya usado una estrategia diferente. Cada uno explique su estrategia. Asegúrense de que puedan explicarle a la clase la estrategia de su compañero</q>
+      </li>
+      <li>4 minutes: partner discussion</li>
+      <li>
+        <q>Con su compañero actual, encuentren el área de la segunda figura</q>
+      </li>
+      <li>5 minutes: partner work time</li>
+      <li>Circulate and consider asking: 
+        <q>¿Qué información conocen que podría ayudarles a encontrar lo que desconocen?</q>
+      </li>
+      <li>Monitor for a variety of ways that students use to find the area of the second figure, including different decompositions, different strategies for finding missing sides lengths, and different expressions they write.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>If students determine incorrect lengths for the missing sides, consider asking:</p>
+<ul>
+      <li>
+        <q>Dime cómo encontraste la longitud del lado desconocido</q>
+      </li>
+      <li>
+        <q>¿Cuáles estrategias de la actividad anterior podrías usar para encontrar la longitud del lado desconocido?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Select students to share a variety of strategies for finding the area of the second figure.</li>
+      <li><p>Consider asking:</p><ul>
+<li>
+<q>¿Cuál lado desconocido se tenía que encontrar para usar esta estrategia? ¿Cómo encontraron la longitud del lado desconocido?</q></li>
+<li>
+<q>Después de saber cuáles eran las longitudes de los lados desconocidos, ¿cómo encontraron el área?</q></li>
+<li>
+<q>¿Qué expresión escribiríamos para que corresponda a la descomposición que hicieron de la figura?</q></li>
+<li>
+<q>¿Hay alguna otra manera en la que podríamos partir esta figura en rectángulos que no se superponen?</q> (Students may also see the figure as 3 rectangles: <m>(2 \times 3) + (6 \times 2) + (2 \times 2)</m>.)</li>
+</ul>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

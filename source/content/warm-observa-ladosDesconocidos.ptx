@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-observa-ladosDesconocidos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Students may notice:</p>
+<ul>
+      <li>We can break this figure into two rectangles.</li>
+      <li>Some of the side lengths are missing.</li>
+      <li>Some of the side lengths are given in centimeters.</li>
+    </ul>
+<p>Students may wonder:</p>
+<ul>
+      <li>Can we still find the area of this figure?</li>
+      <li>Is there a way to find the missing side lengths?</li>
+      <li>Is there only one possible number for the missing side lengths?</li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this warm-up is to elicit the idea that we can find the area of figures even though not all side lengths are given, which will be useful when students find missing side lengths and areas in a later activity. While students may notice and wonder many things about this figure, the missing side lengths are the important discussion points.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <xi:include href="./warm-observa-ladosDesconocidos-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Display the image.</li>
+      <li>
+        <q>¿Qué observan? ¿Qué se preguntan?</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Discutan con su compañero lo que pensaron</q>
+      </li>
+      <li>1 minute: partner discussion</li>
+      <li>Share and record responses.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Creen que podríamos encontrar el área de esta figura aunque algunas de las longitudes de sus lados sean desconocidas? ¿Por qué sí o por qué no?</q>  (Yes, we could use the side lengths we know to find the missing side lengths.)
+      </li>
+      <li>
+        <q>¿Cómo encontrarían las longitudes de los lados desconocidos?</q>  (I know the top side is 10 cm, and that is the horizontal length of the entire figure. If one part of that length is 4 cm, then the missing length is 6 cm. I know the vertical length of the figure is 9 cm. If one part of it is 2 cm, then the missing length is 7 cm.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>
