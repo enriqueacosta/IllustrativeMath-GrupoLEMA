@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-compararFigPorTamano" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Sample responses:</p>
+<ol>
+      <li>The second triangle is larger because it is taller. The first one is larger because it is longer.</li>
+      <li><ol>
+<li>The second oval is larger. I can fit the first one inside it.</li>
+<li>The hexagon is larger. The triangle is less than half the size.</li>
+<li>The first rectangle is larger. I can fit the second one inside it if I cut it in half and put the halves next to each other.</li>
+</ol>
+      </li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to compare shapes to decide which is larger. Given their prior experiences with length, students may initially use length to reason about what it means for a shape to be larger than another shape. The synthesis should bring out the idea that length alone is not enough to compare two-dimensional shapes. Ideas around how much space the shapes cover should be emphasized. If students disagree about which shape is larger, encourage them to share their reasoning so that the class can consider multiple ideas and come to a resolution together (MP3).</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-compararFigPorTamano-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-compararFigPorTamano-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Display or sketch the two triangles in the first problem.</li>
+      <li>
+        <q>¿Cuál triángulo creen que es más grande? Prepárense para explicar su razonamiento</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+      <li>Share and record responses.</li>
+      <li>
+        <q>¿Cómo podrían decidir con seguridad cuál figura es más grande?</q>  (I could think about putting one shape on top of the other. I could measure which is longer. I could cut one out to see if it fits inside the other.)
+      </li>
+      <li>1 minute: quiet think time</li>
+      <li>1 minute: partner discussion</li>
+      <li>Share and record responses.</li>
+      <li>Give each group scissors.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Ahora van a decidir cuál figura es más grande en cada pareja. Pueden tratar de usar algunas de las estrategias que discutimos</q>
+      </li>
+      <li>3 minutes: independent work time</li>
+      <li>
+        <q>Díganle a su compañero cuál figura pensaron que era más grande en cada pareja. Expliquen cómo lo decidieron</q>
+      </li>
+      <li>3 minutes: partner discussion</li>
+      <li>Monitor for justifications about how much space each shape covers and disagreements students discuss.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Sobre cuáles figuras cambiaron de opinión cuando discutieron sus ideas con su compañero?</q>  (In the last problem, I thought that the skinny rectangle was larger because it was taller. My partner showed me how to cut the rectangles to compare them.)
+      </li>
+      <li>
+        <q>¿Hay figuras sobre las que todavía no están de acuerdo?</q>
+      </li>
+      <li>Have students share their justifications for any lingering disagreements.</li>
+      <li>As students share, bring out the idea that the larger shape covers more space.  </li>
+      <li><p>Consider asking:</p><ul>
+<li>
+<q>¿Qué preguntas tienen?</q></li>
+<li>
+<q>¿Están de acuerdo con el razonamiento de su compañero?</q></li>
+<li>
+<q>¿Justificaron su elección de otra forma?</q></li>
+</ul>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

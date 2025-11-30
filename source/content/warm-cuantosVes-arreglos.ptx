@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-cuantosVes-arreglos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>8: I counted 4 dots in each row and there are 2 rows, which is 8. There were 2 dots in each column and there are 4 columns.</li>
+      <li>12: I saw 3 dots in each row and there are 4 rows. I saw 4 dots in each column and there are 3 columns.</li>
+      <li>20: I saw two 10-frames and 10 plus 10 is 20. I saw 4 rows of 5, which is 20. I saw 5 columns of 4, which is 20.</li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this How Many Do You See is for students to subitize or use grouping strategies to describe the images they see. Students may see equal groups in the rows or the columns of the array. Recording the equations for each way of seeing the groups is an opportunity to reinforce the commutative property.</p>
+<p>When students use different ways to group dots within the same array to find the total number of dots they look for and make use of structure (MP7).</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <xi:include href="./warm-cuantosVes-arreglos-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>
+        <q>¿Cuántos ven? ¿Cómo lo saben?, ¿qué ven?</q>
+      </li>
+      <li>Flash the image.</li>
+      <li>30 seconds: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display the image.</li>
+      <li>
+        <q>Discutan con su compañero cómo pensaron</q>
+      </li>
+      <li>1 minute: partner discussion</li>
+      <li>Record responses.</li>
+      <li>Repeat for each image.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Cómo nos permitieron los arreglos encontrar el número de puntos de diferentes formas?</q>  (We were able to look at the number of dots in each row and think about how many rows there were. I counted the number in each column and multiplied it by the number of columns.)
+      </li>
+      <li>As students share, record equations to match their thinking.</li>
+      <li>Consider asking: 
+        <q>¿Cómo cambian las ecuaciones si pensamos que las filas son los grupos o que las columnas son los grupos?</q>  (For the image with 12 dots, if we think about the rows as the groups, we write <m>4 \times 3 = 12</m>, but if we think about the columns as the groups, we write <m>3 \times 4 = 12</m>. The order of the factors is reversed, but the product stays the same.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>
