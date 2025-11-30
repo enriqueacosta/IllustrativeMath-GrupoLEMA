@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-areaYSuma" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 12 </shorttitle>
+<title>Lección 12 -<nbsp/></title>
+<title>[@@@@@@@@@]</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>[@@@@@@@@@]</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[@@@@@@@@@]</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-leccion-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+    </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to use gridded rectangles to learn that area is additive.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-rectangulosDentroDeRectangulos-mat.ptx"/>
+        <xi:include href="./act-rectangulosDentroDeRectangulos-matCentros.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-encontrarLosRectangulos-mat.ptx"/>
+        <xi:include href="./act-encontrarLosRectangulos-matCentros.ptx"/>
+      </li>
+    </ul>  -->
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Students first decompose a rectangle into parts to see that area is additive. Then, students decompose a figure composed of rectangles into rectangles in any way that makes sense to them, find the area of those rectangles, and add them together to find the area. Students learn that <strong>parentheses</strong> are grouping symbols that can be used in expressions or equations, and use them to represent how they decomposed the figure into rectangles. The work of this lesson connects to previous work because students find the area of rectangles within the figure before adding to find the total area of the figure.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Which students came up with an unexpected strategy in today’s lesson? What are some ways you can be more open to the ideas of each and every student?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-areaYSuma-warm" component="warms">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-converNum-tanCerca.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-areaYSuma-act1" component="acts-no-rayable">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-rectangulosDentroDeRectangulos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-rectangulosDentroDeRectangulos-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-areaYSuma-act2" component="acts-no-rayable">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(20 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-encontrarLosRectangulos.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-encontrarLosRectangulos-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-areaYSuma-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <p>[+++++++++++++++]</p>
+  <p>Display the figure from the last activity.</p>
+<p><q>Hoy aprendimos que podemos descomponer figuras en rectángulos para encontrar el área. ¿Por qué tiene sentido que podamos descomponer una figura de distintas maneras y aún así obtengamos la misma área?</q> (No matter how we decompose the figure, as long as we include all the squares, we are getting the total area.)</p>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="lec-areaYSuma-cool" component="cools"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible. cool-dondeEstanLosRectangulos debe coincidir con el xml:id adentro del archivo cool-dondeEstanLosRectangulos.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-dondeEstanLosRectangulos.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-dondeEstanLosRectangulos.ptx"/>
+</reading-questions>
+
+</subsection>

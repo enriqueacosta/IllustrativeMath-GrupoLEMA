@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-converNum-tanCerca" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>15: I just know it. I took one away from 6 and added it to the 9 to make 10 and then added the leftover 5, which makes 15.</li>
+      <li>35: I took 1 away from 6 and added it to the 29 to make 30 and then added the leftover 5 to make 35.</li>
+      <li>65: I changed 59 to 60 and then added 6 to get 66. Then I subtracted 1 to make up for the extra 1, which makes 65.</li>
+      <li>57: I took 1 away from the 8 and added it to the 49 to make 50 and then added 50 and 7 to get 57.</li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this Number Talk is to elicit strategies and understandings students have for adding two numbers when one number is close to a multiple of ten. These understandings help students develop fluency and will be helpful later in this lesson when students add the area of parts of a figure to determine the area of the whole figure.</p>
+<p>When students use the fact that one number is close to 10 to find the sum, they look for and make use of structure (MP7).</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <xi:include href="./warm-converNum-tanCerca-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display one expression.</li>
+      <li>
+        <q>Hagan una señal cuando tengan una respuesta y puedan explicar cómo la obtuvieron</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Record answers and strategy.</li>
+      <li>Keep expressions and work displayed.</li>
+      <li>Repeat with each expression.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿En qué se parecen los números de las cuatro expresiones?</q>  (The first number has two digits and is 1 away from a whole ten. The second number is a single-digit number.)
+      </li>
+      <li>
+        <q>¿Cómo les ayudaron estas características a encontrar cada suma?</q>  (We could add the second number to the whole ten closest to the first number and then take away 1.)
+      </li>
+      <li><p>Consider asking:</p><ul>
+<li>
+<q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q></li>
+<li>
+<q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q></li>
+<li>
+<q>¿Alguien pensó en el problema de otra forma?</q></li>
+<li>
+<q>¿Alguien quiere agregar algo a la estrategia de <fillin/>?</q></li>
+</ul>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>
