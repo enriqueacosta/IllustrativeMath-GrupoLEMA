@@ -1,6 +1,6 @@
 # Instrucciones para el curso de ingestión
 
-## Entuentro 1
+## Encuentro 1
 
 ### Cuentas e instalaciones
 1.  **Crear una cuenta en [github.com](github.com)**. ¡Piense muy bien el nombre de usuario! (es una decisión parecida a cuando uno seleccionó su usuario de gmail).
