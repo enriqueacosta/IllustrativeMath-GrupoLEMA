@@ -1,6 +1,8 @@
 # Instrucciones para el curso de ingestión
 
-## Cuentas e instalaciones
+## Entuentro 1
+
+### Cuentas e instalaciones
 1.  **Crear una cuenta en [github.com](github.com)**. ¡Piense muy bien el nombre de usuario! (es una decisión parecida a cuando uno seleccionó su usuario de gmail).
 2.  **Instalar en el computador que va a usar:**  
      a.  [Github Desktop](https://desktop.github.com/download). Para poder usar git desde su computador.  
@@ -8,6 +10,12 @@
      c.  [Python 3](https://www.python.org/downloads). Para poder generar las páginas web del material. Descargue la versión más nueva que permita su sistema operativo (3.14 en este momento).
 4.  **Configurar Github Desktop:** abrir github desktop y hacer el login con su cuenta de github.
 
+### Revisión (auto evaluación)
+1. Cuando va a [github.com](github.com), ¿le aparece su cuenta de usuario?
+2.   
+     a. ¿Puede abrir el app `Gitub Desktop` en su computador?
+     b. ¿Puede abrir el app `Visual Studio Code` en su computador?
+     c. Abra la terminal (command prompt en Windows, `applications/U tilities/Terminal.app` en Mac). Ejecute `python --version` y `python3 version`. ¿qué le dicen?
 
 ## Cultura General
 1. [PreTexT](https://pretextbook.org) y repositorio de [github](https://github.com/PreTeXtBook/pretext)
