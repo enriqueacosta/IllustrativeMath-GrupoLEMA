@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<subsection xml:id="lec-resolverProblemasDeArea" xmlns:xi="http://www.w3.org/2001/XInclude">
+<subsection xml:id="lec-areaYLaTablaDeMultiplicarOptional" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<shorttitle>Lección 10 </shorttitle>
-<title>Lección 10 -<nbsp/></title>
+<shorttitle>Lección 11 </shorttitle>
+<title>Lección 11 -<nbsp/></title>
 <title>[@@@@@@@@@]</title>
 
 
@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to explore connections between area and the multiplication table.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -79,13 +80,13 @@
     <!-- <ul>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./act-pintarUnaPared-mat.ptx"/>
-        <xi:include href="./act-pintarUnaPared-matCentros.ptx"/>
+        <xi:include href="./act-areaYLaTablaDeMultiplicar-mat.ptx"/>
+        <xi:include href="./act-areaYLaTablaDeMultiplicar-matCentros.ptx"/>
       </li>
       <li>
         <p>Actividad 2</p>
-        <xi:include href="./act-hacerUnaHuerta-mat.ptx"/>
-        <xi:include href="./act-hacerUnaHuerta-matCentros.ptx"/>
+        <xi:include href="./act-productosEnLaTablaDeMultiplicar-mat.ptx"/>
+        <xi:include href="./act-productosEnLaTablaDeMultiplicar-matCentros.ptx"/>
       </li>
     </ul>  -->
   </paragraphs>
@@ -93,13 +94,17 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>This lesson introduces students to the multiplication table as a way to organize and find products of two whole-number factors (up to 10). Students begin by marking rectangles on blank multiplication tables, always starting from the upper left corner, and finding their areas. They see that the area of each rectangle is the product of the numbers at the right and bottom boundaries of the rectangle.</p>
+<p>Through repeated reasoning, students see that finding the value of each cell in the table is like finding the area of a rectangle whose side lengths are a number from the top of the table and one from the left. Along the way, students notice patterns in the table and make use of them to complete the rest of the table (MP8).</p>
+<p>This lesson is optional because it gives students more time to take a deeper look at the relationship between multiplication and area, and make addition connections.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Which multiplication facts did students seem most confident in as they found products in the multiplication table? For ones they did not know right away, what strategy did they go to?</p>
   </paragraphs>
 </introduction>
 
@@ -107,48 +112,48 @@
 <!-- ============================================ 
   Calentamiento                       
 =================================================  -->
-<subsubsection xml:id="lec-resolverProblemasDeArea-warm" component="warms">
+<subsubsection xml:id="lec-areaYLaTablaDeMultiplicarOptional-warm" component="warms">
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./warm-converNum-unGrupoMas.ptx"/> 
+  <xi:include href="./warm-cuantosVes-arreglosQueCrecen.ptx"/> 
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-resolverProblemasDeArea-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-areaYLaTablaDeMultiplicarOptional-act1" component="acts-no-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-pintarUnaPared.ptx"/> 
+  <xi:include href="./act-areaYLaTablaDeMultiplicar.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-pintarUnaPared-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-areaYLaTablaDeMultiplicar-reto.ptx"/>  -->
 </subsubsection>
 
 
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-resolverProblemasDeArea-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-areaYLaTablaDeMultiplicarOptional-act2" component="acts-no-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(20 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-hacerUnaHuerta.ptx"/> 
+  <xi:include href="./act-productosEnLaTablaDeMultiplicar.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-hacerUnaHuerta-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-productosEnLaTablaDeMultiplicar-reto.ptx"/>  -->
 </subsubsection>
 
 
@@ -161,12 +166,13 @@
 <!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
-<subsubsection xml:id="lec-resolverProblemasDeArea-sintesis" component="profesor">
+<subsubsection xml:id="lec-areaYLaTablaDeMultiplicarOptional-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p><q>Hoy trabajamos con la tabla de multiplicar. ¿Qué aprendieron sobre la tabla de multiplicar?</q> (The factors are along the top and down the left side. If we go down the column from one factor at the top and go right on the row from a factor on the left, the cell where they meet shows the product. There are patterns in the multiplication table, for example, we can find a product like 15 appearing twice, once for <m>3 \times 5</m> and once for <m>5 \times 3</m>.)</p>
 
 </subsubsection>
 
@@ -176,19 +182,20 @@
   Cool-down (problema de cierre / de salida)
   subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
 =========================================================================== -->
-<reading-questions xml:id="lec-resolverProblemasDeArea-cool" component="cools"> 
+<reading-questions xml:id="lec-areaYLaTablaDeMultiplicarOptional-cool" component="cools"> 
   <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
   <title><custom ref="cooldown-titulo"/></title>
   <title component="profesor"><nbsp />(5 mins)</title>
 
 
-  <!-- pdf imprimible. cool-cuantaTela debe coincidir con el xml:id adentro del archivo cool-cuantaTela.ptx -->
-  <url component="profesor" href="external/cool-pdf/cool-cuantaTela.pdf">
+  <!-- pdf imprimible. cool-cualEsElProducto debe coincidir con el xml:id adentro del archivo cool-cualEsElProducto.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-cualEsElProducto.pdf">
     <custom ref="texto-link-pdf-cool-down"/>
   </url>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./cool-cuantaTela.ptx"/>
+  <xi:include href="./cool-cualEsElProducto.ptx"/>
 </reading-questions>
+
 
 </subsection>
