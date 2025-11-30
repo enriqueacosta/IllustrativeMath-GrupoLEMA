@@ -28,3 +28,8 @@ article.activity.project-like h4 {
   background: #fff;
   z-index: 1;
 }
+
+/* EAJ - loclevel1 darker */
+:root:not(.dark-mode) {
+  --toclevel1-background: color-mix(in oklab, var(--primary-color), black 30%);
+}
