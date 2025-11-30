@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-momentoDeRecubrir" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ol>
+      <li>Sample response: <ol>
+<li>Move the 4 tiles in the middle to a corner and cover the rest with tiles. We can fit 5 rows with 5 square tiles in each row, or 25 square tiles in total.</li>
+<li>Keep covering the rectangle with tiles to get 3 rows with 5 square tiles in each, or 15 square tiles in total.</li>
+<li>Move the 7 tiles to the edges of the rectangle and make sure they line up. The rectangle can fit <m>4 \times 6</m> or 24 square tiles.</li>
+<li>Arrange the tiles at the top so that there are no overlaps. The rectangle can fit 4 rows with 3 square tiles in each row. <m>4 \times 3 = 12</m>
+</li>
+</ol>
+      </li>
+      <li>Sample response: Cover the whole rectangle with square tiles, making sure there are no gaps or overlaps. The number of tiles used is the area of the rectangle in square units.</li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to use square tiles to find the area of rectangles. They use their knowledge of tiling to complete the tiling that is started in each rectangle. Students may use physical tiles on copies of the blackline master or reason directly on the images in the student book, which may not be the right size for physical tiles. The synthesis focuses on solidifying the idea that <strong>area</strong> is the number of square units that cover a flat figure with no gaps or overlaps.</p>
+<p>This activity uses MLR1 Stronger and Clearer Each Time. Advances: reading, writing</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-momentoDeRecubrir-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-momentoDeRecubrir-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give each student 1 copy of the blackline master.</li>
+      <li>Give students access to inch tiles.</li>
+      <li>
+        <q>Piensen durante un minuto en cómo terminarían de medir el área de estos rectángulos que están parcialmente recubiertos</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Describan con su compañero cómo usar fichas cuadradas para encontrar el área de cada rectángulo. Si lo necesitan, pueden usar las fichas cuadradas y reorganizar lo que se muestra en cada rectángulo. Después, completen el último problema individualmente</q>
+      </li>
+      <li>5–7 minutes: partner work time</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Por qué las fichas cuadradas del primer, tercer y cuarto rectángulo se debían acomodar antes de que pudiéramos terminar de encontrar el área del rectángulo?</q>  (In the first rectangle, the square tiles had to be moved over because they weren’t going to fill the whole rectangle if we left them in the center. In the third rectangle, the squares in the second row needed to be lined up with the first row so there would be the same number of squares in each row. In the fourth rectangle, the squares need to be adjusted so they are not crooked or overlapping and one square needs to be removed from the first row.)
+      </li>
+      <li>
+        <q>Si alguien les dijera que en la parte superior del rectángulo caben cuatro cuadrados, pero que en la parte inferior del rectángulo solo caben tres cuadrados, ¿cómo sabrían que esto no tiene sentido?</q>  (The top and bottom have the same length so they should fit the same number of squares.)
+      </li>
+    </ul>
+<p><strong>MLR1 Stronger and Clearer Each Time</strong></p>
+<ul>
+      <li>
+        <q>Compartan con su compañero su respuesta al último problema. Por turnos, uno habla y el otro escucha. Si es su turno de hablar, compartan sus ideas y lo que han escrito hasta ese momento. Si es su turno de escuchar, hagan preguntas y comentarios que ayuden a su compañero a mejorar su trabajo</q>
+      </li>
+      <li>2 minutes: structured partner discussion.</li>
+      <li>Repeat with 1–2 different partners.</li>
+      <li>
+        <q>Ajusten su borrador inicial basándose en los comentarios que les hicieron sus compañeros</q>
+      </li>
+      <li>2–3 minutes: independent work time</li>
+      <li>
+        <q>Acabamos de encontrar el área de algunos rectángulos. Aprendimos que cuando cubrimos el rectángulo con fichas cuadradas, las fichas no pueden tener espacios ni superposiciones. Es importante que tengamos en cuenta estas mismas ideas para cualquier figura plana. El <strong>área</strong> es el número de unidades cuadradas que se necesitan para cubrir una figura plana sin espacios ni superposiciones</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

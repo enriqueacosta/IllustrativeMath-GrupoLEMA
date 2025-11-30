@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-cualDiferente-fichasCuadradas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Sample responses:</p>
+<ul>
+      <li>A is the only one that doesn't have all blue squares.</li>
+      <li>B is the only one that isn't all or mostly covered with squares.</li>
+      <li>C is the only one that doesn't show any white squares or white space.</li>
+      <li>D is the only one where the squares aren't arranged neatly or touching other squares along their entire sides.</li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this warm-up is to draw students' attention to different ways of covering a plane figure with squares and reinforce the idea that tiling involves covering a region without gaps and overlaps. It gives students a reason to use language precisely (MP6). It gives the teacher an opportunity to hear how students use terminology and talk about characteristics of the items in comparison to one another. During the synthesis, ask students to explain the meaning of any terminology they use, such as rows, columns, area, gaps, overlap, and tiling.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <xi:include href="./warm-cualDiferente-fichasCuadradas-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Display the image.</li>
+      <li>
+        <q>Escojan uno que sea diferente. Prepárense para compartir por qué es diferente</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Discutan con su compañero cómo pensaron</q>
+      </li>
+      <li>2–3 minutes: partner discussion</li>
+      <li>Share and record responses.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Cómo podrían usar los cuadrados que tiene cada uno de estos rectángulos para encontrar el área de cada rectángulo?</q>  (In C, I can just count the tiles. In B, I could finish tiling the rectangle and count the tiles. In D I would need to straighten out the tiles so they cover all of the rectangle. In A, I could count the blue tiles and double the number since in each row there are the same number of white tiles as there are blue tiles.
+      </li>
+      <li><p>Consider saying:</p><ul>
+<li>
+<q>Encontremos al menos una razón por la que cada uno es diferente</q></li>
+</ul>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>
