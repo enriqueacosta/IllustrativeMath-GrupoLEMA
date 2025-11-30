@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-medirEncontrarElArea" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 9 </shorttitle>
+<title>Lección 9 -<nbsp/></title>
+<title>[@@@@@@@@@]</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>[@@@@@@@@@]</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[@@@@@@@@@]</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-leccion-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+    </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to measure side lengths of rectangles to find their area.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-medirEncontrarElArea-mat.ptx"/>
+        <xi:include href="./act-medirEncontrarElArea-matCentros.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-hacerUnRectangulo-mat.ptx"/>
+        <xi:include href="./act-hacerUnRectangulo-matCentros.ptx"/>
+      </li>
+    </ul>  -->
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>In grade 2, students measured length in centimeters and feet. In earlier lessons, they found the area of rectangles in standard units. Here, students measure side lengths of rectangles and multiply them to find area. They also find side lengths that would result in a rectangle with a given area.</p>
+<p>Provide rulers for students to use during the cool-down.</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Identify ways the math community you are fostering is going well. What aspects would you like to work on? What actions can you take to improve those areas?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-medirEncontrarElArea-warm" component="warms">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-observa-gruposYArreglos.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-medirEncontrarElArea-act1" component="acts-no-rayable">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-medirEncontrarElArea.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-medirEncontrarElArea-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-medirEncontrarElArea-act2" component="acts-no-rayable">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(20 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-hacerUnRectangulo.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-hacerUnRectangulo-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-medirEncontrarElArea-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <p>[+++++++++++++++]</p>
+  <p>Display a fully gridded rectangle, a partially gridded rectangle, and a rectangle with only labeled side lengths.</p>
+<p><q>En las últimas lecciones, hemos resuelto problemas de área en los que las unidades cuadradas son cada vez menos visibles. En esta lección ni siquiera se veían</q></p>
+<p><q>¿Cómo ha cambiado la forma en la que resuelven problemas de área a medida que desaparece la cuadrícula?</q> (I’ve drawn the grid to help me count the squares. I’ve pictured the squares even though they’re not there. I’ve measured and multiplied the side lengths because it’s the same as the number of unit squares as if I count them.)</p>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="lec-medirEncontrarElArea-cool" component="cools"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible. cool-encuentraElAreaDelRectangulo debe coincidir con el xml:id adentro del archivo cool-encuentraElAreaDelRectangulo.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-encuentraElAreaDelRectangulo.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-encuentraElAreaDelRectangulo.ptx"/>
+</reading-questions>
+
+</subsection>
