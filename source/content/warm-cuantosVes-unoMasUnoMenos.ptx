@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- ====================================================================== 
+   El calentamiento es un <exploration> (distinto a las otras actividades)
+   Para RRRRR usar el estilo del calentamiento. Por ejemplo, usar 
+   RRRRRR=observa con los "Observa y Pregúntate"
+===========================================================================  -->
+<exploration xml:id="warm-cuantosVes-unoMasUnoMenos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Sample responses:</p>
+<ul>
+      <li>20: I counted by 5 four times. I know that 4 times 5 is 20.</li>
+      <li>24: It was like the first problem, but there was 1 more dot in each group. So I added 20 to 4 to get 24.</li>
+      <li>16: It was like the first problem, but each group was missing a dot so I subtracted 4 from 20 to get 16.</li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>10 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->  
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this How Many Do You See is for students to subitize or use grouping strategies to describe the images they see.</p>
+<p>When students use equal groups and a known quantity to find an unknown quantity, they are looking for and making use of structure (MP7).</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- <xi:include href="./warm-cuantosVes-unoMasUnoMenos-mat.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>
+        <q>¿Cuántos ven? ¿Cómo lo saben?, ¿qué ven?</q>
+      </li>
+      <li>Flash the image.</li>
+      <li>30 seconds: quiet think time</li>
+    </ul>
+  </paragraphs>
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display the image.</li>
+      <li>
+        <q>Discutan con su compañero cómo pensaron</q>
+      </li>
+      <li>1 minute: partner discussion</li>
+      <li>Record responses.</li>
+      <li>Repeat for each image.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>=== NOT PRESENT ===</p>
+  </paragraphs>
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>¿Qué números fueron fáciles de ver en las imágenes?</q>  (4, 5, 6)
+      </li>
+      <li>
+        <q>¿Cómo les ayudó la primera imagen a encontrar el número de puntos de las siguientes dos imágenes?</q>  (I know each group in the second image has 1 more dot than each group in the first image, so I figured out 4 groups of 5, then added 4 more dots. For the last image, I subtracted 4 from 20, since one dot was missing in each group.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</exploration>

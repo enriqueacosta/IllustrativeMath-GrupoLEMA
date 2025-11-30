@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-noMasCuadrados" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>[@@@@@@@@@]</title>
+
+<statement>
+  <p>[@@@@@@@@@]</p>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <ol>
+      <li>32 square meters</li>
+      <li>18 square meters</li>
+    </ol>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [@@@@@@@@@]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>20 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>In this activity, students find the area of rectangles that are not tiled but whose sides are marked with equally spaced tick marks. The tick marks give students the side lengths of the rectangle, help students visualize a tiled region, and enable them to confirm that multiplying the side lengths give the number of square units in the rectangle. The work here serves to transition students to using only side lengths to find area.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <p>[@@@@@@@@@@@@@@]</p>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <!-- <xi:include href="./act-noMasCuadrados-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-noMasCuadrados-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Display the first problem and the image.</li>
+      <li>Read the first sentence in the first problem.</li>
+      <li>
+        <q>El enunciado dice que las marcas están a 1 metro de distancia. ¿Realmente están a un 1 metro de distancia?</q>  (No, the spaces between them represent 1 meter each.)
+      </li>
+      <li>
+        <q>En una hoja de papel de tamaño estándar, no podríamos dibujar un rectángulo que realmente estuviera en metros porque sería mucho más grande que el papel. Podemos dibujar este rectángulo para representar ese rectángulo más grande</q>
+      </li>
+      <li>
+        <q>¿En qué son diferentes este rectángulo y los otros rectángulos de los que hemos encontrado el área?</q>  (Before we had squares or tiles to count or we used actual tiles filled into a shape to count to find the area.)
+      </li>
+      <li>30 seconds: quiet think time</li>
+      <li>1 minutes: partner discussion</li>
+      <li>Share responses.</li>
+      <li>Give students access to rulers or straightedges.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Con su compañero, encuentren el área de este rectángulo</q>
+      </li>
+      <li>3–5 minutes: partner work time</li>
+      <li><p>Circulate and consider asking:</p><ul>
+<li>
+<q>¿Cómo describirían las filas y las columnas si se imaginaran los cuadrados en el rectángulo?</q></li>
+<li>
+<q>¿Cómo encontrarían el número total de metros cuadrados?</q></li>
+</ul>
+      </li>
+      <li>Monitor for students who draw the missing grid lines before they multiply to find the area of the rectangle.</li>
+      <li>Invite 2–3 students to share how they found the area of this rectangle.</li>
+      <li>Display the second problem.</li>
+      <li>
+        <q>Este rectángulo tiene marcas que están a 1 metro en la parte de arriba y está marcado con metros en el lado. Piensen en cómo podrían encontrar el área de este rectángulo</q>
+      </li>
+      <li>1 minute: quiet think time</li>
+      <li>3 minutes: partner work time</li>
+      <li>Monitor for students who create the missing grid lines before they multiply to find the area of the rectangle.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Estrategias de apoyo para estudiantes con dificultades -->
+  <paragraphs>
+    <title><custom ref="support-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>If students count one by one to find the total number of square units, consider asking:</p>
+<ul>
+      <li>
+        <q>¿Cómo encontraste el área del rectángulo?</q>
+      </li>
+      <li>
+        <q>¿Cuántos cuadrados habría en cada fila (o columna)? ¿Cómo podríamos usar esto para encontrar el área?</q>
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Display samples of student work where students created the missing grid lines.</li>
+      <li>
+        <q>Cuando queremos ver los grupos que hacen falta, ¿cómo puede ayudarnos crear una cuadrícula a partir de las marcas?</q>  (We can see all the squares in a row or in a column. We can see how many rows and columns there are.)
+      </li>
+      <li>
+        <q>¿Tuvieron que trazar las líneas de la cuadrícula para encontrar el área de estos rectángulos?</q>  (No, since counting the squares gives the same area as multiplying the side lengths, we can just find the length of each side.)
+      </li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+
+  <!-- Estrategias de acceso para estudiantes con discapacidades -->
+  <paragraphs>
+    <title><custom ref="accesibility-actividad-titulo"/></title>
+    <p>[@@@@@@@@@]</p>
+  </paragraphs>
+
+</postlude>
+
+</activity>

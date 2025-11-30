@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-cualUnidadCuadrada" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-parcialmenteRecubierto" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
 <title>[@@@@@@@@@]</title>
 
@@ -9,29 +9,9 @@
 </statement>
 
 <solution>
-  <p>[+++++++++++++++]</p>
-  <ol>
-    <li>
-      <p>Sample responses:</p> 
-      <ol>
-        <li>Square feet or square meters, because it’s a large area.</li>
-        <li>Square centimeters or square inches, because it’s a small area.</li>
-        <li>Square feet or square meters, because it’s a large area.</li>
-        <li>Square centimeters or square inches, because it’s a small area.</li>
-        <li>Square feet, because it’s a medium sized area.</li>
-        <li>Square centimeters, because it’s a really small area.</li>
-      </ol>
-    </li>
-    <li><p>Sample responses:</p> 
-      <ol>
-        <li>9 square inches or 55 square centimeters</li>
-        <li>55 square meters</li>
-        <li>9 square inches or 55 square centimeters</li>
-        <li>3 square feet</li>
-      </ol>
-    </li>
-  </ol>
-</solution>
+    <p>[+++++++++++++++]</p>
+    <p>90 tiles. Sample response: I saw that there were 10 tiles across the top row and I knew there were 9 rows because of the 1 full column. I counted by ten 9 times, which gave me 90.</p>
+  </solution>
 
 
 <!-- ============================================================== 
@@ -74,7 +54,7 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to consider the units to use to measure given areas. Students choose from square inches, square centimeters, square feet, and square meters. Students have not spent much time with these square units, so examples should be displayed during this activity to support them in choosing the unit that makes the most sense in the given situation.</p>
+    <p>The purpose of this activity is for students to solve an area problem with a partially tiled rectangle. This encourages students to multiply to solve problems involving area, but still provides some visual support to see the arrangement of the rows and columns. This problem includes a product of ten, with which students should be increasingly comfortable. The number of square inches is large in order to discourage one-by-one counting.</p>
   </paragraphs>
 
 
@@ -83,8 +63,8 @@
     <title><custom ref="materials-actividad-titulo"/></title>
     <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-cualUnidadCuadrada-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-cualUnidadCuadrada-matCentros.ptx"/>  -->
+    <!-- <xi:include href="./act-parcialmenteRecubierto-mat.ptx"/>  -->
+    <!-- <xi:include href="./act-parcialmenteRecubierto-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -93,12 +73,19 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Groups of 2</li>
-      <li>Display examples of each square unit (square centimeter, square inch, square foot, and square meter).</li>
+      <li>Display images of the painted tiles.</li>
       <li>
-        <q>Hoy vamos a escoger las unidades cuadradas que usaríamos para medir algunas áreas que podemos encontrar en la escuela. ¿Cuáles son algunas de las áreas que podrían medir en su casa o comunidad?</q>
+        <q>¿Qué observan? ¿Qué se preguntan?</q>  (Students may notice: There are many square tiles. That is a lot of tiles. The tiles are painted. Students may wonder: How many tiles were used? What else could be tiled? How long did it take to tile that building?)
       </li>
       <li>1 minute: quiet think time</li>
-      <li>Share responses.</li>
+      <li>Share and record responses.</li>
+      <li>
+        <q>Estos son ejemplos de baldosas pintadas que se llaman azulejos de Portugal. En Portugal, se han usado por mucho tiempo para decorar paredes, pisos y hasta techos. También muestran eventos de la historia portuguesa</q>
+      </li>
+      <li>
+        <q>En este problema, queremos encontrar el área de un proyecto de arte que está parcialmente recubierto con baldosas cuadradas. Piensen cuántas baldosas se necesitan para recubrir todo el rectángulo</q>
+      </li>
+      <li>1 minute: quiet think time</li>
     </ul>
   </paragraphs>
 
@@ -108,16 +95,15 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>
-        <q>Discutan el primer problema con su compañero</q>
+      <li>3–5 minutes: partner work time</li>
+      <li>Monitor for students who use multiplication to find the number of tiles.</li>
+      <li><p>Consider asking:</p><ul>
+<li>
+<q>¿Cómo encontraron cuántas baldosas necesitarían para cubrir el rectángulo?</q></li>
+<li>
+<q>¿Hay alguna manera que sea más rápida que contar todos los cuadrados, uno por uno?</q></li>
+</ul>
       </li>
-      <li>4–5 minutes: partner work time</li>
-      <li>Whole-class discussion.</li>
-      <li>
-        <q>Ahora completen el siguiente problema para escoger el área que mejor le corresponda a cada objeto</q>
-      </li>
-      <li>1 minute: independent work time</li>
-      <li>5 minutes: partner work time</li>
     </ul>
   </paragraphs>
 
@@ -133,13 +119,13 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If students choose a square unit that isn’t reasonable to use for the given area, consider asking:</p>
+    <p>If students count one by one to find the total number of square tiles, consider asking:</p>
 <ul>
       <li>
-        <q>Dime cómo pensaste cuáles unidades cuadradas usarías para medir esta área</q>
+        <q>¿Cuántos cuadrados habría en cada fila (o columna)?</q>
       </li>
       <li>
-        <q>¿Como cambiaría la medición si usaras una unidad cuadrada más pequeña (o más grande)?</q>
+        <q>¿Cómo podríamos usar esto para encontrar el área?</q>
       </li>
     </ul>
   </paragraphs>
@@ -151,16 +137,17 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Cómo pensaron en el área de cada objeto?</q>  (We thought about the size of the area we were measuring to decide which unit made sense. Then we thought about one unit, like one square foot, and then thought about what 3 square feet would be like.)
+        <q>¿Cómo supieron cuántos cuadrados habría en cada fila o columna?</q>  (The first row had 10 tiles, so I know every other row has 10 tiles because I could put more tiles to fill in the rows. It’s like an array. Each column has to have the same number of tiles, so there is 9 in each column.)
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Es razonable pensar que esta cantidad de unidades cuadradas podría caber en esta área?</q></li>
-<li>
-<q>¿Por qué esto tendría sentido para esta área?</q></li>
-<li>
-<q>¿Cómo se imaginan que las unidades caben en esta área?</q></li>
-</ul>
+      <li>
+        <q>¿Cómo encontraron el número total de cuadrados que se necesitaban?</q>  (I counted by ten 9 times. I multiplied 9 times 10.)
+      </li>
+      <li>
+        <q>La actividad menciona que los cuadrados son de 1 pulgada en cada lado. ¿El lado de cada cuadrado es realmente de 1 pulgada?</q>  (No). 
+        <q>¿Cómo lo saben?</q>  (Sample response: We know how long 1 inch is and can see that the sides of the tiles are less than 1 inch. There are 10 tiles across. If they really are 1 inch wide, the image won’t fit on the paper.)
+      </li>
+      <li>
+        <q>Algunas veces veremos imágenes marcadas con unidades que no son exactamente del tamaño que dice la marca. De todas maneras, podemos usar esas imágenes para representar la situación de la que hablamos</q>
       </li>
     </ul>
   </paragraphs>
