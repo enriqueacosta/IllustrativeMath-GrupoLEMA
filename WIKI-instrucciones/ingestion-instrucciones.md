@@ -13,9 +13,9 @@
 ### Revisión (auto evaluación)
 1. Cuando va a [github.com](github.com), ¿le aparece su cuenta de usuario?
 2.   
-     a. ¿Puede abrir el app `Gitub Desktop` en su computador?
-     b. ¿Puede abrir el app `Visual Studio Code` en su computador?
-     c. Abra la terminal (command prompt en Windows, `applications/U tilities/Terminal.app` en Mac). Ejecute `python --version` y `python3 version`. ¿qué le dicen?
+     a. ¿Puede abrir el app `Gitub Desktop` en su computador?  
+     b. ¿Puede abrir el app `Visual Studio Code` en su computador?  
+     c. Abra la terminal (command prompt en Windows, `applications/U tilities/Terminal.app` en Mac). Ejecute `python --version` y `python3 --version`. ¿qué mensaje le sale?
 
 ## Cultura General
 1. [PreTexT](https://pretextbook.org) y repositorio de [github](https://github.com/PreTeXtBook/pretext)
