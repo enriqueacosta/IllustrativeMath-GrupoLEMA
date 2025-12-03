@@ -24,7 +24,7 @@
 4. [MathJaX](https://www.mathjax.org) para mostrar formulas de LaTeX en la web. Repositorio de [github](https://github.com/mathjax/MathJax)
 
 
-## (para el segundo encuentro) Configuración PreTeXt
+## (para el segundo encuentro, lo vamos a hacer sincrónico) Configuración PreTeXt
 1. En VSCode, instalar la extensión de PreTeXt.
 2. Reiniciar VSCode.
 3. En la terminal de VSCode, instalar el PreTeXt CLI: `pip3 install pretext`
