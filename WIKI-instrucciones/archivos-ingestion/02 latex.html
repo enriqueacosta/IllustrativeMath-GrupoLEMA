@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<!-- Configuración MathJax para matemáticas -->
+<head>
+    <!-- MathJax config: define custom handling for <m> and <md> -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            startup: {
+                ready: () => {
+                    const MJ = MathJax;
+
+                    function replaceTags(tagName, wrap) {
+                        document.querySelectorAll(tagName).forEach(el => {
+                            const tex = el.textContent.trim();
+                            el.outerHTML = wrap(tex);
+                        });
+                    }
+
+      // <m>...</m> -> \( ... \)
+                    replaceTags('m', tex => `\\(${tex}\\)`);
+
+      // <md>...</md> -> \[ ... \]
+                    replaceTags('md', tex => `\\[${tex}\\]`);
+
+      // Continue normal MathJax startup (typeset page)
+                    MJ.startup.defaultReady();
+                }
+            }
+        };
+    </script>
+
+    <!-- Load MathJax v3 -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> 
+    </script>
+
+    <style>
+        body {
+           font-size: 18px;   /* bump this up/down as you like */
+           line-height: 1.6;
+        }
+        /* Make <md> look like a block-level element (optional) */
+        md { display: block; margin: 1em 0; }
+    </style>
+</head>
+
+
+<body>
+    <p>
+        Para hacer una fracción en latex, usar <m>\frac{a}{b}</m>, pero para que se vea grande (más grande que el alto de línea --- en el tamaño natural en el que debería estar), usar \displaystyle, así: <m>\displaystyle \frac{a}{b}</m>.
+    </p>
+    <p>
+        Note que para entrar al modo matemáticas (LaTeX), hay que usar el tag "m". De lo contrario, no funciona: \sqrt{x+1+a} no está en modo LaTeX, y <m>\sqrt{x+1+a}</m> sí.
+    </p>
+    <p>
+        Lo de \displaystyle se vuelve más notorio cuando las matemáticas necesitan más espacio. Compare estos dos: sin \displaystyle <m>\sqrt{ x + \frac{b}{1+a} }</m> y con <m>\displaystyle  \sqrt{ x + \frac{b}{1+a} }</m> 
+    </p>
+
+    <p> No lo vamos a usar mucho, pero todo el alfabeto griego está a nuestra disposicion: </p>
+    <ul>
+        <li> \pi para <m>\pi</m></li>
+        <li> \zeta para <m>\zeta</m> </li>
+        <li> \phi para <m>\phi</m> </li>
+    </ul>
+    
+    <p>
+      Los exponentes son con "^{...}", y los sub-indices con "_{...}" (todo lo que está entre los corchetes {...} queda en el exponente o sub-índice). Por ejemplo: <m>x_{\alpha}</m>, o <m>y^{\gamma+2}</m>, o combinados al tiempo: <m>x_{\alpha +2 }^{\gamma - 1}</m>
+    </p>
+
+    <p>
+      Los "^{...}" y "_{...}" también sirven para otras cosas parecidas, como los limites de las integrales: <m>\int_{a-1}^{b+2} f(x) dx</m> o con \displaystyle: <m>\displaystyle \int_{a-1}^{b+2} f(x) dx</m>
+    </p>
+
+    <p>Las matemáticas en modo "ecuación en display" son con tag "md" (mathematical display). Cualquier tag "md" muestra esas matemáticas en su propia linea, y en modo \displaystyle sin que uno lo tenga agregar. Por ejemplo esta ecuación (siguiente linea, centrada en la página) <md>\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}</md> queda en su propia línea a pesar de hacer parte del mismo párrafo. La ecuación también está en modo \displaystyle sin que se lo hayamos agregado.</p>
+
+    <h3>Para probar cosas de forma interactiva (código LaTeX y cómo se ve en la misma página)</h3>
+    <p>
+      Ver <a href="https://enriqueacosta.github.io/LaTeXMathJaxPreview/">https://enriqueacosta.github.io/LaTeXMathJaxPreview/</a>.
+    </p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<p> ¡hola mundo! </p>
+
+<p> Un tag "ul" (unordered list) es una lista sin números. cada viñeta de la lista es un tag "li" (list item)</p>
+
+<ul>
+    <li> item 1 </li>
+    <li> el segundo item en la lista </li>
+    <li> 
+         el tercero (note que el cierre del tag no tiene que estar en la misma línea)
+    </li>
+    <li> 
+         el tercero (note que el cierre del tag no tiene que estar en la misma línea)
+    </li>
+
+</ul>
+
+<p> un tag "ol" (ordered list) es una lista CON números. </p>
+
+<ol>
+    <li> item 1 de esta lista numerada</li>
+    <li> el segundo item en la lista numerada </li>
+    <li> el tercer item en esta lista numerada
+         <ol type="a">
+            <li> item 1 de esta lista numerada</li>
+            <li> el segundo item en la lista numerada </li>
+            <li> el tercer item en esta lista numerada </li>
+         </ol>
+    </li>
+</ol>
+
+<p> Los tag "p" no tienen saltos de línea, entonces
+puedo escribir este párrafo en varias
+líneas
+y se va a mostar todo
+en una 
+sola
+línea.
+
+
+Varios saltos de línea también se ignoran (esta línea va a aparecer justo después de la otra). Para pasar a otra línea toca...
+</p>
+<p> empezar
+un nuevo
+párrafo.
+</p>
+
+
+
+un texto que no está entre tags es "ilegal" y técnicamente no debería aparecer cuando abra el archivo en el navegador, ¡pero puede que aparezca! Los navegadores (a diferencia de PreTeXt) son muy flexibles y aceptan bastante código mal construido. En realidad, todo este archivo ya es "ilegal", porque debería haber in tag "html" al inicio del archivo, y in cierre "/html" al final del archivo.
