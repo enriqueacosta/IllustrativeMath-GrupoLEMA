@@ -23,6 +23,10 @@
 3. [LaTeX](https://en.wikipedia.org/wiki/LaTeX), sucesor de [TeX](https://en.wikipedia.org/wiki/TeX). Repositorio de [github](https://github.com/latex3/latex2e)
 4. [MathJaX](https://www.mathjax.org) para mostrar formulas de LaTeX en la web. Repositorio de [github](https://github.com/mathjax/MathJax)
 
+## Ejercicios de bases HTML y LaTeX
+
+Ver [WIKI-instrucciones/archivos-ingestion](https://github.com/enriqueacosta/IllustrativeMath-GrupoLEMA/tree/main/WIKI-instrucciones/archivos-ingestion)
+
 ## Encuentro 2
 
 ### Configuración PreTeXt (lo vamos a hacer sincrónico) 
