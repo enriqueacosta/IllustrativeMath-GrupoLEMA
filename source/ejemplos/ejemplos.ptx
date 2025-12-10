@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="../meta/meta_docinfo.ptx" />
+
+  <!-- The <article> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your article         -->
+  <article xml:id="ejemplos-ingestion">
+    <!-- The article needs a title and can have a subtitle  -->
+    <title><custom ref="nombreOficial-conMathjax"/></title>
+    <subtitle>Ejemplos para ingestión</subtitle>
+
+    <!-- <frontmatter xml:id="gra0-uni1-prefacio"> -->
+
+      <!-- Acá va todo lo de el código fuente -->
+      <!-- <xi:include href="../meta/meta_source.ptx" /> -->
+
+      <!-- Acá va todo lo de copyright -->
+      <!-- <xi:include href="../meta/meta_colophon.ptx" /> -->
+
+      <!-- Acá van nombres -->
+      <!-- <xi:include href="../meta/meta_nombres.ptx" /> -->
+
+      <!-- Acá van atribuciones de software -->
+      <!-- <xi:include href="../meta/meta_atribucionesOpenSource.ptx" /> -->
+
+ 
+    <!-- </frontmatter> -->
+
+
+    <!-- <section xml:id="sideBySide-ejemplos"> -->
+      <!-- <title>Ejemplos side by side</title> -->
+      <paragraphs>
+        <title>warm-observa-arbolManzanas</title>
+        <xi:include href="../content/warm-observa-arbolManzanas.ptx"/>
+      </paragraphs>
+
+      <paragraphs>
+        <title>warm-actuemoslo-comoPodemosMostrar</title>
+        <xi:include href="../content/warm-actuemoslo-comoPodemosMostrar.ptx"/>
+      </paragraphs>
+
+      <paragraphs>
+        <title>act-autosCajas</title>
+        <xi:include href="../content/act-autosCajas.ptx"/>
+      </paragraphs>
+          
+      <paragraphs>
+        <title>warm-observa-decenas</title>
+        <xi:include href="../content/warm-observa-decenas.ptx"/>
+      </paragraphs> 
+      
+      
+      <paragraphs>
+        <title>act-factorMayorQue10</title>
+        <xi:include href="../content/act-factorMayorQue10.ptx"/>
+      </paragraphs>
+      
+      <paragraphs>
+        <title>warm-observa-ingredientesPizza</title>
+        <xi:include href="../content/warm-observa-ingredientesPizza.ptx"/>
+      </paragraphs>
+      
+      <paragraphs>
+        <title>warm-observa-verGrupos</title>
+        <xi:include href="../content/warm-observa-verGrupos.ptx"/>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>warm-cualDiferente-rectangulos</title>
+        <xi:include href="../content/warm-cualDiferente-rectangulos.ptx"/>
+      </paragraphs>
+
+      <paragraphs>
+        <title>act-problemasMultiplicativosFiesta</title>
+        <xi:include href="../content/act-problemasMultiplicativosFiesta.ptx"/>
+      </paragraphs>
+      
+      
+      <paragraphs>
+        <title>act-centros-escoger1</title>
+        <xi:include href="../content/act-centros-escoger1.ptx"/>
+      </paragraphs>
+
+      <paragraphs>
+        <title>act-conozcamos-bingo-imagenes</title>
+        <xi:include href="../content/act-conozcamos-bingo-imagenes.ptx"/>
+      </paragraphs>
+
+      <paragraphs>
+        <title>act-trompos</title>
+        <xi:include href="../content/act-trompos.ptx"/>
+      </paragraphs>
+
+    <!-- </section> -->
+   
+  </article>
+</pretext>

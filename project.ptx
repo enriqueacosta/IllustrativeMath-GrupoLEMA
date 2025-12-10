@@ -404,5 +404,15 @@
     </target>
 
 
+     <!-- ============================================ 
+      Ejemplos (para ingestores)
+    =================================================  -->
+    <target name="ejemplos" 
+      format="html" 
+      source="ejemplos/ejemplos.ptx"
+      publication="publication-ejemplos-web.ptx"
+      output-dir="ejemplos">
+      <stringparams author.tools="yes" html.css.extra="external/css/custom-styles-est.css"/>
+    </target>
   </targets>
 </project>
