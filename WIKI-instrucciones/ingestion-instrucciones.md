@@ -25,7 +25,11 @@
 
 ## Encuentro 2
 
-## (lo vamos a hacer sincrónico) Configuración PreTeXt
+### Configuración PreTeXt (lo vamos a hacer sincrónico) 
 1. En VSCode, instalar la extensión de PreTeXt.
 2. Reiniciar VSCode.
 3. En la terminal de VSCode, instalar el PreTeXt CLI: `pip3 install pretext`
+
+### Compilar una página web
+1. En la terminal de VSCode, ejecutar `pretext build gra3-uni4-web-prof` y revisar que les diga `success` al final.
+2. Abrir el `index.html` que se generó en `IllustrativeMath-GrupoLEMA/output/web-prof/gra3-uni4`
