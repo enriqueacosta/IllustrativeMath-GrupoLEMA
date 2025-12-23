@@ -35,6 +35,13 @@
 .ptx-content .image-box {
    text-align: center;
 }
+/* EAJ - center images in sidebyside panels*/
+.sbspanel > img:only-child {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* EAJ - padding top y bottom para las imágenes (distinto en los sbspanel porque
    los sbsrow ya tienen padding.
