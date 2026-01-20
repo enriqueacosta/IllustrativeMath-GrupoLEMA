@@ -2,22 +2,44 @@
 
 <activity xml:id="act-compararFigPorTamano" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Comparemos figuras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>  
+    <ol>
+        <li><p>Estos son dos triángulos. ¿Cuál triángulo es más grande?</p>
+          <image source="svg-source/tikz-file-148584">
+          <shortdescription>Dos triangulos, el primero con base larga y altura corta. El segundo con altura y base aproximadamente igual.</shortdescription>
+          </image>
+        </li>
+       <li><p>En cada pareja de figuras, ¿cuál figura es más grande? Prepárate para explicar tu razonamiento.</p>
+          <p>(a)</p>
+          <image source="svg-source/tikz-file-148585">
+                <shortdescription>Dos óvalos, el primero más achatado que el segundo.</shortdescription>
+          </image>
+          <p>(b)</p>
+          <image source="svg-source/tikz-file-148586">
+                <shortdescription>Un hexágono y un triangulo.</shortdescription>
+          </image>
+          <p>(c)</p>
+          <image source="svg-source/tikz-file-148587">
+                <shortdescription>Un rectángulo con la base más o menos igual a la altura, al lado de uno más alargado verticalmente, con base corta.</shortdescription>
+          </image>         
+       </li>
+    </ol>
+  </p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ol>
+    <ol>
       <li>The second triangle is larger because it is taller. The first one is larger because it is longer.</li>
       <li><ol>
-<li>The second oval is larger. I can fit the first one inside it.</li>
-<li>The hexagon is larger. The triangle is less than half the size.</li>
-<li>The first rectangle is larger. I can fit the second one inside it if I cut it in half and put the halves next to each other.</li>
-</ol>
+          <li>The second oval is larger. I can fit the first one inside it.</li>
+          <li>The hexagon is larger. The triangle is less than half the size.</li>
+          <li>The first rectangle is larger. I can fit the second one inside it if I cut it in half and put the halves next to each other.</li>
+          </ol>
       </li>
     </ol>
   </solution>
@@ -32,21 +54,21 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
+      <!--<li> 
         <custom ref="ccss-addressing"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <!- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  ->
+        <!- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> ->
       </li>
       <li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <!- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  ->
+        <!- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> ->
+      </li>-->
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
+        <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>
         <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
@@ -104,13 +126,9 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>
-        <q>Ahora van a decidir cuál figura es más grande en cada pareja. Pueden tratar de usar algunas de las estrategias que discutimos</q>
-      </li>
+      <li><q>Ahora van a decidir cuál figura es más grande en cada pareja. Pueden tratar de usar algunas de las estrategias que discutimos</q></li>
       <li>3 minutes: independent work time</li>
-      <li>
-        <q>Díganle a su compañero cuál figura pensaron que era más grande en cada pareja. Expliquen cómo lo decidieron</q>
-      </li>
+      <li><q>Díganle a su compañero cuál figura pensaron que era más grande en cada pareja. Expliquen cómo lo decidieron</q></li>
       <li>3 minutes: partner discussion</li>
       <li>Monitor for justifications about how much space each shape covers and disagreements students discuss.</li>
     </ul>
@@ -125,11 +143,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -145,31 +163,29 @@
       </li>
       <li>Have students share their justifications for any lingering disagreements.</li>
       <li>As students share, bring out the idea that the larger shape covers more space.  </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Qué preguntas tienen?</q></li>
-<li>
-<q>¿Están de acuerdo con el razonamiento de su compañero?</q></li>
-<li>
-<q>¿Justificaron su elección de otra forma?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+          <ul>
+            <li><q>¿Qué preguntas tienen?</q></li>
+            <li><q>¿Están de acuerdo con el razonamiento de su compañero?</q></li>
+            <li><q>¿Justificaron su elección de otra forma?</q></li>
+          </ul>
       </li>
     </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

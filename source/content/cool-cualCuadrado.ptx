@@ -6,10 +6,26 @@
 ===============================================================  -->
 <project xml:id="cool-cualCuadrado" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cuál cuadrado?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Este es un rectángulo.</p>
+  <image source="svg-source/tikz-file-151020">
+        <shortdescription>Rectángulo.</shortdescription></image>
+  <p>Estos son 2 cuadrados diferentes que puedes usar para recubrir.</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <p>A</p>
+      <p>B</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-174563">
+        <shortdescription>Cuadrado con 1 pulgada cuadrada de área.</shortdescription></image>
+        <image source="svg-source/tikz-file-174564">
+        <shortdescription>Cuadrado con 1 centímetro cuadrado de área.</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>
+  <p>¿Cuál cuadrado te permitiría recubrir el rectángulo con el menor número de cuadrados? Explica tu razonamiento.</p>
 </statement>
 
 <solution>
@@ -26,22 +42,18 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
+        [@@@@@@@@@]
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 </prelude>
@@ -55,14 +67,16 @@
   <!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Students answer A, but they do not explain that it would take fewer of the larger square to tile the rectangle.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
     <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>During the launch of the next day's activity, have students discuss whether it would take less square inches or square centimeters to cover a surface (like a desk or book cover) and why.</p>
   </paragraphs>
 
 </postlude>

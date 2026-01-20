@@ -2,24 +2,33 @@
 
 <activity xml:id="act-construirYComparar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Construyamos y comparemos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sbsgroup widths="70% 25%">
+    <sidebyside>
+       <ol>
+        <li><p>Toma un puñado de fichas cuadradas.</p></li>
+        <li><p>Haz una figura con las fichas.</p></li>
+        <li><p>Con tu grupo, ordena las figuras de la más pequeña a la más grande.</p></li>
+       </ol>
+       <image source="png-source/CS 3.2A Lesson 2 inch shapes.png">
+      <shortdescription>Cuatro figuras compuestas por cuadrados.</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>  
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <sidebyside>
+      <image source="svg-source/tikz-file-148592">
+      <shortdescription>Figura hecha de una hilera vertical y dos diagonales de tres cuadrados cada una.</shortdescription></image>
+      <image source="svg-source/tikz-file-148593">
+      <shortdescription>Figura hecha de tres filas de cuadrados del mismo tamaño, la primera fila con un cuadrado, la segunda fila con dos cuadrados y la tercera fila con tres cuadrados.</shortdescription></image>
+      <image source="svg-source/tikz-file-148594">
+      <shortdescription>Figura hecha de tres filas de cuadrados del mismo tamaño, la primera fila con tres cuadrados, la segunda fila con cuatro cuadrados y la tercera fila con tres cuadrados.</shortdescription></image>
+    </sidebyside>
   </solution>
 
 
@@ -34,22 +43,23 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
+        <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>, 
+        <xref ref="ccss-3-MD-C-5-a" text="custom">3.MD.C.5.a</xref>
         <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  
+        <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> 
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  
+        <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> 
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -63,14 +73,22 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to explore area by making shapes out of square tiles and ordering the shapes from smallest to largest. Students may consider the size of the shapes in a variety of ways.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>If needed, encourage students not to stack the tiles. In the synthesis, students learn they can count the square tiles to determine the amount of space a shape covers.</p>
+    <p>The purpose of this activity is for students to explore area by making shapes out of square tiles and ordering the shapes from smallest to largest.
+       Students may consider the size of the shapes in a variety of ways.</p>
+    <sbsgroup widths="25% 25% 50%">
+      <sidebyside>
+        <image source="svg-source/tikz-file-148592">
+      <shortdescription>Figura hecha de una hilera vertical y dos diagonales de tres cuadrados cada una.</shortdescription></image>
+      <image source="svg-source/tikz-file-148593">
+      <shortdescription>Figura hecha de tres filas de cuadrados del mismo tamaño, la primera fila con un cuadrado, la segunda fila con dos cuadrados y la tercera fila con tres cuadrados.</shortdescription></image>
+      <p>
+        For example, they may see the first shape as larger than the second shape because the squares in the former are more spread out than in the latter,
+         which is completely filled with tiles.
+      </p>
+      </sidebyside>
+    </sbsgroup>
+
+    <p>If needed, encourage students not to stack the tiles. In the synthesis, students learn they can count the square tiles to determine the amount of space a shape covers.</p>
   </paragraphs>
 
 
@@ -108,10 +126,10 @@
       </li>
       <li>5 minutes: group work time</li>
       <li><p>Monitor for groups who order by:</p><ul>
-<li>the amount of space the shape takes up on the table</li>
-<li>the length of the shape</li>
-<li>the number of tiles used to create the shape</li>
-</ul>
+          <li>the amount of space the shape takes up on the table</li>
+          <li>the length of the shape</li>
+          <li>the number of tiles used to create the shape</li>
+          </ul>
       </li>
     </ul>
   </paragraphs>
@@ -125,11 +143,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -151,17 +169,17 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

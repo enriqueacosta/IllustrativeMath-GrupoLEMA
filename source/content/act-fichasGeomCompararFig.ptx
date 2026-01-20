@@ -2,10 +2,14 @@
 
 <activity xml:id="act-fichasGeomCompararFig" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Fichas geométricas para comparar figuras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te dará unas hojas que tienen algunas figuras.</p>
+  <p>Usa fichas geométricas para decidir cuál figura cubre más espacio. Prepárate para explicar tu razonamiento. </p>
+  <image source="png-source/CS 3.2A Lesson 1 pattern blocks.png" width="30%">
+      <shortdescription>Diferentes prismas apilados.</shortdescription>
+  </image>
 </statement>
 
 <solution>
@@ -25,22 +29,20 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <!- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  ->
+        <!- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> ->
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <!- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  ->
+        <!- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> ->
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -55,13 +57,16 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to compare shapes by covering them with pattern blocks. Students experience tiling as a way to see which shape covers the most space. There are several ways to tile the shapes, but it may prove most useful to use the same units, such as triangles. The rectangle can only be fully tiled with square pattern blocks. To compare shapes B and C, students will need to notice that the rectangle and parallelogram can be made the same length, but the square pattern blocks used to tile the rectangle are taller than the blocks used to tile the parallelogram. </p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>The work here prepares students to tile figures with square tiles in the next lesson and to think of area in terms of square units.</p>
+    <sidebyside>
+      <image source="svg-source/tikz-file-158865">
+          <shortdescription>Figura A: hexágono. Figura B: octágono con forma de corazón. Ambas figuras están cubiertas con fichas geométricas.</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-158866">
+          <shortdescription>Figura B: rectángulo. Figura C: paralelogramo. Ambas figuras están cubiertas con fichas geométricas.</shortdescription>
+      </image>
+    </sidebyside>
+    
+    <p>The work here prepares students to tile figures with square tiles in the next lesson and to think of area in terms of square units.</p>
   </paragraphs>
 
 
@@ -107,9 +112,9 @@
       </li>
       <li>5 minutes: partner work time</li>
       <li><p>Monitor for students who:</p><ul>
-<li>use pattern blocks to determine which shape covers the most space</li>
-<li>notice that shape B and C would be the same length if one of the ends of B was moved over, but C covers more space because it is taller</li>
-</ul>
+      <li>use pattern blocks to determine which shape covers the most space</li>
+      <li>notice that shape B and C would be the same length if one of the ends of B was moved over, but C covers more space because it is taller</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -123,11 +128,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -149,14 +154,19 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>MLR8 Discussion Supports. Synthesis: Create a visual display of shapes A, B, and C. As students discuss their comparisons, annotate the display with their observations. For example, when comparing shape B to C, write “same length, but taller.”</p>
+    <p>Advances: Speaking, Listening</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Action and Expression: Develop Expression and Communication. </p>
+    <p>Synthesis: Identify connections between strategies that result in the same outcomes but use differing approaches.</p>
+    <p>Supports accessibility for: Conceptual Processing</p>
   </paragraphs>
 
 </postlude>

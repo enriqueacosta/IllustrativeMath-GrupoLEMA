@@ -6,17 +6,32 @@
 ===============================================================  -->
 <project xml:id="cool-creaUnAreaRectangular" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Crea un área rectangular</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside>
+    <stack>
+      <p>Usa la cuadrícula para crear un área rectangular que represente la expresión <m>7\times 4</m>.</p>
+      <p>Explica tu razonamiento.</p>    
+    </stack>
+    
+    <image source="svg-source/tikz-file-151018">
+          <shortdescription>Cuadrícula.</shortdescription></image>
+  </sidebyside>
+  
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <sbsgroup widths="65% 30%">
+      <sidebyside>
+        <p>
+          Sample response: There are 4 rows and each row has 7 squares, so it’s 4 groups of 7.
+        </p>
+        <image source="svg-source/tikz-file-151019">
+          <shortdescription>Cuadrícula con rectángulo de 4 de altura por 7 de base dibujado.</shortdescription></image>
+      </sidebyside>
+    </sbsgroup>
   </solution>
 
 
@@ -28,22 +43,18 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
+        [@@@@@@@@@]
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 </prelude>
@@ -56,15 +67,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Students create a rectangle that doesn’t represent <m>7\times 4</m>.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Use the launch of the next day's activity to have students discuss how to draw a rectangular area that represents a multiplication expression.</p>
   </paragraphs>
 
 </postlude>

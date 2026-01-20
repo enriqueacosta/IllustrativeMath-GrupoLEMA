@@ -7,10 +7,28 @@
 ===========================================================================  -->
 <exploration xml:id="warm-cualDiferente-figConCuadrados" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cuál es diferente: Figuras con cuadrados</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es diferente?</p>
+  <sbsgroup widths="5% 40% 5% 40%">
+    <sidebyside>
+      <p>A</p>
+      <image source="svg-source/tikz-file-148588">
+      <shortdescription>Un cuadrado pequeño.</shortdescription></image>
+      <p>B</p>
+      <image source="svg-source/tikz-file-148589">
+      <shortdescription>Cuadrícula de tres filas con tres cuadrados en cada fila, los colores de los cuadrados alternando entre sombreado y sin sombrear.</shortdescription></image>
+    </sidebyside>
+    <sidebyside>
+      <p>C</p>
+      <image source="svg-source/tikz-file-148590">
+      <shortdescription>Un cuadrado grande dividido en 4 cuadrados pequeños. Dos cuadrados sombreados, dos sin sombrear.</shortdescription></image>
+      <p>D</p>
+      <image source="svg-source/tikz-file-148591">
+      <shortdescription>Cuadrícula de dos filas con seis cuadrados en cada fila, los colores de los cuadrados alternando entre sombreado y sin sombrear.</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
 <solution>
@@ -34,21 +52,17 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
+      <!--<li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        [@@@@@@@@@]        
       </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        [@@@@@@@@@]        
+      </li>-->
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
+          <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>
         <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
@@ -111,11 +125,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
@@ -131,16 +145,16 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

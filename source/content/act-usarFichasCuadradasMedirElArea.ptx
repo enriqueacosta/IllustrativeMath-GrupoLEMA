@@ -2,10 +2,19 @@
 
 <activity xml:id="act-usarFichasCuadradasMedirElArea" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Usemos fichas cuadradas para medir el área</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te dará unas hojas que tienen algunas figuras.</p>
+  <p>Usa fichas cuadradas para encontrar el área de cada figura. Escribe tus respuestas aquí. Prepárate para explicar tu razonamiento.</p>
+  <ol>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+    <li><p>Área: _____ unidades cuadradas</p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -32,22 +41,19 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+          <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>, 
+          <xref ref="ccss-3-MD-C-5-a" text="custom">3.MD.C.5.a</xref>, 
+          <xref ref="ccss-3-MD-C-5-b" text="custom">3.MD.C.5.b</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -62,26 +68,39 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use square tiles to measure area. Students are given square tiles and a variety of figures. Students learn that they can use the term <q>figure</q> to describe a shape that doesn’t have a specific name. Students cover the figures completely with square tiles and use the number of tiles to describe the area of the figure. In the synthesis, students share ideas about how to tile shapes in any way that makes sense to them. They also consider why it’s important to make sure they don’t leave gaps when they use square tiles to measure area (MP6).</p>
-<p>Here are the figures on the blackline master for reference:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>There is an opportunity to ask students about the figures whose area is the easiest to find. There is no right or wrong answer, but the question may elicit the idea that the structure of rectangles is helpful. This idea will be explored fully in future lessons.</p>
+    <p>Here are the figures on the blackline master for reference:</p>
+    <sbsgroup widths="30% 30% 30%">
+      <sidebyside>
+        <p>1.</p>
+        <p>2.</p>
+        <p>3.</p>
+      </sidebyside>
+      <sidebyside>
+        <image source="svg-source/tikz-file-129494">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>
+        <image source="svg-source/tikz-file-129495">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>
+        <image source="svg-source/tikz-file-129496">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>      
+      </sidebyside>
+      <sidebyside>
+        <p>4.</p>
+        <p>5.</p>
+        <p>6.</p>
+      </sidebyside>
+      <sidebyside>
+        <image source="svg-source/tikz-file-129497">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>
+        <image source="svg-source/tikz-file-129498">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>
+        <image source="svg-source/tikz-file-129499">
+        <shortdescription>Figura modelo para medir el área.</shortdescription></image>      
+      </sidebyside>
+    </sbsgroup>
+    
+    <p>There is an opportunity to ask students about the figures whose area is the easiest to find. 
+      There is no right or wrong answer, but the question may elicit the idea that the structure of rectangles is helpful. 
+      This idea will be explored fully in future lessons.</p>
   </paragraphs>
 
 
@@ -164,16 +183,18 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Engagement: Provide Access by Recruiting Interest. Leverage choice around perceived challenge. 
+      Invite students to complete questions that will be discussed during the synthesis.</p>
+    <p>Supports accessibility for: Organization, Attention, Social-emotional skills</p>
   </paragraphs>
 
 </postlude>
