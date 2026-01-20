@@ -1,12 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <activity xml:id="act-parcialmenteRecubierto" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+  <title>Parcialmente recubierto</title>
 
-<title>[@@@@@@@@@]</title>
+  <statement>
+    <p>¿Qué observas? ¿Qué te preguntas?</p>
 
-<statement>
-  <p>[@@@@@@@@@]</p>
-</statement>
+    <sidebyside widths="45% 45%">
+      <image source="jpg-source/3.2.b8.3Launch-Rug.jpg">
+        <shortdescription>mosaico de azulejos azules y blancos con jarrón floral y volutas laterales</shortdescription>
+      </image>
+      <image source="jpg-source/3.2.b8.3 Launch- tilebuilding.jpg"> <shortdescription>fachada de edificio con mosaicos de azulejos azules y blancos</shortdescription>
+      </image>
+    </sidebyside>
+
+    <p>
+      Después de aprender sobre los azulejos de Portugal, Elena hace su propia obra de arte con baldosas. 
+      Este rectángulo muestra el proyecto que Elena está recubriendo. Cada baldosa tiene una longitud de lado de 1 pulgada.
+    </p>
+
+    <p>
+      ¿Cuántas baldosas se necesitan para recubrir todo el rectángulo? Explica o muestra tu razonamiento.
+    </p>
+
+    <image source="svg-source/tikz-file-148632">
+      <shortdescription>Cuadrícula parcialmente recubierta con cuadros naranja, amarillo y azul claro</shortdescription>
+    </image>
+  </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
@@ -25,9 +45,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
       </li>
       <li>
         <custom ref="ccss-buildingOn"/>
