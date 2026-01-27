@@ -1,174 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-
 <activity xml:id="act-rectangulosDentroDeRectangulos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Rectangles in Rectangles</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>This rectangle represents space in a community garden. The shaded part is covered with vegetables and the unshaded part is covered with flowers. Each square represents 1 square foot.</p>
+      <sidebyside widths="60% 35%" valign="top">
+        <image source="svg-source/tikz-file-148641">
+          <shortdescription>Cuadrícula de 6x6 con un rectángulo azul de 5x6</shortdescription>
+        </image>
+        <p>What is the area of the whole space?</p>
+      </sidebyside>
+    </li>
+    <li>
+      <p>Design your own garden. Find the area of each part of the garden and the area of the whole garden.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
-    <p>[+++++++++++++++]</p>
-    <ol>
-      <li>42 square feet. Sample responses: I multiplied <m>7 \times 6</m> or I multiplied <m>5 \times 6 = 30</m> and <m>2 \times 6 = 12</m> from the parts and then added <m>30 + 12</m>.</li>
-      <li>Sample response: Students draw a 5-by-10 rectangular garden. They decide a 5-by-7 portion will be used for carrots and a 5-by-3 portion will be used for broccoli. The area of the part used for carrots is 35 square feet and the area of the part used for broccoli is 15 square feet. The area of the whole garden is 50 square feet.</li>
-    </ol>
-  </solution>
+  <p>[+++++++++++++++]</p>
+  <ol>
+    <li>42 square feet. Sample responses: I multiplied <m>7 \times 6</m> or I multiplied <m>5 \times 6 = 30</m> and <m>2 \times 6 = 12</m> from the parts and then added <m>30 + 12</m>.</li>
+    <li>Sample response: Students draw a 5-by-10 rectangular garden...</li>
+  </ol>
+</solution>
 
-
-<!-- ============================================================== 
-   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
-===================================================================  -->
 <prelude component="profesor"> 
-
-  <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-d" text="custom">3.MD.C.7.d</xref>
       </li>
     </ul>
   </paragraphs>
 
-  <!-- Tiempo recomendado -->
   <paragraphs>
     <title><custom ref="recommended-time-titulo"/></title>
     <p>15 minutos</p>
   </paragraphs>
 
-  <!-- Introducción de la actividad -->
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to learn that area is additive. Students decompose a rectangle into two smaller ones and find the sum of their areas in order to find the area of the whole rectangle. They can find the area of the two smaller rectangles by counting or by multiplying the side lengths.</p>
-<p>When students consider how to decompose a larger rectangle into smaller ones to facilitate the process of finding area, they look for and make use of structure (MP7).</p>
+    <p>The purpose of this activity is for students to learn that area is additive...</p>
   </paragraphs>
 
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-rectangulosDentroDeRectangulos-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-rectangulosDentroDeRectangulos-matCentros.ptx"/>  -->
-  </paragraphs>
-
-  <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
-    <p>[+++++++++++++++]</p>
     <ul>
       <li>Groups of 2</li>
-      <li>
-        <q>Van a responder algunas preguntas sobre plantar vegetales y flores en esta huerta. Piensen durante un minuto en los vegetales y las flores que les gustaría plantar en un espacio de una huerta</q>
-      </li>
+      <li><q>Van a responder algunas preguntas sobre plantar vegetales y flores...</q></li>
       <li>1 minute: quiet think time</li>
       <li>Share responses.</li>
     </ul>
   </paragraphs>
 
-
-  <!-- Instrucciones para el desarrollo de la actividad -->
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
     <ul>
-      <li>
-        <q>Ahora trabajen con su pareja en el primer problema</q>
-      </li>
+      <li><q>Ahora trabajen con su pareja en el primer problema</q></li>
       <li>2–3 minutes: partner work time</li>
-      <li><p>Monitor for students who found the area by:</p><ul>
-<li>using counting strategies</li>
-<li>multiplying the side lengths of the entire rectangle</li>
-<li>adding the areas of the smaller rectangles</li>
-</ul>
-      </li>
-      <li>Select previously identified students to share how they found the area.</li>
       <li>
-        <q>¿Cómo saben que al sumar el área de las partes se obtiene lo mismo que al encontrar el área de toda la huerta?</q>  (The part covered with vegetables and the part covered with flowers make up the whole garden. If I add the area of both parts, I get the same number if I counted all the squares in the whole garden.)
+        <p>Monitor for students who found the area by:</p>
+        <ul>
+          <li>using counting strategies</li>
+          <li>multiplying the side lengths</li>
+          <li>adding the areas of the smaller rectangles</li>
+        </ul>
       </li>
       <li>
-        <q>Ahora van a diseñar su propia huerta. Asegúrense de explicar cómo encontraron el área de cada parte de su huerta y el área de toda la huerta</q>
+        <q>¿Cómo saben que al sumar el área de las partes se obtiene lo mismo...?</q>
+      </li>
+      <li>
+        <q>Ahora van a diseñar su propia huerta...</q>
       </li>
       <li>5 minutes: independent work time</li>
-      <li>Monitor for students who create rectangular gardens and gardens composed of rectangles.</li>
     </ul>
   </paragraphs>
-
 </prelude>
 
-
-<!-- ============================================================== 
-   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
-===================================================================  -->
 <postlude component="profesor">
-
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>If students count one by one to find the area of their gardens, consider asking:</p>
-<ul>
-      <li>
-        <q>Dime cómo encontraste el área de tu huerta</q>
-      </li>
-      <li>
-        <q>¿Cómo podrías usar la multiplicación para encontrar el área de tu huerta?</q>
-      </li>
+    <ul>
+      <li><q>Dime cómo encontraste el área de tu huerta</q></li>
+      <li><p>¿Cómo podrías usar la multiplicación para encontrar el área de tu huerta?</p></li>
     </ul>
   </paragraphs>
 
-
-  <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
     <ul>
-      <li>Select 2–3 students who created a rectangular garden that is decomposed into rectangles to share.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cuántas unidades cuadradas cubre cada parte de la huerta?</q></li>
-<li>
-<q>¿Cuántas unidades cuadradas cubre la huerta?</q></li>
-<li>
-<q>¿Qué ecuación representaría la manera como encontraron el área del rectángulo?</q></li>
-</ul>
+      <li>Select 2–3 students who created a rectangular garden to share.</li>
+      <li>
+        <p>Consider asking:</p>
+        <ul>
+          <li><q>¿Cuántas unidades cuadradas cubre cada parte de la huerta?</q></li>
+          <li><q>¿Cuántas unidades cuadradas cubre la huerta?</q></li>
+          <li><q>¿Qué ecuación representaría la manera como encontraron el área?</q></li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
 </postlude>
 
 </activity>
