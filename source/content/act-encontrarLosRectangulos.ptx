@@ -2,29 +2,43 @@
 
 <activity xml:id="act-encontrarLosRectangulos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Encontremos los rectángulos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Qué observas? ¿Qué te preguntas?</p>
+ <image source="svg-source/tikz-file-148642">
+        <shortdescription>Figura en forma de L compuesta por cuadrados unitarios.</shortdescription></image>
+<p>Encuentra el área de esta figura. Explica o muestra tu razonamiento. Organízalo para que los demás puedan entenderlo. 
+</p>
 </statement>
 
 <solution>
-    <p>[+++++++++++++++]</p>
+  <p>
+    [++++++++++++++++++++++++++]
+  </p>
     <p>70 square units. Sample reasoning:</p>
 <ul>
-      <li><p>I saw a small rectangle on top and a larger rectangle on bottom. I added the areas of both rectangles together.
-
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Gridded figure response." role="image" src="../../../../../../figures/tikz-file-148643.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Gridded figure response." role="image" src="../../../../../../figures/tikz-file-148643.svg" width="80%"/>
+      <li><p>I saw a small rectangle on top and a larger rectangle on bottom. I added the areas of both rectangles together.</p>
+<sidebyside widths="60% 40%">
+  <image source="svg-source/tikz-file-148643"> <shortdescription>Figura en forma de L compuesta por cuadrados unitarios. Una parte está sombreada.</shortdescription></image>
+  <stack>
+  <p><m> 5 \times 4 = 20</m></p>
+  <p><m> 5 \times 10 = 50</m></p>
+  <p><m> 20 + 4 = 20</m></p>
+  </stack>
+</sidebyside>
       </li>
-    </ul>
-<ul>
-      <li><p>
-<p>I saw a rectangle and a square off to the side and added their areas.</p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A figure partitioned into same size units." role="image" src="../../../../../../figures/tikz-file-148644.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A figure partitioned into same size units." role="image" src="../../../../../../figures/tikz-file-148644.svg" width="80%"/>
+      <li><p>I saw a rectangle and a square off to the side and added their areas.</p>
+        <sidebyside widths="40% 50%">
+  <image source="svg-source/tikz-file-148644"> <shortdescription>Figura en forma de L compuesta por cuadrados unitarios. Una parte está sombreada.</shortdescription></image>
+  <p><m> 9 \times 5 + 5 \times 5</m> is <m>45 + 25</m>, which is <m>70</m> </p>
+</sidebyside>
+</li>
+      <li>
+        <p>I thought about filling in the missing space and then removing it. I found the area of the large rectangle and subtracted the area of the small rectangle.</p>
+        <p>The whole rectangle is 9 by 10, so that’s 90 square units. The smaller rectangle is 4 by 5 or 20 square units.</p>
+         <image source="svg-source/tikz-file-148645"> <shortdescription>Figura cuadrada compuesta por cuadrados pequeños. Una parte está sombreada y punteada.</shortdescription></image>
       </li>
-    </ul>
-<ul>
-      <li><p>I thought about filling in the missing space and then removing it. I found the area of the large rectangle and subtracted the area of the small rectangle.</p><p>The whole rectangle is 9 by 10, so that’s 90 square units. The smaller rectangle is 4 by 5 or 20 square units.</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Rectangle with 9 rows of 10 with a 5 by 4 area with dashed outlines that is shaded." role="image" src="../../../../../../figures/tikz-file-148645.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Rectangle with 9 rows of 10 with a 5 by 4 area with dashed outlines that is shaded." role="image" src="../../../../../../figures/tikz-file-148645.svg" width="80%"/></li>
     </ul>
   </solution>
 
@@ -40,20 +54,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        
+        <xref ref="ccss-3-MD-C-7-d" text="custom">3.MD.C.7.d</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -165,24 +167,10 @@
       </li>
       <li>Add parentheses to create the expression: <m>(4 \times 5) + (5 \times 10)\)</m></li>
       <li>
-        <q>Los <strong>paréntesis </strong>son símbolos de agrupación que se pueden usar en expresiones o ecuaciones. Para mostrar cómo se ve la figura, podemos mostrar el primer rectángulo con <m>4 \times 5</m> y el segundo rectángulo con <m>5 \times 10</m>. Los paréntesis nos permiten poner ambos rectángulos en la misma expresión como <m>(4 \times 5) + (5 \times 10)</m> y nos dejan ver cuál parte de la expresión representa cada rectángulo</q>
+        <q>Los <term>paréntesis</term> son símbolos de agrupación que se pueden usar en expresiones o ecuaciones. Para mostrar cómo se ve la figura, podemos mostrar el primer rectángulo con <m>4 \times 5</m> y el segundo rectángulo con <m>5 \times 10</m>. Los paréntesis nos permiten poner ambos rectángulos en la misma expresión como <m>(4 \times 5) + (5 \times 10)</m> y nos dejan ver cuál parte de la expresión representa cada rectángulo</q>
       </li>
       <li>Reinforce the meaning of parentheses in a similar way with other ways students decomposed the figure.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>

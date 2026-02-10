@@ -6,10 +6,14 @@
 ===============================================================  -->
 <project xml:id="cool-encuentraElAreaDelRectangulo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Encuentra el área</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>
+    [++++++++++++++++++++++++]
+  </p>
+  <p>Use your ruler to find the area of the rectangle in square inches.</p>
+   <image source="svg-source/tikz-file-151024"></image>
 </statement>
 
 <solution>
@@ -28,19 +32,7 @@
     <ul>
       <li>
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -49,22 +41,27 @@
 
 <!-- ============================================================== 
    Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
-===================================================================  -->
-<postlude component="profesor"> 
+============================================ -->
 
-  <!-- Posibles errores -->
+<!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
+  
+<paragraphs>
+    <title><custom ref="apoyo-cool-titulo"/></title>
+    <p>
+      [++++++++++++++++++++++]
+    </p>
+    <p>During the launch of the next day's activity, have students discuss how they could use the given measurements to find the area of the wall.</p>
+  </paragraphs>
+
+
+<!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++++++]</p>
+    <p>
+      Students measure correctly, but do not multiply the length measurements to find the area of the rectangle.
+    </p>
   </paragraphs>
 
-
-  <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
-  <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-</postlude>
 
 </project>

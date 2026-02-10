@@ -2,10 +2,40 @@
 
 <activity xml:id="act-medirEncontrarElArea" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Midamos para encontrar el área</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  
+  <sidebyside widths="80% 15%" valign="top">
+  <p>
+    Usa una regla para medir los rectángulos. Después, calcula el área de los rectángulos, en centímetros cuadrados.
+  </p>
+      <image source="png-source/CS 3.2.B.Lesson9.png">
+        <shortdescription>Regla de madera graduada hasta ocho sobre fondo verde claro.</shortdescription>
+      </image>
+  </sidebyside>
+
+  <sbsgroup widths="10% 80%" valign="middle">
+<sidebyside>
+  <p>A</p>
+        <image source="svg-source/tikz-file-148638">
+          <shortdescription>Rectángulo marcado con la letra A</shortdescription>
+        </image>
+    </sidebyside>
+<sidebyside>
+  <p>B</p>
+        <image source="svg-source/tikz-file-148639">
+          <shortdescription>Rectángulo marcado con la letra B</shortdescription>
+        </image>
+    </sidebyside>
+
+<sidebyside>
+  <p>C</p>
+        <image source="svg-source/tikz-file-148640">
+          <shortdescription>Rectángulo marcado con la letra C</shortdescription>
+        </image>
+    </sidebyside>
+</sbsgroup>
 </statement>
 
 <solution>
@@ -29,20 +59,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -77,7 +94,12 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Groups of 2</li>
-      <li><p>Display or sketch two rectangles, one with tick marks on two sides and one without.</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Rectangle. Length, 6 tick marks. Width, 3 tick marks. " role="image" src="../../../../../../figures/tikz-file-148636.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Rectangle. Length, 6 tick marks. Width, 3 tick marks. " role="image" src="../../../../../../figures/tikz-file-148636.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A rectangle." role="image" src="../../../../../../figures/tikz-file-148637.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="A rectangle." role="image" src="../../../../../../figures/tikz-file-148637.svg" width="80%"/></li>
+      <li><p>Display or sketch two rectangles, one with tick marks on two sides and one without.</p>
+        <sidebyside widths="40% 40%">
+          <image source="svg-source/tikz-file-148636"></image>
+          <image source="svg-source/tikz-file-148637"></image>
+        </sidebyside> 
+      </li>
       <li>
         <q>¿Cómo podemos usar una regla para encontrar el área de un rectángulo que no tiene marcas en los lados?</q>  (We could measure to see how long each side is. The ruler would help us see the marks so we know what numbers to multiply.)
       </li>
@@ -140,20 +162,6 @@
         <q>¿Cómo les ayuda medir con una regla a encontrar el área?</q>  (Measuring with the ruler gives the side lengths, which we can multiply.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
