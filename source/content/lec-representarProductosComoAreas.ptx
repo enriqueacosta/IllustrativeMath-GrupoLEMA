@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 5 </shorttitle>
 <title>Lección 5 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Representemos productos como áreas</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Conectemos expresiones de multiplicación con el área.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[+++++++++++++++]</p></li>
+    <li>Relate multiplication to finding the area of rectangles.</li>
   </ul>
 </objectives>
 
@@ -41,22 +42,17 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
+        <xref ref="ccss-3-OA-B-5" text="custom">3.OA.B.5</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
     </paragraphs>
 
@@ -167,13 +163,12 @@
 <subsubsection xml:id="lec-representarProductosComoAreas-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display or sketch a 2-by-7 gridded rectangle with the side lengths labeled 2 and 7, as shown:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+  <image source="svg-source/tikz-file-147310">
+          <shortdescription>Rectángulo con 7 cuadrados de base y 2 cuadrados de altura.</shortdescription></image>
 <p><q>¿Cómo podrían encontrar el número total de cuadrados que hay en este rectángulo?</q> (Count by one. Count by 2. Count by 7. Multiply <m>2 \times 7</m>. Multiply <m>7 \times 2</m>.)</p>
 <p><q>¿En qué se parecen las áreas rectangulares a otras maneras en las que hemos mostrado la multiplicación?</q> (We can see rows and columns like arrays. We can see equal groups in the rows. We can see equal groups in the columns.)</p>
 <p><q>¿En qué son diferentes las áreas rectangulares y las otras maneras en las que hemos mostrado la multiplicación?</q> (We’re counting spaces instead of objects.)</p>

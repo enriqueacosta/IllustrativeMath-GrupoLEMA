@@ -2,10 +2,31 @@
 
 <activity xml:id="act-queHice" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Qué hice?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>
+        ¿Pueden tu compañero y tú dibujar el mismo rectángulo sin mirar el dibujo del otro?
+      </p>
+      <ul>
+        <li><p>Compañero A: dibuja un rectángulo en una de las cuadrículas dadas. Descríbeselo a tu compañero sin decirle el número total de cuadrados.</p></li>
+        <li><p>Compañero B: dibuja el rectángulo que te describió tu compañero.</p></li>
+      </ul>
+    </li>
+    <li><p>Coloquen sus dos rectángulos uno al lado del otro. Discutan: ¿En qué se parecen? ¿En qué son diferentes?</p></li>
+    <li><p>Intercambien roles y repitan estos pasos.</p>     
+    </li>
+  </ol>
+  <sidebyside>
+        <image source="svg-source/tikz-file-148612">
+        <shortdescription>Cuadrícula.</shortdescription></image>
+        <image source="svg-source/tikz-file-148613">
+        <shortdescription>Cuadrícula.</shortdescription></image>
+      </sidebyside>
+      <image source="png-source/Kinder.Unit6.Lesson10.Activity2.png" width="30%">
+        <shortdescription>Dos niñas escribiendo en un papel.</shortdescription></image>  
 </statement>
 
 <solution>
@@ -30,22 +51,16 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -110,11 +125,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -130,16 +145,19 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Representation: Access for Perception. Begin by enacting a physical demonstration of how to accurately describe a drawn rectangle without telling them the total
+       number of squares.</p>
+    <p>Supports accessibility for: Social-Emotional Functioning</p>
   </paragraphs>
 
 </postlude>

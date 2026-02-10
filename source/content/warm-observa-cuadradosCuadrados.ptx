@@ -7,10 +7,30 @@
 ===========================================================================  -->
 <exploration xml:id="warm-observa-cuadradosCuadrados" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Observa y pregúntate: Cuadrados, cuadrados</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p><line>¿Qué observas?</line> 
+     <line>¿Qué te preguntas?</line></p>
+  <sbsgroup widths="5% 40% 5% 40%">
+    <sidebyside>
+      <p>A</p>
+      <image source="svg-source/tikz-file-148623">
+        <shortdescription>Cuadrícula de 5 de alto por 10 de ancho.</shortdescription></image>
+      <p>B</p>
+      <image source="svg-source/tikz-file-148624">
+        <shortdescription>Cuadrícula de 3 de alto por 6 de ancho.</shortdescription></image>
+    </sidebyside>
+    <sidebyside>
+      <p>C</p>
+      <image source="svg-source/tikz-file-148625">
+        <shortdescription>Cuadrícula de 2 de alto por 4 de ancho.</shortdescription></image>
+      <p>D</p>
+      <image source="svg-source/tikz-file-148626">
+        <shortdescription>Cuadrícula de 1 de alto por 2 de ancho.</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>
+  
 </statement>
 
 <solution>
@@ -42,22 +62,16 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -117,17 +131,17 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
     <ul>
+      <p>[+++++++++++++++]</p>
       <li>
         <q>Hemos estado pensando en cómo podemos recubrir rectángulos con cuadrados de diferentes tamaños. Tengan esto en mente cuando pasemos a la siguiente actividad</q>
       </li>
@@ -136,16 +150,16 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

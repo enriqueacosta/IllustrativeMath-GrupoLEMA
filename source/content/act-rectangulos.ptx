@@ -2,33 +2,92 @@
 
 <activity xml:id="act-rectangulos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Clasificación de tarjetas: Rectángulos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p><line>¿Qué observas?</line>
+     <line>¿Qué te preguntas?</line></p>
+  <sbsgroup widths="33% 33% 33%">
+    <sidebyside>      
+    <image source="jpg-source/Foam Tiles.jpg" width="20%">
+              <shortdescription>Foto de un rectángulo con 3 filas de 4 cuadrados cada una. Todos los cuadrados tienen el mismo tamaño. Con colores variados.</shortdescription></image>
+    <image source="svg-source/tikz-file-148599">
+              <shortdescription>Rectángulo con 3 filas de 4 cuadrados cada una. Todos los cuadrados tienen el mismo tamaño y están sombreados.</shortdescription></image>
+    <image source="svg-source/tikz-file-147530">
+              <shortdescription>Rectángulo con 3 filas de 4 cuadrados cada una. Todos los cuadrados tienen el mismo tamaño y están sin sombrear.</shortdescription></image>              
+  </sidebyside>  
+  </sbsgroup>
+  <p>
+    Dibuja en la cuadrícula un rectángulo que tenga un área de 8 unidades cuadradas.
+  </p>
+  <image source="svg-source/tikz-file-148600">
+              <shortdescription>Rectángulo dividido en 6 filas de 10 cuadrados cada una.</shortdescription></image>
+  <p>
+    Tu profesor te dará un grupo de tarjetas que muestran rectángulos. 
+    Clasifica las tarjetas en las categorías que quieras. Prepárate para explicar tus categorías.
+  </p>
+  <ol>
+    <li>
+      <sbsgroup widths="5% 40% 5% 40%">
+        <sidebyside>
+            <p>A</p>      
+            <image source="svg-source/tikz-file-148601">
+              <shortdescription>Rectángulo con 3 filas de 4 cuadrados cada una.</shortdescription></image>
+            <p>D</p>
+              <image source="svg-source/tikz-file-148602">
+              <shortdescription>Rectángulo con 2 filas de 8 cuadrados cada una.</shortdescription></image>
+        </sidebyside>
+        <sidebyside>  
+            <p>B</p>      
+            <image source="svg-source/tikz-file-148603">
+              <shortdescription>Rectángulo con 8 filas de 3 cuadrados cada una.</shortdescription></image>
+            <p>E</p>
+              <image source="svg-source/tikz-file-148604">
+              <shortdescription>Rectángulo con 4 filas de 4 cuadrados cada una.</shortdescription></image>
+        </sidebyside>
+        <sidebyside>  
+            <p>C</p>      
+            <image source="svg-source/tikz-file-148605">
+              <shortdescription>Rectángulo con 12 filas de 1 cuadrado cada una.</shortdescription></image>
+            <p>F</p>
+            <image source="svg-source/tikz-file-148606">
+              <shortdescription>Rectángulo con 12 filas de 2 cuadrados cada una.</shortdescription></image>
+        </sidebyside>
+      </sbsgroup>
+    </li>
+    <li><p>Para cada grupo, haz un rectángulo que se pueda incluir en ese grupo.</p>
+    </li>
+  </ol>
+    <image source="svg-source/tikz-file-148607">
+              <shortdescription>Cuadrícula de 20 por 20 cuadrados.</shortdescription></image>
+    
+  
+
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Students may sort by: length, height, width, or area.</p><ul>
-<li><p>Rectangles with the same area:</p>
-<ul>
-<li>Area 12 square units: 3 by 4 (A), 12 by 1 (C)</li>
-<li>Area 16 square units: 2 by 8 (D), 4 by 4 (E)</li>
-<li>Area 24 square units: 8 by 3 (B), 2 by 12 (F)</li>
-</ul>
-</li>
-</ul>
+      <li><p>Students may sort by: length, height, width, or area.</p>
+        <ul>
+          <li><p>Rectangles with the same area:</p>
+            <ul>
+              <li>Area 12 square units: 3 by 4 (A), 12 by 1 (C)</li>
+              <li>Area 16 square units: 2 by 8 (D), 4 by 4 (E)</li>
+              <li>Area 24 square units: 8 by 3 (B), 2 by 12 (F)</li>
+            </ul>
+          </li>
+        </ul>
       </li>
-      <li><p>Sample responses: </p><ul>
-<li>Area 12 square units: 2 by 6</li>
-<li>Area 16 square units: 1 by 16</li>
-<li>Area 24 square units: 4 by 6, 1 by 24</li>
-</ul>
+      <li><p>Sample responses: </p>
+        <ul>
+          <li>Area 12 square units: 2 by 6</li>
+          <li>Area 16 square units: 1 by 16</li>
+          <li>Area 24 square units: 4 by 6, 1 by 24</li>
+        </ul>
       </li>
     </ol>
-  </solution>
+</solution>
 
 
 <!-- ============================================================== 
@@ -42,22 +101,16 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>        
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        [@@@@@@@@@]        
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -72,8 +125,8 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to recognize that different shapes can have the same area. Students first sort the cards in any way that makes sense to them and then by area. After the cards are sorted by area, students create another rectangle that would fit into one of the categories (by having a particular area). A sorting task prompts students to look for structure and make connections across the representations and statements being analyzed (MP7).</p>
-<p>Students may start to notice that the organization of the squares in rectangles makes it efficient to count: The squares can be grouped by row, column, or in other ways. As students sort and create rectangles with certain areas, monitor for students who leverage the structure of a rectangle to find area. Invite them to share in the synthesis.</p>
-<p>In this activity, the squares on the gridded rectangles are not the same size as the square tiles, but students could still use tiles as a support. Provide students access to square tiles if they would like to use them, but encourage them to draw what they create on the grid provided.</p>
+    <p>Students may start to notice that the organization of the squares in rectangles makes it efficient to count: The squares can be grouped by row, column, or in other ways. As students sort and create rectangles with certain areas, monitor for students who leverage the structure of a rectangle to find area. Invite them to share in the synthesis.</p>
+    <p>In this activity, the squares on the gridded rectangles are not the same size as the square tiles, but students could still use tiles as a support. Provide students access to square tiles if they would like to use them, but encourage them to draw what they create on the grid provided.</p>
   </paragraphs>
 
 
@@ -145,11 +198,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -158,12 +211,11 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Invite students to share the rectangles they created for each category.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cómo supieron que su rectángulo pertenecía a esta categoría?</q></li>
-<li>
-<q>¿Cómo supieron que el rectángulo que hicieron tenía la misma área que los otros rectángulos de esa categoría?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Cómo supieron que su rectángulo pertenecía a esta categoría?</q></li>
+          <li><q>¿Cómo supieron que el rectángulo que hicieron tenía la misma área que los otros rectángulos de esa categoría?</q></li>
+        </ul>
       </li>
       <li>Discuss some of the efficient ways that students counted to find the area of rectangles.</li>
     </ul>
@@ -172,15 +224,20 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>MLR8 Discussion Supports. Students should take turns finding a match and explaining their reasoning to their partner. 
+      Display the following sentence frames for all to see: “Observé que _____, así que agrupé . . . ” // “I noticed _____ , so I matched . . . .” 
+      Encourage students to challenge each other when they disagree.</p>
+    <p>Advances: Conversing</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Representation: Internalize Comprehension. Synthesis: On chart paper, record students’ rectangles with justifications in each category. 
+      Record students’ efficient ways for counting to find the area of rectangles.</p>
+    <p>Supports accessibility for: Memory</p>
   </paragraphs>
 
 </postlude>

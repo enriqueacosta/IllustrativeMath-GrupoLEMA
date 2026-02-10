@@ -2,10 +2,34 @@
 
 <activity xml:id="act-cualEsElArea" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cuál es el área?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Estima cuántos centímetros cuadrados y cuántas pulgadas cuadradas se necesitan para recubrir este cuadrado.</p>
+  <sbsgroup widths="55% 40%">
+    <sidebyside>
+      <ul>
+        <li><p>pulgadas cuadradas (estimación) _________</p></li>
+        <li><p>centímetros cuadrados (estimación) _________</p></li>
+      </ul>
+      <image source="svg-source/tikz-file-148629">
+        <shortdescription>Cuadrado grande.</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>
+  <ol>
+    <li><p>Usa la cuadrícula de pulgadas y la de centímetros para encontrar el área del cuadrado.</p>
+      <ul>
+        <li><p>pulgadas cuadradas ____________________</p></li>
+        <li><p>centímetros cuadrados ____________________</p></li>
+      </ul>    
+    </li>
+    <li><p>Escribe una expresión de multiplicación que describa las filas y columnas del cuadrado, y que nos pueda decir cuál es el área en cada unidad.</p>
+      <ul>
+        <li><p>pulgadas cuadradas ____________________</p></li>
+        <li><p>centímetros cuadrados ____________________</p></li>
+      </ul>    
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -36,22 +60,16 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -118,7 +136,7 @@
       </li>
       <li>5 minutes: partner work time</li>
     </ul>
-<p><strong>MLR2 Collect and Display</strong></p>
+<p>MLR2 Collect and Display</p>
 <ul>
       <li>Circulate, listen for, and collect the language students use to discuss square inches and square centimeters. Listen for: square inch, square centimeter, 1 inch on each side, 1 centimeter on each side, takes up less space than square inches, takes up more space than square centimeters, takes more square centimeters than square inches to cover the same space, or takes fewer square inches than square centimeters to cover the same space.</li>
       <li>Record students’ words and phrases on a visual display and update it throughout the lesson.</li>
@@ -134,11 +152,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -159,16 +177,18 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>Action and Expression: Develop Expression and Communication. Give students access to a square centimeter cube and a square inch tile to support their estimation.</p>
+    <p>Supports accessibility for: Conceptual Processing, Visual-Spatial Processing</p>
   </paragraphs>
 
 </postlude>
