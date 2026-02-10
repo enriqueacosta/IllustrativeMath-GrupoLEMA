@@ -6,10 +6,13 @@
 ===============================================================  -->
 <project xml:id="cool-cualEsElProducto" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cuál es el producto?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es el producto desconocido? Explica tu razonamiento.</p>
+  <image source="svg-source/tikz-file-151027">
+        <shortdescription>tabla de multiplicar hasta 5 parcialmente llena</shortdescription>
+      </image>
 </statement>
 
 <solution>
@@ -28,19 +31,7 @@
     <ul>
       <li>
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,14 +46,20 @@
   <!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++]
+    </p>
+    <p>Students respond with a number other than 16.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
     <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+     <p>
+      [+++++++++++++++]
+    </p>
+    <p>Before the warm-up, pass back the cool-down and work in small groups to make corrections.</p>
   </paragraphs>
 
 </postlude>

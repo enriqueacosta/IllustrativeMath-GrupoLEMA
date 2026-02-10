@@ -1,12 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <activity xml:id="act-parcialmenteRecubierto" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+  <title>Parcialmente recubierto</title>
 
-<title>[@@@@@@@@@]</title>
+  <statement>
+    <p>¿Qué observas? ¿Qué te preguntas?</p>
 
-<statement>
-  <p>[@@@@@@@@@]</p>
-</statement>
+    <sidebyside widths="45% 45%">
+      <image source="jpg-source/3.2.b8.3Launch-Rug.jpg">
+        <shortdescription>mosaico de azulejos azules y blancos con jarrón floral y volutas laterales</shortdescription>
+      </image>
+      <image source="jpg-source/3.2.b8.3 Launch- tilebuilding.jpg"> <shortdescription>fachada de edificio con mosaicos de azulejos azules y blancos</shortdescription>
+      </image>
+    </sidebyside>
+
+    <p>
+      Después de aprender sobre los azulejos de Portugal, Elena hace su propia obra de arte con baldosas. 
+      Este rectángulo muestra el proyecto que Elena está recubriendo. Cada baldosa tiene una longitud de lado de 1 pulgada.
+    </p>
+
+    <p>
+      ¿Cuántas baldosas se necesitan para recubrir todo el rectángulo? Explica o muestra tu razonamiento.
+    </p>
+
+    <image source="svg-source/tikz-file-148632">
+      <shortdescription>Cuadrícula parcialmente recubierta con cuadros naranja, amarillo y azul claro</shortdescription>
+    </image>
+  </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
@@ -25,24 +45,11 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
       </li>
     </ul>
   </paragraphs>
+
 
   <!-- Tiempo recomendado -->
   <paragraphs>
@@ -152,18 +159,24 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++++]
+    </p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Revoice student ideas to demonstrate and amplify mathematical language use. For example, revoice the student statement, <em><q>Yo vi una fila completa, y si recubriera todas las filas, entonces todas serían iguales</q></em> // <q>I saw a complete row, and if I tiled all the rows, then they are all the same</q> as <em><q>Yo vi una fila completa, y si recubriera el resto de las filas, cada fila sería un grupo igual</q></em> // <q>I saw a complete row, and if you tiled the rest of the rows, each row would be an equal group.</q></p>
+    <p><em>Advances: Listening, Speaking</em></p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++]
+    </p>
+    <p><em>Engagement: Develop Effort and Persistence:</em> Differentiate the degree of difficulty or complexity. Some students may benefit from starting with a rectangle with more accessible value. For example, display a partially tiled rectangle with fewer rows.</p>
+<p><em>Supports accessibility for: Conceptual Processing</em></p>
   </paragraphs>
 
 </postlude>

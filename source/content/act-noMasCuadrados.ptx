@@ -2,10 +2,34 @@
 
 <activity xml:id="act-noMasCuadrados" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>No más cuadrados</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es el área del rectángulo, en metros cuadrados?</p>
+  <ol>
+    <li>
+      <p>
+      Las marcas de los lados del rectángulo están a 1 metro de distancia.
+      </p>
+      <image source="svg-source/tikz-file-147548"> 
+   <shortdescription>Rectángulo verde claro con pequeñas marcas en sus lados superior e izquierdo </shortdescription>
+</image>
+     <p>
+      ¿Cuál es el área de este rectángulo, en metros cuadrados?
+    </p>
+    </li>
+    <li>
+      <p>
+        El lado de arriba de este rectángulo tiene marcas que están a 1 metro. El lado izquierdo está marcado con la longitud en metros.
+      </p>
+      <image source="svg-source/tikz-file-172144">
+   <shortdescription>texto "3 metros" junto a un rectángulo verde claro con pequeñas marcas en su lado superior</shortdescription>
+</image>
+<p>
+  ¿Cuál es el área de este rectángulo, en metros cuadrados?
+</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -28,21 +52,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>, 
       </li>
     </ul>
   </paragraphs>
@@ -160,20 +170,6 @@
         <q>¿Tuvieron que trazar las líneas de la cuadrícula para encontrar el área de estos rectángulos?</q>  (No, since counting the squares gives the same area as multiplying the side lengths, we can just find the length of each side.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
