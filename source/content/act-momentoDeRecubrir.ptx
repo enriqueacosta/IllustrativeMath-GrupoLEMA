@@ -2,10 +2,45 @@
 
 <activity xml:id="act-momentoDeRecubrir" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Momento de recubrir</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te dará fichas cuadradas y una hoja que muestra rectángulos y cuadrados.</p>
+  <ol>
+    <li>
+      <p>Describe o muestra cómo usar las fichas cuadradas para medir el área de cada rectángulo. Puedes poner fichas cuadradas sobre las partes de la hoja donde aparecen los cuadrados. Si es necesario, también puedes mover las fichas.</p>
+        <ol>
+          <li><line></line>
+              <line><image source="svg-source/tikz-file-148595">
+              <shortdescription>Cuadrado grande con un cuadrado mediano en medio. El cuadrado mediano está dividido en dos filas con dos cuadrados pequeños en cada uno. Los cuadrados pequeños están sombreados.</shortdescription></image></line>
+          </li>
+          <li>
+            <line></line>
+            <line>
+              <image source="svg-source/tikz-file-148596">
+              <shortdescription>Rectángulo con 3 cuadrados del mismo tamaño bordeando la esquina inferior derecha. Los cuadrados están sombreados.</shortdescription></image>
+            </line>
+          </li>
+          <li>
+            <line></line>
+            <line>
+              <image source="svg-source/tikz-file-148597">
+              <shortdescription>Un rectángulo grande con 7 cuadrados del mismo tamaño dentro.</shortdescription></image>
+            </line>
+          </li>
+          <li>
+            <line></line>
+            <line>
+              <image source="svg-source/tikz-file-148598">
+              <shortdescription>Rectángulo con 4 cuadrados del mismo tamaño bordeando el borde superior, los cuadrados no caben por lo que se ven en desorden. Además tiene 3 cuadrados del mismo tamaño en el borde inferior que se encuentran perfectamente alineados.</shortdescription></image>
+            </line>
+          </li>
+        </ol>
+    </li>
+    <li>
+      <p>Describe cómo usar fichas cuadradas para encontrar el área de cualquier rectángulo.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -37,22 +72,17 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-5-b" text="custom">3.MD.C.5.b</xref>,
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -66,7 +96,7 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to use square tiles to find the area of rectangles. They use their knowledge of tiling to complete the tiling that is started in each rectangle. Students may use physical tiles on copies of the blackline master or reason directly on the images in the student book, which may not be the right size for physical tiles. The synthesis focuses on solidifying the idea that <strong>area</strong> is the number of square units that cover a flat figure with no gaps or overlaps.</p>
+    <p>The purpose of this activity is for students to use square tiles to find the area of rectangles. They use their knowledge of tiling to complete the tiling that is started in each rectangle. Students may use physical tiles on copies of the blackline master or reason directly on the images in the student book, which may not be the right size for physical tiles. The synthesis focuses on solidifying the idea that <term>area</term> is the number of square units that cover a flat figure with no gaps or overlaps.</p>
 <p>This activity uses MLR1 Stronger and Clearer Each Time. Advances: reading, writing</p>
   </paragraphs>
 
@@ -117,11 +147,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -136,7 +166,7 @@
         <q>Si alguien les dijera que en la parte superior del rectángulo caben cuatro cuadrados, pero que en la parte inferior del rectángulo solo caben tres cuadrados, ¿cómo sabrían que esto no tiene sentido?</q>  (The top and bottom have the same length so they should fit the same number of squares.)
       </li>
     </ul>
-<p><strong>MLR1 Stronger and Clearer Each Time</strong></p>
+<p>MLR1 Stronger and Clearer Each Time</p>
 <ul>
       <li>
         <q>Compartan con su compañero su respuesta al último problema. Por turnos, uno habla y el otro escucha. Si es su turno de hablar, compartan sus ideas y lo que han escrito hasta ese momento. Si es su turno de escuchar, hagan preguntas y comentarios que ayuden a su compañero a mejorar su trabajo</q>
@@ -148,24 +178,24 @@
       </li>
       <li>2–3 minutes: independent work time</li>
       <li>
-        <q>Acabamos de encontrar el área de algunos rectángulos. Aprendimos que cuando cubrimos el rectángulo con fichas cuadradas, las fichas no pueden tener espacios ni superposiciones. Es importante que tengamos en cuenta estas mismas ideas para cualquier figura plana. El <strong>área</strong> es el número de unidades cuadradas que se necesitan para cubrir una figura plana sin espacios ni superposiciones</q>
+        <q>Acabamos de encontrar el área de algunos rectángulos. Aprendimos que cuando cubrimos el rectángulo con fichas cuadradas, las fichas no pueden tener espacios ni superposiciones. Es importante que tengamos en cuenta estas mismas ideas para cualquier figura plana. El <term>área</term> es el número de unidades cuadradas que se necesitan para cubrir una figura plana sin espacios ni superposiciones</q>
       </li>
     </ul>
   </paragraphs>
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 </postlude>
 

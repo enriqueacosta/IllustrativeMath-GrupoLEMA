@@ -2,10 +2,30 @@
 
 <activity xml:id="act-crearAPartirDeExpresiones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Creemos a partir de expresiones</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Los números de cada expresión representan el número de filas (o columnas) de un rectángulo y cuántos cuadrados hay en cada fila (o columna).</p>
+      <p>En la cuadrícula, dibuja cada rectángulo, márcalo con los números y encuentra su área.</p>
+      <sbsgroup widths="20% 70%">
+        <sidebyside>
+          <ol>
+            <li><m>3\times 4</m></li>
+            <li><m>4\times 6</m></li>
+            <li><m>6\times 3</m></li>
+            <li><m>7\times 4</m></li>
+            <li><m>3\times 2</m></li>
+          </ol>
+          <image source="svg-source/tikz-file-148622">
+          <shortdescription>Cuadrícula.</shortdescription></image>
+        </sidebyside>
+      </sbsgroup>
+      
+    </li>
+    <li><p>Explica por qué al multiplicar los números de cada expresión obtenemos el área del rectángulo.</p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -37,22 +57,16 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>
       </li>
-      <li>
+      <!--<li>
         <custom ref="ccss-buildingOn"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
+      </li>-->
+       <!--<li>
         <custom ref="ccss-buildingTowards"/>
         [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+      </li>-->
     </ul>
   </paragraphs>
 
@@ -113,11 +127,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -149,16 +163,17 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Engagement: Provide Access by Recruiting Interest. Leverage choice around perceived challenge. Invite students to select at least 3 of the 5 problems to complete.</p>
+    <p>Supports accessibility for: Organization, Attention, Social-emotional skills</p>
   </paragraphs>
 
 </postlude>
