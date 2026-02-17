@@ -2,10 +2,14 @@
 
 <activity xml:id="act-horaDeDibujos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Hora de dibujos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuáles podrían ser las categorías de esta gráfica de dibujos?</p>
+  <p>Prepárate para explicar tu razonamiento.</p>
+  <image source="svg-source/tikz-file-171592">
+      <shortdescription>Diagrama con seis columnas de personas de palito, titulado "Cómo vamos a casa"</shortdescription>
+    </image>
 </statement>
 
 <solution>
@@ -27,23 +31,13 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-MD-D-10" text="custom">2.MD.D.10</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -101,7 +95,7 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>Esta es una gráfica de dibujos que representa cómo los estudiantes van a casa desde la escuela. En una <strong>gráfica de dibujos</strong> se usan dibujos de objetos o símbolos para mostrar cuántos hay en cada grupo o categoría. Las gráficas de dibujos tienen <strong>leyendas</strong> que muestran lo que representa cada dibujo</q>
+        <q>Esta es una gráfica de dibujos que representa cómo los estudiantes van a casa desde la escuela. En una <term>gráfica de dibujos</term> se usan dibujos de objetos o símbolos para mostrar cuántos hay en cada grupo o categoría. Las gráficas de dibujos tienen <term>leyendas</term> que muestran lo que representa cada dibujo</q>
       </li>
       <li>
         <q>¿Cuáles podrían ser las categorías de esta gráfica de dibujos? Prepárense para explicar su razonamiento</q>
@@ -119,11 +113,11 @@
 <postlude component="profesor">
 
   <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>=== NOT PRESENT ===</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Síntesis de la actividad -->
@@ -141,16 +135,17 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Representation: Develop Language and Symbols. Activate or supply background knowledge to help students recall the terms <q>picture graph</q> and <q>key</q>. Ask, “¿Por qué llamamos a esta gráfica una gráfica de dibujos?” // “Why do we call this graph a picture graph?”, “¿Qué tipo de información muestra una leyenda?” // “What kind of information does a key show?”</p>
+    <p>Supports accessibility for: Memory, Language</p>
   </paragraphs>
 
 </postlude>
