@@ -12,7 +12,11 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <li>
+    <p>
+      Acomodemos muebles en una habitación.
+    </p>
+  </li>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -24,8 +28,9 @@
 
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
+  [+++++++++++++++++++++]
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>Solve problems involving the area of ungridded figures composed of rectangles, including figures with missing side lengths.</li>
   </ul>
 </objectives>
 
@@ -47,9 +52,10 @@
       </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>,
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>,
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
+        <xref ref="ccss-3-MD-C-7-d" text="custom">3.MD.C.7.d</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
