@@ -2,16 +2,30 @@
 
 <activity xml:id="act-camaYEscritorioNuevos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cama y escritorio nuevos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Este es un diagrama de la nueva habitación de Tyler, su escritorio y su cama.</p>
+  <image source="png-source/Floor Plan-2-01 Spanish.png">
+        <shortdescription>Plano de habitación en L con medidas de los lados en pies</shortdescription>
+      </image>
+ <ol>
+  <li>¿Cómo debería acomodar Tyler su cama y escritorio en su nueva habitación?</li>
+  <li>¿Qué área de la habitación no está cubierta por muebles?</li>
+ </ol>
+ <p>
+  Hagan un póster para mostrar cómo pensaron. Organícenlo para que los demás puedan entenderlo.
+ </p>    
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample response: We decided Tyler should put the bed in the lower corner of the room. This lets him get by to get to his desk and keeps the bed away from the door or blocking the closet. When Tyler sits at the desk, he will face nature and be in a separate place in the room to do work or read.</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159026.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159026.svg" width="80%"/></li>
+      <li><p>Sample response: We decided Tyler should put the bed in the lower corner of the room. This lets him get by to get to his desk and keeps the bed away from the door or blocking the closet. When Tyler sits at the desk, he will face nature and be in a separate place in the room to do work or read.</p>
+      <image source="svg-source/tikz-file-159026">
+        <shortdescription>Plano de habitación en L con cuadricula interior</shortdescription>
+      </image>
+        </li>
       <li>Sample response: I split the room into a rectangle on the bottom and a rectangle on top. There are 29 square feet that aren't covered in the bottom rectangle and 51 square feet that aren't covered in the top rectangle. Altogether, there are 80 square feet that aren't covered with furniture. (Students may or may not include the closet as being covered with furniture.)</li>
     </ol>
   </solution>
@@ -28,21 +42,10 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-C-5" text="custom">3.MD.C.5</xref>,
+        <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
+        <xref ref="ccss-3-MD-C-7-d" text="custom">3.MD.C.7.d</xref>
       </li>
     </ul>
   </paragraphs>
@@ -109,14 +112,7 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
+ 
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -135,19 +131,6 @@
   </paragraphs>
 
 
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-</postlude>
+  </postlude>
 
 </activity>
