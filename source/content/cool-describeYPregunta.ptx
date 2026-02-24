@@ -6,14 +6,32 @@
 ===============================================================  -->
 <project xml:id="cool-describeYPregunta" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Describe y pregunta</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside>
+    <stack>
+    <p>A un grupo de estudiantes le preguntaron: “¿Cómo vas de la escuela a tu casa cada día?”.</p>
+    <p>Las respuestas se muestran en esta gráfica de barras:</p>
+    </stack>
+    <image source="svg-source/tikz-file-174481">
+      <shortdescription>Gráfica de dibujos titulada "Cómo vamos a casa" con cuatro barras.</shortdescription>
+    </image>
+  </sidebyside>
+  <p>Según los datos que se muestran en la gráfica:</p>
+  <ol>
+    <li><p>Escribe algo que hayas aprendido sobre cómo los estudiantes van a casa.</p></li>
+    <li><p>Escribe una pregunta que se podría hacer sobre cómo los estudiantes van de la escuela a sus casas.</p></li>
+  </ol>
 </statement>
 
 <solution>
-  <p>[@@@@@@@@@]</p>
+  <p>[++++++++++++++++++++++++++++]</p>
+  <p>Sample responses:</p>
+      <ol>
+        <li>More students take the bus home than ride bikes. Eight students take the bus home. Two students ride in a car.</li>
+        <li>How many more students take the bus than walk home? How many students ride their bikes home?</li>
+      </ol>
 </solution>
 
 
@@ -26,20 +44,12 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li>
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+        <xref ref="ccss-2-MD-D-10" text="custom">2.MD.D.10</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -53,15 +63,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++++++++++++++]</p>
+    <p>Students do not read and interpret the bar graph accurately, or students write questions that can’t be answered with the graph.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++++++++++++++]</p>
+    <p>Use the launch of the next day's activity to have students interpret the picture graph and generate questions that could be answered with the picture graph.</p>
   </paragraphs>
 
 </postlude>
