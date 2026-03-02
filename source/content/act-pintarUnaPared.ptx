@@ -2,10 +2,34 @@
 
 <activity xml:id="act-pintarUnaPared" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Pintemos una pared</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Noah pinta una pared de la huerta comunitaria. La pared tiene forma de rectángulo. Este es un diagrama de la pared.</p>
+  <image source="svg-source/tikz-file-170694">
+        <shortdescription>Rectángulo verde con medidas de lados en metros.
+        </shortdescription>
+      </image>
+        <p>Venden la pintura en 3 tamaños diferentes:</p>
+        <ul>
+          <li>
+            <p>Un recipiente pequeño que cubre 3 metros cuadrados.</p>
+          </li>
+          <li>
+            <p>Un recipiente mediano que cubre 10 metros cuadrados.</p>
+          </li>
+          <li>
+            <p>Un recipiente grande que cubre 40 metros cuadrados.</p>
+          </li>
+        </ul>
+        <p>
+          ¿Qué debe comprar Noah? Explica tu razonamiento.
+        </p>
+        <sidebyside widths="60% 30%" margins="auto">   
+  <p> </p> <image source="png-source/CS 3.2.B.Lesson10.png">
+    <shortdescription>Varios botes de pintura plateados sobre un fondo verde claro.</shortdescription>
+  </image>
+  </sidebyside>
 </statement>
 
 <solution>
@@ -30,20 +54,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -150,14 +161,11 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++++++]
+    </p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Create a visual display of the diagram. As students share their strategies, annotate the display to illustrate connections. For example, as students share the number of columns and rows, draw them on the diagram, and write <q><em>3 filas y 6 columnas</em></q></p>
+    <p><em>Advances: Speaking, Representing</em></p>
   </paragraphs>
 
 </postlude>
