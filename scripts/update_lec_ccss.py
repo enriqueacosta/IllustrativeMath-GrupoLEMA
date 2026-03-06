@@ -51,6 +51,9 @@ BUILDING_TOWARDS_PATTERN = re.compile(
 # ``<xref ...>K.CC.B.4</xref>`` tags from which we extract the actual codes.
 XREF_PATTERN = re.compile(r'<xref[^>]*>([^<]+)</xref>')
 
+# XML comments to strip before pattern matching.
+XML_COMMENT_PATTERN = re.compile(r'<!--.*?-->', re.S)
+
 # Some lesson includes (materials, center wrappers, etc.) do not contain CCSS
 # metadata.  We skip them entirely to avoid polluting the results.
 SKIP_SUFFIXES = ("-mat.ptx", "-matCentros.ptx", "-reto.ptx")
@@ -138,7 +141,7 @@ def collect_codes_from_includes(
             print(f"Warning: included file not found (skipping) -> {include_path}")
             continue
 
-        text = include_path.read_text(encoding="utf-8")
+        text = XML_COMMENT_PATTERN.sub('', include_path.read_text(encoding="utf-8"))
         addressing.extend(gather_codes(text, ADDRESSING_PATTERN))
         building_on.extend(gather_codes(text, BUILDING_ON_PATTERN))
         building_towards.extend(gather_codes(text, BUILDING_TOWARDS_PATTERN))
@@ -154,7 +157,7 @@ def build_ccss_block(
     Building lists.
     """
     lines = [
-        "  <!-- Estándares CCSS asociados -->",
+        "<!-- Estándares CCSS asociados -->",
         "  <paragraphs>",
         '    <title><custom ref="ccss-leccion-titulo"/></title> ',
         "    <ul>",
