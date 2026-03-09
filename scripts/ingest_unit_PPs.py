@@ -218,7 +218,7 @@ class PracticeImporter:
             "<?xml version='1.0' encoding='utf-8'?>\n"
             f"<exercise xml:id=\"{xml_id}\" xmlns:xi=\"http://www.w3.org/2001/XInclude\">\n"
             "<!-- ============================================ \n"
-            "  Problema asociado a una sección (no lección)\n"
+            "  Problema de práctica                            \n"
             "=================================================  -->\n\n"
             "<!-- <title>Previo a la unidad</title> -->\n"
             "<!-- <title>Exploración</title> -->\n"
