@@ -1,33 +1,37 @@
 #!/usr/bin/env python3
 """Import practice problems for a K-5 unit practice.html into PreTeXt.
 
-This script automates the steps  performed manually for sections A–D of
-gra0-uni2:
+This script automates the steps performed manually for sections A–D of
+any grade/unit (graX-uniY):
 
   * Parse the archived `practice.html` file.
-  * Extract each “Problem/Solution” pair beneath a given section header.
+  * Extract each "Problem/Solution" pair beneath a given section header.
   * Copy every referenced figure into the local `source/assets` tree.
   * Emit brand-new `PP-*.ptx` files containing the statement/solution content,
     flagging every solution with `[++++++++++++++]` at the top.
   * Refresh the list of `<xi:include>` entries inside the section-level
-    `gra0-uni2-secX-ProblemasPractica.ptx` wrappers so they include the
+    `graX-uniY-secZ-ProblemasPractica.ptx` wrappers so they include the
     newly-generated problems (when the wrapper exists and is empty).
+  * If a section wrapper is missing, offer to generate it from the template
+    at source/TEMPLATES/graVV-uniXX-secYY-ProblemasPractica.ptx.
 
 Usage
 =====
     python3 scripts/ingest_unit_PPs.py \
         --html /path/to/practice.html \
+        --unit-ptx /path/to/source/v00/graX-uniY.ptx \
         --sections A,B,C,D
 
 Arguments:
   --html          Absolute path to the archived practice.html file.
+  --unit-ptx      Path to the unit's .ptx file (e.g. source/v00/gra3-uni1.ptx).
+                  The grade-unit slug and source directory are derived from this.
   --sections      Comma-separated list of section letters to import.
-  --project-root  (optional) Root of the repository; defaults to cwd.
 
 Assumptions / Limitations
 =========================
-  * The HTML structure matches what is observed for gra0-uni2:
-    each Section header is followed by alternating “Problem” and “Solution”
+  * The HTML structure matches what is observed for IM K-5:
+    each Section header is followed by alternating "Problem" and "Solution"
     rows, with content inside `div.im-c-content`.
   * All figures referenced in the HTML point into the downloaded `figures/`
     directory tree (either SVG or PNG/JPG). The script copies those files
@@ -40,8 +44,8 @@ Assumptions / Limitations
     marker.
   * Section wrappers must still contain the placeholder comments (i.e. no
     existing `<xi:include>` entries). The script bails out rather than
-    overwriting hand-curated lists. If a wrapper file is missing (common for
-    Section A in early units), the script simply skips that section.
+    overwriting hand-curated lists. If a wrapper file is missing the script
+    offers to generate it from the template.
   * All extracted text is wrapped in `<p>` tags; list items become
     `<li><p>…</p></li>`. Tweak `_render_element` if more control is needed.
 """
@@ -49,6 +53,7 @@ Assumptions / Limitations
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import uuid
@@ -68,13 +73,8 @@ ASSET_DIR_MAP = {
 }
 """Mapping from file extension to destination assets subdirectory."""
 
-SECTION_FILES = {
-    "A": "source/v00/gra0-uni2-secA-ProblemasPractica.ptx",
-    "B": "source/v00/gra0-uni2-secB-ProblemasPractica.ptx",
-    "C": "source/v00/gra0-uni2-secC-ProblemasPractica.ptx",
-    "D": "source/v00/gra0-uni2-secD-ProblemasPractica.ptx",
-}
-"""Section letter to relative section-wrapper path."""
+TEMPLATE_PATH = Path("source/TEMPLATES/graVV-uniXX-secYY-ProblemasPractica.ptx")
+"""Template path relative to project root."""
 
 
 @dataclass
@@ -88,14 +88,47 @@ class ProblemBlock:
 class PracticeImporter:
     """Driver for parsing HTML and emitting PP files for selected sections."""
 
-    def __init__(self, html_path: Path, project_root: Path, sections: Sequence[str]):
+    def __init__(self, html_path: Path, unit_ptx: Path, sections: Sequence[str]):
         self.html_path = html_path
-        self.project_root = project_root
+        self.unit_ptx = unit_ptx.resolve()
         self.sections = sections
+
+        # Derive slug (e.g. "gra3-uni1") from the filename stem
+        self.unit_slug = self.unit_ptx.stem  # e.g. "gra3-uni1"
+
+        # Directory containing the unit ptx (section files live here too)
+        self.unit_dir = self.unit_ptx.parent
+
+        # Project root: walk up until we find the "source" directory
+        self.project_root = self._find_project_root(self.unit_ptx)
+
+        # Relative path from unit_dir to source/content/ for xi:include hrefs
+        content_dir = self.project_root / "source" / "content"
+        self.content_rel = os.path.relpath(content_dir, self.unit_dir)
+
         self.soup = BeautifulSoup(self.html_path.read_text(), "html.parser")
         self.asset_cache: dict[str, str] = {}
 
+    @staticmethod
+    def _find_project_root(ptx_path: Path) -> Path:
+        """Walk up from ptx_path until we find a directory named 'source'."""
+        current = ptx_path.parent
+        while current != current.parent:
+            if (current / "source").is_dir():
+                return current
+            if current.name == "source":
+                return current.parent
+            current = current.parent
+        raise RuntimeError(
+            f"Could not find project root (a parent directory containing 'source/') "
+            f"starting from {ptx_path}"
+        )
+
     def run(self) -> None:
+        print(f"Unit slug : {self.unit_slug}")
+        print(f"Unit dir  : {self.unit_dir}")
+        print(f"Project   : {self.project_root}")
+        print()
         for section in self.sections:
             print(f"Processing Section {section} …")
             problems = self._extract_section(section)
@@ -337,15 +370,57 @@ class PracticeImporter:
         self.asset_cache[src] = rel_path
         return rel_path
 
+    def _section_file_path(self, section: str) -> Path:
+        """Return the expected path for a section wrapper file."""
+        filename = f"{self.unit_slug}-sec{section}-ProblemasPractica.ptx"
+        return self.unit_dir / filename
+
+    def _generate_section_file(self, section: str) -> bool:
+        """Generate a section wrapper from the template, prompting the user first."""
+        template_path = self.project_root / TEMPLATE_PATH
+        if not template_path.exists():
+            print(f"  !! Template not found at {template_path}. Cannot generate section file.")
+            return False
+
+        section_id = f"{self.unit_slug}-sec{section}-ProblemasPractica"
+        dest = self._section_file_path(section)
+
+        print(f"  Section wrapper not found: {dest.name}")
+        answer = input(f"  Generate it from template? [y/N] ").strip().lower()
+        if answer not in ("y", "yes"):
+            print("  Skipping section file generation.")
+            return False
+
+        template_text = template_path.read_text()
+
+        # Substitute template placeholders
+        new_text = template_text
+        # xml:id and section slug: graVV-uniXX-secYY → gra3-uni1-secA
+        new_text = new_text.replace("graVV-uniXX-secYY", f"{self.unit_slug}-sec{section}")
+        # Section letter in title: "de la sección ZZ" → "de la sección A"
+        new_text = new_text.replace("de la sección ZZ", f"de la sección {section}")
+        # Remove the placeholder marker from shorttitle
+        new_text = new_text.replace("[@@@@@] ", "")
+        # Replace placeholder PP-HEX includes with a note comment
+        new_text = re.sub(
+            r'  <xi:include href="\./PP-HEX\.ptx"/>',
+            r'  <!-- <xi:include href="../content/PP-HEX.ptx"/> -->',
+            new_text,
+        )
+
+        dest.write_text(new_text)
+        print(f"  Generated: {dest}")
+        return True
+
     def _update_section_file(self, section: str, include_ids: Sequence[str]) -> bool:
-        section_rel = SECTION_FILES.get(section)
-        if not section_rel:
-            print(f"  !! No wrapper configured for Section {section}.")
-            return False
-        section_path = self.project_root / section_rel
+        section_path = self._section_file_path(section)
+
         if not section_path.exists():
-            print(f"  !! Wrapper file missing: {section_path}.")
-            return False
+            generated = self._generate_section_file(section)
+            if not generated:
+                print(f"  !! Wrapper file missing and not generated: {section_path.name}")
+                return False
+
         text = section_path.read_text()
 
         pattern = re.compile(
@@ -357,14 +432,19 @@ class PracticeImporter:
             raise RuntimeError(f"Unable to locate practice block in {section_path}")
 
         existing_block = match.group(2)
-        if "<xi:include" in existing_block:
+        # Check for uncommented <xi:include> lines (ignore lines that are inside <!-- ... -->)
+        uncommented_includes = [
+            line for line in existing_block.splitlines()
+            if "<xi:include" in line and not re.search(r"<!--.*<xi:include.*-->", line)
+        ]
+        if uncommented_includes:
             raise RuntimeError(
                 f"{section_path} already contains practice problem includes. "
                 "Remove them (or explicitly curate the section) before rerunning the importer."
             )
 
         include_block = "\n".join(
-            f"  <xi:include href=\"../content/{xml_id}.ptx\"/>" for xml_id in include_ids
+            f"  <xi:include href=\"{self.content_rel}/{xml_id}.ptx\"/>" for xml_id in include_ids
         )
 
         start, end = match.start(2), match.end(2)
@@ -382,10 +462,11 @@ def parse_args() -> argparse.Namespace:
         help="Path to the practice.html file.",
     )
     parser.add_argument(
-        "--project-root",
+        "--unit-ptx",
         type=Path,
-        default=Path("."),
-        help="Project root containing the source/ tree.",
+        required=True,
+        help="Path to the unit's .ptx file (e.g. source/v00/gra3-uni1.ptx). "
+             "The grade-unit slug and source directory are derived from this path.",
     )
     parser.add_argument(
         "--sections",
@@ -398,7 +479,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     sections = [sect.strip().upper() for sect in args.sections.split(",") if sect.strip()]
-    importer = PracticeImporter(args.html, args.project_root.resolve(), sections)
+    importer = PracticeImporter(args.html, args.unit_ptx, sections)
     try:
         importer.run()
     except Exception as exc:
