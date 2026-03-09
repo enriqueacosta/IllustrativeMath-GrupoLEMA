@@ -2,18 +2,35 @@
 
 <activity xml:id="act-preguntasSobreUnaGraficaDeBarras" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Preguntas sobre una gráfica de barras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Estas son afirmaciones sobre cómo van a casa los estudiantes de nuestra clase. Decide si cada afirmación es verdadera o falsa. Explícale a tu pareja cómo pensaste.</p>
+      <ol>
+        <li><p>Más estudiantes van a casa a pie que de cualquier otra forma.</p></li>
+        <li><p>Más estudiantes van a casa en bus que en automóvil.</p></li>
+        <li><p>Menos estudiantes van a casa a pie que en bicicleta.</p></li>
+        <li><p>Más estudiantes van a casa a pie o en bicicleta que en camioneta.</p></li>
+      </ol>
+    </li>
+    <li>
+      <p>Llena los espacios siguiendo las instrucciones de tu profesor. Después, contesta cada pregunta.</p>
+      <ol>
+        <li><q>¿Cuántos estudiantes más van a casa <fillin></fillin> que <fillin></fillin>?</q></li>
+        <li><q>¿Cuántos estudiantes más van a casa <fillin></fillin> o <fillin></fillin> que <fillin></fillin>?</q></li>
+      </ol>
+    </li>
+  </ol>
+  <p></p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li>Sample response: I know that the first statement is false because more students ride their bike than walk home.</li>
-      <li>For example, if one question is completed as 
-        <q>How many more students bike than walk?</q>  and 6 students bike and 4 students walk, students should explain how they know 2 more students bike than walk.
+      <li>For example, if one question is completed as <q>How many more students <m>\underline{\text{bike}}</m> than <m>\underline{\text{walk}}</m>?</q>  and 6 students bike and 4 students walk, students should explain how they know 2 more students bike than walk.
       </li>
     </ol>
   </solution>
@@ -30,21 +47,11 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B" text="custom">3.MD.B</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -154,16 +161,17 @@
 
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
     <p>[@@@@@@@@@]</p>
-  </paragraphs>
+  </paragraphs>-->
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Representation: Access for Perception. Read the directions and statements aloud. Students who both listen to and read the information will benefit from extra processing time.</p>
+    <p>Supports accessibility for: Language</p>
   </paragraphs>
 
 </postlude>
