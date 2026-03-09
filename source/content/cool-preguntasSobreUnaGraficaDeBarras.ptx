@@ -6,10 +6,26 @@
 ===============================================================  -->
 <project xml:id="cool-preguntasSobreUnaGraficaDeBarras" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Preguntas sobre una gráfica de barras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside>
+    <stack>
+      <p>A unos estudiantes les preguntaron: “¿Cuál es tu lugar favorito para leer?”.</p>
+      <p>Sus respuestas se muestran en esta gráfica de barras:</p>
+    </stack>
+    <image source="svg-source/tikz-file-174482">
+            <shortdescription>Diagrama de barras representando los lugares favoritos de los estudiantes para leer.</shortdescription>
+          </image>
+  </sidebyside>
+  <ol>
+    <li>
+      <p>¿Cuántos estudiantes más escogieron el parque que su casa como su lugar favorito para leer?</p>
+    </li>
+    <li>
+      <p>Verdadero o falso: A más estudiantes les gusta leer en la escuela o en la biblioteca que en el parque. Explica o muestra cómo pensaste.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -29,21 +45,13 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
+        <xref ref="ccss-3-MD-B" text="custom">3.MD.B</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -57,15 +65,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>Students draw lines into the bars of the bar graph to find the number represented by the bar by counting.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[+++++++++++++++]</p>
+    <p>During the launch of the next day’s activity, have students discuss how the scale on the bar graph can be used to determine the number of people or objects in each category.</p>
   </paragraphs>
 
 </postlude>
