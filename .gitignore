@@ -94,6 +94,10 @@ GitHub.sublime-settings
 # Don't track common virtual environment directories
 venv/
 
+# Don't track Python bytecode cache
+__pycache__/
+*.pyc
+
 # Don't include Dropbox settings and caches
 .dropbox
 .dropbox.attr
