@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Import practice problems for a K-5 unit practice.html into PreTeXt.
 
-This script automates the steps performed manually for sections A–D of
+This script imports the Practice Problems for sections A–D of
 any grade/unit (graX-uniY):
 
   * Parse the archived `practice.html` file.
   * Extract each "Problem/Solution" pair beneath a given section header.
   * Copy every referenced figure into the local `source/assets` tree.
-  * Emit brand-new `PP-*.ptx` files containing the statement/solution content,
-    flagging every solution with `[++++++++++++++]` at the top.
+  * Create brand-new `PP-*.ptx` files where * is a UUID4 code. The file contains the statement/solution content, and has solutions flagged with `[++++++++++++++]` at the top (since it is in English).
   * Refresh the list of `<xi:include>` entries inside the section-level
     `graX-uniY-secZ-ProblemasPractica.ptx` wrappers so they include the
     newly-generated problems (when the wrapper exists and is empty).
@@ -25,8 +24,7 @@ Usage
 Arguments:
   --html          Absolute path to the archived practice.html file.
   --unit-ptx      Path to the unit's .ptx file (e.g. source/v00/gra3-uni1.ptx).
-                  The grade-unit slug and source directory are derived from this.
-  --sections      Comma-separated list of section letters to import.
+  --sections      (optional) Comma-separated list of section letters to import.
 
 Assumptions / Limitations
 =========================
@@ -40,12 +38,10 @@ Assumptions / Limitations
   * The script always creates NEW PreTeXt files with fresh UUID-derived IDs.
     It does not attempt to reuse or update existing PP files.
   * Solutions always get a `[++++++++++++++]` flag inserted as the first
-    paragraph, regardless of language. Adjust here if you need a different
-    marker.
-  * Section wrappers must still contain the placeholder comments (i.e. no
-    existing `<xi:include>` entries). The script bails out rather than
-    overwriting hand-curated lists. If a wrapper file is missing the script
-    offers to generate it from the template.
+    paragraph, regardless of language.
+  * Section wrappers must have no existing `<xi:include>` entries. The script 
+    bails out rather than overwriting hand-curated lists. If a wrapper file is 
+    missing the script offers to generate it from the template.
   * All extracted text is wrapped in `<p>` tags; list items become
     `<li><p>…</p></li>`. Tweak `_render_element` if more control is needed.
 """
