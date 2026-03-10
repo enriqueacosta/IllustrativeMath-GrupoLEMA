@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""Import practice problems for a K-5 unit practice.html into PreTeXt.
+"""Convert IM K-5 practice problems from an archived HTML file into PreTeXt XML (.ptx) files.
 
-This script imports the Practice Problems for sections A–D of
-any grade/unit (graX-uniY):
+PP = Problemas de Práctica (Practice Problems).
 
-  * Parse the archived `practice.html` file.
-  * Extract each "Problem/Solution" pair beneath a given section header.
-  * Copy every referenced figure into the local `source/assets` tree.
-  * Create brand-new `PP-*.ptx` files where * is a UUID4 code. The file contains the statement/solution content, and has solutions flagged with `[++++++++++++++]` at the top (since it is in English).
-  * Refresh the list of `<xi:include>` entries inside the section-level
-    `graX-uniY-secZ-ProblemasPractica.ptx` wrappers so they include the
-    newly-generated problems (when the wrapper exists and is empty).
-  * If a section wrapper is missing, offer to generate it from the template
-    at source/TEMPLATES/graVV-uniXX-secYY-ProblemasPractica.ptx.
+This script ingests the Practice Problems (PPs) for sections A–D of any
+grade/unit (graX-uniY). Steps:
+
+  1. Parse the archived `practice.html` file.
+  2. Extract the content of each "Problem/Solution" pair.
+  3. Copy every referenced figure into the local `source/assets` tree
+     (`source/assets/{svg,png,jpg}-source/`).
+  4. Write one new `PP-<uuid>.ptx` file per problem into `source/content/`.
+     Each file contains the statement and solution in PreTeXt XML, with the
+     solution flagged by `[++++++++++++++++++++]` as its first paragraph
+     (marking it as not yet translated).
+  5. Inject the matching `<xi:include>` entries into the section-level wrapper
+     `graX-uniY-secZ-ProblemasPractica.ptx`, but only when that wrapper exists
+     and has no existing (uncommented) includes.
+  6. If a section wrapper is missing, offer to generate it from the template at
+     `source/TEMPLATES/graVV-uniXX-secYY-ProblemasPractica.ptx`.
 
 Usage
 =====
@@ -21,29 +27,30 @@ Usage
         --unit-ptx /path/to/source/v00/graX-uniY.ptx \
         --sections A,B,C,D
 
-Arguments:
-  --html          Absolute path to the archived practice.html file.
+Arguments
+=========
+  --html          Path to the archived practice.html file.
   --unit-ptx      Path to the unit's .ptx file (e.g. source/v00/gra3-uni1.ptx).
-  --sections      (optional) Comma-separated list of section letters to import.
+                  The grade-unit slug (e.g. gra3-uni1) and the project root are
+                  derived from this path.
+  --sections      (optional) Comma-separated list of section letters to import
+                  (default: A,B,C,D).
 
 Assumptions / Limitations
 =========================
   * The HTML structure matches what is observed for IM K-5:
-    each Section header is followed by alternating "Problem" and "Solution"
+    each section header is followed by alternating "Problem" and "Solution"
     rows, with content inside `div.im-c-content`.
-  * All figures referenced in the HTML point into the downloaded `figures/`
-    directory tree (either SVG or PNG/JPG). The script copies those files
-    verbatim into `source/assets/{svg,png,jpg}-source/` and refuses to run if
-    an asset with the same filename already exists (to avoid clobbering art).
+  * Asset filenames must be unique across the project. The script refuses to
+    overwrite an asset that already exists in `source/assets/` to avoid
+    clobbering existing art.
   * The script always creates NEW PreTeXt files with fresh UUID-derived IDs.
     It does not attempt to reuse or update existing PP files.
-  * Solutions always get a `[++++++++++++++]` flag inserted as the first
-    paragraph, regardless of language.
-  * Section wrappers must have no existing `<xi:include>` entries. The script 
-    bails out rather than overwriting hand-curated lists. If a wrapper file is 
-    missing the script offers to generate it from the template.
+  * Section wrappers must have no existing uncommented `<xi:include>` entries.
+    The script bails out rather than overwriting hand-curated lists.
   * All extracted text is wrapped in `<p>` tags; list items become
-    `<li><p>…</p></li>`. Tweak `_render_element` if more control is needed.
+    `<li><p>…</p></li>`. Tweak `_render_element` if more HTML elements need
+    special handling.
 """
 
 from __future__ import annotations
