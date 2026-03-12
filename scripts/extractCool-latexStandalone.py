@@ -1,7 +1,7 @@
 """
 Enrique Acosta, 2024
-Script para extraer bloque \begin{project} de output LaTeX de PreTeXt con xml:id dado. 
-También reemplaza todos los \includegraphics[width=\linewidth] por \includegraphics[max width=\linewidth, center] para las imágenes.
+Script para extraer bloque begin{project} de output LaTeX de PreTeXt con xml:id dado. 
+También reemplaza todos los includegraphics[width=linewidth] por includegraphics[max width=\\linewidth, center] para las imágenes.
 Output es 
 -  archivo .tex que incuye el cool-down y preambulo LaTeX para compilar y 
 -  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
