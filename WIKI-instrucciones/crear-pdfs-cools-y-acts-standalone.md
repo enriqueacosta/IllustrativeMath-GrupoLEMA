@@ -19,9 +19,9 @@ Ejecute el siguiente comando en la terminal (ejemplo con gra3-uni4)
 pretext build gra3-uni4-libroTrabajo
 ```
 
-### 4. Copiar el script adecuado a la carpeta de output
+### 4. Extraer la actividad con el script de Python.
 - Ubique la carpeta de output definida en `project.ptx` (ejemplo: `output/print-latex-libroTrabajo/gra3-uni4`).
-- Copie uno de estos scripts según corresponda:
+- Use el script según corresponda:
   - Para cool: `extractCool-latexStandalone.py`
   - Para actividad: `extractActivity-latexStandalone.py`
 
@@ -29,17 +29,31 @@ pretext build gra3-uni4-libroTrabajo
 Determine el `xml:id` correspondiente. Por ejemplo: `cool-marcaPartesParaEncontrarArea`.
 
 ### 6. Ejecutar el script en la terminal
-Diríjase a la carpeta de output y ejecute el comando adecuado:
+Desde la carpeta `scripts` en la terminal, ejecutar el comando. Ejemplo:
 
 ```bash
-python extractCool-latexStandalone.py gra3-uni4.tex cool-marcaPartesParaEncontrarArea 14pt
+python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-marcaPartesParaEncontrarArea 14pt
 ```
 
 Explicacion del comando:
   - `python extractCool-latexStandalone.py`: Ejecuta el script (use `extractAct-latexStandalone.py` para actividades).
-  - `gra3-uni4.tex`: Archivo `.tex` de origen.
+  - `gra3-uni4.tex`: Archivo `.tex` del libro de trabajo.
   - `cool-marcaPartesParaEncontrarArea`: `xml:id` de la actividad o cool.
   - `14pt`: Tamaño de la fuente del pdf que se va a generar (`14pt` es adecuado para grado 3).
+
+### Tamaños de fuente
+Usar: 
+
+* grado k: 16pt,
+* grado 1: 14pt,
+* grado 2: 14pt,
+* grado 3: 14pt,
+* grado 4: 12pt,
+* grado 5: 12pt,
+* grado 6: 11pt,
+* grado 7: 11pt,
+* grado 8: 11pt,
+* grado hs: 11pt
 
 ### 7. Revisar el PDF generado
 - El script creará un archivo `.tex` y ejecutará `pdfLaTeX` para generar el PDF.
@@ -97,11 +111,11 @@ Si desea ofrecer un enlace para que los profesores o estudiantes puedan imprimir
 
 * Con esa lista en orden se crean todos los comandos de ejecución para crear los pdf de los cools. Por ejemplo:
    ```bash
-   python extractCool-latexStandalone.py gra3-uni4.tex cool-bolsasManzanas 14pt && \
-   python extractCool-latexStandalone.py gra3-uni4.tex cool-regalitosInvitados 14pt && \
-   python extractCool-latexStandalone.py gra3-uni4.tex cool-losTromposDe 14pt && \
-   python extractCool-latexStandalone.py gra3-uni4.tex cool-patasHormigas 14pt && \
-   python extractCool-latexStandalone.py gra3-uni4.tex cool-muffinsEnCajas 14pt && \
+   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-bolsasManzanas 14pt && \
+   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-regalitosInvitados 14pt && \
+   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-losTromposDe 14pt && \
+   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-patasHormigas 14pt && \
+   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-muffinsEnCajas 14pt && \
    .....
    ```
 
