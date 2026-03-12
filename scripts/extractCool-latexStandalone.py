@@ -1,12 +1,19 @@
 """
 Enrique Acosta, 2024
-Script para extraer bloque begin{project} de output LaTeX de PreTeXt con xml:id dado. 
-También reemplaza todos los includegraphics[width=linewidth] por includegraphics[max width=\\linewidth, center] para las imágenes.
-Output es 
+
+Script para extraer bloque begin{project} de output LaTeX de PreTeXt con xml:id dado.
+Sirve para hacer los pdf de los cool- a partir del tex del libroTrabajo con whitespacing.
+
+Output es: 
 -  archivo .tex que incuye el cool-down y preambulo LaTeX para compilar y 
 -  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
-El preámbulo con el estilo está aparte, en archivo assets/defs-ptxLEMA-latex-standalone.tex, para que sea más modular el sistema.
-Sirve para hacer cools standalone del tex del libroTrabajo con whitespacing.
+
+El preámbulo con el estilo para el latex está aparte, en archivo assets/defs-ptxLEMA-latex-standalone.tex, 
+para que sea más modular el sistema.
+
+Nota: el script reemplaza todos los includegraphics[width=linewidth] por 
+includegraphics[max width=\\linewidth, center] para corregir el tamaño de las imágenes y centrarlas.
+
 
 Uso: python extractCool-latexStandalone.py <ruta-archivo> <id-actividad> <tamaño-fuente>
      python extractCool-latexStandalone.py <ruta-archivo> cool-pesoCirculo 14pt
