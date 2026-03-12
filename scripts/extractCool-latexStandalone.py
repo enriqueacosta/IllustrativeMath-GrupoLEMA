@@ -4,12 +4,16 @@ Enrique Acosta, 2024
 Script para extraer bloque begin{project} de output LaTeX de PreTeXt con xml:id dado.
 Sirve para hacer los pdf de los cool- a partir del tex del libroTrabajo con whitespacing.
 
+Input es:
+- <ruta-archivo>: la ruta al archivo .tex del libroTrabajo de una unidad, 
+    que se genera, por ejemplo con `pretext build gra3-uni2-libroTrabajo`.
+
 Output es: 
--  archivo .tex que incuye el cool-down y preambulo LaTeX para compilar y 
+-  archivo .tex que incuye el solo el enunciado del cool-down y preambulo LaTeX para compilar y 
 -  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
 
-El preámbulo con el estilo para el latex está aparte, en archivo assets/defs-ptxLEMA-latex-standalone.tex, 
-para que sea más modular el sistema.
+El preámbulo con el estilo para el latex se carga de un archvo aparte: assets/defs-ptxLEMA-latex-standalone.tex, 
+Esto permite que sea más modular el sistema.
 
 Nota: el script reemplaza todos los includegraphics[width=linewidth] por 
 includegraphics[max width=\\linewidth, center] para corregir el tamaño de las imágenes y centrarlas.
