@@ -2,11 +2,67 @@
 
 <activity xml:id="act-formasDeViajar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Formas de viajar</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cómo te gustaría viajar?</p>
+  
+  <sidebyside valign="top">
+    <ul>
+      <li><p>automóvil (C, por <em>car</em> en inglés)</p></li>
+      <li><p>tren (T, por <em>train</em> en inglés)</p></li>
+      <li><p>barco (B, por <em>boat</em> en inglés)</p></li>
+      <li><p>globo (Bal, por <em>balloon</em> en inglés)</p></li>
+      <li><p>avión (P, por <em>plane</em> en inglés)</p></li>
+      <li><p>helicóptero (H, por <em>helicopter</em> en inglés)</p></li>
+    </ul>
+
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+  <row header="yes" bottom="medium">
+    <cell right="minor">nombre del estudiante</cell>
+    <cell>forma de viajar</cell>
+  </row>
+  
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+</tabular>
+</sidebyside>
+
+      <sidebyside widths="70% 25%">
+  <p /> 
+
+  <image source="png-source/CS Grade3.Lesson4.png">
+    <shortdescription>Un globo aerostático colorido</shortdescription>
+  </image>
+</sidebyside>
+
+  
 </statement>
+
+
+
 
 <solution>
     <p>[+++++++++++++++]</p>
@@ -25,20 +81,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-B" text="custom">3.MD.B</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -99,14 +147,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -122,20 +162,6 @@
         <q>Norms</q>  header.
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
