@@ -74,12 +74,11 @@
 \usepackage{longtable}
 \usepackage{xstring} % For string manipulation
 \newcommand{\removeFinalPeriodIfPresent}[1]{\IfEndWith{#1}{.}{\StrBefore{#1}{.}}{#1}}
-\tcbset{ bwminimalstyle/.style={enhanced, frame empty, extras broken={
-          frame empty}, fonttitle=\bfseries\LARGE, colback=white, before upper = {\setlength{\parskip}{\medskipamount}\vspace{0.1cm} }} }
+\tcbset{ bwminimalstyle/.style={blank, fonttitle=\bfseries\LARGE, colback=white, before upper = {\setlength{\parskip}{\medskipamount}\vspace{0.1cm} }} }
 \tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper}, coltitle=black }
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 \tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
-\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
+\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle, after title={\space}, bottomtitle=1cm } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
 %% activity: fairly simple numbered block/structure
 \tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }

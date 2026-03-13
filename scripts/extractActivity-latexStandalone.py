@@ -1,12 +1,24 @@
 """
 Enrique Acosta, 2024
-Script para extraer bloque \begin{activity} de output LaTeX de PreTeXt con xml:id dado. 
-También reemplaza todos los \includegraphics[width=\linewidth] por \includegraphics[max width=\linewidth, center] para las imágenes.
-Output es 
--  archivo .tex que incuye actividad y preambulo LaTeX para compilar y 
+
+
+Script para extraer bloque begin{activity} de output LaTeX de PreTeXt con xml:id dado.
+Sirve para hacer los pdf de las act- a partir del tex del libroTrabajo con whitespacing.
+
+Input es:
+- <ruta-archivo>: la ruta al archivo .tex del libroTrabajo de una unidad, 
+    que se genera, por ejemplo con `pretext build gra3-uni2-libroTrabajo`.
+
+Output es: 
+-  archivo .tex que incuye el solo el enunciado del act- y preambulo LaTeX para compilar y 
 -  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
-El preámbulo con el estilo está aparte, en archivo assets/defs-ptxLEMA-latex-standalone.tex, para que sea más modular el sistema.
-Sirve para hacer actividades standalone del tex del libroTrabajo con whitespacing.
+
+El preámbulo con el estilo para el latex se carga de un archvo aparte: assets/defs-ptxLEMA-latex-standalone.tex, 
+Esto permite que sea más modular el sistema.
+
+Nota: el script reemplaza todos los includegraphics[width=linewidth] por 
+includegraphics[max width=\\linewidth, center] para corregir el tamaño de las imágenes y centrarlas.
+
 
 Uso: python extractActivity-latexStandalone.py <ruta-archivo> <id-actividad> <tamaño-fuente>
      python extractActivity-latexStandalone.py <ruta-archivo> act-contarImagenes 14pt

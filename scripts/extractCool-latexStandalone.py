@@ -12,7 +12,7 @@ Output es:
 -  archivo .tex que incuye el solo el enunciado del cool-down y preambulo LaTeX para compilar y 
 -  archivo .pdf de correr pdflatex dos veces en el archivo .tex (para que queden los encabezados bien) 
 
-El preámbulo con el estilo para el latex se carga de un archvo aparte: assets/defs-ptxLEMA-latex-standalone.tex, 
+El preámbulo con el estilo para el latex se carga de un archvo aparte: assets/preamble-latex-cools, 
 Esto permite que sea más modular el sistema.
 
 Nota: el script reemplaza todos los includegraphics[width=linewidth] por 
