@@ -163,7 +163,7 @@
 
 % Default line style
 \tikzset{every picture/.append style={line join=round}}
-\tikzset{every picture/.append style={line width=0.75pt}}
+\tikzset{every picture/.append style={line width=1pt}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
