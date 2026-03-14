@@ -30,28 +30,28 @@ Determine el `xml:id` correspondiente. Por ejemplo: `cool-marcaPartesParaEncontr
 Desde la carpeta `scripts` en la terminal, ejecutar el comando. Ejemplo:
 
 ```bash
-python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-marcaPartesParaEncontrarArea 14pt
+python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-marcaPartesParaEncontrarArea grado3
 ```
 
 Explicacion del comando:
   - `python extractStandaloneStatement.py`: Ejecuta el script. Detecta automáticamente si es `act-` o `cool-` por el prefijo del `xml:id`.
   - `gra3-uni4.tex`: Archivo `.tex` del libro de trabajo.
   - `cool-marcaPartesParaEncontrarArea`: `xml:id` de la actividad o cool.
-  - `14pt`: Tamaño de la fuente del pdf que se va a generar (`14pt` es adecuado para grado 3).
+  - `grado3`: Grado para el que se genera el pdf (determina el tamaño de fuente).
 
-### Tamaños de fuente
+### Grados y tamaños de fuente
 Usar:
 
-* grado k: 16pt,
-* grado 1: 14pt,
-* grado 2: 14pt,
-* grado 3: 14pt,
-* grado 4: 12pt,
-* grado 5: 12pt,
-* grado 6: 11pt,
-* grado 7: 11pt,
-* grado 8: 11pt,
-* grado hs: 11pt
+* grado0: 17pt
+* grado1: 14pt
+* grado2: 14pt
+* grado3: 14pt
+* grado4: 12pt
+* grado5: 12pt
+* grado6: 11pt
+* grado7: 11pt
+* grado8: 11pt
+* gradoHS: 11pt
 
 ### 7. Revisar el PDF generado
 - El script creará un archivo `.tex` y ejecutará `pdfLaTeX` para generar el PDF.
@@ -109,11 +109,11 @@ Si desea ofrecer un enlace para que los profesores o estudiantes puedan imprimir
 
 * Con esa lista en orden se crean todos los comandos de ejecución para crear los pdf de los cools. Por ejemplo:
    ```bash
-   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-bolsasManzanas 14pt && \
-   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-regalitosInvitados 14pt && \
-   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-losTromposDe 14pt && \
-   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-patasHormigas 14pt && \
-   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-muffinsEnCajas 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-bolsasManzanas grado3 && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-regalitosInvitados grado3 && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-losTromposDe grado3 && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-patasHormigas grado3 && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-muffinsEnCajas grado3 && \
    .....
    ```
 

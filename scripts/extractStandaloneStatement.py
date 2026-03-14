@@ -23,15 +23,35 @@ Nota: el script reemplaza todos los includegraphics[width=linewidth] por
 includegraphics[max width=\\linewidth, center] para corregir el tamaño de las imágenes y centrarlas.
 
 
-Uso: python extractStandaloneStatement.py <ruta-archivo> <xml:id> <tamaño-fuente>
-     python extractStandaloneStatement.py <ruta-archivo> act-contarImagenes 14pt
-     python extractStandaloneStatement.py <ruta-archivo> cool-pesoCirculo 14pt
+Uso: python extractStandaloneStatement.py <ruta-archivo> <xml:id> <grado>
+     python extractStandaloneStatement.py <ruta-archivo> act-contarImagenes grado3
+     python extractStandaloneStatement.py <ruta-archivo> cool-pesoCirculo grado3
+
+Grados válidos:
+  grado0 → 16pt,  grado1 → 14pt,  grado2 → 14pt,  grado3 → 14pt,
+  grado4 → 12pt,  grado5 → 12pt,  grado6 → 11pt,  grado7 → 11pt,
+  grado8 → 11pt,  gradoHS → 11pt
+
+También se puede pasar el tamaño directamente (ej. 14pt).
 """
 
 import sys
 import re
 import subprocess
 import os
+
+FONT_SIZE_BY_GRADE = {
+    "grado0":  "17pt",
+    "grado1":  "14pt",
+    "grado2":  "14pt",
+    "grado3":  "14pt",
+    "grado4":  "12pt",
+    "grado5":  "12pt",
+    "grado6":  "11pt",
+    "grado7":  "11pt",
+    "grado8":  "11pt",
+    "gradoHS": "11pt",
+}
 
 def extract_statement(file_path, xml_id, font_size):
     # Detect block type from xml:id prefix
@@ -114,10 +134,12 @@ def extract_statement(file_path, xml_id, font_size):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python extractStandaloneStatement.py <file-path> <xml:id> <font-size>")
-        print("       xml:id must start with 'act-' or 'cool-'")
+        print("Usage: python extractStandaloneStatement.py <file-path> <xml:id> <grado>")
+        print("       grados válidos: grado0 grado1 grado2 grado3 grado4 grado5 grado6 grado7 grado8 gradoHS")
+        print("       xml:id debe empezar con 'act-' o 'cool-'")
     else:
         file_path = sys.argv[1]
         xml_id = sys.argv[2]
-        font_size = sys.argv[3]
+        grado_or_size = sys.argv[3]
+        font_size = FONT_SIZE_BY_GRADE.get(grado_or_size, grado_or_size)
         extract_statement(file_path, xml_id, font_size)
