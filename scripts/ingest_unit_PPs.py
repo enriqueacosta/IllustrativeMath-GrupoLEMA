@@ -319,6 +319,8 @@ class PracticeImporter:
         if not src:
             return []
         asset_path = self._copy_asset(src)
+        if asset_path.endswith(".svg"):
+            asset_path = asset_path[:-4]
         alt = img.get("alt", "").strip()
         lines = [f"{indent}<image source=\"{asset_path}\">"]
         if alt:
