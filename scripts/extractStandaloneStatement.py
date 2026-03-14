@@ -82,8 +82,12 @@ def extract_statement(file_path, xml_id, font_size):
             content = file.read()
 
         # Regular expression to match the block with the specific id-string
+        # Example: \begin{activity}{Actividad}{De diagramas a expresiones.}{act-deDiagramasAExpresiones}
+        # Format: \begin{block_type}{arg}{arg}{xml-id}
+        # Argument pattern: matches text that may contain \command{} style nested braces (one level deep)
+        arg = r"(?:[^{}]|\\[{}]|\{[^{}]*\})*"
         pattern = re.compile(
-            r"\\begin\{" + block_type + r"\}\{((?:[^{}]|\\{|\\})*)\}\{((?:[^{}]|\\{|\\})*)\}\{" + re.escape(xml_id) + r"\}(.*?)\\end\{" + block_type + r"\}",
+            r"\\begin\{" + block_type + r"\}\{(" + arg + r")\}\{(" + arg + r")\}\{" + re.escape(xml_id) + r"\}(.*?)\\end\{" + block_type + r"\}",
             re.DOTALL
         )
 
