@@ -6,7 +6,7 @@
 \tcbuselibrary{raster}
 \newtcolorbox[auto counter]{project-distinct}{}
 \setlength{\parindent}{0pt}    % No indentation for new paragraphs
-\setlength{\parskip}{1ex}     % Small space between paragraphs 
+\setlength{\parskip}{1ex}     % Small space between paragraphs
 \tcbuselibrary{xparse}
 \usetikzlibrary{calc}
 \tcbuselibrary{hooks}
@@ -19,7 +19,7 @@
 \DefineVerbatimEnvironment{preformatted}{Verbatim}{}
 %% Fuente sans-serif
 % \renewcommand{\familydefault}{\sfdefault}
-\RequirePackage[sfdefault]{roboto} 
+\RequirePackage[sfdefault]{roboto}
 % to disable ligatures (roboto removes the dot of the i in fi)
 % WARNING: maybe this should not be for higher grades
 \usepackage{microtype}\DisableLigatures{encoding = *, family = *}
@@ -74,14 +74,14 @@
 \usepackage{longtable}
 \usepackage{xstring} % For string manipulation
 \newcommand{\removeFinalPeriodIfPresent}[1]{\IfEndWith{#1}{.}{\StrBefore{#1}{.}}{#1}}
-\tcbset{ bwminimalstyle/.style={blank, fonttitle=\bfseries\LARGE, colback=white, before upper = {\setlength{\parskip}{\medskipamount}\vspace{0.1cm} }} }
+\tcbset{ bwminimalstyle/.style={blank, fonttitle=\bfseries\LARGE, bottomtitle=1cm, after title={\space}, colback=white, before upper = {\setlength{\parskip}{\medskipamount}\vspace{0.1cm} }} }
 \tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper}, coltitle=black }
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 \tcbset{ blockspacingstyle/.style={before skip={2.0ex plus 0.5ex}} }
-\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle, after title={\space}, bottomtitle=1cm } }
+\tcbset{ projectstyle/.style={bwminimalstyle, blockspacingstyle,  } }
 \newtcolorbox[use counter from=project-distinct]{project}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, projectstyle, }
 %% activity: fairly simple numbered block/structure
-\tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
+\tcbset{ activitystyle/.style={bwminimalstyle, blockspacingstyle,   } }
 \newtcolorbox[use counter from=project-distinct]{activity}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, activitystyle, }
 \tcbset{ exploration/.style={bwminimalstyle, blockspacingstyle, after title={\space},  } }
 \newtcolorbox[use counter from=project-distinct]{exploration}[3]{title={{\normalsize#1}\\{\removeFinalPeriodIfPresent{#2}}}, phantomlabel={#3}, breakable, after={\par}, exploration, }
@@ -101,10 +101,10 @@
 \NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}
 \newcommand{\alert}[1]{\textbf{\textit{#1}}}
 \usepackage[export]{adjustbox}% [export] allows adjustbox keys in \includegraphics
-%% Indentación párrafos 
+%% Indentación párrafos
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
-%% Márgenes 
+%% Márgenes
 \usepackage{geometry}
 \geometry{verbose,top=2.5cm,bottom=2cm,lmargin=2.3cm,rmargin=2.3cm,headheight=3cm,headsep=0.4cm,footskip=1cm}
 % Quitar justificación (lineas igual de anchas)

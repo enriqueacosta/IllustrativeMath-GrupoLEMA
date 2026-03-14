@@ -21,9 +21,7 @@ pretext build gra3-uni4-libroTrabajo
 
 ### 4. Extraer la actividad con el script de Python.
 - Ubique la carpeta de output definida en `project.ptx` (ejemplo: `output/print-latex-libroTrabajo/gra3-uni4`).
-- Use el script según corresponda:
-  - Para cool: `extractCool-latexStandalone.py`
-  - Para actividad: `extractActivity-latexStandalone.py`
+- Use el script `extractStandaloneStatement.py` para acts y cools.
 
 ### 5. Identificar el `xml:id` de la actividad o cool
 Determine el `xml:id` correspondiente. Por ejemplo: `cool-marcaPartesParaEncontrarArea`.
@@ -32,17 +30,17 @@ Determine el `xml:id` correspondiente. Por ejemplo: `cool-marcaPartesParaEncontr
 Desde la carpeta `scripts` en la terminal, ejecutar el comando. Ejemplo:
 
 ```bash
-python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-marcaPartesParaEncontrarArea 14pt
+python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-marcaPartesParaEncontrarArea 14pt
 ```
 
 Explicacion del comando:
-  - `python extractCool-latexStandalone.py`: Ejecuta el script (use `extractAct-latexStandalone.py` para actividades).
+  - `python extractStandaloneStatement.py`: Ejecuta el script. Detecta automáticamente si es `act-` o `cool-` por el prefijo del `xml:id`.
   - `gra3-uni4.tex`: Archivo `.tex` del libro de trabajo.
   - `cool-marcaPartesParaEncontrarArea`: `xml:id` de la actividad o cool.
   - `14pt`: Tamaño de la fuente del pdf que se va a generar (`14pt` es adecuado para grado 3).
 
 ### Tamaños de fuente
-Usar: 
+Usar:
 
 * grado k: 16pt,
 * grado 1: 14pt,
@@ -111,11 +109,11 @@ Si desea ofrecer un enlace para que los profesores o estudiantes puedan imprimir
 
 * Con esa lista en orden se crean todos los comandos de ejecución para crear los pdf de los cools. Por ejemplo:
    ```bash
-   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-bolsasManzanas 14pt && \
-   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-regalitosInvitados 14pt && \
-   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-losTromposDe 14pt && \
-   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-patasHormigas 14pt && \
-   python extractCool-latexStandalone.py <path to gra3-uni4.tex> cool-muffinsEnCajas 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-bolsasManzanas 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-regalitosInvitados 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-losTromposDe 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-patasHormigas 14pt && \
+   python extractStandaloneStatement.py <path to gra3-uni4.tex> cool-muffinsEnCajas 14pt && \
    .....
    ```
 
@@ -123,7 +121,7 @@ Si desea ofrecer un enlace para que los profesores o estudiantes puedan imprimir
 
 ### 12. PENDIENTE: Creación de un paquete zip para descargar de todos los cools de la unidad
 
-Está pendiente ajustar el script `extractCool-latexStandalone.py` para poder agregar parametros de entrada en los que se especifica 3-4-lec# como preambulo al nombre del archivo de salida, para poder producir un zip con archivos de la forma
+Está pendiente ajustar el script `extractStandaloneStatement.py` para poder agregar parámetros de entrada en los que se especifica 3-4-lec# como prefijo al nombre del archivo de salida, para poder producir un zip con archivos de la forma
 
 ```
 3-4-lec1-cool-cuantasBolsas.pdf
@@ -140,4 +138,4 @@ Está pendiente ajustar el script `extractCool-latexStandalone.py` para poder ag
 ....
 ```
 
-Esto probablemente es mejor hacerlo con el script de `extractCool-latexStandalone.py` (agregar parametros de entrada en los que se especifica `3-4-lec#` como preambulo al nombre del archivo de salida)
+Esto probablemente es mejor hacerlo con el script `extractStandaloneStatement.py` (agregar parámetros de entrada en los que se especifica `3-4-lec#` como prefijo al nombre del archivo de salida)

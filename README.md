@@ -148,7 +148,7 @@ Para estas imágenes se debe generar el formato `.pdf` con pdfLaTeX, y el format
 
 (desactualizado) El diseño gráfico de estos pdf se especifica en el archivo `/source/custom-xsl/pretext-latex-cool.xsl` que determina el encabezado de LaTeX que genera los pdf. 
 
-Update: Hay una nueva forma de producir los cools que no involucra un custom-xsl: se genera el libro de trabajo (que además incluye el whitespace necesario) y después se usa el script en `/scripts/extractCool-latexStandalone.py`
+Update: Hay una nueva forma de producir los cools que no involucra un custom-xsl: se genera el libro de trabajo (que además incluye el whitespace necesario). Ver `/WIKI-instrucciones/crear-pdfs-cools-y-acts-standalone.md`.
 
 ## Licencia
 
