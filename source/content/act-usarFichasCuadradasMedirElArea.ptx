@@ -6,8 +6,13 @@
 
 <statement>
   <p>Tu profesor te dará unas hojas que tienen algunas figuras.</p>
-  <p>Usa fichas cuadradas para encontrar el área de cada figura. Escribe tus respuestas aquí. Prepárate para explicar tu razonamiento.</p>
-  <ol>
+  <p>Usa fichas cuadradas para encontrar el área de cada figura. Prepárate para explicar tu razonamiento.</p>
+  <aside component="web">
+    <p>Hoja con figuras para medir el área con fichas cuadradas en el libro de trabajo, o <url href="external/blm/pdf-source/FichasCuadradasMedirArea-figuras.pdf">descargue para imprimir</url>.
+    </p>
+  </aside>
+  <p component="libroTrabajo">Escribe tus respuestas aquí.</p>
+  <ol component="libroTrabajo">
     <li><p>Área: _____ unidades cuadradas</p></li>
     <li><p>Área: _____ unidades cuadradas</p></li>
     <li><p>Área: _____ unidades cuadradas</p></li>
@@ -45,15 +50,6 @@
           <xref ref="ccss-3-MD-C-5-a" text="custom">3.MD.C.5.a</xref>, 
           <xref ref="ccss-3-MD-C-5-b" text="custom">3.MD.C.5.b</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -107,9 +103,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-usarFichasCuadradasMedirElArea-mat.ptx"/>  -->
+    <xi:include href="./act-usarFichasCuadradasMedirElArea-mat.ptx"/>
     <!-- <xi:include href="./act-usarFichasCuadradasMedirElArea-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -137,9 +132,9 @@
     <ul>
       <li>7–10 minutes: partner work time</li>
       <li><p>Monitor for students who:</p><ul>
-<li>keep tiling the whole figure all the way to the edges</li>
-<li>do not leave gaps between the square tiles as the figure is tiled</li>
-</ul>
+          <li>keep tiling the whole figure all the way to the edges</li>
+          <li>do not leave gaps between the square tiles as the figure is tiled</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -151,14 +146,6 @@
    Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
 ===================================================================  -->
 <postlude component="profesor">
-
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <!--<paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>-->
-
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
@@ -180,15 +167,7 @@
       </li>
     </ul>
   </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <!--<paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
-
-
+ 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
