@@ -6,18 +6,49 @@
 ===============================================================  -->
 <project xml:id="cool-completaUnaGraficaDeBarrasConEscala" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Completa una gráfica de barras con escala</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>A unos estudiantes que estaban de visita en el zoológico les preguntaron: “¿Cuál es tu animal favorito del zoológico?”.</p>
+  <sidebyside>
+      <p>Sus respuestas se muestran en esta tabla:</p>
+
+      <tabular top="medium">
+    <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+      <cell right="medium">animal</cell>
+      <cell right="medium">número de estudiantes</cell>
+    </row>
+
+    <row left="minor" bottom="minor">
+      <cell right="minor">Elefante</cell>
+      <cell right="minor">17</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">Tigre</cell>
+      <cell right="minor">10</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">Jirafa</cell>
+      <cell right="minor">14</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">Nutria</cell>
+      <cell right="minor">4</cell>
+    </row>
+  </tabular>
+  </sidebyside>
+  <p>Usa los datos de la tabla para completar la gráfica de barras con escala.</p>
+  <image source="svg-source/tikz-file-174485">
+          <shortdescription>Gráfico de barras azul sobre animales favoritos del zoológico</shortdescription>
+        </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Student bar graphs should show 10 students chose tigers and 4 students chose otters.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+<image source="svg-source/tikz-file-150935">
+          <shortdescription>Gráfico de barras azul sobre animales favoritos del zoológico</shortdescription>
+        </image>
   </solution>
 
 
@@ -31,19 +62,7 @@
     <ul>
       <li>
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+<xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,14 +77,20 @@
   <!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [++++++++++++++++++]
+    </p>
+    <p>Students draw bars that use a scale of 1 instead of a scale of 5.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
     <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++++]
+    </p>
+    <p>Use the launch of the next day's activity to discuss the difference between a bar graph that has a scale of 1 and a scaled bar graph.</p>
   </paragraphs>
 
 </postlude>
