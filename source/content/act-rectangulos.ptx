@@ -7,6 +7,9 @@
 <statement>
   <p><line>¿Qué observas?</line>
      <line>¿Qué te preguntas?</line></p>
+  <aside component="web">
+    <p>Conjunto de cartas en el libro de trabajo, o <url href="external/blm/pdf-source/Clasificacion-de-tarjetas-rectangulos.pdf">descargue para imprimir</url>.</p>
+  </aside>
   <sbsgroup widths="33% 33% 33%">
     <sidebyside>      
     <image source="jpg-source/Foam Tiles.jpg" width="20%">
@@ -103,14 +106,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>        
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]        
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -133,9 +128,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-rectangulos-mat.ptx"/>  -->
+    <xi:include href="./act-rectangulos-mat.ptx"/>  
     <!-- <xi:include href="./act-rectangulos-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -197,15 +191,7 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <!--<paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>-->
-
-
-  <!-- Síntesis de la actividad -->
+   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
