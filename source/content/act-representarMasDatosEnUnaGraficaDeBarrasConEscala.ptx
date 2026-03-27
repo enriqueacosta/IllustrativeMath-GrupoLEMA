@@ -2,21 +2,48 @@
 
 <activity xml:id="act-representarMasDatosEnUnaGraficaDeBarrasConEscala" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Representemos más datos en una gráfica de barras con escala </title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>A todos los estudiantes de tercer grado de la escuela les preguntaron: “¿Cuál es tu momento favorito del año?”. Sus respuestas se muestran en esta tabla:</p>
+
+ <tabular top="medium" halign="center">
+   <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+     <cell right="minor">momento favorito del año</cell>
+     <cell right="minor">número de estudiantes</cell>
+   </row>
+   <row left="minor" bottom="minor">
+     <cell right="minor">invierno</cell>
+     <cell right="minor">24</cell>
+   </row>
+   <row left="minor" bottom="minor">
+     <cell right="minor">primavera</cell>
+     <cell right="minor">13</cell>
+   </row>
+   <row left="minor" bottom="minor">
+     <cell right="minor">verano</cell>
+     <cell right="minor">40</cell>
+   </row>
+   <row left="minor" bottom="minor">
+     <cell right="minor">otoño</cell>
+     <cell right="minor">22</cell>
+   </row>
+  </tabular>
+  <p>Usa los datos de esta tabla para hacer una gráfica de barras con escala.</p>
+  <image source="svg-source/tikz-file-148044">
+          <shortdescription>Cuadrícula</shortdescription>
+        </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <image source="svg-source/tikz-file-148045">
+          <shortdescription>Gráfico de barras azul sobre la época favorita del año.</shortdescription>
+        </image>
+      <image source="svg-source/tikz-file-148046">
+          <shortdescription>Gráfico de barras azul sobre la época favorita del año.</shortdescription>
+        </image>  
   </solution>
 
 
@@ -31,20 +58,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -116,14 +130,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -139,14 +145,11 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [++++++++++++++++++++++++++]
+    </p>
+    <p><em>MLR8 Discussion Supports.</em> During small-group discussion, invite students to take turns sharing their responses. Ask students to restate what they heard using precise mathematical language and their own words. Display the sentence frame: <em><q>Te escuché decir . . .</q></em> Original speakers can agree or clarify for their partner.</p>
+    <p><em>Advances: Listening, Speaking</em></p>
   </paragraphs>
 
 </postlude>
