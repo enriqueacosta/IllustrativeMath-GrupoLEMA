@@ -19,13 +19,13 @@
     <li><p>Intercambien roles y repitan estos pasos.</p>     
     </li>
   </ol>
-  <sidebyside>
+  <sidebyside component="libroTrabajo">
         <image source="svg-source/tikz-file-148612">
         <shortdescription>Cuadrícula.</shortdescription></image>
         <image source="svg-source/tikz-file-148613">
         <shortdescription>Cuadrícula.</shortdescription></image>
       </sidebyside>
-      <image source="png-source/Kinder.Unit6.Lesson10.Activity2.png" width="30%">
+      <image source="png-source/Kinder.Unit6.Lesson10.Activity2.png" width="30%" component="web">
         <shortdescription>Dos niñas escribiendo en un papel.</shortdescription></image>  
 </statement>
 
@@ -53,14 +53,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-      </li>-->
-       <!--<li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -81,9 +73,7 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-queHice-mat.ptx"/>  -->
+      <xi:include href="./act-queHice-mat.ptx"/> 
     <!-- <xi:include href="./act-queHice-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -124,14 +114,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <!--<paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>-->
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -142,14 +124,6 @@
       </li>
     </ul>
   </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <!--<paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
-
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
