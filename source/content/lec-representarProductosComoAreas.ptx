@@ -63,19 +63,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-emparejarExpresionesConAreas-mat.ptx"/>
-        <xi:include href="./act-emparejarExpresionesConAreas-matCentros.ptx"/>
+        <!--<xi:include href="./act-emparejarExpresionesConAreas-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-crearAPartirDeExpresiones-mat.ptx"/>
-        <xi:include href="./act-crearAPartirDeExpresiones-matCentros.ptx"/>
+        <!--<xi:include href="./act-crearAPartirDeExpresiones-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -128,7 +127,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-representarProductosComoAreas-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-representarProductosComoAreas-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->

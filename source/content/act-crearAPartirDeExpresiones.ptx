@@ -18,7 +18,7 @@
             <li><m>7\times 4</m></li>
             <li><m>3\times 2</m></li>
           </ol>
-          <image source="svg-source/tikz-file-148622">
+          <image source="svg-source/tikz-file-148622" component="libroTrabajo">
           <shortdescription>Cuadrícula.</shortdescription></image>
         </sidebyside>
       </sbsgroup>
@@ -59,14 +59,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-7-b" text="custom">3.MD.C.7.b</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-      </li>-->
-       <!--<li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -86,10 +78,9 @@
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
+    <title><custom ref="materials-actividad-titulo"/></title>    
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-crearAPartirDeExpresiones-mat.ptx"/>  -->
+    <xi:include href="./act-crearAPartirDeExpresiones-mat.ptx"/>
     <!-- <xi:include href="./act-crearAPartirDeExpresiones-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -126,14 +117,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <!--<paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>-->
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -160,14 +143,6 @@
       </li>
     </ul>
   </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <!--<paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
-
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
