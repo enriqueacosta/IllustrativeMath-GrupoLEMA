@@ -78,7 +78,7 @@ def extract_statement(file_path, xml_id, font_size):
         os.chdir(work_dir)
 
         # Read the content of the LaTeX input file
-        with open(file_name, 'r') as file:
+        with open(file_name, 'r', encoding='utf-8') as file:
             content = file.read()
 
         # Regular expression to match the block with the specific id-string
@@ -97,7 +97,7 @@ def extract_statement(file_path, xml_id, font_size):
             texto = match.group(0).strip()
             # Save the output to a file named based on the xml_id
             output_file_name = f"{xml_id}.tex"
-            with open(output_file_name, "w") as output_file:
+            with open(output_file_name, "w", encoding='utf-8') as output_file:
                 output_file.write("\\documentclass[" + font_size + "]{extarticle}\n")
                 output_file.write("\\input{" + preamble_file + "}\n")
                 output_file.write("\\begin{document}\n")
@@ -106,7 +106,7 @@ def extract_statement(file_path, xml_id, font_size):
 
             # Post-processing:
             # Replace \includegraphics[width=\linewidth] with \includegraphics[max width=\linewidth, center]
-            with open(output_file_name, "r") as output_file:
+            with open(output_file_name, "r", encoding='utf-8') as output_file:
                 file_content = output_file.read()
             modified_content = re.sub(
                 r"\\includegraphics\[width=\\linewidth\]",
@@ -114,7 +114,7 @@ def extract_statement(file_path, xml_id, font_size):
                 file_content
             )
             # Write the modified content back to the file
-            with open(output_file_name, "w") as output_file:
+            with open(output_file_name, "w", encoding='utf-8') as output_file:
                 output_file.write(modified_content)
 
             # Run pdflatex twice on the file

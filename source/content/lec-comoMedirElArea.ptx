@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Usemos fichas cuadradas para medir el área.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -68,19 +68,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-construirYComparar-mat.ptx"/>
-        <xi:include href="./act-construirYComparar-matCentros.ptx"/>
+        <!--<xi:include href="./act-construirYComparar-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-usarFichasCuadradasMedirElArea-mat.ptx"/>
-        <xi:include href="./act-usarFichasCuadradasMedirElArea-matCentros.ptx"/>
+        <!--<xi:include href="./act-usarFichasCuadradasMedirElArea-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -136,7 +135,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-comoMedirElArea-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-comoMedirElArea-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->

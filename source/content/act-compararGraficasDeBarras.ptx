@@ -2,10 +2,20 @@
 
 <activity xml:id="act-compararGraficasDeBarras" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Comparemos gráficas de barras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>A los estudiantes de una clase les preguntaron: “¿Cómo vas a casa desde la escuela?”. Sus respuestas se muestran en estas dos gráficas de barras:</p>
+  <sidebyside>
+    <image source="svg-source/tikz-file-171609">
+        <shortdescription>Gráfico de barras azul sobre formas de ir a casa</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-171505">
+        <shortdescription>Gráfico de barras azul sobre formas de ir a casa</shortdescription>
+      </image>
+  </sidebyside>
+     <p>Discute con tu compañero: ¿En qué se parecen las dos gráficas? ¿En qué son diferentes?</p>
+  
 </statement>
 
 <solution>
@@ -31,20 +41,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-B" text="custom">3.MD.B</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>,
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -105,14 +107,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -124,26 +118,12 @@
       <li>Share and record responses.</li>
       <li>If it doesn't come up, elicit the idea that the scale on the second graph counts by 2.</li>
       <li>
-        <q>Cuando cada salto en la escala es un número diferente de 1, decimos que es una <strong>gráfica de barras con escala</strong></q>
+        <q>Cuando cada salto en la escala es un número diferente de 1, decimos que es una <term>gráfica de barras con escala</term></q>
       </li>
       <li>
         <q>¿Para qué sirve hacer una gráfica de barras con escala?</q>  (If you didn't want to count one by one. If you wanted to show larger numbers on your graph.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
