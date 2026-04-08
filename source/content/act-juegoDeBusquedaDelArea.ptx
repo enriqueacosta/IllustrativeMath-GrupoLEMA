@@ -2,7 +2,7 @@
 
 <activity xml:id="act-juegoDeBusquedaDelArea" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>Juego de búsqueda del área [OPTIONAL] [+++++++++++++++]</title>
+<title>Juego de búsqueda del área [OPCIONAL]</title>
 
 <statement>
   <p>Encuentra algunos objetos o espacios que medirías en pulgadas cuadradas, en centímetros cuadrados, en pies cuadrados o en yardas cuadradas.</p>
@@ -78,14 +78,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-      </li>-->
-       <!--<li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -104,14 +96,6 @@
   </paragraphs>
 
 
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-juegoDeBusquedaDelArea-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-juegoDeBusquedaDelArea-matCentros.ptx"/>  -->
-  </paragraphs>
 
   <!-- Launch -->
   <paragraphs>
@@ -148,14 +132,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <!--<paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>-->
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -170,21 +146,6 @@
       </li>
     </ul>
   </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <!--<paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <!--<paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
-
 </postlude>
 
 </activity>

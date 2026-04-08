@@ -78,14 +78,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-      </li>-->
-       <!--<li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -106,9 +98,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-cualUnidadCuadrada-mat.ptx"/>  -->
+    <xi:include href="./act-cualUnidadCuadrada-mat.ptx"/> 
     <!-- <xi:include href="./act-cualUnidadCuadrada-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -159,7 +150,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students choose a square unit that isn’t reasonable to use for the given area, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>Dime cómo pensaste cuáles unidades cuadradas usarías para medir esta área</q>
       </li>
@@ -179,13 +170,13 @@
         <q>¿Cómo pensaron en el área de cada objeto?</q>  (We thought about the size of the area we were measuring to decide which unit made sense. Then we thought about one unit, like one square foot, and then thought about what 3 square feet would be like.)
       </li>
       <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Es razonable pensar que esta cantidad de unidades cuadradas podría caber en esta área?</q></li>
-<li>
-<q>¿Por qué esto tendría sentido para esta área?</q></li>
-<li>
-<q>¿Cómo se imaginan que las unidades caben en esta área?</q></li>
-</ul>
+        <li>
+          <q>¿Es razonable pensar que esta cantidad de unidades cuadradas podría caber en esta área?</q></li>
+        <li>
+          <q>¿Por qué esto tendría sentido para esta área?</q></li>
+        <li>
+          <q>¿Cómo se imaginan que las unidades caben en esta área?</q></li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
