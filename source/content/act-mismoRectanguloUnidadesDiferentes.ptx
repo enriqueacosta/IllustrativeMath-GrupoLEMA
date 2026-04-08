@@ -6,6 +6,9 @@
 
 <statement>
   <p>Tu profesor te va a entregar dos tipos de papel cuadriculado. Úsalos para crear un rectángulo para cada expresión.</p>
+   <aside component="web">
+     <p>Copia para rayar en el libro de trabajo, o <url href="external/blm/pdf-source/MismoRectanguloUnidadesDiferentes.pdf">descarga para imprimir</url></p>
+  </aside>
   <p>Compañero 1: usa la cuadrícula 1.</p>
   <p>Compañero 2: usa la cuadrícula 2.</p>
   <ol>
@@ -48,14 +51,6 @@
         <custom ref="ccss-addressing"/>
         <xref ref="ccss-3-MD-C-6" text="custom">3.MD.C.6</xref>
       </li>
-      <!--<li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-      </li>-->
-       <!--<li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-      </li>-->
     </ul>
   </paragraphs>
 
@@ -75,10 +70,9 @@
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
+    <title><custom ref="materials-actividad-titulo"/></title>    
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-mismoRectanguloUnidadesDiferentes-mat.ptx"/>  -->
+    <xi:include href="./act-mismoRectanguloUnidadesDiferentes-mat.ptx"/> 
     <!-- <xi:include href="./act-mismoRectanguloUnidadesDiferentes-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -165,12 +159,6 @@
     <p>Advances: Listening, Speaking</p>
   </paragraphs>
 
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <!--<paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>-->
 
 </postlude>
 
