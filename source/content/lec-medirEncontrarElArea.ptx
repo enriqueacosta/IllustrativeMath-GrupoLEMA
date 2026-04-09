@@ -67,19 +67,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-medirEncontrarElArea-mat.ptx"/>
-        <xi:include href="./act-medirEncontrarElArea-matCentros.ptx"/>
+       <!-- <xi:include href="./act-medirEncontrarElArea-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-hacerUnRectangulo-mat.ptx"/>
-        <xi:include href="./act-hacerUnRectangulo-matCentros.ptx"/>
+        <!--<xi:include href="./act-hacerUnRectangulo-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -116,7 +115,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-medirEncontrarElArea-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-medirEncontrarElArea-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
