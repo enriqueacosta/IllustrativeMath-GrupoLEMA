@@ -6,6 +6,9 @@
 
 <statement>
   <p>Este es un diagrama de la nueva habitación de Tyler, su escritorio y su cama.</p>
+   <aside component="web">
+     <p>Dar una copia del plano a cada grupo de 2 o 4 estudiantes, <url href="external/blm/pdf-source/CamaYEscritorioNuevos.pdf">descarga para imprimir</url></p>
+  </aside>
   <image source="png-source/Floor Plan-2-01 Spanish.png">
         <shortdescription>Plano de habitación en L con medidas de los lados en pies</shortdescription>
       </image>
@@ -67,9 +70,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-camaYEscritorioNuevos-mat.ptx"/>  -->
+    <xi:include href="./act-camaYEscritorioNuevos-mat.ptx"/>  
     <!-- <xi:include href="./act-camaYEscritorioNuevos-matCentros.ptx"/>  -->
   </paragraphs>
 
