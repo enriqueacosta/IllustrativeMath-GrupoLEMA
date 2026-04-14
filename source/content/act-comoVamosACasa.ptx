@@ -16,7 +16,7 @@
   <image source="svg-source/tikz-file-148056">
         <shortdescription>Cuadrícula.</shortdescription>
   </image>
-<image source="png-source/CS Grade3.Lesson2.Bicycle.png" width="30%">
+<image source="png-source/CS Grade3.Lesson2.Bicycle.png" width="30%" component="web">
         <shortdescription>Bicicleta.</shortdescription>
   </image>
   
@@ -73,9 +73,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-comoVamosACasa-mat.ptx"/>  -->
+    <xi:include href="./act-comoVamosACasa-mat.ptx"/> 
     <!-- <xi:include href="./act-comoVamosACasa-matCentros.ptx"/>  -->
   </paragraphs>
 
