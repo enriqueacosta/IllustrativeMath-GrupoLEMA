@@ -73,19 +73,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-comoVamosACasa-mat.ptx"/>
-        <xi:include href="./act-comoVamosACasa-matCentros.ptx"/>
+        <!--<xi:include href="./act-comoVamosACasa-matCentros.ptx"/>-->
       </li>
-      <li>
+      <!--<li>
         <p>Actividad 2</p>
         <xi:include href="./act-preguntasSobreUnaGraficaDeBarras-mat.ptx"/>
         <xi:include href="./act-preguntasSobreUnaGraficaDeBarras-matCentros.ptx"/>
-      </li>
-    </ul>  -->
+      </li>-->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -123,7 +122,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-representarDatosYResolverProblemas-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-representarDatosYResolverProblemas-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -140,7 +139,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-representarDatosYResolverProblemas-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-representarDatosYResolverProblemas-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
