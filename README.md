@@ -1,6 +1,12 @@
 # IllustrativeMath-GrupoLEMA
 
-Prototipo [Pretext](https://pretextbook.org) del material de matemáticas de [Illustrative Mathematics®](https://curriculum.illustrativemathematics.org), adaptado y completo en español.
+Versión [Pretext](https://pretextbook.org) del material de matemáticas de [Illustrative Mathematics®](https://curriculum.illustrativemathematics.org), adaptado y completo en español.
+
+Prototipo web de una unidad completa en español (grado 3 unidad 4) disponible en:
+*  [actividades para estudiantes](https://enriqueacosta.github.io/IllustrativeMath-GrupoLEMA/estudiante/gra3-uni4/index.html)
+*  [guías para profesores](https://enriqueacosta.github.io/IllustrativeMath-GrupoLEMA/profesor/gra3-uni4/index.html)
+
+Ambas versiones (estudiante y profesor) se generan a partir de los mismos archivos fuente. Los elementos que contienen `component="profesor"` solo son visibles en la versión del profesor, y los elementos que contienen `component="estudiante"` solo son visibles en la versión del estudiante.
 
 ## Para generar versiones web(html), pdf, latex
 
