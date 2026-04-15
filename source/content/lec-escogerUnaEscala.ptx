@@ -46,8 +46,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>,
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -66,10 +65,9 @@
   </paragraphs>
 
   <!-- Materiales requeridos -->
-  <paragraphs>
+  <!--<paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
-    <!-- <ul>
+     <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-representarFichasGeom-mat.ptx"/>
@@ -80,8 +78,8 @@
         <xi:include href="./act-representarMasDatosEnUnaGraficaDeBarrasConEscala-mat.ptx"/>
         <xi:include href="./act-representarMasDatosEnUnaGraficaDeBarrasConEscala-matCentros.ptx"/>
       </li>
-    </ul>  -->
-  </paragraphs>
+    </ul>  
+  </paragraphs>-->
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
@@ -118,7 +116,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-escogerUnaEscala-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-escogerUnaEscala-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -135,7 +133,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-escogerUnaEscala-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-escogerUnaEscala-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
