@@ -39,8 +39,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>,
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-3" text="custom">3.MD.B.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -62,9 +61,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[@@@@@@@@@@@@@@]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-hacerUnaGraficaDeBarrasConEscala-mat.ptx"/>  -->
+    <xi:include href="./act-hacerUnaGraficaDeBarrasConEscala-mat.ptx"/> 
     <!-- <xi:include href="./act-hacerUnaGraficaDeBarrasConEscala-matCentros.ptx"/>  -->
   </paragraphs>
 
