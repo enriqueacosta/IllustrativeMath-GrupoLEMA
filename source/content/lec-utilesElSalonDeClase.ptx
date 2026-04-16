@@ -172,47 +172,4 @@
 
 
 
-<!-- ======================================================================
-  Cool-down (problema de cierre / de salida)
-  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
-=========================================================================== -->
-<reading-questions xml:id="lec-utilesElSalonDeClase-cool" component="cools"> 
-  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
-  <title><custom ref="cooldown-titulo"/></title>
-  <title component="profesor"><nbsp />(5 mins)</title>
-
-
-  <!-- pdf imprimible. cool-UUUUUU debe coincidir con el xml:id adentro del archivo cool-UUUUUU.ptx -->
-  <url component="profesor" href="external/cool-pdf/cool-UUUUUU.pdf">
-    <custom ref="texto-link-pdf-cool-down"/>
-  </url>
-
-  <!-- Archivo con el contenido -->
-  <xi:include href="./cool-UUUUUU.ptx"/>
-</reading-questions>
-
-
-
-
-<!-- ================================================
-  Resumen de la lección (se usa a partir de grado 6)
-===================================================== -->
-<xi:include href="./lec-utilesElSalonDeClase-resumen.ptx"/>
-
-
-
-
-<!-- ======================================================================
-  Problemas de práctica (a nivel lección a partir de grado 6)
-=========================================================================== -->
-<exercises component="PPs" xml:id="lec-utilesElSalonDeClase-ProblemasPractica"> 
-  <title><custom ref="titulo-problemas-practica-lec"/></title>
-  <shorttitle><custom ref="titulo-corto-problemas-practica-lec"/></shorttitle>
-  <introduction><p><custom ref="PPs-lec-fraseIntro"/></p></introduction>
-
-  <!-- un archivo por problema -->
-  <xi:include href="./PP-HHHHHHHHHHHHHHHH.ptx"/>
-  
-</exercises>
-
 </subsection>
