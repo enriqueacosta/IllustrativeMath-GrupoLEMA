@@ -6,10 +6,32 @@
 ===============================================================  -->
 <project xml:id="cool-deportesFavoritos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Deportes favoritos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside widths="40% 60%">
+  <stack>
+  <p>A un grupo de estudiantes le preguntaron: “¿Cuál es tu deporte favorito?”.</p>
+ <p>Sus respuestas se muestran en esta gráfica de barras:</p> 
+  </stack>
+  <image source="svg-source/tikz-file-174487">
+        <shortdescription>grafico de barras sobre deportes favoritos</shortdescription>
+      </image>  
+  </sidebyside>
+ <p>Usa la gráfica para responder las preguntas.</p>
+ <ol>
+  <li>
+    <p>
+  ¿Cuántos estudiantes más escogieron fútbol que fútbol americano? Muestra cómo pensaste. Usa expresiones o ecuaciones.    
+    </p>
+  </li>
+  <li>
+    <p>
+  ¿Cuántos estudiantes menos escogieron hockey que baloncesto? Muestra cómo pensaste. Usa expresiones o ecuaciones.    
+    </p>
+  </li>
+ </ol>
+
 </statement>
 
 <solution>
@@ -25,28 +47,7 @@
    Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
 ===================================================================  -->
 <prelude component="profesor">
-  <!-- Estándares CCSS asociados -->
-  <paragraphs>
-    <title><custom ref="ccss-actividad-titulo"/></title> 
-    <ul>
-      <li>
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-    </ul>
-  </paragraphs>
+ 
 </prelude>
 
 
@@ -58,14 +59,20 @@
   <!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [++++++++++++++++++]
+    </p>
+    <p>Students show they understand which categories to compare, but they use numbers that are not based on the scale of the graph.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
     <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++++]
+    </p>
+    <p>Use the launch of the next day's activity to brainstorm tips for reading a scaled graph.</p>
   </paragraphs>
 
 </postlude>
