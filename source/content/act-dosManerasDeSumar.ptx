@@ -2,10 +2,28 @@
 
 <activity xml:id="act-dosManerasDeSumar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Dos maneras de sumar</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Andre encontró el valor de <m>276+118</m>. Este es su trabajo.</p>
+  <md number="no">
+    <mrow> 200+100\amp = 300</mrow>
+    <mrow> 70+10\amp = 80</mrow>
+    <mrow> 6+8\amp = 14</mrow>
+    <mrow>300+80+14\amp = 394</mrow>
+  </md>
+  <p>Clare encontró el valor de <m>276+118</m>. Este es su trabajo.</p>
+  <md number="no">
+    <mrow> 6+8\amp = 14</mrow>
+    <mrow> 70+10\amp = 80</mrow>
+    <mrow> 200+100\amp = 300</mrow>
+    <mrow>14+80+300\amp = 394</mrow>
+  </md>
+  <p>Con tu pareja, discute:</p>
+  <ul>
+    <li><p>¿En qué son diferentes el trabajo de Andre y el trabajo de Clare?</p></li>
+    <li><p>¿En qué se parecen?</p></li>
+  </ul>
 </statement>
 
 <solution>
@@ -25,21 +43,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-2" text="custom">2.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,16 +59,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to see that they can start adding from the largest place-value unit or from the smallest and still get the same sum. This understanding prepares students to use the standard algorithm for addition, which calls for starting with the ones.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-dosManerasDeSumar-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-dosManerasDeSumar-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -101,26 +95,17 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Invite students to share their responses.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>Si fueran a describir los pasos que Andre siguió para sumar y los pasos que Clare siguió para sumar, ¿cuáles serían estos?</q> (Andre added the hundreds, added the tens, added the ones, then added up all the parts to find the sum. Clare added the ones, added the tens, added the hundreds, then added up the parts to find the sum.)</li>
-<li>
-<q>¿Por qué si Andre empezó con las centenas y Clare empezó con las unidades, los dos encontraron la misma suma?</q> (It doesn’t matter the order that we add the numbers. If they’re the same numbers we’ll get the same sum.)</li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>Si fueran a describir los pasos que Andre siguió para sumar y los pasos que Clare siguió para sumar, ¿cuáles serían estos?</q> (Andre added the hundreds, added the tens, added the ones, then added up all the parts to find the sum. Clare added the ones, added the tens, added the hundreds, then added up the parts to find the sum.)</li>
+          <li><q>¿Por qué si Andre empezó con las centenas y Clare empezó con las unidades, los dos encontraron la misma suma?</q> (It doesn’t matter the order that we add the numbers. If they’re the same numbers we’ll get the same sum.)</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -129,14 +114,9 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p><em>MLR6 Three Reads:</em> Keep books or devices closed. Display only the problem stem, without revealing the question. “Vamos a leer este problema 3 veces” // “We are going to read this problem 3 times.” After the 1st Read: “Cuéntenle a su pareja de qué se trata esta situación” // “Tell your partner what this situation is about.” After the 2nd Read: “Hagan una lista de las cantidades. ¿Qué se puede contar o medir?” // “List the quantities. What can be counted or measured?” Reveal the question(s). After the 3rd Read: “¿Qué estrategias podemos usar para resolver este problema?” // “What strategies can we use to solve this problem?”</p>
+    <p><em>Advances: Reading, Representing</em></p>
   </paragraphs>
 
 </postlude>

@@ -2,10 +2,16 @@
 
 <activity xml:id="act-estrategiasSumar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Estrategias para sumar</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Encuentra el valor de cada suma de cualquier forma que tenga sentido para ti. Explica o muestra tu razonamiento.</p>
+  <ol>
+    <li><p><m>325+102</m></p></li>
+    <li><p><m>301+52</m></p></li>
+    <li><p><m>276+118</m></p></li>
+    <li><p><m>298+305</m></p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -13,7 +19,12 @@
     <ol>
       <li>427. Sample responses: I used base-ten blocks to make both numbers, then counted up the total.</li>
       <li>353. Sample response: I knew that 52 plus 1 is 53. I put that with the hundreds from the first number and got 353. </li>
-      <li>394. Sample reasoning: <m>200 + 100 = 300</m><m>70 + 10 = 80</m><m>6 + 8 = 14</m><m>300 + 80 + 14 = 394</m></li>
+      <li><p><line>394. Sample reasoning:</line>
+         <line><m>200 + 100 = 300</m></line>
+         <line><m>70 + 10 = 80</m></line>
+         <line><m>6 + 8 = 14</m></line>
+         <line><m>300 + 80 + 14 = 394</m></line>
+      </p></li>
       <li>603. Sample response: I added the hundreds to get 500. Then I added the tens to get 90 because 305 has a zero in the tens place. Then, I added the ones to get 13. This made a new ten, which then made a new hundred. After the new hundred, there were 3 ones and 6 hundreds, which makes 603.</li>
     </ol>
   </solution>
@@ -30,22 +41,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-2-NBT-A-2" text="custom">2.NBT.A.2</xref>
+      </li>     
     </ul>
   </paragraphs>
 
@@ -66,9 +63,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-estrategiasSumar-mat.ptx"/>  -->
+    <xi:include href="./act-estrategiasSumar-mat.ptx"/>  
     <!-- <xi:include href="./act-estrategiasSumar-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -97,12 +93,13 @@
         <q>Con su pareja, sumen estos números de cualquier forma que tenga sentido para ustedes. Expliquen o muestren su razonamiento</q>
       </li>
       <li>5-7 minutes: partner work time</li>
-      <li><p>Monitor for an expression for which students use a variety of representations, such as:</p><ul>
-<li>Using base-ten blocks</li>
-<li>Drawing a number line</li>
-<li>Writing their reasoning in words</li>
-<li>Writing equations</li>
-</ul>
+      <li><p>Monitor for an expression for which students use a variety of representations, such as:</p>
+        <ul>
+          <li>Using base-ten blocks</li>
+          <li>Drawing a number line</li>
+          <li>Writing their reasoning in words</li>
+          <li>Writing equations</li>
+        </ul>
       </li>
       <li>Identify students using different representations to share during synthesis.</li>
     </ul>
@@ -116,14 +113,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -136,18 +125,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Leverage choice around perceived challenge. Invite students to select 3 of the 4 expressions to complete. Encourage the completion of the last two expressions, as they will be the focus of the synthesis.</p>
+    <p>
+      <em>Supports accessibility for: Organization, Attention, Social-emotional skills</em>
+    </p>
   </paragraphs>
 
 </postlude>
