@@ -2,10 +2,15 @@
 
 <activity xml:id="act-diarioSobreConexiones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Diario sobre conexiones</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Responde alguno de estos temas de diario:</p>
+  <ul>
+    <li><p>¿Qué matemáticas hiciste hoy que pudiste conectar con algo que hiciste en un grado anterior?</p></li>
+    <li><p>Describe algo que entiendas muy bien después de la lección de hoy.</p></li>
+    <li><p>Describe algo que haya sido confuso o retador, o acerca de lo que quisieras aprender más.</p></li>
+  </ul>
 </statement>
 
 <solution>
@@ -25,22 +30,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>      
     </ul>
   </paragraphs>
 
@@ -55,16 +46,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to reflect on the strategies they used in the first activity. This is an opportunity to check in with students about the strategies from grade 2 they are comfortable using and those they find more challenging.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-diarioSobreConexiones-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-diarioSobreConexiones-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -101,14 +82,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -122,14 +95,25 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Invite students to begin partner interactions by repeating the question, <q>¿Qué matemáticas hicieron hoy que se conectaban con algo que hicieron en un grado anterior? Describan algo que entiendan muy bien después de la lección de hoy</q></p>
+    <p>
+      <em>Advances: Conversing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>
+      <line><em>Action and Expression: Develop Expression and Communication.</em></line>
+      <line>Provide students with alternatives to writing on paper: students can share their response to the prompt orally, with the option of using manipulatives, instead of writing it on paper.</line>
+    </p>
+    <p>
+      <em>Supports accessibility for: Fine Motor Skills, Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>
