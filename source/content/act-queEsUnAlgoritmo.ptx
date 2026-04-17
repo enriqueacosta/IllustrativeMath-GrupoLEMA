@@ -2,16 +2,39 @@
 
 <activity xml:id="act-queEsUnAlgoritmo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Qué es un algoritmo?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tres estudiantes encontraron el valor de <m>362+354</m>. Este es su trabajo. Explica cómo funciona cada dibujo o método.</p>
+  <ol>
+    <li><p>El dibujo de Tyler</p>
+      <image source="svg-source/tikz-file-141685">
+        <shortdescription>Bloques de base diez representando la suma de 362 y 354</shortdescription>
+      </image>
+    </li>
+    <li><p>El método de Lin</p>
+      <image source="svg-source/tikz-file-147404">
+        <shortdescription>Suma vertical por valor posicional de 362 y 354</shortdescription>
+      </image>
+    </li>
+    <li><p>El método de Han</p>
+      <image source="svg-source/tikz-file-147405">
+        <shortdescription>Suma vertical tradicional de 362 y 354</shortdescription>
+      </image>
+    </li>
+  </ol>
+  <sidebyside widths="70% 30%">
+    <p></p>
+    <image source="png-source/Grade3.Unit3.SectionB.Lesson5.png">
+        <shortdescription>Bloques de base diez</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ol>
+    <ol>
       <li>Tyler represented each number he was adding with base-ten blocks. He kept hundreds with hundreds, tens with tens, and ones with ones. He saw that there were 7 hundreds because he was able to make another hundred out of 10 tens. That left him with 1 ten and 6 ones. So, the answer was 716. </li>
       <li>Lin wrote each number in expanded form and stacked them on top of each other. Then, she added hundreds with hundreds, tens with tens, and ones with ones. Then, she added up all the parts to get the total.</li>
       <li>Han wrote the numbers stacked on each other so the ones lined up, the tens lined up, and the hundreds lined up. He added the ones, then the tens, then the hundreds. After he added all the places he adds the digits in each column to get the sum.</li>
@@ -30,21 +53,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -59,16 +68,15 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>In this activity, students use their knowledge of base-ten representations and place value to make sense of two addition algorithms. One algorithm shows the addends in expanded form. Both algorithms show the sums of ones, tens, and hundreds separately, but display these partial sums differently. Students notice that both algorithms show hundreds added to hundreds, tens to tens, and ones to ones, regardless of order. In the synthesis, introduce the term <q>algoritmo</q></p>
+    <p>In this activity, students use their knowledge of base-ten representations and place value to make sense of two addition algorithms. One algorithm shows the addends in expanded form. Both algorithms show the sums of ones, tens, and hundreds separately, but display these partial sums differently. Students notice that both algorithms show hundreds added to hundreds, tens to tens, and ones to ones, regardless of order. In the synthesis, introduce the term <q>algoritmo</q>.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-queEsUnAlgoritmo-mat.ptx"/>  -->
+    <xi:include href="./act-queEsUnAlgoritmo-mat.ptx"/> 
     <!-- <xi:include href="./act-queEsUnAlgoritmo-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -79,9 +87,7 @@
     <ul>
       <li>Groups of 2</li>
       <li>Give students access to base-ten blocks</li>
-      <li> En una lección anterior, exploramos muchas formas de encontrar el valor de una suma. Por un minuto, observen cómo estos 3 estudiantes sumaron <span class="math">\(362+354\)</span> // 
-        <q>In an earlier lesson, we saw many ways to find the value of a sum. Take a minute to look at how these 3 students added <span class="math">\(362+354\)</span>.</q>
-      </li>
+      <li> En una lección anterior, exploramos muchas formas de encontrar el valor de una suma. Por un minuto, observen cómo estos 3 estudiantes sumaron <m>362+354</m></li>
       <li>1 minute: quiet think time</li>
     </ul>
   </paragraphs>
@@ -112,7 +118,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don't explain one of the written algorithms, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Qué hizo Lin (o Han) para sumar los números?</q>
       </li>
@@ -129,20 +135,17 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>For each method, ask a student share their explanation. As students share, record the sequence of steps they describe in their explanation.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q></li>
-<li>
-<q>¿Alguien tuvo una idea similar, pero la explicaría de otra forma?</q></li>
-<li>
-<q>¿Alguien explicó el método de otra forma?</q></li>
-<li>
-<q>¿Alguien quiere agregar algo a la explicación de <fillin/>?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Alguien puede expresar el razonamiento de <fillin/> de otra forma?</q></li>
+          <li><q>¿Alguien tuvo una idea similar, pero la explicaría de otra forma?</q></li>
+          <li><q>¿Alguien explicó el método de otra forma?</q></li>
+          <li><q>¿Alguien quiere agregar algo a la explicación de <fillin/>?</q></li>
+        </ul>
       </li>
       <li>As students add on, edit the steps so the class is in agreement about how each method works.</li>
       <li>
-        <q>Lin y Han usaron <strong>algoritmos</strong> para resolver este problema. Un algoritmo es una serie de pasos que, si se siguen correctamente, siempre funciona</q>
+        <q>Lin y Han usaron <term>algoritmos</term> para resolver este problema. Un algoritmo es una serie de pasos que, si se siguen correctamente, siempre funciona</q>
       </li>
       <li>
         <q>¿En qué se parecen los algoritmos de Lin y Han?</q>  (They both add ones to ones, tens to tens, and hundreds to hundreds.)
@@ -150,10 +153,10 @@
       <li>
         <q>¿En qué son diferentes los algoritmos?</q>  (Lin writes the number in expanded form, but Han didn’t. Lin hasn't added the sums of hundreds, tens, and ones, but Han has.)
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Podemos saber en qué posición empezó Lin? ¿Por qué sí o por qué no?</q> (We can’t really tell with Lin’s method because of how the numbers are next to each other. She might have started with the ones or the hundreds. No matter which place she starts with she would get the same sum.)</li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Podemos saber en qué posición empezó Lin? ¿Por qué sí o por qué no?</q> (We can’t really tell with Lin’s method because of how the numbers are next to each other. She might have started with the ones or the hundreds. No matter which place she starts with she would get the same sum.)</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -161,15 +164,9 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p><em>MLR7 Compare and Connect.</em> Synthesis: Invite groups to prepare a visual display that shows the strategy they used to find the value of the sums. Encourage students to include details that will help others interpret their thinking. For example, specific language, using different colors, shading, arrows, labels, notes, diagrams or drawings. Give students time to investigate each others’ work. During the whole-class discussion, ask students, <q>¿Qué tenían en común las representaciones?</q> // <q>What did the representations have in common?</q>, <q>¿En qué eran diferentes?</q> // <q>How were they different?</q>, <q>¿Cómo se veía la suma total en cada método?</q> // <q>How did the total sum show up in each method?</q></p>
+    <p><em>Advances: Representing, Conversing</em></p>
   </paragraphs>
 
 </postlude>
