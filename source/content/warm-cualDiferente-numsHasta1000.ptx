@@ -7,16 +7,31 @@
 ===========================================================================  -->
 <exploration xml:id="warm-cualDiferente-numsHasta1000" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cuál es diferente: Números hasta 1,000</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es diferente?</p>
+  <sbsgroup widths="5% 60% 5% 30%">
+    <sidebyside>
+      <p>A.</p>
+      <image source="svg-source/tikz-file-148937">
+      <shortdescription>3 bloques de 100 unidades, junto con 7 bloques de 10 unidades</shortdescription></image>
+      <p>B.</p>
+      <p><m>300+70+1</m></p>
+    </sidebyside>
+    <sidebyside>
+      <p>C.</p>
+      <p><m>300+60+10</m></p>
+      <p>D.</p>
+      <p><m>400-30</m></p>    
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ul>
+    <ul>
       <li>A is the only one that is not an expression.</li>
       <li>B is the only one whose value isn't 370.</li>
       <li>C is the only one where the tens aren’t together.</li>
@@ -34,23 +49,10 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-1" text="custom">2.NBT.A.1</xref>,
+        <xref ref="ccss-2-NBT-A-3" text="custom">2.NBT.A.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -66,13 +68,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This warm-up prompts students to compare numbers represented in different ways. It gives the teacher an opportunity to hear how students use terminology and talk about characteristics of the items in comparison to one another. During the synthesis, ask students to explain the meaning of any terminology they use, such as place value, hundreds, tens, ones, sum, or base-ten diagram.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-cualDiferente-numsHasta1000-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -110,13 +105,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -126,25 +114,12 @@
         <q>¿Qué tienen en común todas estas maneras de mostrar números?</q>  (The parts of the number have been separated into hundreds, tens, and ones.)
       </li>
       <li>
-        <q>Recuerden que la <strong>forma desarrollada </strong>es una manera específica de escribir un número como una suma de centenas, decenas y unidades. Está escrita como la suma de los valores de cada dígito, como en B</q>
+        <q>Recuerden que la <term>forma desarrollada</term> es una manera específica de escribir un número como una suma de centenas, decenas y unidades. Está escrita como la suma de los valores de cada dígito, como en B</q>.
       </li>
       <li>
-        <q>¿Cómo escribirían 482 en forma desarrollada?</q>  // "How would we write 482 in expanded form? <m>(400 + 80 + 2)</m>
+        <q>¿Cómo escribirían 482 en forma desarrollada?</q> <m>(400 + 80 + 2)</m>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>

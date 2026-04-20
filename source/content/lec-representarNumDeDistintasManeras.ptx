@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 1 </shorttitle>
 <title>Lección 1 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Representemos números de distintas maneras</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Representemos números de distintas maneras.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[+++++++++++++++++]</p></li>
+    <li><p>Represent numbers to 1,000 in different ways using place value understanding.</p></li>
   </ul>
 </objectives>
 
@@ -38,24 +39,15 @@
   <!-- Estándares CCSS asociados -->
   <paragraphs>
     <title><custom ref="ccss-leccion-titulo"/></title> 
-    <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+    <ul>      
       <li>
         <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-1" text="custom">2.NBT.A.1</xref>,
+        <xref ref="ccss-2-NBT-A-3" text="custom">2.NBT.A.3</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-2" text="custom">2.NBT.A.2</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +68,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
-        <xi:include href="./act-numsEnSusDiferentesFormas-mat.ptx"/>
-        <xi:include href="./act-numsEnSusDiferentesFormas-matCentros.ptx"/>
+        <xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas-mat.ptx"/>
+        <!--<xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-mat.ptx"/>
-        <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-matCentros.ptx"/>
+        <!--<xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,7 +87,7 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>Prior to this grade, students represented numbers within 1,000 using number names, base-ten blocks and diagrams, and expanded form. They used place value to compose and decompose numbers within 1,000.</p>
-<p>In this lesson, students revisit these familiar representations and ways of reasoning about numbers as they work to build fluency with addition and subtraction within 1,000. The base-ten diagrams and the expanded form will continue to be used to support students throughout this unit. Give students access to base-ten blocks, in case requested.</p>
+    <p>In this lesson, students revisit these familiar representations and ways of reasoning about numbers as they work to build fluency with addition and subtraction within 1,000. The base-ten diagrams and the expanded form will continue to be used to support students throughout this unit. Give students access to base-ten blocks, in case requested.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -125,17 +116,17 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-representarNumDeDistintasManeras-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-representarNumDeDistintasManeras-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
   <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
-  <xi:include href="./act-numsEnSusDiferentesFormas.ptx"/> 
+  <xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas.ptx"/> 
 
   <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
-  <!-- <xi:include href="./act-numsEnSusDiferentesFormas-reto.ptx"/>  -->
+  <!-- <xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas-reto.ptx"/>  -->
 </subsubsection>
 
 
@@ -155,26 +146,19 @@
   <!-- <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-reto.ptx"/>  -->
 </subsubsection>
 
-
-<!-- ============================================ 
-  Actividad 3
-=================================================  -->
-
-
-
 <!-- ============================================ 
   Síntesis de la lección (discusión de cierre)
 =================================================  -->
 <subsubsection xml:id="lec-representarNumDeDistintasManeras-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
-  <p>Display: 253</p>
-<p><q>Hoy descompusimos números de muchas maneras diferentes. ¿Cuáles son algunas de las maneras en las que podemos descomponer 253?</q> (<span class="math">\(200+50+3\)</span>, <span class="math">\(200+40+13\)</span>, <span class="math">\(100+150+3\)</span>)</p>
-<p>Display: <m>253 + 134</m></p>
-<p><q>Si estuvieran sumando 253 y 134, ¿qué manera de descomponer los números creen que les ayudaría más? ¿Por qué?</q> (I think decomposing them by hundreds, tens, and ones would be most helpful so you could add hundreds and hundreds, tens and tens, and ones and ones.) </p>
+  <p>Display: <m>253</m></p>
+  <p><q>Hoy descompusimos números de muchas maneras diferentes. ¿Cuáles son algunas de las maneras en las que podemos descomponer 253?</q> (<m>200+50+3</m>, <m>200+40+13</m>, <m>100+150+3</m>)</p>
+  <p>Display: <m>253 + 134</m></p>
+  <p><q>Si estuvieran sumando 253 y 134, ¿qué manera de descomponer los números creen que les ayudaría más? ¿Por qué?</q> (I think decomposing them by hundreds, tens, and ones would be most helpful so you could add hundreds and hundreds, tens and tens, and ones and ones.) </p>
 
 </subsubsection>
 

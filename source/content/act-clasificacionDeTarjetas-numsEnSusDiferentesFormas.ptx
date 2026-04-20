@@ -1,17 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<activity xml:id="act-numsEnSusDiferentesFormas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+<activity xml:id="act-clasificacionDeTarjetas-numsEnSusDiferentesFormas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Clasificación de tarjetas: Números en sus diferentes formas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar varias tarjetas que muestran números de distintas formas.</p>
+  <aside component="web">
+     <p>Versión PDF, <url href="external/blm/pdf-source/NumerosDiferentesFormas.pdf">descargar para imprimir.</url></p>
+  </aside>
+  <p>Agrupa las tarjetas que representen el mismo número. Anota tus grupos acá. Prepárate para explicar tu razonamiento.</p>
+  <image source="png-source/Card Sort_ Numbers in Their Different Forms Spanish.png">
+      <shortdescription>Tabla con tarjetas para enlazar.</shortdescription></image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>A, G, and L B and H C and F E and K I, D, and J</p>
-<p>Sample response: I know that C and F match because 371 has 3 hundreds, 7 tens, and 1 one, and that’s what I see in the base-ten diagram.</p>
+    <p><line>A, G, and L</line>
+      <line>B and H</line>
+      <line>C and F</line>
+      <line>E and K</line>
+      <line>I, D, and J</line>
+    </p>
+    <p>Sample response: I know that C and F match because 371 has 3 hundreds, 7 tens, and 1 one, and that’s what I see in the base-ten diagram.</p>
   </solution>
 
 
@@ -24,23 +35,13 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-3" text="custom">2.NBT.A.3</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-2" text="custom">2.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -62,10 +63,9 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-numsEnSusDiferentesFormas-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-numsEnSusDiferentesFormas-matCentros.ptx"/>  -->
+    <xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas-mat.ptx"/>
+    <!-- <xi:include href="./act-clasificacionDeTarjetas-numsEnSusDiferentesFormas-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -85,9 +85,7 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li> Estas tarjetas muestran números de distintas formas. Agrupen las tarjetas que correspondan. Trabajen con su pareja para explicar sus agrupaciones // 
-        <q>This set of cards includes numbers in different forms. Find the cards that match. Work with your partner to explain your matches.</q>
-      </li>
+      <li><q>Estas tarjetas muestran números de distintas formas. Agrupen las tarjetas que correspondan. Trabajen con su pareja para explicar sus agrupaciones</q></li>
       <li>8 minutes: partner work time</li>
     </ul>
   </paragraphs>
@@ -105,7 +103,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don't match base-ten numerals to the other representations, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Qué representa cada dígito del número?</q>
       </li>
@@ -131,14 +129,17 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Students should take turns finding a match and explaining their reasoning to their partner. Display the following sentence frames for all to see: <q>Observé que <fillin characters="5" />, entonces agrupé...” // “I noticed <fillin characters="5" />, so I matched...”</q> Encourage students to challenge each other when they disagree.</p>
+    <p><em>Advances: Listening, Speaking</em></p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
+  <paragraphs><p>[+++++++++++++++++]</p>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Chunk this task into more manageable parts. Give students a subset of the cards to start with and introduce the remaining cards once students have completed their initial set of matches.</p>
+    <p><em>Supports accessibility for: Attention, Visual-Spatial Processing</em></p>
   </paragraphs>
 
 </postlude>

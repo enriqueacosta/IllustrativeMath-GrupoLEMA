@@ -2,24 +2,39 @@
 
 <activity xml:id="act-mesaRedondaDeNumEnDistintasFormas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Mesa redonda de números en distintas formas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar una hoja de registro.</p>
+  <aside component="web">
+     <p>Versión PDF de la hoja de registro, <url href="external/blm/pdf-source/mesaredondaNumerosDiferentesFormas.pdf">descargar para imprimir.</url></p>
+  </aside>
+  <p>Parte 1</p>
+  <ol>
+    <li><p>En el recuadro 1, escribe un número de tres dígitos (haz una pausa para escuchar las instrucciones del profesor).</p></li>
+    <li><p>En el recuadro 2, muestra una manera de descomponer el número (haz una pausa para escuchar las instrucciones del profesor).</p></li>
+    <li><p>En el recuadro 3, muestra una manera de descomponer el número que sea diferente a la del recuadro 2 (haz una pausa para escuchar las instrucciones del profesor).</p></li>
+    <li><p>En el recuadro 4, muestra una manera de descomponer el número que sea diferente a la de los recuadros 2 y 3.</p></li>
+  </ol>
+  <p>Parte 2</p>
+  <ol>
+    <li><p>Observa las diferentes maneras en las que se descompuso tu número en tu hoja de registro. ¿Qué relaciones ves entre ellas?</p></li>
+    <li><p>Observa todas las hojas de registro de tu grupo. ¿Qué patrones observas en las maneras en las que los números se descomponen?</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>Part 1</p>
-<ol>
-      <li>485</li>
+    <p>Part 1</p>
+    <ol>
+      <li><m>485</m></li>
       <li><m>400 + 80 + 5</m></li>
       <li><m>300 + 180 + 5</m></li>
       <li><m>400 + 70 + 15</m></li>
     </ol>
-<p>Part 2</p>
-<ol>
+    <p>Part 2</p>
+    <ol>
       <li>Sample response: I can see the 80 in all the representations. It’s the digit 8 in the first one and the 80 in the second and third ones. In the last one it’s harder to see because it’s the 70 and the 10 from the 15.</li>
       <li>Sample response: All of the representations used hundreds, tens, and ones in some way to represent the number.</li>
     </ol>
@@ -35,23 +50,9 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-NBT-A-2" text="custom">2.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -73,9 +74,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-mat.ptx"/>  -->
+    <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-mat.ptx"/>
     <!-- <xi:include href="./act-mesaRedondaDeNumEnDistintasFormas-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -92,10 +92,9 @@
       <li>30 seconds: quiet think time</li>
       <li>Share and record responses.</li>
       <li>Give each student a copy of the blackline master.</li>
-      <li>
-        <q>Piensen en un número de tres dígitos. Lo van a usar en esta actividad</q>  // 
-        <q>Now write your number in the first box on your sheet.</q>
-      </li>
+      <li><q>Piensen en un número de tres dígitos. Lo van a usar en esta actividad</q></li>
+      <li>30 seconds: quiet think time.</li>
+      <li><q>Now write your number in the first box on your sheet.</q></li>
     </ul>
   </paragraphs>
 
@@ -104,39 +103,24 @@
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>Part 1
-</p>
-<ul>
-      <li>
-        <q>Pasen su hoja a la derecha y reciban la hoja de la izquierda. La hoja tiene un número en el recuadro 1. En el recuadro 2, muestren una forma en la que se pueda descomponer el número que les acaban de pasar</q>
-      </li>
+    <p>Part 1</p>
+    <ul>
+      <li><q>Pasen su hoja a la derecha y reciban la hoja de la izquierda. La hoja tiene un número en el recuadro 1. En el recuadro 2, muestren una forma en la que se pueda descomponer el número que les acaban de pasar</q></li>
       <li>1-2 minutes: independent work time</li>
-      <li>
-        <q>Pasen la hoja a la derecha y reciban la hoja de la izquierda. La hoja tiene un número en el recuadro 1 y una manera de descomponerlo en el recuadro 2. En el recuadro 3, muestren otra manera en la que se puede descomponer el número que les acaban de pasar</q>
-      </li>
+      <li><q>Pasen la hoja a la derecha y reciban la hoja de la izquierda. La hoja tiene un número en el recuadro 1 y una manera de descomponerlo en el recuadro 2. En el recuadro 3, muestren otra manera en la que se puede descomponer el número que les acaban de pasar</q></li>
       <li>1-2 minutes: independent work time</li>
-      <li>
-        <q>Pasen la hoja a la derecha y reciban la hoja de la izquierda. La hoja muestra dos maneras en las que se puede descomponer un número. En el recuadro 4, muestren otra manera en la que se puede descomponer ese número</q>
-      </li>
+      <li><q>Pasen la hoja a la derecha y reciban la hoja de la izquierda. La hoja muestra dos maneras en las que se puede descomponer un número. En el recuadro 4, muestren otra manera en la que se puede descomponer ese número</q></li>
       <li>1-2 minutes: independent work time</li>
-      <li>
-        <q>Pasen su hoja una vez más. Deben recibir su número original de vuelta</q>
-      </li>
-      <li>
-        <q>Hablen con su grupo sobre cuál recuadro fue el más difícil de completar. Compartan ideas sobre qué les sirvió más durante esta actividad</q>
-      </li>
+      <li><q>Pasen su hoja una vez más. Deben recibir su número original de vuelta</q></li>
+      <li><q>Hablen con su grupo sobre cuál recuadro fue el más difícil de completar. Compartan ideas sobre qué les sirvió más durante esta actividad</q></li>
       <li>2-3 minutes: group discussion</li>
       <li>Share responses.</li>
     </ul>
-<p>Part 2</p>
-<ul>
-      <li>
-        <q>Miren lo que se escribió para representar su número. Escriban todas las relaciones que observen entre las distintas maneras en las que el número se representó</q>
-      </li>
+    <p>Part 2</p>
+    <ul>
+      <li><q>Miren lo que se escribió para representar su número. Escriban todas las relaciones que observen entre las distintas maneras en las que el número se representó</q></li>
       <li>3 minutes: independent work time</li>
-      <li>
-        <q>Ahora, miren todas las hojas de registro. ¿Qué patrones observan en las maneras en las que los números se descompusieron?</q>
-      </li>
+      <li><q>Ahora, miren todas las hojas de registro. ¿Qué patrones observan en las maneras en las que los números se descompusieron?</q></li>
       <li>2-3 minutes: group discussion</li>
     </ul>
   </paragraphs>
@@ -154,7 +138,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don't generate decompositions based on place value, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Cómo descompusiste el número?</q>
       </li>
@@ -172,20 +156,6 @@
     <ul>
       <li>Have groups share the connections they saw across the sheets.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
