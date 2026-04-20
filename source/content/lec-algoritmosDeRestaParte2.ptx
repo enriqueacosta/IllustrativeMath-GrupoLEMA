@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<subsection xml:id="lec-algoritmosDeRestaParte2" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<shorttitle>Lección 9 </shorttitle>
+<title>Lección 9 -<nbsp/></title>
+<title>[@@@@@@@@@]</title>
+
+
+<!-- ============================================ 
+  Objetivos de aprendizaje                        
+=================================================  -->
+
+<!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
+<introduction component="est-goal"> 
+  <p>[@@@@@@@@@]</p>
+</introduction>
+
+<!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
+<!-- <objectives component="estudiante">
+  <ul>
+    <li>[@@@@@@@@@@@@@@]</li>
+  </ul>
+</objectives> -->
+
+<!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
+<objectives component="profesor">
+  <ul>
+    <li>[@@@@@@@@@]</li>
+  </ul>
+</objectives>
+
+
+<!-- ============================================ 
+  Introducción para el profesor                        
+=================================================  -->
+<introduction component="profesor">
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-leccion-titulo"/></title> 
+    <ul>
+      <li> 
+        <custom ref="ccss-addressing"/>
+        [^^^^^^^^^^^]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        [^^^^^^^^^^^]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        [^^^^^^^^^^^]
+        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+      </li>
+    </ul>
+    </paragraphs>
+
+  <!-- índice de la lección (automático) -->
+  <paragraphs>
+    <title><custom ref="timeline-leccion-titulo"/></title>
+    <list-of elements="subsubsection reading-questions" scope="subsection"/>
+  </paragraphs>
+
+  <!-- Propósito de la lección -->
+  <paragraphs>
+    <title><custom ref="purpose-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to subtract within 1,000 using a subtraction algorithm that records numbers in expanded form.</p>
+  </paragraphs>
+
+  <!-- Materiales requeridos -->
+  <paragraphs>
+    <title><custom ref="materials-leccion-titulo"/></title>
+    <p>[mmmmmmmmmm]</p>
+    <!-- <ul>
+      <li>
+        <p>Actividad 1</p>
+        <xi:include href="./act-revisarElProcesoDeUnaResta-mat.ptx"/>
+        <xi:include href="./act-revisarElProcesoDeUnaResta-matCentros.ptx"/>
+      </li>
+      <li>
+        <p>Actividad 2</p>
+        <xi:include href="./act-pruebaElAlgoritmo-mat.ptx"/>
+        <xi:include href="./act-pruebaElAlgoritmo-matCentros.ptx"/>
+      </li>
+    </ul>  -->
+  </paragraphs>
+  
+  <!-- Introducción de la lección (narrative) -->
+  <paragraphs>
+    <title><custom ref="narrative-leccion-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Previously, students learned to record subtraction using an algorithm in which the numbers are written in expanded form. They made connections between the structure and steps of the algorithm to those of base-ten diagrams that represent the same subtraction. In this lesson, students take a closer look at the algorithm and use it to find differences. They also examine a common error in subtracting numbers when decomposition of a place value unit is required. When students discuss shown work, they construct viable arguments and critique the reasoning of others (MP3).</p>
+  </paragraphs>
+  
+  <!-- Preguntas de reflexión profesor -->
+  <paragraphs>
+    <title><custom ref="reflection-quest-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>Today students were able to analyze a common error when subtracting within 1,000 before they used an algorithm to subtract. How did the analysis of the error affect their work with subtracting within 1,000?</p>
+  </paragraphs>
+</introduction>
+
+
+<!-- ============================================ 
+  Calentamiento                       
+=================================================  -->
+<subsubsection xml:id="lec-algoritmosDeRestaParte2-warm" component="warms">
+  <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
+  <title><custom ref="warm-up-leccion-titulo"/></title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(10 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./warm-verdaderoFalso-sePuedeCambiarElOrden.ptx"/> 
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 1
+=================================================  -->
+<subsubsection xml:id="lec-algoritmosDeRestaParte2-act1" component="acts-no-rayable">
+  <shorttitle>Actividad 1</shorttitle>
+  <title>Actividad 1</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(15 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-revisarElProcesoDeUnaResta.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-revisarElProcesoDeUnaResta-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 2
+=================================================  -->
+<subsubsection xml:id="lec-algoritmosDeRestaParte2-act2" component="acts-no-rayable">
+  <shorttitle>Actividad 2</shorttitle>
+  <title>Actividad 2</title>
+  <!-- Tiempo en el título que solo ve el profesor -->
+  <title component="profesor"><nbsp/>(20 mins)</title>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./act-pruebaElAlgoritmo.ptx"/> 
+
+  <!-- si hay pregunta reto (Are your ready for more), crear el archivo -reto.ptx (usar el template asociado) -->
+  <!-- <xi:include href="./act-pruebaElAlgoritmo-reto.ptx"/>  -->
+</subsubsection>
+
+
+<!-- ============================================ 
+  Actividad 3
+=================================================  -->
+
+
+
+<!-- ============================================ 
+  Síntesis de la lección (discusión de cierre)
+=================================================  -->
+<subsubsection xml:id="lec-algoritmosDeRestaParte2-sintesis" component="profesor">
+  <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
+  <title><custom ref="synthesis-leccion-titulo"/></title>
+  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+
+  <p>[+++++++++++++++]</p>
+  <p>[@@@@@@@@] WARNING: Fix Image.</p>
+<p>[@@@@@@@@] WARNING: Fix Image.</p>
+<p>[@@@@@@@@] WARNING: Fix Image.</p>
+<p><q>Supongan que un compañero de clase dice que este problema se ha cambiado a un problema completamente diferente porque se tachó 832. ¿Cómo le explicarían los números tachados?</q> (The 832 is still there. It’s just been reorganized as 700 plus 120, which is 820, and then 820 plus 12 is 832. So, it’s still 832. It’s been grouped differently so we can subtract in every place value.)</p>
+
+</subsubsection>
+
+
+
+<!-- ======================================================================
+  Cool-down (problema de cierre / de salida)
+  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
+=========================================================================== -->
+<reading-questions xml:id="lec-algoritmosDeRestaParte2-cool" component="cools"> 
+  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
+  <title><custom ref="cooldown-titulo"/></title>
+  <title component="profesor"><nbsp />(5 mins)</title>
+
+
+  <!-- pdf imprimible. cool-comoRestoAndre debe coincidir con el xml:id adentro del archivo cool-comoRestoAndre.ptx -->
+  <url component="profesor" href="external/cool-pdf/cool-comoRestoAndre.pdf">
+    <custom ref="texto-link-pdf-cool-down"/>
+  </url>
+
+  <!-- Archivo con el contenido -->
+  <xi:include href="./cool-comoRestoAndre.ptx"/>
+</reading-questions>
+
+
+
+</subsection>
