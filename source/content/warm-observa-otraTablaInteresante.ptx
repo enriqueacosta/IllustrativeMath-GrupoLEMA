@@ -11,12 +11,62 @@
 
 <statement>
   <p>¿Qué observas? ¿Qué te preguntas?</p>
+  <tabular halign="center" valign="middle" top="medium" left="medium">
+    <row bottom="medium">
+      <cell right="medium"><alert>+</alert></cell>
+      <cell right="medium"><alert>98</alert></cell>
+      <cell right="medium"><alert>99</alert></cell>
+      <cell right="medium"><alert>100</alert></cell>
+      <cell right="medium"><alert>101</alert></cell>
+      <cell right="medium"><alert>102</alert></cell>
+    </row>
+    <row left="medium">
+      <cell right="medium" bottom="medium"><alert>98</alert></cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">197</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">199</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+    </row>
+    <row left="medium">
+      <cell right="medium" bottom="medium"><alert>99</alert></cell>
+      <cell right="minor" bottom="minor">197</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">199</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">201</cell>
+    </row>
+    <row left="medium">
+      <cell right="medium" bottom="medium"><alert>100</alert></cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">?</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">?</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+    </row>
+    <row left="medium">
+      <cell right="medium" bottom="medium"><alert>101</alert></cell>
+      <cell right="minor" bottom="minor">199</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">201</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">203</cell>
+    </row>
+    <row left="medium">
+      <cell right="medium" bottom="medium"><alert>102</alert></cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">201</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+      <cell right="minor" bottom="minor">203</cell>
+      <cell right="minor" bottom="minor"><nbsp/></cell>
+    </row>
+</tabular>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Students may notice:</p>
-<ul>
+    <ul>
       <li>The same numbers are across the top and along the left side.</li>
       <li>Every other cell is filled.</li>
       <li>There are two question marks in the table.</li>
@@ -24,8 +74,8 @@
       <li>The sums that make a diagonal line from lower left to upper right are the same number.</li>
       <li>All the sums are odd numbers.</li>
     </ul>
-<p>Students may wonder:</p>
-<ul>
+    <p>Students may wonder:</p>
+    <ul>
       <li>What numbers go in the cells with a question mark?</li>
       <li>Why do the numbers in the table go up by 2 from left to right and top to bottom?</li>
       <li>Why are the sums odd numbers?</li>
@@ -45,22 +95,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-OA-D-9" text="custom">3.OA.D.9</xref>
+      </li>   
     </ul>
   </paragraphs>
 
@@ -75,14 +111,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this warm-up is to elicit observations about patterns in sums of two- and three-digit addends in an addition table. The table is partially filled out to highlight some properties of operations. For example, the sums in the table can illustrate the commutative property (<m>99 + 98</m> and <m>98 + 99</m> both give 197). The numbers also prompt students to notice patterns in sums of odd and even numbers. For example, the sum of an odd number and an even one is always odd.</p>
-<p>While students may notice and wonder many things about the addition table, focus the discussion on the patterns in the table and possible explanations for them. When students make sense of patterns in sums and explain them in terms of the features of the addends and how they are added, they notice and use regularity in repeated reasoning (MP7).</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-observa-otraTablaInteresante-mat.ptx"/>  -->
+    <p>While students may notice and wonder many things about the addition table, focus the discussion on the patterns in the table and possible explanations for them. When students make sense of patterns in sums and explain them in terms of the features of the addends and how they are added, they notice and use regularity in repeated reasoning (MP7).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -120,13 +149,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -153,19 +175,6 @@
         <q>¿Las sumas o los sumandos son pares o impares? ¿Qué observan?</q>  (In each pair of addends, one number is even and the other number is odd. All the sums are odd.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
