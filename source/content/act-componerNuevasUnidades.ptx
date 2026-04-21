@@ -2,18 +2,59 @@
 
 <activity xml:id="act-componerNuevasUnidades" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Compongamos nuevas unidades</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Estos son dos algoritmos para sumar <m>365+182</m></p>
+  <p>El algoritmo de Han</p>
+  <image source="svg-source/tikz-file-178119">
+    <shortdescription>suma vertical de 365 con 182.</shortdescription>
+    </image>
+  <p>El algoritmo de Elena</p>
+  <sidebyside>
+    <image source="svg-source/tikz-file-178120">
+    <shortdescription>suma vertical de 365 con 182-unidades.</shortdescription>
+  </image>
+  <image source="svg-source/tikz-file-178121">
+    <shortdescription>suma vertical de 365 con 182-decenas.</shortdescription>
+  </image>
+  <image source="svg-source/tikz-file-178122">
+    <shortdescription>suma vertical de 365 con 182-centenas.</shortdescription>
+  </image>
+  </sidebyside>
+  <ol>
+    <li>
+      <p>¿Cómo muestran los algoritmos las 14 decenas de forma diferente?</p>
+    </li>
+    <li>
+      <p>Prueba el algoritmo de Elena para encontrar el valor de cada suma.</p>
+      <ol marker="a.">
+        <li><p><m>174+352</m></p></li>
+        <li><p><m>273+619</m></p></li>
+        <li><p><m>354+198</m></p></li>
+        <li><p><m>525+376</m></p></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li>In Han’s algorithm, the 14 tens were recorded as 140. In Elena’s algorithm, we record 4 in the tens place that represents 40 and 100 is placed at the top of the problem to show the new hundred.</li>
-      <li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Addition." role="image" src="../../../../../../figures/tikz-file-148951.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Addition." role="image" src="../../../../../../figures/tikz-file-148951.svg" width="80%"/>
+      <li>
+        <sidebyside>          
+            <ol marker="a.">
+              <li><p>526</p></li>
+              <li><p>892</p></li>
+              <li><p>552</p></li>
+              <li><p>901</p></li>
+            </ol>
+            <image source="svg-source/tikz-file-148951">
+              <shortdescription>suma vertical de 354 con 198.</shortdescription>
+            </image>
+        </sidebyside>
+        
       </li>
     </ol>
   </solution>
@@ -30,21 +71,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -60,16 +87,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to consider how the composition of new tens and hundreds are recorded in the algorithm they saw in the previous activity. Students interpret the work and thinking of others and discuss the similarities and differences in two different strategies for finding a sum (MP3). Students see that in Elena’s algorithm, when the sum of the digits in a place has more than one digit, a newly composed ten or hundred is recorded as <q>10</q> or <q>100</q> above the addends, while the remaining value is recorded as a single digit below the addends. The synthesis focuses on clarifying how to record newly composed units when adding two numbers. </p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-componerNuevasUnidades-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-componerNuevasUnidades-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -123,7 +140,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students do not record the newly composed tens or hundreds in the second and third problems, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Qué unidades nuevas tuviste que componer en este problema?</q>
       </li>
@@ -153,14 +170,13 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>
+      <em>MLR8 Discussion Supports.</em> Synthesis: Some students may benefit from the opportunity to rehearse what they will say with a partner before they share with the whole class.
+    </p>
+    <p>
+      <em>Advances: Speaking</em>
+    </p>
   </paragraphs>
 
 </postlude>
