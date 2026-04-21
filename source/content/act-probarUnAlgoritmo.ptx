@@ -2,10 +2,15 @@
 
 <activity xml:id="act-probarUnAlgoritmo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Probemos un algoritmo</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Prueba usar un algoritmo para encontrar el valor de cada suma. Muestra cómo pensaste. Organiza tu trabajo para que los demás puedan entenderlo.</p>
+  <ol>
+    <li><p><m>475+231</m></p></li>
+    <li><p><m>136+389</m></p></li>
+    <li><p><m>670+257</m></p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -30,21 +35,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -60,17 +51,16 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to try the algorithms they saw earlier in the lesson. The important thing is that they combine hundreds and hundreds, tens and tens, and ones and ones, which should be a familiar idea from grade 2. The synthesis provides an opportunity to show a different way of recording newly composed tens and hundreds when compositions are required, which will be discussed in more detail in subsequent lessons. Provide access to base-ten blocks for students to use to support their reasoning about the algorithms, in case requested.</p>
-<p>Students analyze and improve a given explanation of how to find a sum, filling in details and using more precise language to explain the calculation more fully (MP3, MP6).</p>
-<p>This activity uses <em>MLR3 Clarify, Critique, Correct</em>. <em>Advances: reading, writing, representing</em></p>
+    <p>Students analyze and improve a given explanation of how to find a sum, filling in details and using more precise language to explain the calculation more fully (MP3, MP6).</p>
+    <p>This activity uses <em>MLR3 Clarify, Critique, Correct</em>. <em>Advances: reading, writing, representing</em></p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-probarUnAlgoritmo-mat.ptx"/>  -->
+    <xi:include href="./act-probarUnAlgoritmo-mat.ptx"/>  
     <!-- <xi:include href="./act-probarUnAlgoritmo-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -82,7 +72,7 @@
       <li>Groups of 2</li>
       <li>Give students access to base-ten blocks.</li>
       <li>
-        <q>Ahora vamos a tener la oportunidad de probar los algoritmos que Lin y Han usaron en la actividad anterior</q>  // Now you are going to have a chance to try the algorithms that Lin and Han used in the last activity. Take a minute to think about which algorithm you want to use for each problem.
+        <q>Ahora vamos a tener la oportunidad de probar los algoritmos que Lin y Han usaron en la actividad anterior</q>. Take a minute to think about which algorithm you want to use for each problem.
       </li>
       <li>1 minute: quiet think time</li>
     </ul>
@@ -94,9 +84,7 @@
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li> Con su pareja, prueben un algoritmo para encontrar el valor de cada suma // 
-        <q>Work with your partner to try an algorithm to find the value of each sum.</q>
-      </li>
+      <li> Con su pareja, prueben un algoritmo para encontrar el valor de cada suma</li>
       <li>5 minutes: partner work time</li>
       <li>Monitor for students who use Lin’s algorithm and Han's algorithm on the last problem.</li>
     </ul>
@@ -110,14 +98,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -125,10 +105,12 @@
     <ul>
       <li>Select previously identified students to share their work on the last expression.</li>
     </ul>
-<p><strong>MLR3 Clarify, Critique, Correct</strong></p>
-<ul>
-      <li><p>Display the following partially correct answer and explanation: 
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Addition." role="image" src="../../../../../../figures/tikz-file-148939.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Addition." role="image" src="../../../../../../figures/tikz-file-148939.svg" width="80%"/> 
+    <p><alert>MLR3 Clarify, Critique, Correct</alert></p>
+    <ul>
+      <li><p>Display the following partially correct answer and explanation:</p>
+        <image source="svg-source/tikz-file-148939">
+        <shortdescription>Suma vertical</shortdescription>
+      </image>
       <p>I added the ones, the tens, and then hundreds.</p>
       </li>
       <li>Read the explanation aloud.</li>
@@ -140,10 +122,11 @@
       <li>
         <q>Con su pareja, escriban una explicación ajustada</q>
       </li>
-      <li><p>Display and review the following criteria:</p><ul>
-<li>Explanation for each step</li>
-<li>Words such as: first, next, then</li>
-</ul>
+      <li><p>Display and review the following criteria:</p>
+        <ul>
+          <li>Explanation for each step</li>
+          <li>Words such as: first, next, then</li>
+        </ul>
       </li>
       <li>3–5 minute: partner work time</li>
       <li>Select 1–2 groups to share their revised explanation with the class. Record responses as students share. (Sample explanation: First, I stacked the numbers vertically. Then, I added the ones to get 7 and recorded a 7 below the ones place. Next, I added 70 and 50 and got 120. I recorded 20 below the 7 and 100 below the 20. I added 600 and 200 to get 800 and recorded that below the 100. Then I added and wrote 927 as the answer.)</li>
@@ -156,18 +139,12 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Chunk this task into more manageable parts. Check in with students to provide feedback and encouragement after each chunk.</p>
+    <p><em>Supports accessibility for: Organization, Social-Emotional Functioning</em></p>
   </paragraphs>
 
 </postlude>
