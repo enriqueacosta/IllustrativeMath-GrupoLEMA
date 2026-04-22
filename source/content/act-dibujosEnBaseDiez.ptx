@@ -2,28 +2,59 @@
 
 <activity xml:id="act-dibujosEnBaseDiez" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Dibujos en base diez</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Jada y Han hicieron dibujos para mostrar cómo usaron los bloques en base diez para encontrar el valor de <m>262-135</m>. Estos son los dibujos.</p>
+      <p>El dibujo de Jada</p>
+      <image source="svg-source/tikz-file-136393">
+        <shortdescription>diagrama de resta con bloques en base diez</shortdescription>
+      </image>
+      <p>El dibujo de Han</p>
+      <image source="svg-source/tikz-file-158828">
+        <shortdescription>diagrama de resta con bloques en base diez</shortdescription>
+      </image>
+      <p>¿En qué se parecen los dibujos? ¿En qué son diferentes?</p>
+    </li>
+    <li><p>Estas son tres expresiones. Más abajo hay tres diagramas. Escribe cada expresión al lado del diagrama que la representa. Después, encuentra el valor de la expresión.</p>
+      <sidebyside>
+        <p><m>252-181</m></p>
+        <p><m>262-135</m></p>
+        <p><m>252-132</m></p>
+      </sidebyside>
+      <p>a.</p>
+      <image source="svg-source/tikz-file-136394">
+        <shortdescription>diagrama de resta con bloques en base diez</shortdescription>
+      </image>
+      <p>b.</p>
+      <image source="svg-source/tikz-file-131288">
+        <shortdescription>diagrama de resta con bloques en base diez</shortdescription>
+      </image>
+      <p>c.</p>
+      <image source="svg-source/tikz-file-136396">
+        <shortdescription>diagrama de resta con bloques en base diez</shortdescription>
+      </image>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample responses:</p><ul>
-<li>Alike: They both represent <m>262 - 135</m>. They both used a ten to get more ones so they could subtract 5 ones. Both ended up with 12 ones.</li>
-<li>Different: Jada broke a ten into ten ones. Han did too, but he kept them together like a ten.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>Alike: They both represent <m>262 - 135</m>. They both used a ten to get more ones so they could subtract 5 ones. Both ended up with 12 ones.</li>
+          <li>Different: Jada broke a ten into ten ones. Han did too, but he kept them together like a ten.</li>
+        </ul>
       </li>
-      <li><ol>
-<li>
-<m>262-135</m>, which is 127.</li>
-<li>
-<m>252-132</m>, which is 120.</li>
-<li>
-<m>252-181</m>, which is 71.</li>
-</ol>
+      <li>
+        <ol>
+          <li><m>262-135</m>, which is 127.</li>
+          <li><m>252-132</m>, which is 120.</li>
+          <li><m>252-181</m>, which is 71.</li>
+        </ol>
       </li>
     </ol>
   </solution>
@@ -40,21 +71,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -70,16 +87,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to make sense of drawings of base-ten blocks. Students compare two base-ten drawings. The first drawing is the same as what they saw in grade 2, where the tens block is decomposed into 10 individual ones and moved over to the ones place before subtracting the ones. In the second drawing, the tens block is moved over and partitioned into 10 parts but not decomposed into individual ones. The subtraction of ones is shown directly on the ten that was moved over. Students then match base-ten diagrams to subtraction expressions and subtract to find the value of each expression. This will be helpful in later lessons when students relate base-ten diagrams to written algorithms.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-dibujosEnBaseDiez-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-dibujosEnBaseDiez-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -121,14 +128,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -145,14 +144,9 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Some students may benefit from the opportunity to rehearse what they will say with a partner before they share with the whole class.</p>
+    <p><em>Advances: Speaking</em></p>
   </paragraphs>
 
 </postlude>
