@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 5 </shorttitle>
 <title>Lección 5 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Otro algoritmo de suma</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Aprendamos otro algoritmo para sumar.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[+++++++++++++++]</p></li>
+    <li><p>Relate written algorithms to each other using place value understanding.</p></li>
   </ul>
 </objectives>
 
@@ -41,22 +42,9 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>,  
+        <xref ref="ccss-3-OA-D-9" text="custom">3.OA.D.9</xref>
+      </li>      
     </ul>
     </paragraphs>
 
@@ -74,10 +62,9 @@
   </paragraphs>
 
   <!-- Materiales requeridos -->
-  <paragraphs>
+  <!-- <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-nuevoAlgoritmoDeSuma-mat.ptx"/>
@@ -88,8 +75,8 @@
         <xi:include href="./act-componerNuevasUnidades-mat.ptx"/>
         <xi:include href="./act-componerNuevasUnidades-matCentros.ptx"/>
       </li>
-    </ul>  -->
-  </paragraphs>
+    </ul>  
+  </paragraphs>-->
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
@@ -167,13 +154,13 @@
 <subsubsection xml:id="lec-otroAlgoritmoDeSuma-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display an expression from the last activity, such as, <m>174 + 352</m>.</p>
-<p><q>En esta lección, hemos sumado de derecha a izquierda, empezando en la posición de las unidades. Examinemos esta expresión otra vez. Pensemos qué pasa si sumamos de izquierda a derecha, empezando en la posición de las centenas</q></p>
-<p>Work with the class to find the sum, setting it up like Elena's algorithm, but start by adding the hundreds.</p>
-<p><q>¿Qué pasaría después? ¿Podemos sumar de izquierda a derecha</q> (If we worked from left to right, we would have to add the hundreds, then add them again if the tens add up to make a new hundred. It's the same with the tens. If we added them before the ones, we would have to add the tens again if the sum of the ones made a new ten.)</p>
+  <p><q>En esta lección, hemos sumado de derecha a izquierda, empezando en la posición de las unidades. Examinemos esta expresión otra vez. Pensemos qué pasa si sumamos de izquierda a derecha, empezando en la posición de las centenas</q></p>
+  <p>Work with the class to find the sum, setting it up like Elena's algorithm, but start by adding the hundreds.</p>
+  <p><q>¿Qué pasaría después? ¿Podemos sumar de izquierda a derecha</q> (If we worked from left to right, we would have to add the hundreds, then add them again if the tens add up to make a new hundred. It's the same with the tens. If we added them before the ones, we would have to add the tens again if the sum of the ones made a new ten.)</p>
 
 </subsubsection>
 
