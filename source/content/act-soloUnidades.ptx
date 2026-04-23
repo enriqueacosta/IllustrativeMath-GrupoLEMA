@@ -2,10 +2,33 @@
 
 <activity xml:id="act-soloUnidades" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Solo unidades</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Estos son dos métodos para registrar la suma de <m>657 + 286</m>.</p>
+  <sbsgroup>
+    <sidebyside>
+      <p>Método 1</p>
+      <p>Método 2</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-148953">
+        <shortdescription>Suma llevando (10 y 100).</shortdescription></image>
+      <image source="svg-source/tikz-file-148952">
+        <shortdescription>Suma llevando (1).</shortdescription></image>
+    </sidebyside>
+  </sbsgroup>
+  <ol>
+    <li><p>Compara ambos métodos. ¿Cómo se registran de manera diferente las nuevas decenas y centenas que se compusieron?</p></li>
+    <li><p>Prueba el segundo método de registrar sumas para sumar estos números:</p>
+      <ol>
+        <li><p><m>602+179</m></p></li>
+        <li><p><m>493+161</m></p></li>
+        <li><p><m>438+364</m></p></li>
+        <li><p><m>329+381</m></p></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -13,11 +36,11 @@
     <ol>
       <li>The newly composed ten and hundred are recorded as 10 and 100 in the first method, but in the second method the ten is recorded as a 1 in the tens place and the hundred is recorded as a 1 in the hundreds place.</li>
       <li><ol>
-<li>781</li>
-<li>654</li>
-<li>802</li>
-<li>710</li>
-</ol>
+        <li>781</li>
+        <li>654</li>
+        <li>802</li>
+        <li>710</li>
+      </ol>
       </li>
     </ol>
   </solution>
@@ -34,22 +57,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>  
     </ul>
   </paragraphs>
 
@@ -64,16 +73,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to compare two methods to record newly composed tens and hundreds when using the same algorithm. The first method, which students saw in a previous lesson, records the newly composed tens and hundreds as a 10 or 100 at the top of the problem. The second method records the newly composed tens and hundreds as a single digit of 1 at the top of the tens and hundreds column. It is important that students understand that an additional 1 in the tens column represents a newly composed ten and an additional 1 in the hundreds column represents a newly composed hundred. Students interpret the work and thinking shown in the different methods, and discuss the similarities and differences (MP3).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-soloUnidades-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-soloUnidades-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -116,32 +115,23 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Display student work for each problem.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Por qué tuvimos que poner un 1 en la columna de las decenas (o centenas)?</q></li>
-<li>
-<q>¿Qué representa el 1 de la columna de las decenas (o centenas)?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Por qué tuvimos que poner un 1 en la columna de las decenas (o centenas)?</q></li>
+          <li><q>¿Qué representa el 1 de la columna de las decenas (o centenas)?</q></li>
+        </ul>
       </li>
       <li>
-        <q>Una nueva unidad en base diez que se compuso puede registrarse con un solo dígito. ¿Qué representa ese dígito?</q>  // A newly composed unit can be recorded with a single digit. What does the single digit represent? (If it’s in the tens place it stands for 10. If it’s in the hundreds place it stands for 100.)
+        <q>Una nueva unidad en base diez que se compuso puede registrarse con un solo dígito. ¿Qué representa ese dígito?</q> (If it’s in the tens place it stands for 10. If it’s in the hundreds place it stands for 100.)
       </li>
       <li>
-        <q>¿Cómo nos ayuda el valor posicional a recordar lo que representa cada 1 adicional?</q>  // How does place value help us remember what the additional ones represent? (If the 1 is in the tens column, it represents 10. If it is in the hundreds column it represents 100.)
+        <q>¿Cómo nos ayuda el valor posicional a recordar lo que representa cada 1 adicional?</q> (If the 1 is in the tens column, it represents 10. If it is in the hundreds column it represents 100.)
       </li>
     </ul>
   </paragraphs>
@@ -150,14 +140,9 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Revoice student ideas to demonstrate and amplify mathematical language use. For example, revoice the student statement “Porque cuando se suman 7 y 6, eso es 13, así que hay 1 más” // “because when you add 7 and 6, that’s 13, so you have 1 more” as “Porque cuando se suman 7 y 6, eso es 13, así que ahora tenemos tres unidades y una nueva decena” // “because when you add 7 and 6, that’s 13, so now we have three ones and one new ten.”</p>
+    <p><em>Advances: Speaking</em></p>
   </paragraphs>
 
 </postlude>
