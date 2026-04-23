@@ -2,10 +2,15 @@
 
 <activity xml:id="act-estrategiasRestar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Estrategias para restar</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Encuentra el valor de cada diferencia de cualquier forma que tenga sentido para ti. Explica o muestra tu razonamiento.</p>
+  <ol>
+    <li><m>428 - 213</m></li>
+    <li><m>505 - 398</m></li>
+    <li><m>394 - 127</m></li>
+  </ol>
 </statement>
 
 <solution>
@@ -13,7 +18,13 @@
     <ol>
       <li>215. Sample response. I made 428 with the base-ten blocks. Then I took away 2 hundreds, 1 ten, and 3 ones. The blocks I had left showed 215.</li>
       <li>107: Sample response: I subtracted <m>505 - 400</m> because 398 is so close to 400. This gave me 105. I had to give 2 back though because I was only subtracting 398, not 400. This made the answer 107.</li>
-      <li>267: Sample responses: <m>127 + 3 = 130</m><m>130 + 70 = 200</m><m>200 + 100 = 300</m><m>300 + 90 = 390</m><m>390 + 4 = 394</m><m>3 + 70 + 100 + 90 + 4 = 3 + 160 + 100 + 4 = 267</m></li>
+      <li><p><line>267: Sample responses:</line>
+        <line><m>127 + 3 = 130</m></line>
+        <line><m>130 + 70 = 200</m></line>
+        <line><m>200 + 100 = 300</m></line>
+        <line><m>300 + 90 = 390</m></line>
+        <line><m>390 + 4 = 394</m></line>
+        <line><m>3 + 70 + 100 + 90 + 4 = 3 + 160 + 100 + 4 = 267</m></line></p></li>
     </ol>
   </solution>
 
@@ -29,21 +40,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -59,16 +56,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to subtract numbers within 1,000 using any strategy that makes sense to them to find the difference of two numbers within 1,000. The expressions in this activity give students a chance to use different strategies, such as subtracting hundreds from hundreds, tens from tens, and ones from ones, or adding up. Students may also use a variety of representations, which will be the focus of the activity synthesis. Students who choose to use base-ten blocks or number lines to represent their thinking use tools strategically (MP5).</p>
-<p>This activity uses <em>MLR7 Compare and Connect. Advances: Representing, Conversing</em></p>
+    <p>This activity uses <em>MLR7 Compare and Connect. Advances: Representing, Conversing</em></p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-estrategiasRestar-mat.ptx"/>  -->
+    <xi:include href="./act-estrategiasRestar-mat.ptx"/>
     <!-- <xi:include href="./act-estrategiasRestar-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -97,12 +93,13 @@
         <q>Con su pareja, resten estos números de cualquier forma que tenga sentido para ustedes. Expliquen o muestren su razonamiento</q>
       </li>
       <li>5–7 minutes: partner work time</li>
-      <li><p>Monitor for an expression for which students use a variety of representations, such as:</p><ul>
-<li>using base-ten blocks</li>
-<li>drawing a number line</li>
-<li>writing their reasoning in words</li>
-<li>writing equations</li>
-</ul>
+      <li><p>Monitor for an expression for which students use a variety of representations, such as:</p>
+        <ul>
+          <li>using base-ten blocks</li>
+          <li>drawing a number line</li>
+          <li>writing their reasoning in words</li>
+          <li>writing equations</li>
+        </ul>
       </li>
       <li>During the synthesis, students will create a visual display that shows how they found the value of the selected expression.</li>
       <li>Give each group tools for creating a visual display.</li>
@@ -117,20 +114,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p><strong>MLR7 Compare and Connect</strong></p>
-<ul>
+    <p><alert>MLR7 Compare and Connect</alert></p>
+    <ul>
       <li>
         <q>Creen una presentación visual que muestre cómo encontraron el valor de <fillin/>. Incluyan detalles, como notas, diagramas, dibujos, etc., para ayudar a los demás a entender cómo pensaron</q>
       </li>
@@ -144,18 +133,12 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Representation: Develop Language and Symbols. Synthesis:</em> Invite students to explain their thinking orally instead of through a visual display.</p>    
+    <p><em>Supports accessibility for: Social-Emotional Functioning and Fine Motor Skills</em></p>
   </paragraphs>
 
 </postlude>
