@@ -2,10 +2,21 @@
 
 <activity xml:id="act-deDibujosAUnAlgoritmo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>De dibujos a un algoritmo</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Jada y Kiran encontraron el valor de <m>391-215</m>. Este es su trabajo.</p>
+  <p>El dibujo de Jada</p>
+  <image source="svg-source/tikz-file-136399">
+    <shortdescription>Dibujo de Jada para la resta de 391 menos 215.</shortdescription></image>
+  <p>El algoritmo de Kiran</p>
+  <image source="svg-source/tikz-file-148963">
+    <shortdescription>Algoritmo de Kiran para la resta de 391 menos 215.</shortdescription></image>
+    <ol>
+      <li><p>Explica cómo empieza el algoritmo de Kiran.</p></li>
+      <li><p>Explica de qué manera Kiran registró la descomposición de la decena en más unidades.</p></li>
+      <li><p>Termina el trabajo de Kiran.</p></li>
+    </ol>
 </statement>
 
 <solution>
@@ -29,22 +40,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li> 
     </ul>
   </paragraphs>
 
@@ -59,17 +56,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use their knowledge of base-ten diagrams and place value to make sense of a subtraction algorithm. Students notice that in both the base-ten drawing and the algorithm, the subtraction happens by place. We can find the difference of two numbers by subtracting ones from ones, tens from tens, and hundreds from hundreds, and adding these partial differences to find the overall difference.</p>
-<p>Students also recall that sometimes a place value unit needs to be decomposed before subtracting. For example, a ten may first need to be decomposed into 10 ones. This decomposition can be seen in both the base-ten drawing and in the algorithm. In the synthesis, students interpret the work and reasoning of others (MP3).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-deDibujosAUnAlgoritmo-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-deDibujosAUnAlgoritmo-matCentros.ptx"/>  -->
+    <p>Students also recall that sometimes a place value unit needs to be decomposed before subtracting. For example, a ten may first need to be decomposed into 10 ones. This decomposition can be seen in both the base-ten drawing and in the algorithm. In the synthesis, students interpret the work and reasoning of others (MP3).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -80,7 +67,7 @@
       <li>Groups of 2</li>
       <li>Display Jada’s drawing.</li>
       <li>
-        <q>Jada y Kiran encontraron el valor de <span class="math">\(391-215\)</span>. Tómense un minuto para entender el dibujo de Jada</q>
+        <q>Jada y Kiran encontraron el valor de <m>391-215</m>. Tómense un minuto para entender el dibujo de Jada</q>
       </li>
       <li>1–2 minutes: quiet think time</li>
       <li>Share responses.</li>
@@ -113,11 +100,9 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don't explain the written algorithm, consider asking:</p>
-<ul>
-      <li>
-        <q>¿Cómo restó cada estudiante?</q>  // 
-        <q>How could Jada's drawing help us understand Kiran's work?<q></q></q>
-      </li>
+    <ul>
+      <li><q>¿Cómo restó cada estudiante?</q></li>
+      <li><q>¿Cómo nos puede ayudar el dibujo de Jada a entender el trabajo de Kiran?</q></li>
     </ul>
   </paragraphs>
 
@@ -145,20 +130,6 @@
       </li>
       <li>Record Kiran’s completed algorithm and keep it posted throughout this lesson and the following lesson.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
