@@ -2,20 +2,39 @@
 
 <activity xml:id="act-nuevoAlgoritmoDeResta" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Un nuevo algoritmo de resta</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Andre y Clare encontraron el valor de <m>528-271</m>. Así empezaron su trabajo.</p>
+  <sbsgroup widths="50% 50%">
+    <sidebyside>
+      <p>Algoritmo de Andre</p>
+      <p>Algoritmo de Clare</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-147406">
+        <shortdescription>resta de 528 y 271 en forma extendida</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-147407">
+        <shortdescription>resta de 528 y 271 por valor posicional</shortdescription>
+      </image>
+    </sidebyside>
+  </sbsgroup>
+  <ol>
+    <li><p>Completa los dos algoritmos para encontrar la diferencia.</p></li>
+    <li><p>Andre y Clare empezaron a restar de formas distintas. ¿Cómo influyó cada forma de empezar en los pasos que siguieron para encontrar la diferencia?</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li><m>200 + 50 + 7</m> and 257</li>
-      <li><p>Sample responses:</p><ul>
-<li>For Andre’s way of getting started, I had to write part of the expanded form for each step. For Clare’s way of getting started, I only recorded one digit for each place value.</li>
-<li>For Andre’s way of getting started, I had to add up the parts of the number at the end, but for Clare’s way, the number was already made from the digits.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>For Andre’s way of getting started, I had to write part of the expanded form for each step. For Clare’s way of getting started, I only recorded one digit for each place value.</li>
+          <li>For Andre’s way of getting started, I had to add up the parts of the number at the end, but for Clare’s way, the number was already made from the digits.</li>
+        </ul>
       </li>
     </ol>
   </solution>
@@ -32,22 +51,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>  
     </ul>
   </paragraphs>
 
@@ -62,16 +67,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to learn a subtraction algorithm that records the difference in each place value position as a single digit. The algorithm also records a decomposed hundred as a single digit in the hundreds place and as two digits in the tens place. Students carefully analyze and discuss two different ways to subtract, highlighting similarities and differences and explaining how and why they work (MP6).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-nuevoAlgoritmoDeResta-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-nuevoAlgoritmoDeResta-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -103,7 +98,7 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>Tómense unos minutos en silencio para trabajar en la actividad. Después, discutan sus respuestas con su pareja // <q>Take a few quiet minutes to work on the activity. Afterward, discuss your responses with your partner.</q></q>
+        <q>Tómense unos minutos en silencio para trabajar en la actividad. Después, discutan sus respuestas con su pareja</q>
       </li>
       <li>3–5 minutes: independent work time</li>
       <li>2–3 minutes: partner discussion</li>
@@ -118,14 +113,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -136,20 +123,6 @@
         <q>¿Qué hicieron de una forma diferente al completar cada uno de estos problemas?</q>  (With Andre’s work I subtracted all the place values, then I had to add up all the parts of the difference. With Clare’s work once I subtracted the digits in each place value, the answer was complete.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
