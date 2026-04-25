@@ -2,10 +2,28 @@
 
 <activity xml:id="act-pruebaElAlgoritmoDeClare" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Prueba el algoritmo de Clare</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside>
+    <stack>
+      <p>
+        Clare usó un algoritmo para encontrar el valor de <m>538-156</m>.
+      </p>
+      <p>
+        Intenta usar su algoritmo para encontrar el valor de cada diferencia.
+      </p>
+    </stack>
+    <image source="svg-source/tikz-file-158836">
+      <shortdescription>algoritmo de Clare</shortdescription>
+    </image>
+  </sidebyside>
+  <ol>
+    <li><p><m>691-358</m></p></li>
+    <li><p><m>926-584</m></p></li>
+    <li><p><m>317-182</m></p></li>
+    <li><p><m>492-325</m></p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -30,22 +48,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>  
     </ul>
   </paragraphs>
 
@@ -60,16 +64,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to practice using the algorithm they learned in the previous activity, in which the difference in each place value position is recorded with one digit and the decomposition of a place value unit is recorded using one or two digits.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-pruebaElAlgoritmoDeClare-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-pruebaElAlgoritmoDeClare-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -106,14 +100,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -130,14 +116,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Display sentence frames to support partner discussion: <q>Primero, yo <fillin/> porque...</q> // <q>First, I <fillin/> because...</q>, and <q>Después, yo <fillin/> porque...</q> // <q>Then, I <fillin/> because...</q></p>
+    <p>
+      <em>Advances: Speaking, Listening</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Representation: Internalize Comprehension.</em> Synthesis: Invite students to identify which details were most important/needed to solve the problems. Display the sentence frame: <q>La próxima vez que reste usando el algoritmo de Clare, voy a buscar...</q> // <q>The next time I subtract using Clare’s algorithm, I will look for...</q></p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
