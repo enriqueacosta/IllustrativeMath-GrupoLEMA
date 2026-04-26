@@ -2,18 +2,33 @@
 
 <activity xml:id="act-usamosUnAlgoritmo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Usamos un algoritmo?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Noah quería encontrar el valor de <m>301-167</m> y escribió:</p>
+  <image source="svg-source/tikz-file-148978">
+    <shortdescription>resta de 301-167</shortdescription>
+  </image>
+  <p>Elena dijo que no podemos restar de esta forma porque necesitaríamos más unidades para restar 7 unidades, pero hay un cero en la posición de las decenas de 301.</p>
+  <ol>
+    <li><p>¿Estás de acuerdo con la afirmación de Elena? Explica tu razonamiento.</p></li>
+    <li><p>Muestra cómo usarías un algoritmo (el de Noah u otro algoritmo) para encontrar la diferencia entre 301 y 167.</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li>Sample response: I agree there are no ones in the tens place, but we can decompose a hundred to make 100 ones. I disagree that we can't use what Noah set up.</li>
-      <li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159056.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159056.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159057.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="" role="image" src="../../../../../../figures/tikz-file-159057.svg" width="80%"/>
+      <li><p>Sample responses:</p>
+        <sidebyside>
+          <image source="svg-source/tikz-file-159056">
+            <shortdescription>resta de 301-167 por valor posicional</shortdescription>
+          </image>
+          <image source="svg-source/tikz-file-159057">
+            <shortdescription>resta de 301-167 por forma expandida</shortdescription>
+          </image>
+        </sidebyside>
       </li>
     </ol>
   </solution>
@@ -30,22 +45,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li> 
     </ul>
   </paragraphs>
 
@@ -60,17 +61,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to make sense of an algorithm in which a number with non-zero digits is subtracted from a number with a zero in the tens place. In the given problem, it is necessary to decompose a larger unit to have enough ones to subtract. There are no tens to decompose, however, prompt students to consider whether subtraction is possible, and if so, how it could be done.</p>
-<p>When students make sense of Elena’s reasoning, they construct viable arguments and critique the reasoning of others (MP3).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-usamosUnAlgoritmo-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-usamosUnAlgoritmo-matCentros.ptx"/>  -->
+    <p>When students make sense of Elena’s reasoning, they construct viable arguments and critique the reasoning of others (MP3).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -108,39 +99,17 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Select students to share their responses.</li>
-      <li>Display student work that shows a hundred decomposed into tens, then a ten decomposed into ones (or show the example in Student Responses).<img src="/tikz_files/148977.svg" /></li>
+      <li>Display student work that shows a hundred decomposed into tens, then a ten decomposed into ones (or show the example in Student Responses).</li>
       <li>
         <q>¿Cómo muestra esto que podemos tener suficientes unidades para restar, aunque 301 tenga un 0 en la posición de las decenas?</q>  (Crossing out the 3 in the hundreds and writing 10 in the tens place shows a hundred decomposed to get tens. Crossing out the 10 and writing a 9 in the tens place and writing 11 in the ones place shows a ten decomposed to get ones.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
