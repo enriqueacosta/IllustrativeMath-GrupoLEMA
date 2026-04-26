@@ -2,20 +2,39 @@
 
 <activity xml:id="act-comoRestarian" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cómo restarían?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Usa la estrategia o el algoritmo que prefieras para encontrar el valor de cada diferencia. Muestra tu razonamiento. Organízalo para que los demás puedan entenderlo.</p>
+  <ol>
+    <li><p><m>451-329</m></p></li>
+    <li><p><m>382-190</m></p></li>
+    <li><p><m>924-285</m></p></li>
+    <li><p><m>600-478</m></p></li>
+    <li><p><m>505-417</m></p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>122. Sample response: </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148981.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148981.svg" width="80%"/></li>
+      <li><p>122. Sample response:</p>
+        <image source="svg-source/tikz-file-148981">
+          <shortdescription>resta de 451 y 329 de forma expandida</shortdescription>
+        </image>
+      </li>
       <li>192. Sample response: I subtracted 200 from 382 to get 182. Then I added 10 back.</li>
-      <li><p>639. Sample response: </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148982.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148982.svg" width="80%"/></li>
+      <li><p>639. Sample response:</p>
+        <image source="svg-source/tikz-file-148982">
+          <shortdescription>resta de 924 y 285 reagrupando</shortdescription>
+        </image>
+      </li>
       <li>122. Sample response: I knew that 2 more would get me to 480. 20 more is 500. 100 more is 600. I had to count up 122 to get to 600.</li>
-      <li><p>88. Sample response: </p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148983.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-148983.svg" width="80%"/></li>
+      <li><p>88. Sample response:</p>
+        <image source="svg-source/tikz-file-148983">
+          <shortdescription>resta de 505 y 417 reagrupando</shortdescription>
+        </image>
+      </li>
     </ol>
   </solution>
 
@@ -31,22 +50,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>  
     </ul>
   </paragraphs>
 
@@ -61,16 +66,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to choose a strategy or algorithm to subtract within 1,000. Students should attend to the details of numbers in the problems that could indicate whether a particular strategy or algorithm is most useful. The important thing is that students choose an algorithm or another strategy that they can use efficiently and accurately for the given problem. As students choose strategies to find the values of each expression, they look for common structure and observe regularity in repeated reasoning (MP7, MP8).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-comoRestarian-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-comoRestarian-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -124,14 +119,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -148,14 +135,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Display sentence frames to support partner discussion: <q>¿Puedes hablar más sobre...?</q> // <q>Can you say more about...?</q> and <q>¿Por qué tú...?</q> // <q>Why did you...?</q></p>
+    <p>
+      <em>Advances: Conversing, Representing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Revisit math community norms to prepare students for the activity in which they will be finding partners, sharing problem solving, and repeating with new partners.</p>
+    <p>
+      <em>Supports accessibility for: Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>

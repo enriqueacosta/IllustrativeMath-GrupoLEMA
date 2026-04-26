@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 12 </shorttitle>
 <title>Lección 12 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Restemos estratégicamente</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Pensemos en cuándo usar algoritmos y cuándo usar otras estrategias para restar.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Subtract within 1,000 using algorithms or other strategies based on the numbers in the problem.</p></li>
   </ul>
 </objectives>
 
@@ -41,21 +42,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>,  
+        <xref ref="ccss-3-OA-B-5" text="custom">3.OA.B.5</xref>
+      </li>      
       <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-buildingTowards"/>        
+        <xref ref="ccss-3-OA-C-7" text="custom">3.OA.C.7</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +68,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
-      <li>
+    <ul>
+      <!-- <li>
         <p>Actividad 1</p>
         <xi:include href="./act-comoRestarian-mat.ptx"/>
         <xi:include href="./act-comoRestarian-matCentros.ptx"/>
-      </li>
+      </li>-->
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-laMayorDiferenciaLaMenorDiferencia-mat.ptx"/>
-        <xi:include href="./act-laMayorDiferenciaLaMenorDiferencia-matCentros.ptx"/>
+        <!--<xi:include href="./act-laMayorDiferenciaLaMenorDiferencia-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -141,7 +132,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-restarEstrategicamente-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-restarEstrategicamente-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -167,7 +158,7 @@
 <subsubsection xml:id="lec-restarEstrategicamente-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p><q>Hoy usamos estrategias para restar. ¿Cómo decidieron cuándo usar un algoritmo o una estrategia diferente?</q> (If the numbers were hard to subtract mentally, I'd use an algorithm. If they were close to a hundred, or if I saw a certain relationship between them that made it easy to work out mentally, then I'd use another strategy.)</p>
