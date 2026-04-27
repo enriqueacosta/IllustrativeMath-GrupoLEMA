@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 8 </shorttitle>
 <title>Lección 8 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Algoritmos de resta (parte 1)</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Aprendamos una nueva forma de restar.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li>[+++++++++++++++++]</li>
+    <li><p>Relate base-ten diagrams to written algorithms for subtraction.</p></li>
   </ul>
 </objectives>
 
@@ -41,22 +42,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>      
     </ul>
     </paragraphs>
 
@@ -76,19 +63,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
-      <li>
+    <ul>
+      <!--<li>
         <p>Actividad 1</p>
         <xi:include href="./act-deDibujosAUnAlgoritmo-mat.ptx"/>
         <xi:include href="./act-deDibujosAUnAlgoritmo-matCentros.ptx"/>
-      </li>
+      </li>-->
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-diagramasYAlgoritmos-mat.ptx"/>
-        <xi:include href="./act-diagramasYAlgoritmos-matCentros.ptx"/>
+        <!--<xi:include href="./act-diagramasYAlgoritmos-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -167,17 +153,18 @@
 <subsubsection xml:id="lec-algoritmosDeRestaParte1-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display a completed algorithm for addition that uses expanded form and a completed algorithm for subtraction that uses expanded form, such as:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p><q>Hoy aprendimos un algoritmo de resta. ¿En qué se parece este algoritmo al algoritmo de suma que usamos? ¿En qué es diferente?</q> (Both of the algorithms use expanded form. With both of them, you have to compose the parts of the number at the end to get the answer. In the addition algorithm, there’s a ten being composed, but in the subtraction algorithm, it’s being decomposed to get more ones. The new ten is recorded below in the addition algorithm, but when you decompose a ten for subtracting, it’s recorded above the numbers.)</p>
+  <sidebyside>
+    <image source="svg-source/tikz-file-147409">
+      <shortdescription>Suma por valor posicional.</shortdescription></image>
+    <image source="svg-source/tikz-file-147410">
+      <shortdescription>Resta por valor posicional.</shortdescription></image>
+  </sidebyside>
+  
+  <p><q>Hoy aprendimos un algoritmo de resta. ¿En qué se parece este algoritmo al algoritmo de suma que usamos? ¿En qué es diferente?</q> (Both of the algorithms use expanded form. With both of them, you have to compose the parts of the number at the end to get the answer. In the addition algorithm, there’s a ten being composed, but in the subtraction algorithm, it’s being decomposed to get more ones. The new ten is recorded below in the addition algorithm, but when you decompose a ten for subtracting, it’s recorded above the numbers.)</p>
 
 </subsubsection>
 
