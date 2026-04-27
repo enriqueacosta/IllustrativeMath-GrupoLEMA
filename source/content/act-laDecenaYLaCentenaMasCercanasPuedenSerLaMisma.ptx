@@ -2,58 +2,86 @@
 
 <activity xml:id="act-laDecenaYLaCentenaMasCercanasPuedenSerLaMisma" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿La decena y la centena más cercanas pueden ser la misma?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><p>Redondea cada número a la decena más cercana y a la centena más cercana. Usa rectas numéricas si te ayuda.</p>
+      <tabular top="medium" halign="center" valign="middle">
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium">número</cell>
+          <cell right="medium">decena más cercana</cell>
+          <cell right="medium">centena más cercana</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">18</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">97</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">312</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">439</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">601</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>     
+      </tabular>
+    </li>
+    <li><p>Kiran y Priya están redondeando números, pero tienen dificultades cuando tratan de redondear 415 y 750.</p>
+      <ul>
+        <li><p>Kiran dijo: <q>415 no se puede redondear a la decena más cercana porque no hay solo un múltiplo de 10 que sea el más cercano</q>.</p></li>
+        <li><p>Priya dijo: <q>750 no se puede redondear a la centena más cercana porque no hay solo un múltiplo de 100 que sea el más cercano</q>.</p></li>
+      </ul>
+      <p>¿Estás de acuerdo con Kiran y con Priya? Explica cómo razonaste.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Completed table:
-
-</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col" style="text-align:center">number</th>
-<th scope="col" style="text-align:center">nearest ten</th>
-<th scope="col" style="text-align:center">nearest hundred</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">18</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">97</td>
-<td style="text-align:center">100</td>
-<td style="text-align:center">100</td>
-</tr>
-<tr>
-<td style="text-align:center">312</td>
-<td style="text-align:center">310</td>
-<td style="text-align:center">300</td>
-</tr>
-<tr>
-<td style="text-align:center">439</td>
-<td style="text-align:center">440</td>
-<td style="text-align:center">400</td>
-</tr>
-<tr>
-<td style="text-align:center">601</td>
-<td style="text-align:center">600</td>
-<td style="text-align:center">600</td>
-</tr>
-</tbody>
-</table>
+      <li><p>Completed table:</p>
+        <tabular top="medium" halign="center" valign="middle">
+          <row header="yes" left="medium" bottom="medium">
+            <cell right="medium">número</cell>
+            <cell right="medium">decena más cercana</cell>
+            <cell right="medium">centena más cercana</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">18</cell>
+            <cell right="minor">20</cell>
+            <cell right="minor">0</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">97</cell>
+            <cell right="minor">100</cell>
+            <cell right="minor">100</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">312</cell>
+            <cell right="minor">310</cell>
+            <cell right="minor">300</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">439</cell>
+            <cell right="minor">440</cell>
+            <cell right="minor">400</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">601</cell>
+            <cell right="minor">600</cell>
+            <cell right="minor">600</cell>    </row>     
+        </tabular>
       </li>
-      <li><p>Sample responses:</p><ul>
-<li>I agree that 415 has no nearest multiple of 10 and 750 has no nearest multiple of 100. I think they’re right that these numbers can’t be rounded.</li>
-<li>I agree with Kiran that 415 doesn’t have one nearest multiple of 10. It has two. I agree with Priya that 750 doesn’t have one nearest multiple of 100. It has two. I disagree that the numbers can’t be rounded. Maybe we can just choose one of those two multiples.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>I agree that 415 has no nearest multiple of 10 and 750 has no nearest multiple of 100. I think they’re right that these numbers can’t be rounded.</li>
+          <li>I agree with Kiran that 415 doesn’t have one nearest multiple of 10. It has two. I agree with Priya that 750 doesn’t have one nearest multiple of 100. It has two. I disagree that the numbers can’t be rounded. Maybe we can just choose one of those two multiples.</li>
+        </ul>
       </li>
     </ol>
   </solution>
@@ -70,21 +98,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -100,16 +114,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to round given numbers to the nearest ten and hundred and see that the result can be the same for some numbers. Students think about what it means to round a number that is exactly halfway between two tens or two hundreds and are introduced in the synthesis to the convention that these numbers are rounded up (MP3).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-laDecenaYLaCentenaMasCercanasPuedenSerLaMisma-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-laDecenaYLaCentenaMasCercanasPuedenSerLaMisma-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -143,14 +147,15 @@
         <q>Completen el segundo problema con su compañero. Expliquen cómo razonaron</q>
       </li>
       <li>3–5 minutes: partner work time</li>
-      <li><p>Monitor for the following in student explanations to share in the synthesis:</p><ul>
-<li>415 is halfway between 410 and 420.</li>
-<li>415 is the same distance from 410 and 420.</li>
-<li>415 has two closest multiples of 10: 410 and 420.</li>
-<li>750 is halfway between 700 and 800.</li>
-<li>750 is the same distance from 700 and 800.</li>
-<li>750 has two closest multiples of 100: 700 and 800.</li>
-</ul>
+      <li><p>Monitor for the following in student explanations to share in the synthesis:</p>
+        <ul>
+          <li>415 is halfway between 410 and 420.</li>
+          <li>415 is the same distance from 410 and 420.</li>
+          <li>415 has two closest multiples of 10: 410 and 420.</li>
+          <li>750 is halfway between 700 and 800.</li>
+          <li>750 is the same distance from 700 and 800.</li>
+          <li>750 has two closest multiples of 100: 700 and 800.</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -162,14 +167,6 @@
    Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
 ===================================================================  -->
 <postlude component="profesor">
-
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
@@ -187,7 +184,7 @@
         <q>Como 750 está en el medio entre 700 y 800, lo redondeamos hacia arriba, a 800</q>
       </li>
       <li>
-        <q>En ambos casos podríamos decidir hacerlo de la otra forma, pero es útil que todos hagamos lo mismo en estas situaciones</q>  // In both of these situations we could go the other way, but it is helpful if we all do the same thing in these situations.
+        <q>En ambos casos podríamos decidir hacerlo de la otra forma, pero es útil que todos hagamos lo mismo en estas situaciones</q>
       </li>
     </ul>
   </paragraphs>
@@ -196,14 +193,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR1 Stronger and Clearer Each Time:</em> Before the whole-class discussion, give students time to meet with 2–3 partners to share and get feedback on their response to <q>¿A qué número se redondea 97 cuando lo redondeamos a la decena más cercana?, ¿y a la centena más cercana? ¿Por qué ocurre eso?</q> // <q>What does 97 round to when we are rounding to the nearest 10? To the nearest hundred? Why does that happen?</q> Invite listeners to ask questions, to press for details and to suggest mathematical language. Give students 2–3 minutes to revise their written explanation based on the feedback they receive.</p>
+    <p>
+      <em>Advances: Writing, Speaking, Listening</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Representation: Internalize Comprehension.</em> Synthesis: Invite students to identify which details were most useful to solve the problems. Display the sentence frame, <q>La próxima vez que redondee números a la decena más cercana y a la centena más cercana, prestaré atención a...</q> // <q>The next time I round numbers to the nearest ten and nearest hundred, I will pay attention to...</q></p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>

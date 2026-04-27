@@ -2,88 +2,132 @@
 
 <activity xml:id="act-redondearHacerEstimaciones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Redondeemos para hacer estimaciones</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>La tabla muestra los números de personas que hay en varios lugares de una escuela al medio día, en un día normal.</p>
+  <p>Andre y Lin tratan de estimar el número de personas que hay en toda la escuela. Andre va a redondear los números a la centena más cercana. Lin va a redondearlos a la decena más cercana.</p>
+  <ol>
+    <li><p>Haz una predicción. ¿Cuál estimación va a ser mayor? Explica cómo razonaste.</p></li>
+    <li><p>Encuentra las estimaciones de Andre y de Lin con un compañero. Anótalas en la tabla. Después encuentra los totales.</p>
+      <tabular top="medium" halign="center" valign="middle">
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium">lugar</cell>
+          <cell right="medium">número</cell>
+          <cell right="medium">estimación de Andre (centena más cercana)</cell>
+          <cell right="medium">estimación de Lin (decena más cercana)</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">patio de recreo</cell>
+          <cell right="minor">94</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">cafetería</cell>
+          <cell right="minor">163</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">salón de arte</cell>
+          <cell right="minor">36</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">biblioteca</cell>
+          <cell right="minor">13</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">salones de clase</cell>
+          <cell right="minor">216</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">gimnasio</cell>
+          <cell right="minor">109</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">salón de música</cell>
+          <cell right="minor">52</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor">total</cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    </row>    
+      </tabular>
+    </li>
+    <li><p>Haz dos observaciones sobre la tabla completa. ¿Tu predicción fue correcta?</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample responses:</p><ul>
-<li>I predict Andre’s total will be greater because his numbers will all be in the hundreds, even if the numbers are less than 100.</li>
-<li>I predict Lin’s total will be greater because some of Andre’s numbers will be 0.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>I predict Andre’s total will be greater because his numbers will all be in the hundreds, even if the numbers are less than 100.</li>
+          <li>I predict Lin’s total will be greater because some of Andre’s numbers will be 0.</li>
+        </ul>
       </li>
-      <li><p>Completed table:
-
-</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col">location</th>
-<th scope="col">number</th>
-<th scope="col">Andre's estimate (nearest hundred)</th>
-<th scope="col">Lin's estimate (nearest ten)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>playground</td>
-<td>94</td>
-<td>100</td>
-<td>90</td>
-</tr>
-<tr>
-<td>cafeteria</td>
-<td>163</td>
-<td>200</td>
-<td>160</td>
-</tr>
-<tr>
-<td>art room</td>
-<td>36</td>
-<td>0</td>
-<td>40</td>
-</tr>
-<tr>
-<td>library</td>
-<td>13</td>
-<td>0</td>
-<td>10</td>
-</tr>
-<tr>
-<td>classrooms</td>
-<td>216</td>
-<td>200</td>
-<td>220</td>
-</tr>
-<tr>
-<td>gymnasium</td>
-<td>109</td>
-<td>100</td>
-<td>110</td>
-</tr>
-<tr>
-<td>music room</td>
-<td>52</td>
-<td>100</td>
-<td>50</td>
-</tr>
-<tr>
-<td>total</td>
-<td></td>
-<td>700</td>
-<td>680</td>
-</tr>
-</tbody>
-</table>
+      <li><p>Completed table:</p>
+        <tabular top="medium" halign="center" valign="middle">
+          <row header="yes" left="medium" bottom="medium">
+            <cell right="medium">lugar</cell>
+            <cell right="medium">número</cell>
+            <cell right="medium">estimación de Andre (centena más cercana)</cell>
+            <cell right="medium">estimación de Lin (decena más cercana)</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">patio de recreo</cell>
+            <cell right="minor">94</cell>
+            <cell right="minor">100</cell>
+            <cell right="minor">90</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">cafetería</cell>
+            <cell right="minor">163</cell>
+            <cell right="minor">200</cell>
+            <cell right="minor">160</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">salón de arte</cell>
+            <cell right="minor">36</cell>
+            <cell right="minor">0</cell>
+            <cell right="minor">40</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">biblioteca</cell>
+            <cell right="minor">13</cell>
+            <cell right="minor">0</cell>
+            <cell right="minor">10</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">salones de clase</cell>
+            <cell right="minor">216</cell>
+            <cell right="minor">200</cell>
+            <cell right="minor">220</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">gimnasio</cell>
+            <cell right="minor">109</cell>
+            <cell right="minor">100</cell>
+            <cell right="minor">110</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">salón de música</cell>
+            <cell right="minor">52</cell>
+            <cell right="minor">100</cell>
+            <cell right="minor">50</cell>    </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">total</cell>
+            <cell right="minor"><nbsp/></cell>
+            <cell right="minor">700</cell>
+            <cell right="minor">680</cell>    </row>    
+        </tabular>
       </li>
-      <li><p>Sample responses:</p><ul>
-<li>Andre’s estimate is 20 more than Lin’s. My prediction was wrong.</li>
-<li>Sometimes there’s no difference in their estimates, but other times they are different by 10, 20, or 50.</li>
-<li>For two numbers, Andre’s estimate made it look like there were 0 people in those places (art room and library), while there were actually 36 and 13.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>Andre’s estimate is 20 more than Lin’s. My prediction was wrong.</li>
+          <li>Sometimes there’s no difference in their estimates, but other times they are different by 10, 20, or 50.</li>
+          <li>For two numbers, Andre’s estimate made it look like there were 0 people in those places (art room and library), while there were actually 36 and 13.</li>
+        </ul>
       </li>
     </ol>
   </solution>
@@ -100,21 +144,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -130,16 +160,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to practice rounding to the nearest ten and hundred in context. Students work with numbers from a previous lesson to estimate the total number of students in a school. They learn that how you round (to the nearest ten or hundred) can give different estimates for the same situation.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-redondearHacerEstimaciones-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-redondearHacerEstimaciones-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -180,14 +200,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -201,20 +213,6 @@
         <q>Tengan estas ideas presentes mientras redondean para hacer estimaciones en las próximas lecciones</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
