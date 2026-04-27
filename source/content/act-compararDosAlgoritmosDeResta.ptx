@@ -2,10 +2,31 @@
 
 <activity xml:id="act-compararDosAlgoritmosDeResta" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Comparemos dos algoritmos de resta</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><p>Estos son los primeros pasos de los dos algoritmos.</p>
+      <sbsgroup widths="50% 50%">
+        <sidebyside>
+          <p>Paso 1 del algoritmo A</p>
+          <p>Paso 1 del algoritmo B</p>
+        </sidebyside>
+        <sidebyside>
+          <image source="svg-source/tikz-file-148979">
+            <shortdescription>Descomposición por valor posicional de 508</shortdescription>
+          </image>
+          <image source="svg-source/tikz-file-148980">
+            <shortdescription>resta de las unidades</shortdescription>
+          </image>
+        </sidebyside>
+      </sbsgroup>
+      <p>
+        ¿En qué son diferentes los pasos?
+      </p>
+    </li>
+    <li><p>Usa cada algoritmo para encontrar el valor de <m>824-541</m>.</p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -28,22 +49,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
+      </li>  
     </ul>
   </paragraphs>
 
@@ -57,18 +64,8 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to consider two subtraction algorithms. In the first algorithm, students first look for any place value units where they need to decompose to get more units, then subtract right to left. In the second algorithm, subtraction occurs right to left, and units are decomposed as the need arises. Students try each algorithm and consider potential advantages and disadvantages of each algorithm. </p>
-<p>In the synthesis, students carefully analyze and discuss the two algorithms, explaining the motivation behind them and how they are the same and different (MP3, MP6).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-compararDosAlgoritmosDeResta-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-compararDosAlgoritmosDeResta-matCentros.ptx"/>  -->
+    <p>The purpose of this activity is for students to consider two subtraction algorithms. In the first algorithm, students first look for any place value units where they need to decompose to get more units, then subtract right to left. In the second algorithm, subtraction occurs right to left, and units are decomposed as the need arises. Students try each algorithm and consider potential advantages and disadvantages of each algorithm.</p>
+    <p>In the synthesis, students carefully analyze and discuss the two algorithms, explaining the motivation behind them and how they are the same and different (MP3, MP6).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -115,20 +112,12 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li>Select students to share how they used both algorithms to find the value of <span class="math">\(824 - 541\)</span>.</li>
+      <li><p>Select students to share how they used both algorithms to find the value of <m>824 - 541</m>.</p></li>
       <li>Keep algorithms from the first problem displayed.</li>
       <li>
         <q>Aunque puede que los algoritmos parezcan ser el mismo después de unos pasos, estos empezaron de manera diferente. Piensen sobre las ventajas y desventajas de usar cada algoritmo</q>
@@ -146,14 +135,20 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em></p>
+    <p>Synthesis: For each idea that is shared, invite students to turn to a partner and restate what they heard using precise mathematical language.</p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Some students may benefit from feedback that emphasizes effort, and time on task. For example, check in with students after completing the problem using the first algorithm.</p>
+    <p>
+      <em>Supports accessibility for: Attention</em>
+    </p>
   </paragraphs>
 
 </postlude>

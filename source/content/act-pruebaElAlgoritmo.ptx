@@ -2,10 +2,21 @@
 
 <activity xml:id="act-pruebaElAlgoritmo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Prueba el algoritmo</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Este es un algoritmo de resta que viste en una lección anterior:</p>
+  <image source="svg-source/tikz-file-158760">
+    <shortdescription>resta por valor posicional de 391 y 215</shortdescription>
+  </image>
+  <p>Prueba usar este algoritmo para encontrar el valor de cada diferencia. Muestra tu razonamiento. Organízalo para que los demás puedan entenderlo.</p>
+  <ol>
+    <li><p><m>283-159</m></p></li>
+    <li><p><m>425-192</m></p></li>
+    <li><p><m>639-465</m></p></li>
+    <li><p><m>591-128</m></p></li>
+    <li><p><m>832-575</m></p></li>
+  </ol>
 </statement>
 
 <solution>
@@ -15,7 +26,11 @@
       <li>233 or <m>200 + 30 + 3</m></li>
       <li>174 or <m>100 + 70 +4</m></li>
       <li>463 or <m>400 + 60 +3</m></li>
-      <li><p>257, or an algorithm showing <m>200 + 50 + 7</m></p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-147729.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Subtraction." role="image" src="../../../../../../figures/tikz-file-147729.svg" width="80%"/></li>
+      <li><p>257, or an algorithm showing <m>200 + 50 + 7</m></p>
+        <image source="svg-source/tikz-file-147729">
+          <shortdescription>resta por valor posicional de 832 y 575</shortdescription>
+        </image>
+      </li>
     </ol>
   </solution>
 
@@ -31,21 +46,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -67,9 +68,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-pruebaElAlgoritmo-mat.ptx"/>  -->
+    <xi:include href="./act-pruebaElAlgoritmo-mat.ptx"/> 
     <!-- <xi:include href="./act-pruebaElAlgoritmo-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -99,14 +99,12 @@
         <q>Tómense un momento en silencio para probar este algoritmo. Si tienen preguntas, discútanlas con su compañero</q>
       </li>
       <li>5–7 minutes: independent work time</li>
-      <li><p>If students have questions about the notation used to record the decomposition of a hundred or ten into more tens or ones, consider asking:</p><ul>
-<li>
-<q>¿Hay algún lugar en el problema en donde no hay suficientes decenas o unidades?</q></li>
-<li>
-<q>¿Cómo podrían obtener más decenas (o unidades)?</q></li>
-<li>
-<q>¿Cómo podrían registrar la descomposición de una centena en 10 decenas (o de una decena en 10 unidades)?</q></li>
-</ul>
+      <li><p>If students have questions about the notation used to record the decomposition of a hundred or ten into more tens or ones, consider asking:</p>
+        <ul>
+          <li><q>¿Hay algún lugar en el problema en donde no hay suficientes decenas o unidades?</q></li>
+          <li><q>¿Cómo podrían obtener más decenas (o unidades)?</q></li>
+          <li><q>¿Cómo podrían registrar la descomposición de una centena en 10 decenas (o de una decena en 10 unidades)?</q></li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -124,7 +122,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students do not record the multiple decompositions in the last problem, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Qué unidades en base diez tuviste que descomponer en este problema?</q>
       </li>
@@ -145,14 +143,12 @@
         <q>¿Cómo decidieron de qué manera registrar la decena y la centena que se necesitaba descomponer?</q>  (I started subtracting the ones and decomposed a ten into 10 ones so I had already crossed off the 30 and written 20. When I decomposed the hundred into tens, I just decided to write the 120 on top of the 20 like I wrote the 20 on top of the 30.)
       </li>
       <li>Record the completed algorithm, showing the decompositions of tens and hundreds.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿No había suficientes decenas o centenas para restar?</q></li>
-<li>
-<q>¿Qué se descompuso y cómo se registró?</q></li>
-<li>
-<q>¿Identificaron lugares en los que podrían haber cometido el error que vimos en el trabajo de Lin?</q> // <q>Did you notice any places where you might have made the error we saw in Lin's work?"</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿No había suficientes decenas o centenas para restar?</q></li>
+          <li><q>¿Qué se descompuso y cómo se registró?</q></li>
+          <li><q>¿Identificaron lugares en los que podrían haber cometido el error que vimos en el trabajo de Lin?</q></li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -160,15 +156,17 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports:</em> Synthesis: Before students share their reasoning, remind them to use words such as decompose, ones, tens, and hundreds.</p>
+    <p><em>Advances: Speaking, Representing</em></p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[+++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Leverage choice around perceived challenge. Invite students to select at least 3 of 5 problems to complete.</p>
+    <p><em>Supports accessibility for: Organization, Attention, Social-emotional skills</em></p>
   </paragraphs>
 
 </postlude>
