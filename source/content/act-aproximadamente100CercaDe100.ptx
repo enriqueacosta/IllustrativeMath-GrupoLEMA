@@ -2,50 +2,81 @@
 
 <activity xml:id="act-aproximadamente100CercaDe100" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Aproximadamente 100? ¿Cerca de 100?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Este es el número de personas que hay en varios lugares de una escuela al medio día, durante un día normal.</p>
+      <ul>
+        <li><p>patio de recreo: 94</p></li>
+        <li><p>cafetería: 163</p></li>
+        <li><p>salón de arte: 36</p></li>
+        <li><p>biblioteca: 13</p></li>
+        <li><p>salones de clase: 216</p></li>
+        <li><p>gimnasio: 109</p></li>
+        <li><p>salón de música: 52</p></li>
+      </ul>
+      <p>¿En qué lugar de la escuela dirías que hay aproximadamente 100 personas?</p>
+      <p>Anota los números en la tabla. Prepárate para explicar cómo razonaste.</p>
+      <tabular top="medium">
+        <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+          <cell right="medium">hay aproximadamente 100</cell>
+          <cell right="medium">no hay aproximadamente 100</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    
+        </row>    
+      </tabular>
+    </li>
+    <li><p>Ahora, decide si el número de personas que hay en cada lugar de la escuela está cerca de 0, cerca de 100 o cerca de 200.</p>
+      <p>Si crees que algún número no pertenece a ninguna columna, no lo pongas en ninguna. Prepárate para explicar cómo razonaste.</p>
+      <tabular top="medium">
+        <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+          <cell right="medium">cerca de 0</cell>
+          <cell right="medium">cerca de 100</cell>
+          <cell right="medium">cerca de 200</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>
+          <cell right="minor"><nbsp/></cell>    
+        </row>    
+      </tabular>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample response:
-
-</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col" style="text-align:center">about 100</th>
-<th scope="col" style="text-align:center">not about 100</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">94, 109</td>
-<td style="text-align:center">163, 36, 13, 216, 52</td>
-</tr>
-</tbody>
-</table>
+      <li><p>Sample response:</p>
+        <tabular top="medium">
+        <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+          <cell right="medium">hay aproximadamente 100</cell>
+          <cell right="medium">no hay aproximadamente 100</cell>
+        </row>
+        <row left="minor" bottom="minor" halign="center" valign="middle">
+          <cell right="minor">94, 109</cell>
+          <cell right="minor">163, 36, 13, 216, 52</cell>    
+        </row>    
+      </tabular>        
       </li>
-      <li><p>Sample response:
-
-</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col" style="text-align:center">close to 0</th>
-<th scope="col" style="text-align:center">close to 100</th>
-<th scope="col" style="text-align:center">close to 200</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">13</td>
-<td style="text-align:center">94, 109</td>
-<td style="text-align:center">216</td>
-</tr>
-</tbody>
-</table><p>Numbers that don’t belong in any column: 36, 52, 163</p>
+      <li><p>Sample response:</p>
+        <tabular top="medium">
+        <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+          <cell right="medium">cerca de 0</cell>
+          <cell right="medium">cerca de 100</cell>
+          <cell right="medium">cerca de 200</cell>
+        </row>
+        <row left="minor" bottom="minor" halign="center" valign="middle">
+          <cell right="minor">13</cell>
+          <cell right="minor">94, 109</cell>
+          <cell right="minor">216</cell>
+        </row>    
+      </tabular>
+      <p>Numbers that don’t belong in any column: 36, 52, 163</p>
       </li>
     </ol>
   </solution>
@@ -62,21 +93,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>        
       </li>
     </ul>
   </paragraphs>
@@ -92,16 +109,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to think about what it means for numbers to be close to multiples of 100. There is no definition given about what <q>close to</q> means during the activity, so students may interpret the term in different ways.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-aproximadamente100CercaDe100-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-aproximadamente100CercaDe100-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -146,14 +153,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -171,18 +170,14 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Action and Expression: Develop Expression and Communication.</em> Synthesis: Identify connections between strategies that result in the same outcomes but use differing approaches.</p>
+    <p>
+      <em>Supports accessibility for: Memory</em>
+    </p>
   </paragraphs>
 
 </postlude>
