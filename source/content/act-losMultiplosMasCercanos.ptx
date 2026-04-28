@@ -2,40 +2,75 @@
 
 <activity xml:id="act-losMultiplosMasCercanos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Los múltiplos más cercanos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <ol>
+        <li><p>¿349 está más cerca de 300 o de 400?</p></li>
+        <li><p>¿349 está más cerca de 340 o de 350?</p></li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li><p>¿712 está más cerca de 700 o de 800?</p></li>
+        <li><p>¿712 está más cerca de 710 o de 720?</p></li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li><p>¿568 está más cerca de 500 o de 600?</p></li>
+        <li><p>¿568 está más cerca de 560 o de 570?</p></li>
+      </ol>
+    </li>
+    <li><p>Sin ubicar el número dado en una recta numérica, menciona cómo decidiste cuál era:</p>
+      <ol>
+        <li><p>el múltiplo de 100 más cercano</p></li>
+        <li><p>el múltiplo de 10 más cercano</p></li>
+      </ol>
+    </li>
+    <li><p>Escribe el múltiplo de 100 más cercano y el múltiplo de 10 más cercano a:</p>
+      <ol>
+        <li><p>324</p></li>
+        <li><p>89</p></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><ol>
-<li>300</li>
-<li>350</li>
-</ol>
+      <li>
+        <ol>
+          <li>300</li>
+          <li>350</li>
+        </ol>
       </li>
-      <li><ol>
-<li>700</li>
-<li>710</li>
-</ol>
+      <li>
+        <ol>
+          <li>700</li>
+          <li>710</li>
+        </ol>
       </li>
-      <li><ol>
-<li>600</li>
-<li>570</li>
-</ol>
+      <li>
+        <ol>
+          <li>600</li>
+          <li>570</li>
+        </ol>
       </li>
-      <li><ol>
-<li>Sample responses: I looked at whether the number is more than halfway between the lower and the higher multiple of 100. I looked at whether the two digits are more or less than 50. I looked at whether the digit in the tens place was more or less than 5.</li>
-<li>Sample responses: I looked at whether the number is more than halfway between the lower and the higher multiple of 10. I looked at whether the last digit (in the ones place) is more or less than 5.
-</li>
-</ol>
+      <li>
+        <ol>
+          <li>Sample responses: I looked at whether the number is more than halfway between the lower and the higher multiple of 100. I looked at whether the two digits are more or less than 50. I looked at whether the digit in the tens place was more or less than 5.</li>
+          <li>Sample responses: I looked at whether the number is more than halfway between the lower and the higher multiple of 10. I looked at whether the last digit (in the ones place) is more or less than 5.</li>
+        </ol>
       </li>
-      <li><ol>
-<li>300 and 320</li>
-<li>100 and 90</li>
-</ol>
+      <li>
+        <ol>
+          <li>300 and 320</li>
+          <li>100 and 90</li>
+        </ol>
       </li>
     </ol>
   </solution>
@@ -52,21 +87,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -82,17 +103,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In this activity, students identify the nearest multiples of 10 and 100 for given three-digit numbers. They may do so by using the number lines from earlier, but they may also start to notice a pattern in the relationship between the numbers and the nearest multiples and decide not to use number lines. The work here prepares students to reason numerically in the next lesson.</p>
-<p>When students notice and describe patterns in the relationship between the numbers and the nearest multiples of 10 or 100, they look for and express regularity in repeated reasoning (MP8).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-losMultiplosMasCercanos-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-losMultiplosMasCercanos-matCentros.ptx"/>  -->
+    <p>When students notice and describe patterns in the relationship between the numbers and the nearest multiples of 10 or 100, they look for and express regularity in repeated reasoning (MP8).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -120,10 +131,11 @@
         <q>Completen estos problemas con su compañero</q>
       </li>
       <li>5–7 minutes: partner work time</li>
-      <li><p>Monitor for students who use the following strategies to highlight:</p><ul>
-<li>Reason about the midpoint between a multiple of 10 or a multiple of 100 (5 or 50) to determine which multiple is closer, such as, <q>568 está más cerca de 570 porque el punto del medio entre 560 y 570 es 565</q></li>
-<li>Use place value patterns to determine which multiple is closer, such as, <q>Como el 1 de 712 es menor que 5, esto me dice que el número está más cerca de 700</q></li>
-</ul>
+      <li><p>Monitor for students who use the following strategies to highlight:</p>
+        <ul>
+          <li>Reason about the midpoint between a multiple of 10 or a multiple of 100 (5 or 50) to determine which multiple is closer, such as, <q>568 está más cerca de 570 porque el punto del medio entre 560 y 570 es 565</q></li>
+          <li>Use place value patterns to determine which multiple is closer, such as, <q>Como el 1 de 712 es menor que 5, esto me dice que el número está más cerca de 700</q></li>
+        </ul>
       </li>
       <li>Pause for a brief discussion before students complete the last problem.</li>
       <li>Select previously identified students share the strategies they used to find the nearest multiple of 100 and the nearest multiple of 10.</li>
@@ -147,7 +159,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don’t identify the closest multiple of 10 or 100, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Qué has intentado hacer para encontrar el múltiplo de 10 (o de 100) más cercano?</q>
       </li>
@@ -171,14 +183,11 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display:</em> Circulate, listen for, and collect the language students use as they make sense of <q>close to</q> and <q>about</q>. On a visible display, record words and phrases such as: <q>casi 100, pero no exactamente 100</q> // <q>almost 100, but not exactly,</q> <q>está solo a 1 de 100</q> // <q>only 1 away from 100,</q> <q>está a menos de 5</q> // <q>less than 5 away.</q> Invite students to borrow language from the display as needed, and update it throughout the lesson.</p>
+    <p>
+      <em>Advances: Conversing, Reading</em>
+    </p>
   </paragraphs>
 
 </postlude>
