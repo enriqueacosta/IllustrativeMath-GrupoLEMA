@@ -6,9 +6,9 @@
 
 <statement>
   <p>Tu profesor te va a asignar un conjunto de números.</p>
-  <tabular valign="middle" halign="center" left="medium" top="medium">
+  <tabular row-headers="yes" valign="middle" halign="center" left="medium" top="medium">
     <row>
-      <cell bottom="medium" right="medium" top="medium"><alert>A</alert></cell>
+      <cell bottom="medium" right="medium" top="medium">A</cell>
       <cell bottom="minor" right="minor">94</cell>
       <cell bottom="minor" right="minor">36</cell>
       <cell bottom="minor" right="minor">109</cell>
@@ -16,7 +16,7 @@
       <cell bottom="minor" right="medium">229</cell>
     </row>  
     <row>
-      <cell bottom="medium" right="medium"><alert>B</alert></cell>
+      <cell bottom="medium" right="medium">B</cell>
       <cell bottom="minor" right="minor">24</cell>
       <cell bottom="minor" right="minor">52</cell>
       <cell bottom="minor" right="minor">216</cell>
@@ -24,7 +24,7 @@
       <cell bottom="minor" right="medium">481</cell>
     </row>
     <row>
-      <cell bottom="medium" right="medium"><alert>C</alert></cell>
+      <cell bottom="medium" right="medium">C</cell>
       <cell bottom="minor" right="minor">187</cell>
       <cell bottom="minor" right="minor">135</cell>
       <cell bottom="minor" right="minor">67</cell>
@@ -32,7 +32,7 @@
       <cell bottom="minor" right="medium">241</cell>
     </row>
     <row>
-      <cell bottom="medium" right="medium"><alert>D</alert></cell>
+      <cell bottom="medium" right="medium">D</cell>
       <cell bottom="minor" right="minor">332</cell>
       <cell bottom="minor" right="minor">154</cell>
       <cell bottom="minor" right="minor">408</cell>
@@ -40,7 +40,7 @@
       <cell bottom="minor" right="medium">45</cell>
     </row>
     <row bottom="medium">
-      <cell right="medium"><alert>E</alert></cell>
+      <cell right="medium">E</cell>
       <cell right="minor">279</cell>
       <cell right="minor">205</cell>
       <cell right="minor">377</cell>
@@ -51,19 +51,19 @@
   <ol>
     <li><p>En grupo, decidan en cuál recta numérica debe ir cada número. Luego, ubiquen y marquen cada número en la recta numérica.</p>
       <image source="svg-source/tikz-file-147257">
-        <shortdescription>recta numérica de 0 a 100 con marcas.</shortdescription>
+        <shortdescription>recta numérica de 0 a 100 con 10 marcas.</shortdescription>
       </image>
       <image source="svg-source/tikz-file-147258">
-        <shortdescription>recta numérica de 100 a 200 con marcas.</shortdescription>
+        <shortdescription>recta numérica de 100 a 200 con 10 marcas.</shortdescription>
       </image>
       <image source="svg-source/tikz-file-147259">
-          <shortdescription>recta numérica de 200 a 300 con marcas.</shortdescription>
+          <shortdescription>recta numérica de 200 a 300 con 10 marcas.</shortdescription>
       </image>
       <image source="svg-source/tikz-file-147260">
-          <shortdescription>recta numérica de 300 a 400 con marcas.</shortdescription>
+          <shortdescription>recta numérica de 300 a 400 con 10 marcas.</shortdescription>
       </image>
       <image source="svg-source/tikz-file-147261">
-          <shortdescription>recta numérica de 400 a 500 con marcas.</shortdescription>
+          <shortdescription>recta numérica de 400 a 500 con 10marcas.</shortdescription>
       </image>
     </li>
     <li><p>Ubica y marca 364 en la recta numérica correcta.</p>
@@ -73,9 +73,15 @@
       </ol>
     </li>
     <li><p>Escribe los números que te asignaron antes. Para cada número, anota el múltiplo de 100 más cercano.</p>
-      <tabular valign="middle" halign="center" left="medium" top="medium" bottom="medium">
+      <tabular row-headers="yes" valign="middle" halign="center" left="medium" top="medium" bottom="medium">
+        <col width="30%"/>
+        <col width="14%"/>
+        <col width="14%"/>
+        <col width="14%"/>
+        <col width="14%"/>
+        <col width="14%"/>
     <row height="3em">
-      <cell bottom="medium" right="medium"><alert>número</alert></cell>
+      <cell bottom="medium" right="medium">número</cell>
       <cell bottom="minor" right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
       <cell bottom="minor" right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
       <cell bottom="minor" right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
@@ -83,7 +89,7 @@
       <cell bottom="minor" right="medium"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
     </row>  
     <row height="3em">
-      <cell right="medium"><alert>múltiplo de 100 más cercano</alert></cell>
+      <cell right="medium"><p><line>múltiplo de 100</line><line>más cercano</line></p></cell>
       <cell right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
       <cell right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
       <cell right="minor"><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/><nbsp/></cell>
@@ -98,26 +104,30 @@
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li>
-        <image source="svg-source/tikz-file-147262">
-          <shortdescription>recta numérica de 0 a 100 con marcas, con números marcados.</shortdescription>
-        </image>
+      <li><p>
+          <line></line>
+          <line>
+            <image source="svg-source/tikz-file-147262">
+              <shortdescription>recta numérica de 0 a 100 con 10 marcas, con números marcados.</shortdescription>
+            </image>
+          </line>
+        </p>
         <image source="svg-source/tikz-file-147263">
-          <shortdescription>recta numérica de 100 a 200 con marcas, con números marcados.</shortdescription>
+          <shortdescription>recta numérica de 100 a 200 con 10 marcas, con números marcados.</shortdescription>
         </image>
         <image source="svg-source/tikz-file-147264">
-          <shortdescription>recta numérica de 200 a 300 con marcas, con números marcados.</shortdescription>
+          <shortdescription>recta numérica de 200 a 300 con 10 marcas, con números marcados.</shortdescription>
         </image>
         <image source="svg-source/tikz-file-147265">
-          <shortdescription>recta numérica de 300 a 400 con marcas, con números marcados.</shortdescription>
+          <shortdescription>recta numérica de 300 a 400 con 10 marcas, con números marcados.</shortdescription>
         </image>
         <image source="svg-source/tikz-file-147266">
-          <shortdescription>recta numérica de 400 a 500 con marcas, con números marcados.</shortdescription>
+          <shortdescription>recta numérica de 400 a 500 con 10 10 marcas, con números marcados.</shortdescription>
         </image>
       </li>
       <li>
         <image source="svg-source/tikz-file-159063">
-          <shortdescription>recta numérica de 300 a 400 con marcas, con el 364 marcado.</shortdescription>
+          <shortdescription>recta numérica de 300 a 400 con 10 marcas, con el 364 marcado.</shortdescription>
         </image>
         <ol>
           <li>300 and 400</li>
@@ -125,46 +135,52 @@
         </ol>
       </li>
       <li><p>The numbers in parentheses are the nearest multiples of 100.</p>
-        <tabular valign="middle" halign="center" left="medium" top="medium">
-    <row>
-      <cell bottom="medium" right="medium" top="medium"><alert>A</alert></cell>
-      <cell bottom="minor" right="minor">94 (100)</cell>
-      <cell bottom="minor" right="minor">36 (0)</cell>
-      <cell bottom="minor" right="minor">109 (100)</cell>
-      <cell bottom="minor" right="minor">163 (200)</cell>
-      <cell bottom="minor" right="medium">229 (200)</cell>
+        <tabular row-headers="yes" valign="middle" halign="center" left="medium" top="medium">
+          <col width="30%"/>
+          <col width="14%"/>
+          <col width="14%"/>
+          <col width="14%"/>
+          <col width="14%"/>
+          <col width="14%"/>
+    <row>      
+      <cell bottom="medium" right="medium" top="medium">A</cell>
+      <cell bottom="minor" right="minor"><p><line>94</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>36</line><line>(0)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>109</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>163</line><line>(200)</line></p></cell>
+      <cell bottom="minor" right="medium"><p><line>229</line><line>(200)</line></p></cell>
     </row>  
     <row>
-      <cell bottom="medium" right="medium"><alert>B</alert></cell>
-      <cell bottom="minor" right="minor">24 (0)</cell>
-      <cell bottom="minor" right="minor">52 (100)</cell>
-      <cell bottom="minor" right="minor">216 (200)</cell>
-      <cell bottom="minor" right="minor">11 (0)</cell>
-      <cell bottom="minor" right="medium">481 (500)</cell>
+      <cell bottom="medium" right="medium">B</cell>
+      <cell bottom="minor" right="minor"><p><line>24</line><line>(0)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>52</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>216</line><line>(200)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>11</line><line>(0)</line></p></cell>
+      <cell bottom="minor" right="medium"><p><line>481</line><line>(500)</line></p></cell>
     </row>
     <row>
-      <cell bottom="medium" right="medium"><alert>C</alert></cell>
-      <cell bottom="minor" right="minor">187 (200)</cell>
-      <cell bottom="minor" right="minor">135 (100)</cell>
-      <cell bottom="minor" right="minor">67 (100)</cell>
-      <cell bottom="minor" right="minor">83 (100)</cell>
-      <cell bottom="minor" right="medium">241 (200)</cell>
+      <cell bottom="medium" right="medium">C</cell>
+      <cell bottom="minor" right="minor"><p><line>187</line><line>(200)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>135</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>67</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>83</line><line>(100)</line></p></cell>
+      <cell bottom="minor" right="medium"><p><line>241</line><line>(200)</line></p></cell>
     </row>
     <row>
-      <cell bottom="medium" right="medium"><alert>D</alert></cell>
-      <cell bottom="minor" right="minor">332 (300)</cell>
-      <cell bottom="minor" right="minor">154 (200)</cell>
-      <cell bottom="minor" right="minor">408 (400)</cell>
-      <cell bottom="minor" right="minor">296 (300)</cell>
-      <cell bottom="minor" right="medium">45 (0)</cell>
+      <cell bottom="medium" right="medium">D</cell>
+      <cell bottom="minor" right="minor"><p><line>332</line><line>(300)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>154</line><line>(200)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>408</line><line>(400)</line></p></cell>
+      <cell bottom="minor" right="minor"><p><line>296</line><line>(300)</line></p></cell>
+      <cell bottom="minor" right="medium"><p><line>45</line><line>(0)</line></p></cell>
     </row>
     <row bottom="medium">
-      <cell right="medium"><alert>E</alert></cell>
-      <cell right="minor">279 (300)</cell>
-      <cell right="minor">205 (200)</cell>
-      <cell right="minor">377 (400)</cell>
-      <cell right="minor">449 (400)</cell>
-      <cell right="medium">73 (100)</cell>
+      <cell right="medium">E</cell>
+      <cell right="minor"><p><line>279</line><line>(300)</line></p></cell>
+      <cell right="minor"><p><line>205</line><line>(200)</line></p></cell>
+      <cell right="minor"><p><line>377</line><line>(400)</line></p></cell>
+      <cell right="minor"><p><line>449</line><line>(400)</line></p></cell>
+      <cell right="medium"><p><line>73</line><line>(100)</line></p></cell>
     </row>
   </tabular></li>
     </ol>
@@ -218,7 +234,7 @@
       <li>Share responses.</li>
       <li><p>Display the number line:</p>
         <image source="svg-source/tikz-file-147258">
-          <shortdescription>recta numérica de 100 a 200 con marcas.</shortdescription>
+          <shortdescription>recta numérica de 100 a 200 con 10 marcas.</shortdescription>
         </image>
       </li>
       <li>
