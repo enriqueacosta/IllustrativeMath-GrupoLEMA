@@ -2,10 +2,19 @@
 
 <activity xml:id="act-todosLosNum" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Todos los números</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><p>¿Cuáles son todos los números que se redondean a 50 cuando redondeas a la decena más cercana? Si te ayuda, puedes usar esta recta numérica.</p>
+      <image source="svg-source/tikz-file-131216">
+        <shortdescription>recta numérica con 30, 40, 50 y 60 marcados, y una marca adicional entre cada par de decenas consecutivas.</shortdescription>
+      </image>
+    </li>
+    <li><p>¿Cuáles son todos los números que se redondean a 70 cuando redondeas a la decena más cercana?</p></li>
+    <li><p>¿Cuáles son todos los números que se redondean a 600 cuando redondeas a la centena más cercana?</p></li>
+  </ol>
+  <p>Si terminas antes, encuentra los números que se redondean a 100 y los que se redondean a 500 cuando redondeas a la centena más cercana. Compara tus listas con las de un compañero y discutan sobre los patrones que vean.</p>
 </statement>
 
 <solution>
@@ -29,21 +38,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -59,16 +54,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to apply what they learned about rounding in prior lessons to think about all the numbers that would round to a given number. Students should be encouraged to use whatever representations make sense to them. Although the number line is often used to represent rounding, it is also worth sharing other ways that students are representing or thinking about rounding.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-todosLosNum-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-todosLosNum-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -111,7 +96,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don’t find all the numbers that round to the given number, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿Cómo decidiste redondear estos números a <fillin/>?</q>
       </li>
@@ -128,27 +113,25 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Cómo decidieron qué números se debían redondear a 40?</q>  (We looked at all the numbers that are closer to 40 than 50 or 30.)
+        <q>¿Cómo decidieron qué números se debían redondear a 40?</q> (We looked at all the numbers that are closer to 40 than 50 or 30.)
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿A qué número se redondea 35?</q> (40 because it is halfway between 30 and 40)</li>
-<li>
-<q>¿A qué número se redondea 45?</q> (50 because it is halfway between 40 and 50)</li>
-</ul>
-      </li>
-      <li>
-        <q>Miren sus respuestas a los primeros 2 problemas. ¿Qué patrones ven en los números? ¿Por qué ocurre eso?</q>  (I see they each start with a 5 in the ones place below it because it’s halfway to the nearest ten, and the numbers end with a 4 in the ones place because that is closer than the next ten.)
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿A qué número se redondea 35?</q> (40 because it is halfway between 30 and 40)</li>
+          <li><q>¿A qué número se redondea 45?</q> (50 because it is halfway between 40 and 50)</li>
+        </ul>
       </li>
       <li>
-        <q>¿Cómo usaron lo que aprendieron en los primeros 2 problemas para pensar en el último problema?</q>  (Instead of thinking about fives, we thought about fifties. We looked at all the numbers that are closer to 600 than 500 or 700.)
+        <q>Miren sus respuestas a los primeros 2 problemas. ¿Qué patrones ven en los números? ¿Por qué ocurre eso?</q> (I see they each start with a 5 in the ones place below it because it’s halfway to the nearest ten, and the numbers end with a 4 in the ones place because that is closer than the next ten.)
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿A qué número se redondea 550?</q> (600 because it is halfway between 500 and 600.)</li>
-<li>
-<q>¿A qué número se redondea 650?</q> (700 because it is halfway between 600 and 700.)</li>
-</ul>
+      <li>
+        <q>¿Cómo usaron lo que aprendieron en los primeros 2 problemas para pensar en el último problema?</q> (Instead of thinking about fives, we thought about fifties. We looked at all the numbers that are closer to 600 than 500 or 700.)
+      </li>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿A qué número se redondea 550?</q> (600 because it is halfway between 500 and 600.)</li>
+          <li><q>¿A qué número se redondea 650?</q> (700 because it is halfway between 600 and 700.)</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -157,14 +140,11 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Some students may benefit from the opportunity to rehearse what they will say with a partner before they share with the whole class.</p>
+    <p>
+      <em>Advances: Speaking</em>
+    </p>
   </paragraphs>
 
 </postlude>
