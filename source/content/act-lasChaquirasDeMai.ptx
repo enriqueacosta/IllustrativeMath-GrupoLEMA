@@ -2,22 +2,49 @@
 
 <activity xml:id="act-lasChaquirasDeMai" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Las chaquiras de Mai</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Parte 1</p>
+  <p>Empareja cada diagrama con una situación. Prepárate para explicar cómo razonaste.</p>
+  <ul>
+    <li><p>Situación 1: Mai tenía 104 chaquiras. Compró dos paquetes de chaquiras y ahora tiene 124 chaquiras. ¿Cuántas chaquiras había en cada paquete?</p></li>
+    <li><p>Situación 2: Mai tenía algunas chaquiras. Compró 2 paquetes de chaquiras y cada paquete tenía 10 chaquiras. Ahora ella tiene 124 chaquiras. ¿Cuántas chaquiras tenía Mai antes?</p></li>
+    <li><p>Situación 3: Mai tenía 104 chaquiras. Ella compró 2 paquetes de chaquiras y cada paquete tenía 10 chaquiras. ¿Cuántas chaquiras tiene ahora?</p></li>
+  </ul>
+  <ol marker="A">
+    <li><p><line></line>
+      <line><image source="svg-source/tikz-file-147550">
+          <shortdescription>diagrama representando que un número desconocido más dos veces 10 es igual a 124</shortdescription>
+        </image></line></p></li>
+    <li><p><line></line>
+      <line><image source="svg-source/tikz-file-149003">
+          <shortdescription>diagrama representando que 104 más dos veces 10 es igual a un número desconocido</shortdescription>
+        </image></line></p></li>
+    <li><p><line></line>
+      <line><image source="svg-source/tikz-file-149004">
+          <shortdescription>diagrama representando que 104 más dos veces un número desconocido es igual a 124</shortdescription>
+        </image></line></p></li>
+  </ol>
+  <p>Parte 2</p>
+  <p>Empareja cada ecuación con una de las situaciones de la parte 1. Cada ecuación tiene una letra para representar la cantidad desconocida.</p>
+  <ol>
+    <li><p><m>104+2\times 10=n</m></p></li>
+    <li><p><m>104+(2\times n)=124</m></p></li>
+    <li><p><m>n+10+ 10=124</m></p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Part 1</p>
-<ol>
+    <ol>
       <li>C, because we can see the 104 beads she had, that she has 124 altogether, and the packs that she bought, but not how many are in each pack.</li>
       <li>A, because we can see how much she has all together and the 2 packs of 10, but not how much she had before.</li>
       <li>B, because we can see she started with 104 and the two packs as the two parts with 10, but you don’t know how many she has altogether.</li>
     </ol>
-<p>Part 2</p>
-<ol>
+    <p>Part 2</p>
+    <ol>
       <li>Situation 3</li>
       <li>Situation 1</li>
       <li>Situation 2</li>
@@ -35,22 +62,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -66,17 +79,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to match tape diagrams, equations, and descriptions of situations and explain the connection to model with mathematics (MP4). The situations share the same context and numbers. Students consider how different unknown quantities are reflected in the diagrams, depending on what's happening in the situations.</p>
-<p>When students relate the quantities and relationships in situations to the equations and diagrams that represent them, they reason quantitatively and abstractly (MP2). </p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-lasChaquirasDeMai-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-lasChaquirasDeMai-matCentros.ptx"/>  -->
+    <p>When students relate the quantities and relationships in situations to the equations and diagrams that represent them, they reason quantitatively and abstractly (MP2). </p>
   </paragraphs>
 
   <!-- Launch -->
@@ -93,9 +96,8 @@
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>Part 1
-</p>
-<ul>
+    <p>Part 1</p>
+    <ul>
       <li>
         <q>Cada integrante del grupo debe escoger una de las situaciones y leerla en silencio. Denle sentido a su situación y prepárense para explicarle a su grupo qué ocurre en ella</q>
       </li>
@@ -119,8 +121,8 @@
       <li>2–3 minutes: small-group discussion</li>
       <li>Share responses.</li>
     </ul>
-<p>Part 2</p>
-<ul>
+    <p>Part 2</p>
+    <ul>
       <li>
         <q>Ahora van a asociarle una ecuación a cada situación de la parte 1. La letra de cada ecuación representa la cantidad desconocida de la situación</q>
       </li>
@@ -137,14 +139,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -152,20 +146,6 @@
     <ul>
       <li>For each situation, select a previously identified student to share how the matching equation makes sense.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>

@@ -2,20 +2,38 @@
 
 <activity xml:id="act-representarResolverYExplicar" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Representemos, resolvamos y expliquemos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside widths="75% 25%">
+    <stack>
+      <p>Kiran va a preparar un juego de Mancala. Tiene un tarro con 104 piedras.</p>
+      <p>Él toma 3 piedras del tarro para cada uno de los 6 hoyos que están en su lado del tablero.</p>
+      <p>¿Cuántas piedras hay ahora en el tarro?</p>
+    </stack>
+    <image source="jpg-source/pexels-evan-ellis-4015926.jpg" component="web">
+    <shortdescription>juego de Mancala</shortdescription>
+  </image>
+  </sidebyside>
+  <ol>
+    <li><p>Escribe una ecuación que represente la situación. Usa una letra para representar la cantidad desconocida.</p></li>
+    <li><p>Resuelve el problema. Explica o muestra cómo razonaste.</p></li>
+    <li><p>Explica cómo sabes que tu respuesta tiene sentido.</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li>Sample response: <m>104 - (6\times3) = b</m></li>
-      <li><p>86 stones 
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-141730.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-141730.svg" width="80%"/>
+      <li>Sample response: <m>104 - (6\times 3) = b</m></li>
+      <li><p>86 stones</p>
+        <image source="svg-source/tikz-file-141730">
+          <shortdescription>diagrama representando que una cantidad desconocida más seis veces 3 es igual a 104</shortdescription>
+        </image>
       </li>
-      <li><p>Sample responses:</p> <p>When Kiran took the stones from the jar the amount should have gotten smaller and 86 is less than 104.</p><p>The problem was <m>104 - 18</m>. If I round both of these numbers, that’s <m>100 - 20</m>, which is 80. My answer was close to 80 so it makes sense.</p></li>
+      <li><p>Sample responses:</p> 
+        <p>When Kiran took the stones from the jar the amount should have gotten smaller and 86 is less than 104.</p>
+        <p>The problem was <m>104 - 18</m>. If I round both of these numbers, that’s <m>100 - 20</m>, which is 80. My answer was close to 80 so it makes sense.</p></li>
     </ol>
   </solution>
 
@@ -30,22 +48,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -61,18 +65,8 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>Previously, students matched diagrams and equations to situations with an unknown quantity. Here, they generate such equations, using a letter for the unknown quantity, solve problems, and explain how they know their answers makes sense. Students should be encouraged to use any solving strategy they feel comfortable with. If not yet addressed, mention that any letter can be used for the unknown quantity in their equation.</p>
-<p>While this activity is focused on independent practice, encourage students to discuss the problem with a partner if needed. Though the task asks students to write an equation first, students may complete the task in any order that makes sense to them.</p>
-<p>Students reason abstractly and quantitatively when they write an equation that represents the situation (MP2). They also practice making sense of a problem and its solution in terms of the context (MP1).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-representarResolverYExplicar-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-representarResolverYExplicar-matCentros.ptx"/>  -->
+    <p>While this activity is focused on independent practice, encourage students to discuss the problem with a partner if needed. Though the task asks students to write an equation first, students may complete the task in any order that makes sense to them.</p>
+    <p>Students reason abstractly and quantitatively when they write an equation that represents the situation (MP2). They also practice making sense of a problem and its solution in terms of the context (MP1).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -104,11 +98,12 @@
         <q>Trabajen individualmente en este problema durante un momento. Escojan qué quieren hacer primero: resolver el problema o escribir la ecuación</q>
       </li>
       <li>5–7 minutes: independent work time</li>
-      <li><p>Monitor for different ways students:</p><ul>
-<li>write an equation</li>
-<li>represent the problem, such as by using a tape diagram</li>
-<li>decide their answer makes sense, such as thinking about the situation or by rounding</li>
-</ul>
+      <li><p>Monitor for different ways students:</p>
+        <ul>
+          <li>write an equation</li>
+          <li>represent the problem, such as by using a tape diagram</li>
+          <li>decide their answer makes sense, such as thinking about the situation or by rounding</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -126,7 +121,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don't find a solution to the problem, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿De qué se trata este problema? ¿Qué cosas de esta situación se pueden contar o medir?</q>
       </li>
@@ -147,14 +142,12 @@
         <q><fillin/> escribió <fillin/> y <fillin/> escribió <fillin/>. ¿En qué se parecen y en qué son diferentes esas ecuaciones?</q>  (I used a different letter for my unknown. I wrote <m>3\times6</m> instead of <m>6 \times 3</m>.)
       </li>
       <li>Have several students share different strategies used to solve the problem. Try to feature a student-drawn tape diagram.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Alguien resolvió el problema de otra forma?</q></li>
-<li>
-<q>¿Alguien usó un diagrama de cinta para resolverlo?</q></li>
-<li>
-<q>¿Cómo supieron si su respuesta tenía sentido?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Alguien resolvió el problema de otra forma?</q></li>
+          <li><q>¿Alguien usó un diagrama de cinta para resolverlo?</q></li>
+          <li><q>¿Cómo supieron si su respuesta tenía sentido?</q></li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -163,14 +156,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR5 Co-Craft Questions:</em> Keep books or devices closed. Display only the problem stem, without revealing the question, and ask students to write down possible mathematical questions that could be asked about the situation. Invite students to compare their questions before revealing the task. Ask, <q>¿Qué tienen en común estas preguntas? ¿En qué son diferentes?</q> // <q>What do these questions have in common? How are they different?</q> Reveal the intended questions for this task and invite additional connections.</p>
+    <p>
+      <em>Advances: Reading, Writing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Differentiate the degree of difficulty or complexity. Some students may benefit from starting with a familiar example or one with more accessible values before working independently on the three parts to the activity.</p>
+    <p>
+      <em>Supports accessibility for: Social-Emotional Functioning, Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
