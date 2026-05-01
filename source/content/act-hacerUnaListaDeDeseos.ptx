@@ -2,38 +2,165 @@
 
 <activity xml:id="act-hacerUnaListaDeDeseos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Hagamos una lista de deseos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Imagina que nuestra clase recibió $1,000 para gastar en útiles escolares de esta lista. ¿Cómo gastarías el dinero para beneficiar a nuestra clase lo más que puedas?</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium">útiles de trabajo</cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 25 marcadores</p></cell>
+          <cell right="minor">$5</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 100 crayones</p></cell>
+          <cell right="minor">$8</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 60 lápices</p></cell>
+          <cell right="minor">$5</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 5,000 hojas de papel para imprimir</p></cell>
+          <cell right="minor">$40</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>paquete de 10 blocs de papel con rayas</p></cell>
+          <cell right="minor">$15</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 50 piezas de cartulina</p></cell>
+          <cell right="minor">$32</cell>
+        </row>
+      </tabular>      
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>biblioteca del salón</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>colección de 20 libros de historia</p></cell>
+          <cell right="minor">$250</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>colección de libros de la naturaleza</p></cell>
+          <cell right="minor">$400</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>libro de cuentos (80 opciones)</p></cell>
+          <cell right="minor">$8</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>mapas (5 opciones: el mundo, el continente, Norteamérica, estados de EE. UU., ciudades de EE. UU.) ​​​​​​</p></cell>
+          <cell right="minor">$45</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <sidebyside>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>artículos especiales</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>alfombra para el rincón de lectura</p></cell>
+          <cell right="minor">$65</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>acuario para la clase, con peces</p></cell>
+          <cell right="minor">$150</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>alimento para peces para un mes</p></cell>
+          <cell right="minor">$15</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>excursión al zoológico</p></cell>
+          <cell right="minor">$350</cell>
+        </row>
+      </tabular>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>entretenimiento</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>rompecabezas (30 opciones)</p></cell>
+          <cell right="minor">$12</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>juegos de mesa (40 opciones)</p></cell>
+          <cell right="minor">$15</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>juegos interactivos de computadora (de matemáticas y de lectura)</p></cell>
+          <cell right="minor">$75</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+  </sbsgroup>
+  <ol>
+    <li><p>Haz un plan de cómo gastar el dinero. Puedes comprar más de una unidad del mismo artículo. Estima o redondea para llevar la cuenta del total mientras seleccionas los artículos.</p></li>
+    <li><p>En cada categoría de la lista de deseos, ¿cuál es el costo total de los artículos?</p>
+      <sidebyside>
+        <ul>
+          <li><p>Útiles</p></li>
+          <li><p>Libros y mapas</p></li>
+        </ul>
+        <ul>
+          <li><p>Rompecabezas y juegos</p></li>
+          <li><p>Artículos especiales</p></li>
+        </ul>
+      </sidebyside>
+    </li>
+    <li><p>¿Cuál fue el costo total de todo lo que escogiste?</p>
+      <ol>
+        <li><p>¿Te sobrará dinero? Si es así, ¿cuánto?</p></li>
+        <li><p>¿Gastaste dinero de más? Si es así, ¿cuánto?</p></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample response </p><p>Estimate: <m>30+20+50+400+150 +350=1,\!000</m></p><ul>
-<li>6 boxes of markers: <m>6 \times 5=30</m>
-</li>
-<li>1 package of pads of lined paper: 15</li>
-<li>6 boxes of crayons: <m>6 \times 8=48</m>
-</li>
-<li>set of nature books: 400</li>
-<li>10 board games: <m>10 \times 15=150</m>
-</li>
-<li>field trip to the zoo: 350</li>
-</ul>
+      <li><p>Sample response </p>
+        <p>Estimate: <m>30+20+50+400+150 +350=1,000</m></p>
+        <ul>
+          <li>6 boxes of markers: <m>6 \times 5=30</m></li>
+          <li>1 package of pads of lined paper: 15</li>
+          <li>6 boxes of crayons: <m>6 \times 8=48</m></li>
+          <li>set of nature books: 400</li>
+          <li>10 board games: <m>10 \times 15=150</m></li>
+          <li>field trip to the zoo: 350</li>
+        </ul>
       </li>
-      <li><p>Sample responses:</p><ul>
-<li>Supplies: \$93</li>
-<li>Books and maps: \$400</li>
-<li>Puzzles and games: \$150</li>
-<li>Special items: \$350</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>Supplies: $93</li>
+          <li>Books and maps: $400</li>
+          <li>Puzzles and games: $150</li>
+          <li>Special items: $350</li>
+        </ul>
       </li>
       <li><p>Sample responses: The total cost for all our choices was $993.</p> <ol>
-<li>We had $7 left over.</li>
-<li>We didn't spend too much money.</li>
-</ol>
+        <li>We had $7 left over.</li>
+        <li>We didn't spend too much money.</li>
+      </ol>
       </li>
     </ol>
   </solution>
@@ -50,21 +177,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>,
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -82,29 +196,17 @@
     <p>The purpose of this activity is for students to make a wish list of items for the classroom with a $1,000 budget. As they make their selections, they keep an estimate of the total by rounding, and use estimation and addition strategies to remain within the budget. To make their wish list, students use a supply list that is longer than shown in the warm-up.</p>
   </paragraphs>
 
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-hacerUnaListaDeDeseos-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-hacerUnaListaDeDeseos-matCentros.ptx"/>  -->
-  </paragraphs>
-
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
-      <li><p>Groups of 2</p> <ol>
-</ol>
+      <li><p>Groups of 2</p></li>
+      <li>
+        <q>Imaginemos que nuestra clase recibió una donación de $1,000 para comprar las cosas que quisiéramos de la lista</q>
       </li>
       <li>
-        <q>Imaginemos que nuestra clase recibió una donación de \$1,000 para comprar las cosas que quisiéramos de la lista</q>
-      </li>
-      <li>
-        <q>Hoy van a decidir cómo gastar \$1,000. Mientras hacen elecciones, estimen o redondeen los números para llevar la cuenta de su total hasta que esté cerca de \$1,000</q>
+        <q>Hoy van a decidir cómo gastar $1,000. Mientras hacen elecciones, estimen o redondeen los números para llevar la cuenta de su total hasta que esté cerca de $1,000</q>
       </li>
     </ul>
   </paragraphs>
@@ -118,11 +220,12 @@
       <li>2 minutes: independent work time</li>
       <li>10-12 minutes: partner work time</li>
       <li>Monitor for a variety of addition strategies students use to keep track of their budget.</li>
-      <li><p>Monitor for students who:</p><ul>
-<li>round to the nearest ten</li>
-<li>round before multiplying or round after multiplying the quantity</li>
-<li>revise their list if they were under or over budget</li>
-</ul>
+      <li><p>Monitor for students who:</p>
+        <ul>
+          <li>round to the nearest ten</li>
+          <li>round before multiplying or round after multiplying the quantity</li>
+          <li>revise their list if they were under or over budget</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -134,14 +237,6 @@
    Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
 ===================================================================  -->
 <postlude component="profesor">
-
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
 
   <!-- Síntesis de la actividad -->
   <paragraphs>
@@ -162,18 +257,14 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Representation: Internalize Comprehension.</em> Chunk this task into more manageable parts. Some students may benefit from adding a third column to the supply lists that they can use to record rounded costs before they begin selecting items.</p>
+    <p>
+      <em>Supports accessibility for: Organization, Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
