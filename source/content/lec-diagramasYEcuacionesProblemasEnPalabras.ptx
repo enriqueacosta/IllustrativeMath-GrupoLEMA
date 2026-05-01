@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 18 </shorttitle>
 <title>Lección 18 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Diagramas y ecuaciones para problemas en palabras</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Conectemos diagramas y ecuaciones con situaciones.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Relate diagrams and equations to two-step word problems.</p></li>
   </ul>
 </objectives>
 
@@ -40,22 +41,12 @@
     <title><custom ref="ccss-leccion-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +67,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-situacionesEcuacionesYDiagramas-mat.ptx"/>
-        <xi:include href="./act-situacionesEcuacionesYDiagramas-matCentros.ptx"/>
+        <!--<xi:include href="./act-situacionesEcuacionesYDiagramas-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-recorridoSalon-tieneSentidoMi-mat.ptx"/>
-        <xi:include href="./act-recorridoSalon-tieneSentidoMi-matCentros.ptx"/>
+        <!--<xi:include href="./act-recorridoSalon-tieneSentidoMi-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,7 +86,7 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In grade 2, students interpreted tape diagrams for one- and two-step problems involving addition and subtraction. Earlier this year, they did the same with one-step word problems involving multiplication. They also learned that a question mark, a blank line, or a box could be used to represent an unknown quantity in an equation.</p>
-<p>In this lesson, students connect tape diagrams and equations with a symbol standing for the unknown quantity to two-step word problems. The work of this lesson prepares students to write equations with a letter standing for the unknown quantity and solve two-step problems, using a diagram if it helps them.</p>
+    <p>In this lesson, students connect tape diagrams and equations with a symbol standing for the unknown quantity to two-step word problems. The work of this lesson prepares students to write equations with a letter standing for the unknown quantity and solve two-step problems, using a diagram if it helps them.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -168,14 +158,20 @@
 <subsubsection xml:id="lec-diagramasYEcuacionesProblemasEnPalabras-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display a corresponding set of cards that show a diagram, situation, and equation representing the same situation, such as B, D and L:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p><q>¿Cómo les ayuda el diagrama o la ecuación a representar o a aclarar lo que entienden sobre la situación?</q> (Seeing the parts of the situation in the diagram helps me understand how they go together, what we know, or what is missing. The equation helps me understand how the quantities in the situation are related to each other by addition or multiplication.)</p>
+  <sidebyside widths="60% 30%">    
+      <p>Elena has 7 notebooks. Each notebook has 10 paper clips in it. Elena also has a box of 225 paper clips. How many paper clips does Elena have?</p>
+      <p><me>
+        ?=(7\times 10)+225
+      </me></p>      
+  </sidebyside>
+  <image source="svg-source/tikz-file-147731">
+    <shortdescription>diagrama representando 225+10x7</shortdescription>
+  </image>
+  <p><q>¿Cómo les ayuda el diagrama o la ecuación a representar o a aclarar lo que entienden sobre la situación?</q> (Seeing the parts of the situation in the diagram helps me understand how they go together, what we know, or what is missing. The equation helps me understand how the quantities in the situation are related to each other by addition or multiplication.)</p>
 
 </subsubsection>
 
