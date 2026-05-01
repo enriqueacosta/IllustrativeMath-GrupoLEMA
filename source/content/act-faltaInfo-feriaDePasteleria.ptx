@@ -2,17 +2,27 @@
 
 <activity xml:id="act-faltaInfo-feriaDePasteleria" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Falta de información: Feria de pastelería</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te dará una tarjeta de problema o una tarjeta de datos. No se la muestres ni se la leas a tu compañero.</p>
+  <aside component="web">
+     <p>Versión PDF de las tarjetas de datos y problemas, <url href="external/blm/pdf-source/faltaDeInformacionFeriaDePasteleria.pdf">descarga para imprimir</url></p>
+  </aside>
+  <image source="png-source/info gap v2 ES.png">
+    <shortdescription>diagrama con ejemplos de preguntas para la dinámica</shortdescription>
+  </image>
+  <p>Haz una pausa aquí para que tu profesor pueda revisar tu trabajo.</p>
+  <p>Pídele al profesor un nuevo grupo de tarjetas. Intercambia roles con tu compañero y repite la actividad.</p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li>\$193. Sample response: Six groups of \$3 is \$18 for the brownies, and that gets added to the \$175 she already had.</li>
-      <li>160 items. Sample response: If the 7 packs of cookies have 10 cookies each, that is 70 cookies. We can take 70 away from 230 to get 160.</li>
+      <li><p>$193. Sample response:</p>
+        <p>Six groups of $3 is $18 for the brownies, and that gets added to the $175 she already had.</p></li>
+      <li><p>160 items. Sample response:</p>
+        <p>If the 7 packs of cookies have 10 cookies each, that is 70 cookies. We can take 70 away from 230 to get 160.</p></li>
     </ol>
   </solution>
 
@@ -27,22 +37,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,20 +54,19 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This Info Gap activity gives students an opportunity to determine and request information needed to solve a two-step problem that involves multiplication.</p>
-<p>The Info Gap structure requires students to make sense of problems by determining what information is necessary, and then to ask for information they need to solve it. This may take several rounds of discussion if their first requests do not yield the information they need (MP1). It also allows them to refine the language they use and ask increasingly more precise questions until they get the information they need (MP6).</p>
-<p>Here is an image of the cards for reference:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <p>The Info Gap structure requires students to make sense of problems by determining what information is necessary, and then to ask for information they need to solve it. This may take several rounds of discussion if their first requests do not yield the information they need (MP1). It also allows them to refine the language they use and ask increasingly more precise questions until they get the information they need (MP6).</p>
+    <p>Here is an image of the cards for reference:</p>
+    <image source="png-source/V1 3.3.D.20 Info Gap Cards Image for TG .png">
+      <shortdescription>tarjetas de problemas de ejemplo</shortdescription>
+    </image>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-faltaInfo-feriaDePasteleria-mat.ptx"/>  -->
+    <xi:include href="./act-faltaInfo-feriaDePasteleria-mat.ptx"/>  
     <!-- <xi:include href="./act-faltaInfo-feriaDePasteleria-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -82,8 +77,8 @@
     <ul>
       <li>Groups of 2</li>
     </ul>
-<p><strong>MLR4 Information Gap</strong></p>
-<ul>
+    <p><alert>MLR4 Information Gap</alert></p>
+    <ul>
       <li>Display the task statement, which shows a diagram of the Info Gap structure.</li>
       <li>1–2 minutes: quiet think time</li>
       <li>Read the steps of the routine aloud.</li>
@@ -117,14 +112,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -134,32 +121,25 @@
         <q>De las clases de preguntas que hicieron, ¿cuáles fueron las más útiles?</q>
       </li>
       <li>Select 1–2 students to share different strategies used to solve one of the problems. Try to feature a student-drawn tape diagram.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Alguien resolvió el problema de otra forma?</q></li>
-<li>
-<q>¿Alguien usó un diagrama de cinta?</q></li>
-<li>
-<q>¿Cómo supieron si su respuesta tenía sentido?</q></li>
-<li>
-<q>¿Cómo podríamos representar el segundo problema con una ecuación en la que se use una letra para representar la cantidad desconocida?</q> (<m>230 - (7 \times 10) = {d}</m>)</li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Alguien resolvió el problema de otra forma?</q></li>
+          <li><q>¿Alguien usó un diagrama de cinta?</q></li>
+          <li><q>¿Cómo supieron si su respuesta tenía sentido?</q></li>
+          <li><q>¿Cómo podríamos representar el segundo problema con una ecuación en la que se use una letra para representar la cantidad desconocida?</q> (<m>230 - (7 \times 10) = d</m>)</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Representation: Access for Perception.</em> Begin by giving a physical demonstration of the activity’s procedure to support understanding of the activity and understanding of the context.</p>
+    <p>
+      <em>Supports accessibility for: Social-Emotional Functioning, Memory</em>
+    </p>
   </paragraphs>
 
 </postlude>
