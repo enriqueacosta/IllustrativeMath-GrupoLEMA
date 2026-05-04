@@ -2,16 +2,99 @@
 
 <activity xml:id="act-situacionesEcuacionesYDiagramas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Clasificación de tarjetas: Situaciones, ecuaciones y diagramas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar varias tarjetas que muestran situaciones, ecuaciones y diagramas.</p>
+  <aside component="web">
+    <p>Versión PDF para imprimir, <url href="external/blm/pdf-source/tarjetasSituacionesEcuacionesYDiagramas.pdf">descargar acá</url>.</p>
+  </aside>
+  <p>Clasifica las tarjetas en grupos de forma que las tarjetas de cada grupo representen la misma situación. Prepárate para explicar cómo razonaste.</p>
+  <tabular row-headers="yes" valign="middle" halign="center" left="medium" top="medium">
+    <col width="20%"/>
+    <col width="80%"/>
+    <row>
+      <cell bottom="medium" right="medium" top="medium">A</cell>
+      <cell bottom="minor" right="medium"><p>Clare tenía 225 chaquiras. Una amiga le dio un paquete de 48 chaquiras. Luego, Clare usó 70 chaquiras para hacer un collar. ¿Cuántas chaquiras tiene ella ahora?</p></cell>
+    </row>  
+    <row>
+      <cell bottom="medium" right="medium">B</cell>
+      <cell bottom="minor" right="medium"><image source="svg-source/tikz-file-148998">
+        <shortdescription>diagrama representando 225+10x7</shortdescription>
+        </image></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">C</cell>
+      <cell bottom="minor" right="medium"><p>
+        <me>
+          225-(6\times 10)=?
+        </me>        
+      </p>
+      </cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">D</cell>
+      <cell bottom="minor" right="medium"><p>Elena tiene 7 cuadernos. Cada cuaderno tiene 10 clips. Elena también tiene una caja de 225 clips. ¿Cuántos clips tiene Elena?</p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">E</cell>
+      <cell bottom="minor" right="medium"><p>
+        <me>
+          225+(6\times 10)=?
+        </me>        
+      </p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">F</cell>
+      <cell bottom="minor" right="medium"><p>
+        <me>
+          ?=225+48-70
+        </me>        
+      </p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">G</cell>
+      <cell bottom="minor" right="medium"><p>Andre tenía 225 crayones. Él compró 6 paquetes más. Cada paquete tenía 10 crayones. ¿Cuántos crayones tiene Andre ahora?</p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">H</cell>
+      <cell bottom="minor" right="medium"><image source="svg-source/tikz-file-158680">
+        <shortdescription>diagrama representando 225+10x6</shortdescription>
+        </image></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">I</cell>
+      <cell bottom="minor" right="medium"><p>Diego tenía una colección de 225 tarjetas de béisbol. Un amigo le dio 35 tarjetas más. Después, Diego compró 72 tarjetas. ¿Cuántas tarjetas tiene Diego ahora?</p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">J</cell>
+      <cell bottom="minor" right="medium"><p>Han tenía 225 chaquiras. Después, él hizo 6 pulseras para sus amigos. Cada pulsera tiene 10 chaquiras. ¿Cuántas chaquiras tiene Han ahora?</p></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">K</cell>
+      <cell bottom="minor" right="medium"><image source="svg-source/tikz-file-149000">
+        <shortdescription>diagrama representando 225+35+72</shortdescription>
+        </image></cell>
+    </row>
+    <row>
+      <cell bottom="medium" right="medium">L</cell>
+      <cell bottom="medium" right="medium"><p>
+        <me>
+          ?=(7\times 10)+225
+        </me>        
+      </p></cell>
+    </row>
+  </tabular>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>A and F B, D, and L C, H, and J E and G I and K</p>
-<p>Sample response: I know that B, D, and L match because the bar of 225 represents the box of 225 paper clips and the 7 boxes of 10 represent the paper clips in the notebooks. To know how many paper clips Elena has, we would have to add all of this up, which is shown in the equation and in the diagram.</p>
+    <p><line>A and F</line>
+      <line>B, D, and L</line>
+      <line>C, H, and J</line>
+      <line>E and G</line>
+      <line>I and K</line></p>
+    <p>Sample response: I know that B, D, and L match because the bar of 225 represents the box of 225 paper clips and the 7 boxes of 10 represent the paper clips in the notebooks. To know how many paper clips Elena has, we would have to add all of this up, which is shown in the equation and in the diagram.</p>
   </solution>
 
 
@@ -25,22 +108,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,16 +125,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to connect two-step word problems, diagrams, and equations with a symbol for the unknown quantity. Interpreting and relating given representations prepare students to use these as tools for reasoning when they solve two-step word problems.</p>
-<p>As students analyze written statements and other representations and make connections among them, they reason quantitatively and abstractly (MP2).</p>
+    <p>As students analyze written statements and other representations and make connections among them, they reason quantitatively and abstractly (MP2).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-situacionesEcuacionesYDiagramas-mat.ptx"/>  -->
+    <xi:include href="./act-situacionesEcuacionesYDiagramas-mat.ptx"/>  
     <!-- <xi:include href="./act-situacionesEcuacionesYDiagramas-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -100,14 +168,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -127,14 +187,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports:</em> Students should take turns finding a match and explaining their reasoning to their partner. Display the following sentence frames for all to see: “<q>Observé <fillin characters="5" />, entonces agrupé...</q> // <q>I noticed <fillin characters="5" />, so I matched...</q> Encourage students to challenge each other when they disagree.</p>
+    <p>
+      <em>Advances: Listening, Speaking</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[++++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Chunk this task into more manageable parts. Give students a subset of the cards to start with and introduce the remaining cards once students have completed their initial set of matches.</p>
+    <p>
+      <em>Supports accessibility for: Visual-Spatial Processing, Attention</em>
+    </p>
   </paragraphs>
 
 </postlude>

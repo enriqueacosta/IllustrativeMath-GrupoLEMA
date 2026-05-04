@@ -2,18 +2,29 @@
 
 <activity xml:id="act-recorridoSalon-tieneSentidoMi" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Tiene sentido para mí: Un recorrido por el salón</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><p>Tu profesor le va a asignar un problema a tu grupo. Juntos, resuelvan ese problema.</p></li>
+    <li><p>Hagan un póster con la solución de su grupo. Organicen su trabajo para que los demás lo puedan entender.</p></li>
+    <li><p>Cuando vayan a ver cada póster, piensen si la respuesta que ven tiene sentido y por qué.</p></li>
+  </ol>
+  <p>
+    Escojan un póster y hagan un comentario sobre la solución. Escriban en la nota adhesiva cómo saben que la respuesta tiene sentido.
+  </p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li>Situation A: 203 beads Situation D: 295 paper clips Situation G: 285 crayons Situation I: 332 baseball cards Situation J: 165 beads</li>
+      <li><p><line>Situation A: 203 beads</line>
+        <line>Situation D: 295 paper clips</line>
+        <line>Situation G: 285 crayons</line>
+        <line>Situation I: 332 baseball cards</line>
+        <line>Situation J: 165 beads</line></p></li>
       <li>No response required.</li>
-      <li> Sample response: I estimated the answer to be about 325 since <m>225 + 30 + 70 = 325</m>, so your answer makes sense. </li>
+      <li>Sample response: I estimated the answer to be about 325 since <m>225 + 30 + 70 = 325</m>, so your answer makes sense.</li>
     </ol>
   </solution>
 
@@ -28,22 +39,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -65,9 +62,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-recorridoSalon-tieneSentidoMi-mat.ptx"/>  -->
+    <xi:include href="./act-recorridoSalon-tieneSentidoMi-mat.ptx"/>  
     <!-- <xi:include href="./act-recorridoSalon-tieneSentidoMi-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -112,7 +108,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students try to find exact answers to determine if their peers’ solutions make sense, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>¿De qué formas podríamos decidir si la solución tiene sentido, sin resolver el problema?</q>
       </li>
@@ -134,20 +130,6 @@
         <q>Cuando vayan a ver los pósteres, escojan un póster y dejen allí un comentario que explique cómo saben que la respuesta tiene sentido</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
