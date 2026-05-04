@@ -2,18 +2,20 @@
 
 <activity xml:id="act-faltaInfo-introduccion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Falta de información: Introducción</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <image source="png-source/V1 3.3.20.1 Info Gap Intro Problem Card Spanish.png" width="85%">
+    <shortdescription>tarjeta de problema</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>72 chairs. Sample response: <m>40 + (4 \times 8) = 72</m></p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <image source="svg-source/tikz-file-141731">
+      <shortdescription>diagrama representando que 40 más cuatro veces 8 es un número desconocido</shortdescription>
+    </image>
   </solution>
 
 
@@ -27,22 +29,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-OA-D-8" text="custom">3.OA.D.8</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,23 +46,13 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is to introduce students to the structure of the MLR4 Information Gap routine. This routine facilitates meaningful interactions by positioning some students as holders of information that is needed by other students.</p>
-<p>Tell students that first, a demonstration will be conducted with the whole class, in which they are playing the role of the person with the problem card. Explain to students that it is the job of the person with the problem card (in this case, the whole class) to think about what information they need to answer the question.</p>
-<p>For each question that is asked, students are expected to explain what they will do with the information, by responding to the question, <q>¿Por qué necesitas saber <fillin></fillin>?</q> If the problem card person asks for information that is not on the data card (including the answer!), then the data card person must respond with, <q>No tengo esa información</q> In explaining their answers, students need to be precise in their word choice and use of language (MP6).</p>
-<p>Once the students have enough information to solve the problem, they solve the problem independently.</p>
-<p>The info gap routine requires students to make sense of problems by determining what information is necessary and then ask for information they need to solve them. This may take several rounds of discussion if their first requests do not yield the information they need (MP1).</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-faltaInfo-introduccion-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-faltaInfo-introduccion-matCentros.ptx"/>  -->
+    <p>Tell students that first, a demonstration will be conducted with the whole class, in which they are playing the role of the person with the problem card. Explain to students that it is the job of the person with the problem card (in this case, the whole class) to think about what information they need to answer the question.</p>
+    <p>For each question that is asked, students are expected to explain what they will do with the information, by responding to the question, <q>¿Por qué necesitas saber <fillin></fillin>?</q> If the problem card person asks for information that is not on the data card (including the answer!), then the data card person must respond with, <q>No tengo esa información</q> In explaining their answers, students need to be precise in their word choice and use of language (MP6).</p>
+    <p>Once the students have enough information to solve the problem, they solve the problem independently.</p>
+    <p>The info gap routine requires students to make sense of problems by determining what information is necessary and then ask for information they need to solve them. This may take several rounds of discussion if their first requests do not yield the information they need (MP1).</p>
+    <image source="png-source/V1 3.3.20.1 Info Gap Intro Data Card.png" width="70%">
+      <shortdescription>tarjeta de datos para la introducción al gap de información</shortdescription>
+    </image>
   </paragraphs>
 
   <!-- Launch -->
@@ -95,14 +73,14 @@
   <paragraphs>
     <title><custom ref="instructions-teacher-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p><strong>MLR4 Information Gap</strong></p>
-<ul>
+    <p><alert>MLR4 Information Gap</alert></p>
+    <ul>
       <li>Display the Sample Problem Card.</li>
       <li>Read the problem aloud.</li>
-      <li><p>Listen for and clarify any questions about the context.</p><ul>
-<li>
-<q>Parte de la información que necesitan para resolver este problema hace falta y yo la tengo aquí. ¿Qué información específica necesitan?</q></li>
-</ul>
+      <li><p>Listen for and clarify any questions about the context.</p>
+        <ul>
+          <li><q>Parte de la información que necesitan para resolver este problema hace falta y yo la tengo aquí. ¿Qué información específica necesitan?</q></li>
+        </ul>
       </li>
       <li>1–2 minutes: quiet think time</li>
       <li>
@@ -128,14 +106,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -147,20 +117,6 @@
       </li>
       <li>If there were any questions that the data card cannot answer, discuss them here.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
