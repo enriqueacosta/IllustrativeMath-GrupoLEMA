@@ -7,23 +7,94 @@
 ===========================================================================  -->
 <exploration xml:id="warm-observa-listaDeUtilesEscolares" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Observa y pregúntate: Lista de útiles escolares</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Qué observas? ¿Qué te preguntas?</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium">útiles de trabajo</cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 25 marcadores</p></cell>
+          <cell right="minor">$5</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>caja de 100 crayones</p></cell>
+          <cell right="minor">$8</cell>
+        </row>
+      </tabular>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>biblioteca del salón</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>colección de 20 libros de historia</p></cell>
+          <cell right="minor">$250</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>libro de cuentos (80 opciones)</p></cell>
+          <cell right="minor">$8</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <sidebyside>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>objetos especiales</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>alfombra para el rincón de lectura</p></cell>
+          <cell right="minor">$65</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>acuario para la clase, con peces</p></cell>
+          <cell right="minor">$159</cell>
+        </row>
+      </tabular>
+      <tabular top="medium" halign="center" valign="middle">
+        <col width="80%"/>
+        <col width="20%"/>
+        <row header="yes" left="medium" bottom="medium">
+          <cell right="medium"><p>entretenimiento</p></cell>
+          <cell right="medium">costo</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>juegos de mesa (40 opciones)</p></cell>
+          <cell right="minor">$15</cell>
+        </row>
+        <row left="minor" bottom="minor">
+          <cell right="minor"><p>juegos interactivos de computadora (de matemáticas y de lectura)</p></cell>
+          <cell right="minor">$75</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+  </sbsgroup>
+  
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Students may notice:</p>
-<ul>
+    <ul>
       <li>There are different categories.</li>
       <li>This looks like a list of school supplies.</li>
       <li>Some items are much more expensive than others.</li>
       <li>Some of the things have different options.</li>
     </ul>
-<p>Students may wonder:</p>
-<ul>
+    <p>Students may wonder:</p>
+    <ul>
       <li>What kinds of story books are available?</li>
       <li>Why are some things much more expensive than others?</li>
       <li>How much does the whole list cost if we buy everything on it for our class?</li>
@@ -41,23 +112,10 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NBT-A-1" text="custom">3.NBT.A.1</xref>,
+        <xref ref="ccss-3-NBT-A-2" text="custom">3.NBT.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -73,13 +131,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this warm-up is to elicit observations about school supplies in different categories and with varying prices, familiarizing students with the context for upcoming work. While students may notice and wonder many things, focus the discussion on the large selection and wide range of prices.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-observa-listaDeUtilesEscolares-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -117,13 +168,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -138,19 +182,6 @@
       <li>30 seconds: quiet think time</li>
       <li>Share and record responses.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
