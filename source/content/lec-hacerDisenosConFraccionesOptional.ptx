@@ -69,7 +69,8 @@
   <!-- Propósito de la lección -->
   <paragraphs>
     <title><custom ref="purpose-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this lesson is for students to apply their understanding of fractions to create geometric designs.</p>
   </paragraphs>
 
   <!-- Materiales requeridos -->
@@ -93,13 +94,17 @@
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>This lesson is optional because it does not address any new mathematical content standards. It does provide students with an opportunity to apply precursor skills of mathematical modeling.</p>
+<p>In this lesson, students apply their understanding of fractions to create geometric designs, starting with a given square. They are tasked with marking a fractional length (<m>\frac{1}{2}</m> or <m>\frac{1}{4}</m>) of each side of the square with a point. They then connect the points, which creates a new shape within the square. Students iterate this process of marking a fractional length and connecting points to generate their designs.</p>
+<p>To mark a given length, students apply their experience with partitioning a segment into equal parts. To mark a fractional length, they decide which endpoint of each side to use as a starting point, whether to always mark the points in the same direction (clockwise or counterclockwise), how many iterations are practical, and so on (MP4).</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
   <paragraphs>
     <title><custom ref="reflection-quest-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>[+++++++++++++++]</p>
+    <p>How did the student work that you selected impact the direction of the discussion? What student work might you pick next time if you taught the lesson again?</p>
   </paragraphs>
 </introduction>
 
@@ -111,7 +116,7 @@
   <shorttitle><custom ref="warm-up-leccion-titulo"/></shorttitle>
   <title><custom ref="warm-up-leccion-titulo"/></title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./warm-observa-entre0Y1.ptx"/> 
@@ -125,7 +130,7 @@
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(15 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-hacerDisenosConFrac12.ptx"/> 
@@ -142,7 +147,7 @@
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(25 mins)</title>
 
   <!-- Archivo con el contenido -->
   <xi:include href="./act-hacerDisenosConFrac14.ptx"/> 
@@ -166,30 +171,13 @@
   <title><custom ref="synthesis-leccion-titulo"/></title>
   <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
 
-  <p>[@@@@@@@@@]</p>
+  <p>[+++++++++++++++]</p>
+  <p><q>Hoy usamos fracciones para partir los lados de figuras geométricas y crear diseños</q></p>
+<p><q>Hoy partimos los lados de una figura y marcamos puntos en ellos. ¿En qué se pareció eso a partir rectas numéricas y marcar puntos en ellas? ¿En qué fue diferente?</q></p>
+<p><q>¿Qué disfrutaron del proceso de hacer diseños con fracciones? ¿Qué fue retador?</q></p>
 
 </subsubsection>
 
-
-
-<!-- ======================================================================
-  Cool-down (problema de cierre / de salida)
-  subsubsección tipo "reading-questions" para que pueda tener estilo aparte 
-=========================================================================== -->
-<reading-questions xml:id="lec-hacerDisenosConFraccionesOptional-cool" component="cools"> 
-  <shorttitle><custom ref="cooldown-titulo"/></shorttitle>
-  <title><custom ref="cooldown-titulo"/></title>
-  <title component="profesor"><nbsp />(5 mins)</title>
-
-
-  <!-- pdf imprimible. cool-UUUUUU debe coincidir con el xml:id adentro del archivo cool-UUUUUU.ptx -->
-  <url component="profesor" href="external/cool-pdf/cool-UUUUUU.pdf">
-    <custom ref="texto-link-pdf-cool-down"/>
-  </url>
-
-  <!-- Archivo con el contenido -->
-  <xi:include href="./cool-UUUUUU.ptx"/>
-</reading-questions>
 
 
 </subsection>
