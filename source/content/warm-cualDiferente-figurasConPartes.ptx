@@ -7,16 +7,46 @@
 ===========================================================================  -->
 <exploration xml:id="warm-cualDiferente-figurasConPartes" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cuál es diferente: Figuras con partes</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es diferente?</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <stack>
+        <p>A</p>
+        <image source="svg-source/tikz-file-149625">
+          <shortdescription>cuadrado dividido en dos diagonalmente</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>B</p>
+        <image source="svg-source/tikz-file-149626">
+          <shortdescription>cuadrado dividido en dos partes iguales verticalmente, con la parte derecha sombreada</shortdescription>
+        </image>
+      </stack>      
+    </sidebyside>
+    <sidebyside>
+      <stack>
+      <p>C</p>
+      <image source="svg-source/tikz-file-149627">
+        <shortdescription>círculo dividido en dos verticalmente</shortdescription>
+      </image>
+      </stack>
+      <stack>
+      <p>D</p>
+      <image source="svg-source/tikz-file-149628">
+        <shortdescription>cuadrado dividido en dos partes distintas verticalmente</shortdescription>
+      </image>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ul>
+    <ul>
       <li>A is the only one that hasn’t been split vertically, it’s split diagonally.</li>
       <li>B is the only one that is not unshaded.</li>
       <li>C is the only one that isn’t a square and doesn’t have corners.</li>
@@ -34,23 +64,13 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-G-A-3" text="custom">2.G.A.3</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-G-A-2" text="custom">3.G.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -66,13 +86,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This warm-up prompts students to compare four shapes that have been partitioned and examine the features of the shapes and the partitions. The observations here prepare students to explore fractions later in the lesson and enable the teacher to hear how students describe the features that they see. During the synthesis, ask students to explain the meaning of any terminology they use, such as partition, whole, parts, pieces, equal, and halves.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-cualDiferente-figurasConPartes-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -110,13 +123,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -129,19 +135,6 @@
         <q>Otra palabra que podemos usar para decir que algo está dividido en pedazos o partes es partición. Hacer una partición significa dividir en partes</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
