@@ -2,16 +2,16 @@
 
 <activity xml:id="act-doblemosYNombremos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Doblemos y nombremos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Dobla cada rectángulo que te dé tu profesor en 3, 6, 4 u 8 partes iguales. Dibuja rectas en los dobleces que hiciste para partir los rectángulos. Prepárate para explicar cómo doblaste tus figuras.</p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample response:</p>
-<ul>
+    <ul>
       <li>Students fold the rectangle in half, then fold it in half again to make four equal parts. Students fold a rectangle into three equal parts, then fold the thirds in half to make six equal parts.</li>
     </ul>
   </solution>
@@ -28,21 +28,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-G-A-2" text="custom">3.G.A.2</xref>, 
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,14 +45,13 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to partition rectangles into thirds, sixths, fourths, and eighths before learning the name of sixths and eighths. Students do so by folding rectangular strips of paper into equal-sized parts. While folding, students may notice that thirds can be further partitioned to make sixths and that fourths can be further partitioned to make eighths, which will be explored more in a future lesson. The focus of the synthesis should be on naming sixths and eighths, as these are new terms for students.</p>
-<p>Students will use the partitioned rectangles during the lesson synthesis.</p>
+    <p>Students will use the partitioned rectangles during the lesson synthesis.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
     <!-- <xi:include href="./act-doblemosYNombremos-mat.ptx"/>  -->
     <!-- <xi:include href="./act-doblemosYNombremos-matCentros.ptx"/>  -->
@@ -110,91 +96,46 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Select previously identified students to share how they folded the rectangles into 6 and 8 equal parts.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cómo usaron las particiones en <fillin/> partes iguales para partir en <fillin/> partes iguales?</q></li>
-<li>
-<q>¿Alguien quiere compartir otra observación sobre la manera en la que <fillin/> hizo la partición?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Cómo usaron las particiones en <fillin/> partes iguales para partir en <fillin/> partes iguales?</q></li>
+          <li><q>¿Alguien quiere compartir otra observación sobre la manera en la que <fillin/> hizo la partición?</q></li>
+        </ul>
       </li>
-      <li><p>Display poster:
-
-</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col">número de partes iguales</th>
-<th scope="col">nombre de cada parte</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">medio</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">tercio</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">cuarto</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table><p>//</p><p>[@@@@@@@@] WARNING: Table present.</p><table border="1">
-<thead>
-<tr>
-<th scope="col">number of equal parts</th>
-<th scope="col">name of each part</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">half</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">third</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">fourth</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-      </li>
-    </ul>
-<ul>
+      <li><p>Display poster:</p>
+        <tabular top="medium" halign="center" valign="middle">
+          <row header="yes" left="medium" bottom="medium">
+            <cell right="medium">número de partes iguales</cell>
+            <cell right="medium">nombre de cada parte</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">2</cell>
+            <cell right="minor">medio</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">3</cell>
+            <cell right="minor">tercio</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">4</cell>
+            <cell right="minor">cuarto</cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">6</cell>
+            <cell right="minor"><nbsp/></cell>
+          </row>
+          <row left="minor" bottom="minor">
+            <cell right="minor">8</cell>
+            <cell right="minor"><nbsp/></cell>
+          </row>
+        </tabular>
+      </li>    
       <li>
         <p><q>Cuando partimos una figura en 6 partes iguales, cada parte se llama un ‘sexto’. Cuando partimos una figura en 8 partes iguales, cada parte se llama un ‘octavo’</q></p>
       </li>
@@ -206,18 +147,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p><em>Action and Expression: Develop Expression and Communication.</em> Provide access to pre-formatted papers that will be used to fold into rectangles. For example, papers would have dotted lines showing students where to fold for each rectangle.</p>
+    <p>
+      <em>Supports accessibility for: Social-Emotional Functioning, Visual-Spatial Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
