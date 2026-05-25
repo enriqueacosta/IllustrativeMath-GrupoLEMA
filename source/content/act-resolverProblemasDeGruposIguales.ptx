@@ -2,40 +2,51 @@
 
 <activity xml:id="act-resolverProblemasDeGruposIguales" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Resolvamos problemas de grupos iguales</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Resuelve cada problema. Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.</p>
+  <ol>
+    <li>
+      <p>Hay 4 campos de fútbol. Hay 2 equipos en cada campo. ¿Cuántos equipos hay en total?</p>
+    </li>
+    <li>
+      <p>Hay 7 ventanas. Cada ventana tiene 2 piezas de vidrio. En total, ¿cuántas piezas de vidrio hay en las ventanas?</p>
+    </li>
+    <li>
+      <p>Jada tiene 5 bolsas. Cada bolsa tiene 10 aretes. ¿Cuántos aretes tiene Jada?</p>
+      </li>
+      <li>
+        <p>Kiran tiene 4 cajas. En cada caja hay 5 lápices. ¿Cuántos lápices tiene Kiran?</p>
+      </li>
+      <li>
+        <p>Andre tiene 3 bolsas de zanahorias. En cada bolsa hay 10 zanahorias. ¿Cuántas zanahorias tiene Andre?</p>
+      </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li><p>8 teams. Sample response:</p>
-          <p>[@@@@@@@@] WARNING: Fix Image.</p>
-          <img alt="Diagram. 4 groups of 2." role="image" src="../../../../../../figures/tikz-file-148250.svg"/>
-          <p>[@@@@@@@@] WARNING: Fix Image.</p>
-          <img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/>
-          <p>[@@@@@@@@] WARNING: Fix Image.</p>
-          <img alt="Diagram. 4 groups of 2." role="image" src="../../../../../../figures/tikz-file-148250.svg" width="80%"/> 
+          <image source="svg-source/tikz-file-148250">
+        <shortdescription>Cinco óvalos en línea, cada uno con dos círculos azules dentro</shortdescription>
+      </image>
           <p>I used the groups to count the dots. Each dot represents a team.</p>
       </li>
       <li>14 pieces of glass. Sample response: <m>7\times2</m>. I counted by 2 seven times because each window had 2 pieces of glass.</li>
       <li>
         <p>50 earrings. Sample response:</p>
-        <p>[@@@@@@@@] WARNING: Fix Image.</p>
-        <img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-148251.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p>
-        <img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-148251.svg" width="80%"/>
+        <image source="svg-source/tikz-file-148251">
+        <shortdescription>Cinco rectángulos unidos, cada uno con el número 10 dentro</shortdescription>
+      </image>
         <p>I used a diagram to show 5 groups of 10, then counted by 10 to find the total.</p>
       </li>
       <li>
         <p>20 pencils. Sample response:</p>
-        <p>[@@@@@@@@] WARNING: Fix Image.</p>
-        <img alt="Diagram. 4 groups of 5." role="image" src="../../../../../../figures/tikz-file-148252.svg"/>
-        <p>[@@@@@@@@] WARNING: Fix Image.</p>
-        <img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/>
-        <p>[@@@@@@@@] WARNING: Fix Image.</p>
-        <img alt="Diagram. 4 groups of 5." role="image" src="../../../../../../figures/tikz-file-148252.svg" width="80%"/>
+       <image source="svg-source/tikz-file-148252">
+        <shortdescription>Cuatro cuadrados, cada uno con cinco círculos azules dentro</shortdescription>
+      </image>
         <p>I used a drawing to show 4 boxes with 5 in each box.</p>
       </li>
       <li>30 carrots. Sample response: I counted the 3 bags of 10 like 10, 20, 30.</li>
@@ -54,20 +65,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
+        <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref>
         <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
       </li>
     </ul>
@@ -178,14 +176,22 @@
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
     <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++]
+    </p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: As students describe their representations of the problems, use gestures to emphasize the number of groups and how many are in each group. For example, trace with your finger around each group, and point to each object in each group to show how many there are.</p>
+    <p><em>Advances: Listening, Representing</em></p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++++++++]
+    </p>
+    <p><em>Representation: Access for Perception.</em> Provide access to connecting cubes. Ask students to identify correspondences between the concrete and visual representation used.</p>
+    <p><em>Supports accessibility for: Conceptual Processing</em></p>
   </paragraphs>
 
 </postlude>
