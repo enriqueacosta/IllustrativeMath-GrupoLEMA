@@ -6,6 +6,9 @@
 
 <statement>
   <p>Dobla cada rectángulo que te dé tu profesor en 3, 6, 4 u 8 partes iguales. Dibuja rectas en los dobleces que hiciste para partir los rectángulos. Prepárate para explicar cómo doblaste tus figuras.</p>
+  <aside component="web">
+    <p>Versión PDF de la hoja para doblar, <url href="external/blm/pdf-source/doblemosYNombremos.pdf">descargar acá</url>.</p>    
+  </aside>
 </statement>
 
 <solution>
@@ -53,7 +56,7 @@
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-doblemosYNombremos-mat.ptx"/>  -->
+    <xi:include href="./act-doblemosYNombremos-mat.ptx"/> 
     <!-- <xi:include href="./act-doblemosYNombremos-matCentros.ptx"/>  -->
   </paragraphs>
 
