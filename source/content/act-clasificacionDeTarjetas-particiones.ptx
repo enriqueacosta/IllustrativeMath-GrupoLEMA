@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<activity xml:id="act-clasificacionDeTarjetas-particiones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
+
+<title>Clasificación de tarjetas: Particiones</title>
+
+<statement>
+  <p>Tu profesor te dará un grupo de tarjetas que muestran algunas figuras que están partidas.</p>
+  <p>Clasifica las tarjetas en 2 categorías de tu elección. Prepárate para explicar lo que significan tus categorías.</p>
+  <aside component="web">
+    <p>Versión PDF de las tarjetas, <url href="external/blm/pdf-source/clasificacionDeTarjetasParticiones.pdf">descargar acá</url>.</p>    
+  </aside>
+  <sbsgroup widths="30% 30% 30%">
+    <sidebyside>
+      <stack>
+        <p>A</p>
+        <image source="svg-source/tikz-file-149629">
+          <shortdescription>círculo dividido en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>E</p>
+        <image source="svg-source/tikz-file-149630">
+          <shortdescription>cuadrado dividido en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>I</p>
+        <image source="svg-source/tikz-file-149631">
+          <shortdescription>cuadrado dividido en dos partes desiguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+
+    <sidebyside>
+      <stack>
+        <p>B</p>
+        <image source="svg-source/tikz-file-149632">
+          <shortdescription>cuadrado dividido en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>F</p>
+        <image source="svg-source/tikz-file-149633">
+          <shortdescription>rectángulo dividido en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>J</p>
+        <image source="svg-source/tikz-file-149634">
+          <shortdescription>círculo dividido en tres partes desiguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+
+    <sidebyside>
+      <stack>
+        <p>C</p>
+        <image source="svg-source/tikz-file-149635">
+          <shortdescription>rectángulo dividido en dos partes desiguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>G</p>
+        <image source="svg-source/tikz-file-149636">
+          <shortdescription>rectángulo dividido en tres partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>K</p>
+        <image source="svg-source/tikz-file-149637">
+          <shortdescription>cuadrado dividido en tres partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+
+    <sidebyside>
+      <stack>
+        <p>D</p>
+        <image source="svg-source/tikz-file-149638">
+          <shortdescription>círculo dividido en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>H</p>
+        <image source="svg-source/tikz-file-149639">
+          <shortdescription>círculo dividido en tres partes desiguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>L</p>
+        <image source="svg-source/tikz-file-149640">
+          <shortdescription>rectángulo dividido en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
+</statement>
+
+<solution>
+    <p>[+++++++++++++++]</p>
+    <p>Sample responses:</p>
+    <ul>
+      <li><p><line>2 parts: A, E, F, C, and I</line>
+        <line>3 parts: G, H, J, and K</line>
+        <line>4 parts: B, D, and L</line></p></li>    
+      <li><p><line>Equal parts: A, B, D, E, F, G, J, K, and L</line>
+        <line>Non-equal parts: C, H, and I</line></p></li>
+    </ul>
+  </solution>
+
+
+<!-- ============================================================== 
+   Notas profesor <prelude> (se pueden mostrar previo al enunciado)                      
+===================================================================  -->
+<prelude component="profesor"> 
+
+  <!-- Estándares CCSS asociados -->
+  <paragraphs>
+    <title><custom ref="ccss-actividad-titulo"/></title> 
+    <ul>
+      <li>
+        <custom ref="ccss-buildingOn"/>
+        <xref ref="ccss-2-G-A-3" text="custom">2.G.A.3</xref>
+      </li>
+      <li>
+        <custom ref="ccss-buildingTowards"/>
+        <xref ref="ccss-3-G-A-2" text="custom">3.G.A.2</xref>
+      </li>
+
+    </ul>
+  </paragraphs>
+
+  <!-- Tiempo recomendado -->
+  <paragraphs>
+    <title><custom ref="recommended-time-titulo"/></title>
+    <p>15 minutos</p>
+  </paragraphs>
+
+  <!-- Introducción de la actividad -->
+  <paragraphs>
+    <title><custom ref="narrative-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <p>The purpose of this activity is for students to revisit ideas about how to partition shapes into halves, thirds, and fourths. Students sort a set of shapes into categories based on their shared attributes. Monitor for students who distinguish shapes that have been partitioned into equal-size parts and shapes that have not. This distinction will be used to review what it means for a part of a shape to be a half, a third, or a fourth.</p>
+    <p>Sorting the shapes gives students an opportunity to identify important common characteristics or structures, in this case the number and size of the parts (MP7). When students specify that halves, thirds, and fourths of a shape need to be equal in size, they are attending to precision (MP6).</p>
+    <p>Students will use the cards again during the lesson synthesis.</p>
+  </paragraphs>
+
+
+  <!-- Materiales requeridos de la actividad -->
+  <paragraphs>
+    <title><custom ref="materials-actividad-titulo"/></title>
+    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
+    <xi:include href="./act-clasificacionDeTarjetas-particiones-mat.ptx"/> 
+    <!-- <xi:include href="./act-cualDiferente-particiones-matCentros.ptx"/>  -->
+  </paragraphs>
+
+  <!-- Launch -->
+  <paragraphs>
+    <title><custom ref="launch-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Groups of 2</li>
+      <li>Give one set of pre-cut cards to each group of students.</li>
+      <li>
+        <q>Tómense un minuto para examinar las tarjetas. ¿Qué observan? ¿Qué se preguntan?</q>  (Students may notice: There are different shapes. The shapes are split or partitioned. Students may wonder: Why are they partitioned into different numbers of pieces or parts? Why are some of the pieces or parts equal and some are not?)
+      </li>
+      <li>1 minute: quiet think time</li>
+      <li>
+        <q>Discutan con su pareja lo que pensaron</q>
+      </li>
+      <li>1 minute: partner discussion</li>
+      <li>Share and record responses.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Instrucciones para el desarrollo de la actividad -->
+  <paragraphs>
+    <title><custom ref="instructions-teacher-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>
+        <q>Con su pareja, clasifiquen en categorías las figuras de las tarjetas. Prepárense para explicar sus categorías y por qué las figuras de cada categoría van juntas</q>
+      </li>
+      <li>8 minutes: partner work time</li>
+      <li>Monitor for groups that sort shapes based on whether they are partitioned into equal parts.</li>
+    </ul>
+  </paragraphs>
+
+</prelude>
+
+
+<!-- ============================================================== 
+   Notas profesor <postlude> (se pueden mostrar después del enunciado)                      
+===================================================================  -->
+<postlude component="profesor">
+
+  <!-- Síntesis de la actividad -->
+  <paragraphs>
+    <title><custom ref="synthesis-actividad-titulo"/></title>
+    <p>[+++++++++++++++]</p>
+    <ul>
+      <li>Select groups to share their categories and the shapes in the categories.</li>
+      <li>Showcase as many different types of categories as time allows, but ensure that one set of categories distinguishes between shapes that were partitioned into equal parts and shapes that were not.</li>
+      <li>Attend to the language that students use to describe their categories and shapes, giving them opportunities to describe more precisely how shapes were partitioned.</li>
+      <li>Highlight the use of terms such as halves, thirds, fourths, and equal-sized pieces or parts.</li>
+    </ul>
+  </paragraphs>
+
+
+  <!-- Descripción del desarrollo de lenguaje matemático -->
+  <paragraphs>
+    <title><custom ref="language-actividad-titulo"/></title>
+    <p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display.</em> Collect the language students use while sorting the shapes. Display words and phrases such as: partition, split, parts, equal parts, equal-sized parts, halves, thirds, fourths, whole, and so on. During the synthesis, invite students to suggest ways to update the display: <q>¿Qué otras palabras o frases deberíamos incluir?</q> // <q>What are some other words or phrases we should include?</q> Invite students to borrow language from the display as needed.</p>
+    <p>
+      <em>Advances: Conversing, Reading</em>
+    </p>
+  </paragraphs>
+
+</postlude>
+
+</activity>
