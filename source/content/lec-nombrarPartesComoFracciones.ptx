@@ -80,18 +80,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-partirLasTiras-mat.ptx"/>
-        <xi:include href="./act-partirLasTiras-matCentros.ptx"/>
+        <!--<xi:include href="./act-partirLasTiras-matCentros.ptx"/>-->
       </li>
-      <li>
+      <!--<li>
         <p>Actividad 2</p>
         <xi:include href="./act-partirColorearEIntercambiar-mat.ptx"/>
         <xi:include href="./act-partirColorearEIntercambiar-matCentros.ptx"/>
-      </li>
-    </ul>  -->
+      </li>-->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -176,20 +176,20 @@
   <p>Display a rectangle with each part labeled with the unit fraction and a rectangle shaded to show the unit fraction, such as:</p>
   <sidebyside>
     <stack>
-      <image source="svg-source/tikz-file-147668">
-        <shortdescription>rectángulo dividido en sextos.</shortdescription>
-      </image>
       <p>
         sextos
       </p>
+      <image source="svg-source/tikz-file-147668">
+        <shortdescription>rectángulo dividido en sextos.</shortdescription>
+      </image>      
     </stack> 
     <stack>
-      <image source="svg-source/tikz-file-147669">
-        <shortdescription>rectángulo dividido en sextos, con un sexto sombreado.</shortdescription>
-      </image>
       <p>
         un sexto o <m>\frac{1}{6}</m>
       </p>
+      <image source="svg-source/tikz-file-147669">
+        <shortdescription>rectángulo dividido en sextos, con un sexto sombreado.</shortdescription>
+      </image>      
     </stack> 
   </sidebyside>
   <p><q>¿Cómo saben que el primer diagrama muestra sextos?</q> (It has six equal parts.)</p>
