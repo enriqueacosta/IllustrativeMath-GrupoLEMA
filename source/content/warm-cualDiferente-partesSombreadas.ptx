@@ -7,16 +7,42 @@
 ===========================================================================  -->
 <exploration xml:id="warm-cualDiferente-partesSombreadas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cuál es diferente: Partes sombreadas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es diferente?</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <p>A</p>
+      <p>B</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-149641">
+        <shortdescription>rectángulo dividido en dos partes en forma de L, con una parte sombreada.</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-149642">
+        <shortdescription>rectángulo dividido en tres tiras verticales del mismo tamaño. Con una parte sombreada.</shortdescription>
+      </image>
+    </sidebyside>
+    <sidebyside>
+      <p>C</p>
+      <p>D</p>
+    </sidebyside>
+    <sidebyside>
+      <image source="svg-source/tikz-file-149643">
+        <shortdescription>rectángulo dividido en dos partes con distinto tamaño, con una parte sombreada.</shortdescription>
+      </image>      
+      <image source="svg-source/tikz-file-149644">
+        <shortdescription>rectángulo dividido en dos tiras horizontales del mismo tamaño. Con una parte sombreada.</shortdescription>
+      </image>
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ul>
+    <ul>
       <li>A is the only one that isn't partitioned into rectangles. It's the only one where the partition isn't one straight cut.</li>
       <li>B is the only one that isn’t partitioned into 2 parts.</li>
       <li> C is the only one that doesn’t have equal parts.</li>
@@ -34,24 +60,15 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-2-G-A-3" text="custom">2.G.A.3</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
+
     </ul>
   </paragraphs>
 
@@ -66,13 +83,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This warm-up prompts students to compare four rectangles that have been partitioned and partially shaded. It gives students a reason to use language precisely (MP6). It gives the teacher an opportunity to hear how students use terminology and talk about the characteristics of the items and the quantities they represent. During the synthesis, ask students to explain the meaning of any terminology they use, such as partition, equal parts, halves, and thirds.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-cualDiferente-partesSombreadas-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -110,13 +120,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -126,9 +129,7 @@
         <q>¿Podemos marcar las partes con fracciones? ¿Por qué sí o por qué no?</q>  (We can label the parts in A, B, and D with fractions because they are equal in size, but not in C because the parts aren’t the same size.)
       </li>
       <li>
-        <q>¿Cómo se llaman las partes de las figuras A, B y D?</q>  (
-        <q>Halves</q>  in A and D, and 
-        <q>thirds</q>  in B.)
+        <q>¿Cómo se llaman las partes de las figuras A, B y D?</q> (<q>Halves</q> in A and D, and <q>thirds</q> in B.)
       </li>
       <li>
         <q>¿Qué fracciones usamos para marcar las partes de las figuras A, B y D?</q>  (<m>\frac{1}{2}</m> in A and D, and <m>\frac{1}{3}</m> in B.)
@@ -137,19 +138,6 @@
         <q>Encontremos al menos una razón por la que cada una es diferente</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
