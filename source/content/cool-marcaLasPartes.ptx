@@ -6,19 +6,46 @@
 ===============================================================  -->
 <project xml:id="cool-marcaLasPartes" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Marca las partes</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <sidebyside widths="50% 50%">
+        <p>
+          Marca cada parte con la fracción que le corresponde.
+        </p>
+        <image source="svg-source/tikz-file-151151">
+          <shortdescription>rectángulo dividido en ocho partes iguales</shortdescription>
+        </image>
+      </sidebyside>
+    </li>
+    <li>
+      <sidebyside widths="50% 50%">
+        <p>
+          Parte y colorea el rectángulo para mostrar <m>\frac{1}{4}</m>.
+        </p>
+        <image source="svg-source/tikz-file-151152">
+          <shortdescription>rectángulo</shortdescription>
+        </image>
+      </sidebyside>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li>Student labels each part with <m>\frac{1}{8}</m>.</li>
-      <li><p>Any drawing that shows 4 equal parts and 1 shaded part is acceptable. Sample responses:
-
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-151153.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-151153.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-151154.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-151154.svg" width="80%"/>
+      <li><p>Any drawing that shows 4 equal parts and 1 shaded part is acceptable. Sample responses:</p>
+        <sidebyside widths="50% 50%">          
+            <image source="svg-source/tikz-file-151153">
+              <shortdescription>rectángulo dividido en cuatro partes iguales verticalmente, con una parte sombreada</shortdescription>
+            </image>   
+            <image source="svg-source/tikz-file-151154">
+              <shortdescription>rectángulo dividido en cuatro partes iguales (dos filas con dos columnas), con una parte sombreada</shortdescription>
+            </image>
+        </sidebyside>
       </li>
     </ol>
   </solution>
@@ -32,21 +59,10 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-G-A-2" text="custom">3.G.A.2</xref>,
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -60,15 +76,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Students label each part in the first rectangle with <q>8</q> or <q>1.</q></p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Use the next day’s warm-up to discuss what each part in a partitioned rectangle represents.</p>
   </paragraphs>
 
 </postlude>

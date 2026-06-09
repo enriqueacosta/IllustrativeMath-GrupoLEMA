@@ -2,30 +2,47 @@
 
 <activity xml:id="act-partirLasTiras" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Partamos las tiras</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar algunas tiras de papel. Cada tira representa 1.</p>
+  <aside component="web">
+    <p>
+      Documento con tiras de papel, <url href="external/blm/pdf-source/partirLasTiras.pdf">descargar acá</url>.
+    </p>
+  </aside>
+  <p>
+    Dobla cada tira de forma que las partes representen una de las siguientes fracciones. Usa una tira para cada fracción.
+  </p>
+  <ul>
+    <li><p>medios</p></li>
+    <li><p>cuartos</p></li>
+    <li><p>octavos</p></li>
+    <li><p>tercios</p></li>
+    <li><p>sextos</p></li>
+  </ul>
+  <p>
+    Cuando termines de doblar las tiras, traza rectas sobre los dobleces con un lápiz y luego marca cada parte con la fracción que le corresponde.
+  </p>
 </statement>
 
 <solution>
-    <p>[+++++++++++++++]</p>
-    <p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-  </solution>
+    <image source="svg-source/tikz-file-149645">
+      <shortdescription>tira dividida en dos partes iguales</shortdescription>
+    </image>
+    <image source="svg-source/tikz-file-149646">
+      <shortdescription>tira dividida en cuatro partes iguales</shortdescription>
+    </image>
+    <image source="svg-source/tikz-file-149647">
+      <shortdescription>tira dividida en ocho partes iguales</shortdescription>
+    </image>
+    <image source="svg-source/tikz-file-149648">
+      <shortdescription>tira dividida en tres partes iguales</shortdescription>
+    </image>
+    <image source="svg-source/tikz-file-149649">
+      <shortdescription>tira dividida en seis partes iguales</shortdescription>
+    </image>
+</solution>
 
 
 <!-- ============================================================== 
@@ -39,21 +56,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -69,17 +72,16 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to practice partitioning and labeling equal-sized parts with unit fractions. This provides students a physical tool they can use throughout the unit to make sense of fractions.</p>
-<p>Have students keep their fractions strips to use in future lessons. Consider having students glue the fraction strips in their workbook.</p>
-<p>When students make halves, fourths, and eighths they observe regularity in repeated reasoning as each piece is subdivided into 2 equal pieces. They observe the same relationship between thirds and sixths (MP8).</p>
+    <p>Have students keep their fractions strips to use in future lessons. Consider having students glue the fraction strips in their workbook.</p>
+    <p>When students make halves, fourths, and eighths they observe regularity in repeated reasoning as each piece is subdivided into 2 equal pieces. They observe the same relationship between thirds and sixths (MP8).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-partirLasTiras-mat.ptx"/>  -->
+    <xi:include href="./act-partirLasTiras-mat.ptx"/>  
     <!-- <xi:include href="./act-partirLasTiras-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -126,14 +128,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -145,18 +139,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><q>Engagement: Develop Effort and Persistence.</q> Chunk this task into more manageable parts. Check in with students to provide feedback and encouragement after each chunk. Check in after students fold and label each fraction strip.</p>
+    <p>
+      <q>Supports accessibility for: Organization, Attention</q>
+    </p>
   </paragraphs>
 
 </postlude>
