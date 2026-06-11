@@ -6,17 +6,20 @@
 ===============================================================  -->
 <project xml:id="cool-representaUnaFraccion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Representa una fracción</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Esta tira representa 1 unidad. Parte el diagrama y coloréalo para representar <m>\frac{6}{8}</m>.</p>
+  <image source="svg-source/tikz-file-151156">
+    <shortdescription>rectángulo</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <image source="svg-source/tikz-file-147454">
+      <shortdescription>rectángulo dividido en 8 partes iguales con 6 partes sombreadas</shortdescription>
+    </image>
   </solution>
 
 
@@ -28,21 +31,9 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,15 +47,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Students partition the diagram into 8 parts and shade in 6 parts, but the parts aren't equal.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Before the warm-up, have students discuss strategies for partitioning the diagram in the cool-down into 8 equal parts.</p>
   </paragraphs>
 
 </postlude>
