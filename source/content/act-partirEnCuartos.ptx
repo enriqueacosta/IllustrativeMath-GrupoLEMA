@@ -2,10 +2,30 @@
 
 <activity xml:id="act-partirEnCuartos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Partamos en cuartos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tres estudiantes parten una recta numérica en cuartos. Este es su trabajo.</p>
+  <p>Recta numérica de Clare:</p>
+  <image source="svg-source/tikz-file-149668">
+    <shortdescription>recta numérica de 0 a 2, con cada unidad dividida en dos partes iguales.</shortdescription>
+  </image>
+  <p>Recta numérica de Andre:</p>
+  <image source="svg-source/tikz-file-149669">
+    <shortdescription>recta numérica de 0 a 2, con la primera unidad dividida en cuatro partes iguales.</shortdescription>
+  </image>
+  <p>Recta numérica de Diego:</p>
+  <image source="svg-source/tikz-file-149670">
+    <shortdescription>recta numérica de 0 a 2, con la primera unidad dividida en cinco partes iguales.</shortdescription>
+  </image>
+  <p>
+    ¿Cuál de estas particiones tiene más sentido para ti? Explica tu razonamiento.
+  </p>
+  <sidebyside margins="60% 0%" component="web">
+    <image source="png-source/CS 3.5.B Lesson 6 Activity 1.png" component="web">
+      <shortdescription>dos estudiantes conversando</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
@@ -25,21 +45,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,16 +61,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to make sense of partitioning number lines that extend beyond one. Clare and Diego's work surfaces 2 common misconceptions that students often make while partitioning number lines into fractions. Clare partitions the entire number line into fourths and Diego places 4 tick marks to show fourths. Students analyze these misconceptions (MP3) before they locate and label unit fractions on number lines of various lengths in the next activity.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-partirEnCuartos-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-partirEnCuartos-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -102,46 +98,23 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Ask students to share why Andre’s partitioning makes sense to them.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Alguien pensó en el razonamiento de Andre de otra forma?</q></li>
-<li>
-<q>¿Cómo sabemos que la recta numérica de Andre está partida en cuartos?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Alguien pensó en el razonamiento de Andre de otra forma?</q></li>
+          <li><q>¿Cómo sabemos que la recta numérica de Andre está partida en cuartos?</q></li>
+        </ul>
       </li>
       <li>Ask students to explain why Clare and Diego’s partitioning does not show fourths.</li>
       <li>
         <q>Aprendimos que cuando se parte la recta numérica, se debe poner atención a dónde están el 0 y el 1, y hay que asegurarse de partir ese pedazo en el número correcto de partes iguales</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
