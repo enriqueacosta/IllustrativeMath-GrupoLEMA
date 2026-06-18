@@ -2,10 +2,42 @@
 
 <activity xml:id="act-doblarYMarcarLaRectaNumerica" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Doblemos y marquemos la recta numérica</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li><p>Andre y Clare hablan sobre cómo marcar fracciones en la recta numérica. Andre dice que <m>\frac{1}{2}</m> se puede marcar de esta manera:</p>
+      <image source="svg-source/tikz-file-149666">
+        <shortdescription>recta numérica de 0 a 1, dividida a la mitad. Cada mitad está marcada con 1/2</shortdescription>
+      </image>
+      <p>
+        Clare dice que <m>\frac{1}{2}</m> se puede marcar de esta manera:
+      </p>
+      <image source="svg-source/tikz-file-149667">
+        <shortdescription>recta numérica de 0 a 1, dividida a la mitad. Con 1/2 marcado en la mitad</shortdescription>
+      </image>
+      <p>
+        ¿Por qué las formas de marcar que usaron ambos estudiantes pueden tener sentido?
+      </p>
+    </li>
+    <li><p>Tu profesor te va a dar una colección de rectas numéricas. Recorta tus rectas numéricas de tal manera que puedas doblar cada una por separado.</p>
+      <aside component="web">
+        <p>
+          PDF con rectas numéricas. <url href="external/blm/pdf-source/doblemosYMarquemosLaRectaNumerica.pdf">Descargar acá</url>.
+        </p>
+      </aside>
+      <p>
+        Mientras doblas tus rectas numéricas, discute tus estrategias con tu compañero.
+      </p>
+      <ol>
+        <li><p>Dobla una de las rectas numéricas en medios. Dibuja marcas que muestren los medios. Marca el número <m>\frac{1}{2}</m>.</p></li>
+        <li><p>Dobla una de las rectas numéricas en tercios. Dibuja marcas que muestren los tercios. Marca el número <m>\frac{1}{3}</m>.</p></li>
+        <li><p>Dobla una de las rectas numéricas en cuartos. Dibuja marcas que muestren los cuartos. Marca el número <m>\frac{1}{4}</m>.</p></li>
+        <li><p>Dobla una de las rectas numéricas en sextos. Dibuja marcas que muestren los sextos. Marca el número <m>\frac{1}{6}</m>.</p></li>
+        <li><p>Dobla una de las rectas numéricas en octavos. Dibuja marcas que muestren los octavos. Marca el número <m>\frac{1}{8}</m>.</p></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -28,21 +60,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,17 +76,16 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is to transition students from thinking about fractional lengths on fraction strips to thinking about fractions as numbers on the number line. Students build on their experience of folding fraction strips to fold number lines into halves, thirds, fourths, sixths, and eighths and then label unit fractions.</p>
-<p>Students begin by considering how the fraction <m>\frac{1}{2}</m> can be labeled on the number line. They learn that each part of the number line has a length of one half, but the endpoint of the first one-half part is the location of the number <m>\frac{1}{2}</m> on the number line. This distinction is important for understanding fractions as numbers that can be represented as points on the number line and for using the number line precisely (MP6).</p>
-<p>When folding the number lines, students also need to attend to the fact that it is the interval between 0 and 1 that needs to be partitioned, rather than the length of the entire strip of paper that contains each number line.</p>
+    <p>Students begin by considering how the fraction <m>\frac{1}{2}</m> can be labeled on the number line. They learn that each part of the number line has a length of one half, but the endpoint of the first one-half part is the location of the number <m>\frac{1}{2}</m> on the number line. This distinction is important for understanding fractions as numbers that can be represented as points on the number line and for using the number line precisely (MP6).</p>
+    <p>When folding the number lines, students also need to attend to the fact that it is the interval between 0 and 1 that needs to be partitioned, rather than the length of the entire strip of paper that contains each number line.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-doblarYMarcarLaRectaNumerica-mat.ptx"/>  -->
+    <xi:include href="./act-doblarYMarcarLaRectaNumerica-mat.ptx"/>
     <!-- <xi:include href="./act-doblarYMarcarLaRectaNumerica-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -90,12 +107,11 @@
       </li>
       <li>2–3 minutes: partner discussion</li>
       <li>Share responses.</li>
-      <li>Display a number line with both the distance to <m>\frac{1}{2}</m> and the number <m>\frac{1}{2}</m> marked in a color, such as:</li>
-    </ul>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<ul>
+      <li>Display a number line with both the distance to <m>\frac{1}{2}</m> and the number <m>\frac{1}{2}</m> marked in a color, such as:
+        <image source="svg-source/tikz-file-149665">
+          <shortdescription>recta numérica de 0 a 1, dividida en dos partes iguales, con la primera mitad sombreada.</shortdescription>
+        </image>
+      </li>    
       <li>
         <q>Andre estaba pensando en las partes que tenían longitud <m>\frac{1}{2}</m>, por eso él marcó con <m>\frac{1}{2}</m> las partes que iban de 0 a <m>\frac{1}{2}</m> y de <m>\frac{1}{2}</m> a 1</q>
       </li>
@@ -137,14 +153,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -152,23 +160,18 @@
     <ul>
       <li>Display a number line folded into fourths and a fraction strip of fourths.</li>
       <li>
-        <q>¿En qué se pareció partir estas rectas numéricas a partir nuestras tiras de fracciones?</q>  (The number lines were folded just like the strips were, but instead of a rectangle it’s just a line. We labeled the location of the unit fractions at the end of the first part on each number line instead of the space.)
+        <q>¿En qué se pareció partir estas rectas numéricas a partir nuestras tiras de fracciones?</q> (The number lines were folded just like the strips were, but instead of a rectangle it’s just a line. We labeled the location of the unit fractions at the end of the first part on each number line instead of the space.)
       </li>
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Representation: Develop Language and Symbols.</em> Synthesis: Make connections between representations visible. Highlight the similarities and differences in the strategies students used to fold their number lines.</p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing, Visual-Spatial Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>

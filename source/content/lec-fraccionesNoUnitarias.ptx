@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 3 </shorttitle>
 <title>Lección 3 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Fracciones no unitarias</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Aprendamos sobre fracciones no unitarias.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,10 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li>
+      <p>Understand a fraction <m>\frac{a}{b}</m> as the quantity formed by <m>a</m> parts of size <m>\frac{1}{b}</m>.</p>
+    </li>
   </ul>
 </objectives>
 
@@ -41,21 +44,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +65,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
-      <li>
+    <ul>
+      <!--<li>
         <p>Actividad 1</p>
         <xi:include href="./act-escribirYLeerFracciones-mat.ptx"/>
         <xi:include href="./act-escribirYLeerFracciones-matCentros.ptx"/>
-      </li>
+      </li>-->
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-parejasDeFracciones-mat.ptx"/>
-        <xi:include href="./act-parejasDeFracciones-matCentros.ptx"/>
+        <!--<xi:include href="./act-parejasDeFracciones-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,7 +84,7 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>Previously, students learned how to write unit fractions, using numbers of the form <m>\frac{1}{b}</m>. They also partitioned rectangles and used unit fractions to describe one of the parts. In this lesson, students use diagrams with multiple equal parts shaded to make sense of how non-unit fractions are made of unit fractions.</p>
-<p>Students learn that a <strong>unit fraction</strong> is a fraction in which the numerator is 1 because it describes one of the equal-sized parts. They work with fractions that are equal to a whole number and fractions greater than a whole number to see that all non-unit fractions are built from unit fractions in the same way. Students also notice that if all the parts are shaded, then the non-unit fraction is equivalent to a whole number. The terms numerator and denominator are not used until the next section.</p>
+    <p>Students learn that a <term>unit fraction</term> is a fraction in which the numerator is 1 because it describes one of the equal-sized parts. They work with fractions that are equal to a whole number and fractions greater than a whole number to see that all non-unit fractions are built from unit fractions in the same way. Students also notice that if all the parts are shaded, then the non-unit fraction is equivalent to a whole number. The terms numerator and denominator are not used until the next section.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -125,7 +113,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-fraccionesNoUnitarias-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-fraccionesNoUnitarias-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -168,19 +156,36 @@
 <subsubsection xml:id="lec-fraccionesNoUnitarias-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display: <m>\frac{1}{8}</m> and <m>\frac{5}{8}</m></p>
-<p><q>Hoy aprendimos a construir más fracciones, como <m>\frac{5}{8}</m>, a partir de fracciones que ya conocíamos, como <m>\frac{1}{8}</m>. A las fracciones que describen una de las partes de igual tamaño, como <m>\frac{1}{8}</m>, las llamamos <strong>fracciones unitarias</strong>. ¿Cómo vieron hoy que las fracciones unitarias nos ayudan a construir nuevas fracciones?</q> (Every fraction we worked with today was made up of unit fractions. If we shade more than one unit fraction in a rectangle, we get a new fraction that doesn’t have a one on the top of the number.)</p>
-<p>Display:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>Display:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+  <p><q>Hoy aprendimos a construir más fracciones, como <m>\frac{5}{8}</m>, a partir de fracciones que ya conocíamos, como <m>\frac{1}{8}</m>. A las fracciones que describen una de las partes de igual tamaño, como <m>\frac{1}{8}</m>, las llamamos <term>fracciones unitarias</term>. ¿Cómo vieron hoy que las fracciones unitarias nos ayudan a construir nuevas fracciones?</q> (Every fraction we worked with today was made up of unit fractions. If we shade more than one unit fraction in a rectangle, we get a new fraction that doesn’t have a one on the top of the number.)</p>
+  <p>Display:</p>
+  <sidebyside widths="5% 35% 55%" valign="middle">
+    <p>
+      <m>\displaystyle\frac{5}{8}</m>
+    </p>
+    <image source="svg-source/tikz-file-147677">
+      <shortdescription>rectángulo dividido en octavos, con 5 partes sombreadas</shortdescription>
+    </image>
+    <p>
+      <q>Miren la fracción <m>\frac{5}{8}</m>. ¿Qué nos dice cada parte del número?</q> (The 8 tells us how many parts the rectangle is being split into and what size they are. There are 8 one-eighth parts. The 5 tells us how many of the parts are shaded. Five of the one-eighth parts will be shaded.)
+    </p>
+  </sidebyside>
+
+  <p>Display:</p>
+  <sidebyside widths="5% 35% 55%" valign="middle">
+    <p>
+      <m>\displaystyle\frac{7}{6}</m>
+    </p>
+    <image source="svg-source/tikz-file-147678">
+      <shortdescription>dos rectángulos dividido en sextos, con 6 partes sombreadas en uno y 1 parte sombreada en el otro</shortdescription>
+    </image>
+    <p>
+      <q>Miren la fracción <m>\frac{7}{6}</m>. ¿Qué nos dice cada parte del número?</q> (The 6 tells us how many parts the rectangle is being split into and what size they are. There are 6 one-sixth parts. The 7 tells us how many of the parts are shaded. Seven of the one-sixth parts will be shaded.)
+    </p>
+  </sidebyside>
 
 </subsubsection>
 

@@ -2,16 +2,93 @@
 
 <activity xml:id="act-clasificacionDeTarjetas-rectasNumericas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Clasificación de tarjetas: Rectas numéricas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar un grupo de tarjetas que muestran rectas numéricas. Clasifica las tarjetas en las categorías que quieras. Prepárate para explicar lo que significan tus categorías.</p>
+  <aside component="web">
+    <p>
+      Tarjetas para clasificar, <url href="external/blm/pdf-source/clasificacionDeTarjetasRectasNumericas.pdf">descargar acá</url>.
+    </p>
+  </aside>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <stack>
+        <p>A</p>
+        <image source="svg-source/tikz-file-149656">
+          <shortdescription>recta numérica de 0 a 8 dividida en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>B</p>
+        <image source="svg-source/tikz-file-149657">
+          <shortdescription>recta numérica de 0 a 1 dividida en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>C</p>
+        <image source="svg-source/tikz-file-149658">
+          <shortdescription>recta numérica de 0 a 3, con marcas en 0, 1, 2 y 3. Con cada unidad dividida en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>D</p>
+        <image source="svg-source/tikz-file-149659">
+          <shortdescription>recta numérica de 0 a 2, con marcas en 0, 1 y 2. Con cada unidad dividida en dos partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>E</p>
+        <image source="svg-source/tikz-file-149660">
+          <shortdescription>recta numérica de 0 a 4, dividida en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>F</p>
+        <image source="svg-source/tikz-file-149661">
+          <shortdescription>recta numérica de 0 a 1, dividida en seis partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>G</p>
+        <image source="svg-source/tikz-file-149662">
+          <shortdescription>recta numérica de 0 a 6, dividida en tres partes iguales</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>H</p>
+        <image source="svg-source/tikz-file-149663">
+          <shortdescription>recta numérica de 0 a 2, con marcas en 0, 1 y 2. Con cada unidad dividida en tres partes iguales</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>I</p>
+        <image source="svg-source/tikz-file-149664">
+          <shortdescription>recta numérica de 0 a 4, con marcas en 0, 2 y 4. Con cada unidad dividida en cuatro partes iguales</shortdescription>
+        </image>
+      </stack>
+      <p></p>
+    </sidebyside>
+  </sbsgroup>
+  <sidebyside margins="50% 0%">
+    <image source="png-source/CS 3.5.B Lesson 5 Activity 1.png" component="web">
+      <shortdescription>estudiantes clasificando tarjetas</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Students may sort by:</p>
-<ul>
+    <ul>
       <li>The number on the right end of the number line: 1 (B and F) and other than 1 (all others)</li>
       <li>The number of parts from one end of the number line to the other end: 2 (A), 3 (G), 4 (B, D, E), 6 (C, F, H), 8 (I)</li>
       <li>The middle tick mark: labeled (D, H, I) or not labeled (all others)</li>
@@ -31,21 +108,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -61,16 +124,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to further develop the idea that fractional amounts can be represented on a number line. Students sort a given set of cards showing number lines. They first sort in a way of their choice, which might include number of parts or length of the number line. Monitor for different ways groups choose to categorize the number lines, but especially for categories that distinguish between number lines with whole number partitions and fractional partitions.</p>
-<p>When students identify common properties of the number lines for their sorts, such as the numbers listed on the tick marks or the total number of tick marks, they look for and make use of structure (MP7).</p>
+    <p>When students identify common properties of the number lines for their sorts, such as the numbers listed on the tick marks or the total number of tick marks, they look for and make use of structure (MP7).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-mat.ptx"/>  -->
+    <xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-mat.ptx"/>
     <!-- <xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -122,9 +184,8 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If students don’t identify number lines that would have fractions marked, consider asking:
-</p>
-<ul>
+    <p>If students don’t identify number lines that would have fractions marked, consider asking:</p>
+    <ul>
       <li>
         <q>¿Qué otros números podemos encontrar en esta recta numérica?</q>
       </li>
@@ -141,12 +202,10 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Cómo supieron si una recta numérica tenía marcas que representan fracciones?</q>  (If there is one or more tick marks between two back-to-back whole numbers like 0 and 1, or 1 and 2, then the tick marks between them represent fractions.)
+        <q>¿Cómo supieron si una recta numérica tenía marcas que representan fracciones?</q> (If there is one or more tick marks between two back-to-back whole numbers like 0 and 1, or 1 and 2, then the tick marks between them represent fractions.)
       </li>
       <li>Attend to the language that students use to describe their number lines, giving them opportunities to describe the number lines more precisely.</li>
-      <li>Highlight the use of phrases like 
-        <q>partes menores que 1</q>  or 
-        <q>partir una parte en partes más pequeñas que sean menores que 1</q>
+      <li>Highlight the use of phrases like <q>partes menores que 1</q> or <q>partir una parte en partes más pequeñas que sean menores que 1</q>
       </li>
       <li>Consider displaying a number line with fractions that are less obvious, such as number line I. Ask students to help identify the fractions on that number line, and label 1 and 3 so that the tick marks between the whole numbers are clear.</li>
     </ul>
@@ -155,15 +214,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display.</em> Circulate, listen for and collect the language students use as they sort the number lines. On a visible display, record words and phrases such as: parts less than one, smaller than one, whole numbers, partitions, partitioned into fractions, and equal parts. Invite students to borrow language from the display as needed, and update it throughout the lesson.</p>
+    <p>
+      <em>Advances: Conversing, Reading</em>
+    </p>
   </paragraphs>
 
 </postlude>

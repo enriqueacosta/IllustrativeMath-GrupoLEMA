@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 5 </shorttitle>
 <title>Lección 5 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>A la recta numérica</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Aprendamos sobre fracciones en la recta numérica.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Extend understanding of whole numbers on the number line to see fractions on a number line.</p></li>
   </ul>
 </objectives>
 
@@ -41,21 +42,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +63,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-mat.ptx"/>
-        <xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-matCentros.ptx"/>
+        <!--<xi:include href="./act-clasificacionDeTarjetas-rectasNumericas-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-doblarYMarcarLaRectaNumerica-mat.ptx"/>
-        <xi:include href="./act-doblarYMarcarLaRectaNumerica-matCentros.ptx"/>
+        <!--<xi:include href="./act-doblarYMarcarLaRectaNumerica-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -167,17 +153,17 @@
 <subsubsection xml:id="lec-aLaRectaNumerica-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p><q>Hoy usamos lo que sabemos sobre fracciones para pensar en qué lugar de la recta numérica se ubican las fracciones</q></p>
-<p><q>¿Qué aprendieron hoy sobre ubicar y marcar fracciones en la recta numérica?</q> (Fractions are between the whole numbers on a number line. We can fold number lines just like fraction strips to partition a whole into smaller parts. We can see the fraction as a distance and as a number located on the number line.)</p>
-<p>Display a number line from 0 to 1 partitioned into thirds with the distance to <m>\frac{1}{3}</m> marked, such as:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p><q>¿Cómo podemos usar esta longitud para ubicar y marcar el número <m>\frac{1}{3}</m> en esta recta numérica?</q> (We could label the end of the first part with <m>\frac{1}{3}</m> to show it’s a third of the distance to 1 from 0 on the number line.)</p>
-<p><q>Ubiquen y marquen <m>\frac{1}{3}</m> en la recta numérica</q></p>
+  <p><q>¿Qué aprendieron hoy sobre ubicar y marcar fracciones en la recta numérica?</q> (Fractions are between the whole numbers on a number line. We can fold number lines just like fraction strips to partition a whole into smaller parts. We can see the fraction as a distance and as a number located on the number line.)</p>
+  <p>Display a number line from 0 to 1 partitioned into thirds with the distance to <m>\frac{1}{3}</m> marked, such as:</p>
+  <image source="svg-source/tikz-file-147705">
+    <shortdescription>recta numérica de 0 a 1 partida en tercios, con un tercio sombreado.</shortdescription>
+  </image>
+  <p><q>¿Cómo podemos usar esta longitud para ubicar y marcar el número <m>\frac{1}{3}</m> en esta recta numérica?</q> (We could label the end of the first part with <m>\frac{1}{3}</m> to show it’s a third of the distance to 1 from 0 on the number line.)</p>
+  <p><q>Ubiquen y marquen <m>\frac{1}{3}</m> en la recta numérica</q></p>
 
 </subsubsection>
 

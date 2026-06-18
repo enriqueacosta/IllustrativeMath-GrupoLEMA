@@ -2,25 +2,47 @@
 
 <activity xml:id="act-parejasDeFracciones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Parejas de fracciones</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Tu profesor te va a dar un grupo de tarjetas para jugar <q>Parejas de fracciones</q>. Dos tarjetas son una pareja si una de ellas es un diagrama, la otra es un número y ambas tienen el mismo valor.</p>
+  <aside component="web">
+    <p>
+      Tarjetas para juego <q>Parejas de fracciones parte 1</q> <url href="external/blm/pdf-source/parejasDeFracciones1.pdf">descargar acá</url>.
+    </p>
+  </aside>
+  <ol>
+    <li><p>Para jugar <q>Parejas de fracciones</q>:</p>
+      <ul>
+        <li><p>Organiza las tarjetas boca abajo en un arreglo.</p></li>
+        <li><p>Por turnos, cada uno escoge 2 tarjetas. Si las tarjetas son una pareja, quédate con ellas y juega otra vez. Si no, vuélvelas a poner donde estaban, boca abajo. No te puedes quedar con más de 2 parejas en cada turno.</p></li>
+        <li><p>Después de que encuentren todas las parejas, el jugador que tenga más tarjetas gana.</p></li>
+      </ul>
+    </li>
+    <li><p>Usa las tarjetas que te dé tu profesor para crear 4 parejas nuevas y agrégalas al grupo.</p>
+      <aside component="web">
+        <p>
+          Tarjetas para juego <q>Parejas de fracciones parte 2</q> <url href="external/blm/pdf-source/parejasDeFracciones2.pdf">descargar acá</url>.
+        </p>
+      </aside>
+    </li>
+    <li><p>Juega otra ronda de <q>Parejas de fracciones</q> usando todas las tarjetas.</p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li><ol>
-<li>A and P</li>
-<li>B and I</li>
-<li>C and M</li>
-<li>D and J</li>
-<li>E and N</li>
-<li>F and O</li>
-<li>G and L</li>
-<li>H and K</li>
-</ol>
+        <li>A and P</li>
+        <li>B and I</li>
+        <li>C and M</li>
+        <li>D and J</li>
+        <li>E and N</li>
+        <li>F and O</li>
+        <li>G and L</li>
+        <li>H and K</li>
+      </ol>
       </li>
       <li>Answers vary.</li>
     </ol>
@@ -38,21 +60,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -68,16 +76,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to match fractions to shaded diagrams. Reiterate that each rectangle represents one whole. After one round of matching, students pause to create 4 new pairs of cards to add to their set. Give students the Fraction Match Part 2 cards when they create their own pairs of cards.</p>
-<p>Students observe and use structure as they identify that the top number in the fraction represents the number of shaded pieces while the bottom number represents the number of those pieces in one whole rectangle (MP7).</p>
+    <p>Students observe and use structure as they identify that the top number in the fraction represents the number of shaded pieces while the bottom number represents the number of those pieces in one whole rectangle (MP7).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-parejasDeFracciones-mat.ptx"/>  -->
+    <xi:include href="./act-parejasDeFracciones-mat.ptx"/> 
     <!-- <xi:include href="./act-parejasDeFracciones-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -126,14 +133,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -157,15 +156,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><q>MLR8 Discussion Supports.</q> Students should explain to their partner why the chosen cards match or do not match. Display the following sentence frames for all to see: <q>Observo <fillin characters="5" />, entonces estas dos tarjetas son / no son una pareja</q> // <q>I notice <fillin characters="5" />, so these two cards match/do not match.</q> Encourage students to challenge each other when they disagree.</p>
+    <p>
+      <q>Advances: Speaking, Representing</q>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><q>Representation: Access for Perception.</q> Begin by showing a physical demonstration of how to play one round of the game Fraction Match to support understanding of the context.</p>
+    <p>
+      <q>Supports accessibility for: Memory, Social-Emotional Functioning</q>
+    </p>
   </paragraphs>
 
 </postlude>
