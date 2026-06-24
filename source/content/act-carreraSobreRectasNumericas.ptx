@@ -2,15 +2,19 @@
 
 <activity xml:id="act-carreraSobreRectasNumericas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Carrera sobre rectas numéricas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Ahora van a jugar <q>carrera sobre rectas numéricas</q>.</p>
+  <aside component="web">
+    <p>
+      Versión PDF de las instrucciones del juego, <url href="external/blm/pdf-source/carreraSobreRectasNumericasEtapa2-Instrucciones.pdf">descargar acá</url>.
+    </p>
+    <p>
+      Versión PDF del tablero de juego, <url href="external/blm/pdf-source/carreraSobreRectasNumericasEtapa2-TableroDeJuego.pdf">descargar acá</url>.
+    </p>
+  </aside>
 </statement>
-
-<solution>
-  <p>[@@@@@@@@@]</p>
-</solution>
 
 
 <!-- ============================================================== 
@@ -24,21 +28,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2-b" text="custom">3.NF.A.2.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -54,16 +44,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to practice identifying fractional intervals along a number line. This is Stage 2 of the center activity, Number Line Scoot. This activity encourages students to count by the number of intervals (the numerator). Students have to land exactly on the last tick mark, which represents 4, to encourage them to move along different number lines. While this activity does not focus on equivalence, it gives students exposure to this idea before they work more formally with it in the next section. In the synthesis, students relate counting on a number line marked off in whole numbers to their number lines marked off in fractional-sized intervals.</p>
-<p>It may be helpful to play a few rounds with the whole class to be sure students are clear on the rules of the game. Keep the number line game boards for center use.</p>
+    <p>It may be helpful to play a few rounds with the whole class to be sure students are clear on the rules of the game. Keep the number line game boards for center use.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-carreraSobreRectasNumericas-mat.ptx"/>  -->
+    <xi:include href="./act-carreraSobreRectasNumericas-mat.ptx"/>
     <!-- <xi:include href="./act-carreraSobreRectasNumericas-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -100,14 +89,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -127,18 +108,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
     <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Check in and provide each group with feedback that encourages collaboration and community. For example, check in after the first round of Number Line Scoot.</p>
+    <p>
+      <em>Supports accessibility for: Attention, Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>
