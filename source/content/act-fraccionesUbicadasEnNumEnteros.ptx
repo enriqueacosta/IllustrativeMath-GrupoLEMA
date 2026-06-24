@@ -2,41 +2,80 @@
 
 <activity xml:id="act-fraccionesUbicadasEnNumEnteros" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Fracciones ubicadas en números enteros</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Ubica y marca en la recta numérica las fracciones que te asignaron. Prepárate para explicar tu razonamiento.</p>
+      <image source="svg-source/tikz-file-149702">
+        <shortdescription>recta numérica de 0 a 5</shortdescription>
+      </image>
+      <ol>
+        <li>
+          <p>
+            <m>\frac{1}{2}</m>, <m>\frac{2}{2}</m>, <m>\frac{3}{2}</m>, <m>\frac{4}{2}</m>, <m>\frac{5}{2}</m>, <m>\frac{6}{2}</m>, <m>\frac{7}{2}</m>, <m>\frac{8}{2}</m>, <m>\frac{9}{2}</m>, <m>\frac{10}{2}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{1}{3}</m>, <m>\frac{2}{3}</m>, <m>\frac{3}{3}</m>, <m>\frac{4}{3}</m>, <m>\frac{5}{3}</m>, <m>\frac{6}{3}</m>, <m>\frac{7}{3}</m>, <m>\frac{8}{3}</m>, <m>\frac{9}{3}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{1}{4}</m>, <m>\frac{2}{4}</m>, <m>\frac{3}{4}</m>, <m>\frac{4}{4}</m>, <m>\frac{5}{4}</m>, <m>\frac{6}{4}</m>, <m>\frac{7}{4}</m>, <m>\frac{8}{4}</m>, <m>\frac{9}{4}</m>, <m>\frac{10}{4}</m>. <m>\frac{11}{4}</m>, <m>\frac{12}{4}</m>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>Hagan una lista de todas las fracciones que estaban ubicadas en un número entero. Incluyan las de las tres rectas numéricas del grupo.</p>
+    </li>
+    <li>
+      <p>¿Qué patrones ves en las tres rectas numéricas que marcaron?</p>
+    </li>
+  </ol>
+  <sidebyside margins="70% 0%" component="web">
+    <image source="png-source/CS 3.5.B Lesson 8.png">
+      <shortdescription>imagen con números del 1 al 5</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><ol>
-<li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149703.svg"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149703.svg" width="80%"/>
-</li>
-<li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149704.svg"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149704.svg" width="80%"/>
-</li>
-<li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149705.svg"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<img alt="Number line." role="image" src="../../../../../../figures/tikz-file-149705.svg" width="80%"/>
-</li>
-</ol>
+      <li>
+        <ol>
+          <li>
+            <p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-149703">
+                  <shortdescription>recta numérica de 0 a 5 con fracciones marcadas, de 1/2 a 10/2.</shortdescription>
+                </image>
+              </line>              
+            </p>
+          </li>
+          <li>
+            <p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-149704">
+                  <shortdescription>recta numérica de 0 a 5 con fracciones marcadas, de 1/3 a 9/3.</shortdescription>
+                </image>
+              </line>              
+            </p>
+          </li>
+          <li>
+            <p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-149705">
+                  <shortdescription>recta numérica de 0 a 5 con fracciones marcadas, de 1/4 a 12/4.</shortdescription>
+                </image>
+              </line>              
+            </p>
+          </li>
+        </ol>
       </li>
       <li><m>\frac{2}{2}</m>, <m>\frac{4}{2}</m>, <m>\frac{6}{2}</m>, <m>\frac{8}{2}</m>, <m>\frac{10}{2}</m>, <m>\frac{3}{3}</m>, <m>\frac{6}{3}</m>, <m>\frac{9}{3}</m>, <m>\frac{4}{4}</m>, <m>\frac{8}{4}</m>, <m>\frac{12}{4}</m></li>
       <li>Sample response: For halves, every other fraction on the list ended up at a whole number. For thirds, every third fraction ended up at a whole number, and for fourths every fourth number.</li>
@@ -55,21 +94,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-c" text="custom">3.NF.A.3.c</xref>
       </li>
     </ul>
   </paragraphs>
@@ -85,21 +110,11 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to place fractions greater than 1 on the number line and notice how fractions can be written as whole numbers. For example, students will see that for halves, every second half is located at a whole number because it takes 2 halves to make a whole.</p>
-<p>Students work in groups. Each member will be assigned a different set of fractions to put on their number line so that the group can look for patterns across halves, thirds, and fourths. Through repeated reasoning, students may notice two types of regularity (MP8):</p>
-<ul>
+    <p>Students work in groups. Each member will be assigned a different set of fractions to put on their number line so that the group can look for patterns across halves, thirds, and fourths. Through repeated reasoning, students may notice two types of regularity (MP8):</p>
+    <ul>
       <li>It takes 2 halves, 3 thirds, or 4 fourths to make a whole.</li>
       <li>Whole numbers appear regularly (every 2 halves, every 3 thirds).</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-fraccionesUbicadasEnNumEnteros-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-fraccionesUbicadasEnNumEnteros-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -126,10 +141,11 @@
         <q>Compartan con su grupo su estrategia para ubicar las fracciones y entre todos, busquen patrones en los números</q>
       </li>
       <li>4–6 minutes: small-group discussion</li>
-      <li><p>Monitor for students who: </p><ul>
-<li>Notice that every 2 halves, 3 thirds, and 4 fourths ends up at a whole number.</li>
-<li>Notice that the numerator is a multiple of the denominator.</li>
-</ul>
+      <li><p>Monitor for students who: </p>
+        <ul>
+          <li>Notice that every 2 halves, 3 thirds, and 4 fourths ends up at a whole number.</li>
+          <li>Notice that the numerator is a multiple of the denominator.</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -142,14 +158,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -157,28 +165,14 @@
     <ul>
       <li>Display 3 blank number lines from 0 to 5 to label as students share.</li>
       <li>Select previously identified students to share the patterns they noticed in the fractions that share the same location as the whole numbers.</li>
-      <li><p>
-<q>¿Por qué puede tener sentido que las fracciones muestren esos patrones?</q> (Sample responses:</p><ul>
-<li>because it takes 2 halves, 3 thirds, or 4 fourths to make a whole.</li>
-<li>because there are 2 halves in 1, so there are <m>2\times 2</m> or 4 halves in 2, <m>3\times 2</m> or 6 halves in 3, and so on.)</li>
-</ul>
+      <li><p><q>¿Por qué puede tener sentido que las fracciones muestren esos patrones?</q> (Sample responses:</p>
+        <ul>
+          <li>because it takes 2 halves, 3 thirds, or 4 fourths to make a whole.</li>
+          <li>because there are 2 halves in 1, so there are <m>2\times 2</m> or 4 halves in 2, <m>3\times 2</m> or 6 halves in 3, and so on.)</li>
+        </ul>
       </li>
       <li>Label the number line as students share, particularly the whole numbers, like: <m>1 = \frac{2}{2}</m>, <m>2= \frac{4}{2}</m>, <m>3=\frac{6}{2}</m> to highlight the idea that the number of equal parts (2, 3, or 4) in the fractions affects when you end up at a whole number.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
