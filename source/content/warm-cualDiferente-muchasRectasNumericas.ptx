@@ -7,10 +7,40 @@
 ===========================================================================  -->
 <exploration xml:id="warm-cualDiferente-muchasRectasNumericas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cuál es diferente: Muchas rectas numéricas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuál es diferente?</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <stack>
+        <p>A</p>
+        <image source="svg-source/tikz-file-149714">
+          <shortdescription>recta numérica que empieza en 0, con 1/2 marcado</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>B</p>
+        <image source="svg-source/tikz-file-149715">
+          <shortdescription>recta numérica que empieza en 0, con 1 marcado</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <p>C</p>
+        <image source="svg-source/tikz-file-149716">
+          <shortdescription>recta numérica que empieza en 0 y dividida en cuartos.</shortdescription>
+        </image>
+      </stack>
+      <stack>
+        <p>D</p>
+        <image source="svg-source/tikz-file-149717">
+          <shortdescription>recta numérica que empieza en 0, y una marca en 1.</shortdescription>
+        </image>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
 </statement>
 
 <solution>
@@ -36,21 +66,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -66,13 +82,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This warm-up prompts students to compare four number lines. It gives students a reason to use language precisely (MP6). It gives the teacher an opportunity to hear how students use terminology and talk about characteristics of the number lines in comparison to one another. During the synthesis, ask students to explain the meaning of any terminology they use, such as parts, partitions, mark, label, halves, fourths, or whole.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-cualDiferente-muchasRectasNumericas-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -110,38 +119,18 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Cómo supieron que la recta numérica de la figura A terminaba en 1?</q>  (The location of <m>\frac{1}{2}</m> shows that the whole number line is split in half right there and I know that 2 halves is 1. I can only fit one more half next to the first one.)
+        <q>¿Cómo supieron que la recta numérica de la figura A terminaba en 1?</q> (The location of <m>\frac{1}{2}</m> shows that the whole number line is split in half right there and I know that 2 halves is 1. I can only fit one more half next to the first one.)
       </li>
       <li>Consider asking: 
         <q>Encontremos al menos una razón por la que cada una es diferente</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
