@@ -6,10 +6,43 @@
 ===============================================================  -->
 <project xml:id="cool-cualesCorrespondenALaEcuacion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cuáles corresponden a la ecuación?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Selecciona <term>todos</term> los dibujos, diagramas y situaciones que puedan representar esta situación.</p>
+  <me>80 = 8\times10</me>
+  <ol marker= "A.">
+    <li>
+    <line></line>
+<line><image source="svg-source/tikz-file-150953">
+        <shortdescription>Ocho rectángulos, cada uno con ocho círculos azules dentro</shortdescription>
+      </image></line>
+    </li>
+    <li>
+      <p>Andre tiene 8 cajas. Cada caja contiene 10 autos. Andre tiene 80 autos en total.</p>
+    </li>
+    <li>
+      <line></line>
+    <line><image source="svg-source/tikz-file-150954">
+        <shortdescription>Dos rectángulos, uno con diez y otro con ocho círculos azules dentro</shortdescription>
+      </image></line>  
+    </li>
+    <li>
+      <line></line>
+     <line><image source="svg-source/tikz-file-150955">
+        <shortdescription>Ocho rectángulos unidos, cada uno con el número diez dentro y enlazados al número 80</shortdescription>
+      </image></line>   
+    </li>
+    <li>
+      <p>Andre tenía 8 cajas. Después, encontró 10 cajas más. ¿Cuántas cajas tiene Andre?</p>
+    </li>
+    <li>
+      <line></line>
+      <line><image source="svg-source/tikz-file-150956">
+        <shortdescription>Dos rectángulos unidos, cada uno con el número ocho dentro y enlazados al número 80</shortdescription>
+      </image></line>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -28,19 +61,7 @@
     <ul>
       <li>
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-OA-A-1" text="custom">3.OA.A.1</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,14 +76,20 @@
   <!-- Posibles errores -->
   <paragraphs>
     <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <p>
+      [+++++++++++++++]
+    </p>
+    <p>Students choose drawings, diagrams, or situations that represent addition instead of multiplication.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
     <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+      <p>
+      [+++++++++++++++]
+    </p>
+    <p>Use the launch of the next day's activity to discuss how problems that involve multiplication are different than problems that involve addition.</p>
   </paragraphs>
 
 </postlude>
