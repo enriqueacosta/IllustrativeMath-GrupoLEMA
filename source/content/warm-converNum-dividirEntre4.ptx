@@ -7,10 +7,16 @@
 ===========================================================================  -->
 <exploration xml:id="warm-converNum-dividirEntre4" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Conversación numérica: Dividamos entre 4</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Encuentra mentalmente el valor de cada expresión.</p>
+  <ul>
+    <li><p><m>12\div 4</m></p></li>
+    <li><p><m>24\div 4</m></p></li>
+    <li><p><m>60\div 4</m></p></li>
+    <li><p><m>72\div 4</m></p></li>
+  </ul>
 </statement>
 
 <solution>
@@ -18,22 +24,17 @@
     <ul>
       <li>3: I just knew it. <m>3 \times 4 = 12</m></li>
       <li>6: 24 is twice 12, so the value of <m>24 \div 4</m> is twice that of <m>12 \div 4</m> or twice 3, which is 6.</li>
-      <li><p>15:</p><ul>
-<li>I knew that <m>4 \times 10</m> is 40 and <m>4 \times 5</m> is 20, so <m>4 \times 15</m> is 60.</li>
-<li>I knew that <m>20 \div 4</m> is 5 and 60 is 3 times 20, so <m>60 \div 4</m> is 3 times 5.</li>
-</ul><p>18:</p><ul>
-<li>
-<span class="math">\(72=12+60\)</span>, so I added the values of <m>12 \div 4</m> and <m>60 \div 4</m>, which is <m>3 + 15</m>.<!--Sample responses
-<ul>
-<li>Too low: 1&ndash;<m>\frac{7}{6}</m></li>
-<li>About right: <m>\frac{7}{6}</m>&ndash;<m>\frac{4}{3}</m></li>
-<li>Too high: <m>\frac{3}{2}</m>&ndash;2</li>
-</ul>
-<p>-->
-</li>
-<li>
-<m>4 \times 10 = 40</m>, <m>4 \times 8 =32</m>, <m>10+8=18</m>.</li>
-</ul>
+      <li><p>15:</p>
+        <ul>
+          <li>I knew that <m>4 \times 10</m> is 40 and <m>4 \times 5</m> is 20, so <m>4 \times 15</m> is 60.</li>
+          <li>I knew that <m>20 \div 4</m> is 5 and 60 is 3 times 20, so <m>60 \div 4</m> is 3 times 5.</li>
+        </ul>
+      </li>
+      <li><p>18:</p>
+        <ul>
+          <li><m>72=12+60</m>, so I added the values of <m>12 \div 4</m> and <m>60 \div 4</m>, which is <m>3 + 15</m>.</li>
+          <li><m>4 \times 10 = 40</m>, <m>4 \times 8 =32</m>, <m>10+8=18</m>.</li>
+        </ul>
       </li>
     </ul>
   </solution>
@@ -50,21 +51,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-OA-C-7" text="custom">3.OA.C.7</xref>
       </li>
     </ul>
   </paragraphs>
@@ -80,14 +67,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This Number Talk encourages students to rely on their knowledge of multiplication, place value, and properties of operations to mentally solve division problems. The reasoning elicited here helps to develop students' fluency with multiplication and division within 100.</p>
-<p>To find the quotients of larger numbers, students need to look for and make use of structure in quotients that are smaller or more familiar, or to rely on the relationship between multiplication and division (MP7).</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-converNum-dividirEntre4-mat.ptx"/>  -->
+    <p>To find the quotients of larger numbers, students need to look for and make use of structure in quotients that are smaller or more familiar, or to rely on the relationship between multiplication and division (MP7).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -122,13 +102,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -137,27 +110,13 @@
       <li>
         <q>¿Cómo les ayudaron las primeras expresiones a encontrar el valor de las últimas expresiones?</q>
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q></li>
-<li>
-<q>¿Alguien pensó en el problema de otra forma?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q></li>
+          <li><q>¿Alguien pensó en el problema de otra forma?</q></li>
+        </ul>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
