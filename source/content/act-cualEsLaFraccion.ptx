@@ -2,10 +2,40 @@
 
 <activity xml:id="act-cualEsLaFraccion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Cuál es la fracción?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Haz una partición de la recta numérica en cualquier número de partes de igual tamaño. Escoge una fracción y ubícala. Pon una marca que la represente, pero no escribas el número.</p>
+      <image source="svg-source/tikz-file-149698">
+        <shortdescription>recta numérica con marcas en unidades, de 0 a 2</shortdescription>
+      </image>
+    </li>
+    <li>
+      <p>Intercambia tu recta numérica con un compañero.</p>
+      <ol>
+        <li>
+          <p>¿Cómo partió su recta numérica tu compañero?</p>
+        </li>
+        <li>
+          <p>¿Qué número representa la marca de tu compañero en su recta numérica? Explica tu razonamiento.</p>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <p>Si te queda tiempo: juega otra vez.</p>
+  <image source="svg-source/tikz-file-149699">
+    <shortdescription>recta numérica con marcas en unidades, de 0 a 2</shortdescription>
+  </image>
+  <image source="svg-source/tikz-file-149700">
+    <shortdescription>recta numérica con marcas en unidades, de 0 a 2</shortdescription>
+  </image>
+  <sidebyside margins="60% 0%" component="web">
+    <image source="png-source/CS 3.5.B Lesson 7 Activity 3.png">
+      <shortdescription>estudiantes escribiendo</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
@@ -28,21 +58,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2-b" text="custom">3.NF.A.2.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,16 +74,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to determine how a number line is partitioned and what fraction is marked on it with only 0, 1, and 2 labeled. Students partition and locate and mark, but don’t label, a fraction on a number line and then trade with a partner to determine the fraction their partner has marked. Remind students to mark, but not to label their partitions and their fraction, so that their partner only has the 0, 1, and 2 to use to determine what fraction is on their number line.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-cualEsLaFraccion-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-cualEsLaFraccion-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -105,14 +111,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -123,28 +121,13 @@
         <q>Hablen con su compañero sobre qué fracción está representada</q>
       </li>
       <li>Share and record responses.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cómo decidieron de qué manera partir su recta numérica y qué fracción poner en su recta numérica?</q></li>
-<li>
-<q>¿Cómo decidieron de qué manera estaba partida la recta numérica de su compañero y qué fracción estaba marcada?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Cómo decidieron de qué manera partir su recta numérica y qué fracción poner en su recta numérica?</q></li>
+          <li><q>¿Cómo decidieron de qué manera estaba partida la recta numérica de su compañero y qué fracción estaba marcada?</q></li>
+        </ul>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
