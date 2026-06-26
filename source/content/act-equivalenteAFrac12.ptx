@@ -2,19 +2,71 @@
 
 <activity xml:id="act-equivalenteAFrac12" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Equivalente a <m>\frac{1}{2}</m></title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>¿En cuáles figuras la sección sombreada es <m>\frac{1}{2}</m> de la figura? Prepárate para explicar tu razonamiento.</p>
+      <sbsgroup widths="45% 45%">
+        <sidebyside>
+          <stack>
+          <p>A</p>
+          <image source="svg-source/tikz-file-149726">
+            <shortdescription>cuadrado dividido en 4 partes iguales, con dos sombreadas</shortdescription>
+          </image>
+        </stack>
+        <stack>
+          <p>B</p>
+          <image source="svg-source/tikz-file-149727">
+            <shortdescription>cuadrado dividido en 4 partes iguales, con tres sombreadas</shortdescription>
+          </image>
+        </stack>
+        </sidebyside>
+        <sidebyside>
+          <stack>
+          <p>C</p>
+          <image source="svg-source/tikz-file-149728">
+            <shortdescription>cuadrado dividido en 2 partes iguales, con una sombreada</shortdescription>
+          </image>
+        </stack>
+        <stack>
+          <p>D</p>
+          <image source="svg-source/tikz-file-149729">
+            <shortdescription>cuadrado dividido en 4 franjas iguales, con dos sombreadas</shortdescription>
+          </image>
+        </stack>
+        </sidebyside>
+        <sidebyside>
+          <stack>
+          <p>E</p>
+          <image source="svg-source/tikz-file-149730">
+            <shortdescription>cuadrado dividido en 2 partes iguales, con una sombreada</shortdescription>
+          </image>
+        </stack>
+          <stack>
+          <p>F</p>
+          <image source="svg-source/tikz-file-149731">
+            <shortdescription>cuadrado dividido dos partes distintas, con la parte más pequeña sombreada</shortdescription>
+          </image>
+        </stack>
+        </sidebyside>
+      </sbsgroup>
+    </li>
+    <li>
+      <p>¿Cómo puede haber más de una manera de colorear una figura para mostrar <m>\frac{1}{2}</m>?</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>A, C, D, E. Sample responses:</p><ul>
-<li>A is <m>\frac{1}{2}</m> because it’s partitioned into four parts and 2 are shaded, but one half of the whole square is shaded.</li>
-<li>F isn’t <m>\frac{1}{2}</m> because the two parts aren’t equal.</li>
-</ul>
+      <li><p>A, C, D, E. Sample responses:</p>
+        <ul>
+          <li>A is <m>\frac{1}{2}</m> because it’s partitioned into four parts and 2 are shaded, but one half of the whole square is shaded.</li>
+          <li>F isn’t <m>\frac{1}{2}</m> because the two parts aren’t equal.</li>
+        </ul>
       </li>
       <li>Sample response: C and E both show <m>\frac{1}{2}</m> because they have both been partitioned into 2 equal parts and 1 part is shaded. C and D both show <m>\frac{1}{2}</m> because the same amount is shaded in each square.</li>
     </ol>
@@ -32,21 +84,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>,
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -61,18 +100,8 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to consider equivalent fractions using diagrams. One half has been chosen to introduce equivalent fractions because there are many ways to see and represent fractions that are equivalent to <m>\frac{1}{2}</m>. Many students may be familiar with the concept of halves and justify equivalence by saying 2 is half of 4. This reasoning is helpful with 1 half and 2 fourths but may not be generalizable to other cases of equivalence. For this reason, the activity synthesis focuses on justifications about whether or not the shaded parts are the same size. The idea that <m>\frac{1}{2}</m> and <m>\frac{2}{4}</m> are the same size is used to define <strong>equivalent fractions</strong> as fractions that are the same size.</p>
-<p>Students need to use language carefully as they explain why the shaded parts of a shape show <m>\frac{1}{2}</m> (MP6). For example, they may say that 2 of 4 equal parts in shape D are shaded, but if they combine those parts, the total shaded amount is the same as in the shape where 1 of 2 equal parts is shaded.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-equivalenteAFrac12-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-equivalenteAFrac12-matCentros.ptx"/>  -->
+    <p>The purpose of this activity is for students to consider equivalent fractions using diagrams. One half has been chosen to introduce equivalent fractions because there are many ways to see and represent fractions that are equivalent to <m>\frac{1}{2}</m>. Many students may be familiar with the concept of halves and justify equivalence by saying 2 is half of 4. This reasoning is helpful with 1 half and 2 fourths but may not be generalizable to other cases of equivalence. For this reason, the activity synthesis focuses on justifications about whether or not the shaded parts are the same size. The idea that <m>\frac{1}{2}</m> and <m>\frac{2}{4}</m> are the same size is used to define <term>equivalent fractions</term> as fractions that are the same size.</p>
+    <p>Students need to use language carefully as they explain why the shaded parts of a shape show <m>\frac{1}{2}</m> (MP6). For example, they may say that 2 of 4 equal parts in shape D are shaded, but if they combine those parts, the total shaded amount is the same as in the shape where 1 of 2 equal parts is shaded.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -111,14 +140,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -133,7 +154,7 @@
         <q>Aunque C está partido en medios y D está partido en cuartos, podemos decir que está sombreado <m>\frac{1}{2}</m> de cada cuadrado porque está sombreada la misma cantidad en los cuadrados C y D, lo que significa que las dos fracciones tienen el mismo tamaño</q>
       </li>
       <li>
-        <q>Dos números que tienen el mismo tamaño son equivalentes, así que las fracciones <m>\frac{2}{4}</m> y <m>\frac{1}{2}</m> son <strong>fracciones equivalentes</strong></q>
+        <q>Dos números que tienen el mismo tamaño son equivalentes, así que las fracciones <m>\frac{2}{4}</m> y <m>\frac{1}{2}</m> son <term>fracciones equivalentes</term></q>
       </li>
     </ul>
   </paragraphs>
@@ -141,15 +162,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR7 Compare and Connect.</em> Synthesis: Lead a discussion comparing, contrasting, and connecting shapes C and D. Ask, <q>¿En qué se parecen las figuras C y D?</q> // <q>How are shapes C and D the same?</q>, <q>¿En qué son diferentes?</q> // <q>How are they different?</q>, and <q>¿Cómo muestran <m>\frac{1}{2}</m> estas dos representaciones diferentes?</q> // <q>How do these two different representations show <m>\frac{1}{2}</m>?</q></p>
+    <p>
+      <em>Advances: Representing, Conversing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Synthesis: Invite students to share connections between finding one-half in fractions with more than two equal parts in this activity and when they might, in their own lives, see one half when there are more than 2 equal parts.</p>
+    <p>
+      <em>Supports accessibility for: Visual-Spatial Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>

@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 10 </shorttitle>
 <title>Lección 10 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Fracciones equivalentes</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Identifiquemos fracciones equivalentes.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,9 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Identify equivalent fractions.</p></li>
+    <li><p>Understand two fractions as equivalent if they are the same size and the parts refer to the same whole.</p></li>
   </ul>
 </objectives>
 
@@ -41,21 +43,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>,
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,26 +69,25 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
-      <li>
+    <ul>
+      <!--<li>
         <p>Actividad 1</p>
         <xi:include href="./act-equivalenteAFrac12-mat.ptx"/>
         <xi:include href="./act-equivalenteAFrac12-matCentros.ptx"/>
-      </li>
+      </li>-->
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-encontrarFraccionesEquivalentes-mat.ptx"/>
-        <xi:include href="./act-encontrarFraccionesEquivalentes-matCentros.ptx"/>
+        <!--<xi:include href="./act-encontrarFraccionesEquivalentes-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
   <paragraphs>
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>Previously, students were introduced to unit fractions and non-unit fractions using area diagrams, fraction strips, and number lines. They began to work with the idea of equivalence by noticing fractions that are also whole numbers. Here, students revisit area diagrams and fraction strips to learn about fraction equivalence. Students learn that fractions that are the same size are <strong>equivalent</strong> <strong>fractions</strong>. Later, they will identify equivalent fractions as having the same location on a number line.</p>
+    <p>Previously, students were introduced to unit fractions and non-unit fractions using area diagrams, fraction strips, and number lines. They began to work with the idea of equivalence by noticing fractions that are also whole numbers. Here, students revisit area diagrams and fraction strips to learn about fraction equivalence. Students learn that fractions that are the same size are <term>equivalent fractions</term>. Later, they will identify equivalent fractions as having the same location on a number line.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -167,7 +159,7 @@
 <subsubsection xml:id="lec-fraccionesEquivalentes-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p><q>Si les dan dos fracciones, ¿cómo pueden decidir si son equivalentes?</q> (I would look at diagrams of them to see if the fractions are the same size. I would use fraction strips to see if the fractions were the same size.)</p>

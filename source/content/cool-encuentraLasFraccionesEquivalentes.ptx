@@ -6,10 +6,41 @@
 ===============================================================  -->
 <project xml:id="cool-encuentraLasFraccionesEquivalentes" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Encuentra las fracciones equivalentes</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside widths="45% 50%">
+    <stack>
+      <p>
+        Cada diagrama representa 1.
+      </p>
+      <p>
+        Selecciona todos los diagramas que tienen partes sombreadas que representan fracciones equivalentes. Explica tu razonamiento.
+      </p>
+    </stack>
+    <stack>
+      <p>A</p>
+      <image source="svg-source/tikz-file-151165">
+        <shortdescription>tira partida en cuartos, con 3 sombreados</shortdescription>
+      </image>
+      <p>B</p>
+      <image source="svg-source/tikz-file-151166">
+        <shortdescription>tira partida en medios, con 1 sombreado</shortdescription>
+      </image>
+      <p>C</p>
+      <image source="svg-source/tikz-file-151167">
+        <shortdescription>tira partida en tercios, con 2 sombreados</shortdescription>
+      </image>
+      <p>D</p>
+      <image source="svg-source/tikz-file-151168">
+        <shortdescription>tira partida en cuartos, con 1 sombreado</shortdescription>
+      </image>
+      <p>E</p>
+      <image source="svg-source/tikz-file-151169">
+        <shortdescription>tira partida en sextos, con 4 sombreados</shortdescription>
+      </image>
+    </stack>
+  </sidebyside>
 </statement>
 
 <solution>
@@ -26,21 +57,9 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>
       </li>
     </ul>
   </paragraphs>
@@ -54,15 +73,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Students choose two fractions that are close in size, but not equivalent.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Add this cool-down to Activity 1 to review.</p>
   </paragraphs>
 
 </postlude>

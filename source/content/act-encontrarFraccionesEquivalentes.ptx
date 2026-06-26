@@ -2,16 +2,29 @@
 
 <activity xml:id="act-encontrarFraccionesEquivalentes" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Encontremos fracciones equivalentes</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Usa las tiras de fracciones que usaste en una lección anterior para encontrar tantas fracciones como puedas que sean equivalentes a:</p>
+  <ol>
+    <li>
+      <p>
+        <m>\frac{1}{2}</m>
+      </p>
+    </li>
+    <li><p><m>\frac{2}{3}</m></p></li>
+    <li><p><m>\frac{6}{6}</m></p></li>
+    <li><p><m>\frac{3}{4}</m></p></li>
+  </ol>
+  <p>
+    Prepárate para mostrar cómo sabes que las fracciones son equivalentes.
+  </p>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ol>
+    <ol>
       <li><m>\frac{1}{2}</m> is equivalent to <m>\frac{3}{6}</m> because they are the same size.</li>
       <li><m>\frac{2}{3}</m> is equivalent to <m>\frac{4}{6}</m> because they are the same size.</li>
       <li><m>\frac{6}{6}</m> is equivalent to <m>\frac{4}{4}</m> because they are both made with the whole strip.</li>
@@ -31,21 +44,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>,
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -67,9 +67,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-encontrarFraccionesEquivalentes-mat.ptx"/>  -->
+    <xi:include href="./act-encontrarFraccionesEquivalentes-mat.ptx"/>
     <!-- <xi:include href="./act-encontrarFraccionesEquivalentes-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -114,9 +113,8 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If students don’t generate an equivalent fraction for one of the given fractions, consider asking:
-</p>
-<ul>
+    <p>If students don’t generate an equivalent fraction for one of the given fractions, consider asking:</p>
+    <ul>
       <li>
         <q>¿Cómo representaste la fracción con las tiras de fracciones?</q>
       </li>
@@ -136,20 +134,6 @@
       <li>Display a set of fraction strip diagram for all to see.</li>
       <li>As students share, mark up the fraction strip diagram to illustrate the equal size of the parts (for example, by drawing lines or circling the parts). Then, record pairs of equivalent fractions using the equal sign like: <m>\frac{1}{2} = \frac{3}{6}</m>.</li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
