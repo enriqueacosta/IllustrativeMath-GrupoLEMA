@@ -2,18 +2,24 @@
 
 <activity xml:id="act-ubicarFrac34" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Ubiquemos <m>\frac{3}{4}</m> (OPCIONAL)</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Ubica y marca <m>\frac{3}{4}</m> en la recta numérica. Prepárate para explicar cómo razonaste.</p>
+  <image source="svg-source/tikz-file-149723">
+    <shortdescription>recta numérica que empieza en 0, con 1/3 marcado</shortdescription>
+  </image>
+  <image source="svg-source/tikz-file-149724">
+    <shortdescription>recta numérica que empieza en 0.</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample response:</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <image source="svg-source/tikz-file-147252">
+      <shortdescription>recta numérica que empieza en 0, con la unidad dividida en tercios y cuartos, y el 3/4 marcado.</shortdescription>
+    </image>
   </solution>
 
 
@@ -28,21 +34,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -58,18 +50,8 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use the location of a unit fraction to locate another fraction with a different denominator on the number line. Students can use their knowledge from the previous activity to place 1 on the number line and then use that to partition the interval from 0 to 1 to find other numbers. Because students have only located fractions with the same denominator on a single number line, they may want to use more than one number line in this activity. They may or may not label the points they find along the way to <m>\frac{3}{4}</m>. Encourage them to use whatever strategy makes sense to them.</p>
-<p>Monitor for students who use a single number line to show both thirds and fourths and those who use separate number lines. Select them to share during activity synthesis.</p>
-<p>This activity is optional because it goes beyond the depth of understanding required to address grade 3 standards.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-ubicarFrac34-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-ubicarFrac34-matCentros.ptx"/>  -->
+    <p>Monitor for students who use a single number line to show both thirds and fourths and those who use separate number lines. Select them to share during activity synthesis.</p>
+    <p>This activity is optional because it goes beyond the depth of understanding required to address grade 3 standards.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -94,14 +76,12 @@
         <q>Tómense unos minutos para ubicar <m>\frac{3}{4}</m> en esta recta numérica. Usen cualquier estrategia que tenga sentido para ustedes</q>
       </li>
       <li>3–5 minutes: independent work time</li>
-      <li><p>As students work, consider asking:</p><ul>
-<li>
-<q>¿Cómo decidieron si usar una o dos rectas numéricas?</q></li>
-<li>
-<q>¿Ubicaron otros números antes de ubicar <m>\frac{3}{4}</m>?</q></li>
-<li>
-<q>¿En qué lugar de su recta numérica (o de sus rectas numéricas) está el 1?</q></li>
-</ul>
+      <li><p>As students work, consider asking:</p>
+        <ul>
+          <li><q>¿Cómo decidieron si usar una o dos rectas numéricas?</q></li>
+          <li><q>¿Ubicaron otros números antes de ubicar <m>\frac{3}{4}</m>?</q></li>
+          <li><q>¿En qué lugar de su recta numérica (o de sus rectas numéricas) está el 1?</q></li>
+        </ul>
       </li>
       <li>
         <q>Compartan su estrategia con su compañero</q>
@@ -118,14 +98,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -133,7 +105,7 @@
     <ul>
       <li>Ask the two selected students to display their work side-by-side for all to see.</li>
       <li>
-        <q>¿Qué tienen en común estas estrategias? ¿En qué son diferentes estas representaciones?</q>  (They both located 1 before locating <m>\frac{3}{4}</m>. In the first strategy, the thirds are one number line and used to find 1. Then, 1 is on the second number line and used to find <m>\frac{3}{4}</m>. In the second strategy, the thirds and fourths are marked on the same number line.)
+        <q>¿Qué tienen en común estas estrategias? ¿En qué son diferentes estas representaciones?</q> (They both located 1 before locating <m>\frac{3}{4}</m>. In the first strategy, the thirds are one number line and used to find 1. Then, 1 is on the second number line and used to find <m>\frac{3}{4}</m>. In the second strategy, the thirds and fourths are marked on the same number line.)
       </li>
       <li>Consider asking: 
         <q>¿Qué preguntas tienen sobre estas representaciones?</q>
@@ -144,15 +116,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: As students share the similarities and differences between the strategies, use gestures to emphasize what is being described. For example, point to each fraction and show with your fingers the partitions such as thirds and fourths, that are being discussed.</p>
+    <p>
+      <em>Advances: Listening, Representing</em>
+    </p>
   </paragraphs>
 
 </postlude>
