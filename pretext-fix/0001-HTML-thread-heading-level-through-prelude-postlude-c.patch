@@ -1,0 +1,46 @@
+From 2588d487b31b22612c25fbe958c0888bf4db3cfc Mon Sep 17 00:00:00 2001
+From: Enrique Acosta <enriqueacostajaramillo@protonmail.com>
+Date: Fri, 26 Jun 2026 20:48:10 -0500
+Subject: [PATCH] HTML: thread "heading-level" through "prelude"/"postlude"
+ content
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+---
+ xsl/pretext-html.xsl | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/xsl/pretext-html.xsl b/xsl/pretext-html.xsl
+index 0510a3f..5045582 100644
+--- a/xsl/pretext-html.xsl
++++ b/xsl/pretext-html.xsl
+@@ -5268,6 +5268,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+     <xsl:if test="$b-original">
+         <xsl:apply-templates select="prelude">
+             <xsl:with-param name="b-original" select="$b-original" />
++            <xsl:with-param name="heading-level" select="$heading-level"/>
+         </xsl:apply-templates>
+     </xsl:if>
+     <xsl:variable name="body-elt">
+@@ -5344,6 +5345,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+     <xsl:if test="$b-original">
+         <xsl:apply-templates select="postlude">
+             <xsl:with-param name="b-original" select="$b-original" />
++            <xsl:with-param name="heading-level" select="$heading-level"/>
+         </xsl:apply-templates>
+     </xsl:if>
+ </xsl:template>
+@@ -5910,9 +5912,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+ <!-- Very simple containiers, to help with movement, use -->
+ <xsl:template match="prelude|interlude|postlude">
+     <xsl:param name="b-original" select="true()" />
++    <xsl:param name="heading-level"/>
+     <!-- assume these containers are structured -->
+     <xsl:apply-templates select="*">
+         <xsl:with-param name="b-original" select="$b-original" />
++        <xsl:with-param name="heading-level" select="$heading-level"/>
+     </xsl:apply-templates>
+ </xsl:template>
+ 
+-- 
+2.50.1 (Apple Git-155)
+
