@@ -2,15 +2,111 @@
 
 <activity xml:id="act-escribirlosComoFracciones" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Escribámoslos como fracciones</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Completa la tabla con tu grupo. En cada columna, escribe fracciones que sean equivalentes al número entero de la primera fila.</p>
+  <ul>
+    <li>
+      <p>Paso 1: Escribe dos fracciones que sean equivalentes a cada número entero (seis fracciones en total). Pasa tu hoja a tu derecha.</p>
+    </li>
+    <li>
+      <p>Paso 2: Cuando recibas la hoja de tu compañero, escribe una fracción nueva que sea equivalente a uno de los números enteros.</p>
+    </li>
+    <li>
+      <p>Repitan el paso 2 hasta que la tabla esté completa.</p>
+    </li>
+  </ul>
+  <sidebyside widths="45% 45%">
+    <tabular top="medium" halign="center" valign="middle">
+      <col width="33%"/>
+      <col width="33%"/>
+      <col width="34%"/>
+      <row header="yes" left="medium" bottom="medium">
+        <cell right="medium">4</cell>
+        <cell right="medium">5</cell>
+        <cell right="medium">6</cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{4}}{\large{1}}</m></p></cell>
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><nbsp/></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><p><m>\frac{\phantom{\huge000}}{\large{2}}</m></p></cell>
+        <cell right="minor"><nbsp/></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><p><m>\frac{\phantom{\huge000}}{\large{3}}</m></p></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\phantom{\huge000}}{\large{4}}</m></p></cell>
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><nbsp/></cell>        
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><p><m>\frac{\large{30}}{\large{6}}</m></p></cell>
+        <cell right="minor"><nbsp/></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><nbsp/></cell>
+        <cell right="minor"><p><m>\frac{\large{48}}{\large{8}}</m></p></cell>
+      </row>
+    </tabular>
+    <image source="png-source/CS 3.5.C Lesson 13 Activity 2.png" width="40%" component="web">
+      <shortdescription>niños mirando lienzo donde dice que 2 es igual a 4/2</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample completed table:</p>
+    <tabular top="medium" halign="center" valign="middle">
+      <col width="33%"/>
+      <col width="33%"/>
+      <col width="34%"/>
+      <row header="yes" left="medium" bottom="medium">
+        <cell right="medium">4</cell>
+        <cell right="medium">5</cell>
+        <cell right="medium">6</cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{4}}{\large{1}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{5}}{\large{1}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{6}}{\large{1}}</m></p></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{8}}{\large{2}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{10}}{\large{2}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{12}}{\large{2}}</m></p></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{12}}{\large{3}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{15}}{\large{3}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{18}}{\large{3}}</m></p></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{16}}{\large{4}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{20}}{\large{4}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{24}}{\large{4}}</m></p></cell>        
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{24}}{\large{6}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{30}}{\large{6}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{36}}{\large{6}}</m></p></cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor"><p><m>\frac{\large{32}}{\large{8}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{40}}{\large{8}}</m></p></cell>
+        <cell right="minor"><p><m>\frac{\large{48}}{\large{8}}</m></p></cell>
+      </row>
+    </tabular>
   </solution>
 
 
@@ -25,21 +121,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-c" text="custom">3.NF.A.3.c</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,17 +137,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to write whole numbers as fractions. Students may reason in any way that makes sense to them, including using patterns they noticed previously. When students observe patterns as they write whole numbers as fractions, they look for and make use of structure (MP7).</p>
-<p>This activity uses a <q>carousel</q> structure in which students complete a rotation of tasks. Consider demonstrating the steps before students begin.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-escribirlosComoFracciones-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-escribirlosComoFracciones-matCentros.ptx"/>  -->
+    <p>This activity uses a <q>carousel</q> structure in which students complete a rotation of tasks. Consider demonstrating the steps before students begin.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -107,11 +179,12 @@
       <li>
         <q>Prepárense para explicar cómo saben qué fracciones escribir para cada número entero</q>
       </li>
-      <li><p>Monitor for students who:</p><ul>
-<li>use a number line (either draw a new one or extending those from an earlier activity)</li>
-<li>extend a pattern they noticed in fractions that are equivalent to whole numbers</li>
-<li>use multiplication facts</li>
-</ul>
+      <li><p>Monitor for students who:</p>
+        <ul>
+          <li>use a number line (either draw a new one or extending those from an earlier activity)</li>
+          <li>extend a pattern they noticed in fractions that are equivalent to whole numbers</li>
+          <li>use multiplication facts</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -129,7 +202,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don’t write a whole number as a fraction, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>Dime cómo escribirías 1 como una fracción</q>
       </li>
@@ -148,11 +221,11 @@
       <li>Invite a group of students to display their completed table.</li>
       <li>Select previously identified students to share how they knew what fractions to write for each whole number.</li>
       <li>Invite the class to share other strategies for generating equivalent fractions.</li>
-      <li><p>
-<q>¿Qué patrones nuevos observan en la tabla que ya completaron?</q> (Sample responses:</p><ul>
-<li>In fractions that are equivalent to 4, you can get the numerator by skip-counting by the denominator 4 times.</li>
-<li>In the row with thirds, the numerator increases by 3. In the row for fourths, it increases by 4.)</li>
-</ul>
+      <li><p><q>¿Qué patrones nuevos observan en la tabla que ya completaron?</q> (Sample responses:</p>
+        <ul>
+          <li>In fractions that are equivalent to 4, you can get the numerator by skip-counting by the denominator 4 times.</li>
+          <li>In the row with thirds, the numerator increases by 3. In the row for fourths, it increases by 4.)</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -160,15 +233,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: During group presentations, invite the student(s) who are not speaking to follow along and point to the corresponding parts of the display.</p>
+    <p>
+      <em>Advances: Speaking, Representing</em>
+    </p>
   </paragraphs>
 
 </postlude>
