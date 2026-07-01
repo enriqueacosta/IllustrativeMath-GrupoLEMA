@@ -2,15 +2,27 @@
 
 <activity xml:id="act-mismoDenominador" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Gira y gana: Mismo denominador</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>En este juego, van a ubicar y marcar fracciones en rectas numéricas. Escojan un lápiz de un color distinto al lápiz de su compañero para que puedan saber de quién es cada fracción en cada recta numérica. </p>
+  <aside component="web">
+    <p>
+      Versión PDF de la ruleta, <url href="external/blm/pdf-source/giraYGanaMismoDenominador-Ruleta.pdf">descargar acá</url>.
+    </p>
+    <p>
+      Versión PDF de la hoja de registro, <url href="external/blm/pdf-source/giraYGanaMismoDenominador-HojaDeRegistro.pdf">descargar acá</url>.
+    </p>
+  </aside>
+  <ol>
+    <li><p>Cada jugador gira el clip. El jugador que saque el número mayor es el jugador 1.</p></li>
+    <li><p>El jugador 1 escoge un denominador para la primera ronda: 2, 3, 4, 6 u 8.</p></li>
+    <li><p>Cada jugador gira la ruleta para obtener el numerador de su fracción.</p></li>
+    <li><p>Ubiquen y marquen sus fracciones en la misma recta numérica, en la hoja de registro.</p></li>
+    <li><p>El jugador que tenga la fracción mayor gana y escoge el denominador para la siguiente ronda.</p></li>
+    <li><p>Jueguen 10 rondas. Gana el jugador que gane más rondas.</p></li>
+  </ol>
 </statement>
-
-<solution>
-  <p>[@@@@@@@@@]</p>
-</solution>
 
 
 <!-- ============================================================== 
@@ -24,21 +36,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-d" text="custom">3.NF.A.3.d</xref>
       </li>
     </ul>
   </paragraphs>
@@ -60,9 +58,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-mismoDenominador-mat.ptx"/>  -->
+    <xi:include href="./act-mismoDenominador-mat.ptx"/>
     <!-- <xi:include href="./act-mismoDenominador-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -105,37 +102,24 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Qué tipo de número querían sacar en su turno? ¿Por qué?</q>  (I wanted to spin a large number because a large numerator means a greater fraction. If you spin a small number, then the small numerator makes a smaller fraction.)
+        <q>¿Qué tipo de número querían sacar en su turno? ¿Por qué?</q> (I wanted to spin a large number because a large numerator means a greater fraction. If you spin a small number, then the small numerator makes a smaller fraction.)
       </li>
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Representation: Access for Perception.</em> To support understanding, begin by demonstrating how to play one round of <q>Spin to Win.</q></p>
+    <p>
+      <em>Supports accessibility for: Memory, Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>
