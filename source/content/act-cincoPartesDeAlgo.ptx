@@ -2,26 +2,65 @@
 
 <activity xml:id="act-cincoPartesDeAlgo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Cinco partes de algo</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Priya dice que <m>\frac{5}{6}</m> es mayor que <m>\frac{5}{8}</m>.</p>
+      <p>Tyler dice que <m>\frac{5}{8}</m> es mayor que <m>\frac{5}{6}</m>.</p>
+      <p>¿Con quién estás de acuerdo? Usa diagramas o rectas numéricas para mostrar cómo pensaste.</p>
+    </li>
+    <li>
+      <p>
+        En cada pareja de fracciones, ¿cuál fracción piensas que es mayor?
+      </p>
+      <sidebyside>
+        <ol>
+          <li><m>\frac{5}{3}</m> o <m>\frac{5}{4}</m></li>
+          <li><m>\frac{5}{8}</m> o <m>\frac{5}{2}</m></li>
+          <li><m>\frac{5}{6}</m> o <m>\frac{5}{4}</m></li>
+        </ol>
+        <image source="png-source/CS 3.5.D Lesson 16 Activity 1.png" component="web" width="40%">
+          <shortdescription>parejas de estudiantes conversando</shortdescription>
+        </image>
+      </sidebyside>      
+    </li>
+    <li>
+      <p>Ubica y marca cada fracción en una recta numérica: <m>\frac{5}{2}</m>, <m>\frac{5}{3}</m>, <m>\frac{5}{4}</m>, <m>\frac{5}{6}</m>, <m>\frac{5}{8}</m>.</p>
+      <image source="svg-source/tikz-file-158746">
+        <shortdescription>cinco rectas numéricas de 0 a 3. La primera dividida en medios, la segunda en tercios, la tercera en cuartos, la cuarta en sextos, la quinta en octavos</shortdescription>
+      </image>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample response: I agree with Priya because sixths are larger than eighths, so 5 sixths is greater than 5 eighths. 
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-147613.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-147613.svg" width="80%"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-147614.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-147614.svg" width="80%"/>
+      <li><p>Sample response: I agree with Priya because sixths are larger than eighths, so 5 sixths is greater than 5 eighths.</p>
+        <image source="svg-source/tikz-file-147613">
+          <shortdescription>tira de fracciones dividida en octavos, con 5 partes sombreadas.</shortdescription>
+        </image>
+        <image source="svg-source/tikz-file-147614">
+          <shortdescription>tira de fracciones dividida en sextos, con 5 partes sombreadas.</shortdescription>
+        </image>
       </li>
-      <li><ol>
-<li><span class="math">\(\frac{5}{3}\)</span></li>
-<li><span class="math">\(\frac{5}{2}\)</span></li>
-<li><span class="math">\(\frac{5}{4}\)</span></li>
-</ol>
+      <li>
+        <ol>
+          <li><m>\frac{5}{3}</m></li>
+          <li><m>\frac{5}{2}</m></li>
+          <li><m>\frac{5}{4}</m></li>
+        </ol>
       </li>
-      <li><p>
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Number lines." role="image" src="../../../../../../figures/tikz-file-158745.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Number lines." role="image" src="../../../../../../figures/tikz-file-158745.svg" width="80%"/><p class="img-tag-relocated-by-embedder"> Sample responses: The points get closer and closer to 0 as the denominator of the fraction gets larger. The fraction is smaller when the denominator is larger.</p>
+      <li><p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-158745">
+                  <shortdescription>cinco rectas numéricas de 0 a 3. La primera dividida en medios, con 5/2 marcado, la segunda en tercios con 5/3 marcado, la tercera en cuartos con 5/4 marcado, la cuarta en sextos con 5/6 marcado, la quinta en octavos con 5/8 marcado</shortdescription>
+                </image>
+              </line>              
+            </p>
+        <p>Sample responses: The points get closer and closer to 0 as the denominator of the fraction gets larger. The fraction is smaller when the denominator is larger.</p>
       </li>
     </ol>
   </solution>
@@ -38,21 +77,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-d" text="custom">3.NF.A.3.d</xref>
       </li>
     </ul>
   </paragraphs>
@@ -68,17 +93,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to represent their thinking visually as they compare pairs of fractions with the same numerator. They also locate fractions with the same numerator on number lines and observe the relative locations of the points. Students see that fractions with larger denominator are smaller in size (or are closer to 0 on the number line). Their reasoning here reinforces the idea that the denominator of a fraction determines how many equal parts are in a whole, and that the more parts there are, the smaller each part is (MP7).</p>
-<p>To compare <m>\frac{5}{6}</m> and <m>\frac{5}{8}</m>, students are likely to draw one diagram or number line for sixths and a separate one for eighths. They may use a single diagram or number line, but find it more difficult to partition and represent both denominators.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-cincoPartesDeAlgo-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-cincoPartesDeAlgo-matCentros.ptx"/>  -->
+    <p>To compare <m>\frac{5}{6}</m> and <m>\frac{5}{8}</m>, students are likely to draw one diagram or number line for sixths and a separate one for eighths. They may use a single diagram or number line, but find it more difficult to partition and represent both denominators.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -104,18 +119,17 @@
         <q>Hablen con su compañero sobre con quién están de acuerdo. Usen diagramas o rectas numéricas para mostrar cómo pensaron</q>
       </li>
       <li>3–5 minutes: partner discussion</li>
-      <li><p>As students work, consider asking:</p><ul>
-<li>
-<q>¿Cómo muestra su representación cuál fracción es mayor?</q></li>
-<li>
-<q>¿Cómo saben que los octavos son más pequeños que los sextos?</q></li>
-</ul>
+      <li><p>As students work, consider asking:</p>
+        <ul>
+          <li><q>¿Cómo muestra su representación cuál fracción es mayor?</q></li>
+          <li><q>¿Cómo saben que los octavos son más pequeños que los sextos?</q></li>
+        </ul>
       </li>
       <li>Monitor for students who use diagrams and those who use number lines.</li>
       <li>Pause for a discussion.</li>
       <li>Select two students, one who uses each representation, to share. Display their work side-by-side for all to see.</li>
       <li>
-        <q>¿Cómo muestran estas dos representaciones que <m>\frac{5}{6}</m> es mayor que <m>\frac{5}{8}</m>?</q>  (Both show that we are looking at 5 parts in each fraction and that sixths are larger than eighths. That means that 5 sixths are larger than 5 eighths.)
+        <q>¿Cómo muestran estas dos representaciones que <m>\frac{5}{6}</m> es mayor que <m>\frac{5}{8}</m>?</q> (Both show that we are looking at 5 parts in each fraction and that sixths are larger than eighths. That means that 5 sixths are larger than 5 eighths.)
       </li>
       <li>
         <q>Ahora hagan los últimos dos problemas</q>
@@ -148,26 +162,12 @@
       <li>Display a set of number lines that a student completed.</li>
       <li>Invite the class to share their observations about the locations of the points.</li>
       <li>
-        <q>¿Cómo puede ayudar la ubicación de los puntos a decidir cuál es mayor, <m>\frac{5}{3}</m> o <m>\frac{5}{4}</m>?</q>  (I can see that <m>\frac{5}{3}</m> is located to the right of <m>\frac{5}{4}</m>, so <m>\frac{5}{3}</m> is greater.)
+        <q>¿Cómo puede ayudar la ubicación de los puntos a decidir cuál es mayor, <m>\frac{5}{3}</m> o <m>\frac{5}{4}</m>?</q> (I can see that <m>\frac{5}{3}</m> is located to the right of <m>\frac{5}{4}</m>, so <m>\frac{5}{3}</m> is greater.)
       </li>
       <li>Consider asking: 
-        <q>¿Por qué la fracción con el denominador más pequeño, 2, es la fracción más grande del grupo?</q>  (There are only 2 parts in 1 whole. With every other fraction the denominator is larger than 2 so there are more parts in the whole which makes the parts smaller.)
+        <q>¿Por qué la fracción con el denominador más pequeño, 2, es la fracción más grande del grupo?</q> (There are only 2 parts in 1 whole. With every other fraction the denominator is larger than 2 so there are more parts in the whole which makes the parts smaller.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
