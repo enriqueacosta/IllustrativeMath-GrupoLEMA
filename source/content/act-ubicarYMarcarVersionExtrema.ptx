@@ -2,17 +2,23 @@
 
 <activity xml:id="act-ubicarYMarcarVersionExtrema" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Ubiquemos y marquemos (versión extrema) [OPCIONAL]</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Ubica y marca cada fracción en la recta numérica. Prepárate para compartir cómo razonaste.</p>
+  <md>
+    \frac{1}{2},\ \frac{3}{8},\ \frac{13}{8},\ \frac{2}{4},\ \frac{3}{4},\ \frac{9}{8},\ \frac{5}{4},\ \frac{12}{6},\ \frac{5}{2},\ \frac{9}{3},\ \frac{20}{8}
+  </md>
+  <image source="svg-source/tikz-file-149756">
+    <shortdescription>recta numérica de 0 a 3</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <image source="svg-source/tikz-file-149757">
+      <shortdescription>recta numérica de 0 a 3, con todas las fracciones de la actividad marcadas</shortdescription>
+    </image>
   </solution>
 
 
@@ -27,21 +33,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>,
+        <xref ref="ccss-3-NF-A-3" text="custom">3.NF.A.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -57,17 +50,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use their knowledge of fractions to locate fractions with different denominators on the number line. Students may use a variety of reasoning to locate the fractions, including their knowledge of equivalence, strategies about the same numerator or denominator, or benchmark numbers they are familiar with. The synthesis focuses on the variety of strategies that make sense, and students should be encouraged to use different strategies for different fractions as needed.</p>
-<p>Although students have represented fractions on number lines (including those with two different denominators, when reasoning about equivalence), this activity is optional because representing multiple fractions of different denominators on the same number line involves a deeper understanding than required by the standards.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-ubicarYMarcarVersionExtrema-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-ubicarYMarcarVersionExtrema-matCentros.ptx"/>  -->
+    <p>Although students have represented fractions on number lines (including those with two different denominators, when reasoning about equivalence), this activity is optional because representing multiple fractions of different denominators on the same number line involves a deeper understanding than required by the standards.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -93,13 +76,14 @@
         <q>Compartan sus estrategias con su compañero y ubiquen juntos las fracciones que les quedan</q>
       </li>
       <li>5–7 minutes: partner work time</li>
-      <li><p>Monitor for students who:</p><ul>
-<li>place each fraction separately by partitioning for that single fraction</li>
-<li>compare the fraction they are placing to others they’ve already placed</li>
-<li>use equivalent fractions</li>
-<li>use strategies about same numerators or denominators</li>
-<li>use benchmarks like whole numbers or halves</li>
-</ul>
+      <li><p>Monitor for students who:</p>
+        <ul>
+          <li>place each fraction separately by partitioning for that single fraction</li>
+          <li>compare the fraction they are placing to others they’ve already placed</li>
+          <li>use equivalent fractions</li>
+          <li>use strategies about same numerators or denominators</li>
+          <li>use benchmarks like whole numbers or halves</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -112,44 +96,23 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Invite students to share a variety of strategies for placing fractions on the number line.</li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cuáles fracciones fueron más fáciles de ubicar en la recta numérica?</q></li>
-<li>
-<q>¿Cuáles fueron más difíciles de ubicar?</q></li>
-<li>
-<q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li>
+          <q>¿Cuáles fracciones fueron más fáciles de ubicar en la recta numérica?</q></li>
+          <li>
+          <q>¿Cuáles fueron más difíciles de ubicar?</q></li>
+          <li>
+          <q>¿Alguien usó la misma estrategia, pero la explicaría de otra forma?</q></li>
+        </ul>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
