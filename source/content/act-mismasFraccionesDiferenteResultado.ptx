@@ -2,10 +2,18 @@
 
 <activity xml:id="act-mismasFraccionesDiferenteResultado" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Mismas fracciones, ¿diferente resultado?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Han dice que <m>\frac{4}{6}</m> es menor que <m>\frac{5}{6}</m>. Este es su trabajo.</p>
+  <image source="svg-source/tikz-file-147612">
+    <shortdescription>dos rectas numéricas de 0 a 1, divididas en sextos. La primera con 4/6 ubicado, y la segunda con 5/6 ubicado, mostrando que 5/6 está a la derecha de 4/6</shortdescription>
+  </image>
+  <p>Lin dice que <m>\frac{4}{6}</m> es mayor que <m>\frac{5}{6}</m>. Este es su trabajo.</p>
+  <image source="svg-source/tikz-file-149755">
+    <shortdescription>dos rectas numéricas de 0 a 1, divididas en sextos, con la segunda más corta que la primera. La primera con 4/6 ubicado, y la segunda con 5/6 ubicado, mostrando que 5/6 está a la izquierda de 4/6</shortdescription>
+  </image>
+  <p>¿Por qué Han y Lin hacen afirmaciones de comparación diferentes sobre las mismas fracciones?</p>
 </statement>
 
 <solution>
@@ -25,22 +33,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
+        <xref ref="ccss-3-NF-A-3-d" text="custom">3.NF.A.3.d</xref>
+      </li>      
     </ul>
   </paragraphs>
 
@@ -55,17 +49,7 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to recognize that fraction comparisons are only valid when they refer to the same whole. Previously, students analyzed pairs of fractions to determine if they were equivalent. In doing so, they were likely to have used comparison language, such as <q>larger or smaller than</q> or <q>greater or less than.</q> In this activity, students encounter a pair of fractions they saw earlier (<m>\frac{4}{6}</m> and <m>\frac{5}{6}</m>) and compare them more explicitly. The student work in this activity uses the number line, but this might also come up with student-drawn diagrams.</p>
-<p>In order to interpret Lin’s argument that <m>\frac{4}{6}</m> is greater than <m>\frac{5}{6}</m> students will need to articulate the meaning of fractions and highlight the fact that the two wholes Lin is comparing are not equal (MP6).</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-mismasFraccionesDiferenteResultado-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-mismasFraccionesDiferenteResultado-matCentros.ptx"/>  -->
+    <p>In order to interpret Lin’s argument that <m>\frac{4}{6}</m> is greater than <m>\frac{5}{6}</m> students will need to articulate the meaning of fractions and highlight the fact that the two wholes Lin is comparing are not equal (MP6).</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -103,14 +87,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -127,7 +103,7 @@
         <q>Esto es cierto independientemente de que dibujemos una recta numérica, usemos tiras de fracciones o dibujemos un diagrama</q>
       </li>
       <li>Consider asking, 
-        <q>¿Qué entendieron Lin y Han sobre representar fracciones en una recta numérica?</q>  (The number lines need to be partitioned into equal parts. The denominator tells us then number of parts. The numerator tells us how many parts to count to locate a point. Points farther to the right are greater than those to the left.)
+        <q>¿Qué entendieron Lin y Han sobre representar fracciones en una recta numérica?</q> (The number lines need to be partitioned into equal parts. The denominator tells us then number of parts. The numerator tells us how many parts to count to locate a point. Points farther to the right are greater than those to the left.)
       </li>
     </ul>
   </paragraphs>
@@ -135,15 +111,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Revoice student ideas to demonstrate and amplify mathematical language use. For example, revoice the student statement “the number lines are different” as “the size of the whole from 0 to 1 is different.”</p>
+    <p>
+      <em>Advances: Speaking, Representing</em>
+    </p>
   </paragraphs>
 
 </postlude>

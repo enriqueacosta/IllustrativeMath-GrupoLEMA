@@ -2,21 +2,29 @@
 
 <activity xml:id="act-sonEquivalentesONo" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Son equivalentes o no?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Estas fracciones son equivalentes? Muestra cómo pensaste. Usa diagramas, símbolos u otras representaciones.</p>
+  <ol>
+    <li><p><m>\frac{1}{2}</m> y <m>\frac{1}{3}</m></p></li>
+    <li><p><m>\frac{4}{6}</m> y <m>\frac{5}{6}</m></p></li>
+    <li><p><m>\frac{3}{4}</m> y <m>\frac{6}{8}</m></p></li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>No. Sample response:
-
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158747.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158747.svg" width="80%"/>
+      <li><p>No. Sample response:</p>
+        <image source="svg-source/tikz-file-158747">
+          <shortdescription>tiras de fracciones de una unidad. Una tira representa 1/3 y la otra 1/2</shortdescription>
+        </image>
       </li>
-      <li><p>No. Sample response: 
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Number line." role="image" src="../../../../../../figures/tikz-file-158748.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Number line." role="image" src="../../../../../../figures/tikz-file-158748.svg" width="80%"/>
+      <li><p>No. Sample response:</p>
+        <image source="svg-source/tikz-file-158748">
+          <shortdescription>number line showing the fractions 4/6 and 5/6</shortdescription>
+        </image>
       </li>
       <li>Yes. Sample response: a number line or diagram that shows the fractions are at the same location or are the same size.</li>
     </ol>
@@ -34,21 +42,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3" text="custom">3.NF.A.3</xref>
       </li>
     </ul>
   </paragraphs>
@@ -64,16 +58,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to analyze pairs of fractions to determine if they are equivalent. Students may use any representation that makes sense to them. Students will create a visual display and have a gallery walk to consider the different ways of looking for equivalence. Highlight representations such as diagrams and number lines, which will support students as they learn to compare fractions with the same numerator or denominator in this section.</p>
-<p>This activity uses <em>MLR7 Compare and Connect. Advances: representing, conversing</em></p>
+    <p>This activity uses <em>MLR7 Compare and Connect. Advances: representing, conversing</em></p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-sonEquivalentesONo-mat.ptx"/>  -->
+    <xi:include href="./act-sonEquivalentesONo-mat.ptx"/>
     <!-- <xi:include href="./act-sonEquivalentesONo-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -101,7 +94,10 @@
       </li>
       <li>2–3 minutes: partner discussion</li>
     </ul>
-<ul>
+    <p>
+      <alert>MLR7 Compare and Connect</alert>
+    </p>
+    <ul>
       <li>
         <q>Con su compañero, creen una presentación visual que muestre cómo pensaron sobre <m>\frac{4}{6}</m> y <m>\frac{5}{6}</m>. Incluyan detalles, como notas, diagramas, dibujos, etc., para ayudar a los demás a entender sus ideas</q>
       </li>
@@ -123,9 +119,8 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If students don’t determine whether or not fractions are equivalent, consider asking:
-</p>
-<ul>
+    <p>If students don’t determine whether or not fractions are equivalent, consider asking:</p>
+    <ul>
       <li>
         <q>¿Qué sabes sobre estas fracciones?</q>
       </li>
@@ -142,26 +137,21 @@
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>¿Qué representaciones diferentes podemos usar para decidir si <m>\frac{4}{6}</m> y <m>\frac{5}{6}</m> son equivalentes o no?</q>  (diagrams, number lines)
+        <q>¿Qué representaciones diferentes podemos usar para decidir si <m>\frac{4}{6}</m> y <m>\frac{5}{6}</m> son equivalentes o no?</q> (diagrams, number lines)
       </li>
       <li>
-        <q>¿Cómo mostró cada representación que <m>\frac{4}{6}</m> y <m>\frac{5}{6}</m> no son equivalentes?</q>  (In the diagram, you can see that <m>\frac{5}{6}</m> has more space shaded. On the number line, they are not at the same location.)
+        <q>¿Cómo mostró cada representación que <m>\frac{4}{6}</m> y <m>\frac{5}{6}</m> no son equivalentes?</q> (In the diagram, you can see that <m>\frac{5}{6}</m> has more space shaded. On the number line, they are not at the same location.)
       </li>
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Invite students to generate a list of shared expectations for group work. Record responses on a display and keep visible during the activity.</p>
+    <p>
+      <em>Supports accessibility for: Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>
