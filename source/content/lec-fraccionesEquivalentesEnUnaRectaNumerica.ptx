@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 12 </shorttitle>
 <title>Lección 12 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Fracciones equivalentes en una recta numérica</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Encontremos fracciones que están en la misma ubicación.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,9 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Identify and generate equivalent fractions.</p></li>
+    <li><p>Understand two fractions as equivalent if they are at the same point on a number line.</p></li>
   </ul>
 </objectives>
 
@@ -41,21 +43,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>,
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3" text="custom">3.NF.A.3</xref>
       </li>
     </ul>
     </paragraphs>
@@ -75,10 +68,9 @@
 
   <!-- Materiales requeridos -->
   <paragraphs>
-    <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
-      <li>
+    <title><custom ref="materials-leccion-titulo"/></title>    
+    <ul>
+      <!--<li>
         <p>Actividad 1</p>
         <xi:include href="./act-correrParteDeUnSendero-mat.ptx"/>
         <xi:include href="./act-correrParteDeUnSendero-matCentros.ptx"/>
@@ -87,8 +79,12 @@
         <p>Actividad 2</p>
         <xi:include href="./act-ubicarYEmparejar-mat.ptx"/>
         <xi:include href="./act-ubicarYEmparejar-matCentros.ptx"/>
+      </li>-->
+      <li>
+        <p>Actividad 3</p>
+        <xi:include href="./act-lanzateAHacerFraccionesEquivalentes-mat.ptx"/>
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -124,7 +120,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -141,7 +137,7 @@
 <!-- ============================================ 
   Actividad 2
 =================================================  -->
-<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act2" component="acts-no-rayable">
+<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act2" component="acts-rayable">
   <shorttitle>Actividad 2</shorttitle>
   <title>Actividad 2</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -158,7 +154,7 @@
 <!-- ============================================ 
   Actividad 3
 =================================================  -->
-<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act3" component="acts-no-rayable">
+<subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-act3" component="acts-rayable">
   <shorttitle>Actividad 3</shorttitle>
   <title>Actividad 3</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -178,14 +174,14 @@
 <subsubsection xml:id="lec-fraccionesEquivalentesEnUnaRectaNumerica-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display a number line that shows two fractions that are at the same location, such as <m>\frac {3}{2}</m> and <m>\frac{6}{4}</m>.</p>
-<p><q>Al principio de la unidad, usamos tiras de fracciones para ver y encontrar fracciones equivalentes. Aquí, usamos rectas numéricas para encontrar fracciones equivalentes</q></p>
-<p><q>¿En qué se parecen las dos formas de mostrar fracciones equivalentes?</q> (They both involve partitioning a whole and identifying two or more fractions.)</p>
-<p><q>¿En qué son diferentes?</q> (Instead of looking for parts that are the same size, we are looking for the same point or location on the number line.)</p>
-<p><q>Hoy vimos que puede ser útil usar una o dos rectas numéricas para mostrar que las fracciones son equivalentes. Tengan eso en mente durante el cierre</q></p>
+  <p><q>Al principio de la unidad, usamos tiras de fracciones para ver y encontrar fracciones equivalentes. Aquí, usamos rectas numéricas para encontrar fracciones equivalentes</q></p>
+  <p><q>¿En qué se parecen las dos formas de mostrar fracciones equivalentes?</q> (They both involve partitioning a whole and identifying two or more fractions.)</p>
+  <p><q>¿En qué son diferentes?</q> (Instead of looking for parts that are the same size, we are looking for the same point or location on the number line.)</p>
+  <p><q>Hoy vimos que puede ser útil usar una o dos rectas numéricas para mostrar que las fracciones son equivalentes. Tengan eso en mente durante el cierre</q></p>
 
 </subsubsection>
 
