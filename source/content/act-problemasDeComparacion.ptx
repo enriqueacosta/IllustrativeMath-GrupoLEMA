@@ -2,38 +2,69 @@
 
 <activity xml:id="act-problemasDeComparacion" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Problemas de comparación</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>En cada problema:</p>
+  <ul>
+    <li>
+      <p>Resuelve la pregunta y explica o muestra cómo razonaste.</p>
+    </li>
+    <li>
+      <p>
+        Representa tu respuesta con una afirmación en la que uses los símbolos <m>\gt</m>, <m>\lt</m>, o <m>=</m>.
+      </p>
+    </li>
+  </ul>
+  <ol>
+    <li>
+      <p>Un escarabajo avanzó lentamente <m>\frac{2}{8}</m> de la longitud de un tronco. Una oruga avanzó lentamente <m>\frac{2}{3}</m> de la longitud del mismo tronco. ¿Cuál insecto avanzó más?</p>
+    </li>
+    <li>
+      <sidebyside widths="60% 35%">
+        <p>Un saltamontes tiene 4 centímetros de largo. Una oruga tiene <m>\frac{12}{3}</m> centímetros de largo. ¿Cuál insecto es más largo?</p>
+        <image source="png-source/V1 3.5.D.17.1 Grasshopper_ES.png" component="web">
+          <shortdescription>un saltamontes de 4 centímetros</shortdescription>
+        </image>
+      </sidebyside>      
+    </li>
+    <li>
+      <p>Una mariquita avanzó lentamente <m>\frac{3}{8}</m> de la longitud de una rama. Una hormiga avanzó lentamente <m>\frac{5}{8}</m> de la longitud de la misma rama. ¿Cuál insecto avanzó más?</p>
+    </li>
+    <li>
+      <p>
+        Un saltamontes saltó <m>\frac{5}{8}</m> del ancho de la acera. Una rana saltó <m>\frac{5}{6}</m> del ancho de la misma acera. ¿Cuál de los dos saltó una mayor distancia?
+      </p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>The caterpillar crawled farther. Sample response:</p><ul>
-<li>A third is larger than an eighth, so 2 thirds is larger than 2 eighths.</li>
-<li>
-<m>\frac{2}{3} &gt; \frac{2}{8}</m> (or <m>\frac{2}{8} &lt; \frac{2}{3}</m>)</li>
-</ul>
+      <li><p>The caterpillar crawled farther. Sample response:</p>
+        <ul>
+          <li>A third is larger than an eighth, so 2 thirds is larger than 2 eighths.</li>
+          <li><m>\frac{2}{3} \gt \frac{2}{8}</m> (or <m>\frac{2}{8} \lt \frac{2}{3}</m>)</li>
+        </ul>
       </li>
-      <li><p>They are the same length. Sample response:</p><ul>
-<li>Three thirds is equivalent to 1, so 12 thirds is equivalent to 4.</li>
-<li>
-<m>\frac{12}{3} = 4</m> (or <m>4 = \frac{12}{3}</m>)</li>
-</ul>
+      <li><p>They are the same length. Sample response:</p>
+        <ul>
+          <li>Three thirds is equivalent to 1, so 12 thirds is equivalent to 4.</li>
+          <li><m>\frac{12}{3} = 4</m> (or <m>4 = \frac{12}{3}</m>)</li>
+        </ul>
       </li>
-      <li><p>The ant crawled farther. Sample response:</p><ul>
-<li>A number line showing that the point for 5 eighths is to the right of the point for 3 eighths</li>
-<li>
-<m>\frac{3}{8} &lt; \frac{5}{8}</m> (or <m>\frac{5}{8} &gt; \frac{3}{8}</m>)</li>
-</ul>
+      <li><p>The ant crawled farther. Sample response:</p>
+        <ul>
+          <li>A number line showing that the point for 5 eighths is to the right of the point for 3 eighths</li>
+          <li><m>\frac{3}{8} \lt \frac{5}{8}</m> (or <m>\frac{5}{8} \gt \frac{3}{8}</m>)</li>
+        </ul>
       </li>
-      <li><p>The frog jumped a longer distance. Sample response:</p><ul>
-<li>Sixths are larger than eighths, so 5 sixths is larger than 5 eighths.</li>
-<li>
-<m>\frac{5}{6} &gt; \frac{5}{8}</m> (or <m>\frac{5}{8} &lt; \frac{5}{6}</m>)</li>
-</ul>
+      <li><p>The frog jumped a longer distance. Sample response:</p>
+        <ul>
+          <li>Sixths are larger than eighths, so 5 sixths is larger than 5 eighths.</li>
+          <li><m>\frac{5}{6} \gt \frac{5}{8}</m> (or <m>\frac{5}{8} \lt \frac{5}{6}</m>)</li>
+        </ul>
       </li>
     </ol>
   </solution>
@@ -49,22 +80,8 @@
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
       <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <custom ref="ccss-addressing"/>        
+        <xref ref="ccss-3-NF-A-3-d" text="custom">3.NF.A.3.d</xref>
       </li>
     </ul>
   </paragraphs>
@@ -79,18 +96,8 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to compare two numbers in context, to explain or show their reasoning, and record the results of the comparisons with the symbols &gt;, =, or &lt; (MP2). The numbers may be fractions with the same numerator or the same denominator, or a fraction and a whole number.</p>
-<p>Students are likely to generate different comparison statements for the same situation. For example, they may write <m>\frac{5}{8} &gt; \frac{3}{8}</m> or <m>\frac{3}{8}&lt;\frac{5}{8}</m> to represent <m>\frac{5}{8}</m> being the greater fraction. During synthesis, discuss how both statements capture the comparison and are valid.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-problemasDeComparacion-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-problemasDeComparacion-matCentros.ptx"/>  -->
+    <p>The purpose of this activity is for students to compare two numbers in context, to explain or show their reasoning, and record the results of the comparisons with the symbols <m>\gt</m>, <m>=</m>, or <m>\lt</m> (MP2). The numbers may be fractions with the same numerator or the same denominator, or a fraction and a whole number.</p>
+    <p>Students are likely to generate different comparison statements for the same situation. For example, they may write <m>\frac{5}{8} \gt \frac{3}{8}</m> or <m>\frac{3}{8}\lt\frac{5}{8}</m> to represent <m>\frac{5}{8}</m> being the greater fraction. During synthesis, discuss how both statements capture the comparison and are valid.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -119,11 +126,12 @@
         <q>Comparen sus respuestas y su razonamiento con su compañero</q>
       </li>
       <li>2–3 minutes: partner discussion</li>
-      <li><p>Monitor for:</p><ul>
-<li>different representations or reasoning strategies used for the same problem, such as diagrams, fraction strips, number lines, or explanations in words</li>
-<li>different statements written for the same problem, such as <m>4=\frac{12}{3}</m> and <m>\frac{12}{3}=4</m>, or <m>\frac{2}{3} &gt; \frac{2}{8}</m> and <m>\frac{2}{8} &lt; \frac{2}{3}</m>
-</li>
-</ul>
+      <li><p>Monitor for:</p>
+        <ul>
+          <li>different representations or reasoning strategies used for the same problem, such as diagrams, fraction strips, number lines, or explanations in words</li>
+          <li>different statements written for the same problem, such as <m>4=\frac{12}{3}</m> and <m>\frac{12}{3}=4</m>, or <m>\frac{2}{3} \gt \frac{2}{8}</m> and <m>\frac{2}{8} \lt \frac{2}{3}</m>
+          </li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -136,14 +144,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -153,7 +153,7 @@
       <li>
         <q>¿Cómo usaron lo que han aprendido en lecciones anteriores para comparar las fracciones?</q>  (If the fractions had the same numerator, I thought about the size of the denominators. If they had the same denominator, I compared the numerators.)
       </li>
-      <li>Select students who wrote different but equally valid comparison statements (for instance, <m>\frac{2}{8}&lt;\frac{2}{3}</m> and <m>\frac{2}{3} &gt; \frac{2}{8}</m>) to share. </li>
+      <li>Select students who wrote different but equally valid comparison statements (for instance, <m>\frac{2}{8}\lt\frac{2}{3}</m> and <m>\frac{2}{3} \gt \frac{2}{8}</m>) to share. </li>
       <li>Discuss how to read each statement and ask students whether both accurately represent the comparison.</li>
       <li>Emphasize that we can write comparison statements in more than one way, but we need to check that the statements make sense given the numbers we write and the symbols we use. </li>
     </ul>
@@ -162,15 +162,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: As students share the similarities and differences between the representations and comparison statements, use gestures to emphasize what is being described. For example, show with your fingers the partitions such as fourths or eighths that are the same in the representations that are being compared.</p>
+    <p>
+      <em>Advances: Listening, Representing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Synthesis: Optimize meaning and value. Invite students to share a connection between activity content and their own lives. Ask <q>¿Cómo puedo usar esto en mi propia vida?</q> // <q>How can I use this in my own life?</q></p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
