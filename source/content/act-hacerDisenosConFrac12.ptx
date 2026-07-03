@@ -2,17 +2,44 @@
 
 <activity xml:id="act-hacerDisenosConFrac12" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Hagamos diseños con <m>\frac{1}{2}</m></title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Este es un cuadrado. En cada lado, marca un punto que muestre  de la longitud del lado.</p>
+      <image source="svg-source/Cuadrado3-5-18">
+        <shortdescription>cuadrado</shortdescription>
+      </image>
+      <p>Une cada punto con los puntos de los dos lados que están junto a este. ¿Qué figura hiciste?</p>
+    </li>
+    <li>
+      <p>Mira la nueva figura que hiciste. En cada lado de esa nueva figura, marca un punto que muestre <m>\frac{1}{2}</m> de la longitud del lado. Une los puntos de nuevo, ¿Qué figura hiciste?</p>
+    </li>
+    <li>
+      <p>Repite los pasos que acabaste de hacer al menos dos veces más. Haz algunas observaciones sobre el diseño que acabaste de crear.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
+    <sidebyside>
+      <ol>
+        <li>
+          <p>A square</p>
+        </li>
+        <li>
+          <p>A square</p>
+        </li>
+        <li>
+          <p>Sample response:</p>
+        </li>
+      </ol>
+      <image source="svg-source/Cuadrado3-5-18-resuelto">
+        <shortdescription>cuadrado con la actividad hecha</shortdescription>
+      </image>
+    </sidebyside>
   </solution>
 
 
@@ -25,23 +52,10 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li> 
-        <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>,
+        <xref ref="ccss-3-NF-A-2-a" text="custom">3.NF.A.2.a</xref>
       </li>
     </ul>
   </paragraphs>
@@ -63,9 +77,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-hacerDisenosConFrac12-mat.ptx"/>  -->
+    <xi:include href="./act-hacerDisenosConFrac12-mat.ptx"/>
     <!-- <xi:include href="./act-hacerDisenosConFrac12-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -98,12 +111,13 @@
         <q>Completen la actividad con su compañero. Usen una regla cuando dibujen las líneas para unir los puntos</q>
       </li>
       <li>10 minutes: partner work time</li>
-      <li><p>Monitor for different strategies and tools students use to partition the sides of the squares, such as:</p><ul>
-<li>estimating or <q>eyeballing</q> the midpoint</li>
-<li>folding opposite sides of each square in half</li>
-<li>copying the side length of each square onto another paper, folding it in half, and using it to mark the midpoint of all four sides</li>
-<li>using a ruler to measure</li>
-</ul>
+      <li><p>Monitor for different strategies and tools students use to partition the sides of the squares, such as:</p>
+        <ul>
+          <li>estimating or <q>eyeballing</q> the midpoint</li>
+          <li>folding opposite sides of each square in half</li>
+          <li>copying the side length of each square onto another paper, folding it in half, and using it to mark the midpoint of all four sides</li>
+          <li>using a ruler to measure</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -116,14 +130,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -131,11 +137,11 @@
     <ul>
       <li>Select previously identified students to share their strategies for partitioning the sides of each shape into halves. Ask them to demonstrate their methods as needed.</li>
       <li>
-        <q>¿Cómo supieron cuál extremo usar como 0 o como punto de partida para marcar <m>\frac{1}{2}</m> de la longitud?</q>  (It doesn’t matter. Starting from either end gives the same point.)
+        <q>¿Cómo supieron cuál extremo usar como 0 o como punto de partida para marcar <m>\frac{1}{2}</m> de la longitud?</q> (It doesn’t matter. Starting from either end gives the same point.)
       </li>
       <li>Display one or more completed drawings (showing different numbers of iterations).</li>
       <li>
-        <q>¿Por qué creen que todos terminamos con el mismo diseño?</q>  (Each time we marked the same set of points—the middle point of each side.)
+        <q>¿Por qué creen que todos terminamos con el mismo diseño?</q> (Each time we marked the same set of points—the middle point of each side.)
       </li>
       <li>
         <q>En la siguiente actividad, vamos a hacer un diseño con otra fracción</q>
@@ -146,15 +152,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display.</em> Circulate, listen for and collect the language students use as they work in groups. On a visible display, record words and phrases such as: middle, midpoint, point, endpoint, connect, mark, cut, partition, side length. Invite students to borrow language from the display as needed, and update it throughout the lesson.</p>
+    <p>
+      <em>Advances: Conversing, Representing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Representation: Access for Perception.</em> Provide appropriate reading accommodations and supports to ensure student access to written directions, word problems, and other text-based content.</p>
+    <p>
+      <em>Supports accessibility for: Language, Social-Emotional Functioning</em>
+    </p>
   </paragraphs>
 
 </postlude>

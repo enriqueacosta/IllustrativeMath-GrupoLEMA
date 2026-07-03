@@ -7,23 +7,26 @@
 ===========================================================================  -->
 <exploration xml:id="warm-observa-entre0Y1" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Observa y pregúntate: Entre 0 y 1</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Qué observas? ¿Qué te preguntas?</p>
+  <image source="svg-source/tikz-file-158753">
+    <shortdescription>4 rectas numéricas de 0 a 1, las 3 primeras están divididas en medios. Todas las rectas numéricas van disminuyendo en longitud.</shortdescription>
+  </image>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Students may notice:</p>
-<ul>
+    <ul>
       <li>Four number lines go from 0 to 1.</li>
       <li>Three of the number lines are partitioned into halves. The last one is not.</li>
       <li>The number lines get shorter and shorter. </li>
       <li>Each number line is not quite half as short as the one before it.</li>
     </ul>
-<p>Students may wonder:</p>
-<ul>
+    <p>Students may wonder:</p>
+    <ul>
       <li>Why are the number lines changing in length?</li>
       <li>Why doesn't the last number have a tick mark between 0 and 1?</li>
       <li>Do the lines get shorter in a certain way?</li>
@@ -42,21 +45,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>        
       </li>
     </ul>
   </paragraphs>
@@ -72,13 +61,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this warm-up is to elicit observations about partitions in number lines of different scales. In subsequent design activities, students will partition the sides of squares and other shapes into unit fractions. That process will be iterative, with the length being partitioned changing each time. The work here familiarizes students with the reasoning they will encounter later in the lesson.</p>
-  </paragraphs>
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <xi:include href="./warm-observa-entre0Y1-mat.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -116,44 +98,24 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>En qué se parecen todas las rectas numéricas?</q>  (They all go from 0 to 1. They have the labels 0 and 1.)
+        <q>En qué se parecen todas las rectas numéricas?</q> (They all go from 0 to 1. They have the labels 0 and 1.)
       </li>
       <li>
-        <q>¿En qué son diferentes?</q>  (They have different lengths.)
+        <q>¿En qué son diferentes?</q> (They have different lengths.)
       </li>
       <li>
-        <q>¿Cómo partirían la última recta numérica para que coincida con las demás?</q>  (Mark the halfway point between 0 and 1.)
+        <q>¿Cómo partirían la última recta numérica para que coincida con las demás?</q> (Mark the halfway point between 0 and 1.)
       </li>
       <li>
         <q>Supongamos que quisiéramos que todas las rectas numéricas estuvieran partidas en cuartos. ¿Cómo lo harían?</q>  (Find the halfway point between 0 and <m>\frac{1}{2}</m> and between <m>\frac{1}{2}</m> and 1.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
