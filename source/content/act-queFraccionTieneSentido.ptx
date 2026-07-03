@@ -2,29 +2,92 @@
 
 <activity xml:id="act-queFraccionTieneSentido" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>¿Qué fracción tiene sentido?</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>¡Oh, no! Se derramó jugo sobre las fracciones de Noah. Ayúdalo a averiguar qué estaba escrito antes de que el jugo se derramara.</p>
+      <p>En cada caso, encuentra todos los números que puedas que hacen que la afirmación sea verdadera. Explica o muestra tu razonamiento.</p>
+      <ol>
+        <li><p><line></line>
+              <line>
+                <image source="png-source/3.5.D Lesson 17 splash-fraction 1.png" width="25%">
+                  <shortdescription>2/8 es menor que una fracción con el numerador tapado y denominador 8</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+        <li><p><line></line>
+              <line>
+                <image source="png-source/3.5.D Lesson 17 splash-fraction 2.png" width="25%">
+                  <shortdescription>3/6 es igual que una fracción tapada</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+        <li><p><line></line>
+              <line>
+                <image source="png-source/3.5.D Lesson 17 splash-fraction 3.png" width="25%">
+                  <shortdescription>4/3 es mayor que una fracción de numerador 4 y denominador tapado</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+      </ol>
+    </li>
+    <li><p>En cada caso, encuentra una fracción que sea menor, una que sea mayor y una que sea equivalente a la fracción. Después, escribe una afirmación en la que uses los símbolos <m>\gt</m>, <m>\lt</m>, o <m>=</m> para dejar registro de cada comparación.</p>
+      <ol>
+        <li>
+          <sidebyside>
+            <stack>
+              <p>Menos de <m>\frac{4}{6}</m>:<fillin characters="5" /></p>
+              <p>Más de <m>\frac{4}{6}</m>:<fillin characters="5" /></p>
+              <p>Equivalente a <m>\frac{4}{6}</m>:<fillin characters="5" /></p>
+            </stack>
+            <stack>
+              <p>Afirmación:</p>
+              <p>Afirmación:</p>
+              <p>Afirmación:</p>
+            </stack>
+          </sidebyside>
+        </li>
+        <li><sidebyside>
+            <stack>
+              <p>Menos de <m>\frac{3}{4}</m>:<fillin characters="5" /></p>
+              <p>Más de <m>\frac{3}{4}</m>:<fillin characters="5" /></p>
+              <p>Equivalente a <m>\frac{3}{4}</m>:<fillin characters="5" /></p>
+            </stack>
+            <stack>
+              <p>Afirmación:</p>
+              <p>Afirmación:</p>
+              <p>Afirmación:</p>
+            </stack>
+          </sidebyside></li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><ol>
-<li>Any numerator greater than 2. Sample response: These numerators all show more than 2 eighths.</li>
-<li>
-<m>\frac{1}{2}</m>, <m>\frac{2}{4}</m>, or <m>\frac{4}{8}</m>. Sample response: These fractions are all equivalent to <m>\frac{3}{6}</m>.</li>
-<li>4, 6, or 8. Sample response: These denominators have smaller parts than thirds, so 4 parts of these sizes will be smaller than 4 thirds.</li>
-</ol>
+      <li>
+        <ol>
+          <li>Any numerator greater than 2. Sample response: These numerators all show more than 2 eighths.</li>
+          <li>
+          <m>\frac{1}{2}</m>, <m>\frac{2}{4}</m>, or <m>\frac{4}{8}</m>. Sample response: These fractions are all equivalent to <m>\frac{3}{6}</m>.</li>
+          <li>4, 6, or 8. Sample response: These denominators have smaller parts than thirds, so 4 parts of these sizes will be smaller than 4 thirds.</li>
+        </ol>
       </li>
       <li><p>Sample responses:</p> 
         <ol>
-<li>Less: <m>\frac{2}{6}</m>,  <m>\frac{2}{6} &lt; \frac{4}{6}</m> More: <m>\frac{7}{6}</m>, <m>\frac{7}{6} &gt; \frac{4}{6}</m> Equivalent: <m>\frac{2}{3}</m>, <m>\frac{2}{3} = \frac{4}{6}</m>
-</li>
-<li>Less: <m>\frac{1}{4}</m>, <m>\frac{1}{4} &lt; \frac{3}{4}</m> More: <m>\frac{5}{4}</m>,  <m>\frac{5}{4} &gt; \frac{3}{4}</m> Equivalent: <m>\frac{6}{8}</m>, <m>\frac{6}{8} = \frac{3}{4}</m>
-</li>
-</ol>
+          <li><p>Less: <m>\frac{2}{6}</m>,  <m>\frac{2}{6} \lt \frac{4}{6}</m></p>
+            <p>More: <m>\frac{7}{6}</m>, <m>\frac{7}{6} \gt \frac{4}{6}</m></p>
+            <p>Equivalent: <m>\frac{2}{3}</m>, <m>\frac{2}{3} = \frac{4}{6}</m></p>
+          </li>
+          <li><p>Less: <m>\frac{1}{4}</m>, <m>\frac{1}{4} \lt \frac{3}{4}</m></p>
+            <p>More: <m>\frac{5}{4}</m>,  <m>\frac{5}{4} \gt \frac{3}{4}</m></p>
+            <p>Equivalent: <m>\frac{6}{8}</m>, <m>\frac{6}{8} = \frac{3}{4}</m></p>
+          </li>
+        </ol>
       </li>
     </ol>
   </solution>
@@ -41,21 +104,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-d" text="custom">3.NF.A.3.d</xref>
       </li>
     </ul>
   </paragraphs>
@@ -70,17 +119,7 @@
   <paragraphs>
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>The purpose of this activity is for students to generalize what they have learned about comparing fractions to complete comparison statements and to generate new ones, using the symbols &lt;, &gt;, or =. Students first consider all numbers that could make an incomplete comparison statement true. Then, they find a fraction less than, greater than, and equivalent to a given fraction and write statements to record the comparisons. As in the previous activity, students see that there are different ways to record the same comparison of two numbers.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-queFraccionTieneSentido-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-queFraccionTieneSentido-matCentros.ptx"/>  -->
+    <p>The purpose of this activity is for students to generalize what they have learned about comparing fractions to complete comparison statements and to generate new ones, using the symbols <m>\lt</m>, <m>\gt</m>, or <m>=</m>. Students first consider all numbers that could make an incomplete comparison statement true. Then, they find a fraction less than, greater than, and equivalent to a given fraction and write statements to record the comparisons. As in the previous activity, students see that there are different ways to record the same comparison of two numbers.</p>
   </paragraphs>
 
   <!-- Launch -->
@@ -105,7 +144,7 @@
         <q>Noah estaba trabajando con fracciones cuando se le derramó un jugo. Ahora no logra saber cuáles eran algunos números. Ayúdenlo a averiguar qué estaba escrito antes de que se derramara el jugo</q>
       </li>
       <li>5 minutes: partner work time</li>
-      <li>Pause for a discussion and invite students to share the numbers that they think make sense in the first statement (<m>\frac{2}{8}&lt; \frac{?}{8}</m>).</li>
+      <li>Pause for a discussion and invite students to share the numbers that they think make sense in the first statement (<m>\frac{2}{8}\lt \frac{?}{8}</m>).</li>
       <li>Display or write the comparison statements using students’ numbers.</li>
       <li>
         <q>¿Todas estas afirmaciones tienen sentido? ¿Cómo lo saben?</q>
@@ -134,7 +173,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students don’t find more than one number that would make the statements in the first problem true, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>Ya encontraste un número que hace que la afirmación sea verdadera. ¿Cómo encontraste ese número y cómo supiste que hacía que la afirmación fuera verdadera?</q>
       </li>
@@ -155,20 +194,6 @@
         <q>¿Cómo encontraron una fracción que fuera menor que la fracción dada (o mayor que la fracción dada o equivalente a ella)?</q>
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
