@@ -1,4 +1,4 @@
-"""
+r"""
 extract_HTML_lesson_and_preparation.py
 
 This script extracts specific sections from two different lesson HTML files inside a given folder:
@@ -14,7 +14,7 @@ Processing:
 - Replaces straight quotes with <q> tags.
 - Converts sequences of three or more underscores (_____) into <fillin/>.
 - Ensures <fillin/> is displayed as "_____" using CSS.
-- Places math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> to <m>CONTENT</m>
+- Places math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> or <span class="math">\(CONTENT\)</span> to <m>CONTENT</m>
 - Drops <span> tags but keeps the content inside them
 - Drops <div class="imgrid"> tags and their contents except for <img> tags
 - Drops <figure> tags and their contents except for <img> tags
@@ -231,8 +231,8 @@ def process_content(content, include_raw_html, strip_qtags):
     # Drop <br/> tags
     extracted_content = re.sub(r'<br\s*/?>\s*', ' ', extracted_content)
 
-    # place math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> to <m>CONTENT</m>
-    extracted_content = re.sub(r'<span class="math math-repaired">\\\((.*?)\\\)</span>', r'<m>\1</m>', extracted_content)
+    # place math in <m> tags: change <span class="math math-repaired">\(CONTENT\)</span> or <span class="math">\(CONTENT\)</span> to <m>CONTENT</m>
+    extracted_content = re.sub(r'<span class="math(?: math-repaired)?">\\\((.*?)\\\)</span>', r'<m>\1</m>', extracted_content)
 
     # Drop <span> tags but keep the content inside them
     extracted_content = re.sub(r'<span>(.*?)</span>', r'\1', extracted_content)
