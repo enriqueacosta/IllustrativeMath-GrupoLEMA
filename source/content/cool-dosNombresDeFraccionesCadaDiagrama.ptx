@@ -6,17 +6,34 @@
 ===============================================================  -->
 <project xml:id="cool-dosNombresDeFraccionesCadaDiagrama" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Dos nombres de fracciones para cada diagrama</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Escribe dos fracciones que estén representadas por la parte sombreada de este diagrama.</p>
+      <image source="svg-source/tikz-file-158711">
+        <shortdescription>tira dividida en sextos, con 3 sombreadas</shortdescription>
+      </image>
+    </li>
+    <li>
+      <p>Muestra que la parte sombreada de este diagrama representa tanto <m>\frac{5}{4}</m> como <m>\frac{10}{8}</m>.</p>
+      <image source="svg-source/tikz-file-158713">
+        <shortdescription>tira  de dos unidades, dividida en cuartos, con 5 sombreadas</shortdescription>
+      </image>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
       <li><m>\frac{3}{6}, \frac{1}{2}</m></li>
-      <li><p>Sample response: Each 1 whole is partitioned into fourths. Five fourths are shaded, which represents <m>\frac{5}{4}</m>. Each fourth can be split into two equal parts, which makes 8 eighths in 1 whole. Ten eighths are shaded, so that’s <m>\frac{10}{8}</m>. </p> <p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158712.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158712.svg" width="80%"/></li>
+      <li><p>Sample response: Each 1 whole is partitioned into fourths. Five fourths are shaded, which represents <m>\frac{5}{4}</m>. Each fourth can be split into two equal parts, which makes 8 eighths in 1 whole. Ten eighths are shaded, so that’s <m>\frac{10}{8}</m>.</p>
+        <image source="svg-source/tikz-file-158712">
+          <shortdescription>tira de dos unidades, dividida en octavos, con 10 sombreadas</shortdescription>
+        </image>
+      </li>
     </ol>
   </solution>
 
@@ -29,21 +46,9 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -57,15 +62,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Students generate two equivalent fractions, but don't show or explain their reasoning around why any of the fractions are equivalent.</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Before the warm up, select a student's cool down from the previous lesson (name anonymous). Ask students to identify what the student did well and what the student needs to do to improve the cool down.</p>
   </paragraphs>
 
 </postlude>

@@ -2,26 +2,64 @@
 
 <activity xml:id="act-masDeUnNombre" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Más de un nombre</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+      <li>
+        <p>Cada diagrama representa 1. Escribe dos fracciones que representen la parte sombreada de cada diagrama.</p>
+        <ol>
+          <li><p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-149739">
+                  <shortdescription>tira dividida en sextos, con 4 sombreadas</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+          <li><p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-149740">
+                  <shortdescription>tira dividida en octavos, con 2 sombreadas</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+          <li><p><line></line>
+              <line>
+                <image source="svg-source/tikz-file-158709">
+                  <shortdescription>tira dividida en cuartos, con 4 sombreadas</shortdescription>
+                </image>
+              </line>              
+            </p></li>
+        </ol>
+      </li>
+      <li>
+        <p>Este es otro diagrama.</p>
+        <image source="svg-source/tikz-file-158710">
+          <shortdescription>tira de dos unidades dividida en medios, con 3 sombreadas</shortdescription>
+        </image>
+        <ol>
+          <li><p>¿Qué fracción está representada por la parte sombreada del diagrama?</p></li>
+          <li><p>Escribe otra fracción que esté representada por esta parte.</p></li>
+        </ol>
+      </li>
+    </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><ol>
-<li><m>\frac{4}{6}, \frac{2}{3}</m></li>
-<li><m>\frac{2}{8}, \frac{1}{4}</m></li>
-<li>
-<m>\frac{4}{4}, \frac{8}{8}, \frac{2}{2}</m>. Students may also say <m>\frac{3}{3}</m> and <m>\frac{6}{6}</m>.</li>
-</ol>
+      <li>
+        <ol>
+          <li><m>\frac{4}{6}, \frac{2}{3}</m></li>
+          <li><m>\frac{2}{8}, \frac{1}{4}</m></li>
+          <li><m>\frac{4}{4}, \frac{8}{8}, \frac{2}{2}</m>. Students may also say <m>\frac{3}{3}</m> and <m>\frac{6}{6}</m>.</li>
+        </ol>
       </li>
-      <li><ol>
-<li><m>\frac{3}{2}</m></li>
-<li><m>\frac{6}{4}, \frac{12}{8}, \frac{9}{6}</m></li>
-</ol>
+      <li>
+        <ol>
+          <li><m>\frac{3}{2}</m></li>
+          <li><m>\frac{6}{4}, \frac{12}{8}, \frac{9}{6}</m></li>
+        </ol>
       </li>
     </ol>
   </solution>
@@ -38,21 +76,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-3-a" text="custom">3.NF.A.3.a</xref>,
+        <xref ref="ccss-3-NF-A-3-b" text="custom">3.NF.A.3.b</xref>
       </li>
     </ul>
   </paragraphs>
@@ -70,24 +95,16 @@
     <p>The purpose of this activity is for students to generate equivalent fractions, including for fractions greater than 1, given partially shaded diagrams. Student may use strategies from an earlier activity—partitioning a diagram into smaller equal parts, or making larger equal parts out of existing parts—or patterns they observed in the numerators and denominators of equivalent fractions (MP7).</p>
   </paragraphs>
 
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-masDeUnNombre-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-masDeUnNombre-matCentros.ptx"/>  -->
-  </paragraphs>
-
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>Groups of 2</li>
-      <li><p>Display or draw a diagram with 2 fourths shaded: 
-</p><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158700.svg"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Expand image" src="../../../../../assets/expand-9ef5655e2d1b5ba286de1390c97f4243f15e264c89106027f5d071073ab562bb.png" title="Expand image"/><p>[@@@@@@@@] WARNING: Fix Image.</p><img alt="Diagram." role="image" src="../../../../../../figures/tikz-file-158700.svg" width="80%"/>
+      <li><p>Display or draw a diagram with 2 fourths shaded:</p>
+        <image source="svg-source/tikz-file-158700">
+          <shortdescription>tira dividida en cuartos, con 2 sombreados</shortdescription>
+        </image>
       </li>
       <li>
         <q>Observen que hay un 1 debajo del diagrama. Esta es otra forma de mostrar qué parte del diagrama representa 1</q>
@@ -112,10 +129,11 @@
         <q>Discutan con su compañero los nombres que se les ocurrieron para cada fracción. Asegúrense de compartir cómo razonaron en el caso de cada fracción</q>
       </li>
       <li>2–3 minutes: partner discussion</li>
-      <li><p>Monitor for students who make statements like:</p><ul>
-<li>The first diagram is <m>\frac{4}{6}</m>, because 4 of the 6 equal parts are shaded. It's also <m>\frac{2}{3}</m> because every 2 sixths is 1 third and there are 3 thirds. Two of the 3 thirds are shaded.</li>
-<li>The second diagram is <m>\frac{2}{8}</m> because 2 of the 8 equal parts are shaded. It's also <m>\frac{1}{4}</m> because every 2 eighths is 1 fourth, and 1 of the 4 fourths is shaded.</li>
-</ul>
+      <li><p>Monitor for students who make statements like:</p>
+        <ul>
+          <li>The first diagram is <m>\frac{4}{6}</m>, because 4 of the 6 equal parts are shaded. It's also <m>\frac{2}{3}</m> because every 2 sixths is 1 third and there are 3 thirds. Two of the 3 thirds are shaded.</li>
+          <li>The second diagram is <m>\frac{2}{8}</m> because 2 of the 8 equal parts are shaded. It's also <m>\frac{1}{4}</m> because every 2 eighths is 1 fourth, and 1 of the 4 fourths is shaded.</li>
+        </ul>
       </li>
     </ul>
   </paragraphs>
@@ -133,7 +151,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students name a fraction, based only on the given partitions, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>Cuéntame cómo llamaste a la fracción</q>
       </li>
@@ -165,15 +183,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Students should take turns naming the equivalent fractions they came up with and explaining their reasoning to their partner. Display the following sentence frames for all to see: <q>Observé <fillin characters="5" />, entonces pensé...</q> // <q>I noticed <fillin characters="5" />, so I thought....</q> Encourage students to challenge each other when they disagree.</p>
+    <p>
+      <em>Advances: Speaking, Representing</em>
+    </p>
   </paragraphs>
 
 </postlude>
