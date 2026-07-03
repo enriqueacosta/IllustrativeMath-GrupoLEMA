@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 18 </shorttitle>
 <title>Lección 18 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Hagamos diseños con fracciones (opcional)</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Usemos fracciones para crear un diseño.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,12 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li>
+      <p>
+        Apply fraction understanding to create geometric designs.
+      </p>
+    </li>
   </ul>
 </objectives>
 
@@ -41,21 +46,12 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-2" text="custom">3.NF.A.2</xref>        
       </li>
       <li>
         <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-NF-A-1" text="custom">3.NF.A.1</xref>,
+        <xref ref="ccss-3-NF-A-2-a" text="custom">3.NF.A.2.a</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +72,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+     <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-hacerDisenosConFrac12-mat.ptx"/>
-        <xi:include href="./act-hacerDisenosConFrac12-matCentros.ptx"/>
+        <!--<xi:include href="./act-hacerDisenosConFrac12-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-hacerDisenosConFrac14-mat.ptx"/>
-        <xi:include href="./act-hacerDisenosConFrac14-matCentros.ptx"/>
+        <!--<xi:include href="./act-hacerDisenosConFrac14-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,8 +91,8 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>This lesson is optional because it does not address any new mathematical content standards. It does provide students with an opportunity to apply precursor skills of mathematical modeling.</p>
-<p>In this lesson, students apply their understanding of fractions to create geometric designs, starting with a given square. They are tasked with marking a fractional length (<m>\frac{1}{2}</m> or <m>\frac{1}{4}</m>) of each side of the square with a point. They then connect the points, which creates a new shape within the square. Students iterate this process of marking a fractional length and connecting points to generate their designs.</p>
-<p>To mark a given length, students apply their experience with partitioning a segment into equal parts. To mark a fractional length, they decide which endpoint of each side to use as a starting point, whether to always mark the points in the same direction (clockwise or counterclockwise), how many iterations are practical, and so on (MP4).</p>
+    <p>In this lesson, students apply their understanding of fractions to create geometric designs, starting with a given square. They are tasked with marking a fractional length (<m>\frac{1}{2}</m> or <m>\frac{1}{4}</m>) of each side of the square with a point. They then connect the points, which creates a new shape within the square. Students iterate this process of marking a fractional length and connecting points to generate their designs.</p>
+    <p>To mark a given length, students apply their experience with partitioning a segment into equal parts. To mark a fractional length, they decide which endpoint of each side to use as a starting point, whether to always mark the points in the same direction (clockwise or counterclockwise), how many iterations are practical, and so on (MP4).</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -126,7 +121,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-hacerDisenosConFraccionesOptional-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-hacerDisenosConFraccionesOptional-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -169,12 +164,12 @@
 <subsubsection xml:id="lec-hacerDisenosConFraccionesOptional-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p><q>Hoy usamos fracciones para partir los lados de figuras geométricas y crear diseños</q></p>
-<p><q>Hoy partimos los lados de una figura y marcamos puntos en ellos. ¿En qué se pareció eso a partir rectas numéricas y marcar puntos en ellas? ¿En qué fue diferente?</q></p>
-<p><q>¿Qué disfrutaron del proceso de hacer diseños con fracciones? ¿Qué fue retador?</q></p>
+  <p><q>Hoy partimos los lados de una figura y marcamos puntos en ellos. ¿En qué se pareció eso a partir rectas numéricas y marcar puntos en ellas? ¿En qué fue diferente?</q></p>
+  <p><q>¿Qué disfrutaron del proceso de hacer diseños con fracciones? ¿Qué fue retador?</q></p>
 
 </subsubsection>
 
