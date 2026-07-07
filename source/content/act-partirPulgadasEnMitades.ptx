@@ -2,16 +2,75 @@
 
 <activity xml:id="act-partirPulgadasEnMitades" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Partamos pulgadas en mitades</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Vas a necesitar una regla de una actividad anterior.</p>
+  <ol>
+    <li>
+      <p>Con tu compañero, parte cada pulgada de la regla en mitades de pulgada.</p>
+    </li>
+    <li>
+      <p>Usa la regla que tiene marcadas las mitades de pulgada para medir las longitudes de algunos objetos del salón.</p>
+    </li>
+    <tabular top="medium">
+    <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud (pulgadas)</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+  </tabular>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Table present.</p>
+    <tabular top="medium" halign="center" valign="middle">
+    <row header="yes" left="medium" bottom="medium">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud (pulgadas)</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">clip de papel</cell>
+      <cell right="minor"><m>\frac{3}{2}</m> pulgadas</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">libro</cell>
+      <cell right="minor"><m>5\frac{1}{2}</m> pulgadas</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">lápiz</cell>
+      <cell right="minor"><m>\frac{13}{2}</m> pulgadas</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">borrador</cell>
+      <cell right="minor"><m>\frac{1}{2}</m> pulgadas</cell>
+    </row>
+  </tabular>
   </solution>
 
 
@@ -26,21 +85,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,16 +101,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to partition the inches on a ruler to show half inches and then use their ruler to measure lengths to the nearest half of an inch.</p>
-<p>The unpartitioned rulers from this activity are used in the next lesson.</p>
+    <p>The unpartitioned rulers from this activity are used in the next lesson.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-partirPulgadasEnMitades-mat.ptx"/>  -->
+    <xi:include href="./act-partirPulgadasEnMitades-mat.ptx"/> 
     <!-- <xi:include href="./act-partirPulgadasEnMitades-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -76,7 +120,7 @@
     <ul>
       <li>Groups of 2</li>
       <li>
-        <q>¿Cómo podemos modificar nuestras reglas para medir longitudes que están entre dos números enteros?</q>  (We could fold each inch into smaller equal parts. We could partition each inch into halves.)
+        <q>¿Cómo podemos modificar nuestras reglas para medir longitudes que están entre dos números enteros?</q> (We could fold each inch into smaller equal parts. We could partition each inch into halves.)
       </li>
     </ul>
   </paragraphs>
@@ -115,9 +159,8 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If the parts students partitioned aren’t the same size, consider asking:
-</p>
-<ul>
+    <p>If the parts students partitioned aren’t the same size, consider asking:</p>
+    <ul>
       <li>
         <q>Dime cómo partiste las pulgadas en mitades</q>
       </li>
@@ -143,15 +186,8 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display.</em> Circulate, listen for and collect the language and numbers students use as they measure objects. On a visible display, record numbers, words and phrases such as: seven half inches, seven halves of an inch, <m>\frac{7}{2}</m>, between 2 and 3 inches, six and a half inches, <m>6\frac{1}{2}</m>, and less than 5 inches. Invite students to borrow language from the display as needed, and update it throughout the lesson.</p>
   </paragraphs>
 
 </postlude>
