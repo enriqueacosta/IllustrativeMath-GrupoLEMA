@@ -2,30 +2,92 @@
 
 <activity xml:id="act-mitadesYCuartos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Mitades y cuartos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <ol>
+    <li>
+      <p>Kiran y Jada discuten sobre la longitud de una lombriz.</p>
+      <image source="svg-source/V1-earthworm-4-5">
+        <shortdescription>lombriz</shortdescription>
+      </image>
+      <image source="svg-source/tikz-file-159052">
+        <shortdescription>regla en mitades y cuartos de pulgada</shortdescription>
+      </image>
+      <ul>
+        <li>
+          <p>Kiran dice que la lombriz mide <m>4\frac{2}{4}</m> pulgadas de largo.</p>
+        </li>
+        <li>
+          <p>Jada dice que la lombriz mide <m>4\frac{1}{2}</m> pulgadas de largo.</p>
+        </li>
+      </ul>
+      <p>Usa la regla para explicar por qué ambas medidas son correctas.</p>
+    </li>
+    <li>
+      <p>Mide la longitud de estas lombrices.</p>
+      <ol>
+        <li>
+          <p><line></line>
+              <line>
+                <image source="svg-source/V1-earthworm-4">
+                  <shortdescription>lombriz</shortdescription>
+                </image>
+              </line>       
+          </p>
+        </li>
+        <li>
+          <p><line></line>
+              <line>
+                <image source="svg-source/V1-earthworm-5-75">
+                  <shortdescription>lombriz larga</shortdescription>
+                </image>
+              </line>       
+          </p>
+        </li>
+        <li>
+          <p><line></line>
+              <line>
+                <image source="svg-source/V1-earthworm-2-25">
+                  <shortdescription>lombriz corta</shortdescription>
+                </image>
+              </line>       
+          </p>
+        </li>
+        <li>
+          <p><line></line>
+              <line>
+                <image source="svg-source/V1-earthworm-3-5">
+                  <shortdescription>lombriz mediana</shortdescription>
+                </image>
+              </line>       
+          </p>
+        </li>
+      </ol>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample responses:</p><ul>
-<li>Kiran’s measurement makes sense because the end of the worm is at the second fourth-inch mark between 4 and 5.</li>
-<li>Jada’s measurement makes sense because the worm goes to the half between 4 and 5.</li>
-<li>They both make sense because <m>4\frac{1}{2}</m> is equivalent to <m>4\frac{2}{4}</m>.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>Kiran’s measurement makes sense because the end of the worm is at the second fourth-inch mark between 4 and 5.</li>
+          <li>Jada’s measurement makes sense because the worm goes to the half between 4 and 5.</li>
+          <li>They both make sense because <m>4\frac{1}{2}</m> is equivalent to <m>4\frac{2}{4}</m>.</li>
+        </ul>
       </li>
-      <li><ol>
-<li>4 inches</li>
-<li>
-<m>5\frac{3}{4}</m> inches</li>
-<li>
-<m>2\frac{1}{4}</m> inches</li>
-<li>
-<m>3\frac{1}{2}</m> inches or <m>3\frac{2}{4}</m> inches</li>
-</ol>
+      <li>
+        <ol>
+          <li>4 inches</li>
+          <li>
+          <m>5\frac{3}{4}</m> inches</li>
+          <li>
+          <m>2\frac{1}{4}</m> inches</li>
+          <li>
+          <m>3\frac{1}{2}</m> inches or <m>3\frac{2}{4}</m> inches</li>
+        </ol>
       </li>
     </ol>
   </solution>
@@ -42,21 +104,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
+        <xref ref="ccss-3-NF-A-3-c" text="custom">3.NF.A.3.c</xref>
       </li>
     </ul>
   </paragraphs>
@@ -78,9 +127,8 @@
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-mitadesYCuartos-mat.ptx"/>  -->
+    <xi:include href="./act-mitadesYCuartos-mat.ptx"/> 
     <!-- <xi:include href="./act-mitadesYCuartos-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -127,7 +175,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students start measuring from the edge of their ruler instead of from 0, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>En la imagen del primer problema, ¿cómo se alinea la regla con la lombriz?</q>
       </li>
@@ -159,15 +207,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Provide students with the opportunity to rehearse what they will say with a partner before they share with the whole class.</p>
+    <p>
+      <em>Advances: Speaking</em>
+    </p>
   </paragraphs>
 
 </postlude>
