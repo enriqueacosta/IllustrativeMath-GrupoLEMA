@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 3 </shorttitle>
 <title>Lección 3 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Midamos en mitades y en cuartos de pulgada</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Midamos longitudes en mitades de pulgada y en cuartos de pulgada.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,13 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li>
+      <p>Measure lengths using a ruler marked with both halves and fourths of an inch.</p>
+    </li>
+    <li>
+      <p>Use equivalent fractions to describe length measurements.</p>
+    </li>
   </ul>
 </objectives>
 
@@ -41,21 +47,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>,
+        <xref ref="ccss-3-NF-A-3-c" text="custom">3.NF.A.3.c</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +69,22 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
+      <li>
+        <p>Calentamiento</p>
+        <xi:include href="./warm-observa-reglas-mat.ptx"/>
+      </li>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-mitadesYCuartos-mat.ptx"/>
-        <xi:include href="./act-mitadesYCuartos-matCentros.ptx"/>
+        <!--<xi:include href="./act-mitadesYCuartos-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-medirYDescribir-mat.ptx"/>
-        <xi:include href="./act-medirYDescribir-matCentros.ptx"/>
+        <!--<xi:include href="./act-medirYDescribir-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,7 +92,7 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>Previously, students learned to measure lengths using separate rulers that were marked with halves or fourths of an inch. Here, they use what they know about fraction equivalence to read measurements from a ruler marked with both halves and fourths of an inch. Then, students consider lengths that could be named in more than one way.</p>
-<p>In future lessons, this ruler will be used to measure objects and represent measurements in a line plot.</p>
+    <p>In future lessons, this ruler will be used to measure objects and represent measurements in a line plot.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -168,13 +164,13 @@
 <subsubsection xml:id="lec-medirEnMitadesYEnCuartosDePulgada-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Display a ruler marked with halves and fourths of an inch.</p>
-<p><q>Hoy medimos longitudes usando una regla que estaba marcada con mitades de pulgada y con cuartos de pulgada</q></p>
-<p><q>Mencionen algunas cosas que hayan aprendido acerca de cómo usar una regla que está marcada con mitades de pulgada y con cuartos de pulgada</q> (We can use it to measure lengths that are whole numbers of inches or fractions of an inch. Some measurements can be described in more than one way using equivalent fractions. For example, <m>5\frac{1}{2}</m> is equivalent to <m>5\frac{2}{4}</m>.) </p>
-<p><q>¿Se puede describir una longitud como <m>1\frac{1}{4}</m> pulgadas con mitades de pulgada? ¿Por qué sí o por qué no?</q> (No, because it is between 2 halves and 3 halves of an inch.) <q>Can it be described in another way?</q> (Yes, <m>\frac{5}{4}</m> inches.)</p>
+  <p><q>Hoy medimos longitudes usando una regla que estaba marcada con mitades de pulgada y con cuartos de pulgada</q></p>
+  <p><q>Mencionen algunas cosas que hayan aprendido acerca de cómo usar una regla que está marcada con mitades de pulgada y con cuartos de pulgada</q> (We can use it to measure lengths that are whole numbers of inches or fractions of an inch. Some measurements can be described in more than one way using equivalent fractions. For example, <m>5\frac{1}{2}</m> is equivalent to <m>5\frac{2}{4}</m>.) </p>
+  <p><q>¿Se puede describir una longitud como <m>1\frac{1}{4}</m> pulgadas con mitades de pulgada? ¿Por qué sí o por qué no?</q> (No, because it is between 2 halves and 3 halves of an inch.) <q>Can it be described in another way?</q> (Yes, <m>\frac{5}{4}</m> inches.)</p>
 
 </subsubsection>
 
