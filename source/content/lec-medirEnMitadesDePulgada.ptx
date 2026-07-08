@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 1 </shorttitle>
 <title>Lección 1 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Midamos en mitades de pulgada</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Midamos la longitud de algunos objetos del salón.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,8 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li><p>Measure lengths using a ruler marked with halves of an inch.</p></li>
   </ul>
 </objectives>
 
@@ -41,21 +42,11 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
       <li>
         <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +67,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-medirEnElSalon-mat.ptx"/>
-        <xi:include href="./act-medirEnElSalon-matCentros.ptx"/>
+        <!--<xi:include href="./act-medirEnElSalon-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-partirPulgadasEnMitades-mat.ptx"/>
-        <xi:include href="./act-partirPulgadasEnMitades-matCentros.ptx"/>
+        <!--<xi:include href="./act-partirPulgadasEnMitades-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul>  
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,8 +86,8 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In grade 2, students learned how to measure lengths to the nearest inch. They also learned how to represent fractions on the number line in the previous unit.</p>
-<p>In this lesson, students start by measuring the length of objects using an inch ruler. As students find objects whose length is not a whole number of inches, they consider how to partition the inches to get a more precise measurement. Students then partition a ruler to show halves of an inch and use the ruler to measure lengths to the nearest half of an inch. The lesson synthesis introduces students to <strong>mixed numbers </strong>as numbers that combine whole numbers and fractions less than 1.</p>
-<p>Students use the rulers they make in this lesson again in future lessons.</p>
+    <p>In this lesson, students start by measuring the length of objects using an inch ruler. As students find objects whose length is not a whole number of inches, they consider how to partition the inches to get a more precise measurement. Students then partition a ruler to show halves of an inch and use the ruler to measure lengths to the nearest half of an inch. The lesson synthesis introduces students to <term>mixed numbers</term> as numbers that combine whole numbers and fractions less than 1.</p>
+    <p>Students use the rulers they make in this lesson again in future lessons.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -126,7 +116,7 @@
 <!-- ============================================ 
   Actividad 1
 =================================================  -->
-<subsubsection xml:id="lec-medirEnMitadesDePulgada-act1" component="acts-no-rayable">
+<subsubsection xml:id="lec-medirEnMitadesDePulgada-act1" component="acts-rayable">
   <shorttitle>Actividad 1</shorttitle>
   <title>Actividad 1</title>
   <!-- Tiempo en el título que solo ve el profesor -->
@@ -169,14 +159,14 @@
 <subsubsection xml:id="lec-medirEnMitadesDePulgada-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(10 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p><q>Hoy usamos una regla para medir longitudes en pulgadas</q></p>
-<p><q>¿En qué se parecen una regla y una recta numérica?</q> (The numbers go up as we move to the right. On both a number line and a ruler, each number has a location. On both, we can partition the wholes into halves.)</p>
-<p>Display the length of one of the objects as a fraction greater than 1 and as a mixed number (for example, <span class="math">\(\frac{9}{2}\)</span> and <span class="math">\(4\frac{1}{2}\)</span>).</p>
-<p><q>¿Cómo pueden estos dos números mostrar la misma longitud?</q> (One tells us the number of whole inches and then how many half inches. The other tells us how many halves. They would be at the same location on the ruler, so they are the same length.)</p>
-<p><q>Cuando anotamos la longitud en forma de fracciones que son mayores que 1, podemos escribir una fracción como <m>\frac{9}{2}</m> o podemos usar un número que combina un número entero con una fracción menor que 1, como <m>4\frac{1}{2}</m>. Los números como este, que combinan números enteros y fracciones menores que 1, se llaman <strong>números mixtos</strong></q></p>
+  <p><q>¿En qué se parecen una regla y una recta numérica?</q> (The numbers go up as we move to the right. On both a number line and a ruler, each number has a location. On both, we can partition the wholes into halves.)</p>
+  <p>Display the length of one of the objects as a fraction greater than 1 and as a mixed number (for example, <m>\frac{9}{2}</m> and <m>4\frac{1}{2}</m>).</p>
+  <p><q>¿Cómo pueden estos dos números mostrar la misma longitud?</q> (One tells us the number of whole inches and then how many half inches. The other tells us how many halves. They would be at the same location on the ruler, so they are the same length.)</p>
+  <p><q>Cuando anotamos la longitud en forma de fracciones que son mayores que 1, podemos escribir una fracción como <m>\frac{9}{2}</m> o podemos usar un número que combina un número entero con una fracción menor que 1, como <m>4\frac{1}{2}</m>. Los números como este, que combinan números enteros y fracciones menores que 1, se llaman <term>números mixtos</term></q></p>
 
 </subsubsection>
 

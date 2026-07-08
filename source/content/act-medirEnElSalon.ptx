@@ -2,16 +2,72 @@
 
 <activity xml:id="act-medirEnElSalon" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Midamos en el salón</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Usa la regla que te dio tu profesor para medir la longitud de algunos objetos del salón. Prepárate para discutir cómo razonaste.</p>
+  <tabular top="medium">
+    <row header="yes" left="medium" bottom="medium" halign="center" valign="middle">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud (pulgadas)</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+    </row>
+  </tabular>
+  <sidebyside margins="70% 0%">
+    <image source="png-source/CS 3.6 Lesson 1.png">
+      <shortdescription>estudiante midiendo un lápiz con una regla</shortdescription>
+    </image>
+  </sidebyside>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Table present.</p>
+    <tabular top="medium" halign="center" valign="middle">
+    <row header="yes" left="medium" bottom="medium">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud (pulgadas)</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">clip de papel</cell>
+      <cell right="minor">1 pulgada</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">libro</cell>
+      <cell right="minor">8 pulgadas</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">lápiz</cell>
+      <cell right="minor">6 pulgadas</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor">borrador</cell>
+      <cell right="minor"><m>1\frac{1}{2}</m> pulgadas</cell>
+    </row>
+  </tabular>
   </solution>
 
 
@@ -26,21 +82,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,17 +98,16 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In grade 2, students only measured the length of objects that were whole units and sometimes described lengths as <q>about 4 inches.</q> The purpose of this activity is for students to learn that fractions of an inch can be useful for measuring the length of an object that is not exactly a whole number of inches.</p>
-<p>Given a ruler marked with inches, students measure objects around the room. They may record measurements in whole inches even for objects whose length is not exactly a whole number inches. In the synthesis, discuss the need for fractions of an inch to describe lengths more precisely (MP6). </p>
-<p>The rulers from this activity are used in the next activity.</p>
+    <p>Given a ruler marked with inches, students measure objects around the room. They may record measurements in whole inches even for objects whose length is not exactly a whole number inches. In the synthesis, discuss the need for fractions of an inch to describe lengths more precisely (MP6). </p>
+    <p>The rulers from this activity are used in the next activity.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-medirEnElSalon-mat.ptx"/>  -->
+    <xi:include href="./act-medirEnElSalon-mat.ptx"/>
     <!-- <xi:include href="./act-medirEnElSalon-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -102,14 +143,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -117,10 +150,10 @@
     <ul>
       <li>Display the inch ruler and an object that wasn’t exactly a whole number of inches.</li>
       <li>
-        <q>¿Cuál es la longitud de este objeto?</q>  (Between 3 and 4 inches. More than 3 but less than 4. Three-and-a-half inches.)
+        <q>¿Cuál es la longitud de este objeto?</q> (Between 3 and 4 inches. More than 3 but less than 4. Three-and-a-half inches.)
       </li>
       <li>If needed, 
-        <q>¿Podríamos decir que la longitud de este objeto es (un número entero) pulgadas?</q>  (No, It's between 3 inches and 4 inches.)
+        <q>¿Podríamos decir que la longitud de este objeto es (un número entero) pulgadas?</q> (No, It's between 3 inches and 4 inches.)
       </li>
       <li>
         <q>Necesitamos una forma de hacer que nuestras medidas sean más precisas. Vamos a pensar más acerca de esto en la siguiente actividad</q>
@@ -128,18 +161,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Develop Effort and Persistence.</em> Chunk this task into more manageable parts. Check in with students to provide feedback and encouragement after each chunk.</p>
+    <p>
+      <em>Supports accessibility for: Attention, Organization</em>
+    </p>
   </paragraphs>
 
 </postlude>
