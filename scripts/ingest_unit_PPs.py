@@ -257,12 +257,16 @@ class PracticeImporter:
 
         for child in container.children:
             if isinstance(child, NavigableString):
-                text = self._normalize_whitespace(str(child))
+                text = self._normalize_whitespace(self._escape_xml(str(child)))
                 if text:
                     buffer.append(text)
                 continue
 
             if not isinstance(child, Tag):
+                continue
+
+            if self._is_math_span(child):
+                buffer.append(self._math_to_m(child))
                 continue
 
             if child.name in {"div", "span"}:
@@ -332,13 +336,39 @@ class PracticeImporter:
         parts: List[str] = []
         for child in node.children:
             if isinstance(child, NavigableString):
-                parts.append(str(child))
+                parts.append(self._escape_xml(str(child)))
             elif isinstance(child, Tag):
                 if child.name == "br":
                     parts.append(" ")
+                elif self._is_math_span(child):
+                    parts.append(self._math_to_m(child))
                 else:
                     parts.append(self._extract_inline_text(child))
         return self._normalize_whitespace("".join(parts))
+
+    @staticmethod
+    def _is_math_span(node: Tag) -> bool:
+        """True for the MathJax-style spans (`<span class="math ...">\\(…\\)</span>`)."""
+        return node.name == "span" and "math" in node.get("class", [])
+
+    def _math_to_m(self, span: Tag) -> str:
+        """Convert a math span into a PreTeXt inline `<m>` element.
+
+        The archived HTML wraps LaTeX in `\\(…\\)` (or `\\[…\\]`) delimiters;
+        strip those and XML-escape the LaTeX so `<`, `>`, and `&` are legal
+        inside the resulting `<m>` element.
+        """
+        latex = span.get_text().strip()
+        for open_delim, close_delim in (("\\(", "\\)"), ("\\[", "\\]")):
+            if latex.startswith(open_delim) and latex.endswith(close_delim):
+                latex = latex[len(open_delim):-len(close_delim)].strip()
+                break
+        return f"<m>{self._escape_xml(latex)}</m>"
+
+    @staticmethod
+    def _escape_xml(text: str) -> str:
+        """Escape the XML metacharacters so extracted text is valid markup."""
+        return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     @staticmethod
     def _normalize_whitespace(text: str) -> str:
