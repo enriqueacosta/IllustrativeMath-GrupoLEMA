@@ -2,16 +2,104 @@
 
 <activity xml:id="act-encontrarAlgunasLongitudes" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Encontremos algunas longitudes</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>En esta actividad, van a necesitar las reglas que ya tienen la partición que hicieron.</p>
+  <sidebyside widths="65% 30%">
+    <stack>
+      <p>
+        Con su compañero:
+      </p>
+      <ul>
+        <li>
+          <p>Encuentren por lo menos 4 objetos del salón que tengan las longitudes que se muestran en la tabla.</p>
+        </li>
+        <li>
+          <p>Practiquen cómo decir cada medida.</p>
+        </li>
+        <li>
+          <p>Anoten el objeto en la tabla. Si encuentran un objeto que mida un número entero más una fracción de pulgada, escriban la medida exacta.</p>
+        </li>
+      </ul>
+    </stack>
+    <image source="png-source/CS 3.6 Lesson 2.png">
+      <shortdescription>regla</shortdescription>
+    </image>
+  </sidebyside>
+  <tabular top="medium" halign="center" valign="middle">
+    <row header="yes" left="medium" bottom="medium">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><m>2\frac{1}{2}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><m>1\frac{1}{4}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><m>3\frac{3}{4}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><m>8\frac{1}{2}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor">un número entero de pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor">un número entero y <m>\frac{1}{4}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor">un número entero y <m>\frac{2}{4}</m> pulgadas</cell>    
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor">un número entero y <m>\frac{3}{4}</m> pulgadas</cell>    
+    </row>
+  </tabular>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Table present.</p>
+    <tabular top="medium" halign="center" valign="middle">
+      <row header="yes" left="medium" bottom="medium">
+        <cell right="medium">objeto</cell>
+        <cell right="medium">longitud</cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">caja de clips de papel</cell>
+        <cell right="minor"><m>2\frac{1}{2}</m> pulgadas</cell>    
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">sticker</cell>
+        <cell right="minor"><m>1\frac{1}{4}</m> pulgadas</cell>    
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">ratón de computador</cell>
+        <cell right="minor"><m>3\frac{3}{4}</m> pulgadas</cell>    
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">ancho de hoja de papel</cell>
+        <cell right="minor"><m>8\frac{1}{2}</m> pulgadas</cell>    
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">tarjeta postal en la pared (4 pulgadas)</cell>
+        <cell right="minor">un número entero de pulgadas</cell>    
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">longitud de un sobre (<m>8\frac{3}{4}</m> pulgadas)</cell>
+        <cell right="minor">un número entero y <m>\frac{3}{4}</m> pulgadas</cell>    
+      </row>
+    </tabular>
   </solution>
 
 
@@ -26,21 +114,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,16 +130,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to practice measuring objects in the classroom using their partitioned rulers and find objects of certain fractional lengths. Because the specified lengths are in halves and fourths of an inch, students may use both rulers. As they realize that all lengths could be measured with the rulers showing fourths of an inch, they may opt to use only one ruler.</p>
-<p>When students decide to measure in halves or fourths of an inch based on the length of an object, they attend to precision (MP6).</p>
+    <p>When students decide to measure in halves or fourths of an inch based on the length of an object, they attend to precision (MP6).</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-encontrarAlgunasLongitudes-mat.ptx"/>  -->
+    <xi:include href="./act-encontrarAlgunasLongitudes-mat.ptx"/>
     <!-- <xi:include href="./act-encontrarAlgunasLongitudes-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -110,14 +183,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -133,18 +198,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Representation: Internalize Comprehension.</em> Synthesis: Invite students to identify which details were most useful to measure accurately. Display the sentence frame, <q>La próxima vez que mida objetos con una regla, buscaré...</q> // <q>The next time I measure objects with a ruler, I will look for....</q></p>
+    <p>
+      <em>Supports accessibility for: Memory, Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>

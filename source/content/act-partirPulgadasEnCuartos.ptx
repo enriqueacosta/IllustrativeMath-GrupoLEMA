@@ -2,16 +2,62 @@
 
 <activity xml:id="act-partirPulgadasEnCuartos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Partamos pulgadas en cuartos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <image source="jpg-source/3.6.A2 Activity 1.jpg">
+   <shortdescription>un clip de poco más de una pulgada</shortdescription>
+  </image>
+  <p>Vas a necesitar la regla que no tenga la partición de la actividad anterior.</p>
+  <ol>
+    <li>
+      <p>Con tu compañero, haz la partición de la regla para mostrar cuartos de pulgada.</p>
+    </li>
+    <li>
+      <p>Por turnos, usen esta regla y midan la longitud de 4 objetos del salón.</p>
+    </li>
+  </ol>
+  <tabular top="medium" halign="center" valign="middle">
+    <row header="yes" left="medium" bottom="medium">
+      <cell right="medium">objeto</cell>
+      <cell right="medium">longitud</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>    </row>  
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>    </row>  
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>    </row>   
+  </tabular>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<p>[@@@@@@@@] WARNING: Table present.</p>
+    <tabular top="medium" halign="center" valign="middle">
+      <row header="yes" left="medium" bottom="medium">
+        <cell right="medium">objeto</cell>
+        <cell right="medium">longitud</cell>
+      </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">lápiz</cell>
+        <cell right="minor"><m>5\frac{3}{4}</m> pulgadas</cell>    </row>
+      <row left="minor" bottom="minor">
+        <cell right="minor">borrador</cell>
+        <cell right="minor"><m>\frac{3}{4}</m> pulgadas</cell>    </row>  
+      <row left="minor" bottom="minor">
+        <cell right="minor">libro</cell>
+        <cell right="minor"><m>4\frac{1}{4}</m></cell>    </row>  
+      <row left="minor" bottom="minor">
+        <cell right="minor">zapato</cell>
+        <cell right="minor"><m>8\frac{2}{4}</m></cell>    </row>   
+    </tabular>
   </solution>
 
 
@@ -26,21 +72,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -56,16 +88,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to partition the inches on a ruler into fourth or quarter inches, using what they know about fractions on a number line. Students then use the ruler to measure objects in the classroom to the nearest quarter inch. In the synthesis, students practice reading the measurements as fractions greater than 1 and mixed numbers. They also discuss how measuring in fourths of an inch is different than measuring in half inches.</p>
-<p>Students will use the rulers they partition in the next activity.</p>
+    <p>Students will use the rulers they partition in the next activity.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-partirPulgadasEnCuartos-mat.ptx"/>  -->
+    <xi:include href="./act-partirPulgadasEnCuartos-mat.ptx"/> 
     <!-- <xi:include href="./act-partirPulgadasEnCuartos-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -120,9 +151,8 @@
   <paragraphs>
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
-    <p>If the parts students partitioned aren’t equal, consider asking:
-</p>
-<ul>
+    <p>If the parts students partitioned aren’t equal, consider asking:</p>
+    <ul>
       <li>
         <q>¿Cómo partiste las pulgadas en cuartos?</q>
       </li>
@@ -149,15 +179,11 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR2 Collect and Display.</em> Direct attention to words collected and displayed from the previous lesson. Invite students to borrow language from the display as needed, and update it throughout the lesson with numbers, words, and phrases such as: eight fourths, <m>\frac{8}{4}</m>, five-and-one-fourth inches, less than five-and-one-half inch.</p>
+    <p>
+      <em>Advances: Conversing, Reading</em>
+    </p>
   </paragraphs>
 
 </postlude>
