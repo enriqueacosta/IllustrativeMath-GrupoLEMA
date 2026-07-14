@@ -2,10 +2,48 @@
 
 <activity xml:id="act-todoSobreLasRamas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Todo sobre las ramas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <image source="svg-source/tikz-file-179286">
+   <shortdescription>diagrama de puntos de longitud de ramas en pulgadas</shortdescription>
+  </image>
+  <ol>
+    <li>
+      <p>¿Cuántas longitudes de ramas están representadas en el diagrama de puntos?</p>
+    </li>
+    <li>
+      <p>¿Cuántas de las ramas miden <m>6\frac{1}{2}</m> pulgadas de largo?</p>
+    </li>
+    <li>
+      <p>¿Cuántas de las ramas miden menos de 6 pulgadas de largo?</p>
+    </li>
+    <li>
+      <p>¿Cuántas de las ramas miden más de 6 pulgadas de largo?</p>
+    </li>
+    <li>
+      <p>¿Cuál es la longitud de la rama más corta?</p>
+    </li>
+    <li>
+      <p>¿Cuál es la longitud de la rama más larga?</p>
+    </li>
+    <li>
+      <p>¿Cuál es la longitud de rama más común?</p>
+    </li>
+    <li>
+      <sidebyside widths="65% 30%">
+        <stack>
+          <p>
+            Agrega una <q>x</q> al diagrama de puntos para representar una rama que tiene una longitud de entre 3 y 4 pulgadas.
+          </p>
+          <p>¿Cuál es la longitud de la rama que agregaste al diagrama de puntos?</p>
+        </stack>
+        <image source="jpg-source/V 3.6.A.4 Warm-up Twigs.jpg" component="web">
+          <shortdescription>ramas</shortdescription>
+        </image>
+      </sidebyside>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -34,21 +72,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -64,16 +88,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use a line plot to answer questions about a set of length data. The data show measurements to the nearest quarter inch. Students may apply their understanding of fraction equivalence to interpret the data and answer the questions.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-todoSobreLasRamas-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-todoSobreLasRamas-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -113,24 +127,16 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <ul>
       <li>
-        <q>Discutan con su compañero cómo respondieron las últimas dos preguntas</q>  (Since the inches are partitioned into 4 equal parts, I knew the scale shows quarters of an inch. I used the quarter inch marks to add an x for a twig that is <m>3 \frac {1}{4}</m> inches long because that is between 3 and 4 inches.)
+        <q>Discutan con su compañero cómo respondieron las últimas dos preguntas</q> (Since the inches are partitioned into 4 equal parts, I knew the scale shows quarters of an inch. I used the quarter inch marks to add an x for a twig that is <m>3 \frac {1}{4}</m> inches long because that is between 3 and 4 inches.)
       </li>
       <li>
-        <q>¿Cómo usaron la equivalencia de fracciones para responder las preguntas?</q>  (When the question asked how many of the twigs were <m>6\frac{1}{2}</m> inches long, I used the mark that was at <m>6\frac{2}{4}</m>, because the lengths are equivalent. When I added a twig to the line plot, it was at the <m>3\frac{2}{4}</m> inch mark, but I wrote <m>3\frac{1}{2}</m> because the fractions are equivalent.)
+        <q>¿Cómo usaron la equivalencia de fracciones para responder las preguntas?</q> (When the question asked how many of the twigs were <m>6\frac{1}{2}</m> inches long, I used the mark that was at <m>6\frac{2}{4}</m>, because the lengths are equivalent. When I added a twig to the line plot, it was at the <m>3\frac{2}{4}</m> inch mark, but I wrote <m>3\frac{1}{2}</m> because the fractions are equivalent.)
       </li>
     </ul>
   </paragraphs>
@@ -138,15 +144,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Reading: MLR6 Three Reads.</em> Keep books or devices closed. Display only the graph, without revealing the questions. <q>Vamos a leer esta gráfica 3 veces</q> // <q>We are going to read this graph 3 times.</q> 1st Read: Give students 2–3 minutes to interpret and read the information displayed by the graph. Ask, <q>¿De qué se trata esta situación?</q> // <q>What is this situation about?</q> Listen for and clarify any questions about the context. 2nd Read: <q>Lean e interpreten la gráfica por segunda vez. ¿Qué cantidades están representadas? ¿Qué se puede contar o medir en esta situación?</q> // <q>Read and interpret the graph a second time. What quantities are represented? What can be counted or measured in this situation?</q> 3rd Read: Reveal and read the questions aloud. Invite students to take turns explaining their observations about the graph related to each question as they work together.</p>
+    <p>
+      <em>Advances: Reading, Representing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Leverage choice around perceived challenge. Invite students to select complete 6 out of the 8 line plot questions.</p>
+    <p>
+      <em>Supports accessibility for: Organization, Attention, Social-emotional skills</em>
+    </p>
   </paragraphs>
 
 </postlude>
