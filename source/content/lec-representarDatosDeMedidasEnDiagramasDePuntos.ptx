@@ -3,7 +3,7 @@
 
 <shorttitle>Lección 5 </shorttitle>
 <title>Lección 5 -<nbsp/></title>
-<title>[@@@@@@@@@]</title>
+<title>Representemos datos de medidas en diagramas de puntos</title>
 
 
 <!-- ============================================ 
@@ -12,7 +12,7 @@
 
 <!-- Frase resumen para estudiante. Originalmente [Student Facing Goals] -->
 <introduction component="est-goal"> 
-  <p>[@@@@@@@@@]</p>
+  <p>Recolectemos datos de medidas y mostrémoslos en un diagrama de puntos.</p>
 </introduction>
 
 <!-- Objetivos para el estudiante. Originalmente [Student-Facing Targets] -->
@@ -25,7 +25,13 @@
 <!-- Objetivos que solo ve el profesor. Originalmente [Teacher Facing Goals] -->
 <objectives component="profesor">
   <ul>
-    <li>[@@@@@@@@@]</li>
+    <li><p>[++++++++++++++++]</p></li>
+    <li>
+      <p>Create a line plot where the horizontal scale is marked off in appropriate units— whole numbers, halves, or quarters—to represent measurement data.</p>
+    </li>
+    <li>
+      <p>Generate measurement data by measuring lengths using a ruler marked with halves and fourths of an inch.</p>
+    </li>
   </ul>
 </objectives>
 
@@ -41,21 +47,8 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [^^^^^^^^^^^]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>,
+        <xref ref="ccss-3-OA-C-7" text="custom">3.OA.C.7</xref>
       </li>
     </ul>
     </paragraphs>
@@ -76,19 +69,18 @@
   <!-- Materiales requeridos -->
   <paragraphs>
     <title><custom ref="materials-leccion-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- <ul>
+    <ul>
       <li>
         <p>Actividad 1</p>
         <xi:include href="./act-hacerUnRecorridoMedir-mat.ptx"/>
-        <xi:include href="./act-hacerUnRecorridoMedir-matCentros.ptx"/>
+        <!--<xi:include href="./act-hacerUnRecorridoMedir-matCentros.ptx"/>-->
       </li>
       <li>
         <p>Actividad 2</p>
         <xi:include href="./act-hacerUnDiagramaDePuntos-mat.ptx"/>
-        <xi:include href="./act-hacerUnDiagramaDePuntos-matCentros.ptx"/>
+        <!--<xi:include href="./act-hacerUnDiagramaDePuntos-matCentros.ptx"/>-->
       </li>
-    </ul>  -->
+    </ul> 
   </paragraphs>
   
   <!-- Introducción de la lección (narrative) -->
@@ -96,7 +88,7 @@
     <title><custom ref="narrative-leccion-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In a previous lesson, students analyzed line plots that included measurements in halves and fourths of an inch. In this lesson, students collect measurement data, represent them on a line plot, and analyze line plots that represent different data sets (MP2).</p>
-<p>This lesson may take more than one day if students need more time to collect data around the school and to create their line plots. If time permits and preferable, consider carrying out the activities across two days.</p>
+    <p>This lesson may take more than one day if students need more time to collect data around the school and to create their line plots. If time permits and preferable, consider carrying out the activities across two days.</p>
   </paragraphs>
   
   <!-- Preguntas de reflexión profesor -->
@@ -168,14 +160,14 @@
 <subsubsection xml:id="lec-representarDatosDeMedidasEnDiagramasDePuntos-sintesis" component="profesor">
   <shorttitle><custom ref="synthesis-leccion-titulo"/></shorttitle>
   <title><custom ref="synthesis-leccion-titulo"/></title>
-  <title component="profesor"><nbsp/>([@@@@@@@@@] mins)</title>
+  <title component="profesor"><nbsp/>(5 mins)</title>
 
   <p>[+++++++++++++++]</p>
   <p>Discuss students' observations from the gallery walk.</p>
-<p><q>¿En qué se parecen los diagramas de puntos?</q> (They all show lengths in inches and at least 10 x’s. They all show at least one stack of x’s that is taller.)</p>
-<p><q>¿En qué son diferentes?</q> (They represent lengths of different objects. Some line plots show more or fewer x’s than others. The numbers on the ends of the lines are different. The locations of x’s and how they are spread out are different. On some line plots, each space represents <m>\frac{1}{2}</m> inch. On others, it represents <m>\frac{1}{4}</m> inch.)</p>
-<p><q>¿Por qué los diagramas de puntos tenían escalas diferentes?</q> (Some types of objects are usually longer than others. For example, twigs are usually longer than leaves. Some data include only lengths in half inches. Others include quarters of an inch.)</p>
-<p>Consider asking: <q>¿Qué aprendieron sobre los diagramas de puntos en las últimas lecciones?</q> (They are used to show measurements, including fractions an inch. We can choose the scale of the line plot based on the measurements. We can get some information about the data more easily from a line plot than from a list.)</p>
+  <p><q>¿En qué se parecen los diagramas de puntos?</q> (They all show lengths in inches and at least 10 x’s. They all show at least one stack of x’s that is taller.)</p>
+  <p><q>¿En qué son diferentes?</q> (They represent lengths of different objects. Some line plots show more or fewer x’s than others. The numbers on the ends of the lines are different. The locations of x’s and how they are spread out are different. On some line plots, each space represents <m>\frac{1}{2}</m> inch. On others, it represents <m>\frac{1}{4}</m> inch.)</p>
+  <p><q>¿Por qué los diagramas de puntos tenían escalas diferentes?</q> (Some types of objects are usually longer than others. For example, twigs are usually longer than leaves. Some data include only lengths in half inches. Others include quarters of an inch.)</p>
+  <p>Consider asking: <q>¿Qué aprendieron sobre los diagramas de puntos en las últimas lecciones?</q> (They are used to show measurements, including fractions an inch. We can choose the scale of the line plot based on the measurements. We can get some information about the data more easily from a line plot than from a list.)</p>
 
 </subsubsection>
 
