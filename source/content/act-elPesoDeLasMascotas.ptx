@@ -2,10 +2,63 @@
 
 <activity xml:id="act-elPesoDeLasMascotas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>El peso de las mascotas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Empareja cada mascota con la cantidad que podría ser su peso. Explica cómo razonaste.</p>
+  <sbsgroup widths="45% 45%">
+    <sidebyside>
+      <p>mascota</p>
+      <p>peso</p>
+    </sidebyside>
+    <sidebyside>
+      <stack>
+        <ol>
+          <li>
+            <p>conejillo de indias</p>
+            <image source="png-source/Guinea Pig.png">
+              <shortdescription>conejillo de indias</shortdescription>
+            </image>
+          </li>
+          <li>
+            <p>perro</p>
+            <image source="png-source/Dog.png">
+              <shortdescription>perro</shortdescription>
+            </image>
+          </li>
+          <li>
+            <p>pez pequeño</p>
+            <image source="png-source/Small Fish.png">
+              <shortdescription>pez pequeño</shortdescription>
+            </image>
+          </li>
+          <li>
+            <p>gato</p>
+            <image source="png-source/Cat.png">
+              <shortdescription>gato</shortdescription>
+            </image>
+          </li>
+        </ol>
+      </stack>
+      <stack>
+        <ol marker="A.">
+          <li>
+            <p>20 kilogramos</p>
+          </li>
+          <li>
+            <p>1 kilogramo</p>
+          </li>
+          <li>
+            <p>3 kilogramos</p>
+          </li>
+          <li>
+            <p>3 gramos</p>
+          </li>
+        </ol>
+      </stack>
+    </sidebyside>
+  </sbsgroup>
+    
 </statement>
 
 <solution>
@@ -25,21 +78,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-A-2" text="custom">3.MD.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,16 +94,6 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is for students to use what they’ve learned about grams and kilograms to estimate the weights of some common pets. Students should rely on the experiences they have had in previous activities to explain why the estimates they choose are reasonable. In the synthesis, students consider when it might be helpful to estimate a weight rather than measure the exact weight.</p>
-  </paragraphs>
-
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-elPesoDeLasMascotas-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-elPesoDeLasMascotas-matCentros.ptx"/>  -->
   </paragraphs>
 
   <!-- Launch -->
@@ -103,7 +132,7 @@
     <title><custom ref="support-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>If students choose estimates for the weight of the pets that aren’t reasonable, consider asking:</p>
-<ul>
+    <ul>
       <li>
         <q>Cuéntame cómo estimaste el peso de la mascota</q>
       </li>
@@ -126,15 +155,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR8 Discussion Supports.</em> Synthesis: Before students share, remind students to use words such as weight, grams, and kilograms.</p>
+    <p>
+      <em>Advances: Speaking</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Action and Expression: Develop Expression and Communication.</em> Provide access to the weights used in the previous activity to determine a reasonable weight for each pet.</p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing</em>
+    </p>
   </paragraphs>
 
 </postlude>
