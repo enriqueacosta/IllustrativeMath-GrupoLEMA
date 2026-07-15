@@ -6,10 +6,33 @@
 ===============================================================  -->
 <project xml:id="cool-interpretaYEscoge" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Interpreta y escoge</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Selecciona <alert>todas</alert> las afirmaciones que son verdaderas sobre las medidas que muestra el diagrama de puntos.</p>
+  <image source="svg-source/tikz-file-180427">
+   <shortdescription>diagrama de puntos de longitud de hojas en pulgadas</shortdescription>
+  </image>
+  <ol marker="A">
+    <li>
+      <p>Cinco hojas tenían una longitud de <m>6\frac{1}{2}</m> pulgadas.</p>
+    </li>
+    <li>
+      <p>Seis hojas tenían una longitud de <m>9\frac{1}{2}</m> pulgadas.</p>
+    </li>
+    <li>
+      <p>12 hojas fueron medidas.</p>
+    </li>
+    <li>
+      <p>20 hojas fueron medidas.</p>
+    </li>
+    <li>
+      <p>La hoja más corta medía 5 pulgadas.</p>
+    </li>
+    <li>
+      <p>La hoja más corta medía <m>4\frac{1}{2}</m> pulgadas.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
@@ -26,21 +49,9 @@
   <paragraphs>
     <title><custom ref="ccss-actividad-titulo"/></title> 
     <ul>
-      <li>
+      <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@@]
-        <!-- <xref ref="ccss-3-OA-A-3" text="custom">3.OA.A.3</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -54,15 +65,15 @@
 
   <!-- Posibles errores -->
   <paragraphs>
-    <title><custom ref="errores-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="errores-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Students select choices that indicate they are mixing up the parts of the graph that represent the lengths of the objects and the number of objects (as in options C or E).</p>
   </paragraphs>
 
 
   <!-- Estrategia de apoyo si muchos estudiantes respondieron incorrectamente -->
   <paragraphs>
-    <title><custom ref="apoyo-cool-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="apoyo-cool-titulo"/></title><p>[++++++++++++++++]</p>
+    <p>Before the next day’s warm-up have students discuss what the x's on a line plot represent and what the numbers along the bottom of the line plot represent.</p>
   </paragraphs>
 
 </postlude>

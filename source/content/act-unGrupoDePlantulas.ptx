@@ -2,29 +2,75 @@
 
 <activity xml:id="act-unGrupoDePlantulas" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Un grupo de plántulas</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <sidebyside margins="20% 20%">
+    <p>alturas de las plántulas (en pulgadas)</p>
+  </sidebyside>
+  <sidebyside>
+    <p><m>\frac{1}{2}</m></p>
+    <p><m>1</m></p>
+    <p><m>1</m></p>
+    <p><m>\frac{1}{2}</m></p>
+    <p><m>1\frac{1}{2}</m></p>
+    <p><m>2\frac{1}{2}</m></p>
+    <p><m>4</m></p>
+    <p><m>\frac{1}{2}</m></p>
+    <p><m>3</m></p>
+    <p><m>1\frac{1}{2}</m></p>
+    <p><m>5</m></p>
+    <p><m>1\frac{1}{2}</m></p>       
+  </sidebyside>
+  <sidebyside>
+    <p><m>1\frac{1}{2}</m></p>
+    <p><m>2\frac{1}{2}</m></p>
+    <p><m>3</m></p>
+    <p><m>\frac{1}{2}</m></p>
+    <p><m>2\frac{1}{2}</m></p> 
+    <p><m>1\frac{1}{2}</m></p>
+    <p><m>1</m></p>
+    <p><m>1\frac{1}{2}</m></p>
+    <p><m>4</m></p>
+    <p><m>2</m></p>
+  </sidebyside>
+  <sidebyside widths="70% 25%">
+    <image source="svg-source/tikz-file-179285">
+      <shortdescription>diagrama de puntos de la altura de las plántulas en pulgadas</shortdescription>
+    </image>
+    <image source="png-source/CS 3.6 Lesson 4 Activity 1.png" component="web">
+      <shortdescription>plántula</shortdescription>
+    </image>
+  </sidebyside>
+  <ol>
+    <li>
+      <p>Escribe 3 afirmaciones sobre las medidas que están representadas en el diagrama de puntos.</p>
+    </li>
+    <li>
+      <p>¿Qué preguntas se podrían responder más fácilmente con el diagrama de puntos que con la lista? Escribe por lo menos 2 preguntas.</p>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <ol>
-      <li><p>Sample responses:</p><ul>
-<li>These measurements are the height of seedlings.</li>
-<li>Some lengths are given in half inches.</li>
-<li>There are 22 x’s, so 22 seedlings were measured.</li>
-<li>Three seedlings were <m>2\frac{1}{2}</m> inches tall.</li>
-<li>The shortest seedlings were <m>\frac{1}{2}</m> inch tall.</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>These measurements are the height of seedlings.</li>
+          <li>Some lengths are given in half inches.</li>
+          <li>There are 22 x’s, so 22 seedlings were measured.</li>
+          <li>Three seedlings were <m>2\frac{1}{2}</m> inches tall.</li>
+          <li>The shortest seedlings were <m>\frac{1}{2}</m> inch tall.</li>
+        </ul>
       </li>
-      <li><p>Sample responses:</p><ul>
-<li>How tall is the tallest seedling that was measured?</li>
-<li>How many seedlings were <m>1\frac{1}{2}</m> inches tall?</li>
-<li>How many seedlings were taller than 2 inches?</li>
-<li>Which seedling height was the most common?</li>
-</ul>
+      <li><p>Sample responses:</p>
+        <ul>
+          <li>How tall is the tallest seedling that was measured?</li>
+          <li>How many seedlings were <m>1\frac{1}{2}</m> inches tall?</li>
+          <li>How many seedlings were taller than 2 inches?</li>
+          <li>Which seedling height was the most common?</li>
+        </ul>
       </li>
     </ol>
   </solution>
@@ -41,21 +87,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -73,16 +105,6 @@
     <p>The purpose of this activity is for students to analyze a line plot that represents lengths that are measured to the nearest half inch. They make observations and write statements about the data represented in the line plot, and then generate questions that could be answered with the line plot. When students recognize how organizing data helps to read the information and to answer questions, they learn that line plots are a powerful tool to present data (MP5).</p>
   </paragraphs>
 
-
-  <!-- Materiales requeridos de la actividad -->
-  <paragraphs>
-    <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
-    <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-unGrupoDePlantulas-mat.ptx"/>  -->
-    <!-- <xi:include href="./act-unGrupoDePlantulas-matCentros.ptx"/>  -->
-  </paragraphs>
-
   <!-- Launch -->
   <paragraphs>
     <title><custom ref="launch-titulo"/></title>
@@ -91,7 +113,7 @@
       <li>Groups of 2</li>
       <li>Display the list and line plot.</li>
       <li>
-        <q>Tanto la lista como el diagrama de puntos muestran las alturas de unas plántulas. Una plántula es una planta joven. ¿En qué lugares han visto plántulas?</q>  (At the park. In a garden.)
+        <q>Tanto la lista como el diagrama de puntos muestran las alturas de unas plántulas. Una plántula es una planta joven. ¿En qué lugares han visto plántulas?</q> (At the park. In a garden.)
       </li>
       <li>
         <q>Si miramos la lista, ¿podemos saber cuál es la altura de la plántula más baja?</q>  (Yes, <m>\frac{1}{2}</m> inch). 
@@ -136,14 +158,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -163,20 +177,6 @@
         <q>Which seedling height was the most common?</q>  because we can see which number has the most x’s.)
       </li>
     </ul>
-  </paragraphs>
-
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
-  <!-- Estrategias de acceso para estudiantes con discapacidades -->
-  <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
   </paragraphs>
 
 </postlude>
