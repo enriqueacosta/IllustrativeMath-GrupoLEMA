@@ -2,16 +2,28 @@
 
 <activity xml:id="act-volumenLiquidoEnLitros" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Volumen líquido, en litros</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>¿Cuántos litros de agua le caben al recipiente grande?</p>
+  <p>Escribe una estimación que sea:</p>
+  <tabular top="medium" halign="center" valign="middle">
+    <row header="yes" left="medium" bottom="medium">
+      <cell right="medium">muy baja</cell>
+      <cell right="medium">razonable</cell>
+      <cell right="medium">muy alta</cell>
+    </row>
+    <row left="minor" bottom="minor">
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>
+      <cell right="minor"><nbsp/></cell>    </row>    
+  </tabular>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
     <p>Sample responses:</p>
-<ul>
+    <ul>
       <li>Too low: 1–5</li>
       <li>About right: 5–20</li>
       <li>Too high: 20 or higher</li>
@@ -30,21 +42,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-A-2" text="custom">3.MD.A.2</xref>
       </li>
     </ul>
   </paragraphs>
@@ -60,16 +58,15 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>The purpose of this activity is to introduce students to liters as a formal unit to measure liquid volume. Students learn how much liquid is contained in a liter, then the whole class fills a large clear container with water one liter at a time. As the container is filled students mark the container with a dry erase marker to show the amount of liters in the container.</p>
-<p>While it is highly recommended that the class has the experience of filling and marking the container, a video has been provided to show the process and could be used for a class demonstration. Having more than one 1-liter container or some prefilled 1-liter containers will make the process of filling and marking the container go faster.</p>
+    <p>While it is highly recommended that the class has the experience of filling and marking the container, a video has been provided to show the process and could be used for a class demonstration. Having more than one 1-liter container or some prefilled 1-liter containers will make the process of filling and marking the container go faster.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-volumenLiquidoEnLitros-mat.ptx"/>  -->
+    <xi:include href="./act-volumenLiquidoEnLitros-mat.ptx"/> 
     <!-- <xi:include href="./act-volumenLiquidoEnLitros-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -80,7 +77,7 @@
     <ul>
       <li>Display the large clear container and 1 liter of water, or the image of the container and 1 liter of water at the beginning of the video if using the video for this activity.</li>
       <li>
-        <q>Esta es una unidad métrica que podemos usar para medir cuánto espacio ocupa un líquido. Se llama un <strong>litro</strong>. Podemos usar un litro para medir el volumen líquido, de la misma forma en la que podemos usar una pulgada para medir la longitud</q>
+        <q>Esta es una unidad métrica que podemos usar para medir cuánto espacio ocupa un líquido. Se llama un <term>litro</term>. Podemos usar un litro para medir el volumen líquido, de la misma forma en la que podemos usar una pulgada para medir la longitud</q>
       </li>
       <li>
         <q>¿Cuántos litros le caben al recipiente grande? ¿Qué estimación sería muy alta?, ¿muy baja?, ¿razonable?</q>
@@ -116,14 +113,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -139,11 +128,10 @@
       <li>
         <q>La palabra ‘litro’ se puede abreviar con una L mayúscula. Podemos mostrar que cada número representa un número de litros escribiendo una L mayúscula al lado de cada número</q>
       </li>
-      <li>Write 
-        <q>L</q>  next to each number on the container that was marked and labeled.
+      <li>Write <q>L</q> next to each number on the container that was marked and labeled.
       </li>
       <li>
-        <q>A este recipiente le caben __ litros. ¿A qué otros recipientes que hayan visto antes les cabe aproximadamente el mismo volumen líquido?</q>  (A large sink. A storage bin. A large jug of water. A bucket. A small trash can.)
+        <q>A este recipiente le caben <fillin characters="2" /> litros. ¿A qué otros recipientes que hayan visto antes les cabe aproximadamente el mismo volumen líquido?</q> (A large sink. A storage bin. A large jug of water. A bucket. A small trash can.)
       </li>
     </ul>
   </paragraphs>
@@ -151,15 +139,21 @@
 
   <!-- Descripción del desarrollo de lenguaje matemático -->
   <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="language-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>MLR5 Co-Craft Questions.</em> Keep books or devices closed. Display only the large clear container and 1 liter of water, or the image if using the video for this activity, without revealing the questions. Ask students to write down possible mathematical questions that could be asked about the situation. Invite students to compare their questions before revealing the task. Ask, <q>¿Qué tienen en común estas preguntas? ¿En qué son diferentes?</q> // <q>What do these questions have in common? How are they different?</q> Reveal the intended questions for this task and invite additional connections.</p>
+    <p>
+      <em>Advances: Reading, Writing</em>
+    </p>
   </paragraphs>
 
 
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Engagement: Provide Access by Recruiting Interest.</em> Synthesis: Invite students to generate a list of additional examples of items that would be measured in liters that connect to their personal backgrounds and interests.</p>
+    <p>
+      <em>Supports accessibility for: Visual-Spatial Processing, Memory</em>
+    </p>
   </paragraphs>
 
 </postlude>
