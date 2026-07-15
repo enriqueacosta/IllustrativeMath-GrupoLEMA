@@ -2,10 +2,22 @@
 
 <activity xml:id="act-hacerUnDiagramaDePuntos" xmlns:xi="http://www.w3.org/2001/XInclude"> 
 
-<title>[@@@@@@@@@]</title>
+<title>Hagamos un diagrama de puntos</title>
 
 <statement>
-  <p>[@@@@@@@@@]</p>
+  <p>Hagan un diagrama de puntos que represente los datos de las medidas que recolectaron. Más adelante, van a mostrar y a compartir su diagrama de puntos con la clase.</p>
+  <p>Pueden usar esta recta numérica que está en blanco para hacer un borrador. Piensen en:</p>
+  <ul>
+    <li>
+      <p>cómo escribir los números que corresponden debajo de cada marca para que puedan incluir todas las medidas</p>
+    </li>
+    <li>
+      <p>incluir detalles que ayuden a los demás a entender los datos que recolectaron</p>
+    </li>
+  </ul>
+  <image source="svg-source/tikz-file-159058">
+   <shortdescription>diagrama de puntos vacío</shortdescription>
+  </image>
 </statement>
 
 <solution>
@@ -25,21 +37,7 @@
     <ul>
       <li> 
         <custom ref="ccss-addressing"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingOn"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
-      </li>
-      <li>
-        <custom ref="ccss-buildingTowards"/>
-        [@@@@@@@@@]
-        <!-- <xref ref="ccss-2-MD" text="custom">2.MD</xref>,  -->
-        <!-- <xref ref="ccss-2-OA-C-4" text="custom">2.OA.C.4</xref> -->
+        <xref ref="ccss-3-MD-B-4" text="custom">3.MD.B.4</xref>
       </li>
     </ul>
   </paragraphs>
@@ -55,20 +53,19 @@
     <title><custom ref="narrative-actividad-titulo"/></title>
     <p>[+++++++++++++++]</p>
     <p>In this activity, students create a line plot using the measurement data that they generated earlier and display their group’s line plot for all to see.</p>
-<p>Encourage students to plan their line plot using the blank line in the activity statement before creating a poster version for display in a gallery walk. A template for a larger line plot is provided in the blackline master. Students can join the number lines on two copies of the blackline master to create a longer number line.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>[@@@@@@@@] WARNING: Fix Image.</p>
-<p>As students visit others’ data displays, they consider how the line plots are alike and how they are different, as well as why different scales might have been chosen for different objects measured.</p>
+    <p>Encourage students to plan their line plot using the blank line in the activity statement before creating a poster version for display in a gallery walk. A template for a larger line plot is provided in the blackline master. Students can join the number lines on two copies of the blackline master to create a longer number line.</p>
+    <image source="png-source/Lets Make a Line Plot V1 BLM Image.png">
+      <shortdescription>diagrama de puntos vacío</shortdescription>
+    </image>
+    <p>As students visit others’ data displays, they consider how the line plots are alike and how they are different, as well as why different scales might have been chosen for different objects measured.</p>
   </paragraphs>
 
 
   <!-- Materiales requeridos de la actividad -->
   <paragraphs>
     <title><custom ref="materials-actividad-titulo"/></title>
-    <p>[mmmmmmmmmm]</p>
     <!-- si hay materiales, crear los archivos -mat.ptx (para materiales de la actividad) y -matCentros.ptx (para mencionar los otros centros que se usan y para los que se necesitan materiales) y poner los materiales ahí usando los archivos de template. Después hacer xinclude  de estos archivos en la lista de materiales de la lección.-->
-    <!-- <xi:include href="./act-hacerUnDiagramaDePuntos-mat.ptx"/>  -->
+    <xi:include href="./act-hacerUnDiagramaDePuntos-mat.ptx"/> 
     <!-- <xi:include href="./act-hacerUnDiagramaDePuntos-matCentros.ptx"/>  -->
   </paragraphs>
 
@@ -79,7 +76,7 @@
     <ul>
       <li>Groups of 4</li>
       <li>
-        <q>Examinen los datos que recolectaron con su grupo. ¿Qué necesitan saber para hacer un diagrama de puntos que represente los datos?</q>  (The longest and shortest measurements. Whether the lengths are whole numbers or include halves and fourths of an inch.)
+        <q>Examinen los datos que recolectaron con su grupo. ¿Qué necesitan saber para hacer un diagrama de puntos que represente los datos?</q> (The longest and shortest measurements. Whether the lengths are whole numbers or include halves and fourths of an inch.)
       </li>
       <li>1 minute: group discussion</li>
       <li>Share responses.</li>
@@ -99,12 +96,11 @@
       <li>
         <q>Pueden usar la recta numérica que está en blanco, en su página, para planear cómo van a hacer su diagrama de puntos antes de crear el diagrama final que van a presentar</q>
       </li>
-      <li><p>Consider asking:</p><ul>
-<li>
-<q>¿Cómo planean hacer la escala del diagrama de puntos para que pueda mostrar todas sus medidas?</q></li>
-<li>
-<q>¿Qué información o qué marcas pueden incluir para ayudar a los demás a entender su diagrama de puntos?</q></li>
-</ul>
+      <li><p>Consider asking:</p>
+        <ul>
+          <li><q>¿Cómo planean hacer la escala del diagrama de puntos para que pueda mostrar todas sus medidas?</q></li>
+          <li><q>¿Qué información o qué marcas pueden incluir para ayudar a los demás a entender su diagrama de puntos?</q></li>
+        </ul>
       </li>
       <li>Demonstrate how to join and tape (or glue) the 2 copies of the blackline master to make a large line plot.</li>
       <li>
@@ -122,14 +118,6 @@
 ===================================================================  -->
 <postlude component="profesor">
 
-  <!-- Estrategias de apoyo para estudiantes con dificultades -->
-  <paragraphs>
-    <title><custom ref="support-actividad-titulo"/></title>
-    <p>[+++++++++++++++]</p>
-    <p>=== NOT PRESENT ===</p>
-  </paragraphs>
-
-
   <!-- Síntesis de la actividad -->
   <paragraphs>
     <title><custom ref="synthesis-actividad-titulo"/></title>
@@ -137,8 +125,8 @@
     <ul>
       <li>Ask students to display their posters.</li>
     </ul>
-<p><strong>MLR7 Compare and Connect</strong></p>
-<ul>
+    <p><alert>MLR7 Compare and Connect</alert></p>
+    <ul>
       <li>
         <q>Cuando vayan a ver los pósteres con su grupo, piensen en qué se parecen y en qué son diferentes los diagramas de puntos. Prepárense para compartir sus observaciones</q>
       </li>
@@ -147,18 +135,13 @@
     </ul>
   </paragraphs>
 
-
-  <!-- Descripción del desarrollo de lenguaje matemático -->
-  <paragraphs>
-    <title><custom ref="language-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
-  </paragraphs>
-
-
   <!-- Estrategias de acceso para estudiantes con discapacidades -->
   <paragraphs>
-    <title><custom ref="accesibility-actividad-titulo"/></title>
-    <p>[@@@@@@@@@]</p>
+    <title><custom ref="accesibility-actividad-titulo"/></title><p>[++++++++++++++++]</p>
+    <p><em>Representation: Access for Perception.</em> Synthesis: Use gestures during the explanation of the line plot to emphasize important aspects of the line plot.</p>
+    <p>
+      <em>Supports accessibility for: Conceptual Processing, Attention</em>
+    </p>
   </paragraphs>
 
 </postlude>
