@@ -9,34 +9,37 @@
 <title>Tiempos aquellos</title>
 
 <statement>
-  <sidebyside widths="45% 45%" margins="0% 0%">
-    <stack>
-      <p>1.</p>
+  <ol cols="2">
+    <li>
+      <p>¿Qué hora se muestra? <fillin characters="15" /></p>
       <image source="svg-source/tikz-file-151235">
         <shortdescription>reloj marcando las 6:22</shortdescription>
       </image>
-      <p>¿Qué hora se muestra? <fillin characters="15" /></p>
-    </stack>
-    <stack>
-      <p>2.</p>
+    </li>
+    <li>
+      <p>Muestra las 10:13 a.m. en el reloj.</p>
       <image source="svg-source/tikz-file-151236">
         <shortdescription>reloj en blanco</shortdescription>
       </image>
-      <p>Muestra las 10:13 a.m. en el reloj.</p>
-    </stack>
-  </sidebyside>
+    </li>
+  </ol>
 </statement>
 
 <solution>
     <p>[+++++++++++++++]</p>
-    <ol marker="1.">
+    <ol>
       <li>
         <p>6:22</p>
       </li>
       <li>
-        <image source="svg-source/tikz-file-134593">
-          <shortdescription>reloj marcando las 10:13</shortdescription>
-        </image>
+        <p>
+          <line></line>
+          <line>
+            <image source="svg-source/tikz-file-134593">
+              <shortdescription>reloj marcando las 10:13</shortdescription>
+            </image>
+          </line>
+        </p>
       </li>
     </ol>
   </solution>
